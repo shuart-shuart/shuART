@@ -12,20 +12,49 @@
       "medium": "Ring bound, Die-cut grey board",
       "dimensions": "120 x 210mm, 120pp",
       "shortDescription": "Working fragments, notations, and studies on handwriting, stroke gestures, and the physical tempo of writing.",
-      "credits": [],
-      "presentationHistory": [],
-      "fullText": "[title]笔迹 script/notes[/title] looks at 18 years worth of hand-copied and hand-annotated scores from Shu's collection. Through observing and re-presenting these markings, she considers the way language and customs are developed in social groups and how it borrows and evolves from existing and adjacent communities.\n\nPublished by THEBOOKSHOW\nDesigned by Mingli Seet\nlaunched by THEBOOKSHOW as part of [title]A Different Reading [/title] during the Singapore Art Book Fair 2022, and selected as one of the 5 books from Singapore for the [title]牧书计划 Book Nomad[/title].",
+      "credits": [
+        {
+          "id": "credit-muu6ardd-fjqg",
+          "role": "publisher",
+          "name": "THEBOOKSHOW",
+          "link": "www.thebookshow.org"
+        },
+        {
+          "id": "credit-muu6bdtj-r283",
+          "role": "designer",
+          "name": "Mingli Seet",
+          "link": "https://helloitsming.work/"
+        }
+      ],
+      "presentationHistory": [
+        {
+          "id": "pres-muu6aj4a-hmbr",
+          "title": "A Different Reading",
+          "venue": "Singapore Art Book Fair 2022",
+          "location": "",
+          "date": "",
+          "curator": "",
+          "link": "",
+          "note": ""
+        },
+        {
+          "id": "pres-muu6cglm-qeks",
+          "title": "牧书计划 Book Nomad",
+          "venue": "Art Book China",
+          "location": "",
+          "date": "",
+          "curator": "",
+          "link": "",
+          "note": ""
+        }
+      ],
+      "fullText": "[title]笔迹 script/notes[/title] looks at 18 years worth of hand-copied and hand-annotated scores from Shu's collection. Through observing and re-presenting these markings, she considers the way language and customs are developed in social groups and how it borrows and evolves from existing and adjacent communities.",
       "images": [],
       "blocks": [
         {
           "id": "block-sn-1",
           "type": "text",
           "content": "[title]笔迹 script/notes[/title] looks at 18 years worth of hand-copied and hand-annotated scores from Shu's collection. Through observing and re-presenting these markings, she considers the way language and customs are developed in social groups and how it borrows and evolves from existing and adjacent communities."
-        },
-        {
-          "id": "block-muu5t184-kn0h",
-          "type": "text",
-          "content": "Published by THEBOOKSHOW\nDesigned by Mingli Seet\nlaunched by THEBOOKSHOW as part of [title]A Different Reading [/title] during the Singapore Art Book Fair 2022, and selected as one of the 5 books from Singapore for the [title]牧书计划 Book Nomad[/title]."
         }
       ],
       "tagIds": [
@@ -51,7 +80,7 @@
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-01-10T10:00:00Z",
-      "updatedAt": "2026-10-04T18:33:58.548Z"
+      "updatedAt": "2026-10-04T18:49:09.570Z"
     },
     {
       "id": "ss-between-books-and-libraries",
