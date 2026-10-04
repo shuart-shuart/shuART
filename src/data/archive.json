@@ -545,13 +545,13 @@
       "links": [
         {
           "id": "email",
-          "label": "work@anotherunit.xyz",
-          "url": "mailto:work@anotherunit.xyz"
+          "label": "shuart.shuart@gmail.com",
+          "url": "mailto:shuart.shuart@gmail.com"
         },
         {
           "id": "instagram",
-          "label": "Instagram",
-          "url": "https://www.instagram.com"
+          "label": "@shu0shushu",
+          "url": "https://www.instagram.com/shu0shushu"
         },
         {
           "id": "bio",
@@ -566,7 +566,7 @@
       ]
     },
     "showWander": true,
-    "typography": "a",
+    "typography": "c",
     "navOrder": [
       {
         "id": "index",
@@ -587,7 +587,7 @@
         "visible": true
       }
     ],
-    "updatedAt": "2026-10-04T17:14:38.692Z",
-    "updatedBy": "system"
+    "updatedAt": "2026-10-04T17:58:43.468Z",
+    "updatedBy": "work@anotherunit.xyz"
   }
 }
