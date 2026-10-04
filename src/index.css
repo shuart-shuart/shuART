@@ -2,10 +2,10 @@
 
 @layer base {
   :root {
-    --font-display-serif: "Newsreader", "Noto Serif SC", serif;
-    --font-serif: "Newsreader", "Noto Serif SC", serif;
-    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans SC", "Hiragino Sans GB", sans-serif;
-    --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    --font-display-serif: "Newsreader", "Noto Sans SC", serif;
+    --font-serif: "Newsreader", "Noto Sans SC", serif;
+    --font-sans: "Source Sans 3", "Noto Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-mono: "IBM Plex Mono", "Noto Sans SC", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 
     /* Typography combination fonts (A and C) */
     --font-combo-a: "Newsreader", "Noto Sans SC", serif;
