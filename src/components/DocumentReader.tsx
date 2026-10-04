@@ -1,3 +1,4 @@
+import { renderFormattedText, formattedTextToPlainText } from '../services/formatting';
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import * as pdfjsLib from 'pdfjs-dist';
 import { publicAssetUrl } from '../services/publicAssetUrl';
@@ -306,7 +307,7 @@ export const DocumentReader: React.FC<DocumentReaderProps> = ({ block }) => {
           ? 'fixed inset-0 z-50 p-3 sm:p-5 w-screen h-screen'
           : 'my-6 p-3 sm:p-5 w-full h-[calc(100dvh-5.5rem)] sm:h-[calc(100dvh-6.5rem)] min-h-[460px] max-h-[920px]'
       }`}
-      aria-label={`Document reader for ${block.title}`}
+      aria-label={`Document reader for ${formattedTextToPlainText(block.title)}`}
     >
       {/* 1. Header Toolbar */}
       <div className="shrink-0 flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 mb-2 border-b border-black/10">
@@ -316,11 +317,11 @@ export const DocumentReader: React.FC<DocumentReaderProps> = ({ block }) => {
             Document Reader · {isPdf ? 'PDF Facsimile' : isPrecomposedSpread ? 'Pre-composed Spreads' : 'Page Sequence'}
           </div>
           <h4 className="font-editorial text-lg sm:text-2xl text-black font-normal truncate">
-            {block.title}
+            {renderFormattedText(block.title)}
           </h4>
           {block.description && (
-            <p className="text-[11px] font-mono-quiet text-black/55 line-clamp-1 pt-0.5" title={block.description}>
-              {block.description}
+            <p className="text-[11px] font-mono-quiet text-black/55 line-clamp-1 pt-0.5" title={formattedTextToPlainText(block.description)}>
+              {renderFormattedText(block.description)}
             </p>
           )}
         </div>
@@ -569,7 +570,7 @@ export const DocumentReader: React.FC<DocumentReaderProps> = ({ block }) => {
                     {effectivePages[leftPageIndex].url ? (
                       <img
                         src={effectivePages[leftPageIndex].url}
-                        alt={effectivePages[leftPageIndex].caption || `Page ${leftPageIndex + 1} of ${block.title}`}
+                        alt={formattedTextToPlainText(effectivePages[leftPageIndex].caption) || `Page ${leftPageIndex + 1} of ${formattedTextToPlainText(block.title)}`}
                         className="max-h-full max-w-full w-auto h-auto object-contain shadow-xs border border-black/10 bg-white"
                         loading="lazy"
                       />
@@ -584,7 +585,7 @@ export const DocumentReader: React.FC<DocumentReaderProps> = ({ block }) => {
                     )}
                     {effectivePages[leftPageIndex].caption && (
                       <figcaption className="shrink-0 text-[10px] sm:text-[11px] font-mono-quiet text-black/60 text-center max-w-xs sm:max-w-md truncate">
-                        {effectivePages[leftPageIndex].caption}
+                        {renderFormattedText(effectivePages[leftPageIndex].caption)}
                       </figcaption>
                     )}
                   </div>
@@ -602,7 +603,7 @@ export const DocumentReader: React.FC<DocumentReaderProps> = ({ block }) => {
                     {effectivePages[rightPageIndex].url ? (
                       <img
                         src={effectivePages[rightPageIndex].url}
-                        alt={effectivePages[rightPageIndex].caption || `Page ${rightPageIndex + 1} of ${block.title}`}
+                        alt={formattedTextToPlainText(effectivePages[rightPageIndex].caption) || `Page ${rightPageIndex + 1} of ${formattedTextToPlainText(block.title)}`}
                         className="max-h-full max-w-full w-auto h-auto object-contain shadow-xs border border-black/10 bg-white"
                         loading="lazy"
                       />
@@ -617,7 +618,7 @@ export const DocumentReader: React.FC<DocumentReaderProps> = ({ block }) => {
                     )}
                     {effectivePages[rightPageIndex].caption && (
                       <figcaption className="shrink-0 text-[10px] sm:text-[11px] font-mono-quiet text-black/60 text-center max-w-xs sm:max-w-md truncate">
-                        {effectivePages[rightPageIndex].caption}
+                        {renderFormattedText(effectivePages[rightPageIndex].caption)}
                       </figcaption>
                     )}
                   </div>

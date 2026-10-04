@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useId } from 'react';
 import { Entry } from '../../types';
 import {
   toggleTitleStyle,
@@ -32,6 +32,7 @@ export const FormattedField: React.FC<FormattedFieldProps> = ({
   allEntries = [],
   className = '',
 }) => {
+  const fieldId = useId();
   const [showPreview, setShowPreview] = useState(false);
   const [isLinkModalOpen, setIsLinkModalOpen] = useState(false);
   const [linkUrl, setLinkUrl] = useState('');
@@ -78,7 +79,7 @@ export const FormattedField: React.FC<FormattedFieldProps> = ({
     setSelectionRange({ start, end });
 
     const selectedSnippet = value.slice(start, end);
-    const linkMatch = selectedSnippet.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+    const linkMatch = selectedSnippet.match(/^\[((?:\[title\][\s\S]*?\[\/title\]|[^\]])+)\]\(((?:[^()]|\([^()]*\))+)\)$/);
 
     if (linkMatch) {
       setLinkText(linkMatch[1]);
@@ -100,8 +101,9 @@ export const FormattedField: React.FC<FormattedFieldProps> = ({
     setIsLinkModalOpen(true);
   };
 
-  const handleApplyLink = (e: React.FormEvent) => {
+  const handleApplyLink = (e: React.SyntheticEvent) => {
     e.preventDefault();
+    e.stopPropagation();
     const finalUrl = isInternalEntryLink ? `#entry/${selectedEntrySlug}` : linkUrl.trim();
     if (!finalUrl) return;
 
@@ -141,14 +143,14 @@ export const FormattedField: React.FC<FormattedFieldProps> = ({
   const selectedSubstring = value.slice(selectionRange.start, selectionRange.end);
   const isSelectionTitle =
     selectedSubstring.startsWith('[title]') && selectedSubstring.endsWith('[/title]');
-  const isSelectionLink = /^\[([^\]]+)\]\(([^)]+)\)$/.test(selectedSubstring);
+  const isSelectionLink = /^\[((?:\[title\][\s\S]*?\[\/title\]|[^\]])+)\]\(((?:[^()]|\([^()]*\))+)\)$/.test(selectedSubstring);
 
   return (
     <div className={`space-y-1.5 ${className}`}>
       {/* Label and Toolbar Header */}
       <div className="flex flex-wrap items-baseline justify-between gap-2">
         {label && (
-          <label className="block text-xs font-mono-quiet text-black/70 font-medium">
+          <label htmlFor={fieldId} className="block text-xs font-mono-quiet text-black/70 font-medium">
             {label} {required && <span className="text-red-600">*</span>}
           </label>
         )}
@@ -157,6 +159,7 @@ export const FormattedField: React.FC<FormattedFieldProps> = ({
         <div className="flex items-center gap-1 text-[11px] font-mono-quiet bg-black/[0.03] p-0.5 border border-black/10">
           <button
             type="button"
+            onMouseDown={e => e.preventDefault()}
             onClick={handleTitleClick}
             className={`px-2 py-0.5 rounded-none transition-colors flex items-center gap-1 ${
               isSelectionTitle
@@ -173,6 +176,7 @@ export const FormattedField: React.FC<FormattedFieldProps> = ({
 
           <button
             type="button"
+            onMouseDown={e => e.preventDefault()}
             onClick={handleOpenLinkModal}
             className={`px-2 py-0.5 rounded-none transition-colors flex items-center gap-1 ${
               isSelectionLink
@@ -219,6 +223,7 @@ export const FormattedField: React.FC<FormattedFieldProps> = ({
         </div>
       ) : multiline ? (
         <textarea
+          id={fieldId}
           ref={inputRef as React.RefObject<HTMLTextAreaElement>}
           value={value}
           onChange={(e) => onChange(e.target.value)}
@@ -232,6 +237,7 @@ export const FormattedField: React.FC<FormattedFieldProps> = ({
         />
       ) : (
         <input
+          id={fieldId}
           ref={inputRef as React.RefObject<HTMLInputElement>}
           type="text"
           value={value}
@@ -262,7 +268,7 @@ export const FormattedField: React.FC<FormattedFieldProps> = ({
               </button>
             </div>
 
-            <form onSubmit={handleApplyLink} className="space-y-4 text-xs">
+            <div role="group" aria-label="Hyperlink settings" onKeyDown={e => { if (e.key === 'Enter') handleApplyLink(e); }} className="space-y-4 text-xs">
               {/* Display text */}
               <div className="space-y-1">
                 <label className="block font-mono-quiet text-black/70">
@@ -369,14 +375,15 @@ export const FormattedField: React.FC<FormattedFieldProps> = ({
                     Cancel
                   </button>
                   <button
-                    type="submit"
+                    type="button"
+                    onClick={handleApplyLink}
                     className="px-4 py-1.5 bg-black text-white text-xs font-mono-quiet hover:bg-black/85"
                   >
                     Apply Link
                   </button>
                 </div>
               </div>
-            </form>
+            </div>
           </div>
         </div>
       )}

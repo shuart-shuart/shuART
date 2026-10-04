@@ -1,3 +1,4 @@
+import { renderFormattedText, formattedTextToPlainText } from '../services/formatting';
 import React, { useState, useMemo } from 'react';
 import { Entry, BacklinkInfo, EntryImage, Tag } from '../types';
 import { findBacklinks } from '../services/wiki';
@@ -83,64 +84,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
 
   const canShowWander = showWander || isEditorLoggedIn;
 
-  // Function to render text with clickable [[wikilinks]]
-  const renderWikiText = (text: string) => {
-    if (!text) return null;
-    const parts: React.ReactNode[] = [];
-    const regex = /\[\[(.*?)\]\]/g;
-    let lastIndex = 0;
-    let match: RegExpExecArray | null;
-
-    while ((match = regex.exec(text)) !== null) {
-      const matchIndex = match.index;
-      if (matchIndex > lastIndex) {
-        parts.push(text.substring(lastIndex, matchIndex));
-      }
-
-      const rawTarget = match[1].trim();
-      const [targetIdentifier, label] = rawTarget.includes('|')
-        ? rawTarget.split('|').map((s) => s.trim())
-        : [rawTarget, rawTarget];
-
-      const found = allEntries.find(
-        (e) =>
-          e.id.toLowerCase() === targetIdentifier.toLowerCase() ||
-          e.slug.toLowerCase() === targetIdentifier.toLowerCase() ||
-          e.title.toLowerCase() === targetIdentifier.toLowerCase() ||
-          (e.titleZh && e.titleZh.toLowerCase() === targetIdentifier.toLowerCase()),
-      );
-
-      if (found) {
-        parts.push(
-          <button
-            key={`${matchIndex}-${targetIdentifier}`}
-            onClick={() => onSelectEntry(found.slug)}
-            className="text-black font-medium underline underline-offset-4 decoration-black/30 hover:decoration-black transition-colors inline"
-            title={`Go to entry: ${found.title}`}
-          >
-            {label || found.title}
-          </button>,
-        );
-      } else {
-        parts.push(
-          <span
-            key={`${matchIndex}-${targetIdentifier}`}
-            className="text-black/60 italic font-mono-quiet text-xs"
-          >
-            [{label || targetIdentifier}]
-          </span>,
-        );
-      }
-
-      lastIndex = regex.lastIndex;
-    }
-
-    if (lastIndex < text.length) {
-      parts.push(text.substring(lastIndex));
-    }
-
-    return parts;
-  };
+  const renderWikiText = (text: string) => renderFormattedText(text, { allEntries, onSelectEntry });
 
   return (
     <article className="max-w-4xl mx-auto px-5 sm:px-8 py-8 sm:py-14 animate-fadeIn">
@@ -306,7 +250,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
               <section key={block.id} className="space-y-6">
                 {block.title && (
                   <h4 className="font-editorial text-xl text-black font-normal">
-                    {block.title}
+                    {renderWikiText(block.title)}
                   </h4>
                 )}
                 <div className={block.layout === 'grid' ? 'grid grid-cols-1 sm:grid-cols-2 gap-6' : 'space-y-8'}>
@@ -318,15 +262,15 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
                       >
                         <img
                           src={img.url}
-                          alt={img.alt || img.caption || entry.title}
+                          alt={formattedTextToPlainText(img.alt || img.caption || entry.title)}
                           className="w-full h-auto object-cover max-h-[70vh] transition-opacity hover:opacity-95"
                           loading="lazy"
                         />
                       </div>
                       {(img.caption || img.credit || img.alt) && (
                         <figcaption className="flex justify-between items-baseline text-xs font-mono-quiet text-black/60 pt-1">
-                          <span>{img.caption || img.alt}</span>
-                          {img.credit && <span className="text-black/40">Photo: {img.credit}</span>}
+                          <span>{renderWikiText(img.caption || img.alt || '')}</span>
+                          {img.credit && <span className="text-black/40">Photo: {renderWikiText(img.credit)}</span>}
                         </figcaption>
                       )}
                     </figure>

@@ -1,3 +1,4 @@
+import { renderFormattedText, formattedTextToPlainText } from '../services/formatting';
 import React from 'react';
 import { EntryImage } from '../types';
 
@@ -29,7 +30,7 @@ export const ImageLightbox: React.FC<LightboxProps> = ({ image, onClose }) => {
       <div className="flex-1 flex items-center justify-center p-4">
         <img
           src={image.url}
-          alt={image.alt || image.caption || 'Archive document'}
+          alt={formattedTextToPlainText(image.alt || image.caption) || 'Archive document'}
           className="max-h-[82vh] max-w-full object-contain cursor-default shadow-sm border border-black/5"
           onClick={(e) => e.stopPropagation()}
         />
@@ -37,11 +38,11 @@ export const ImageLightbox: React.FC<LightboxProps> = ({ image, onClose }) => {
 
       <div className="max-w-2xl mx-auto text-center space-y-1">
         {image.caption && (
-          <p className="text-sm font-editorial text-black/90">{image.caption}</p>
+          <p className="text-sm font-editorial text-black/90">{renderFormattedText(image.caption)}</p>
         )}
         <div className="text-xs font-mono-quiet text-black/50 flex justify-center gap-3">
-          {image.alt && <span>Alt: {image.alt}</span>}
-          {image.credit && <span>Photo: {image.credit}</span>}
+          {image.alt && <span>Alt: {renderFormattedText(image.alt)}</span>}
+          {image.credit && <span>Photo: {renderFormattedText(image.credit)}</span>}
         </div>
       </div>
     </div>

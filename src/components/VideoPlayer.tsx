@@ -1,3 +1,4 @@
+import { renderFormattedText, formattedTextToPlainText } from '../services/formatting';
 import React from 'react';
 import { VideoBlock } from '../types';
 
@@ -13,7 +14,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({ block }) => {
       {/* Optional Title above player */}
       {block.title && (
         <h4 className="font-editorial text-lg text-black font-normal">
-          {block.title}
+          {renderFormattedText(block.title)}
         </h4>
       )}
 
@@ -21,7 +22,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({ block }) => {
       <div className="relative w-full aspect-video bg-black/[0.04] border border-black/15 overflow-hidden">
         <iframe
           src={block.embedUrl}
-          title={block.title || 'Video player'}
+          title={formattedTextToPlainText(block.title) || 'Video player'}
           className="absolute inset-0 w-full h-full border-0"
           allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
@@ -33,10 +34,10 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({ block }) => {
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-baseline gap-2 text-xs font-mono-quiet text-black/60 pt-1">
         <div className="space-y-0.5 max-w-2xl">
           {block.caption && (
-            <p className="text-black/80">{block.caption}</p>
+            <p className="text-black/80">{renderFormattedText(block.caption)}</p>
           )}
           {block.credit && (
-            <p className="text-[11px] text-black/50">Credit: {block.credit}</p>
+            <p className="text-[11px] text-black/50">Credit: {renderFormattedText(block.credit)}</p>
           )}
         </div>
 

@@ -1,3 +1,4 @@
+import { renderFormattedText } from '../services/formatting';
 import React from 'react';
 import { Entry, Tag } from '../types';
 import { getEntryBlocks } from '../services/blockUtils';
@@ -23,63 +24,7 @@ export const TagView: React.FC<TagViewProps> = ({
   onSelectTag,
   onNavigateBack,
 }) => {
-  // Function to render text with clickable [[wikilinks]]
-  const renderWikiText = (text: string) => {
-    if (!text) return null;
-    const parts: React.ReactNode[] = [];
-    const regex = /\[\[(.*?)\]\]/g;
-    let lastIndex = 0;
-    let match: RegExpExecArray | null;
-
-    while ((match = regex.exec(text)) !== null) {
-      const matchIndex = match.index;
-      if (matchIndex > lastIndex) {
-        parts.push(text.substring(lastIndex, matchIndex));
-      }
-
-      const rawTarget = match[1].trim();
-      const [targetIdentifier, label] = rawTarget.includes('|')
-        ? rawTarget.split('|').map((s) => s.trim())
-        : [rawTarget, rawTarget];
-
-      const found = allEntries.find(
-        (e) =>
-          e.id.toLowerCase() === targetIdentifier.toLowerCase() ||
-          e.slug.toLowerCase() === targetIdentifier.toLowerCase() ||
-          e.title.toLowerCase() === targetIdentifier.toLowerCase()
-      );
-
-      if (found) {
-        parts.push(
-          <button
-            key={`${matchIndex}-${targetIdentifier}`}
-            onClick={() => onSelectEntry(found.slug)}
-            className="text-black font-medium underline underline-offset-4 decoration-black/30 hover:decoration-black transition-colors inline"
-            title={`Go to entry: ${found.title}`}
-          >
-            {label || found.title}
-          </button>
-        );
-      } else {
-        parts.push(
-          <span
-            key={`${matchIndex}-${targetIdentifier}`}
-            className="text-black/60 italic font-mono-quiet text-xs"
-          >
-            [{label || targetIdentifier}]
-          </span>
-        );
-      }
-
-      lastIndex = regex.lastIndex;
-    }
-
-    if (lastIndex < text.length) {
-      parts.push(text.substring(lastIndex));
-    }
-
-    return parts;
-  };
+  const renderWikiText = (text: string) => renderFormattedText(text, { allEntries, onSelectEntry });
 
   return (
     <div className="max-w-5xl mx-auto px-5 sm:px-8 py-8 sm:py-14 animate-fadeIn">

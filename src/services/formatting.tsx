@@ -51,7 +51,7 @@ export function renderFormattedText(
   // 2. [link text](url)
   // 3. [[wikilink]] or [[wikilink|label]]
   const combinedRegex =
-    /\[title\]([\s\S]*?)\[\/title\]|\[([^\]]+)\]\(([^)]+)\)|\[\[(.*?)\]\]/g;
+    /\[title\]([\s\S]*?)\[\/title\]|\[((?:\[title\][\s\S]*?\[\/title\]|[^\]])+)\]\(((?:[^()]|\([^()]*\))+)\)|\[\[(.*?)\]\]/g;
 
   const elements: React.ReactNode[] = [];
   let lastIndex = 0;
@@ -83,9 +83,7 @@ export function renderFormattedText(
       const rawUrl = match[3].trim();
 
       const isInternal =
-        rawUrl.startsWith('#entry/') ||
-        rawUrl.startsWith('entry/') ||
-        rawUrl.startsWith('#');
+        rawUrl.startsWith('#entry/') || rawUrl.startsWith('entry/');
 
       const resolvedSlug = rawUrl.replace(/^#?entry\//, '').replace(/^#/, '');
 
@@ -116,10 +114,17 @@ export function renderFormattedText(
           </a>
         );
       } else {
+        if (/^[a-z][a-z0-9+.-]*:/i.test(rawUrl) && !/^(https?:|mailto:|tel:)/i.test(rawUrl)) {
+          elements.push(<React.Fragment key={`invalid-${keyCounter++}`}>{renderFormattedText(label, options)}</React.Fragment>);
+          lastIndex = combinedRegex.lastIndex;
+          continue;
+        }
         const safeHref =
           rawUrl.startsWith('http://') ||
           rawUrl.startsWith('https://') ||
-          rawUrl.startsWith('mailto:')
+          rawUrl.startsWith('mailto:') ||
+          rawUrl.startsWith('tel:') ||
+          rawUrl.startsWith('#')
             ? rawUrl
             : `https://${rawUrl}`;
 
@@ -127,7 +132,7 @@ export function renderFormattedText(
           <a
             key={`link-${keyCounter++}`}
             href={safeHref}
-            target="_blank"
+            target={safeHref.startsWith('#') ? undefined : '_blank'}
             rel="noopener noreferrer"
             className={linkClassName}
             title={`Open external link: ${safeHref}`}
@@ -305,7 +310,7 @@ export function applyHyperlink(
   const cleanUrl = url.trim();
 
   // If selection is already a markdown link [old](url)
-  const linkRegex = /^\[([^\]]+)\]\(([^)]+)\)$/;
+  const linkRegex = /^\[((?:\[title\][\s\S]*?\[\/title\]|[^\]])+)\]\(((?:[^()]|\([^()]*\))+)\)$/;
   if (linkRegex.test(selected)) {
     const replacement = `[${label}](${cleanUrl})`;
     const newText = fullText.slice(0, start) + replacement + fullText.slice(end);
@@ -334,7 +339,7 @@ export function removeHyperlink(
   end: number
 ): { newText: string; newStart: number; newEnd: number } {
   const selected = fullText.slice(start, end);
-  const linkRegex = /^\[([^\]]+)\]\(([^)]+)\)$/;
+  const linkRegex = /^\[((?:\[title\][\s\S]*?\[\/title\]|[^\]])+)\]\(((?:[^()]|\([^()]*\))+)\)$/;
   const match = selected.match(linkRegex);
 
   if (match) {
@@ -348,4 +353,11 @@ export function removeHyperlink(
   }
 
   return { newText: fullText, newStart: start, newEnd: end };
+}
+
+/** Plain text for image alt text, tooltips, and other text-only attributes. */
+export function formattedTextToPlainText(text: string | undefined | null): string {
+  return (text || '').replace(/\[title\]|\[\/title\]/g, '')
+    .replace(/\[([^\]]+)\]\(((?:[^()]|\([^()]*\))+)\)/g, '$1')
+    .replace(/\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/g, (_match, target, label) => label || target);
 }
