@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { SiteSettings, TypographyCombo, Entry } from '../../types';
-import { isFirebaseConfigured, DESIGNATED_EDITOR_EMAIL } from '../../services/firebase';
+import { DESIGNATED_EDITOR_EMAIL } from '../../services/mediaUploads';
 
 interface EditorTypographySectionProps {
   siteSettings: SiteSettings;
@@ -132,7 +132,7 @@ export const EditorTypographySection: React.FC<EditorTypographySectionProps> = (
           >
             {saveMessage}
             <span className="block text-[10px] text-black/50 pt-0.5">
-              Storage target: {isFirebaseConfigured ? 'Firestore' : 'Live Browser Storage (ready for Firebase)'}
+              Storage target: GitHub publishing with local drafts
             </span>
           </div>
         )}

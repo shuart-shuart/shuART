@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 900" width="700" height="900">
+  <defs>
+    <style>
+      .serif { font-family: 'Newsreader', Georgia, 'Songti SC', serif; }
+      .mono { font-family: 'IBM Plex Mono', Menlo, Monaco, monospace; font-size: 11px; fill: #666666; letter-spacing: 0.05em; }
+      .title { font-family: 'Newsreader', Georgia, 'Songti SC', serif; font-size: 26px; fill: #111111; font-weight: normal; }
+      .heading { font-family: 'Newsreader', Georgia, 'Songti SC', serif; font-size: 19px; fill: #222222; font-style: italic; }
+      .body { font-family: 'Source Sans 3', -apple-system, sans-serif; font-size: 14px; fill: #333333; line-height: 1.8; }
+      .annotation { font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11px; fill: #888888; font-style: italic; }
+    </style>
+  </defs>
+
+  <!-- Page Background with subtle paper tone -->
+  <rect width="700" height="900" fill="#fcfbf9" stroke="#e5e3dd" stroke-width="1.5" />
+  
+  
+
+  <!-- Header Folio -->
+  <text x="60" y="55" class="mono">PART TIME BOOK CLUB · ISSUE 01</text>
+  <text x="640" y="55" text-anchor="end" class="mono">p. 3</text>
+  <line x1="60" y1="70" x2="640" y2="70" stroke="#eeeeee" stroke-width="1" />
+
+  <!-- Main Content -->
+  <text x="60" y="130" class="title">Transcript: The Wrist as Timekeeper</text>
+  
+  <text x="60" y="180" class="body">“The copyist does not summarize; she endures the length of every sentence.”</text><text x="60" y="212" class="body">In copying an existing book by hand, the eye is forced to travel at the speed of the wrist.</text><text x="60" y="244" class="body">Speed is reduced from four hundred words per minute to twenty-two.</text><text x="60" y="276" class="body">What was once transparent prose turns opaque: commas become physical breathing gates.</text>
+
+  
+  <rect x="60" y="770" width="580" height="45" fill="#f5f3ee" stroke="#e8e6df" />
+  <text x="75" y="798" class="annotation">Transcribed by H.S. from participant recording tape 03-A.</text>
+  
+
+  <!-- Footer Folio -->
+  <line x1="60" y1="840" x2="640" y2="840" stroke="#eeeeee" stroke-width="1" />
+  <text x="350" y="865" text-anchor="middle" class="mono">— p. 3 —</text>
+</svg>

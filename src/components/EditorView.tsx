@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { Entry, EntryType, EntryStatus, SiteSettings, Tag } from '../types';
-import { exportArchiveAsJSON, DESIGNATED_EDITOR_EMAIL } from '../services/storage';
-import { isFirebaseConfigured } from '../services/firebase';
+import { exportArchiveAsJSON } from '../services/storage';
+import { ArchiveBundle, validateArchive } from '../services/githubPublishing';
+import { GitHubPublishPanel } from './editor/GitHubPublishPanel';
 import { EditorTagsSection } from './editor/EditorTagsSection';
 import { EditorSettingsSection } from './editor/EditorSettingsSection';
 
 interface EditorViewProps {
+  onArchivePublished: (bundle: ArchiveBundle) => void;
   entries: Entry[];
   tags: Tag[];
   siteSettings: SiteSettings;
@@ -15,8 +17,7 @@ interface EditorViewProps {
   onDeleteEntry: (id: string) => Promise<void> | void;
   onToggleStatus: (id: string) => Promise<void> | void;
   onSelectEntry: (slugOrId: string) => void;
-  onImportEntries: (entries: Entry[]) => void;
-  onResetToSampleEntries: () => void;
+  onImportArchive: (bundle: ArchiveBundle) => void;
   onSaveEntry?: (entry: Entry) => Promise<void> | void;
   onBatchSaveEntries?: (entries: Entry[]) => Promise<void> | void;
   onSaveTag: (tag: Tag) => Promise<Tag[]> | void;
@@ -29,6 +30,7 @@ interface EditorViewProps {
 type EditorTab = 'entries' | 'tags' | 'settings';
 
 export const EditorView: React.FC<EditorViewProps> = ({
+  onArchivePublished,
   entries,
   tags,
   siteSettings,
@@ -38,8 +40,7 @@ export const EditorView: React.FC<EditorViewProps> = ({
   onDeleteEntry,
   onToggleStatus,
   onSelectEntry,
-  onImportEntries,
-  onResetToSampleEntries,
+  onImportArchive,
   onSaveEntry,
   onBatchSaveEntries,
   onSaveTag,
@@ -64,7 +65,7 @@ export const EditorView: React.FC<EditorViewProps> = ({
     setDeleteError(null);
     try {
       await onDeleteEntry(entry.id);
-      setDeleteSuccessMsg(`Entry "${entry.title}" (${entry.id}) has been permanently deleted.`);
+      setDeleteSuccessMsg(`Entry "${entry.title}" (${entry.id}) has been removed from this draft. Publish to GitHub to apply the deletion.`);
       setEntryToDelete(null);
       setTimeout(() => {
         setDeleteSuccessMsg(null);
@@ -102,8 +103,10 @@ export const EditorView: React.FC<EditorViewProps> = ({
       try {
         const parsed = JSON.parse(event.target?.result as string);
         const entriesArray = Array.isArray(parsed) ? parsed : parsed.entries;
-        if (Array.isArray(entriesArray) && entriesArray.length > 0) {
-          onImportEntries(entriesArray);
+        if (Array.isArray(entriesArray)) {
+          const bundle = { version: 3, entries: entriesArray, tags: parsed.tags ?? tags, settings: parsed.settings ?? siteSettings };
+          validateArchive(bundle);
+          onImportArchive(bundle);
           alert(`Successfully imported ${entriesArray.length} entries into archive.`);
         } else {
           alert('Invalid archive file format.');
@@ -124,13 +127,13 @@ export const EditorView: React.FC<EditorViewProps> = ({
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-baseline gap-4 pb-6 border-b border-black/10">
         <div className="space-y-1">
           <div className="text-xs font-mono-quiet text-black/40 uppercase tracking-wider">
-            Editor Console · Logged in as {DESIGNATED_EDITOR_EMAIL}
+            Editor Console · GitHub connected to shuART
           </div>
           <h1 className="font-editorial text-3xl sm:text-4xl text-black">
             Archive Content & System Management
           </h1>
           <p className="text-xs text-black/60 font-mono-quiet pt-0.5">
-            {publishedCount} published · {draftCount} drafts · Restrictive editor access active
+            {publishedCount} published · {draftCount} drafts · GitHub editor session
           </p>
         </div>
 
@@ -161,11 +164,13 @@ export const EditorView: React.FC<EditorViewProps> = ({
               onClick={onSignOut}
               className="px-3 py-2 text-xs font-mono-quiet text-black/50 hover:text-black hover:underline transition-colors"
             >
-              Sign Out
+              Disconnect GitHub
             </button>
           )}
         </div>
       </div>
+
+      <GitHubPublishPanel entries={entries} tags={tags} settings={siteSettings} onPublished={onArchivePublished} />
 
       {/* Editor Section Navigation Tabs: Entries, Tags, Settings */}
       <div className="border-b border-black/15 my-6 flex flex-wrap items-center justify-between gap-4 font-mono-quiet text-xs">
@@ -206,13 +211,11 @@ export const EditorView: React.FC<EditorViewProps> = ({
         <div className="flex items-center gap-2 text-[11px] text-black/50 py-2">
           <span
             className={`w-2 h-2 rounded-full ${
-              isFirebaseConfigured ? 'bg-emerald-600' : 'bg-amber-600'
+              'bg-emerald-600'
             }`}
           />
           <span>
-            {isFirebaseConfigured
-              ? 'Firestore Cloud Sync Active'
-              : 'Local Storage Engine (Authoritative)'}
+            GitHub connected · local drafts
           </span>
         </div>
       </div>
@@ -283,18 +286,7 @@ export const EditorView: React.FC<EditorViewProps> = ({
                 </select>
               </div>
 
-              {/* Reset to sample entries */}
-              <button
-                onClick={() => {
-                  if (confirm('Reset to initial sample entries? Any newly created entries will be replaced with clean defaults.')) {
-                    onResetToSampleEntries();
-                  }
-                }}
-                className="text-xs text-black/50 hover:text-black underline ml-2"
-                title="Restore default sample data"
-              >
-                Reset Defaults
-              </button>
+
             </div>
           </div>
 
@@ -528,7 +520,7 @@ export const EditorView: React.FC<EditorViewProps> = ({
 
             <div className="text-xs text-black/75 space-y-2 leading-relaxed">
               <p>
-                This action will permanently delete this entry from both public view and the editor archive.
+                This removes the entry from your local draft. Publish to GitHub to remove it from the live site; GitHub history retains previous versions.
               </p>
               <p className="text-[11px] font-mono-quiet text-black/55">
                 • References in related entries, project associations, and tag-linked notes will be cleanly unlinked without breaking other content.
@@ -576,7 +568,7 @@ export const EditorView: React.FC<EditorViewProps> = ({
                     : 'bg-red-700 text-white hover:bg-red-800'
                 }`}
               >
-                {isDeleting ? 'Deleting Entry…' : 'Confirm Permanent Deletion'}
+                {isDeleting ? 'Deleting Entry…' : 'Remove from Draft'}
               </button>
             </div>
           </div>

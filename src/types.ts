@@ -149,7 +149,7 @@ export interface Entry {
   createdAt: string; // ISO timestamp
   updatedAt: string; // ISO timestamp
   isDevelopingWork?: boolean; // When true, clearly marked as developing study / working fragment
-  notesForArtist?: string; // Private review notes for Hong Shu-ying
+  notesForArtist?: string; // Browser draft and backup only; excluded from GitHub publishes
   // Helper for SS category if present
   ssCategory?: 'overview' | 'book' | 'library' | 'person' | 'conversation' | 'programme';
 }

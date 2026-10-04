@@ -1,3 +1,4 @@
+import { ArchiveBundle } from './services/githubPublishing';
 import { useState, useEffect, useMemo, useCallback } from 'react';
 import { Entry, ViewMode, SiteSettings, Tag } from './types';
 import {
@@ -13,8 +14,11 @@ import {
   mergeTags,
   getEditorAuthState,
   setEditorAuthState,
-  resetToInitialSampleEntries,
   DEFAULT_SITE_SETTINGS,
+  PUBLISHED_ARCHIVE,
+  beginGitHubEditorSession,
+  saveDraftArchive,
+  getLocalTags,
 } from './services/storage';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
@@ -222,9 +226,12 @@ export default function App() {
   };
 
   // Auth actions
-  const handleEditorLoginSuccess = (email: string) => {
+  const handleEditorLoginSuccess = (bundle: ArchiveBundle, sha: string) => {
+    const draft = beginGitHubEditorSession(bundle, sha);
+    setEntries(draft.entries);
+    setTags(draft.tags);
+    setSiteSettings(draft.settings);
     setIsEditorLoggedIn(true);
-    setEditorAuthState(true, email);
     setCurrentView('editor');
     window.location.hash = '#editor';
   };
@@ -232,6 +239,9 @@ export default function App() {
   const handleEditorSignOut = () => {
     setIsEditorLoggedIn(false);
     setEditorAuthState(false);
+    setEntries(PUBLISHED_ARCHIVE.entries);
+    setTags(PUBLISHED_ARCHIVE.tags);
+    setSiteSettings(PUBLISHED_ARCHIVE.settings);
     if (currentView === 'editor') {
       navigateToView('index');
     }
@@ -279,6 +289,7 @@ export default function App() {
   const handleDeleteEntry = async (id: string) => {
     const updated = await deleteEntryById(id, entries);
     setEntries(updated);
+    setTags(getLocalTags());
     if (selectedEntrySlug && entries.find((e) => e.id === id)?.slug === selectedEntrySlug) {
       navigateToView('index');
     }
@@ -322,14 +333,9 @@ export default function App() {
     setSiteSettings(newSettings);
   };
 
-  const handleImportEntries = (imported: Entry[]) => {
-    setEntries(imported);
-    imported.forEach((entry) => saveEntry(entry, imported));
-  };
-
-  const handleResetSampleEntries = () => {
-    const samples = resetToInitialSampleEntries();
-    setEntries(samples);
+  const handleImportArchive = (bundle: ArchiveBundle) => {
+    saveDraftArchive(bundle);
+    setEntries(bundle.entries); setTags(bundle.tags); setSiteSettings(bundle.settings);
   };
 
   // Resolve current active entry for EntryDetail view
@@ -465,7 +471,7 @@ export default function App() {
             <div className="max-w-2xl mx-auto px-6 py-20 text-center space-y-4">
               <h2 className="font-editorial text-2xl text-black">Entry not found</h2>
               <p className="text-sm font-sans text-black/60 leading-relaxed">
-                The requested entry may have been moved, unpublished, or is a private draft under review.
+                The requested entry may have been moved, unpublished, or is a draft under review.
               </p>
               <button
                 onClick={() => navigateToView('index')}
@@ -481,14 +487,16 @@ export default function App() {
               entries={entries}
               tags={tags}
               siteSettings={siteSettings}
+              onArchivePublished={(bundle) => {
+                setEntries(bundle.entries); setTags(bundle.tags); setSiteSettings(bundle.settings);
+              }}
               onUpdateSiteSettings={handleUpdateSiteSettings}
               onAddNewEntry={handleCreateNewEntry}
               onEditEntry={handleEditEntry}
               onDeleteEntry={handleDeleteEntry}
               onToggleStatus={handleToggleStatus}
               onSelectEntry={handleSelectEntry}
-              onImportEntries={handleImportEntries}
-              onResetToSampleEntries={handleResetSampleEntries}
+              onImportArchive={handleImportArchive}
               onSaveEntry={handleSaveEntry}
               onBatchSaveEntries={handleBatchSaveEntries}
               onSaveTag={handleSaveTag}

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <defs>
+    <style>
+      .serif { font-family: 'Newsreader', Georgia, 'Songti SC', serif; }
+      .mono { font-family: 'IBM Plex Mono', Menlo, Monaco, monospace; font-size: 11px; fill: #666666; letter-spacing: 0.05em; }
+      .title { font-family: 'Newsreader', Georgia, 'Songti SC', serif; font-size: 26px; fill: #111111; font-weight: normal; }
+      .heading { font-family: 'Newsreader', Georgia, 'Songti SC', serif; font-size: 19px; fill: #222222; font-style: italic; }
+      .body { font-family: 'Source Sans 3', -apple-system, sans-serif; font-size: 14px; fill: #333333; line-height: 1.8; }
+      .annotation { font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11px; fill: #888888; font-style: italic; }
+    </style>
+  </defs>
+
+  <!-- Page Background with subtle paper tone -->
+  <rect width="1200" height="900" fill="#fcfbf9" stroke="#e5e3dd" stroke-width="1.5" />
+  
+  <line x1="600" y1="0" x2="600" y2="900" stroke="#e0ded8" stroke-width="1" stroke-dasharray="4,4" />
+
+  <!-- Header Folio -->
+  <text x="60" y="55" class="mono">述书: FACSIMILE OF LIBRARY INSCRIPTIONS · PRE-COMPOSED SPREAD 02</text>
+  <text x="1140" y="55" text-anchor="end" class="mono">pp. 4–5 (Spread 2)</text>
+  <line x1="60" y1="70" x2="1140" y2="70" stroke="#eeeeee" stroke-width="1" />
+
+  <!-- Main Content -->
+  <text x="60" y="130" class="title">Spread 02: Inscribed Folio 14 & Parallel Transcription</text>
+  
+  <text x="60" y="180" class="body">[Left Page: pp. 4] Facsimile Plate XIV — "To those who read while standing"</text><text x="60" y="212" class="body">Blue ballpoint ink on aged newsprint edition, provenance: Workers' Reading Room.</text><text x="60" y="244" class="body">Note reads: "Borrowed on rainy afternoon, returned after third reading."</text><text x="60" y="276" class="body">—</text><text x="60" y="308" class="body">[Right Page: pp. 5] Editorial Commentary & Typography Transcription</text><text x="60" y="340" class="body">Typeset in Newsreader serif body to mirror the cadence of the cursive inscription.</text><text x="60" y="372" class="body">Ink depletion occurs on the fourth line where the pen ran dry mid-sentence.</text>
+
+  
+  <rect x="60" y="770" width="1080" height="45" fill="#f5f3ee" stroke="#e8e6df" />
+  <text x="75" y="798" class="annotation">Spread 02 of 04 · Natural paper fold and gutter shadows preserved.</text>
+  
+
+  <!-- Footer Folio -->
+  <line x1="60" y1="840" x2="1140" y2="840" stroke="#eeeeee" stroke-width="1" />
+  <text x="600" y="865" text-anchor="middle" class="mono">— pp. 4–5 (Spread 2) —</text>
+</svg>

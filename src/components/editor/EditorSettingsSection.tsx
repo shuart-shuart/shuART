@@ -1,10 +1,9 @@
 import { DEFAULT_ABOUT, DEFAULT_FOOTER } from '../../data/siteContent';
 import { EditorSiteContentSection } from './EditorSiteContentSection';
 import { footerLinkHref } from '../Footer';
-import { isFirebaseConfigured } from '../../services/firebase';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { SiteSettings, TypographyCombo, NavItemConfig, Entry } from '../../types';
-import { DESIGNATED_EDITOR_EMAIL } from '../../services/firebase';
+import { DESIGNATED_EDITOR_EMAIL } from '../../services/mediaUploads';
 
 interface EditorSettingsSectionProps {
   siteSettings: SiteSettings;
@@ -26,6 +25,14 @@ export const EditorSettingsSection: React.FC<EditorSettingsSectionProps> = ({
 
   const [about, setAbout] = useState(() => siteSettings.about ?? DEFAULT_ABOUT);
   const [footer, setFooter] = useState(() => siteSettings.footer ?? DEFAULT_FOOTER);
+
+  useEffect(() => {
+    setAbout(siteSettings.about ?? DEFAULT_ABOUT);
+    setFooter(siteSettings.footer ?? DEFAULT_FOOTER);
+    setTypography(siteSettings.typography || 'a');
+    setShowWander(siteSettings.showWander ?? true);
+    setShowAbout(siteSettings.navOrder?.find(item => item.id === 'about')?.visible ?? true);
+  }, [siteSettings]);
 
   const [isSaving, setIsSaving] = useState(false);
   const [saveMessage, setSaveMessage] = useState<string | null>(null);
@@ -59,7 +66,7 @@ export const EditorSettingsSection: React.FC<EditorSettingsSectionProps> = ({
 
     try {
       await onUpdateSiteSettings(updated);
-      setSaveMessage(isFirebaseConfigured ? 'Site settings saved and applied.' : 'Saved in this browser. These edits are not yet published for other visitors.');
+      setSaveMessage('Draft saved. Click Publish to GitHub in the editor header to make these changes public.');
       setTimeout(() => setSaveMessage(null), 5000);
     } catch (err: any) {
       setSaveMessage(`Error saving settings: ${err.message || String(err)}`);
@@ -102,7 +109,7 @@ export const EditorSettingsSection: React.FC<EditorSettingsSectionProps> = ({
         </button>
       </div>
 
-      {!isFirebaseConfigured && <p className="text-xs text-black/60">Editor changes currently save in this browser only. To publish them through ChatGPT, export the archive after saving and attach the export here.</p>}
+      <p className="text-xs text-black/60">Save these settings to your draft, then use Publish to GitHub in the editor header.</p>
       <EditorSiteContentSection about={about} footer={footer} entries={entries} onAboutChange={setAbout} onFooterChange={setFooter} />
 
       {/* 1. Public Navigation Visibility */}

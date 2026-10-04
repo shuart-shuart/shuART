@@ -221,7 +221,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
           {entry.status === 'draft' && (
             <>
               <span aria-hidden="true" className="text-black/30">·</span>
-              <span className="text-amber-700 italic font-bold">[Draft — Private to Editor]</span>
+              <span className="text-amber-700 italic font-bold">[Draft — hidden from website]</span>
             </>
           )}
         </div>
@@ -362,7 +362,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
               Visual documentation and text pending review by artist.
             </p>
             <p className="text-[11px] font-mono-quiet text-black/40">
-              No placeholder images fabricated. Documentation, texts, documents, and videos can be uploaded directly in the private editor.
+              No placeholder images fabricated. Documentation, texts, documents, and videos can be uploaded directly in the GitHub editor.
             </p>
           </div>
         )}

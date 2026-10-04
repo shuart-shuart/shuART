@@ -1050,14 +1050,14 @@ export const EntryEditorModal: React.FC<EntryEditorModalProps> = ({
                     status === 'draft' ? 'bg-black text-white' : 'text-black/60 hover:text-black'
                   }`}
                 >
-                  Draft (Private to editor)
+                  Draft (browser draft only)
                 </button>
               </div>
             </div>
 
             <div className="space-y-1">
               <label className="block text-xs font-mono-quiet text-black/60">
-                Private Review Notes for Artist (never visible to public)
+                Review notes (browser draft and export backup only)
               </label>
               <input
                 type="text"

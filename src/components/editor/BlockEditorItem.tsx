@@ -10,7 +10,7 @@ import {
   Entry,
 } from '../../types';
 import { parseVideoUrl } from '../../services/videoEmbed';
-import { uploadEntryImageToStorage, uploadEntryFileToStorage } from '../../services/firebase';
+import { uploadEntryImageToStorage, uploadEntryFileToStorage } from '../../services/mediaUploads';
 import { FormattedField } from './FormattedField';
 
 interface BlockEditorItemProps {
