@@ -344,14 +344,20 @@
   "settings": {
     "about": {
       "title": "About",
-      "artistName": "Hong Shu-ying 方舒颖",
-      "biography": "Hong Shu-ying 方舒颖 (b. 1997) hoards images and stories to make sense of how things are learned and passed on. Working across moving images, prints, and printed matter, her practice begins with images, notations and other vernacular working documents in circulation. She is interested in the drifts, contradictions and adaptations that allow shared ways of knowing and working to remain legible as they pass through different hands and contexts.\n\nShe grew up in amateur Chinese orchestras, where learning took place through photocopied scores, handwritten annotations and imitation. Alongside this, she spent her teenage years collecting and reposting images online. These parallel habits shaped how she looks at vernacular working documents—not simply as records, but as evidence of how information, knowledge and conventions are continually transmitted, adjusted and kept alive through use.",
+      "artistName": "Hong Shu-ying 方舒颖 (b. 1997) hoards images and stories to make sense of how things are learned and passed on. ",
+      "biography": "Working across moving images, prints, and printed matter, her practice begins with images, notations and other vernacular working documents in circulation. She is interested in the drifts, contradictions and adaptations that allow shared ways of knowing and working to remain legible as they pass through different hands and contexts.\n\nShe grew up in amateur Chinese orchestras, where learning took place through photocopied scores, handwritten annotations and imitation. Alongside this, she spent her teenage years collecting and reposting images online. These parallel habits shaped how she looks at vernacular working documents—not simply as records, but as evidence of how information, knowledge and conventions are continually transmitted, adjusted and kept alive through use.",
       "sections": [
         {
           "id": "601cdd76-a762-4f96-a225-e2735fc7968e",
           "title": "",
-          "text": "This curiosity extends beyond the studio. She co-founded Part Time Book Club, an informal collective that expands public access to art books through gatherings and exchanges. In response to limited access to formal residencies and the demands of international travel, she also initiated |      | on paper, a resource-lean residency centred on conversations and four sheets of A4 paper, grounded in the belief that meaningful artistic exchange can grow from modest resources.\n\nHong Shu-ying received the Kwek Leng Joo Prize of Excellence in Photography and was featured in the 6th Women in Film and Photography Showcase by Objectifs Centre for Photography and Film (Singapore). She has presented solo exhibitions at Esplanade (Singapore, 2024) and Yao Alternative Art Space 窯座 (Taichung, 2024), with an upcoming presentation at RM Gallery (Auckland, 2026). Her work has also been shown at Three Shadows Xiamen Photography Art Centre and Pingyao International Photography Festival (China); Jakarta International Photography Festival (Indonesia); PRINTROOM (Netherlands); CICA Museum (South Korea); Pon Ding 朋丁 (Taiwan); and DECK, I_S_L_A_N_D_S Peninsula, Art Outreach, and ADM Gallery (Singapore). She holds a BFA (Hons) in Media Art (Photography) from the School of Art, Design and Media, Nanyang Technological University, Singapore, and is currently a resident at the Singapore Art Museum.",
-          "items": []
+          "text": "This curiosity extends beyond the studio. She co-founded Part Time Book Club, an informal collective that expands public access to art books through gatherings and exchanges. In response to limited access to formal residencies and the demands of international travel, she also initiated |      | on paper, a resource-lean residency centred on conversations and four sheets of A4 paper, grounded in the belief that meaningful artistic exchange can grow from modest resources.",
+          "items": [
+            {
+              "id": "e7ceb77c-0f7e-4d61-9dba-32000101af86",
+              "title": "",
+              "text": "Hong Shu-ying received the Kwek Leng Joo Prize of Excellence in Photography and was featured in the 6th Women in Film and Photography Showcase by Objectifs Centre for Photography and Film (SG). She has presented solo exhibitions at Esplanade (SG, 2024) and Yao Alternative Art Space 窯座 (TW, 2024), with an upcoming presentation at RM Gallery (NZ, 2026). Her work has also been shown at Three Shadows Xiamen Photography Art Centre and Pingyao International Photography Festival (CN); Jakarta International Photography Festival (IN); PRINTROOM (NL); CICA Museum (KR); Pon Ding 朋丁 (TW); and DECK, I_S_L_A_N_D_S Peninsula, Art Outreach, and ADM Gallery (SG). She holds a BFA (Hons) in Media Art (Photography) from the School of Art, Design and Media, Nanyang Technological University, Singapore. She was recently a resident at the Singapore Art Museum."
+            }
+          ]
         },
         {
           "id": "structure",
@@ -448,7 +454,7 @@
         "visible": true
       }
     ],
-    "updatedAt": "2026-10-04T18:18:08.136Z",
+    "updatedAt": "2026-10-04T18:27:14.444Z",
     "updatedBy": "work@anotherunit.xyz"
   }
 }
