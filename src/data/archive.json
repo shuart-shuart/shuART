@@ -37,13 +37,12 @@
       ],
       "isDevelopingWork": true,
       "createdAt": "2026-01-10T10:00:00Z",
-      "updatedAt": "2026-03-01T12:00:00Z",
+      "updatedAt": "2026-10-04T18:22:07.519Z",
       "tagIds": [
-        "tag-handwriting",
-        "tag-paper",
-        "tag-script",
-        "tag-transcription",
-        "tag-working-notes"
+        "tag-working-notes",
+        "tag-books",
+        "tag-libraries",
+        "tag-score"
       ],
       "associatedProjectIds": []
     },
@@ -87,14 +86,11 @@
       "isDevelopingWork": false,
       "ssCategory": "overview",
       "createdAt": "2026-01-01T08:00:00Z",
-      "updatedAt": "2026-10-04T17:56:18.656Z",
+      "updatedAt": "2026-10-04T18:23:03.630Z",
       "tagIds": [
         "tag-libraries",
-        "tag-publishing",
-        "tag-reading",
-        "tag-archiving",
-        "tag-conversation",
-        "tag-pedagogy"
+        "tag-books",
+        "tag-archives"
       ],
       "associatedProjectIds": []
     },
@@ -136,13 +132,12 @@
       "isDevelopingWork": false,
       "ssCategory": "programme",
       "createdAt": "2026-01-25T14:00:00Z",
-      "updatedAt": "2026-10-04T17:56:18.656Z",
+      "updatedAt": "2026-10-04T18:21:29.966Z",
       "tagIds": [
-        "tag-reading",
-        "tag-collective-study",
         "tag-books",
         "tag-libraries",
-        "tag-conversation"
+        "tag-archives",
+        "tag-spaceswo"
       ],
       "associatedProjectIds": [
         "ss-between-books-and-libraries"
@@ -170,18 +165,14 @@
         }
       ],
       "tagIds": [
-        "tag-paper",
         "tag-measurement",
-        "tag-silence",
-        "tag-drawing",
-        "tag-notation"
+        "tag-archives"
       ],
       "subjects": [
         "paper",
         "measurement",
         "silence",
-        "drawing",
-        "notation"
+        "drawing"
       ],
       "associatedProjectIds": [],
       "relatedEntryIds": [
@@ -191,7 +182,7 @@
       "status": "published",
       "isDevelopingWork": true,
       "createdAt": "2026-02-01T16:00:00Z",
-      "updatedAt": "2026-10-04T17:56:54.102Z"
+      "updatedAt": "2026-10-04T18:23:51.224Z"
     },
     {
       "id": "scores",
@@ -228,10 +219,9 @@
       ],
       "isDevelopingWork": false,
       "createdAt": "2026-02-05T10:00:00Z",
-      "updatedAt": "2026-10-04T17:56:16.290Z",
+      "updatedAt": "2026-10-04T18:24:11.669Z",
       "tagIds": [
         "tag-score",
-        "tag-notation",
         "tag-instruction",
         "tag-choreography",
         "tag-time"
@@ -274,13 +264,9 @@
       ],
       "isDevelopingWork": false,
       "createdAt": "2026-02-10T12:00:00Z",
-      "updatedAt": "2026-10-04T17:56:24.439Z",
+      "updatedAt": "2026-10-04T18:23:42.566Z",
       "tagIds": [
-        "tag-transcription",
-        "tag-imitation",
-        "tag-transmission",
-        "tag-study",
-        "tag-pedagogy"
+        "tag-archives"
       ],
       "associatedProjectIds": [
         "ss-between-books-and-libraries"
@@ -288,21 +274,6 @@
     }
   ],
   "tags": [
-    {
-      "id": "tag-transcription",
-      "label": "transcription",
-      "description": "Transcription as embodied close looking, cognitive pacing, and hand-copied texts.",
-      "linkedNoteId": "copying",
-      "createdAt": "2026-02-01T00:00:00Z",
-      "updatedAt": "2026-03-01T00:00:00Z"
-    },
-    {
-      "id": "tag-reading",
-      "label": "reading",
-      "description": "Collective and silent reading protocols enacted in public libraries and reading rooms.",
-      "createdAt": "2026-02-01T00:00:00Z",
-      "updatedAt": "2026-03-01T00:00:00Z"
-    },
     {
       "id": "tag-libraries",
       "label": "libraries",
@@ -312,132 +283,25 @@
     },
     {
       "id": "tag-score",
-      "label": "score",
+      "label": "scores and notation",
       "description": "Instructional scores, typographic line notations, and choreographies for silent readers.",
       "linkedNoteId": "scores",
       "createdAt": "2026-02-01T00:00:00Z",
-      "updatedAt": "2026-03-01T00:00:00Z"
-    },
-    {
-      "id": "tag-copying",
-      "label": "copying",
-      "description": "Copying (临摹 linmo / 抄录 chaolu) as an active epistemic method of close proximity.",
-      "linkedNoteId": "copying",
-      "createdAt": "2026-02-01T00:00:00Z",
-      "updatedAt": "2026-03-01T00:00:00Z"
-    },
-    {
-      "id": "tag-pedagogy",
-      "label": "pedagogy",
-      "description": "Unpressured study, listening constraints, and non-coercive collective environments.",
-      "createdAt": "2026-02-01T00:00:00Z",
-      "updatedAt": "2026-03-01T00:00:00Z"
-    },
-    {
-      "id": "tag-paper",
-      "label": "paper",
-      "description": "Paper studies, tactile surfaces, book weights, and material substrates.",
-      "createdAt": "2026-02-01T00:00:00Z",
-      "updatedAt": "2026-03-01T00:00:00Z"
-    },
-    {
-      "id": "tag-handwriting",
-      "label": "handwriting",
-      "description": "Handwritten notes, stroke pressure, and ink depletion markings.",
-      "createdAt": "2026-02-01T00:00:00Z",
-      "updatedAt": "2026-03-01T00:00:00Z"
-    },
-    {
-      "id": "tag-publishing",
-      "label": "publishing",
-      "description": "Artist books, small-edition zines, and printed multiples.",
-      "createdAt": "2026-02-01T00:00:00Z",
-      "updatedAt": "2026-03-01T00:00:00Z"
-    },
-    {
-      "id": "tag-archiving",
-      "label": "archiving",
-      "description": "Cataloguing marginalia, preserving library inscriptions, and record-keeping.",
-      "createdAt": "2026-02-01T00:00:00Z",
-      "updatedAt": "2026-03-01T00:00:00Z"
-    },
-    {
-      "id": "tag-notation",
-      "label": "notation",
-      "description": "Spatial and typographic notations for pacing attention and breath.",
-      "linkedNoteId": "scores",
-      "createdAt": "2026-02-01T00:00:00Z",
-      "updatedAt": "2026-03-01T00:00:00Z"
-    },
-    {
-      "id": "tag-conversation",
-      "label": "conversation",
-      "description": "Discursive dialogues, reading discussions, and recorded exchanges.",
-      "createdAt": "2026-02-01T00:00:00Z",
-      "updatedAt": "2026-03-01T00:00:00Z"
-    },
-    {
-      "id": "tag-imitation",
-      "label": "imitation",
-      "description": "Imitative exercises and vocal/spatial attempts to inhabit an original structure.",
-      "createdAt": "2026-02-01T00:00:00Z",
-      "updatedAt": "2026-03-01T00:00:00Z"
+      "updatedAt": "2026-10-04T18:24:04.467Z"
     },
     {
       "id": "tag-time",
-      "label": "time",
+      "label": "time and the durational",
       "description": "Duration, pacing, intervals, and silent pauses.",
       "createdAt": "2026-02-01T00:00:00Z",
-      "updatedAt": "2026-03-01T00:00:00Z"
-    },
-    {
-      "id": "tag-collective-study",
-      "label": "collective study",
-      "description": "Collaborative, shared study sessions and reading circles.",
-      "createdAt": "2026-02-01T00:00:00Z",
-      "updatedAt": "2026-03-01T00:00:00Z"
+      "updatedAt": "2026-10-04T18:21:46.893Z"
     },
     {
       "id": "tag-books",
-      "label": "books",
+      "label": "books and bookish things",
       "description": "Books as bound tactile objects, reading material, and collected fragments.",
       "createdAt": "2026-02-01T00:00:00Z",
-      "updatedAt": "2026-03-01T00:00:00Z"
-    },
-    {
-      "id": "tag-book-spreads",
-      "label": "book spreads",
-      "description": "Paired facing pages and marginal inscriptions preserved across open spreads.",
-      "createdAt": "2026-02-01T00:00:00Z",
-      "updatedAt": "2026-03-01T00:00:00Z"
-    },
-    {
-      "id": "tag-facsimile",
-      "label": "facsimile",
-      "description": "Archival facsimiles reproducing original page layout and handwritten notes.",
-      "createdAt": "2026-02-01T00:00:00Z",
-      "updatedAt": "2026-03-01T00:00:00Z"
-    },
-    {
-      "id": "tag-inscriptions",
-      "label": "inscriptions",
-      "description": "Reader marginalia, library stamps, and dated inscriptions.",
-      "createdAt": "2026-02-01T00:00:00Z",
-      "updatedAt": "2026-03-01T00:00:00Z"
-    },
-    {
-      "id": "tag-cadence",
-      "label": "cadence",
-      "description": "Rhythm of transcription and vocal turnover.",
-      "createdAt": "2026-02-01T00:00:00Z",
-      "updatedAt": "2026-03-01T00:00:00Z"
-    },
-    {
-      "id": "tag-script",
-      "label": "script",
-      "description": "Manuscripts, calligraphy studies, and handwritten fragments.",
-      "createdAt": "2026-02-01T00:00:00Z",
-      "updatedAt": "2026-03-01T00:00:00Z"
+      "updatedAt": "2026-10-04T18:22:26.022Z"
     },
     {
       "id": "tag-working-notes",
@@ -447,53 +311,34 @@
       "updatedAt": "2026-03-01T00:00:00Z"
     },
     {
-      "id": "tag-silence",
-      "label": "silence",
-      "description": "Silence as an active spatial presence in libraries and performances.",
-      "createdAt": "2026-02-01T00:00:00Z",
-      "updatedAt": "2026-03-01T00:00:00Z"
+      "id": "tag-archives",
+      "label": "archives and records",
+      "createdAt": "2026-10-04T18:20:49.913Z",
+      "updatedAt": "2026-10-04T18:20:49.913Z"
     },
     {
-      "id": "tag-drawing",
-      "label": "drawing",
-      "description": "Graphic marks, line studies, and ink notations.",
-      "createdAt": "2026-02-01T00:00:00Z",
-      "updatedAt": "2026-03-01T00:00:00Z"
+      "id": "tag-spaceswo",
+      "label": "spaces without space",
+      "createdAt": "2026-10-04T18:21:23.755Z",
+      "updatedAt": "2026-10-04T18:21:23.755Z"
     },
     {
-      "id": "tag-discipline",
-      "label": "discipline",
-      "description": "Practice regimens and self-imposed artistic constraints.",
-      "createdAt": "2026-02-01T00:00:00Z",
-      "updatedAt": "2026-03-01T00:00:00Z"
+      "id": "tag-learning",
+      "label": "learning? pedagogy?",
+      "createdAt": "2026-10-04T18:22:37.399Z",
+      "updatedAt": "2026-10-04T18:22:37.399Z"
     },
     {
-      "id": "tag-voice",
-      "label": "voice",
-      "description": "Vocal recitation, cantabile cadences, and speech intervals.",
-      "createdAt": "2026-02-01T00:00:00Z",
-      "updatedAt": "2026-03-01T00:00:00Z"
+      "id": "tag-jianpu",
+      "label": "jianpu",
+      "createdAt": "2026-10-04T18:22:44.089Z",
+      "updatedAt": "2026-10-04T18:22:44.089Z"
     },
     {
-      "id": "tag-transmission",
-      "label": "transmission",
-      "description": "Passing on knowledge, pedagogical lineages, and transcribed texts.",
-      "createdAt": "2026-02-01T00:00:00Z",
-      "updatedAt": "2026-03-01T00:00:00Z"
-    },
-    {
-      "id": "tag-study",
-      "label": "study",
-      "description": "Inquiries and open-ended study beyond institutional examinations.",
-      "createdAt": "2026-02-01T00:00:00Z",
-      "updatedAt": "2026-03-01T00:00:00Z"
-    },
-    {
-      "id": "tag-ss",
-      "label": "ss",
-      "description": "述书 / SS: between books & libraries inquiry framework.",
-      "createdAt": "2026-02-01T00:00:00Z",
-      "updatedAt": "2026-03-01T00:00:00Z"
+      "id": "tag-copy",
+      "label": "copying and copies",
+      "createdAt": "2026-10-04T18:23:33.749Z",
+      "updatedAt": "2026-10-04T18:23:33.749Z"
     }
   ],
   "settings": {
