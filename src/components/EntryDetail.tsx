@@ -5,6 +5,7 @@ import { getEntryBlocks } from '../services/blockUtils';
 import { ImageLightbox } from './ImageLightbox';
 import { DocumentReader } from './DocumentReader';
 import { VideoPlayer } from './VideoPlayer';
+import { EntryHistory } from './EntryHistory';
 
 interface EntryDetailProps {
   entry: Entry;
@@ -367,6 +368,8 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
           </div>
         )}
       </div>
+
+      <EntryHistory entry={entry} allEntries={allEntries} onSelectEntry={onSelectEntry} />
 
       {/* Canonical Tags & Subjects */}
       {entryTags.length > 0 && (

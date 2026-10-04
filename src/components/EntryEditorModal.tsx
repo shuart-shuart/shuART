@@ -500,7 +500,7 @@ export const EntryEditorModal: React.FC<EntryEditorModalProps> = ({
         shortDescription: shortDescription.trim(),
         credits: credits.filter((c) => c.name.trim() || c.link?.trim()),
         presentationHistory: presentationHistory.filter(
-          (p) => p.title.trim() || p.venue.trim() || p.location.trim()
+          (p) => [p.title, p.venue, p.location, p.date, p.curator, p.link, p.note].some(value => value?.trim())
         ),
         fullText: '',
         images: [],
@@ -803,6 +803,63 @@ export const EntryEditorModal: React.FC<EntryEditorModalProps> = ({
               />
             </div>
           </div>
+
+          <section className="space-y-4 pt-4 border-t border-black/10" aria-label="Additional Credits">
+            <div className="flex items-center justify-between gap-3">
+              <h3 className="font-mono-quiet text-xs uppercase tracking-wider">Additional Credits</h3>
+              <button type="button" onClick={handleAddCredit} className="border border-black/30 px-3 py-1 text-xs">+ Add Credit</button>
+            </div>
+            <p className="text-xs text-black/60">Publishers, collaborators, editors, designers, translators, printers, commissioners, and other contributors.</p>
+            {credits.length === 0 && <p className="text-xs text-black/40">No credits added yet.</p>}
+            {credits.map((credit, index) => (
+              <fieldset key={credit.id} className="border border-black/15 p-4 space-y-3">
+                <legend className="text-xs font-mono-quiet">Credit {index + 1}</legend>
+                <label className="block text-xs">Role
+                  <select aria-label={`Credit ${index + 1} role`} value={credit.role} onChange={e => handleUpdateCredit(index, { role: e.target.value as CreditRole })} className="block w-full border border-black/20 p-2 mt-1 bg-white">
+                    {Array.from(new Set(['publisher', 'collaborator', 'editor', 'designer', 'translator', 'printer', 'commissioner', 'custom', credit.role])).map(role => <option key={role} value={role}>{role === 'custom' ? 'Other / Custom' : role.charAt(0).toUpperCase() + role.slice(1)}</option>)}
+                  </select>
+                </label>
+                {credit.role === 'custom' && <FormattedField label="Custom Role" value={credit.customRole || ''} onChange={value => handleUpdateCredit(index, { customRole: value })} allEntries={allEntries} />}
+                <FormattedField label="Name / Organisation" value={credit.name} onChange={value => handleUpdateCredit(index, { name: value })} allEntries={allEntries} />
+                <label className="block text-xs">Link (optional)
+                  <input aria-label={`Credit ${index + 1} link`} value={credit.link || ''} onChange={e => handleUpdateCredit(index, { link: e.target.value })} placeholder="https://…" className="block w-full border border-black/20 p-2 mt-1" />
+                </label>
+                <div className="flex gap-4 text-xs">
+                  <button type="button" aria-label={`Move credit ${index + 1} up`} disabled={index === 0} onClick={() => handleMoveCredit(index, 'up')} className="disabled:opacity-30">↑ Up</button>
+                  <button type="button" aria-label={`Move credit ${index + 1} down`} disabled={index === credits.length - 1} onClick={() => handleMoveCredit(index, 'down')} className="disabled:opacity-30">↓ Down</button>
+                  <button type="button" onClick={() => handleRemoveCredit(index)} className="text-red-700">Remove Credit {index + 1}</button>
+                </div>
+              </fieldset>
+            ))}
+          </section>
+
+          <section className="space-y-4 pt-4 border-t border-black/10" aria-label="Provenance / Presentation History">
+            <div className="flex items-center justify-between gap-3">
+              <h3 className="font-mono-quiet text-xs uppercase tracking-wider">Provenance / Presentation History</h3>
+              <button type="button" onClick={handleAddPresentation} className="border border-black/30 px-3 py-1 text-xs">+ Add Record</button>
+            </div>
+            <p className="text-xs text-black/60">Exhibitions, programmes, presentations, and the work’s history. Records appear publicly in the order shown.</p>
+            {presentationHistory.length === 0 && <p className="text-xs text-black/40">No history records added yet.</p>}
+            {presentationHistory.map((record, index) => (
+              <fieldset key={record.id} className="border border-black/15 p-4 space-y-3">
+                <legend className="text-xs font-mono-quiet">History Record {index + 1}</legend>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {([['title', 'Exhibition / Programme / Event'], ['venue', 'Venue / Institution'], ['location', 'Location'], ['date', 'Date / Year'], ['curator', 'Curator / Organiser']] as const).map(([key, label]) => (
+                    <FormattedField key={key} label={label} value={record[key] || ''} onChange={value => handleUpdatePresentation(index, { [key]: value })} allEntries={allEntries} />
+                  ))}
+                  <label className="block text-xs">Link (optional)
+                    <input aria-label={`History record ${index + 1} link`} value={record.link || ''} onChange={e => handleUpdatePresentation(index, { link: e.target.value })} placeholder="https://…" className="block w-full border border-black/20 p-2 mt-1" />
+                  </label>
+                </div>
+                <FormattedField label="Note (public)" value={record.note || ''} onChange={value => handleUpdatePresentation(index, { note: value })} multiline allEntries={allEntries} />
+                <div className="flex gap-4 text-xs">
+                  <button type="button" aria-label={`Move history record ${index + 1} up`} disabled={index === 0} onClick={() => handleMovePresentation(index, 'up')} className="disabled:opacity-30">↑ Up</button>
+                  <button type="button" aria-label={`Move history record ${index + 1} down`} disabled={index === presentationHistory.length - 1} onClick={() => handleMovePresentation(index, 'down')} className="disabled:opacity-30">↓ Down</button>
+                  <button type="button" onClick={() => handleRemovePresentation(index)} className="text-red-700">Remove Record {index + 1}</button>
+                </div>
+              </fieldset>
+            ))}
+          </section>
 
           {/* Section 2: Ordered Content Blocks (Text, Galleries, Document Readers, Videos) */}
           <div className="space-y-5 pt-4 border-t border-black/10">
