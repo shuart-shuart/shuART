@@ -16,6 +16,7 @@ import { Entry } from '../types';
  */
 
 export interface RenderFormattedOptions {
+  disableLinks?: boolean;
   allEntries?: Entry[];
   onSelectEntry?: (slugOrId: string) => void;
   className?: string;
@@ -81,6 +82,11 @@ export function renderFormattedText(
     else if (match[2] !== undefined && match[3] !== undefined) {
       const label = match[2];
       const rawUrl = match[3].trim();
+      if (options.disableLinks) {
+        elements.push(<React.Fragment key={`label-${keyCounter++}`}>{renderFormattedText(label, options)}</React.Fragment>);
+        lastIndex = combinedRegex.lastIndex;
+        continue;
+      }
 
       const isInternal =
         rawUrl.startsWith('#entry/') || rawUrl.startsWith('entry/');
@@ -157,7 +163,9 @@ export function renderFormattedText(
           (e.titleZh && e.titleZh.toLowerCase() === targetIdentifier.toLowerCase())
       );
 
-      if (found && onSelectEntry) {
+      if (options.disableLinks) {
+        elements.push(wikiLabel || found?.title || targetIdentifier);
+      } else if (found && onSelectEntry) {
         elements.push(
           <button
             key={`wiki-${keyCounter++}`}

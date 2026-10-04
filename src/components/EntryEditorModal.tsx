@@ -248,6 +248,8 @@ export const EntryEditorModal: React.FC<EntryEditorModalProps> = ({
   const handleAddPresentation = () => {
     const newRecord: PresentationRecord = {
       id: `pres-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 6)}`,
+      action: 'shown',
+      attribution: 'curated',
       title: '',
       venue: '',
       location: '',
@@ -838,13 +840,23 @@ export const EntryEditorModal: React.FC<EntryEditorModalProps> = ({
               <h3 className="font-mono-quiet text-xs uppercase tracking-wider">Provenance / Presentation History</h3>
               <button type="button" onClick={handleAddPresentation} className="border border-black/30 px-3 py-1 text-xs">+ Add Record</button>
             </div>
-            <p className="text-xs text-black/60">Exhibitions, programmes, presentations, and the work’s history. Records appear publicly in the order shown.</p>
+            <p className="text-xs text-black/60">Records become sentences using the work title, action, event, venue, year, and attribution. Link the event using the URL below; names can also contain inline hyperlinks.</p>
             {presentationHistory.length === 0 && <p className="text-xs text-black/40">No history records added yet.</p>}
             {presentationHistory.map((record, index) => (
               <fieldset key={record.id} className="border border-black/15 p-4 space-y-3">
                 <legend className="text-xs font-mono-quiet">History Record {index + 1}</legend>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {([['title', 'Exhibition / Programme / Event'], ['venue', 'Venue / Institution'], ['location', 'Location'], ['date', 'Date / Year'], ['curator', 'Curator / Organiser']] as const).map(([key, label]) => (
+                  <label className="block text-xs">The work was
+                    <select aria-label={`History record ${index + 1} action`} value={record.action || 'presented'} onChange={e => handleUpdatePresentation(index, { action: e.target.value as PresentationRecord['action'] })} className="block w-full border border-black/20 p-2 mt-1 bg-white">
+                      {['launched', 'commissioned', 'shown', 'screened', 'presented'].map(action => <option key={action} value={action}>{action}</option>)}
+                    </select>
+                  </label>
+                  <label className="block text-xs">Attribution
+                    <select aria-label={`History record ${index + 1} attribution`} value={record.attribution || 'curated'} onChange={e => handleUpdatePresentation(index, { attribution: e.target.value as PresentationRecord['attribution'] })} className="block w-full border border-black/20 p-2 mt-1 bg-white">
+                      {['curated', 'programmed', 'organised'].map(role => <option key={role} value={role}>{role} by</option>)}
+                    </select>
+                  </label>
+                  {([['title', 'Exhibition / Programme / Event'], ['venue', 'Venue / Institution'], ['location', 'Location'], ['date', 'Date / Year'], ['curator', 'Curator / Programmer / Organiser']] as const).map(([key, label]) => (
                     <FormattedField key={key} label={label} value={record[key] || ''} onChange={value => handleUpdatePresentation(index, { [key]: value })} allEntries={allEntries} />
                   ))}
                   <label className="block text-xs">Link (optional)
