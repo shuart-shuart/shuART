@@ -848,7 +848,7 @@ export const EntryEditorModal: React.FC<EntryEditorModalProps> = ({
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <label className="block text-xs">The work was
                     <select aria-label={`History record ${index + 1} action`} value={record.action || 'presented'} onChange={e => handleUpdatePresentation(index, { action: e.target.value as PresentationRecord['action'] })} className="block w-full border border-black/20 p-2 mt-1 bg-white">
-                      {['launched', 'commissioned', 'shown', 'screened', 'presented'].map(action => <option key={action} value={action}>{action}</option>)}
+                      {['launched', 'commissioned', 'shown', 'screened', 'developed', 'presented'].map(action => <option key={action} value={action}>{action}</option>)}
                     </select>
                   </label>
                   <label className="block text-xs">Attribution

@@ -113,7 +113,7 @@ export interface EntryCredit {
 }
 
 export interface PresentationRecord {
-  action?: 'launched' | 'commissioned' | 'shown' | 'screened' | 'presented';
+  action?: 'launched' | 'commissioned' | 'shown' | 'screened' | 'developed' | 'presented';
   attribution?: 'curated' | 'programmed' | 'organised';
   id: string;
   title: string;
