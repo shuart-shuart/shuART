@@ -1,0 +1,8 @@
+{
+  "name": "Hong Shu-ying 方舒颖 — Art Archive",
+  "description": "An evolving index and archive of Hong Shu-ying 方舒颖's practice, works, projects, and 述书 / SS: between books & libraries.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

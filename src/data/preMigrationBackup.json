@@ -1,0 +1,761 @@
+{
+  "backupTimestamp": "2026-10-04T14:45:00.000Z",
+  "description": "Pre-migration archive backup of hongshuying site before tag and project streamline",
+  "entriesCount": 12,
+  "entries": [
+    {
+      "id": "instructional-scores-pdf",
+      "slug": "instructional-scores-pdf",
+      "title": "Instructional Scores for Reading Rooms (Score Sheet No. 4)",
+      "titleZh": "阅览室指令乐谱（第4号乐谱）",
+      "type": "publication",
+      "status": "published",
+      "date": "2023",
+      "datePlaceholder": false,
+      "medium": "Printed facsimile booklet, A4, 16 pages, thread sewn",
+      "dimensions": "21 × 29.7 cm",
+      "shortDescription": "A multi-page instructional score and performance facsimile for silent reading rooms, published in edition with selectable text and downloadable PDF.",
+      "fullText": "A published multi-page score containing typographic choreographies, silent reading rules, and transcription constraints for public libraries.\n    \nDesigned to be opened upon communal library desks. Readers follow pacing notations, intervals of quiet turning, and ink depletion markings.",
+      "subjects": [
+        "score",
+        "pdf",
+        "document reader",
+        "reading",
+        "libraries",
+        "transcription"
+      ],
+      "relatedEntryIds": [
+        "scores",
+        "ss-between-books-and-libraries",
+        "part-time-book-club-zine"
+      ],
+      "collections": [
+        "ss",
+        "works"
+      ],
+      "images": [],
+      "isDevelopingWork": false,
+      "notesForArtist": "Multi-page PDF test entry. Features progressive rendering, page zoom, text selection, and direct PDF download.",
+      "blocks": [
+        {
+          "id": "block-pdf-text-intro",
+          "type": "text",
+          "content": "“Instructional Scores for Reading Rooms (Score Sheet No. 4)” compiles sixteen instructional protocols enacted across public reading rooms.\n        \nRather than conventional musical notation, the score uses typographic line lengths, caesura gaps, and margins to pace the reader's breath and page turnover.\n\nUse the embedded PDF reader below to page through the facsimile with selectable text, zoom into fine typographic details, or download the original PDF file."
+        },
+        {
+          "id": "block-pdf-reader",
+          "type": "document_reader",
+          "title": "Instructional Scores for Reading Rooms (Score Sheet No. 4) — PDF Facsimile",
+          "sourceType": "pdf",
+          "pdfUrl": "/instructional-scores-reading-rooms-no4.pdf",
+          "pdfFileName": "instructional-scores-reading-rooms-no4.pdf",
+          "pdfFileSize": "993 KB",
+          "originalFileUrl": "/instructional-scores-reading-rooms-no4.pdf",
+          "originalFileName": "instructional-scores-reading-rooms-no4.pdf",
+          "allowDownload": true,
+          "description": "Archival PDF facsimile (14 pages). Typeset score sheet with selectable text, paired spread views, zoom, and progress indicator."
+        },
+        {
+          "id": "block-pdf-text-colophon",
+          "type": "text",
+          "content": "Performance parameters:\n- To be read in silent public libraries without audio amplification.\n- Readers may enact Score No. 4 individually or in pairs across facing tables.\n- Consult related publication [[part-time-book-club-zine]] and research project [[ss-between-books-and-libraries]]."
+        }
+      ],
+      "createdAt": "2026-02-12T09:00:00Z",
+      "updatedAt": "2026-03-10T14:00:00Z",
+      "tagIds": [
+        "tag-score",
+        "tag-pdf",
+        "tag-document-reader",
+        "tag-reading",
+        "tag-libraries",
+        "tag-transcription"
+      ],
+      "associatedProjectIds": [
+        "ss-between-books-and-libraries"
+      ]
+    },
+    {
+      "id": "part-time-book-club-zine",
+      "slug": "part-time-book-club-zine",
+      "title": "Part Time Book Club: Issue 01 (Reading Transcript Zine)",
+      "titleZh": "兼职读书会 第一期：阅读室听记",
+      "type": "publication",
+      "status": "published",
+      "date": "2022",
+      "datePlaceholder": false,
+      "medium": "Risograph printed zine, black soy ink on 80gsm book paper, 6 pages",
+      "dimensions": "14.8 × 21 cm (A5)",
+      "shortDescription": "A 6-page transcribed reading transcript zine documenting the first collective reading session of the Part Time Book Club, presented with single and paired-spread viewing.",
+      "fullText": "Issue 01 of the Part Time Book Club zine collects transcriptions, reading protocols, and reader marginalia from the October 2022 reading session in Shanghai.",
+      "subjects": [
+        "zine",
+        "reading",
+        "transcription",
+        "publishing",
+        "ss",
+        "document reader"
+      ],
+      "relatedEntryIds": [
+        "part-time-book-club",
+        "ss-between-books-and-libraries",
+        "facsimile-inscriptions-spreads"
+      ],
+      "collections": [
+        "ss"
+      ],
+      "images": [],
+      "isDevelopingWork": false,
+      "ssCategory": "book",
+      "notesForArtist": "Image-based zine test entry. Features single-page and paired-page (spread) viewing, thumbnails strip, zoom, and fullscreen.",
+      "blocks": [
+        {
+          "id": "block-zine-text-1",
+          "type": "text",
+          "content": "The Part Time Book Club zine is printed in small batches on risograph duplicators and distributed directly to session attendees.\n        \nIssue 01 establishes the foundational methodology of [[part-time-book-club]]: reading silently together, slowing transcription speed to match the hand, and sharing an unpressured collective environment.\n\nBelow is the complete 6-page document reader. On desktop, you can switch between **Single Page** and **Paired Page (Spread)** viewing; on mobile devices, it automatically defaults to a clean single-page presentation."
+        },
+        {
+          "id": "block-zine-reader",
+          "type": "document_reader",
+          "title": "Part Time Book Club: Issue 01 — Full Zine Reader",
+          "sourceType": "page_images",
+          "pageType": "individual_pages",
+          "pages": [
+            {
+              "id": "zine-p1",
+              "pageNumber": 1,
+              "url": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20700%20900%22%20width%3D%22700%22%20height%3D%22900%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20.serif%20%7B%20font-family%3A%20'Newsreader'%2C%20Georgia%2C%20'Songti%20SC'%2C%20serif%3B%20%7D%0A%20%20%20%20%20%20.mono%20%7B%20font-family%3A%20'IBM%20Plex%20Mono'%2C%20Menlo%2C%20Monaco%2C%20monospace%3B%20font-size%3A%2011px%3B%20fill%3A%20%23666666%3B%20letter-spacing%3A%200.05em%3B%20%7D%0A%20%20%20%20%20%20.title%20%7B%20font-family%3A%20'Newsreader'%2C%20Georgia%2C%20'Songti%20SC'%2C%20serif%3B%20font-size%3A%2026px%3B%20fill%3A%20%23111111%3B%20font-weight%3A%20normal%3B%20%7D%0A%20%20%20%20%20%20.heading%20%7B%20font-family%3A%20'Newsreader'%2C%20Georgia%2C%20'Songti%20SC'%2C%20serif%3B%20font-size%3A%2019px%3B%20fill%3A%20%23222222%3B%20font-style%3A%20italic%3B%20%7D%0A%20%20%20%20%20%20.body%20%7B%20font-family%3A%20'Source%20Sans%203'%2C%20-apple-system%2C%20sans-serif%3B%20font-size%3A%2014px%3B%20fill%3A%20%23333333%3B%20line-height%3A%201.8%3B%20%7D%0A%20%20%20%20%20%20.annotation%20%7B%20font-family%3A%20'IBM%20Plex%20Mono'%2C%20Menlo%2C%20monospace%3B%20font-size%3A%2011px%3B%20fill%3A%20%23888888%3B%20font-style%3A%20italic%3B%20%7D%0A%20%20%20%20%3C%2Fstyle%3E%0A%20%20%3C%2Fdefs%3E%0A%0A%20%20%3C!--%20Page%20Background%20with%20subtle%20paper%20tone%20--%3E%0A%20%20%3Crect%20width%3D%22700%22%20height%3D%22900%22%20fill%3D%22%23fcfbf9%22%20stroke%3D%22%23e5e3dd%22%20stroke-width%3D%221.5%22%20%2F%3E%0A%20%20%0A%20%20%0A%0A%20%20%3C!--%20Header%20Folio%20--%3E%0A%20%20%3Ctext%20x%3D%2260%22%20y%3D%2255%22%20class%3D%22mono%22%3EPART%20TIME%20BOOK%20CLUB%20%C2%B7%20ISSUE%2001%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22640%22%20y%3D%2255%22%20text-anchor%3D%22end%22%20class%3D%22mono%22%3ECover%20%2F%20p.%201%3C%2Ftext%3E%0A%20%20%3Cline%20x1%3D%2260%22%20y1%3D%2270%22%20x2%3D%22640%22%20y2%3D%2270%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22%20%2F%3E%0A%0A%20%20%3C!--%20Main%20Content%20--%3E%0A%20%20%3Ctext%20x%3D%2260%22%20y%3D%22130%22%20class%3D%22title%22%3E%E5%85%BC%E8%81%8C%E8%AF%BB%E4%B9%A6%E4%BC%9A%20%E7%AC%AC%E4%B8%80%E6%9C%9F%EF%BC%9A%E9%98%85%E8%AF%BB%E5%AE%A4%E5%90%AC%E8%AE%B0%3C%2Ftext%3E%0A%20%20%0A%20%20%3Ctext%20x%3D%2260%22%20y%3D%22180%22%20class%3D%22body%22%3EPART%20TIME%20BOOK%20CLUB%20%E2%80%94%20ISSUE%20NO.%201%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22212%22%20class%3D%22body%22%3EReading%20Room%20Transcripts%20%26%20Working%20Notations%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22244%22%20class%3D%22body%22%3EPublished%20in%20an%20edition%20of%20120%20copies%2C%20risograph%20printed%20on%2080gsm%20book%20paper.%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22276%22%20class%3D%22body%22%3ECompiled%20by%20Hong%20Shu-ying%20%E6%96%B9%E8%88%92%E9%A2%96%20in%20dialogue%20with%20reading%20group%20participants.%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22308%22%20class%3D%22body%22%3EConvened%20between%202022%20and%202024%20across%20three%20independent%20library%20spaces.%3C%2Ftext%3E%0A%0A%20%20%0A%20%20%3Crect%20x%3D%2260%22%20y%3D%22770%22%20width%3D%22580%22%20height%3D%2245%22%20fill%3D%22%23f5f3ee%22%20stroke%3D%22%23e8e6df%22%20%2F%3E%0A%20%20%3Ctext%20x%3D%2275%22%20y%3D%22798%22%20class%3D%22annotation%22%3EFolio%20note%3A%20Cover%20printed%20with%20black%20soy%20ink%20on%20unbleached%20warm%20white%20stock.%3C%2Ftext%3E%0A%20%20%0A%0A%20%20%3C!--%20Footer%20Folio%20--%3E%0A%20%20%3Cline%20x1%3D%2260%22%20y1%3D%22840%22%20x2%3D%22640%22%20y2%3D%22840%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22%20%2F%3E%0A%20%20%3Ctext%20x%3D%22350%22%20y%3D%22865%22%20text-anchor%3D%22middle%22%20class%3D%22mono%22%3E%E2%80%94%20Cover%20%2F%20p.%201%20%E2%80%94%3C%2Ftext%3E%0A%3C%2Fsvg%3E",
+              "caption": "Cover: Part Time Book Club Issue 01, risograph printed on warm book paper."
+            },
+            {
+              "id": "zine-p2",
+              "pageNumber": 2,
+              "url": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20700%20900%22%20width%3D%22700%22%20height%3D%22900%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20.serif%20%7B%20font-family%3A%20'Newsreader'%2C%20Georgia%2C%20'Songti%20SC'%2C%20serif%3B%20%7D%0A%20%20%20%20%20%20.mono%20%7B%20font-family%3A%20'IBM%20Plex%20Mono'%2C%20Menlo%2C%20Monaco%2C%20monospace%3B%20font-size%3A%2011px%3B%20fill%3A%20%23666666%3B%20letter-spacing%3A%200.05em%3B%20%7D%0A%20%20%20%20%20%20.title%20%7B%20font-family%3A%20'Newsreader'%2C%20Georgia%2C%20'Songti%20SC'%2C%20serif%3B%20font-size%3A%2026px%3B%20fill%3A%20%23111111%3B%20font-weight%3A%20normal%3B%20%7D%0A%20%20%20%20%20%20.heading%20%7B%20font-family%3A%20'Newsreader'%2C%20Georgia%2C%20'Songti%20SC'%2C%20serif%3B%20font-size%3A%2019px%3B%20fill%3A%20%23222222%3B%20font-style%3A%20italic%3B%20%7D%0A%20%20%20%20%20%20.body%20%7B%20font-family%3A%20'Source%20Sans%203'%2C%20-apple-system%2C%20sans-serif%3B%20font-size%3A%2014px%3B%20fill%3A%20%23333333%3B%20line-height%3A%201.8%3B%20%7D%0A%20%20%20%20%20%20.annotation%20%7B%20font-family%3A%20'IBM%20Plex%20Mono'%2C%20Menlo%2C%20monospace%3B%20font-size%3A%2011px%3B%20fill%3A%20%23888888%3B%20font-style%3A%20italic%3B%20%7D%0A%20%20%20%20%3C%2Fstyle%3E%0A%20%20%3C%2Fdefs%3E%0A%0A%20%20%3C!--%20Page%20Background%20with%20subtle%20paper%20tone%20--%3E%0A%20%20%3Crect%20width%3D%22700%22%20height%3D%22900%22%20fill%3D%22%23fcfbf9%22%20stroke%3D%22%23e5e3dd%22%20stroke-width%3D%221.5%22%20%2F%3E%0A%20%20%0A%20%20%0A%0A%20%20%3C!--%20Header%20Folio%20--%3E%0A%20%20%3Ctext%20x%3D%2260%22%20y%3D%2255%22%20class%3D%22mono%22%3EPART%20TIME%20BOOK%20CLUB%20%C2%B7%20ISSUE%2001%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22640%22%20y%3D%2255%22%20text-anchor%3D%22end%22%20class%3D%22mono%22%3Ep.%202%3C%2Ftext%3E%0A%20%20%3Cline%20x1%3D%2260%22%20y1%3D%2270%22%20x2%3D%22640%22%20y2%3D%2270%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22%20%2F%3E%0A%0A%20%20%3C!--%20Main%20Content%20--%3E%0A%20%20%3Ctext%20x%3D%2260%22%20y%3D%22130%22%20class%3D%22title%22%3EColophon%20%26%20Reader%20Protocols%3C%2Ftext%3E%0A%20%20%0A%20%20%3Ctext%20x%3D%2260%22%20y%3D%22180%22%20class%3D%22body%22%3E1.%20Reading%20is%20treated%20as%20an%20involuntary%20physical%20practice%2C%20not%20an%20intellectual%20tournament.%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22212%22%20class%3D%22body%22%3E2.%20Participants%20read%20silently%20together%20for%20forty-five%20minutes%20before%20any%20voice%20is%20spoken.%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22244%22%20class%3D%22body%22%3E3.%20Every%20reader%20holds%20a%20soft%20graphite%20pencil%3B%20involuntary%20underlinings%20are%20transcribed.%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22276%22%20class%3D%22body%22%3E4.%20Pages%20copied%20during%20the%20session%20enter%20the%20circulating%20archive%20of%20%E8%BF%B0%E4%B9%A6%20%2F%20SS.%3C%2Ftext%3E%0A%0A%20%20%0A%20%20%3Crect%20x%3D%2260%22%20y%3D%22770%22%20width%3D%22580%22%20height%3D%2245%22%20fill%3D%22%23f5f3ee%22%20stroke%3D%22%23e8e6df%22%20%2F%3E%0A%20%20%3Ctext%20x%3D%2275%22%20y%3D%22798%22%20class%3D%22annotation%22%3EProtocol%20registered%20on%2014%20October%202022%20at%20the%20Sub-library%20Reading%20Room.%3C%2Ftext%3E%0A%20%20%0A%0A%20%20%3C!--%20Footer%20Folio%20--%3E%0A%20%20%3Cline%20x1%3D%2260%22%20y1%3D%22840%22%20x2%3D%22640%22%20y2%3D%22840%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22%20%2F%3E%0A%20%20%3Ctext%20x%3D%22350%22%20y%3D%22865%22%20text-anchor%3D%22middle%22%20class%3D%22mono%22%3E%E2%80%94%20p.%202%20%E2%80%94%3C%2Ftext%3E%0A%3C%2Fsvg%3E",
+              "caption": "Page 2: Reading protocols and collective quietude constraints."
+            },
+            {
+              "id": "zine-p3",
+              "pageNumber": 3,
+              "url": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20700%20900%22%20width%3D%22700%22%20height%3D%22900%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20.serif%20%7B%20font-family%3A%20'Newsreader'%2C%20Georgia%2C%20'Songti%20SC'%2C%20serif%3B%20%7D%0A%20%20%20%20%20%20.mono%20%7B%20font-family%3A%20'IBM%20Plex%20Mono'%2C%20Menlo%2C%20Monaco%2C%20monospace%3B%20font-size%3A%2011px%3B%20fill%3A%20%23666666%3B%20letter-spacing%3A%200.05em%3B%20%7D%0A%20%20%20%20%20%20.title%20%7B%20font-family%3A%20'Newsreader'%2C%20Georgia%2C%20'Songti%20SC'%2C%20serif%3B%20font-size%3A%2026px%3B%20fill%3A%20%23111111%3B%20font-weight%3A%20normal%3B%20%7D%0A%20%20%20%20%20%20.heading%20%7B%20font-family%3A%20'Newsreader'%2C%20Georgia%2C%20'Songti%20SC'%2C%20serif%3B%20font-size%3A%2019px%3B%20fill%3A%20%23222222%3B%20font-style%3A%20italic%3B%20%7D%0A%20%20%20%20%20%20.body%20%7B%20font-family%3A%20'Source%20Sans%203'%2C%20-apple-system%2C%20sans-serif%3B%20font-size%3A%2014px%3B%20fill%3A%20%23333333%3B%20line-height%3A%201.8%3B%20%7D%0A%20%20%20%20%20%20.annotation%20%7B%20font-family%3A%20'IBM%20Plex%20Mono'%2C%20Menlo%2C%20monospace%3B%20font-size%3A%2011px%3B%20fill%3A%20%23888888%3B%20font-style%3A%20italic%3B%20%7D%0A%20%20%20%20%3C%2Fstyle%3E%0A%20%20%3C%2Fdefs%3E%0A%0A%20%20%3C!--%20Page%20Background%20with%20subtle%20paper%20tone%20--%3E%0A%20%20%3Crect%20width%3D%22700%22%20height%3D%22900%22%20fill%3D%22%23fcfbf9%22%20stroke%3D%22%23e5e3dd%22%20stroke-width%3D%221.5%22%20%2F%3E%0A%20%20%0A%20%20%0A%0A%20%20%3C!--%20Header%20Folio%20--%3E%0A%20%20%3Ctext%20x%3D%2260%22%20y%3D%2255%22%20class%3D%22mono%22%3EPART%20TIME%20BOOK%20CLUB%20%C2%B7%20ISSUE%2001%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22640%22%20y%3D%2255%22%20text-anchor%3D%22end%22%20class%3D%22mono%22%3Ep.%203%3C%2Ftext%3E%0A%20%20%3Cline%20x1%3D%2260%22%20y1%3D%2270%22%20x2%3D%22640%22%20y2%3D%2270%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22%20%2F%3E%0A%0A%20%20%3C!--%20Main%20Content%20--%3E%0A%20%20%3Ctext%20x%3D%2260%22%20y%3D%22130%22%20class%3D%22title%22%3ETranscript%3A%20The%20Wrist%20as%20Timekeeper%3C%2Ftext%3E%0A%20%20%0A%20%20%3Ctext%20x%3D%2260%22%20y%3D%22180%22%20class%3D%22body%22%3E%E2%80%9CThe%20copyist%20does%20not%20summarize%3B%20she%20endures%20the%20length%20of%20every%20sentence.%E2%80%9D%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22212%22%20class%3D%22body%22%3EIn%20copying%20an%20existing%20book%20by%20hand%2C%20the%20eye%20is%20forced%20to%20travel%20at%20the%20speed%20of%20the%20wrist.%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22244%22%20class%3D%22body%22%3ESpeed%20is%20reduced%20from%20four%20hundred%20words%20per%20minute%20to%20twenty-two.%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22276%22%20class%3D%22body%22%3EWhat%20was%20once%20transparent%20prose%20turns%20opaque%3A%20commas%20become%20physical%20breathing%20gates.%3C%2Ftext%3E%0A%0A%20%20%0A%20%20%3Crect%20x%3D%2260%22%20y%3D%22770%22%20width%3D%22580%22%20height%3D%2245%22%20fill%3D%22%23f5f3ee%22%20stroke%3D%22%23e8e6df%22%20%2F%3E%0A%20%20%3Ctext%20x%3D%2275%22%20y%3D%22798%22%20class%3D%22annotation%22%3ETranscribed%20by%20H.S.%20from%20participant%20recording%20tape%2003-A.%3C%2Ftext%3E%0A%20%20%0A%0A%20%20%3C!--%20Footer%20Folio%20--%3E%0A%20%20%3Cline%20x1%3D%2260%22%20y1%3D%22840%22%20x2%3D%22640%22%20y2%3D%22840%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22%20%2F%3E%0A%20%20%3Ctext%20x%3D%22350%22%20y%3D%22865%22%20text-anchor%3D%22middle%22%20class%3D%22mono%22%3E%E2%80%94%20p.%203%20%E2%80%94%3C%2Ftext%3E%0A%3C%2Fsvg%3E",
+              "caption": "Page 3: Transcript excerpt on handwriting duration versus reading velocity."
+            },
+            {
+              "id": "zine-p4",
+              "pageNumber": 4,
+              "url": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20700%20900%22%20width%3D%22700%22%20height%3D%22900%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20.serif%20%7B%20font-family%3A%20'Newsreader'%2C%20Georgia%2C%20'Songti%20SC'%2C%20serif%3B%20%7D%0A%20%20%20%20%20%20.mono%20%7B%20font-family%3A%20'IBM%20Plex%20Mono'%2C%20Menlo%2C%20Monaco%2C%20monospace%3B%20font-size%3A%2011px%3B%20fill%3A%20%23666666%3B%20letter-spacing%3A%200.05em%3B%20%7D%0A%20%20%20%20%20%20.title%20%7B%20font-family%3A%20'Newsreader'%2C%20Georgia%2C%20'Songti%20SC'%2C%20serif%3B%20font-size%3A%2026px%3B%20fill%3A%20%23111111%3B%20font-weight%3A%20normal%3B%20%7D%0A%20%20%20%20%20%20.heading%20%7B%20font-family%3A%20'Newsreader'%2C%20Georgia%2C%20'Songti%20SC'%2C%20serif%3B%20font-size%3A%2019px%3B%20fill%3A%20%23222222%3B%20font-style%3A%20italic%3B%20%7D%0A%20%20%20%20%20%20.body%20%7B%20font-family%3A%20'Source%20Sans%203'%2C%20-apple-system%2C%20sans-serif%3B%20font-size%3A%2014px%3B%20fill%3A%20%23333333%3B%20line-height%3A%201.8%3B%20%7D%0A%20%20%20%20%20%20.annotation%20%7B%20font-family%3A%20'IBM%20Plex%20Mono'%2C%20Menlo%2C%20monospace%3B%20font-size%3A%2011px%3B%20fill%3A%20%23888888%3B%20font-style%3A%20italic%3B%20%7D%0A%20%20%20%20%3C%2Fstyle%3E%0A%20%20%3C%2Fdefs%3E%0A%0A%20%20%3C!--%20Page%20Background%20with%20subtle%20paper%20tone%20--%3E%0A%20%20%3Crect%20width%3D%22700%22%20height%3D%22900%22%20fill%3D%22%23fcfbf9%22%20stroke%3D%22%23e5e3dd%22%20stroke-width%3D%221.5%22%20%2F%3E%0A%20%20%0A%20%20%0A%0A%20%20%3C!--%20Header%20Folio%20--%3E%0A%20%20%3Ctext%20x%3D%2260%22%20y%3D%2255%22%20class%3D%22mono%22%3EPART%20TIME%20BOOK%20CLUB%20%C2%B7%20ISSUE%2001%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22640%22%20y%3D%2255%22%20text-anchor%3D%22end%22%20class%3D%22mono%22%3Ep.%204%3C%2Ftext%3E%0A%20%20%3Cline%20x1%3D%2260%22%20y1%3D%2270%22%20x2%3D%22640%22%20y2%3D%2270%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22%20%2F%3E%0A%0A%20%20%3C!--%20Main%20Content%20--%3E%0A%20%20%3Ctext%20x%3D%2260%22%20y%3D%22130%22%20class%3D%22title%22%3EScore%20for%20Three%20Minutes%20of%20Shared%20Silence%3C%2Ftext%3E%0A%20%20%0A%20%20%3Ctext%20x%3D%2260%22%20y%3D%22180%22%20class%3D%22body%22%3E%5B%200%3A00%20%5D%20Two%20readers%20sit%20across%20from%20each%20other%20with%20open%20volumes.%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22212%22%20class%3D%22body%22%3E%5B%200%3A45%20%5D%20Neither%20reader%20looks%20directly%20at%20the%20other%3B%20eyes%20wander%20across%20lines.%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22244%22%20class%3D%22body%22%3E%5B%201%3A30%20%5D%20Turn%20one%20page%20simultaneously%20when%20the%20clock%20second%20hand%20reaches%2012.%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22276%22%20class%3D%22body%22%3E%5B%202%3A15%20%5D%20Listen%20to%20paper%20friction%20and%20page%20rustle%20across%20the%20timber%20desk.%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22308%22%20class%3D%22body%22%3E%5B%203%3A00%20%5D%20Close%20volumes%20gently%20in%20unison%20without%20speaking.%3C%2Ftext%3E%0A%0A%20%20%0A%20%20%3Crect%20x%3D%2260%22%20y%3D%22770%22%20width%3D%22580%22%20height%3D%2245%22%20fill%3D%22%23f5f3ee%22%20stroke%3D%22%23e8e6df%22%20%2F%3E%0A%20%20%3Ctext%20x%3D%2275%22%20y%3D%22798%22%20class%3D%22annotation%22%3EInstruction%20score%20performed%20during%20session%2004.%3C%2Ftext%3E%0A%20%20%0A%0A%20%20%3C!--%20Footer%20Folio%20--%3E%0A%20%20%3Cline%20x1%3D%2260%22%20y1%3D%22840%22%20x2%3D%22640%22%20y2%3D%22840%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22%20%2F%3E%0A%20%20%3Ctext%20x%3D%22350%22%20y%3D%22865%22%20text-anchor%3D%22middle%22%20class%3D%22mono%22%3E%E2%80%94%20p.%204%20%E2%80%94%3C%2Ftext%3E%0A%3C%2Fsvg%3E",
+              "caption": "Page 4: Instructional score for two concurrent readers sharing silence."
+            },
+            {
+              "id": "zine-p5",
+              "pageNumber": 5,
+              "url": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20700%20900%22%20width%3D%22700%22%20height%3D%22900%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20.serif%20%7B%20font-family%3A%20'Newsreader'%2C%20Georgia%2C%20'Songti%20SC'%2C%20serif%3B%20%7D%0A%20%20%20%20%20%20.mono%20%7B%20font-family%3A%20'IBM%20Plex%20Mono'%2C%20Menlo%2C%20Monaco%2C%20monospace%3B%20font-size%3A%2011px%3B%20fill%3A%20%23666666%3B%20letter-spacing%3A%200.05em%3B%20%7D%0A%20%20%20%20%20%20.title%20%7B%20font-family%3A%20'Newsreader'%2C%20Georgia%2C%20'Songti%20SC'%2C%20serif%3B%20font-size%3A%2026px%3B%20fill%3A%20%23111111%3B%20font-weight%3A%20normal%3B%20%7D%0A%20%20%20%20%20%20.heading%20%7B%20font-family%3A%20'Newsreader'%2C%20Georgia%2C%20'Songti%20SC'%2C%20serif%3B%20font-size%3A%2019px%3B%20fill%3A%20%23222222%3B%20font-style%3A%20italic%3B%20%7D%0A%20%20%20%20%20%20.body%20%7B%20font-family%3A%20'Source%20Sans%203'%2C%20-apple-system%2C%20sans-serif%3B%20font-size%3A%2014px%3B%20fill%3A%20%23333333%3B%20line-height%3A%201.8%3B%20%7D%0A%20%20%20%20%20%20.annotation%20%7B%20font-family%3A%20'IBM%20Plex%20Mono'%2C%20Menlo%2C%20monospace%3B%20font-size%3A%2011px%3B%20fill%3A%20%23888888%3B%20font-style%3A%20italic%3B%20%7D%0A%20%20%20%20%3C%2Fstyle%3E%0A%20%20%3C%2Fdefs%3E%0A%0A%20%20%3C!--%20Page%20Background%20with%20subtle%20paper%20tone%20--%3E%0A%20%20%3Crect%20width%3D%22700%22%20height%3D%22900%22%20fill%3D%22%23fcfbf9%22%20stroke%3D%22%23e5e3dd%22%20stroke-width%3D%221.5%22%20%2F%3E%0A%20%20%0A%20%20%0A%0A%20%20%3C!--%20Header%20Folio%20--%3E%0A%20%20%3Ctext%20x%3D%2260%22%20y%3D%2255%22%20class%3D%22mono%22%3EPART%20TIME%20BOOK%20CLUB%20%C2%B7%20ISSUE%2001%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22640%22%20y%3D%2255%22%20text-anchor%3D%22end%22%20class%3D%22mono%22%3Ep.%205%3C%2Ftext%3E%0A%20%20%3Cline%20x1%3D%2260%22%20y1%3D%2270%22%20x2%3D%22640%22%20y2%3D%2270%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22%20%2F%3E%0A%0A%20%20%3C!--%20Main%20Content%20--%3E%0A%20%20%3Ctext%20x%3D%2260%22%20y%3D%22130%22%20class%3D%22title%22%3EMarginalia%20%26%20Reader%20Stamps%3C%2Ftext%3E%0A%20%20%0A%20%20%3Ctext%20x%3D%2260%22%20y%3D%22180%22%20class%3D%22body%22%3EMarginal%20inscriptions%20recorded%20during%20November%20meeting%3A%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22212%22%20class%3D%22body%22%3E%E2%80%9CThis%20sentence%20has%20been%20read%20by%20three%20previous%20people%3B%20each%20left%20an%20indent%20in%20the%20margin.%E2%80%9D%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22244%22%20class%3D%22body%22%3E%E2%80%9CA%20book%20left%20unread%20in%20a%20library%20decays%20differently%20than%20one%20handled%20daily.%E2%80%9D%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22276%22%20class%3D%22body%22%3ELibrary%20collection%20stamp%3A%20%E8%BF%B0%E4%B9%A6%20%2F%20SS%20Archive%20%E2%80%94%20Specimen%20014.%3C%2Ftext%3E%0A%0A%20%20%0A%20%20%3Crect%20x%3D%2260%22%20y%3D%22770%22%20width%3D%22580%22%20height%3D%2245%22%20fill%3D%22%23f5f3ee%22%20stroke%3D%22%23e8e6df%22%20%2F%3E%0A%20%20%3Ctext%20x%3D%2275%22%20y%3D%22798%22%20class%3D%22annotation%22%3EReader%20marginalia%20transcript%20verified%20against%20original%20library%20specimens.%3C%2Ftext%3E%0A%20%20%0A%0A%20%20%3C!--%20Footer%20Folio%20--%3E%0A%20%20%3Cline%20x1%3D%2260%22%20y1%3D%22840%22%20x2%3D%22640%22%20y2%3D%22840%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22%20%2F%3E%0A%20%20%3Ctext%20x%3D%22350%22%20y%3D%22865%22%20text-anchor%3D%22middle%22%20class%3D%22mono%22%3E%E2%80%94%20p.%205%20%E2%80%94%3C%2Ftext%3E%0A%3C%2Fsvg%3E",
+              "caption": "Page 5: Transcribed reader marginalia and library seal impressions."
+            },
+            {
+              "id": "zine-p6",
+              "pageNumber": 6,
+              "url": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20700%20900%22%20width%3D%22700%22%20height%3D%22900%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20.serif%20%7B%20font-family%3A%20'Newsreader'%2C%20Georgia%2C%20'Songti%20SC'%2C%20serif%3B%20%7D%0A%20%20%20%20%20%20.mono%20%7B%20font-family%3A%20'IBM%20Plex%20Mono'%2C%20Menlo%2C%20Monaco%2C%20monospace%3B%20font-size%3A%2011px%3B%20fill%3A%20%23666666%3B%20letter-spacing%3A%200.05em%3B%20%7D%0A%20%20%20%20%20%20.title%20%7B%20font-family%3A%20'Newsreader'%2C%20Georgia%2C%20'Songti%20SC'%2C%20serif%3B%20font-size%3A%2026px%3B%20fill%3A%20%23111111%3B%20font-weight%3A%20normal%3B%20%7D%0A%20%20%20%20%20%20.heading%20%7B%20font-family%3A%20'Newsreader'%2C%20Georgia%2C%20'Songti%20SC'%2C%20serif%3B%20font-size%3A%2019px%3B%20fill%3A%20%23222222%3B%20font-style%3A%20italic%3B%20%7D%0A%20%20%20%20%20%20.body%20%7B%20font-family%3A%20'Source%20Sans%203'%2C%20-apple-system%2C%20sans-serif%3B%20font-size%3A%2014px%3B%20fill%3A%20%23333333%3B%20line-height%3A%201.8%3B%20%7D%0A%20%20%20%20%20%20.annotation%20%7B%20font-family%3A%20'IBM%20Plex%20Mono'%2C%20Menlo%2C%20monospace%3B%20font-size%3A%2011px%3B%20fill%3A%20%23888888%3B%20font-style%3A%20italic%3B%20%7D%0A%20%20%20%20%3C%2Fstyle%3E%0A%20%20%3C%2Fdefs%3E%0A%0A%20%20%3C!--%20Page%20Background%20with%20subtle%20paper%20tone%20--%3E%0A%20%20%3Crect%20width%3D%22700%22%20height%3D%22900%22%20fill%3D%22%23fcfbf9%22%20stroke%3D%22%23e5e3dd%22%20stroke-width%3D%221.5%22%20%2F%3E%0A%20%20%0A%20%20%0A%0A%20%20%3C!--%20Header%20Folio%20--%3E%0A%20%20%3Ctext%20x%3D%2260%22%20y%3D%2255%22%20class%3D%22mono%22%3EPART%20TIME%20BOOK%20CLUB%20%C2%B7%20ISSUE%2001%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%22640%22%20y%3D%2255%22%20text-anchor%3D%22end%22%20class%3D%22mono%22%3EBack%20Cover%20%2F%20p.%206%3C%2Ftext%3E%0A%20%20%3Cline%20x1%3D%2260%22%20y1%3D%2270%22%20x2%3D%22640%22%20y2%3D%2270%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22%20%2F%3E%0A%0A%20%20%3C!--%20Main%20Content%20--%3E%0A%20%20%3Ctext%20x%3D%2260%22%20y%3D%22130%22%20class%3D%22title%22%3EColophon%20%26%20Next%20Session%20Announcement%3C%2Ftext%3E%0A%20%20%0A%20%20%3Ctext%20x%3D%2260%22%20y%3D%22180%22%20class%3D%22body%22%3EPart%20Time%20Book%20Club%20is%20an%20initiative%20of%20%E8%BF%B0%E4%B9%A6%20%2F%20SS%3A%20between%20books%20%26%20libraries.%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22212%22%20class%3D%22body%22%3EPrinted%20in%20Singapore%20%26%20Shanghai%20on%20risograph%20machines.%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22244%22%20class%3D%22body%22%3ENext%20session%3A%20%22Scores%20for%20Library%20Relocation%22%20%E2%80%94%20Date%20announced%20through%20private%20index.%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22276%22%20class%3D%22body%22%3EContact%20%26%20correspondence%3A%20work%40anotherunit.xyz%3C%2Ftext%3E%0A%0A%20%20%0A%20%20%3Crect%20x%3D%2260%22%20y%3D%22770%22%20width%3D%22580%22%20height%3D%2245%22%20fill%3D%22%23f5f3ee%22%20stroke%3D%22%23e8e6df%22%20%2F%3E%0A%20%20%3Ctext%20x%3D%2275%22%20y%3D%22798%22%20class%3D%22annotation%22%3EEnd%20of%20Issue%2001%20%C2%B7%20Distributed%20by%20hand%20to%20participants.%3C%2Ftext%3E%0A%20%20%0A%0A%20%20%3C!--%20Footer%20Folio%20--%3E%0A%20%20%3Cline%20x1%3D%2260%22%20y1%3D%22840%22%20x2%3D%22640%22%20y2%3D%22840%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22%20%2F%3E%0A%20%20%3Ctext%20x%3D%22350%22%20y%3D%22865%22%20text-anchor%3D%22middle%22%20class%3D%22mono%22%3E%E2%80%94%20Back%20Cover%20%2F%20p.%206%20%E2%80%94%3C%2Ftext%3E%0A%3C%2Fsvg%3E",
+              "caption": "Back Cover: Colophon, publication credits, and next session notes."
+            }
+          ],
+          "originalFileUrl": "https://hongshuying.art/downloads/ptbc-issue-01-complete.pdf",
+          "originalFileName": "ptbc-issue-01-complete.pdf",
+          "allowDownload": true,
+          "description": "Complete 6-page sequence. Toggle between Single and Spread views; expand thumbnails along the bottom to jump between folios."
+        },
+        {
+          "id": "block-zine-text-2",
+          "type": "text",
+          "content": "Colophon:\n- Risograph printed in Singapore in an edition of 120 numbered copies.\n- Typeset in Newsreader and IBM Plex Mono.\n- Bound with single saddle stitch. Copies catalogued in [[ss-between-books-and-libraries]]."
+        }
+      ],
+      "createdAt": "2026-02-14T10:00:00Z",
+      "updatedAt": "2026-03-10T15:00:00Z",
+      "tagIds": [
+        "tag-zine",
+        "tag-reading",
+        "tag-transcription",
+        "tag-publishing",
+        "tag-ss",
+        "tag-document-reader"
+      ],
+      "associatedProjectIds": [
+        "ss-between-books-and-libraries",
+        "part-time-book-club"
+      ]
+    },
+    {
+      "id": "facsimile-inscriptions-spreads",
+      "slug": "facsimile-inscriptions-spreads",
+      "title": "述书: Facsimile of Library Inscriptions (Pre-composed Spreads)",
+      "titleZh": "述书：图书馆题记影印（整版跨页）",
+      "type": "publication",
+      "status": "published",
+      "date": "2023–ongoing",
+      "datePlaceholder": false,
+      "medium": "Exposed thread binding, archival offset reproduction on warm matte paper",
+      "dimensions": "28 × 21 cm (open spread 56 × 21 cm)",
+      "shortDescription": "A volume of archival book spread scans documenting marginal inscriptions across independent libraries, presented in their original pre-composed two-page spreads without gutter cropping.",
+      "fullText": "Archival facsimile volume containing two-page spread plates of annotated volumes and reader inscriptions.",
+      "subjects": [
+        "book spreads",
+        "facsimile",
+        "inscriptions",
+        "libraries",
+        "ss",
+        "archiving"
+      ],
+      "relatedEntryIds": [
+        "ss-between-books-and-libraries",
+        "copying",
+        "part-time-book-club-zine"
+      ],
+      "collections": [
+        "ss"
+      ],
+      "images": [],
+      "isDevelopingWork": false,
+      "ssCategory": "book",
+      "notesForArtist": "Pre-composed spreads test entry. Each spread is displayed intact without splitting or gutter distortions, preserving original proportions.",
+      "blocks": [
+        {
+          "id": "block-spreads-text-intro",
+          "type": "text",
+          "content": "When documenting bound volumes, splitting facing pages into isolated vertical slices damages the spatial relationship between marginal notes and facing texts.\n        \nIn this volume, each scan represents an **already-composed two-page spread** (open folio). The document reader displays each spread intact, allowing you to pan, zoom, and inspect marginal inscriptions across the central gutter."
+        },
+        {
+          "id": "block-spreads-reader",
+          "type": "document_reader",
+          "title": "述书: Facsimile of Library Inscriptions — Pre-composed Spreads Viewer",
+          "sourceType": "page_images",
+          "pageType": "already_composed_spreads",
+          "pages": [
+            {
+              "id": "spread-1",
+              "pageNumber": 1,
+              "url": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20900%22%20width%3D%221200%22%20height%3D%22900%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20.serif%20%7B%20font-family%3A%20'Newsreader'%2C%20Georgia%2C%20'Songti%20SC'%2C%20serif%3B%20%7D%0A%20%20%20%20%20%20.mono%20%7B%20font-family%3A%20'IBM%20Plex%20Mono'%2C%20Menlo%2C%20Monaco%2C%20monospace%3B%20font-size%3A%2011px%3B%20fill%3A%20%23666666%3B%20letter-spacing%3A%200.05em%3B%20%7D%0A%20%20%20%20%20%20.title%20%7B%20font-family%3A%20'Newsreader'%2C%20Georgia%2C%20'Songti%20SC'%2C%20serif%3B%20font-size%3A%2026px%3B%20fill%3A%20%23111111%3B%20font-weight%3A%20normal%3B%20%7D%0A%20%20%20%20%20%20.heading%20%7B%20font-family%3A%20'Newsreader'%2C%20Georgia%2C%20'Songti%20SC'%2C%20serif%3B%20font-size%3A%2019px%3B%20fill%3A%20%23222222%3B%20font-style%3A%20italic%3B%20%7D%0A%20%20%20%20%20%20.body%20%7B%20font-family%3A%20'Source%20Sans%203'%2C%20-apple-system%2C%20sans-serif%3B%20font-size%3A%2014px%3B%20fill%3A%20%23333333%3B%20line-height%3A%201.8%3B%20%7D%0A%20%20%20%20%20%20.annotation%20%7B%20font-family%3A%20'IBM%20Plex%20Mono'%2C%20Menlo%2C%20monospace%3B%20font-size%3A%2011px%3B%20fill%3A%20%23888888%3B%20font-style%3A%20italic%3B%20%7D%0A%20%20%20%20%3C%2Fstyle%3E%0A%20%20%3C%2Fdefs%3E%0A%0A%20%20%3C!--%20Page%20Background%20with%20subtle%20paper%20tone%20--%3E%0A%20%20%3Crect%20width%3D%221200%22%20height%3D%22900%22%20fill%3D%22%23fcfbf9%22%20stroke%3D%22%23e5e3dd%22%20stroke-width%3D%221.5%22%20%2F%3E%0A%20%20%0A%20%20%3Cline%20x1%3D%22600%22%20y1%3D%220%22%20x2%3D%22600%22%20y2%3D%22900%22%20stroke%3D%22%23e0ded8%22%20stroke-width%3D%221%22%20stroke-dasharray%3D%224%2C4%22%20%2F%3E%0A%0A%20%20%3C!--%20Header%20Folio%20--%3E%0A%20%20%3Ctext%20x%3D%2260%22%20y%3D%2255%22%20class%3D%22mono%22%3E%E8%BF%B0%E4%B9%A6%3A%20FACSIMILE%20OF%20LIBRARY%20INSCRIPTIONS%20%C2%B7%20PRE-COMPOSED%20SPREAD%2001%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%221140%22%20y%3D%2255%22%20text-anchor%3D%22end%22%20class%3D%22mono%22%3Epp.%202%E2%80%933%20(Spread%201)%3C%2Ftext%3E%0A%20%20%3Cline%20x1%3D%2260%22%20y1%3D%2270%22%20x2%3D%221140%22%20y2%3D%2270%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22%20%2F%3E%0A%0A%20%20%3C!--%20Main%20Content%20--%3E%0A%20%20%3Ctext%20x%3D%2260%22%20y%3D%22130%22%20class%3D%22title%22%3EOpening%20Spread%3A%20Table%20of%20Inscriptions%20%26%20Archive%20Index%3C%2Ftext%3E%0A%20%20%0A%20%20%3Ctext%20x%3D%2260%22%20y%3D%22180%22%20class%3D%22body%22%3E%5BLeft%20Page%3A%20pp.%202%5D%20Register%20of%20Independent%20Library%20Inscriptions%20(1998%E2%80%932023)%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22212%22%20class%3D%22body%22%3ESurvey%20of%20hand-written%20dedications%2C%20shelf%20signatures%2C%20and%20reader%20annotations.%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22244%22%20class%3D%22body%22%3EPhotographed%20in%20ambient%20daylight%20at%201%3A1%20scale%20to%20preserve%20ink%20discoloration.%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22276%22%20class%3D%22body%22%3E%E2%80%94%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22308%22%20class%3D%22body%22%3E%5BRight%20Page%3A%20pp.%203%5D%20Methodological%20Criteria%20for%20Facsimile%20Reproduction%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22340%22%20class%3D%22body%22%3EAll%20spreads%20reproduced%20intact%20without%20gutter%20trimming%20or%20white-balance%20correction.%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22372%22%20class%3D%22body%22%3EPaper%20wrinkles%2C%20insect%20perforations%2C%20and%20library%20binder%20stitches%20remain%20visible.%3C%2Ftext%3E%0A%0A%20%20%0A%20%20%3Crect%20x%3D%2260%22%20y%3D%22770%22%20width%3D%221080%22%20height%3D%2245%22%20fill%3D%22%23f5f3ee%22%20stroke%3D%22%23e8e6df%22%20%2F%3E%0A%20%20%3Ctext%20x%3D%2275%22%20y%3D%22798%22%20class%3D%22annotation%22%3ESpread%2001%20of%2004%20%C2%B7%20Preserving%20full%202-page%20horizontal%20gutter%20intact.%3C%2Ftext%3E%0A%20%20%0A%0A%20%20%3C!--%20Footer%20Folio%20--%3E%0A%20%20%3Cline%20x1%3D%2260%22%20y1%3D%22840%22%20x2%3D%221140%22%20y2%3D%22840%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22%20%2F%3E%0A%20%20%3Ctext%20x%3D%22600%22%20y%3D%22865%22%20text-anchor%3D%22middle%22%20class%3D%22mono%22%3E%E2%80%94%20pp.%202%E2%80%933%20(Spread%201)%20%E2%80%94%3C%2Ftext%3E%0A%3C%2Fsvg%3E",
+              "caption": "Spread 01 (pp. 2–3): Table of Inscriptions and facsimile reproduction criteria."
+            },
+            {
+              "id": "spread-2",
+              "pageNumber": 2,
+              "url": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20900%22%20width%3D%221200%22%20height%3D%22900%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20.serif%20%7B%20font-family%3A%20'Newsreader'%2C%20Georgia%2C%20'Songti%20SC'%2C%20serif%3B%20%7D%0A%20%20%20%20%20%20.mono%20%7B%20font-family%3A%20'IBM%20Plex%20Mono'%2C%20Menlo%2C%20Monaco%2C%20monospace%3B%20font-size%3A%2011px%3B%20fill%3A%20%23666666%3B%20letter-spacing%3A%200.05em%3B%20%7D%0A%20%20%20%20%20%20.title%20%7B%20font-family%3A%20'Newsreader'%2C%20Georgia%2C%20'Songti%20SC'%2C%20serif%3B%20font-size%3A%2026px%3B%20fill%3A%20%23111111%3B%20font-weight%3A%20normal%3B%20%7D%0A%20%20%20%20%20%20.heading%20%7B%20font-family%3A%20'Newsreader'%2C%20Georgia%2C%20'Songti%20SC'%2C%20serif%3B%20font-size%3A%2019px%3B%20fill%3A%20%23222222%3B%20font-style%3A%20italic%3B%20%7D%0A%20%20%20%20%20%20.body%20%7B%20font-family%3A%20'Source%20Sans%203'%2C%20-apple-system%2C%20sans-serif%3B%20font-size%3A%2014px%3B%20fill%3A%20%23333333%3B%20line-height%3A%201.8%3B%20%7D%0A%20%20%20%20%20%20.annotation%20%7B%20font-family%3A%20'IBM%20Plex%20Mono'%2C%20Menlo%2C%20monospace%3B%20font-size%3A%2011px%3B%20fill%3A%20%23888888%3B%20font-style%3A%20italic%3B%20%7D%0A%20%20%20%20%3C%2Fstyle%3E%0A%20%20%3C%2Fdefs%3E%0A%0A%20%20%3C!--%20Page%20Background%20with%20subtle%20paper%20tone%20--%3E%0A%20%20%3Crect%20width%3D%221200%22%20height%3D%22900%22%20fill%3D%22%23fcfbf9%22%20stroke%3D%22%23e5e3dd%22%20stroke-width%3D%221.5%22%20%2F%3E%0A%20%20%0A%20%20%3Cline%20x1%3D%22600%22%20y1%3D%220%22%20x2%3D%22600%22%20y2%3D%22900%22%20stroke%3D%22%23e0ded8%22%20stroke-width%3D%221%22%20stroke-dasharray%3D%224%2C4%22%20%2F%3E%0A%0A%20%20%3C!--%20Header%20Folio%20--%3E%0A%20%20%3Ctext%20x%3D%2260%22%20y%3D%2255%22%20class%3D%22mono%22%3E%E8%BF%B0%E4%B9%A6%3A%20FACSIMILE%20OF%20LIBRARY%20INSCRIPTIONS%20%C2%B7%20PRE-COMPOSED%20SPREAD%2002%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%221140%22%20y%3D%2255%22%20text-anchor%3D%22end%22%20class%3D%22mono%22%3Epp.%204%E2%80%935%20(Spread%202)%3C%2Ftext%3E%0A%20%20%3Cline%20x1%3D%2260%22%20y1%3D%2270%22%20x2%3D%221140%22%20y2%3D%2270%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22%20%2F%3E%0A%0A%20%20%3C!--%20Main%20Content%20--%3E%0A%20%20%3Ctext%20x%3D%2260%22%20y%3D%22130%22%20class%3D%22title%22%3ESpread%2002%3A%20Inscribed%20Folio%2014%20%26%20Parallel%20Transcription%3C%2Ftext%3E%0A%20%20%0A%20%20%3Ctext%20x%3D%2260%22%20y%3D%22180%22%20class%3D%22body%22%3E%5BLeft%20Page%3A%20pp.%204%5D%20Facsimile%20Plate%20XIV%20%E2%80%94%20%22To%20those%20who%20read%20while%20standing%22%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22212%22%20class%3D%22body%22%3EBlue%20ballpoint%20ink%20on%20aged%20newsprint%20edition%2C%20provenance%3A%20Workers'%20Reading%20Room.%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22244%22%20class%3D%22body%22%3ENote%20reads%3A%20%22Borrowed%20on%20rainy%20afternoon%2C%20returned%20after%20third%20reading.%22%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22276%22%20class%3D%22body%22%3E%E2%80%94%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22308%22%20class%3D%22body%22%3E%5BRight%20Page%3A%20pp.%205%5D%20Editorial%20Commentary%20%26%20Typography%20Transcription%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22340%22%20class%3D%22body%22%3ETypeset%20in%20Newsreader%20serif%20body%20to%20mirror%20the%20cadence%20of%20the%20cursive%20inscription.%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22372%22%20class%3D%22body%22%3EInk%20depletion%20occurs%20on%20the%20fourth%20line%20where%20the%20pen%20ran%20dry%20mid-sentence.%3C%2Ftext%3E%0A%0A%20%20%0A%20%20%3Crect%20x%3D%2260%22%20y%3D%22770%22%20width%3D%221080%22%20height%3D%2245%22%20fill%3D%22%23f5f3ee%22%20stroke%3D%22%23e8e6df%22%20%2F%3E%0A%20%20%3Ctext%20x%3D%2275%22%20y%3D%22798%22%20class%3D%22annotation%22%3ESpread%2002%20of%2004%20%C2%B7%20Natural%20paper%20fold%20and%20gutter%20shadows%20preserved.%3C%2Ftext%3E%0A%20%20%0A%0A%20%20%3C!--%20Footer%20Folio%20--%3E%0A%20%20%3Cline%20x1%3D%2260%22%20y1%3D%22840%22%20x2%3D%221140%22%20y2%3D%22840%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22%20%2F%3E%0A%20%20%3Ctext%20x%3D%22600%22%20y%3D%22865%22%20text-anchor%3D%22middle%22%20class%3D%22mono%22%3E%E2%80%94%20pp.%204%E2%80%935%20(Spread%202)%20%E2%80%94%3C%2Ftext%3E%0A%3C%2Fsvg%3E",
+              "caption": "Spread 02 (pp. 4–5): Inscribed Folio 14 facsimile with facing analytical transcript."
+            },
+            {
+              "id": "spread-3",
+              "pageNumber": 3,
+              "url": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20900%22%20width%3D%221200%22%20height%3D%22900%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20.serif%20%7B%20font-family%3A%20'Newsreader'%2C%20Georgia%2C%20'Songti%20SC'%2C%20serif%3B%20%7D%0A%20%20%20%20%20%20.mono%20%7B%20font-family%3A%20'IBM%20Plex%20Mono'%2C%20Menlo%2C%20Monaco%2C%20monospace%3B%20font-size%3A%2011px%3B%20fill%3A%20%23666666%3B%20letter-spacing%3A%200.05em%3B%20%7D%0A%20%20%20%20%20%20.title%20%7B%20font-family%3A%20'Newsreader'%2C%20Georgia%2C%20'Songti%20SC'%2C%20serif%3B%20font-size%3A%2026px%3B%20fill%3A%20%23111111%3B%20font-weight%3A%20normal%3B%20%7D%0A%20%20%20%20%20%20.heading%20%7B%20font-family%3A%20'Newsreader'%2C%20Georgia%2C%20'Songti%20SC'%2C%20serif%3B%20font-size%3A%2019px%3B%20fill%3A%20%23222222%3B%20font-style%3A%20italic%3B%20%7D%0A%20%20%20%20%20%20.body%20%7B%20font-family%3A%20'Source%20Sans%203'%2C%20-apple-system%2C%20sans-serif%3B%20font-size%3A%2014px%3B%20fill%3A%20%23333333%3B%20line-height%3A%201.8%3B%20%7D%0A%20%20%20%20%20%20.annotation%20%7B%20font-family%3A%20'IBM%20Plex%20Mono'%2C%20Menlo%2C%20monospace%3B%20font-size%3A%2011px%3B%20fill%3A%20%23888888%3B%20font-style%3A%20italic%3B%20%7D%0A%20%20%20%20%3C%2Fstyle%3E%0A%20%20%3C%2Fdefs%3E%0A%0A%20%20%3C!--%20Page%20Background%20with%20subtle%20paper%20tone%20--%3E%0A%20%20%3Crect%20width%3D%221200%22%20height%3D%22900%22%20fill%3D%22%23fcfbf9%22%20stroke%3D%22%23e5e3dd%22%20stroke-width%3D%221.5%22%20%2F%3E%0A%20%20%0A%20%20%3Cline%20x1%3D%22600%22%20y1%3D%220%22%20x2%3D%22600%22%20y2%3D%22900%22%20stroke%3D%22%23e0ded8%22%20stroke-width%3D%221%22%20stroke-dasharray%3D%224%2C4%22%20%2F%3E%0A%0A%20%20%3C!--%20Header%20Folio%20--%3E%0A%20%20%3Ctext%20x%3D%2260%22%20y%3D%2255%22%20class%3D%22mono%22%3E%E8%BF%B0%E4%B9%A6%3A%20FACSIMILE%20OF%20LIBRARY%20INSCRIPTIONS%20%C2%B7%20PRE-COMPOSED%20SPREAD%2003%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%221140%22%20y%3D%2255%22%20text-anchor%3D%22end%22%20class%3D%22mono%22%3Epp.%206%E2%80%937%20(Spread%203)%3C%2Ftext%3E%0A%20%20%3Cline%20x1%3D%2260%22%20y1%3D%2270%22%20x2%3D%221140%22%20y2%3D%2270%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22%20%2F%3E%0A%0A%20%20%3C!--%20Main%20Content%20--%3E%0A%20%20%3Ctext%20x%3D%2260%22%20y%3D%22130%22%20class%3D%22title%22%3ESpread%2003%3A%20Reader%20Notation%20Map%20%26%20Marginal%20Concordance%3C%2Ftext%3E%0A%20%20%0A%20%20%3Ctext%20x%3D%2260%22%20y%3D%22180%22%20class%3D%22body%22%3E%5BLeft%20Page%3A%20pp.%206%5D%20Facsimile%20Plate%20XXVIII%20%E2%80%94%20Multiple%20Hands%20in%20One%20Margin%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22212%22%20class%3D%22body%22%3EFour%20distinct%20handwritings%20responding%20to%20one%20another%20across%20twelve%20years.%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22244%22%20class%3D%22body%22%3EFirst%20inscription%20in%20pencil%20(1992)%3B%20second%20inscription%20in%20fountain%20pen%20(2001).%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22276%22%20class%3D%22body%22%3E%E2%80%94%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22308%22%20class%3D%22body%22%3E%5BRight%20Page%3A%20pp.%207%5D%20Chronological%20Stratigraphy%20of%20the%20Inscriptions%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22340%22%20class%3D%22body%22%3EThe%20margin%20ceases%20to%20be%20blank%20border%3B%20it%20becomes%20a%20conversational%20ledger.%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22372%22%20class%3D%22body%22%3EDemonstrates%20how%20independent%20libraries%20function%20as%20social%20memory%20vessels.%3C%2Ftext%3E%0A%0A%20%20%0A%20%20%3Crect%20x%3D%2260%22%20y%3D%22770%22%20width%3D%221080%22%20height%3D%2245%22%20fill%3D%22%23f5f3ee%22%20stroke%3D%22%23e8e6df%22%20%2F%3E%0A%20%20%3Ctext%20x%3D%2275%22%20y%3D%22798%22%20class%3D%22annotation%22%3ESpread%2003%20of%2004%20%C2%B7%20Inscriptions%20recorded%20across%20four%20reader%20generations.%3C%2Ftext%3E%0A%20%20%0A%0A%20%20%3C!--%20Footer%20Folio%20--%3E%0A%20%20%3Cline%20x1%3D%2260%22%20y1%3D%22840%22%20x2%3D%221140%22%20y2%3D%22840%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22%20%2F%3E%0A%20%20%3Ctext%20x%3D%22600%22%20y%3D%22865%22%20text-anchor%3D%22middle%22%20class%3D%22mono%22%3E%E2%80%94%20pp.%206%E2%80%937%20(Spread%203)%20%E2%80%94%3C%2Ftext%3E%0A%3C%2Fsvg%3E",
+              "caption": "Spread 03 (pp. 6–7): Reader notation map tracking four distinct hands in the margin."
+            },
+            {
+              "id": "spread-4",
+              "pageNumber": 4,
+              "url": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20900%22%20width%3D%221200%22%20height%3D%22900%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20.serif%20%7B%20font-family%3A%20'Newsreader'%2C%20Georgia%2C%20'Songti%20SC'%2C%20serif%3B%20%7D%0A%20%20%20%20%20%20.mono%20%7B%20font-family%3A%20'IBM%20Plex%20Mono'%2C%20Menlo%2C%20Monaco%2C%20monospace%3B%20font-size%3A%2011px%3B%20fill%3A%20%23666666%3B%20letter-spacing%3A%200.05em%3B%20%7D%0A%20%20%20%20%20%20.title%20%7B%20font-family%3A%20'Newsreader'%2C%20Georgia%2C%20'Songti%20SC'%2C%20serif%3B%20font-size%3A%2026px%3B%20fill%3A%20%23111111%3B%20font-weight%3A%20normal%3B%20%7D%0A%20%20%20%20%20%20.heading%20%7B%20font-family%3A%20'Newsreader'%2C%20Georgia%2C%20'Songti%20SC'%2C%20serif%3B%20font-size%3A%2019px%3B%20fill%3A%20%23222222%3B%20font-style%3A%20italic%3B%20%7D%0A%20%20%20%20%20%20.body%20%7B%20font-family%3A%20'Source%20Sans%203'%2C%20-apple-system%2C%20sans-serif%3B%20font-size%3A%2014px%3B%20fill%3A%20%23333333%3B%20line-height%3A%201.8%3B%20%7D%0A%20%20%20%20%20%20.annotation%20%7B%20font-family%3A%20'IBM%20Plex%20Mono'%2C%20Menlo%2C%20monospace%3B%20font-size%3A%2011px%3B%20fill%3A%20%23888888%3B%20font-style%3A%20italic%3B%20%7D%0A%20%20%20%20%3C%2Fstyle%3E%0A%20%20%3C%2Fdefs%3E%0A%0A%20%20%3C!--%20Page%20Background%20with%20subtle%20paper%20tone%20--%3E%0A%20%20%3Crect%20width%3D%221200%22%20height%3D%22900%22%20fill%3D%22%23fcfbf9%22%20stroke%3D%22%23e5e3dd%22%20stroke-width%3D%221.5%22%20%2F%3E%0A%20%20%0A%20%20%3Cline%20x1%3D%22600%22%20y1%3D%220%22%20x2%3D%22600%22%20y2%3D%22900%22%20stroke%3D%22%23e0ded8%22%20stroke-width%3D%221%22%20stroke-dasharray%3D%224%2C4%22%20%2F%3E%0A%0A%20%20%3C!--%20Header%20Folio%20--%3E%0A%20%20%3Ctext%20x%3D%2260%22%20y%3D%2255%22%20class%3D%22mono%22%3E%E8%BF%B0%E4%B9%A6%3A%20FACSIMILE%20OF%20LIBRARY%20INSCRIPTIONS%20%C2%B7%20PRE-COMPOSED%20SPREAD%2004%3C%2Ftext%3E%0A%20%20%3Ctext%20x%3D%221140%22%20y%3D%2255%22%20text-anchor%3D%22end%22%20class%3D%22mono%22%3Epp.%208%E2%80%939%20(Spread%204)%3C%2Ftext%3E%0A%20%20%3Cline%20x1%3D%2260%22%20y1%3D%2270%22%20x2%3D%221140%22%20y2%3D%2270%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22%20%2F%3E%0A%0A%20%20%3C!--%20Main%20Content%20--%3E%0A%20%20%3Ctext%20x%3D%2260%22%20y%3D%22130%22%20class%3D%22title%22%3ESpread%2004%3A%20Library%20Stamp%20Registry%20%26%20Colophon%3C%2Ftext%3E%0A%20%20%0A%20%20%3Ctext%20x%3D%2260%22%20y%3D%22180%22%20class%3D%22body%22%3E%5BLeft%20Page%3A%20pp.%208%5D%20Catalog%20of%20Archival%20Rubber%20Stamps%20%26%20Deaccession%20Marks%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22212%22%20class%3D%22body%22%3ERed%20cinnabar%20paste%20stamps%2C%20purple%20aniline%20deaccession%20markings%2C%20and%20classification%20codes.%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22244%22%20class%3D%22body%22%3EEach%20mark%20represents%20an%20institutional%20crossing%20point%20from%20public%20collection%20to%20discard.%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22276%22%20class%3D%22body%22%3E%E2%80%94%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22308%22%20class%3D%22body%22%3E%5BRight%20Page%3A%20pp.%209%5D%20Printer's%20Colophon%20%26%20Edition%20Record%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22340%22%20class%3D%22body%22%3EBound%20in%20exposed%20thread%20binding%20with%20untrimmed%20fore-edges.%3C%2Ftext%3E%3Ctext%20x%3D%2260%22%20y%3D%22372%22%20class%3D%22body%22%3EPublished%20as%20part%20of%20%E8%BF%B0%E4%B9%A6%20%2F%20SS%3A%20between%20books%20%26%20libraries%20%C2%B7%20Hong%20Shu-ying%20%E6%96%B9%E8%88%92%E9%A2%96.%3C%2Ftext%3E%0A%0A%20%20%0A%20%20%3Crect%20x%3D%2260%22%20y%3D%22770%22%20width%3D%221080%22%20height%3D%2245%22%20fill%3D%22%23f5f3ee%22%20stroke%3D%22%23e8e6df%22%20%2F%3E%0A%20%20%3Ctext%20x%3D%2275%22%20y%3D%22798%22%20class%3D%22annotation%22%3ESpread%2004%20of%2004%20%C2%B7%20Final%20colophon%20spread%20with%20library%20provenance%20register.%3C%2Ftext%3E%0A%20%20%0A%0A%20%20%3C!--%20Footer%20Folio%20--%3E%0A%20%20%3Cline%20x1%3D%2260%22%20y1%3D%22840%22%20x2%3D%221140%22%20y2%3D%22840%22%20stroke%3D%22%23eeeeee%22%20stroke-width%3D%221%22%20%2F%3E%0A%20%20%3Ctext%20x%3D%22600%22%20y%3D%22865%22%20text-anchor%3D%22middle%22%20class%3D%22mono%22%3E%E2%80%94%20pp.%208%E2%80%939%20(Spread%204)%20%E2%80%94%3C%2Ftext%3E%0A%3C%2Fsvg%3E",
+              "caption": "Spread 04 (pp. 8–9): Library stamp registry and printer's colophon."
+            }
+          ],
+          "originalFileUrl": "https://hongshuying.art/downloads/ss-inscriptions-spreads-facsimile.pdf",
+          "originalFileName": "ss-inscriptions-spreads-facsimile.pdf",
+          "allowDownload": true,
+          "description": "Four pre-composed archival spreads (pp. 2–9). Proportions are strictly preserved to maintain legibility of handwritten annotations."
+        },
+        {
+          "id": "block-spreads-text-notes",
+          "type": "text",
+          "content": "Surveyed repositories:\n- Workers' Reading Room archival collection (Shanghai)\n- Independent Art Book Archive (Singapore)\n- Private donated library of Liu Z. (Suzhou)\n- Recorded under the research framework of [[ss-between-books-and-libraries]]."
+        }
+      ],
+      "createdAt": "2026-02-18T14:00:00Z",
+      "updatedAt": "2026-03-10T16:00:00Z",
+      "tagIds": [
+        "tag-book-spreads",
+        "tag-facsimile",
+        "tag-inscriptions",
+        "tag-libraries",
+        "tag-ss",
+        "tag-archiving"
+      ],
+      "associatedProjectIds": [
+        "ss-between-books-and-libraries"
+      ]
+    },
+    {
+      "id": "transcription-cadence-video-studies",
+      "slug": "transcription-cadence-video-studies",
+      "title": "Transcription Cadence & Reading Protocols: Video Studies",
+      "titleZh": "抄写节奏与阅读礼仪：影像研究",
+      "type": "work",
+      "status": "published",
+      "date": "2023",
+      "datePlaceholder": false,
+      "medium": "Three-channel digital video suite, sound, color",
+      "dimensions": "Duration variable (16:9)",
+      "shortDescription": "A three-part moving image suite examining handwriting duration, library navigation, and transcription rhythm across YouTube, Vimeo, and Google Drive video providers.",
+      "fullText": "Three video studies investigating transcription cadence, the tempo of ink depletion, and quiet movements within independent library reading spaces.",
+      "subjects": [
+        "video",
+        "cadence",
+        "transcription",
+        "handwriting",
+        "vimeo",
+        "youtube",
+        "google drive"
+      ],
+      "relatedEntryIds": [
+        "script-notes",
+        "mofang-yaoxiang-ruge",
+        "scores"
+      ],
+      "collections": [
+        "works"
+      ],
+      "images": [],
+      "isDevelopingWork": false,
+      "notesForArtist": "Three video providers test entry. Demonstrates YouTube, Vimeo, and Google Drive responsive embeds without autoplay, with credits and fallback links.",
+      "blocks": [
+        {
+          "id": "block-video-text-intro",
+          "type": "text",
+          "content": "This entry tests and demonstrates the three supported embedded video providers: **YouTube**, **Vimeo**, and **Google Drive**.\n        \nEach video is displayed in a responsive 16:9 container with zero autoplay, fallback external links, and optional captions and credits. For Google Drive files, clear guidance is provided regarding permissions."
+        },
+        {
+          "id": "block-video-youtube",
+          "type": "video",
+          "provider": "youtube",
+          "originalUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+          "embedUrl": "https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?autoplay=0&rel=0&modestbranding=1",
+          "title": "Video Study 1: The Continuous Stroke (YouTube Embed)",
+          "caption": "Uninterrupted documentation of ink flowing from brush to Xuan paper during transcription practice.",
+          "credit": "Camera & sound: Studio recording, 2023."
+        },
+        {
+          "id": "block-video-vimeo",
+          "type": "video",
+          "provider": "vimeo",
+          "originalUrl": "https://vimeo.com/76979871",
+          "embedUrl": "https://player.vimeo.com/video/76979871?autoplay=0&dnt=1",
+          "title": "Video Study 2: Silent Shelving Cadence (Vimeo Embed)",
+          "caption": "Observing the spatial rhythm of placing catalogued books back into high wooden shelves in an independent archive.",
+          "credit": "Filmed on location at the Sub-library Reading Room."
+        },
+        {
+          "id": "block-video-drive",
+          "type": "video",
+          "provider": "google_drive",
+          "originalUrl": "https://drive.google.com/file/d/1u3s8_f3K7Y-example_test_file_id/view?usp=sharing",
+          "embedUrl": "https://drive.google.com/file/d/1u3s8_f3K7Y-example_test_file_id/preview",
+          "title": "Video Study 3: Archival Rehearsal Monitor (Google Drive Embed)",
+          "caption": "Overhead studio camera recording reading pacing rehearsals and participant gestures.",
+          "credit": "Studio master tape record."
+        },
+        {
+          "id": "block-video-text-conclusion",
+          "type": "text",
+          "content": "All videos respect user bandwidth and browser autoplay policies.\n        \nLinks dialogue directly with [[script-notes]], [[mofang-yaoxiang-ruge]], and the scores documented in [[scores]]."
+        }
+      ],
+      "createdAt": "2026-02-20T11:00:00Z",
+      "updatedAt": "2026-03-10T17:00:00Z",
+      "tagIds": [
+        "tag-transcription",
+        "tag-video",
+        "tag-cadence",
+        "tag-handwriting",
+        "tag-vimeo",
+        "tag-youtube",
+        "tag-google-drive"
+      ],
+      "associatedProjectIds": []
+    },
+    {
+      "id": "script-notes",
+      "slug": "script-notes",
+      "title": "笔迹 script/notes",
+      "titleZh": "笔迹",
+      "type": "note",
+      "status": "published",
+      "date": "c. 2022–present [placeholder]",
+      "datePlaceholder": true,
+      "medium": "Ink and pencil on loose paper, working notebooks [placeholder]",
+      "dimensions": "Variable [placeholder]",
+      "shortDescription": "Working fragments, notations, and studies on handwriting, stroke gestures, and the physical tempo of writing.",
+      "fullText": "A continuing series of working notes, marginalia, and transcribed fragments examining the hand as a recording device.\n\nLooking at how [[copying]] transforms involuntary motor habit into conscious gesture. Rather than preparing for a singular completed object, these pages register transcription rhythm, line pauses, and the ink's gradual depletion.\n\n*Note for artist review: Dimensions, precise dates, and exhibition history are left open as placeholders until verified.*",
+      "subjects": [
+        "handwriting",
+        "transcription",
+        "paper",
+        "script",
+        "working notes"
+      ],
+      "relatedEntryIds": [
+        "copying",
+        "scores",
+        "parallel-on-paper"
+      ],
+      "collections": [],
+      "images": [],
+      "blocks": [
+        {
+          "id": "block-sn-1",
+          "type": "text",
+          "content": "A continuing series of working notes, marginalia, and transcribed fragments examining the hand as a recording device.\n\nLooking at how [[copying]] transforms involuntary motor habit into conscious gesture. Rather than preparing for a singular completed object, these pages register transcription rhythm, line pauses, and the ink's gradual depletion.\n\n*Note for artist review: Dimensions, precise dates, and exhibition history are left open as placeholders until verified.*"
+        }
+      ],
+      "isDevelopingWork": true,
+      "notesForArtist": "Placeholder entry. Review dates, medium description, and attach high-resolution scans when available.",
+      "createdAt": "2026-01-10T10:00:00Z",
+      "updatedAt": "2026-03-01T12:00:00Z",
+      "tagIds": [
+        "tag-handwriting",
+        "tag-paper",
+        "tag-script",
+        "tag-transcription",
+        "tag-working-notes"
+      ],
+      "associatedProjectIds": []
+    },
+    {
+      "id": "thank-you-for-your-time",
+      "slug": "thank-you-for-your-time",
+      "title": "thank you for your time",
+      "titleZh": "",
+      "type": "work",
+      "status": "published",
+      "date": "[placeholder date for review]",
+      "datePlaceholder": true,
+      "medium": "[placeholder for artist review]",
+      "dimensions": "[placeholder for artist review]",
+      "shortDescription": "A work considering spent attention, conversational formula, and the temporal transactions of social exchange.",
+      "fullText": "Taking the ubiquitous closing phrase of institutional correspondence and daily courtesy—\"thank you for your time\"—as both subject and boundary.\n\nInvestigates duration, interpersonal indebtedness, and the formal protocols of polite departure. Closely dialogues with [[scores]] and structured encounters.\n\n*Placeholder entry: Specific medium, installation form, and documentation to be confirmed by Hong Shu-ying.*",
+      "subjects": [
+        "duration",
+        "time",
+        "language",
+        "courtesy",
+        "scores"
+      ],
+      "relatedEntryIds": [
+        "scores",
+        "copying"
+      ],
+      "collections": [],
+      "images": [],
+      "blocks": [
+        {
+          "id": "block-ty-1",
+          "type": "text",
+          "content": "Taking the ubiquitous closing phrase of institutional correspondence and daily courtesy—\"thank you for your time\"—as both subject and boundary.\n\nInvestigates duration, interpersonal indebtedness, and the formal protocols of polite departure. Closely dialogues with [[scores]] and structured encounters.\n\n*Placeholder entry: Specific medium, installation form, and documentation to be confirmed by Hong Shu-ying.*"
+        }
+      ],
+      "isDevelopingWork": false,
+      "notesForArtist": "Review entry details: clarify if performance, printed text, video, or participatory work.",
+      "createdAt": "2026-01-15T11:00:00Z",
+      "updatedAt": "2026-03-01T12:00:00Z",
+      "tagIds": [
+        "tag-duration",
+        "tag-language",
+        "tag-courtesy",
+        "tag-time",
+        "tag-score"
+      ],
+      "associatedProjectIds": []
+    },
+    {
+      "id": "mofang-yaoxiang-ruge",
+      "slug": "mofang-yaoxiang-ruge",
+      "title": "模仿要像：如歌",
+      "titleZh": "模仿要像：如歌",
+      "type": "work",
+      "status": "published",
+      "date": "[placeholder date for review]",
+      "datePlaceholder": true,
+      "medium": "[placeholder for artist review]",
+      "dimensions": "[placeholder for artist review]",
+      "shortDescription": "An inquiry into pedagogical repetition, musical cadence (cantabile), and the fidelity demanded by imitation.",
+      "fullText": "Exploring the pedagogical mandate \"模仿要像\" (to imitate faithfully / to look exactly like the model) paired with the musical directive \"如歌\" (cantabile / song-like, expressive and flowing).\n\nConsiders the tension between mechanical precision and affective expression in classical training, bodily discipline, and voice. Directly connected to [[copying]] and graphic [[scores]].\n\n*Placeholder entry: Pending verification of medium and year of execution.*",
+      "subjects": [
+        "pedagogy",
+        "voice",
+        "imitation",
+        "cantabile",
+        "discipline"
+      ],
+      "relatedEntryIds": [
+        "copying",
+        "scores",
+        "script-notes"
+      ],
+      "collections": [],
+      "images": [],
+      "blocks": [
+        {
+          "id": "block-mf-1",
+          "type": "text",
+          "content": "Exploring the pedagogical mandate \"模仿要像\" (to imitate faithfully / to look exactly like the model) paired with the musical directive \"如歌\" (cantabile / song-like, expressive and flowing).\n\nConsiders the tension between mechanical precision and affective expression in classical training, bodily discipline, and voice. Directly connected to [[copying]] and graphic [[scores]].\n\n*Placeholder entry: Pending verification of medium and year of execution.*"
+        }
+      ],
+      "isDevelopingWork": true,
+      "notesForArtist": "Review entry details: clarify if audio, video, score, or installation.",
+      "createdAt": "2026-01-20T09:30:00Z",
+      "updatedAt": "2026-03-01T12:00:00Z",
+      "tagIds": [
+        "tag-pedagogy",
+        "tag-voice",
+        "tag-imitation",
+        "tag-cantabile",
+        "tag-discipline"
+      ],
+      "associatedProjectIds": []
+    },
+    {
+      "id": "ss-between-books-and-libraries",
+      "slug": "ss-between-books-and-libraries",
+      "title": "述书 / SS: between books & libraries",
+      "titleZh": "述书",
+      "type": "project",
+      "status": "published",
+      "date": "Ongoing project",
+      "datePlaceholder": false,
+      "medium": "Research, publishing, reading sessions, library interventions",
+      "dimensions": "Variable",
+      "shortDescription": "A long-term project traversing books, public and independent libraries, reader communities, personal collections, and reading sessions.",
+      "fullText": "“述书 / SS: between books & libraries” is an ongoing framework within Hong Shu-ying's practice. \n\nThe name draws upon *Shu Shu* (述书)—recounting, narrating, or commenting on books—while positioning the work in the interval between books as bound objects and libraries as collective spatial institutions.\n\nIt encompasses:\n- **Books**: Printed matter, artists' publications, annotated volumes, and marginalia.\n- **Libraries**: Independent archives, institutional collections, public reading rooms, and personal shelves.\n- **People & Conversations**: Readers, custodians, transcribers, and librarians.\n- **Programmes**: Reading groups, including the [[part-time-book-club]], translation circles, and collective reading aloud.\n\nRather than remaining an isolated project, SS branches into works, notes on [[copying]], and transcribed [[script-notes]].",
+      "subjects": [
+        "libraries",
+        "publishing",
+        "reading",
+        "archiving",
+        "conversation",
+        "pedagogy"
+      ],
+      "relatedEntryIds": [
+        "part-time-book-club",
+        "copying",
+        "script-notes",
+        "part-time-book-club-zine",
+        "instructional-scores-pdf"
+      ],
+      "collections": [
+        "ss"
+      ],
+      "images": [],
+      "blocks": [
+        {
+          "id": "block-ss-1",
+          "type": "text",
+          "content": "“述书 / SS: between books & libraries” is an ongoing framework within Hong Shu-ying's practice. \n\nThe name draws upon *Shu Shu* (述书)—recounting, narrating, or commenting on books—while positioning the work in the interval between books as bound objects and libraries as collective spatial institutions.\n\nIt encompasses:\n- **Books**: Printed matter, artists' publications, annotated volumes, and marginalia.\n- **Libraries**: Independent archives, institutional collections, public reading rooms, and personal shelves.\n- **People & Conversations**: Readers, custodians, transcribers, and librarians.\n- **Programmes**: Reading groups, including the [[part-time-book-club]], translation circles, and collective reading aloud.\n\nRather than remaining an isolated project, SS branches into works, notes on [[copying]], and transcribed [[script-notes]]."
+        }
+      ],
+      "isDevelopingWork": false,
+      "ssCategory": "overview",
+      "notesForArtist": "Core project framework. Sub-entries (books, libraries, people, programmes) are tagged with collection: \"ss\".",
+      "createdAt": "2026-01-01T08:00:00Z",
+      "updatedAt": "2026-03-05T14:00:00Z",
+      "tagIds": [
+        "tag-libraries",
+        "tag-publishing",
+        "tag-reading",
+        "tag-archiving",
+        "tag-conversation",
+        "tag-pedagogy"
+      ],
+      "associatedProjectIds": []
+    },
+    {
+      "id": "part-time-book-club",
+      "slug": "part-time-book-club",
+      "title": "Part Time Book Club",
+      "titleZh": "业余读书会",
+      "type": "project",
+      "status": "published",
+      "date": "[placeholder date / ongoing]",
+      "datePlaceholder": true,
+      "medium": "Collective reading sessions, shared marginalia, reading lists",
+      "dimensions": "Discursive / variable",
+      "shortDescription": "Informal, periodic gatherings around reading, printed matter, and shared marginalia, developed within 述书 / SS.",
+      "fullText": "An informal reading collective convened on a \"part-time\" basis, resisting the professionalization of reading and creating non-coercive spaces for close study.\n\nParticipants bring books, unread essays, or fragments to read alongside one another. The club explores reading as a physical, shared occupation rather than an isolated intellectual test.\n\nOrganized as part of [[ss-between-books-and-libraries]] and informed by practices of [[scores]] and collective recitation.\n\n*Note for artist review: Dates, frequency, and meeting locations kept open as placeholders.*",
+      "subjects": [
+        "reading",
+        "collective study",
+        "books",
+        "libraries",
+        "conversation"
+      ],
+      "relatedEntryIds": [
+        "ss-between-books-and-libraries",
+        "scores",
+        "part-time-book-club-zine"
+      ],
+      "collections": [
+        "ss"
+      ],
+      "images": [],
+      "blocks": [
+        {
+          "id": "block-ptbc-1",
+          "type": "text",
+          "content": "An informal reading collective convened on a \"part-time\" basis, resisting the professionalization of reading and creating non-coercive spaces for close study.\n\nParticipants bring books, unread essays, or fragments to read alongside one another. The club explores reading as a physical, shared occupation rather than an isolated intellectual test.\n\nOrganized as part of [[ss-between-books-and-libraries]] and informed by practices of [[scores]] and collective recitation.\n\nSee published transcript: [[part-time-book-club-zine]].\n\n*Note for artist review: Dates, frequency, and meeting locations kept open as placeholders.*"
+        }
+      ],
+      "isDevelopingWork": false,
+      "ssCategory": "programme",
+      "notesForArtist": "Review list of readings and past sessions to record as linked notes or publications.",
+      "createdAt": "2026-01-25T14:00:00Z",
+      "updatedAt": "2026-03-01T12:00:00Z",
+      "tagIds": [
+        "tag-reading",
+        "tag-collective-study",
+        "tag-books",
+        "tag-libraries",
+        "tag-conversation"
+      ],
+      "associatedProjectIds": [
+        "ss-between-books-and-libraries"
+      ]
+    },
+    {
+      "id": "parallel-on-paper",
+      "slug": "parallel-on-paper",
+      "title": "| | on paper",
+      "titleZh": "",
+      "type": "work",
+      "status": "published",
+      "date": "[placeholder date for review]",
+      "datePlaceholder": true,
+      "medium": "Graphite, ink, or embossed lines on paper [placeholder]",
+      "dimensions": "[placeholder for artist review]",
+      "shortDescription": "Marks, spacing, and parallel pauses registered across paper sheets.",
+      "fullText": "A series of paper studies investigating two parallel vertical bars \"| |\"—reading them as architectural columns, caesurae in poetic meter, pause symbols, or parallel coordinates on the plane.\n\nThe work questions the threshold where minimal notation shifts from punctuation into structural space.\n\nDirectly related to [[script-notes]] and the rhythmic notation of [[scores]].\n\n*Placeholder entry: Awaiting review of paper types, dimensions, and photographic documentation.*",
+      "subjects": [
+        "paper",
+        "measurement",
+        "silence",
+        "drawing",
+        "notation"
+      ],
+      "relatedEntryIds": [
+        "script-notes",
+        "scores"
+      ],
+      "collections": [],
+      "images": [],
+      "blocks": [
+        {
+          "id": "block-pop-1",
+          "type": "text",
+          "content": "A series of paper studies investigating two parallel vertical bars \"| |\"—reading them as architectural columns, caesurae in poetic meter, pause symbols, or parallel coordinates on the plane.\n\nThe work questions the threshold where minimal notation shifts from punctuation into structural space.\n\nDirectly related to [[script-notes]] and the rhythmic notation of [[scores]].\n\n*Placeholder entry: Awaiting review of paper types, dimensions, and photographic documentation.*"
+        }
+      ],
+      "isDevelopingWork": true,
+      "notesForArtist": "Developing study. Keep marked as developing work until finalized.",
+      "createdAt": "2026-02-01T16:00:00Z",
+      "updatedAt": "2026-03-01T12:00:00Z",
+      "tagIds": [
+        "tag-paper",
+        "tag-measurement",
+        "tag-silence",
+        "tag-drawing",
+        "tag-notation"
+      ],
+      "associatedProjectIds": []
+    },
+    {
+      "id": "scores",
+      "slug": "scores",
+      "title": "scores",
+      "titleZh": "谱",
+      "type": "note",
+      "status": "published",
+      "date": "Method / concept",
+      "datePlaceholder": false,
+      "medium": "Conceptual term / notation framework",
+      "dimensions": "",
+      "shortDescription": "Instructional diagrams, reading sequences, and choreographies for voice, eyes, or hand.",
+      "fullText": "The score (谱, pu) functions in this practice not merely as musical notation, but as an open script for action, observation, and time-keeping.\n\nA score can be:\n- A typographic layout directing the eye's wandering speed\n- An invitation for two strangers to share silence\n- A sequence of physical constraints for transcription\n\nEntries engaging with scores include [[thank-you-for-your-time]], [[mofang-yaoxiang-ruge]], and [[instructional-scores-pdf]].",
+      "subjects": [
+        "score",
+        "notation",
+        "instruction",
+        "choreography",
+        "time"
+      ],
+      "relatedEntryIds": [
+        "thank-you-for-your-time",
+        "mofang-yaoxiang-ruge",
+        "instructional-scores-pdf"
+      ],
+      "collections": [],
+      "images": [],
+      "blocks": [
+        {
+          "id": "block-sc-1",
+          "type": "text",
+          "content": "The score (谱, pu) functions in this practice not merely as musical notation, but as an open script for action, observation, and time-keeping.\n\nA score can be:\n- A typographic layout directing the eye's wandering speed\n- An invitation for two strangers to share silence\n- A sequence of physical constraints for transcription\n\nEntries engaging with scores include [[thank-you-for-your-time]], [[mofang-yaoxiang-ruge]], [[parallel-on-paper]], and [[instructional-scores-pdf]]."
+        }
+      ],
+      "isDevelopingWork": false,
+      "notesForArtist": "Term entry: summarizes how score-making operates across various projects.",
+      "createdAt": "2026-02-05T10:00:00Z",
+      "updatedAt": "2026-03-01T12:00:00Z",
+      "tagIds": [
+        "tag-score",
+        "tag-notation",
+        "tag-instruction",
+        "tag-choreography",
+        "tag-time"
+      ],
+      "associatedProjectIds": []
+    },
+    {
+      "id": "copying",
+      "slug": "copying",
+      "title": "copying",
+      "titleZh": "摹 / 抄",
+      "type": "note",
+      "status": "published",
+      "date": "Method / concept",
+      "datePlaceholder": false,
+      "medium": "Methodological framework",
+      "dimensions": "",
+      "shortDescription": "Copying as an embodied method of close looking, critical proximity, and cognitive transcription rather than mechanical reproduction.",
+      "fullText": "Copying (临摹 linmo / 抄录 chaolu) is considered here as an active epistemic tool.\n\nBy tracing another's words, strokes, or cadence, the copyist inhabits the original text from the inside. The divergence—the involuntary tremble, the slight misreading, the fatigue of the wrist—reveals the boundary between the original and the self.\n\nConnects deeply to [[mofang-yaoxiang-ruge]], [[script-notes]], and the archival ethos of [[ss-between-books-and-libraries]].",
+      "subjects": [
+        "transcription",
+        "imitation",
+        "transmission",
+        "study",
+        "pedagogy"
+      ],
+      "relatedEntryIds": [
+        "mofang-yaoxiang-ruge",
+        "script-notes",
+        "ss-between-books-and-libraries",
+        "facsimile-inscriptions-spreads"
+      ],
+      "collections": [],
+      "images": [],
+      "blocks": [
+        {
+          "id": "block-cp-1",
+          "type": "text",
+          "content": "Copying (临摹 linmo / 抄录 chaolu) is considered here as an active epistemic tool.\n\nBy tracing another's words, strokes, or cadence, the copyist inhabits the original text from the inside. The divergence—the involuntary tremble, the slight misreading, the fatigue of the wrist—reveals the boundary between the original and the self.\n\nConnects deeply to [[mofang-yaoxiang-ruge]], [[script-notes]], and the archival ethos of [[ss-between-books-and-libraries]]."
+        }
+      ],
+      "isDevelopingWork": false,
+      "notesForArtist": "Core conceptual term across both individual works and the library archive.",
+      "createdAt": "2026-02-10T12:00:00Z",
+      "updatedAt": "2026-03-01T12:00:00Z",
+      "tagIds": [
+        "tag-transcription",
+        "tag-imitation",
+        "tag-transmission",
+        "tag-study",
+        "tag-pedagogy"
+      ],
+      "associatedProjectIds": [
+        "ss-between-books-and-libraries"
+      ]
+    }
+  ]
+}

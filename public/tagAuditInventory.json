@@ -1,0 +1,1070 @@
+{
+  "generatedAt": "2026-10-04T14:42:00.588Z",
+  "totalEntriesAudited": 12,
+  "totalUniqueTags": 43,
+  "standaloneTermEntries": [
+    {
+      "id": "scores",
+      "slug": "scores",
+      "title": "scores",
+      "titleZh": "谱",
+      "type": "term",
+      "status": "published",
+      "shortDescription": "Instructional diagrams, reading sequences, and choreographies for voice, eyes, or hand.",
+      "subjects": [
+        "score",
+        "notation",
+        "instruction",
+        "choreography",
+        "time"
+      ],
+      "relatedEntryIds": [
+        "thank-you-for-your-time",
+        "mofang-yaoxiang-ruge",
+        "instructional-scores-pdf"
+      ]
+    },
+    {
+      "id": "copying",
+      "slug": "copying",
+      "title": "copying",
+      "titleZh": "摹 / 抄",
+      "type": "term",
+      "status": "published",
+      "shortDescription": "Copying as an embodied method of close looking, critical proximity, and cognitive transcription rather than mechanical reproduction.",
+      "subjects": [
+        "transcription",
+        "imitation",
+        "transmission",
+        "study",
+        "pedagogy"
+      ],
+      "relatedEntryIds": [
+        "mofang-yaoxiang-ruge",
+        "script-notes",
+        "ss-between-books-and-libraries",
+        "facsimile-inscriptions-spreads"
+      ]
+    }
+  ],
+  "collectionsInventory": {
+    "ss": [
+      "instructional-scores-pdf",
+      "part-time-book-club-zine",
+      "facsimile-inscriptions-spreads",
+      "ss-between-books-and-libraries",
+      "part-time-book-club"
+    ],
+    "works": [
+      "instructional-scores-pdf",
+      "transcription-cadence-video-studies"
+    ]
+  },
+  "tagsInventory": [
+    {
+      "id": "transcription",
+      "label": "transcription",
+      "entryCount": 5,
+      "publishedCount": 5,
+      "draftCount": 0,
+      "associatedEntries": [
+        {
+          "id": "instructional-scores-pdf",
+          "slug": "instructional-scores-pdf",
+          "title": "Instructional Scores for Reading Rooms (Score Sheet No. 4)",
+          "titleZh": "阅览室指令乐谱（第4号乐谱）",
+          "type": "publication",
+          "status": "published"
+        },
+        {
+          "id": "part-time-book-club-zine",
+          "slug": "part-time-book-club-zine",
+          "title": "Part Time Book Club: Issue 01 (Reading Transcript Zine)",
+          "titleZh": "兼职读书会 第一期：阅读室听记",
+          "type": "publication",
+          "status": "published"
+        },
+        {
+          "id": "transcription-cadence-video-studies",
+          "slug": "transcription-cadence-video-studies",
+          "title": "Transcription Cadence & Reading Protocols: Video Studies",
+          "titleZh": "抄写节奏与阅读礼仪：影像研究",
+          "type": "work",
+          "status": "published"
+        },
+        {
+          "id": "script-notes",
+          "slug": "script-notes",
+          "title": "笔迹 script/notes",
+          "titleZh": "笔迹",
+          "type": "note",
+          "status": "published"
+        },
+        {
+          "id": "copying",
+          "slug": "copying",
+          "title": "copying",
+          "titleZh": "摹 / 抄",
+          "type": "term",
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "reading",
+      "label": "reading",
+      "entryCount": 4,
+      "publishedCount": 4,
+      "draftCount": 0,
+      "associatedEntries": [
+        {
+          "id": "instructional-scores-pdf",
+          "slug": "instructional-scores-pdf",
+          "title": "Instructional Scores for Reading Rooms (Score Sheet No. 4)",
+          "titleZh": "阅览室指令乐谱（第4号乐谱）",
+          "type": "publication",
+          "status": "published"
+        },
+        {
+          "id": "part-time-book-club-zine",
+          "slug": "part-time-book-club-zine",
+          "title": "Part Time Book Club: Issue 01 (Reading Transcript Zine)",
+          "titleZh": "兼职读书会 第一期：阅读室听记",
+          "type": "publication",
+          "status": "published"
+        },
+        {
+          "id": "ss-between-books-and-libraries",
+          "slug": "ss-between-books-and-libraries",
+          "title": "述书 / SS: between books & libraries",
+          "titleZh": "述书",
+          "type": "project",
+          "status": "published"
+        },
+        {
+          "id": "part-time-book-club",
+          "slug": "part-time-book-club",
+          "title": "Part Time Book Club",
+          "titleZh": "业余读书会",
+          "type": "project",
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "libraries",
+      "label": "libraries",
+      "entryCount": 4,
+      "publishedCount": 4,
+      "draftCount": 0,
+      "associatedEntries": [
+        {
+          "id": "instructional-scores-pdf",
+          "slug": "instructional-scores-pdf",
+          "title": "Instructional Scores for Reading Rooms (Score Sheet No. 4)",
+          "titleZh": "阅览室指令乐谱（第4号乐谱）",
+          "type": "publication",
+          "status": "published"
+        },
+        {
+          "id": "facsimile-inscriptions-spreads",
+          "slug": "facsimile-inscriptions-spreads",
+          "title": "述书: Facsimile of Library Inscriptions (Pre-composed Spreads)",
+          "titleZh": "述书：图书馆题记影印（整版跨页）",
+          "type": "publication",
+          "status": "published"
+        },
+        {
+          "id": "ss-between-books-and-libraries",
+          "slug": "ss-between-books-and-libraries",
+          "title": "述书 / SS: between books & libraries",
+          "titleZh": "述书",
+          "type": "project",
+          "status": "published"
+        },
+        {
+          "id": "part-time-book-club",
+          "slug": "part-time-book-club",
+          "title": "Part Time Book Club",
+          "titleZh": "业余读书会",
+          "type": "project",
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "pedagogy",
+      "label": "pedagogy",
+      "entryCount": 3,
+      "publishedCount": 3,
+      "draftCount": 0,
+      "associatedEntries": [
+        {
+          "id": "mofang-yaoxiang-ruge",
+          "slug": "mofang-yaoxiang-ruge",
+          "title": "模仿要像：如歌",
+          "titleZh": "模仿要像：如歌",
+          "type": "work",
+          "status": "published"
+        },
+        {
+          "id": "ss-between-books-and-libraries",
+          "slug": "ss-between-books-and-libraries",
+          "title": "述书 / SS: between books & libraries",
+          "titleZh": "述书",
+          "type": "project",
+          "status": "published"
+        },
+        {
+          "id": "copying",
+          "slug": "copying",
+          "title": "copying",
+          "titleZh": "摹 / 抄",
+          "type": "term",
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "score",
+      "label": "score",
+      "entryCount": 2,
+      "publishedCount": 2,
+      "draftCount": 0,
+      "associatedEntries": [
+        {
+          "id": "instructional-scores-pdf",
+          "slug": "instructional-scores-pdf",
+          "title": "Instructional Scores for Reading Rooms (Score Sheet No. 4)",
+          "titleZh": "阅览室指令乐谱（第4号乐谱）",
+          "type": "publication",
+          "status": "published"
+        },
+        {
+          "id": "scores",
+          "slug": "scores",
+          "title": "scores",
+          "titleZh": "谱",
+          "type": "term",
+          "status": "published"
+        }
+      ],
+      "potentialVariants": [
+        "scores"
+      ]
+    },
+    {
+      "id": "document-reader",
+      "label": "document reader",
+      "entryCount": 2,
+      "publishedCount": 2,
+      "draftCount": 0,
+      "associatedEntries": [
+        {
+          "id": "instructional-scores-pdf",
+          "slug": "instructional-scores-pdf",
+          "title": "Instructional Scores for Reading Rooms (Score Sheet No. 4)",
+          "titleZh": "阅览室指令乐谱（第4号乐谱）",
+          "type": "publication",
+          "status": "published"
+        },
+        {
+          "id": "part-time-book-club-zine",
+          "slug": "part-time-book-club-zine",
+          "title": "Part Time Book Club: Issue 01 (Reading Transcript Zine)",
+          "titleZh": "兼职读书会 第一期：阅读室听记",
+          "type": "publication",
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "publishing",
+      "label": "publishing",
+      "entryCount": 2,
+      "publishedCount": 2,
+      "draftCount": 0,
+      "associatedEntries": [
+        {
+          "id": "part-time-book-club-zine",
+          "slug": "part-time-book-club-zine",
+          "title": "Part Time Book Club: Issue 01 (Reading Transcript Zine)",
+          "titleZh": "兼职读书会 第一期：阅读室听记",
+          "type": "publication",
+          "status": "published"
+        },
+        {
+          "id": "ss-between-books-and-libraries",
+          "slug": "ss-between-books-and-libraries",
+          "title": "述书 / SS: between books & libraries",
+          "titleZh": "述书",
+          "type": "project",
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "ss",
+      "label": "ss",
+      "entryCount": 2,
+      "publishedCount": 2,
+      "draftCount": 0,
+      "associatedEntries": [
+        {
+          "id": "part-time-book-club-zine",
+          "slug": "part-time-book-club-zine",
+          "title": "Part Time Book Club: Issue 01 (Reading Transcript Zine)",
+          "titleZh": "兼职读书会 第一期：阅读室听记",
+          "type": "publication",
+          "status": "published"
+        },
+        {
+          "id": "facsimile-inscriptions-spreads",
+          "slug": "facsimile-inscriptions-spreads",
+          "title": "述书: Facsimile of Library Inscriptions (Pre-composed Spreads)",
+          "titleZh": "述书：图书馆题记影印（整版跨页）",
+          "type": "publication",
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "archiving",
+      "label": "archiving",
+      "entryCount": 2,
+      "publishedCount": 2,
+      "draftCount": 0,
+      "associatedEntries": [
+        {
+          "id": "facsimile-inscriptions-spreads",
+          "slug": "facsimile-inscriptions-spreads",
+          "title": "述书: Facsimile of Library Inscriptions (Pre-composed Spreads)",
+          "titleZh": "述书：图书馆题记影印（整版跨页）",
+          "type": "publication",
+          "status": "published"
+        },
+        {
+          "id": "ss-between-books-and-libraries",
+          "slug": "ss-between-books-and-libraries",
+          "title": "述书 / SS: between books & libraries",
+          "titleZh": "述书",
+          "type": "project",
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "handwriting",
+      "label": "handwriting",
+      "entryCount": 2,
+      "publishedCount": 2,
+      "draftCount": 0,
+      "associatedEntries": [
+        {
+          "id": "transcription-cadence-video-studies",
+          "slug": "transcription-cadence-video-studies",
+          "title": "Transcription Cadence & Reading Protocols: Video Studies",
+          "titleZh": "抄写节奏与阅读礼仪：影像研究",
+          "type": "work",
+          "status": "published"
+        },
+        {
+          "id": "script-notes",
+          "slug": "script-notes",
+          "title": "笔迹 script/notes",
+          "titleZh": "笔迹",
+          "type": "note",
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "paper",
+      "label": "paper",
+      "entryCount": 2,
+      "publishedCount": 2,
+      "draftCount": 0,
+      "associatedEntries": [
+        {
+          "id": "script-notes",
+          "slug": "script-notes",
+          "title": "笔迹 script/notes",
+          "titleZh": "笔迹",
+          "type": "note",
+          "status": "published"
+        },
+        {
+          "id": "parallel-on-paper",
+          "slug": "parallel-on-paper",
+          "title": "| | on paper",
+          "titleZh": "",
+          "type": "work",
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "time",
+      "label": "time",
+      "entryCount": 2,
+      "publishedCount": 2,
+      "draftCount": 0,
+      "associatedEntries": [
+        {
+          "id": "thank-you-for-your-time",
+          "slug": "thank-you-for-your-time",
+          "title": "thank you for your time",
+          "titleZh": "",
+          "type": "work",
+          "status": "published"
+        },
+        {
+          "id": "scores",
+          "slug": "scores",
+          "title": "scores",
+          "titleZh": "谱",
+          "type": "term",
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "imitation",
+      "label": "imitation",
+      "entryCount": 2,
+      "publishedCount": 2,
+      "draftCount": 0,
+      "associatedEntries": [
+        {
+          "id": "mofang-yaoxiang-ruge",
+          "slug": "mofang-yaoxiang-ruge",
+          "title": "模仿要像：如歌",
+          "titleZh": "模仿要像：如歌",
+          "type": "work",
+          "status": "published"
+        },
+        {
+          "id": "copying",
+          "slug": "copying",
+          "title": "copying",
+          "titleZh": "摹 / 抄",
+          "type": "term",
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "conversation",
+      "label": "conversation",
+      "entryCount": 2,
+      "publishedCount": 2,
+      "draftCount": 0,
+      "associatedEntries": [
+        {
+          "id": "ss-between-books-and-libraries",
+          "slug": "ss-between-books-and-libraries",
+          "title": "述书 / SS: between books & libraries",
+          "titleZh": "述书",
+          "type": "project",
+          "status": "published"
+        },
+        {
+          "id": "part-time-book-club",
+          "slug": "part-time-book-club",
+          "title": "Part Time Book Club",
+          "titleZh": "业余读书会",
+          "type": "project",
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "notation",
+      "label": "notation",
+      "entryCount": 2,
+      "publishedCount": 2,
+      "draftCount": 0,
+      "associatedEntries": [
+        {
+          "id": "parallel-on-paper",
+          "slug": "parallel-on-paper",
+          "title": "| | on paper",
+          "titleZh": "",
+          "type": "work",
+          "status": "published"
+        },
+        {
+          "id": "scores",
+          "slug": "scores",
+          "title": "scores",
+          "titleZh": "谱",
+          "type": "term",
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "pdf",
+      "label": "pdf",
+      "entryCount": 1,
+      "publishedCount": 1,
+      "draftCount": 0,
+      "associatedEntries": [
+        {
+          "id": "instructional-scores-pdf",
+          "slug": "instructional-scores-pdf",
+          "title": "Instructional Scores for Reading Rooms (Score Sheet No. 4)",
+          "titleZh": "阅览室指令乐谱（第4号乐谱）",
+          "type": "publication",
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "zine",
+      "label": "zine",
+      "entryCount": 1,
+      "publishedCount": 1,
+      "draftCount": 0,
+      "associatedEntries": [
+        {
+          "id": "part-time-book-club-zine",
+          "slug": "part-time-book-club-zine",
+          "title": "Part Time Book Club: Issue 01 (Reading Transcript Zine)",
+          "titleZh": "兼职读书会 第一期：阅读室听记",
+          "type": "publication",
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "book-spreads",
+      "label": "book spreads",
+      "entryCount": 1,
+      "publishedCount": 1,
+      "draftCount": 0,
+      "associatedEntries": [
+        {
+          "id": "facsimile-inscriptions-spreads",
+          "slug": "facsimile-inscriptions-spreads",
+          "title": "述书: Facsimile of Library Inscriptions (Pre-composed Spreads)",
+          "titleZh": "述书：图书馆题记影印（整版跨页）",
+          "type": "publication",
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "facsimile",
+      "label": "facsimile",
+      "entryCount": 1,
+      "publishedCount": 1,
+      "draftCount": 0,
+      "associatedEntries": [
+        {
+          "id": "facsimile-inscriptions-spreads",
+          "slug": "facsimile-inscriptions-spreads",
+          "title": "述书: Facsimile of Library Inscriptions (Pre-composed Spreads)",
+          "titleZh": "述书：图书馆题记影印（整版跨页）",
+          "type": "publication",
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "inscriptions",
+      "label": "inscriptions",
+      "entryCount": 1,
+      "publishedCount": 1,
+      "draftCount": 0,
+      "associatedEntries": [
+        {
+          "id": "facsimile-inscriptions-spreads",
+          "slug": "facsimile-inscriptions-spreads",
+          "title": "述书: Facsimile of Library Inscriptions (Pre-composed Spreads)",
+          "titleZh": "述书：图书馆题记影印（整版跨页）",
+          "type": "publication",
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "video",
+      "label": "video",
+      "entryCount": 1,
+      "publishedCount": 1,
+      "draftCount": 0,
+      "associatedEntries": [
+        {
+          "id": "transcription-cadence-video-studies",
+          "slug": "transcription-cadence-video-studies",
+          "title": "Transcription Cadence & Reading Protocols: Video Studies",
+          "titleZh": "抄写节奏与阅读礼仪：影像研究",
+          "type": "work",
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "cadence",
+      "label": "cadence",
+      "entryCount": 1,
+      "publishedCount": 1,
+      "draftCount": 0,
+      "associatedEntries": [
+        {
+          "id": "transcription-cadence-video-studies",
+          "slug": "transcription-cadence-video-studies",
+          "title": "Transcription Cadence & Reading Protocols: Video Studies",
+          "titleZh": "抄写节奏与阅读礼仪：影像研究",
+          "type": "work",
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "vimeo",
+      "label": "vimeo",
+      "entryCount": 1,
+      "publishedCount": 1,
+      "draftCount": 0,
+      "associatedEntries": [
+        {
+          "id": "transcription-cadence-video-studies",
+          "slug": "transcription-cadence-video-studies",
+          "title": "Transcription Cadence & Reading Protocols: Video Studies",
+          "titleZh": "抄写节奏与阅读礼仪：影像研究",
+          "type": "work",
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "youtube",
+      "label": "youtube",
+      "entryCount": 1,
+      "publishedCount": 1,
+      "draftCount": 0,
+      "associatedEntries": [
+        {
+          "id": "transcription-cadence-video-studies",
+          "slug": "transcription-cadence-video-studies",
+          "title": "Transcription Cadence & Reading Protocols: Video Studies",
+          "titleZh": "抄写节奏与阅读礼仪：影像研究",
+          "type": "work",
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "google-drive",
+      "label": "google drive",
+      "entryCount": 1,
+      "publishedCount": 1,
+      "draftCount": 0,
+      "associatedEntries": [
+        {
+          "id": "transcription-cadence-video-studies",
+          "slug": "transcription-cadence-video-studies",
+          "title": "Transcription Cadence & Reading Protocols: Video Studies",
+          "titleZh": "抄写节奏与阅读礼仪：影像研究",
+          "type": "work",
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "script",
+      "label": "script",
+      "entryCount": 1,
+      "publishedCount": 1,
+      "draftCount": 0,
+      "associatedEntries": [
+        {
+          "id": "script-notes",
+          "slug": "script-notes",
+          "title": "笔迹 script/notes",
+          "titleZh": "笔迹",
+          "type": "note",
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "working-notes",
+      "label": "working notes",
+      "entryCount": 1,
+      "publishedCount": 1,
+      "draftCount": 0,
+      "associatedEntries": [
+        {
+          "id": "script-notes",
+          "slug": "script-notes",
+          "title": "笔迹 script/notes",
+          "titleZh": "笔迹",
+          "type": "note",
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "duration",
+      "label": "duration",
+      "entryCount": 1,
+      "publishedCount": 1,
+      "draftCount": 0,
+      "associatedEntries": [
+        {
+          "id": "thank-you-for-your-time",
+          "slug": "thank-you-for-your-time",
+          "title": "thank you for your time",
+          "titleZh": "",
+          "type": "work",
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "language",
+      "label": "language",
+      "entryCount": 1,
+      "publishedCount": 1,
+      "draftCount": 0,
+      "associatedEntries": [
+        {
+          "id": "thank-you-for-your-time",
+          "slug": "thank-you-for-your-time",
+          "title": "thank you for your time",
+          "titleZh": "",
+          "type": "work",
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "courtesy",
+      "label": "courtesy",
+      "entryCount": 1,
+      "publishedCount": 1,
+      "draftCount": 0,
+      "associatedEntries": [
+        {
+          "id": "thank-you-for-your-time",
+          "slug": "thank-you-for-your-time",
+          "title": "thank you for your time",
+          "titleZh": "",
+          "type": "work",
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "scores",
+      "label": "scores",
+      "entryCount": 1,
+      "publishedCount": 1,
+      "draftCount": 0,
+      "associatedEntries": [
+        {
+          "id": "thank-you-for-your-time",
+          "slug": "thank-you-for-your-time",
+          "title": "thank you for your time",
+          "titleZh": "",
+          "type": "work",
+          "status": "published"
+        }
+      ],
+      "potentialVariants": [
+        "score"
+      ]
+    },
+    {
+      "id": "voice",
+      "label": "voice",
+      "entryCount": 1,
+      "publishedCount": 1,
+      "draftCount": 0,
+      "associatedEntries": [
+        {
+          "id": "mofang-yaoxiang-ruge",
+          "slug": "mofang-yaoxiang-ruge",
+          "title": "模仿要像：如歌",
+          "titleZh": "模仿要像：如歌",
+          "type": "work",
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "cantabile",
+      "label": "cantabile",
+      "entryCount": 1,
+      "publishedCount": 1,
+      "draftCount": 0,
+      "associatedEntries": [
+        {
+          "id": "mofang-yaoxiang-ruge",
+          "slug": "mofang-yaoxiang-ruge",
+          "title": "模仿要像：如歌",
+          "titleZh": "模仿要像：如歌",
+          "type": "work",
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "discipline",
+      "label": "discipline",
+      "entryCount": 1,
+      "publishedCount": 1,
+      "draftCount": 0,
+      "associatedEntries": [
+        {
+          "id": "mofang-yaoxiang-ruge",
+          "slug": "mofang-yaoxiang-ruge",
+          "title": "模仿要像：如歌",
+          "titleZh": "模仿要像：如歌",
+          "type": "work",
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "collective-study",
+      "label": "collective study",
+      "entryCount": 1,
+      "publishedCount": 1,
+      "draftCount": 0,
+      "associatedEntries": [
+        {
+          "id": "part-time-book-club",
+          "slug": "part-time-book-club",
+          "title": "Part Time Book Club",
+          "titleZh": "业余读书会",
+          "type": "project",
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "books",
+      "label": "books",
+      "entryCount": 1,
+      "publishedCount": 1,
+      "draftCount": 0,
+      "associatedEntries": [
+        {
+          "id": "part-time-book-club",
+          "slug": "part-time-book-club",
+          "title": "Part Time Book Club",
+          "titleZh": "业余读书会",
+          "type": "project",
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "measurement",
+      "label": "measurement",
+      "entryCount": 1,
+      "publishedCount": 1,
+      "draftCount": 0,
+      "associatedEntries": [
+        {
+          "id": "parallel-on-paper",
+          "slug": "parallel-on-paper",
+          "title": "| | on paper",
+          "titleZh": "",
+          "type": "work",
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "silence",
+      "label": "silence",
+      "entryCount": 1,
+      "publishedCount": 1,
+      "draftCount": 0,
+      "associatedEntries": [
+        {
+          "id": "parallel-on-paper",
+          "slug": "parallel-on-paper",
+          "title": "| | on paper",
+          "titleZh": "",
+          "type": "work",
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "drawing",
+      "label": "drawing",
+      "entryCount": 1,
+      "publishedCount": 1,
+      "draftCount": 0,
+      "associatedEntries": [
+        {
+          "id": "parallel-on-paper",
+          "slug": "parallel-on-paper",
+          "title": "| | on paper",
+          "titleZh": "",
+          "type": "work",
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "instruction",
+      "label": "instruction",
+      "entryCount": 1,
+      "publishedCount": 1,
+      "draftCount": 0,
+      "associatedEntries": [
+        {
+          "id": "scores",
+          "slug": "scores",
+          "title": "scores",
+          "titleZh": "谱",
+          "type": "term",
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "choreography",
+      "label": "choreography",
+      "entryCount": 1,
+      "publishedCount": 1,
+      "draftCount": 0,
+      "associatedEntries": [
+        {
+          "id": "scores",
+          "slug": "scores",
+          "title": "scores",
+          "titleZh": "谱",
+          "type": "term",
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "transmission",
+      "label": "transmission",
+      "entryCount": 1,
+      "publishedCount": 1,
+      "draftCount": 0,
+      "associatedEntries": [
+        {
+          "id": "copying",
+          "slug": "copying",
+          "title": "copying",
+          "titleZh": "摹 / 抄",
+          "type": "term",
+          "status": "published"
+        }
+      ]
+    },
+    {
+      "id": "study",
+      "label": "study",
+      "entryCount": 1,
+      "publishedCount": 1,
+      "draftCount": 0,
+      "associatedEntries": [
+        {
+          "id": "copying",
+          "slug": "copying",
+          "title": "copying",
+          "titleZh": "摹 / 抄",
+          "type": "term",
+          "status": "published"
+        }
+      ]
+    }
+  ],
+  "detectedIssues": {
+    "singularPluralVariants": [
+      {
+        "singular": "score",
+        "plural": "scores",
+        "affectedEntries": [
+          "instructional-scores-pdf",
+          "scores",
+          "thank-you-for-your-time"
+        ]
+      },
+      {
+        "singular": "book",
+        "plural": "books",
+        "note": "Used as \"books\" in Part Time Book Club, and \"book spreads\" in Facsimile"
+      }
+    ],
+    "technicalFormatTags": [
+      "pdf",
+      "document reader",
+      "video",
+      "vimeo",
+      "youtube",
+      "google drive",
+      "zine",
+      "book spreads"
+    ],
+    "collectionVsTagOverlaps": [
+      {
+        "name": "ss",
+        "asTagOn": [
+          "part-time-book-club-zine",
+          "facsimile-inscriptions-spreads"
+        ],
+        "asCollectionOn": [
+          "instructional-scores-pdf",
+          "part-time-book-club-zine",
+          "facsimile-inscriptions-spreads",
+          "ss-between-books-and-libraries",
+          "part-time-book-club"
+        ],
+        "asProjectEntryId": "ss-between-books-and-libraries"
+      },
+      {
+        "name": "works",
+        "asCollectionOn": [
+          "instructional-scores-pdf",
+          "transcription-cadence-video-studies"
+        ],
+        "asEntryType": "work"
+      }
+    ],
+    "singleUseTags": [
+      "pdf",
+      "zine",
+      "book-spreads",
+      "facsimile",
+      "inscriptions",
+      "video",
+      "cadence",
+      "vimeo",
+      "youtube",
+      "google-drive",
+      "script",
+      "working-notes",
+      "duration",
+      "language",
+      "courtesy",
+      "scores",
+      "voice",
+      "cantabile",
+      "discipline",
+      "collective-study",
+      "books",
+      "measurement",
+      "silence",
+      "drawing",
+      "instruction",
+      "choreography",
+      "transmission",
+      "study"
+    ],
+    "brokenAssociations": []
+  }
+}

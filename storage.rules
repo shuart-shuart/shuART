@@ -1,0 +1,18 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Helper function to check if the caller is the designated editor
+    function isDesignatedEditor() {
+      return request.auth != null && 
+        (request.auth.token.email == 'work@anotherunit.xyz' || request.auth.token.firebase.sign_in_provider == 'password');
+    }
+
+    // Public read for archive documentation images, page scans, and published PDFs; upload restricted to editor
+    match /entries/{allPaths=**} {
+      allow read: if true;
+      allow write: if isDesignatedEditor()
+        && request.resource.size < 50 * 1024 * 1024 // 50MB max file size for PDFs and high-res scans
+        && (request.resource.contentType.matches('image/.*') || request.resource.contentType == 'application/pdf');
+    }
+  }
+}
