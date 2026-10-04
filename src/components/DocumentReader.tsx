@@ -1,10 +1,11 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import * as pdfjsLib from 'pdfjs-dist';
+import { publicAssetUrl } from '../services/publicAssetUrl';
 import { DocumentReaderBlock, DocumentPage } from '../types';
 
 // Ensure PDF.js worker is registered
 if (typeof window !== 'undefined' && !pdfjsLib.GlobalWorkerOptions.workerSrc) {
-  pdfjsLib.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.mjs';
+  pdfjsLib.GlobalWorkerOptions.workerSrc = publicAssetUrl('/pdf.worker.min.mjs');
 }
 
 interface DocumentReaderProps {
@@ -33,7 +34,7 @@ export const DocumentReader: React.FC<DocumentReaderProps> = ({ block }) => {
 
   // Download capability toggle: controlled from editor
   const isDownloadAllowed = Boolean(block.allowDownload ?? true);
-  const downloadUrl = block.originalFileUrl || block.pdfUrl;
+  const downloadUrl = publicAssetUrl(block.originalFileUrl || block.pdfUrl);
   const downloadFileName = block.originalFileName || block.pdfFileName || 'document.pdf';
 
   // ---------------- PDF.js In-Memory Document State ----------------
@@ -42,7 +43,7 @@ export const DocumentReader: React.FC<DocumentReaderProps> = ({ block }) => {
   const [pdfError, setPdfError] = useState<string | null>(null);
   const [renderedPdfPages, setRenderedPdfPages] = useState<{ [pageNum: number]: string }>({});
 
-  const pdfUrl = block.pdfUrl || block.originalFileUrl;
+  const pdfUrl = publicAssetUrl(block.pdfUrl || block.originalFileUrl);
 
   // Load PDF document using PDF.js without ever triggering browser file downloads
   const loadPdfDocument = useCallback(async () => {
@@ -53,7 +54,7 @@ export const DocumentReader: React.FC<DocumentReaderProps> = ({ block }) => {
 
     try {
       if (!pdfjsLib.GlobalWorkerOptions.workerSrc) {
-        pdfjsLib.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.mjs';
+        pdfjsLib.GlobalWorkerOptions.workerSrc = publicAssetUrl('/pdf.worker.min.mjs');
       }
 
       const loadingTask = pdfjsLib.getDocument({
