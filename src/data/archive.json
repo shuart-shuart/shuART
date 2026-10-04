@@ -304,6 +304,1041 @@
       "associatedProjectIds": [
         "ss-between-books-and-libraries"
       ]
+    },
+    {
+      "id": "entry-in-the-aisle-work",
+      "slug": "in-the-aisle-work",
+      "title": "in the aisle",
+      "type": "work",
+      "date": "2019",
+      "datePlaceholder": false,
+      "medium": "Photo series, Wheat pasting and Zine installation",
+      "shortDescription": "in the aisle gathers photographs, textures and overheard conversations from Chinese supermarkets in Edinburgh.",
+      "fullText": "in the aisle gathers photographs, textures and overheard conversations from Chinese supermarkets in Edinburgh. Made during a two-week programme while living away from Singapore, the work looks at how familiar products, languages, smells and everyday exchanges can make an unfamiliar place briefly feel like home. Bringing these fragments together through photographs, wheat-pasted prints and newsprint, the work considers the supermarket not only as a place to buy things, but as a space where familiarity and community are quietly reproduced.",
+      "images": [],
+      "blocks": [
+        {
+          "id": "text-in-the-aisle-work",
+          "type": "text",
+          "content": "Made during a two-week programme while living away from Singapore, the work looks at how familiar products, languages, smells and everyday exchanges can make an unfamiliar place briefly feel like home. Bringing these fragments together through photographs, wheat-pasted prints and newsprint, the work considers the supermarket not only as a place to buy things, but as a space where familiarity and community are quietly reproduced."
+        }
+      ],
+      "tagIds": [],
+      "subjects": [],
+      "relatedEntryIds": [
+        "entry-in-the-aisle-book"
+      ],
+      "associatedProjectIds": [],
+      "status": "published",
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-04T21:20:44Z",
+      "credits": [],
+      "presentationHistory": [
+        {
+          "id": "history-in-the-aisle-work-1",
+          "title": "Pingyao International Photography Festival",
+          "venue": "",
+          "location": "China",
+          "date": "2019",
+          "action": "shown",
+          "curator": "",
+          "attribution": "curated",
+          "link": "",
+          "note": ""
+        },
+        {
+          "id": "history-in-the-aisle-work-2",
+          "title": "Bearings",
+          "venue": "ADM Gallery",
+          "location": "Singapore",
+          "date": "",
+          "action": "shown",
+          "curator": "",
+          "attribution": "curated",
+          "link": "",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "entry-things-we-held-and-grazed",
+      "slug": "things-we-held-and-grazed",
+      "title": "things we held and grazed",
+      "type": "work",
+      "date": "2019",
+      "datePlaceholder": false,
+      "medium": "Photo series, Newsprint and Binder clips",
+      "shortDescription": "Over fifteen weeks in Chicago, things we held and grazed follows discarded objects left along the streets.",
+      "fullText": "Over fifteen weeks in Chicago, things we held and grazed follows discarded objects left along the streets. Many are things that once came into intimate contact with the body—things we ate from, drank from, held and touched. Some remained in the same place for weeks, each re-encounter more uncanny and begging to be photographed. The work traces these objects after their usefulness has ended, lingering on the strange distance between something once held close and something subsequently left behind.\n\nThings that accompanied us.\nThings that fed us.\nThings that served us.\n\nThings that we left.\nThings that we used.\nThings that we forgot.",
+      "images": [],
+      "blocks": [
+        {
+          "id": "text-things-we-held-and-grazed",
+          "type": "text",
+          "content": "Many are things that once came into intimate contact with the body—things we ate from, drank from, held and touched. Some remained in the same place for weeks, each re-encounter more uncanny and begging to be photographed. The work traces these objects after their usefulness has ended, lingering on the strange distance between something once held close and something subsequently left behind.\n\nThings that accompanied us.\nThings that fed us.\nThings that served us.\n\nThings that we left.\nThings that we used.\nThings that we forgot."
+        }
+      ],
+      "tagIds": [],
+      "subjects": [],
+      "relatedEntryIds": [],
+      "associatedProjectIds": [],
+      "status": "published",
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-04T21:20:44Z",
+      "credits": [],
+      "presentationHistory": []
+    },
+    {
+      "id": "entry-hu-deviations",
+      "slug": "hu-deviations",
+      "title": "互 deviations",
+      "type": "work",
+      "date": "2020",
+      "datePlaceholder": false,
+      "medium": "Moving image with Computer-generated audio\n2'53\"",
+      "shortDescription": "互 deviations is a looping moving image in which fragments of waves converge, overlap and dissolve into new forms.",
+      "fullText": "互 deviations is a looping moving image in which fragments of waves converge, overlap and dissolve into new forms. Accompanied by a digitally constructed soundscape of the sea, the work moves between images that feel familiar yet difficult to place: coastline, body, surface, movement. Emerging from experiments made during 临摹 Lapping Emulations, it considers how repetition and recombination can produce an image that continually shifts away from its source.",
+      "images": [],
+      "blocks": [
+        {
+          "id": "text-hu-deviations",
+          "type": "text",
+          "content": "Accompanied by a digitally constructed soundscape of the sea, the work moves between images that feel familiar yet difficult to place: coastline, body, surface, movement. Emerging from experiments made during 临摹 Lapping Emulations, it considers how repetition and recombination can produce an image that continually shifts away from its source."
+        }
+      ],
+      "tagIds": [],
+      "subjects": [],
+      "relatedEntryIds": [
+        "entry-linmo-lapping-emulations"
+      ],
+      "associatedProjectIds": [],
+      "status": "published",
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-04T21:20:44Z",
+      "credits": [],
+      "presentationHistory": [],
+      "titleZh": "互"
+    },
+    {
+      "id": "entry-linmo-lapping-emulations",
+      "slug": "linmo-lapping-emulations",
+      "title": "临摹 Lapping Emulations",
+      "type": "work",
+      "date": "2020-2021",
+      "datePlaceholder": false,
+      "medium": "Experimental processes, Prints and Moving images",
+      "shortDescription": "临摹 Lapping Emulations is a process-led body of prints and moving images exploring imitation as a way of making images and understanding identity.",
+      "fullText": "临摹 Lapping Emulations is a process-led body of prints and moving images exploring imitation as a way of making images and understanding identity. Developed through improvised darkroom and editing processes, images of coastlines and personal objects are repeatedly copied, altered and recombined until their sources become unstable.\nMade while thinking through my Henghua and Singaporean Chinese identity, the work approaches culture in a similar way: not as something fixed or inherited intact, but something continually reproduced and reshaped. The sea recurs throughout the work as both image and method—a form without fixed boundaries, continually changed by movement, contact and return.",
+      "images": [],
+      "blocks": [
+        {
+          "id": "text-linmo-lapping-emulations",
+          "type": "text",
+          "content": "Developed through improvised darkroom and editing processes, images of coastlines and personal objects are repeatedly copied, altered and recombined until their sources become unstable.\nMade while thinking through my Henghua and Singaporean Chinese identity, the work approaches culture in a similar way: not as something fixed or inherited intact, but something continually reproduced and reshaped. The sea recurs throughout the work as both image and method—a form without fixed boundaries, continually changed by movement, contact and return."
+        }
+      ],
+      "tagIds": [],
+      "subjects": [],
+      "relatedEntryIds": [
+        "entry-linmo-sketches",
+        "entry-hu-deviations"
+      ],
+      "associatedProjectIds": [],
+      "status": "published",
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-04T21:20:44Z",
+      "credits": [
+        {
+          "id": "credit-linmo-lapping-emulations-1",
+          "role": "custom",
+          "name": "Lim Ming Rui",
+          "customRole": "Photography"
+        }
+      ],
+      "presentationHistory": [
+        {
+          "id": "history-linmo-lapping-emulations-1",
+          "title": "ADM Show",
+          "venue": "Gilman Barracks",
+          "location": "",
+          "date": "2021",
+          "action": "shown",
+          "curator": "",
+          "attribution": "curated",
+          "link": "",
+          "note": "Graduation project."
+        },
+        {
+          "id": "history-linmo-lapping-emulations-2",
+          "title": "Inheritance",
+          "venue": "Objectifs",
+          "location": "",
+          "date": "2021",
+          "action": "shown",
+          "curator": "",
+          "attribution": "curated",
+          "link": "",
+          "note": "Selected for the Women in Film and Photography showcase."
+        }
+      ],
+      "titleZh": "临摹"
+    },
+    {
+      "id": "entry-national-flower-work",
+      "slug": "national-flower-work",
+      "title": "national flower",
+      "type": "work",
+      "date": "2020-2022",
+      "datePlaceholder": false,
+      "medium": "Photo series",
+      "shortDescription": "national flower is an affectionate study of the bougainvillea scattered across Singapore's landscape.",
+      "fullText": "national flower is an affectionate study of the bougainvillea scattered across Singapore's landscape. Begun during the pandemic through walks taken on Google Maps Street View, the work collects the recurring patches of pink, magenta and fuchsia that appear along roads, fences and edges of the city. Ubiquitous but easily overlooked, these flowers form an unofficial image of Singapore, which leads to the playful proposition that perhaps these are our real national flowers.",
+      "images": [],
+      "blocks": [
+        {
+          "id": "text-national-flower-work",
+          "type": "text",
+          "content": "Begun during the pandemic through walks taken on Google Maps Street View, the work collects the recurring patches of pink, magenta and fuchsia that appear along roads, fences and edges of the city. Ubiquitous but easily overlooked, these flowers form an unofficial image of Singapore, which leads to the playful proposition that perhaps these are our real national flowers."
+        }
+      ],
+      "tagIds": [],
+      "subjects": [],
+      "relatedEntryIds": [
+        "entry-national-flower-book"
+      ],
+      "associatedProjectIds": [],
+      "status": "published",
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-04T21:20:44Z",
+      "credits": [],
+      "presentationHistory": [
+        {
+          "id": "history-national-flower-work-1",
+          "title": "Persepectives",
+          "venue": "CICA Museum",
+          "location": "Korea",
+          "date": "2022",
+          "action": "shown",
+          "curator": "",
+          "attribution": "curated",
+          "link": "",
+          "note": ""
+        },
+        {
+          "id": "history-national-flower-work-2",
+          "title": "Undescribed #7",
+          "venue": "DECK",
+          "location": "Singapore",
+          "date": "",
+          "action": "shown",
+          "curator": "",
+          "attribution": "curated",
+          "link": "",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "entry-hui-kuala",
+      "slug": "hui-kuala",
+      "title": "回 kuala",
+      "type": "work",
+      "date": "2022-2026",
+      "datePlaceholder": false,
+      "medium": "Experimental print and Moving image",
+      "shortDescription": "回 kuala begins with a childhood memory of a teapot-shaped landmark on the journey to my father's hometown in Brunei.",
+      "fullText": "回 kuala begins with a childhood memory of a teapot-shaped landmark on the journey to my father's hometown in Brunei. I was too young to photograph it then, and more than two decades later, what remains is a vivid but increasingly uncertain image in my mind.\nWorking with 66 photographs of the landmark found online, I repeatedly process and erode other people's images in an attempt to approach my own. Rather than reconstructing the landmark more clearly, the images become increasingly unstable—somewhere between photographic evidence and remembered image.\n回 kuala is an experiment in photographing a memory when a photograph was never taken.\n\n印象深刻的茶壶雕塑在我记忆中是朦胧的。它是跟着我爸爸回汶莱的路上一定会经过的地标。\n我记得最后一次看到茶壶应该有二十年前了，听说茶壶的装饰灯已经坏了，时钟也停了。\n\nI remember seeing the teapot over two decades ago, and rumor has it that the lights and clocks on it have already stopped working a few years ago.",
+      "images": [],
+      "blocks": [
+        {
+          "id": "text-hui-kuala",
+          "type": "text",
+          "content": "I was too young to photograph it then, and more than two decades later, what remains is a vivid but increasingly uncertain image in my mind.\nWorking with 66 photographs of the landmark found online, I repeatedly process and erode other people's images in an attempt to approach my own. Rather than reconstructing the landmark more clearly, the images become increasingly unstable—somewhere between photographic evidence and remembered image.\n回 kuala is an experiment in photographing a memory when a photograph was never taken.\n\n印象深刻的茶壶雕塑在我记忆中是朦胧的。它是跟着我爸爸回汶莱的路上一定会经过的地标。\n我记得最后一次看到茶壶应该有二十年前了，听说茶壶的装饰灯已经坏了，时钟也停了。\n\nI remember seeing the teapot over two decades ago, and rumor has it that the lights and clocks on it have already stopped working a few years ago."
+        }
+      ],
+      "tagIds": [],
+      "subjects": [],
+      "relatedEntryIds": [],
+      "associatedProjectIds": [],
+      "status": "published",
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-04T21:20:44Z",
+      "credits": [],
+      "presentationHistory": [],
+      "titleZh": "回"
+    },
+    {
+      "id": "entry-moqi-sync",
+      "slug": "moqi-sync",
+      "title": "默契 sync",
+      "type": "work",
+      "date": "2022",
+      "datePlaceholder": false,
+      "medium": "Projection with 5-channel audio",
+      "shortDescription": "默契 sync takes the ritual of pre-concert tuning as a way of thinking about synchronisation within an orchestra.",
+      "fullText": "默契 sync takes the ritual of pre-concert tuning as a way of thinking about synchronisation within an orchestra. Before performing, musicians listen and adjust to one another, producing the impression of a single ensemble coming into tune.\nThe work separates this collective act into individual measurements. Lines extracted from electronic tuner readings of different orchestras overlap on screen, only occasionally meeting at the “correct” pitch. A five-channel soundtrack resembles an orchestra tuning together, but is assembled from musicians individually tuning their instruments to a machine rather than to one another.\n默契  (mò qì, meaning a tacit understanding or rapport) asks how much collective synchronisation is actually shared, and how much is something we perceive or construct.",
+      "images": [],
+      "blocks": [
+        {
+          "id": "text-moqi-sync",
+          "type": "text",
+          "content": "Before performing, musicians listen and adjust to one another, producing the impression of a single ensemble coming into tune.\nThe work separates this collective act into individual measurements. Lines extracted from electronic tuner readings of different orchestras overlap on screen, only occasionally meeting at the “correct” pitch. A five-channel soundtrack resembles an orchestra tuning together, but is assembled from musicians individually tuning their instruments to a machine rather than to one another.\n默契  (mò qì, meaning a tacit understanding or rapport) asks how much collective synchronisation is actually shared, and how much is something we perceive or construct."
+        }
+      ],
+      "tagIds": [],
+      "subjects": [],
+      "relatedEntryIds": [],
+      "associatedProjectIds": [],
+      "status": "published",
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-04T21:20:44Z",
+      "credits": [
+        {
+          "id": "credit-moqi-sync-1",
+          "role": "custom",
+          "name": "Berny Tan",
+          "customRole": "Text"
+        }
+      ],
+      "presentationHistory": [],
+      "titleZh": "默契"
+    },
+    {
+      "id": "entry-who-is-abing",
+      "slug": "who-is-abing",
+      "title": "再见阿炳 who is abing?",
+      "type": "work",
+      "date": "2023",
+      "datePlaceholder": false,
+      "medium": "Acrylic Print",
+      "shortDescription": "再见阿炳 who is abing?",
+      "fullText": "再见阿炳 who is abing? begins with the only known surviving photograph of Abing, the influential blind folk musician and erhu player. Despite this single visual reference, his likeness has been repeatedly reimagined through illustrations, sculptures, reenactments and user-made videos.\nThe work gathers these representations into a continuous strip, tracing how one image has been copied, interpreted and embellished over time. Across them, certain features recur while others drift, contributing to a familiar image of the erhu player that extends beyond Abing himself.\nThe work considers how a likeness is constructed when there is almost nothing to copy from.",
+      "images": [],
+      "blocks": [
+        {
+          "id": "text-who-is-abing",
+          "type": "text",
+          "content": "begins with the only known surviving photograph of Abing, the influential blind folk musician and erhu player. Despite this single visual reference, his likeness has been repeatedly reimagined through illustrations, sculptures, reenactments and user-made videos.\nThe work gathers these representations into a continuous strip, tracing how one image has been copied, interpreted and embellished over time. Across them, certain features recur while others drift, contributing to a familiar image of the erhu player that extends beyond Abing himself.\nThe work considers how a likeness is constructed when there is almost nothing to copy from."
+        }
+      ],
+      "tagIds": [],
+      "subjects": [],
+      "relatedEntryIds": [],
+      "associatedProjectIds": [],
+      "status": "published",
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-04T21:20:44Z",
+      "credits": [
+        {
+          "id": "credit-who-is-abing-1",
+          "role": "custom",
+          "name": "Lynda Tay",
+          "customRole": "Curatorial Text"
+        },
+        {
+          "id": "credit-who-is-abing-2",
+          "role": "commissioner",
+          "name": "Esplanade - Theatres on the Bay"
+        },
+        {
+          "id": "credit-who-is-abing-3",
+          "role": "custom",
+          "name": "Esplanade - Theatres on the Bay",
+          "customRole": "Installation images courtesy of"
+        }
+      ],
+      "presentationHistory": [
+        {
+          "id": "history-who-is-abing-1",
+          "title": "印映 reflections impressions",
+          "venue": "Esplanade - Theatres on the Bay",
+          "location": "",
+          "date": "",
+          "action": "shown",
+          "curator": "Lynda Tay",
+          "attribution": "curated",
+          "link": "",
+          "note": "A solo presentation commissioned by Esplanade - Theatres on the Bay. The entire series is an on-going project with further plans to develop it into a book. The audio component is 再现依心曲 ad lib."
+        }
+      ],
+      "dimensions": "5 x 207cm",
+      "titleZh": "再见阿炳"
+    },
+    {
+      "id": "entry-phases",
+      "slug": "phases",
+      "title": "音情圆缺 phases",
+      "type": "work",
+      "date": "2023",
+      "datePlaceholder": false,
+      "medium": "Lightboxes and Moving image",
+      "shortDescription": "音情圆缺 phases gathers images of the moon found in online videos of Erquan Yingyue (二泉映月, Mirrored Moon in the Erquan Spring).",
+      "fullText": "音情圆缺 phases gathers images of the moon found in online videos of Erquan Yingyue (二泉映月, Mirrored Moon in the Erquan Spring). Across professional performances, amateur recordings and user-made videos, the moon repeatedly appears as a visual shorthand for the music—photographed, illustrated, animated and composited in different ways.\nExtracted from their original videos and presented on lightboxes, these moons form a collection of how the same image has been imagined again and again. Like the moon, which is visible through reflected sunlight, these digital moons only appear when illuminated: first by the computer screen, and again by the lightbox.",
+      "images": [],
+      "blocks": [
+        {
+          "id": "text-phases",
+          "type": "text",
+          "content": "Across professional performances, amateur recordings and user-made videos, the moon repeatedly appears as a visual shorthand for the music—photographed, illustrated, animated and composited in different ways.\nExtracted from their original videos and presented on lightboxes, these moons form a collection of how the same image has been imagined again and again. Like the moon, which is visible through reflected sunlight, these digital moons only appear when illuminated: first by the computer screen, and again by the lightbox."
+        }
+      ],
+      "tagIds": [],
+      "subjects": [],
+      "relatedEntryIds": [],
+      "associatedProjectIds": [],
+      "status": "published",
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-04T21:20:44Z",
+      "credits": [
+        {
+          "id": "credit-phases-1",
+          "role": "custom",
+          "name": "Lynda Tay",
+          "customRole": "Curatorial Text"
+        },
+        {
+          "id": "credit-phases-2",
+          "role": "commissioner",
+          "name": "Esplanade - Theatres on the Bay"
+        },
+        {
+          "id": "credit-phases-3",
+          "role": "custom",
+          "name": "Esplanade - Theatres on the Bay",
+          "customRole": "Installation images courtesy of"
+        }
+      ],
+      "presentationHistory": [
+        {
+          "id": "history-phases-1",
+          "title": "印映 reflections impressions",
+          "venue": "Esplanade - Theatres on the Bay",
+          "location": "",
+          "date": "",
+          "action": "shown",
+          "curator": "Lynda Tay",
+          "attribution": "curated",
+          "link": "",
+          "note": "A solo presentation commissioned by Esplanade - Theatres on the Bay. The entire series is an on-going project with further plans to develop it into a book. The audio component is 再现依心曲 ad lib."
+        }
+      ],
+      "titleZh": "音情圆缺"
+    },
+    {
+      "id": "entry-chen-dian-found-on-paper",
+      "slug": "chen-dian-found-on-paper",
+      "title": "尘惦 chen dian (found on paper, made in minds)",
+      "type": "work",
+      "date": "2023-2024",
+      "datePlaceholder": false,
+      "medium": "Lightboxes and Improvisations from graphical scores",
+      "shortDescription": "尘惦 chen dian (found on paper, made in minds) begins with used Chinese orchestra scores: hand-copied, annotated, repeatedly photocopied and passed between musicians.",
+      "fullText": "尘惦 chen dian (found on paper, made in minds) begins with used Chinese orchestra scores: hand-copied, annotated, repeatedly photocopied and passed between musicians. Enlarged and illuminated, their markings and printing artefacts reveal traces accumulated through use and circulation.\nTaking Liu Tianhua's 空山鸟语 (Birdsongs in the Vacant Valley) as a point of departure, these visual traces are also read as graphical scores for new improvisations. Marks that once accompanied the learning and sharing of music are returned to sound, allowing one generation of notation, copying and use to prompt another act of interpretation.",
+      "images": [],
+      "blocks": [
+        {
+          "id": "text-chen-dian-found-on-paper",
+          "type": "text",
+          "content": "Enlarged and illuminated, their markings and printing artefacts reveal traces accumulated through use and circulation.\nTaking Liu Tianhua's 空山鸟语 (Birdsongs in the Vacant Valley) as a point of departure, these visual traces are also read as graphical scores for new improvisations. Marks that once accompanied the learning and sharing of music are returned to sound, allowing one generation of notation, copying and use to prompt another act of interpretation."
+        }
+      ],
+      "tagIds": [],
+      "subjects": [],
+      "relatedEntryIds": [],
+      "associatedProjectIds": [],
+      "status": "published",
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-04T21:20:44Z",
+      "credits": [
+        {
+          "id": "credit-chen-dian-found-on-paper-1",
+          "role": "collaborator",
+          "name": "Ng Wei Xuan"
+        },
+        {
+          "id": "credit-chen-dian-found-on-paper-2",
+          "role": "custom",
+          "name": "Saturn Sound Studio",
+          "customRole": "Mixing and Mastering"
+        },
+        {
+          "id": "credit-chen-dian-found-on-paper-3",
+          "role": "commissioner",
+          "name": "The Substation"
+        },
+        {
+          "id": "credit-chen-dian-found-on-paper-4",
+          "role": "commissioner",
+          "name": "John Tung"
+        }
+      ],
+      "presentationHistory": [
+        {
+          "id": "history-chen-dian-found-on-paper-1",
+          "title": "The Arts Festival: Re-Connect/Centre/Converge",
+          "venue": "",
+          "location": "",
+          "date": "",
+          "action": "commissioned",
+          "curator": "",
+          "attribution": "curated",
+          "link": "",
+          "note": "Commissioned by The Substation and John Tung for the inaugural festival. Audio component in collaboration with Ng Wei Xuan."
+        }
+      ],
+      "titleZh": "尘惦"
+    },
+    {
+      "id": "entry-sight-reading",
+      "slug": "sight-reading",
+      "title": "视奏 sight reading",
+      "type": "work",
+      "date": "2023",
+      "datePlaceholder": false,
+      "medium": "Found notation, Archival inkjet print on Canson Rag",
+      "shortDescription": "视奏 sight reading removes the notes from jianpu (cipher notation) and attends instead to what surrounds them: lines, dots, symbols and annotations that instruct a musician how to play.",
+      "fullText": "视奏 sight reading removes the notes from jianpu (cipher notation) and attends instead to what surrounds them: lines, dots, symbols and annotations that instruct a musician how to play. Isolated from their original context, these “non-notes” form an almost-graphical score, suspended between something to be read, seen and performed.",
+      "images": [],
+      "blocks": [
+        {
+          "id": "text-sight-reading",
+          "type": "text",
+          "content": "Isolated from their original context, these “non-notes” form an almost-graphical score, suspended between something to be read, seen and performed."
+        }
+      ],
+      "tagIds": [],
+      "subjects": [],
+      "relatedEntryIds": [],
+      "associatedProjectIds": [],
+      "status": "published",
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-04T21:20:44Z",
+      "credits": [],
+      "presentationHistory": [],
+      "dimensions": "25.4 x 20.3cm, mounted on MDF Board",
+      "titleZh": "视奏"
+    },
+    {
+      "id": "entry-shifting-springs",
+      "slug": "shifting-springs",
+      "title": "迁泉 shifting springs",
+      "type": "work",
+      "date": "2023-",
+      "datePlaceholder": false,
+      "medium": "Experimental prints and Video objects",
+      "shortDescription": "迁泉 shifting springs begins with Huishan's Second Spring (天下第二泉), historically celebrated for the quality of its water for tea and later closely associated with Abing, who played 二泉映月 (Mirrored Moon in the Erquan Spring) there.",
+      "fullText": "迁泉 shifting springs begins with Huishan's Second Spring (天下第二泉), historically celebrated for the quality of its water for tea and later closely associated with Abing, who played 二泉映月 (Mirrored Moon in the Erquan Spring) there. Today, the spring has largely dried up, leaving a place whose cultural image persists beyond its water.\nThe work turns to amateur and professional videos found online, where the spring continues to flow, reappear and be reimagined. Through experimental prints and video objects, these images are processed and displaced, tracing how a place can persist through music, memory and circulating images even as its physical form changes.\n\n泉里的水干了以后，留下的是“白”——空白的白。没有了水，泉反而成了一个可以不断被想象、填补的地方。记忆、音乐和流传的影像在这片空白里交叠，让已经消失的水一次次重新流动。\n网上的影像也是如此。不同的人拍摄、上传、转发，又重新想象同一个泉。久而久之，这些影像像一个由大众共同累积的时间囊：泉水或许已经干了，但关于它的想象还在流动。",
+      "images": [],
+      "blocks": [
+        {
+          "id": "text-shifting-springs",
+          "type": "text",
+          "content": "Today, the spring has largely dried up, leaving a place whose cultural image persists beyond its water.\nThe work turns to amateur and professional videos found online, where the spring continues to flow, reappear and be reimagined. Through experimental prints and video objects, these images are processed and displaced, tracing how a place can persist through music, memory and circulating images even as its physical form changes.\n\n泉里的水干了以后，留下的是“白”——空白的白。没有了水，泉反而成了一个可以不断被想象、填补的地方。记忆、音乐和流传的影像在这片空白里交叠，让已经消失的水一次次重新流动。\n网上的影像也是如此。不同的人拍摄、上传、转发，又重新想象同一个泉。久而久之，这些影像像一个由大众共同累积的时间囊：泉水或许已经干了，但关于它的想象还在流动。"
+        }
+      ],
+      "tagIds": [],
+      "subjects": [],
+      "relatedEntryIds": [],
+      "associatedProjectIds": [],
+      "status": "published",
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-04T21:20:44Z",
+      "credits": [],
+      "presentationHistory": [
+        {
+          "id": "history-shifting-springs-1",
+          "title": "A Reservoir of Time",
+          "venue": "Objectifs",
+          "location": "",
+          "date": "2023",
+          "action": "presented",
+          "curator": "Goh Chun Aik",
+          "attribution": "curated",
+          "link": "",
+          "note": "Part of Objectifs' Curator Open Call 2023."
+        }
+      ],
+      "titleZh": "迁泉"
+    },
+    {
+      "id": "entry-creak-of-dawn",
+      "slug": "creak-of-dawn",
+      "title": "乍鸣 creak of dawn",
+      "type": "work",
+      "date": "2024",
+      "datePlaceholder": false,
+      "medium": "Montage of self-recorded and found field recordings of birds at sunrise\n30’42”",
+      "shortDescription": "乍鸣 creak of dawn gathers self-recorded and found recordings of birds at sunrise into a 30-minute sound work.",
+      "fullText": "乍鸣 creak of dawn gathers self-recorded and found recordings of birds at sunrise into a 30-minute sound work. \n\nI remember this phrase \"日出而作 日落而息\": to work when the sunrises, rest when the sunsets. Taking from the phrase, this work looks beyond hours and minutes towards environmental ways of marking time. Layered together, the recordings form a cacophonous dawn: a day announced not by a clock, but by birds.",
+      "images": [],
+      "blocks": [
+        {
+          "id": "text-creak-of-dawn",
+          "type": "text",
+          "content": "I remember this phrase \"日出而作 日落而息\": to work when the sunrises, rest when the sunsets. Taking from the phrase, this work looks beyond hours and minutes towards environmental ways of marking time. Layered together, the recordings form a cacophonous dawn: a day announced not by a clock, but by birds."
+        }
+      ],
+      "tagIds": [],
+      "subjects": [],
+      "relatedEntryIds": [],
+      "associatedProjectIds": [],
+      "status": "published",
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-04T21:20:44Z",
+      "credits": [],
+      "presentationHistory": [
+        {
+          "id": "history-creak-of-dawn-1",
+          "title": "A Reservoir of Time",
+          "venue": "Objectifs",
+          "location": "",
+          "date": "2023",
+          "action": "presented",
+          "curator": "Goh Chun Aik",
+          "attribution": "curated",
+          "link": "",
+          "note": "Part of Objectifs' Curator Open Call 2023."
+        }
+      ],
+      "titleZh": "乍鸣"
+    },
+    {
+      "id": "entry-on-notes",
+      "slug": "on-notes",
+      "title": "简谱简介 on notes",
+      "type": "work",
+      "date": "2024",
+      "datePlaceholder": false,
+      "medium": "Single-channel video\n4’12”\nAP",
+      "shortDescription": "简谱简介 on notes rambles through the incidental stories found within jianpu (cipher notation), attending to its symbols, annotations and the things that accumulate around the notes.",
+      "fullText": "简谱简介 on notes rambles through the incidental stories found within jianpu (cipher notation), attending to its symbols, annotations and the things that accumulate around the notes. Made as an alternative exhibition introduction for 彼觸 collecting cipher, it attempts to explain the notation by remembering how it has been used.",
+      "images": [],
+      "blocks": [
+        {
+          "id": "text-on-notes",
+          "type": "text",
+          "content": "Made as an alternative exhibition introduction for 彼觸 collecting cipher, it attempts to explain the notation by remembering how it has been used."
+        }
+      ],
+      "tagIds": [],
+      "subjects": [],
+      "relatedEntryIds": [],
+      "associatedProjectIds": [],
+      "status": "published",
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-04T21:20:44Z",
+      "credits": [],
+      "presentationHistory": [
+        {
+          "id": "history-on-notes-1",
+          "title": "彼觸 collecting cipher",
+          "venue": "窯座 Yao Alternative Art Space",
+          "location": "Taichung",
+          "date": "",
+          "action": "developed",
+          "curator": "",
+          "attribution": "curated",
+          "link": "",
+          "note": "Made as an alternative exhibition introduction for a solo showcase."
+        }
+      ],
+      "titleZh": "简谱简介"
+    },
+    {
+      "id": "entry-in-two-strokes",
+      "slug": "in-two-strokes",
+      "title": "一笔一勾 in two strokes",
+      "type": "work",
+      "date": "2023",
+      "datePlaceholder": false,
+      "medium": "Various adaptations and dimensions",
+      "shortDescription": "一笔一勾 in two strokes follows the many uses of a simple arrow found across annotated musical scores.",
+      "fullText": "一笔一勾 in two strokes follows the many uses of a simple arrow found across annotated musical scores. A line with a pointed head might indicate phrasing, fingering, rhythm, which note to play, or a change in the order of a passage. Collected across different scores and contexts, the work looks at how an ordinary mark becomes a flexible musical language. I love how something drawn in two strokes can do and mean so much.",
+      "images": [],
+      "blocks": [
+        {
+          "id": "text-in-two-strokes",
+          "type": "text",
+          "content": "A line with a pointed head might indicate phrasing, fingering, rhythm, which note to play, or a change in the order of a passage. Collected across different scores and contexts, the work looks at how an ordinary mark becomes a flexible musical language. I love how something drawn in two strokes can do and mean so much."
+        }
+      ],
+      "tagIds": [],
+      "subjects": [],
+      "relatedEntryIds": [],
+      "associatedProjectIds": [],
+      "status": "published",
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-04T21:20:44Z",
+      "credits": [],
+      "presentationHistory": [],
+      "titleZh": "一笔一勾"
+    },
+    {
+      "id": "entry-keeping-count",
+      "slug": "keeping-count",
+      "title": "横竖横竖横 keeping count",
+      "type": "work",
+      "date": "2024",
+      "datePlaceholder": false,
+      "medium": "Archival digital print",
+      "shortDescription": "横竖横竖横 keeping count begins with 正, a five-stroke character commonly used as a tally.",
+      "fullText": "横竖横竖横 keeping count begins with 正, a five-stroke character commonly used as a tally. In my music notebooks, each stroke marked an instance of practice, slowly completing the character over time.\nAs a student, I once filled in the tally without having practised. My teacher caught me and remarked that if I continued like this, the only thing I was practising was how to write 正.\nThe diptych takes this reprimand literally. One image reproduces an uneven 正 from an old practice notebook, its five strokes written at different moments. Alongside it is a collection of characters written repeatedly in a single sitting, paced against an increasingly fast metronome: practising the act of keeping count rather than the instrument it was meant to account for.",
+      "images": [],
+      "blocks": [
+        {
+          "id": "text-keeping-count",
+          "type": "text",
+          "content": "In my music notebooks, each stroke marked an instance of practice, slowly completing the character over time.\nAs a student, I once filled in the tally without having practised. My teacher caught me and remarked that if I continued like this, the only thing I was practising was how to write 正.\nThe diptych takes this reprimand literally. One image reproduces an uneven 正 from an old practice notebook, its five strokes written at different moments. Alongside it is a collection of characters written repeatedly in a single sitting, paced against an increasingly fast metronome: practising the act of keeping count rather than the instrument it was meant to account for."
+        }
+      ],
+      "tagIds": [],
+      "subjects": [],
+      "relatedEntryIds": [],
+      "associatedProjectIds": [],
+      "status": "published",
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-04T21:20:44Z",
+      "credits": [],
+      "presentationHistory": [],
+      "dimensions": "29.7 x 21cm, diptych",
+      "titleZh": "横竖横竖横"
+    },
+    {
+      "id": "entry-on-telling-time-in-the-mall",
+      "slug": "on-telling-time-in-the-mall",
+      "title": "on telling time in the mall",
+      "type": "work",
+      "date": "2024-2025",
+      "datePlaceholder": false,
+      "medium": "Single-screen video with 5.1 audio\n10'38\"",
+      "shortDescription": "on telling time in the mall observes the different ways time makes itself visible in Queensway Shopping Centre, one of Singapore's oldest surviving malls.",
+      "fullText": "on telling time in the mall observes the different ways time makes itself visible in Queensway Shopping Centre, one of Singapore's oldest surviving malls. Moving between field recordings, found footage and fly-on-the-wall observations, the video looks for time beyond the clock: shutters opening and closing, shops changing hands, repeated routines, ageing interiors and small movements that mark the passing of a day.\nBringing footage from different periods into the same cycle, the work asks how we tell that time has passed in a place where so much seems to repeat itself.",
+      "images": [],
+      "blocks": [
+        {
+          "id": "text-on-telling-time-in-the-mall",
+          "type": "text",
+          "content": "Moving between field recordings, found footage and fly-on-the-wall observations, the video looks for time beyond the clock: shutters opening and closing, shops changing hands, repeated routines, ageing interiors and small movements that mark the passing of a day.\nBringing footage from different periods into the same cycle, the work asks how we tell that time has passed in a place where so much seems to repeat itself."
+        }
+      ],
+      "tagIds": [],
+      "subjects": [],
+      "relatedEntryIds": [
+        "entry-what-used-to-be-in-the-mall"
+      ],
+      "associatedProjectIds": [],
+      "status": "published",
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-04T21:20:44Z",
+      "credits": [
+        {
+          "id": "credit-on-telling-time-in-the-mall-1",
+          "role": "custom",
+          "name": "Goh Chun Aik",
+          "customRole": "Text"
+        }
+      ],
+      "presentationHistory": []
+    },
+    {
+      "id": "entry-in-the-aisle-book",
+      "slug": "in-the-aisle-book",
+      "title": "in the aisle",
+      "type": "publication",
+      "date": "2019",
+      "datePlaceholder": false,
+      "medium": "Newsprint zine\nself-published",
+      "shortDescription": "in the aisle gathers photographs, textures and fragments of overheard conversation collected from Chinese supermarkets in Edinburgh.",
+      "fullText": "in the aisle gathers photographs, textures and fragments of overheard conversation collected from Chinese supermarkets in Edinburgh. Made while living away from Singapore, the work follows these spaces through the familiar products, languages, smells and everyday exchanges that briefly made somewhere foreign feel like home.\nThe work takes the form of a newsprint publication, drawing from the free newspapers and distribution kiosks commonly found in these supermarkets. By borrowing a format already circulating within the space, the book considers the supermarket not only as a place to buy familiar things, but as a place where information, conversation and a sense of community are exchanged.",
+      "images": [],
+      "blocks": [
+        {
+          "id": "text-in-the-aisle-book",
+          "type": "text",
+          "content": "Made while living away from Singapore, the work follows these spaces through the familiar products, languages, smells and everyday exchanges that briefly made somewhere foreign feel like home.\nThe work takes the form of a newsprint publication, drawing from the free newspapers and distribution kiosks commonly found in these supermarkets. By borrowing a format already circulating within the space, the book considers the supermarket not only as a place to buy familiar things, but as a place where information, conversation and a sense of community are exchanged."
+        }
+      ],
+      "tagIds": [],
+      "subjects": [],
+      "relatedEntryIds": [
+        "entry-in-the-aisle-work"
+      ],
+      "associatedProjectIds": [],
+      "status": "published",
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-04T21:20:44Z",
+      "credits": [],
+      "presentationHistory": [
+        {
+          "id": "history-in-the-aisle-book-1",
+          "title": "Pingyao International Photography Festival",
+          "venue": "",
+          "location": "China",
+          "date": "2019",
+          "action": "shown",
+          "curator": "",
+          "attribution": "curated",
+          "link": "",
+          "note": "Selected as part of a student showcase."
+        },
+        {
+          "id": "history-in-the-aisle-book-2",
+          "title": "Bearings",
+          "venue": "ADM Gallery",
+          "location": "",
+          "date": "",
+          "action": "shown",
+          "curator": "",
+          "attribution": "curated",
+          "link": "",
+          "note": ""
+        }
+      ],
+      "dimensions": "25 x 33 x 0.8cm, 60pp +16pp"
+    },
+    {
+      "id": "entry-linmo-sketches",
+      "slug": "linmo-sketches",
+      "title": "临摹 – 序 (linmo – sketches)",
+      "type": "publication",
+      "date": "2020",
+      "datePlaceholder": false,
+      "medium": "French-fold booklet, printed on Newsprint\nself-published",
+      "shortDescription": "临摹 – 序 (linmo – sketches) gathers the experiments, readings and fragments that developed alongside 临摹 Lapping Emulations.",
+      "fullText": "临摹 – 序 (linmo – sketches) gathers the experiments, readings and fragments that developed alongside 临摹 Lapping Emulations. Collaged photographs and texts move between darkroom experiments, family histories, research into the Chinese diaspora in Southeast Asia, and recurring images of the sea.\n\nRather than resolving these materials into a single account of identity, the book retains the uncertainty of the research process. Images are copied, altered and revisited, while the sea becomes a recurring way of thinking about culture as something inherited yet continually shifting.\n\nBorrowing the words of Kuo Pao Kun, linmo – sketches is just the journal of another \"cultural orphan\".",
+      "images": [],
+      "blocks": [
+        {
+          "id": "text-linmo-sketches",
+          "type": "text",
+          "content": "Collaged photographs and texts move between darkroom experiments, family histories, research into the Chinese diaspora in Southeast Asia, and recurring images of the sea.\n\nRather than resolving these materials into a single account of identity, the book retains the uncertainty of the research process. Images are copied, altered and revisited, while the sea becomes a recurring way of thinking about culture as something inherited yet continually shifting.\n\nBorrowing the words of Kuo Pao Kun, linmo – sketches is just the journal of another \"cultural orphan\"."
+        }
+      ],
+      "tagIds": [],
+      "subjects": [],
+      "relatedEntryIds": [
+        "entry-linmo-lapping-emulations"
+      ],
+      "associatedProjectIds": [],
+      "status": "published",
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-04T21:20:44Z",
+      "credits": [],
+      "presentationHistory": [
+        {
+          "id": "history-linmo-sketches-1",
+          "title": "Jakarta International Photography Festival's photobook exhibition",
+          "venue": "",
+          "location": "",
+          "date": "",
+          "action": "presented",
+          "curator": "",
+          "attribution": "curated",
+          "link": "",
+          "note": ""
+        },
+        {
+          "id": "history-linmo-sketches-2",
+          "title": "Space on Paper - Chinese Contemporary Photo Book Exhibition",
+          "venue": "Three Shadows Xiamen Photography Art Centre",
+          "location": "",
+          "date": "",
+          "action": "presented",
+          "curator": "",
+          "attribution": "curated",
+          "link": "",
+          "note": ""
+        }
+      ],
+      "dimensions": "24 x 17 x 1cm, 68pp",
+      "titleZh": "临摹"
+    },
+    {
+      "id": "entry-national-flower-book",
+      "slug": "national-flower-book",
+      "title": "national flower",
+      "type": "publication",
+      "date": "2021 edition 1\n2024 edition 2",
+      "datePlaceholder": false,
+      "medium": "2021 edition 1\nAccordion book, Awagami paper\n62 x 76 x 10mm, 27pp\n\n2024 edition 2\nAccordion book, Vellum paper\n40 x 45 x 10mm, 38pp\n\nself-published",
+      "shortDescription": "During the pandemic, I took walks around Singapore using Google Maps Street View.",
+      "fullText": "During the pandemic, I took walks around Singapore using Google Maps Street View. Again and again, patches of pink, magenta and fuchsia appeared at the edges of roads and in my imagined peripheral vision.\nCollected into a small accordion book, these images form an affectionate portrait of the bougainvillea scattered throughout Singapore's landscape.\nThese are the real national flowers of Singapore.",
+      "images": [],
+      "blocks": [
+        {
+          "id": "text-national-flower-book",
+          "type": "text",
+          "content": "Again and again, patches of pink, magenta and fuchsia appeared at the edges of roads and in my imagined peripheral vision.\nCollected into a small accordion book, these images form an affectionate portrait of the bougainvillea scattered throughout Singapore's landscape.\nThese are the real national flowers of Singapore."
+        }
+      ],
+      "tagIds": [],
+      "subjects": [],
+      "relatedEntryIds": [
+        "entry-national-flower-work"
+      ],
+      "associatedProjectIds": [],
+      "status": "published",
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-04T21:20:44Z",
+      "credits": [],
+      "presentationHistory": [
+        {
+          "id": "history-national-flower-book-1",
+          "title": "Singapore Art Book Fair",
+          "venue": "",
+          "location": "",
+          "date": "2021",
+          "action": "launched",
+          "curator": "",
+          "attribution": "curated",
+          "link": "",
+          "note": "First launched with THEBOOKSHOW."
+        }
+      ]
+    },
+    {
+      "id": "entry-chen-dian-after-scans",
+      "slug": "chen-dian-after-scans",
+      "title": "尘惦 chéndiàn; after scans and lingering dust",
+      "type": "publication",
+      "date": "2023-2024",
+      "datePlaceholder": false,
+      "medium": "Risograph, comb-bound in 3 variations",
+      "shortDescription": "尘惦 chéndiàn; after scans and lingering dust begins with hand-copied Chinese music scores repeatedly photocopied for circulation.",
+      "fullText": "尘惦 chéndiàn; after scans and lingering dust begins with hand-copied Chinese music scores repeatedly photocopied for circulation. With each generation, handwritten marks, dust and printing artefacts are copied alongside the music: some traces intensify while others slowly disappear.\nThe scores are scanned, enlarged, inverted and Risograph printed, turning these incidental traces into images in their own right. Each book contains 43 images selected from a larger set of 127 and is bound to stand upright like a calendar, allowing it to be read slowly over time.\nThe title plays between 沉淀, to settle or precipitate, and 尘惦, an invented pairing that suggests dust and something that continues to linger in the mind.",
+      "images": [],
+      "blocks": [
+        {
+          "id": "text-chen-dian-after-scans",
+          "type": "text",
+          "content": "With each generation, handwritten marks, dust and printing artefacts are copied alongside the music: some traces intensify while others slowly disappear.\nThe scores are scanned, enlarged, inverted and Risograph printed, turning these incidental traces into images in their own right. Each book contains 43 images selected from a larger set of 127 and is bound to stand upright like a calendar, allowing it to be read slowly over time.\nThe title plays between 沉淀, to settle or precipitate, and 尘惦, an invented pairing that suggests dust and something that continues to linger in the mind."
+        }
+      ],
+      "tagIds": [],
+      "subjects": [],
+      "relatedEntryIds": [],
+      "associatedProjectIds": [],
+      "status": "published",
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-04T21:20:44Z",
+      "credits": [
+        {
+          "id": "credit-chen-dian-after-scans-1",
+          "role": "publisher",
+          "name": "Temporary Press"
+        },
+        {
+          "id": "credit-chen-dian-after-scans-2",
+          "role": "designer",
+          "name": "gideon-jamie"
+        }
+      ],
+      "presentationHistory": [],
+      "dimensions": "210 × 297mm, 44pp",
+      "titleZh": "尘惦"
+    },
+    {
+      "id": "entry-ive-never-met-yoko-ono",
+      "slug": "ive-never-met-yoko-ono",
+      "title": "天明日月奣 i’ve never met yoko ono, nor have i touched the sky",
+      "type": "publication",
+      "date": "2024",
+      "datePlaceholder": false,
+      "medium": "Miniature photocards, transparent folder and oversized book belt",
+      "shortDescription": "天明日月奣 / i've never met yoko ono, nor have i touched the sky collects images of the sky from photographic documentation of Yoko Ono's Sky TV (1966–2007) and TV to See the Sky (2021).",
+      "fullText": "天明日月奣 / i've never met yoko ono, nor have i touched the sky collects images of the sky from photographic documentation of Yoko Ono's Sky TV (1966–2007) and TV to See the Sky (2021).\nPrinted as miniature photocards rather than a fixed sequence, the images can be rearranged, carried, given to a friend or held against the actual sky. The book plays with one of photography's most familiar subjects—the sky that is endlessly photographed.\nIts Chinese title borrows an unattributed wordplay in which the characters for sky, sun and moon are rearranged to form 天明日月奣: clear skies, clear skies.",
+      "images": [],
+      "blocks": [
+        {
+          "id": "text-ive-never-met-yoko-ono",
+          "type": "text",
+          "content": "Printed as miniature photocards rather than a fixed sequence, the images can be rearranged, carried, given to a friend or held against the actual sky. The book plays with one of photography's most familiar subjects—the sky that is endlessly photographed.\nIts Chinese title borrows an unattributed wordplay in which the characters for sky, sun and moon are rearranged to form 天明日月奣: clear skies, clear skies."
+        }
+      ],
+      "tagIds": [],
+      "subjects": [],
+      "relatedEntryIds": [],
+      "associatedProjectIds": [],
+      "status": "published",
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-04T21:20:44Z",
+      "credits": [],
+      "presentationHistory": [],
+      "dimensions": "100 × 72 mm (closed)",
+      "titleZh": "天明日月奣"
+    },
+    {
+      "id": "entry-what-used-to-be-in-the-mall",
+      "slug": "what-used-to-be-in-the-mall",
+      "title": "what used to be in the mall",
+      "type": "publication",
+      "date": "2025",
+      "datePlaceholder": false,
+      "medium": "Rivet-bound Tracing paper",
+      "shortDescription": "what used to be in the mall gathers newspaper clippings about Queensway Shopping Centre from the 1970s to the 1990s.",
+      "fullText": "what used to be in the mall gathers newspaper clippings about Queensway Shopping Centre from the 1970s to the 1990s. Reports, advertisements and small announcements recall a mall shaped by changing ideas of shopping, nightlife, crime, novelty and entertainment.\nPrinted on tracing paper and rivet-bound into a small volume, fragments from different decades sit over and through one another. Made as a companion to on telling time in the mall, the book approaches the mall's history through the incidental record left behind in newspapers—what happened there, what was sold there, and what once seemed worth reporting.",
+      "images": [],
+      "blocks": [
+        {
+          "id": "text-what-used-to-be-in-the-mall",
+          "type": "text",
+          "content": "Reports, advertisements and small announcements recall a mall shaped by changing ideas of shopping, nightlife, crime, novelty and entertainment.\nPrinted on tracing paper and rivet-bound into a small volume, fragments from different decades sit over and through one another. Made as a companion to on telling time in the mall, the book approaches the mall's history through the incidental record left behind in newspapers—what happened there, what was sold there, and what once seemed worth reporting."
+        }
+      ],
+      "tagIds": [],
+      "subjects": [],
+      "relatedEntryIds": [
+        "entry-on-telling-time-in-the-mall"
+      ],
+      "associatedProjectIds": [],
+      "status": "published",
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-04T21:20:44Z",
+      "credits": [],
+      "presentationHistory": [],
+      "dimensions": "58 x 85 x 6mm, 66pp"
+    },
+    {
+      "id": "entry-flower-vases-paintings",
+      "slug": "flower-vases-paintings",
+      "title": "花·瓶·画 flower, vases, paintings and other observations",
+      "type": "publication",
+      "date": "2025",
+      "datePlaceholder": false,
+      "medium": "accordion book\nself-published",
+      "shortDescription": "花·瓶·画 flower, vases, paintings and other observations collects recurring details from official and amateur erhu music videos: flower arrangements, porcelain vases, scroll paintings and other objects used to stage the performance.",
+      "fullText": "花·瓶·画 flower, vases, paintings and other observations collects recurring details from official and amateur erhu music videos: flower arrangements, porcelain vases, scroll paintings and other objects used to stage the performance.\nMany of the source videos, particularly from the 1980s and 1990s, have been copied and reposted repeatedly. Their colours fade, details blur and compression artefacts accumulate, yet the same visual motifs continue to circulate and be reproduced.\nRearranging these fragments in an accordion book, the work observes how repetition across staging, performance and digital copying has contributed to a familiar visual language for “Chinese music\".",
+      "images": [],
+      "blocks": [
+        {
+          "id": "text-flower-vases-paintings",
+          "type": "text",
+          "content": "Many of the source videos, particularly from the 1980s and 1990s, have been copied and reposted repeatedly. Their colours fade, details blur and compression artefacts accumulate, yet the same visual motifs continue to circulate and be reproduced.\nRearranging these fragments in an accordion book, the work observes how repetition across staging, performance and digital copying has contributed to a familiar visual language for “Chinese music\"."
+        }
+      ],
+      "tagIds": [],
+      "subjects": [],
+      "relatedEntryIds": [],
+      "associatedProjectIds": [],
+      "status": "published",
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-04T21:20:44Z",
+      "credits": [],
+      "presentationHistory": [
+        {
+          "id": "history-flower-vases-paintings-1",
+          "title": "Still Rendering: Projects by the 2024-25 Design Research Fellows",
+          "venue": "Singapore Art Museum, Design Collection",
+          "location": "",
+          "date": "",
+          "action": "presented",
+          "curator": "",
+          "attribution": "curated",
+          "link": "",
+          "note": "Part of Feng Shui in the Expanded Field."
+        }
+      ],
+      "titleZh": "花·瓶·画"
     }
   ],
   "tags": [
