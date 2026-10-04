@@ -26,6 +26,7 @@ This repository is the source of truth for code changes. Ask ChatGPT to inspect
 them. Changes on `main` trigger deployment; the Actions tab shows build results.
 
 - `src/data/initialEntries.ts`: starter entries and content blocks.
+- `src/data/siteContent.ts`: published defaults for the About page and footer. The website editor exposes these under Settings; browser-local overrides take precedence until exported and incorporated into the repository.
 - `src/data/canonicalTags.ts`: canonical vocabulary and tags.
 - `src/components/`: archive views, entry display and editor.
 - `src/index.css`: global styling.

@@ -1,3 +1,4 @@
+import { DEFAULT_ABOUT, DEFAULT_FOOTER } from '../data/siteContent';
 import { Entry, SiteSettings, NavItemConfig, Tag } from '../types';
 import { INITIAL_ENTRIES } from '../data/initialEntries';
 import { INITIAL_CANONICAL_TAGS } from '../data/canonicalTags';
@@ -59,6 +60,8 @@ export const DEFAULT_NAV_ORDER: NavItemConfig[] = [
 ];
 
 export const DEFAULT_SITE_SETTINGS: SiteSettings = {
+  about: DEFAULT_ABOUT,
+  footer: DEFAULT_FOOTER,
   showWander: true,
   typography: 'a',
   navOrder: DEFAULT_NAV_ORDER,
@@ -97,6 +100,7 @@ export function saveLocalSettings(settings: SiteSettings): void {
     localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
   } catch (err) {
     console.error('Error saving local settings:', err);
+    throw err;
   }
 }
 
@@ -114,7 +118,8 @@ export async function fetchSiteSettings(): Promise<SiteSettings> {
 export async function updateSiteSettings(settings: SiteSettings): Promise<void> {
   saveLocalSettings(settings);
   if (isFirebaseConfigured) {
-    await persistSiteSettingsToFirestore(settings);
+    const saved = await persistSiteSettingsToFirestore(settings);
+    if (!saved) throw new Error('Saved in this browser, but could not publish settings to Firebase.');
   }
 }
 

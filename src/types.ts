@@ -164,7 +164,24 @@ export interface NavItemConfig {
   visible: boolean;
 }
 
+export interface AboutContent {
+  title: string;
+  artistName: string;
+  biography: string;
+  sections: { id: string; title: string; text: string; items: { id: string; title: string; text: string }[] }[];
+  contactTitle: string;
+  contactText: string;
+}
+
+export interface FooterContent {
+  artistName: string;
+  description: string;
+  links: { id: string; label: string; url: string }[];
+}
+
 export interface SiteSettings {
+  about?: AboutContent;
+  footer?: FooterContent;
   showWander: boolean;
   typography: TypographyCombo;
   navOrder?: NavItemConfig[];

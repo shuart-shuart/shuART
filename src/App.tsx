@@ -318,8 +318,8 @@ export default function App() {
   };
 
   const handleUpdateSiteSettings = async (newSettings: SiteSettings) => {
-    setSiteSettings(newSettings);
     await updateSiteSettings(newSettings);
+    setSiteSettings(newSettings);
   };
 
   const handleImportEntries = (imported: Entry[]) => {
@@ -426,6 +426,8 @@ export default function App() {
 
           {currentView === 'about' && (
             <AboutView
+              siteSettings={siteSettings}
+              allEntries={visibleEntries}
               onNavigateView={navigateToView}
             />
           )}
@@ -501,6 +503,7 @@ export default function App() {
 
       {/* Main Site Footer */}
       <Footer
+        siteSettings={siteSettings}
         onNavigateView={navigateToView}
       />
 

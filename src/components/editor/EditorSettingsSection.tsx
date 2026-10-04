@@ -1,3 +1,7 @@
+import { DEFAULT_ABOUT, DEFAULT_FOOTER } from '../../data/siteContent';
+import { EditorSiteContentSection } from './EditorSiteContentSection';
+import { footerLinkHref } from '../Footer';
+import { isFirebaseConfigured } from '../../services/firebase';
 import React, { useState } from 'react';
 import { SiteSettings, TypographyCombo, NavItemConfig, Entry } from '../../types';
 import { DESIGNATED_EDITOR_EMAIL } from '../../services/firebase';
@@ -20,12 +24,20 @@ export const EditorSettingsSection: React.FC<EditorSettingsSectionProps> = ({
     return aboutItem ? aboutItem.visible : true;
   });
 
+  const [about, setAbout] = useState(() => siteSettings.about ?? DEFAULT_ABOUT);
+  const [footer, setFooter] = useState(() => siteSettings.footer ?? DEFAULT_FOOTER);
+
   const [isSaving, setIsSaving] = useState(false);
   const [saveMessage, setSaveMessage] = useState<string | null>(null);
 
   const sampleEntry = entries.find((e) => e.status === 'published') || entries[0];
 
   const handleSaveAllSettings = async () => {
+    const invalidLink = footer.links.find(link => link.url.trim() && !footerLinkHref(link.url));
+    if (invalidLink) {
+      setSaveMessage(`Please enter a valid destination for footer link “${invalidLink.label || 'Untitled'}”.`);
+      return;
+    }
     setIsSaving(true);
 
     const updatedNavOrder: NavItemConfig[] = [
@@ -36,6 +48,8 @@ export const EditorSettingsSection: React.FC<EditorSettingsSectionProps> = ({
 
     const updated: SiteSettings = {
       ...siteSettings,
+      about,
+      footer,
       showWander,
       typography,
       navOrder: updatedNavOrder,
@@ -45,7 +59,7 @@ export const EditorSettingsSection: React.FC<EditorSettingsSectionProps> = ({
 
     try {
       await onUpdateSiteSettings(updated);
-      setSaveMessage('Site settings successfully saved and applied.');
+      setSaveMessage(isFirebaseConfigured ? 'Site settings saved and applied.' : 'Saved in this browser. These edits are not yet published for other visitors.');
       setTimeout(() => setSaveMessage(null), 5000);
     } catch (err: any) {
       setSaveMessage(`Error saving settings: ${err.message || String(err)}`);
@@ -75,7 +89,7 @@ export const EditorSettingsSection: React.FC<EditorSettingsSectionProps> = ({
             Site Settings & Editorial Configuration
           </h2>
           <p className="text-xs text-black/60 font-mono-quiet">
-            Manage public navigation visibility, typography pairing, and wander exploration.
+            Manage About content, footer links, navigation, and typography.
           </p>
         </div>
 
@@ -87,6 +101,9 @@ export const EditorSettingsSection: React.FC<EditorSettingsSectionProps> = ({
           {isSaving ? 'Saving…' : 'Save All Settings'}
         </button>
       </div>
+
+      {!isFirebaseConfigured && <p className="text-xs text-black/60">Editor changes currently save in this browser only. To publish them through ChatGPT, export the archive after saving and attach the export here.</p>}
+      <EditorSiteContentSection about={about} footer={footer} entries={entries} onAboutChange={setAbout} onFooterChange={setFooter} />
 
       {/* 1. Public Navigation Visibility */}
       <section className="p-6 border border-black/15 bg-white space-y-4">
