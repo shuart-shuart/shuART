@@ -4,7 +4,7 @@ Hong Shu-ying’s art archive, built with React, Vite and Tailwind CSS.
 
 ## Development
 
-Use Node.js 24 and Bun 1.3.0.
+Use Node.js 24 and Bun 1.4.2.
 
 ```sh
 bun install --frozen-lockfile
