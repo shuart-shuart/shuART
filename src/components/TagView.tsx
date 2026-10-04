@@ -1,3 +1,4 @@
+import { EntryTitle } from './EntryTitle';
 import { renderFormattedText } from '../services/formatting';
 import React from 'react';
 import { Entry, Tag } from '../types';
@@ -67,13 +68,8 @@ export const TagView: React.FC<TagViewProps> = ({
               <span className="text-[11px] font-mono-quiet uppercase tracking-wider text-black/40">
                 Linked Note / Concept Definition
               </span>
-              <h2 className="font-editorial text-2xl sm:text-3xl text-black">
-                {linkedNote.title}
-                {linkedNote.titleZh && linkedNote.titleZh !== linkedNote.title && (
-                  <span className="text-black/60 font-light text-xl ml-2">
-                    ({linkedNote.titleZh})
-                  </span>
-                )}
+              <h2>
+                <EntryTitle entry={linkedNote} primaryClassName="font-editorial text-2xl sm:text-3xl text-black" chineseClassName="font-editorial text-black/60 font-light text-xl" />
               </h2>
             </div>
             <button
@@ -168,12 +164,9 @@ export const TagView: React.FC<TagViewProps> = ({
                     )}
                   </div>
 
-                  <h3 className="font-editorial text-xl text-black group-hover:underline leading-snug">
-                    {entry.title}
+                  <h3 className="leading-snug">
+                    <EntryTitle entry={entry} primaryClassName="font-editorial text-xl text-black group-hover:underline" chineseClassName="font-editorial text-xs text-black/50" />
                   </h3>
-                  {entry.titleZh && entry.titleZh !== entry.title && (
-                    <p className="font-editorial text-xs text-black/50">{entry.titleZh}</p>
-                  )}
 
                   {entry.shortDescription && (
                     <p className="text-xs text-black/70 font-sans leading-relaxed line-clamp-3 pt-1">

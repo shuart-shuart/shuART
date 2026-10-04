@@ -1,3 +1,4 @@
+import { EntryTitle } from './EntryTitle';
 import React, { useState, useMemo } from 'react';
 import { Entry, EntryType, Tag } from '../types';
 
@@ -227,14 +228,7 @@ export const IndexView: React.FC<IndexViewProps> = ({
                   {/* Title & Chinese */}
                   <td className="py-4 pr-4 align-baseline">
                     <div className="space-y-0.5">
-                      <div className="font-editorial text-base sm:text-lg text-black group-hover:underline">
-                        {entry.title}
-                      </div>
-                      {entry.titleZh && entry.titleZh !== entry.title && (
-                        <div className="font-editorial text-xs text-black/50">
-                          {entry.titleZh}
-                        </div>
-                      )}
+                      <EntryTitle entry={entry} primaryClassName="font-editorial text-base sm:text-lg text-black group-hover:underline" chineseClassName="font-editorial text-xs text-black/50" />
                       {entry.isDevelopingWork && (
                         <div className="text-[11px] font-mono-quiet text-black/45 italic">
                           [study / fragment]
@@ -301,12 +295,9 @@ export const IndexView: React.FC<IndexViewProps> = ({
                   )}
                 </div>
 
-                <h3 className="font-editorial text-xl text-black group-hover:underline leading-snug">
-                  {entry.title}
+                <h3 className="leading-snug">
+                  <EntryTitle entry={entry} primaryClassName="font-editorial text-xl text-black group-hover:underline" chineseClassName="font-editorial text-xs text-black/50" />
                 </h3>
-                {entry.titleZh && entry.titleZh !== entry.title && (
-                  <p className="font-editorial text-xs text-black/50">{entry.titleZh}</p>
-                )}
 
                 {entry.shortDescription && (
                   <p className="text-xs text-black/70 font-sans leading-relaxed line-clamp-3 pt-1">

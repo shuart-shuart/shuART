@@ -1,3 +1,4 @@
+import { EntryTitle } from './EntryTitle';
 import { renderFormattedText, formattedTextToPlainText } from '../services/formatting';
 import React, { useState, useMemo } from 'react';
 import { Entry, BacklinkInfo, EntryImage, Tag } from '../types';
@@ -132,14 +133,9 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
       {/* Main Entry Header */}
       <header className="space-y-4 mb-10">
         <div className="space-y-1">
-          <h1 className="font-editorial text-3xl sm:text-5xl text-black font-normal tracking-tight leading-tight">
-            {entry.title}
+          <h1 className="space-y-1">
+            <EntryTitle entry={entry} primaryClassName="font-editorial text-3xl sm:text-5xl text-black font-normal tracking-tight leading-tight" chineseClassName="font-editorial text-xl sm:text-2xl text-black/60 font-light" />
           </h1>
-          {entry.titleZh && entry.titleZh !== entry.title && (
-            <h2 className="font-editorial text-xl sm:text-2xl text-black/60 font-light">
-              {entry.titleZh}
-            </h2>
-          )}
         </div>
 
         {/* Quiet editorial metadata line */}
@@ -372,18 +368,11 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
                   className="p-5 border border-black/10 hover:border-black transition-colors cursor-pointer group bg-white space-y-2"
                 >
                   <div className="flex items-baseline justify-between gap-2">
-                    <span className="font-editorial text-base sm:text-lg text-black group-hover:underline">
-                      {item.title}
-                    </span>
+                    <span><EntryTitle entry={item} primaryClassName="font-editorial text-base sm:text-lg text-black group-hover:underline" chineseClassName="text-xs font-editorial text-black/50" /></span>
                     <span className="text-[11px] font-mono-quiet text-black/50 capitalize shrink-0">
                       {item.type}
                     </span>
                   </div>
-                  {item.titleZh && item.titleZh !== item.title && (
-                    <div className="text-xs font-editorial text-black/50">
-                      {item.titleZh}
-                    </div>
-                  )}
                   {item.shortDescription && (
                     <p className="text-xs font-sans text-black/70 line-clamp-2 leading-relaxed">
                       {item.shortDescription}
