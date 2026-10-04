@@ -505,30 +505,35 @@
         {
           "id": "structure",
           "title": "|statement|",
-          "text": "I think of copying as an imperfect system. No copy is ever identical to what came before it, yet copies continue to function. A blurred photocopy remains readable. A contradictory instructional diagram still teaches. A handwritten annotation continues to direct a performance. Rather than treating these differences as failures of reproduction, I am interested in how images and notations keep working through the gaps, mistranslations and contradictions that emerge between copies.",
+          "text": "",
           "items": [
             {
               "id": "item-0",
-              "title": "My work begins with vernacular working documents: notations, annotations, instructional diagrams, mass printed media and found images shaped by everyday practices of use.",
-              "text": "I am drawn to them and hoard them before I know why. They are not neutral records. They carry the traces of circulation and of decisions made to keep them usable. Their surfaces bear the marks of handling, correction, repetition and interpretation, evidence that they have passed through many hands before I held them in mine."
+              "title": "I think of copying as an imperfect system. ",
+              "text": "No copy is ever identical to what came before it, yet copies continue to function. A blurred photocopy remains readable. A contradictory instructional diagram still teaches. A handwritten annotation continues to direct a performance. Rather than treating these differences as failures of reproduction, I am interested in how images and notations keep working through the gaps, mistranslations and contradictions that emerge between copies."
             },
             {
               "id": "item-1",
-              "title": "Rather than extracting them from their original contexts, I borrow from the systems of copying and translation already embedded within them: a photocopying protocol, a tracing method, a convention of annotation, a cataloguing system, an indexing structure, a compression standard, an editing strategy, a publishing format. ",
-              "text": "I work with these documents first as images, reading them photographically even when I no longer use a camera. A flatbed scanner or a screenshot suits this because it refuses the distinction between document and image. A conductor's score, a handwritten note, a GPS photodome and a newspaper clipping all become flat images, entering the same visual field before being reinterpreted through procedures inherited from their own histories."
+              "title": "My work begins with vernacular working documents: ",
+              "text": "notations, annotations, instructional diagrams, mass printed media and found images shaped by everyday practices of use. I am drawn to them and hoard them before I know why. They are not neutral records. They carry the traces of circulation and of decisions made to keep them usable. Their surfaces bear the marks of handling, correction, repetition and interpretation, evidence that they have passed through many hands before I held them in mine."
             },
             {
               "id": "item-2",
+              "title": "Rather than extracting them from their original contexts, I borrow from the systems of copying and translation already embedded within them: ",
+              "text": "a photocopying protocol, a tracing method, a convention of annotation, a cataloguing system, an indexing structure, a compression standard, an editing strategy, a publishing format.  I work with these documents first as images, reading them photographically even when I no longer use a camera. A flatbed scanner or a screenshot suits this because it refuses the distinction between document and image. A conductor's score, a handwritten note, a GPS photodome and a newspaper clipping all become flat images, entering the same visual field before being reinterpreted through procedures inherited from their own histories."
+            },
+            {
+              "id": "item-3",
               "title": "This understanding grew from nearly two decades inside amateur Chinese orchestras, where I eventually served as scores librarian. ",
               "text": "My role was to maintain the scores cabinet: counting parts, photocopying missing copies, incorporating corrections from rehearsals, and preparing versions that could still be played when we had limited instruments or musicians. Scores were rarely stable. They accumulated annotations, revisions and practical adaptations, sometimes becoming so extensively reworked that they effectively became new master copies."
             },
             {
-              "id": "item-3",
+              "id": "d377b39a-870a-491e-9289-732cb3b24bad",
               "title": "Learning rarely took place through pristine scores.",
               "text": "Techniques were acquired by watching, listening and imitating, and even the notation adapted. In the orchestras I grew up in, we knew a pair of annotation symbols as turtle and dollar sign rather than by their original [Italian] names, because the old names made less sense to a roomful of children learning from borrowed conventions. The symbols stayed useful because the people using them adapted them."
             },
             {
-              "id": "d377b39a-870a-491e-9289-732cb3b24bad",
+              "id": "acb80d3e-909b-4b56-a94b-03495e21c6f6",
               "title": "Meaning does not simply move away from an origin.",
               "text": "It is continually adjusted by the people who need it to remain usable. What interests me are these quiet acts of maintenance, which let shared systems of knowing and working carry on as they pass through different hands, gathering small contradictions, adaptations and new ways of being understood."
             }
@@ -537,7 +542,7 @@
         {
           "id": "colophon",
           "title": "Structure of the site",
-          "text": "Rather than presenting a closed catalogue of finished monuments, this site functions as an evolving index. Developing ideas, found images, and working notes are catalogued alongside completed works, allowing connections between conceptual terms (such as [title]copying[/title] or [title]scores[/title]) and collective projects (such as 述书 / SS: between books & libraries and the Part Time Book Club) to remain visible and active.",
+          "text": "Rather than presenting a closed catalogue of finished monuments, this site functions as an evolving index. Developing ideas, found images, and working notes are catalogued alongside completed works, allowing connections between the various fragments to remain visible and active.",
           "items": []
         }
       ],
@@ -561,7 +566,7 @@
         {
           "id": "bio",
           "label": "CV & Bio",
-          "url": "#about"
+          "url": "https://docs.google.com/document/d/e/2PACX-1vTc5Z3NnJ3ukfRLspfswpeYPcYek4Xa-6CMePB3Chl__eQft5pN-qyhOFg6BbHJ4TUq5WiUj28M9jG5/pub"
         },
         {
           "id": "website",
@@ -592,7 +597,7 @@
         "visible": true
       }
     ],
-    "updatedAt": "2026-10-04T18:07:50.181Z",
+    "updatedAt": "2026-10-04T18:13:30.277Z",
     "updatedBy": "work@anotherunit.xyz"
   }
 }
