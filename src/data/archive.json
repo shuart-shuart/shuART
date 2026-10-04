@@ -500,41 +500,47 @@
     "about": {
       "title": "About",
       "artistName": "Hong Shu-ying 方舒颖",
-      "biography": "Hong Shu-ying 方舒颖 (b. 1997) hoards images and stories to make sense of how things are learned and passed on. Working across moving images, prints, and printed matter, her practice begins with images, notations and other vernacular working documents in circulation. She is interested in the drifts, contradictions and adaptations that allow shared ways of knowing and working to remain legible as they pass through different hands and contexts.\n\nShe grew up in amateur Chinese orchestras, where learning took place through photocopied scores, handwritten annotations and imitation. Alongside this, she spent her teenage years collecting and reposting images online. These parallel habits shaped how she looks at vernacular working documents—not simply as records, but as evidence of how information, knowledge and conventions are continually transmitted, adjusted and kept alive through use.\n\nThis curiosity extends beyond the studio. She co-founded Part Time Book Club, an informal collective that expands public access to art books through gatherings and exchanges. In response to limited access to formal residencies and the demands of international travel, she also initiated | | on paper, a resource-lean residency centred on conversations and four sheets of A4 paper, grounded in the belief that meaningful artistic exchange can grow from modest resources.\n\nHong Shu-ying received the Kwek Leng Joo Prize of Excellence in Photography and was featured in the 6th Women in Film and Photography Showcase by Objectifs Centre for Photography and Film (Singapore). She has presented solo exhibitions at Esplanade (Singapore, 2024) and Yao Alternative Art Space 窯座 (Taichung, 2024), with an upcoming presentation at RM Gallery (Auckland, 2026). Her work has also been shown at Three Shadows Xiamen Photography Art Centre and Pingyao International Photography Festival (China); Jakarta International Photography Festival (Indonesia); PRINTROOM (Netherlands); CICA Museum (South Korea); Pon Ding 朋丁 (Taiwan); and DECK, I_S_L_A_N_D_S Peninsula, Art Outreach, and ADM Gallery (Singapore). She holds a BFA (Hons) in Media Art (Photography) from the School of Art, Design and Media, Nanyang Technological University, Singapore, and is currently a resident at the Singapore Art Museum.",
+      "biography": "Hong Shu-ying 方舒颖 (b. 1997) hoards images and stories to make sense of how things are learned and passed on. Working across moving images, prints, and printed matter, her practice begins with images, notations and other vernacular working documents in circulation. She is interested in the drifts, contradictions and adaptations that allow shared ways of knowing and working to remain legible as they pass through different hands and contexts.\n\nShe grew up in amateur Chinese orchestras, where learning took place through photocopied scores, handwritten annotations and imitation. Alongside this, she spent her teenage years collecting and reposting images online. These parallel habits shaped how she looks at vernacular working documents—not simply as records, but as evidence of how information, knowledge and conventions are continually transmitted, adjusted and kept alive through use.",
       "sections": [
         {
+          "id": "601cdd76-a762-4f96-a225-e2735fc7968e",
+          "title": "",
+          "text": "This curiosity extends beyond the studio. She co-founded Part Time Book Club, an informal collective that expands public access to art books through gatherings and exchanges. In response to limited access to formal residencies and the demands of international travel, she also initiated |      | on paper, a resource-lean residency centred on conversations and four sheets of A4 paper, grounded in the belief that meaningful artistic exchange can grow from modest resources.\n\nHong Shu-ying received the Kwek Leng Joo Prize of Excellence in Photography and was featured in the 6th Women in Film and Photography Showcase by Objectifs Centre for Photography and Film (Singapore). She has presented solo exhibitions at Esplanade (Singapore, 2024) and Yao Alternative Art Space 窯座 (Taichung, 2024), with an upcoming presentation at RM Gallery (Auckland, 2026). Her work has also been shown at Three Shadows Xiamen Photography Art Centre and Pingyao International Photography Festival (China); Jakarta International Photography Festival (Indonesia); PRINTROOM (Netherlands); CICA Museum (South Korea); Pon Ding 朋丁 (Taiwan); and DECK, I_S_L_A_N_D_S Peninsula, Art Outreach, and ADM Gallery (Singapore). She holds a BFA (Hons) in Media Art (Photography) from the School of Art, Design and Media, Nanyang Technological University, Singapore, and is currently a resident at the Singapore Art Museum.",
+          "items": []
+        },
+        {
           "id": "structure",
-          "title": "|statement|",
+          "title": "STATEMENT",
           "text": "",
           "items": [
             {
               "id": "item-0",
-              "title": "I think of copying as an imperfect system. ",
+              "title": "1] I think of copying as an imperfect system. ",
               "text": "No copy is ever identical to what came before it, yet copies continue to function. A blurred photocopy remains readable. A contradictory instructional diagram still teaches. A handwritten annotation continues to direct a performance. Rather than treating these differences as failures of reproduction, I am interested in how images and notations keep working through the gaps, mistranslations and contradictions that emerge between copies."
             },
             {
               "id": "item-1",
-              "title": "My work begins with vernacular working documents: ",
+              "title": "2] My work begins with vernacular working documents: ",
               "text": "notations, annotations, instructional diagrams, mass printed media and found images shaped by everyday practices of use. I am drawn to them and hoard them before I know why. They are not neutral records. They carry the traces of circulation and of decisions made to keep them usable. Their surfaces bear the marks of handling, correction, repetition and interpretation, evidence that they have passed through many hands before I held them in mine."
             },
             {
               "id": "item-2",
-              "title": "Rather than extracting them from their original contexts, I borrow from the systems of copying and translation already embedded within them: ",
+              "title": "3] Rather than extracting them from their original contexts, I borrow from the systems of copying and translation already embedded within them: ",
               "text": "a photocopying protocol, a tracing method, a convention of annotation, a cataloguing system, an indexing structure, a compression standard, an editing strategy, a publishing format.  I work with these documents first as images, reading them photographically even when I no longer use a camera. A flatbed scanner or a screenshot suits this because it refuses the distinction between document and image. A conductor's score, a handwritten note, a GPS photodome and a newspaper clipping all become flat images, entering the same visual field before being reinterpreted through procedures inherited from their own histories."
             },
             {
               "id": "item-3",
-              "title": "This understanding grew from nearly two decades inside amateur Chinese orchestras, where I eventually served as scores librarian. ",
-              "text": "My role was to maintain the scores cabinet: counting parts, photocopying missing copies, incorporating corrections from rehearsals, and preparing versions that could still be played when we had limited instruments or musicians. Scores were rarely stable. They accumulated annotations, revisions and practical adaptations, sometimes becoming so extensively reworked that they effectively became new master copies."
+              "title": "4] This understanding grew from nearly two decades inside amateur Chinese orchestras.",
+              "text": "I eventually served as scores librarian. My role was to maintain the scores cabinet: counting parts, photocopying missing copies, incorporating corrections from rehearsals, and preparing versions that could still be played when we had limited instruments or musicians. Scores were rarely stable. They accumulated annotations, revisions and practical adaptations, sometimes becoming so extensively reworked that they effectively became new master copies."
             },
             {
               "id": "d377b39a-870a-491e-9289-732cb3b24bad",
-              "title": "Learning rarely took place through pristine scores.",
+              "title": "5] Learning rarely took place through pristine scores.",
               "text": "Techniques were acquired by watching, listening and imitating, and even the notation adapted. In the orchestras I grew up in, we knew a pair of annotation symbols as turtle and dollar sign rather than by their original [Italian] names, because the old names made less sense to a roomful of children learning from borrowed conventions. The symbols stayed useful because the people using them adapted them."
             },
             {
               "id": "acb80d3e-909b-4b56-a94b-03495e21c6f6",
-              "title": "Meaning does not simply move away from an origin.",
+              "title": "6] Meaning does not simply move away from an origin.",
               "text": "It is continually adjusted by the people who need it to remain usable. What interests me are these quiet acts of maintenance, which let shared systems of knowing and working carry on as they pass through different hands, gathering small contradictions, adaptations and new ways of being understood."
             }
           ]
@@ -597,7 +603,7 @@
         "visible": true
       }
     ],
-    "updatedAt": "2026-10-04T18:13:30.277Z",
+    "updatedAt": "2026-10-04T18:18:08.136Z",
     "updatedBy": "work@anotherunit.xyz"
   }
 }
