@@ -1,3 +1,4 @@
+import { entryTags as canonicalEntryTags } from '../services/canonicalTags';
 import { EntryTitle } from './EntryTitle';
 import { renderFormattedText, formattedTextToPlainText } from '../services/formatting';
 import React, { useState, useMemo } from 'react';
@@ -58,30 +59,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
     ? allEntries.filter((e) => e.associatedProjectIds?.includes(entry.id) && e.id !== entry.id)
     : [];
 
-  // Resolve canonical tags for this entry
-  const entryTags = useMemo(() => {
-    const list: { id: string; label: string }[] = [];
-    const seen = new Set<string>();
-
-    (entry.tagIds || []).forEach((tId) => {
-      const found = tags.find((t) => t.id === tId);
-      const label = found ? found.label : tId.replace(/^tag-/, '').replace(/-/g, ' ');
-      if (!seen.has(tId)) {
-        seen.add(tId);
-        list.push({ id: tId, label });
-      }
-    });
-
-    (entry.subjects || []).forEach((s) => {
-      const fallbackId = 'tag-' + s.toLowerCase().trim().replace(/[^\w\s-]/g, '').replace(/[\s_-]+/g, '-');
-      if (!seen.has(fallbackId)) {
-        seen.add(fallbackId);
-        list.push({ id: fallbackId, label: s });
-      }
-    });
-
-    return list;
-  }, [entry.tagIds, entry.subjects, tags]);
+  const entryTags = useMemo(() => canonicalEntryTags(entry, tags), [entry.tagIds, tags]);
 
   const canShowWander = showWander || isEditorLoggedIn;
 
@@ -134,12 +112,12 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
       <header className="space-y-4 mb-10">
         <div className="space-y-1">
           <h1 className="space-y-1">
-            <EntryTitle entry={entry} primaryClassName="font-editorial text-3xl sm:text-5xl text-black font-normal tracking-tight leading-tight" chineseClassName="font-editorial text-xl sm:text-2xl text-black/60 font-light" />
+            <EntryTitle entry={entry} primaryClassName="font-editorial text-[28px] sm:text-[40px] text-black font-normal tracking-tight leading-tight" chineseClassName="font-editorial text-[26px] sm:text-[36px] text-black/80 font-light leading-tight" />
           </h1>
         </div>
 
         {/* Quiet editorial metadata line */}
-        <div className="flex flex-wrap items-center gap-2 text-xs sm:text-sm text-black/60 font-mono-quiet pt-1">
+        <div className="flex flex-wrap items-center gap-2 text-xs sm:text-[13px] text-black/60 font-mono-quiet pt-1">
           <span className="capitalize text-black font-medium">{entry.type}</span>
           {entry.date && (
             <>
@@ -203,7 +181,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
 
       {/* Short Description / Lead paragraph */}
       {entry.shortDescription && (
-        <div className="font-editorial text-lg sm:text-xl text-black/80 leading-relaxed mb-8 border-b border-black/5 pb-8">
+        <div className="max-w-[65ch] font-editorial text-base sm:text-lg text-black/80 leading-[1.65] mb-8 border-b border-black/5 pb-8">
           {renderWikiText(entry.shortDescription)}
         </div>
       )}
@@ -215,7 +193,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
             return (
               <section
                 key={block.id}
-                className="max-w-[65ch] font-sans text-base sm:text-lg text-black/90 leading-[1.8] space-y-6"
+                className="max-w-[65ch] font-sans text-base sm:text-lg text-black/90 leading-[1.65] space-y-6"
               >
                 {(block.content || '').split('\n\n').map((paragraph, index) => {
                   if (!paragraph.trim()) return null;
@@ -230,7 +208,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
                     );
                   }
                   return (
-                    <p key={index} className="leading-relaxed">
+                    <p key={index} className="whitespace-pre-line">
                       {renderWikiText(paragraph)}
                     </p>
                   );
@@ -314,7 +292,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
       {/* Canonical Tags & Subjects */}
       {entryTags.length > 0 && (
         <section className="pt-8 border-t border-black/10 my-8">
-          <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1 text-xs text-black/60">
+          <div className="flex flex-wrap items-baseline gap-x-5 gap-y-3 text-black/60">
             <span className="font-mono-quiet text-black/40 uppercase tracking-wider text-[11px]">
               Tags:
             </span>
@@ -328,14 +306,11 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
                       onFilterBySubject(tItem.label);
                     }
                   }}
-                  className="hover:text-black hover:underline cursor-pointer font-serif italic text-sm text-black/80"
+                  className="hover:text-black hover:underline cursor-pointer font-serif italic text-base sm:text-lg text-black/80"
                   title={`View subject view for ${tItem.label}`}
                 >
                   {tItem.label}
                 </button>
-                {idx < entryTags.length - 1 && (
-                  <span aria-hidden="true" className="text-black/30">·</span>
-                )}
               </React.Fragment>
             ))}
           </div>

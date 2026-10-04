@@ -1,3 +1,4 @@
+import { entryTags, tagCounts } from '../services/canonicalTags';
 import { EntryTitle } from './EntryTitle';
 import React, { useState, useMemo } from 'react';
 import { Entry, EntryType, Tag } from '../types';
@@ -35,13 +36,6 @@ export const IndexView: React.FC<IndexViewProps> = ({
   const [selectedType, setSelectedType] = useState<'all' | EntryType>(initialType);
   const [displayMode, setDisplayMode] = useState<'directory' | 'cards'>('directory');
 
-  // Build a lookup map of tag IDs to Tag objects
-  const tagLookup = useMemo(() => {
-    const map = new Map<string, Tag>();
-    tags.forEach((t) => map.set(t.id, t));
-    return map;
-  }, [tags]);
-
   // Build project title lookup
   const projectLookup = useMemo(() => {
     const map = new Map<string, string>();
@@ -61,7 +55,7 @@ export const IndexView: React.FC<IndexViewProps> = ({
 
       // Subject / Tag filter
       if (selectedSubject) {
-        const matchesSubject = entry.subjects?.includes(selectedSubject);
+        const matchesSubject = entryTags(entry, tags).some(tag => tag.label === selectedSubject);
         const matchesTagId = entry.tagIds?.includes(selectedSubject) || entry.tagIds?.includes('tag-' + selectedSubject);
         if (!matchesSubject && !matchesTagId) {
           return false;
@@ -84,29 +78,9 @@ export const IndexView: React.FC<IndexViewProps> = ({
 
       return true;
     });
-  }, [entries, selectedType, selectedSubject, searchQuery]);
+  }, [entries, tags, selectedType, selectedSubject, searchQuery]);
 
-  // Extract all available tags/subjects with entry counts
-  const availableTags = useMemo(() => {
-    const counts = new Map<string, { id: string; label: string; count: number }>();
-    entries.forEach((e) => {
-      (e.tagIds || []).forEach((tId) => {
-        const tagObj = tagLookup.get(tId);
-        const label = tagObj ? tagObj.label : tId.replace(/^tag-/, '');
-        const existing = counts.get(tId) || { id: tId, label, count: 0 };
-        existing.count++;
-        counts.set(tId, existing);
-      });
-      // Fallback for entries with subjects
-      (e.subjects || []).forEach((s) => {
-        const fallbackId = 'tag-' + s.toLowerCase().trim().replace(/[^\w\s-]/g, '').replace(/[\s_-]+/g, '-');
-        if (!counts.has(fallbackId)) {
-          counts.set(fallbackId, { id: fallbackId, label: s, count: 1 });
-        }
-      });
-    });
-    return Array.from(counts.values()).sort((a, b) => b.count - a.count);
-  }, [entries, tagLookup]);
+  const availableTags = useMemo(() => tagCounts(entries, tags), [entries, tags]);
 
   return (
     <div className="max-w-7xl mx-auto px-5 sm:px-8 py-8 sm:py-12 animate-fadeIn">
@@ -228,7 +202,7 @@ export const IndexView: React.FC<IndexViewProps> = ({
                   {/* Title & Chinese */}
                   <td className="py-4 pr-4 align-baseline">
                     <div className="space-y-0.5">
-                      <EntryTitle entry={entry} primaryClassName="font-editorial text-base sm:text-lg text-black group-hover:underline" chineseClassName="font-editorial text-xs text-black/50" />
+                      <EntryTitle entry={entry} primaryClassName="font-editorial text-base sm:text-lg text-black group-hover:underline" chineseClassName="font-editorial text-base sm:text-lg text-black/70" />
                       {entry.isDevelopingWork && (
                         <div className="text-[11px] font-mono-quiet text-black/45 italic">
                           [study / fragment]
@@ -296,11 +270,11 @@ export const IndexView: React.FC<IndexViewProps> = ({
                 </div>
 
                 <h3 className="leading-snug">
-                  <EntryTitle entry={entry} primaryClassName="font-editorial text-xl text-black group-hover:underline" chineseClassName="font-editorial text-xs text-black/50" />
+                  <EntryTitle entry={entry} primaryClassName="font-editorial text-xl text-black group-hover:underline" chineseClassName="font-editorial text-base sm:text-lg text-black/70" />
                 </h3>
 
                 {entry.shortDescription && (
-                  <p className="text-xs text-black/70 font-sans leading-relaxed line-clamp-3 pt-1">
+                  <p className="text-base sm:text-lg text-black/70 font-sans leading-[1.65] line-clamp-3 pt-1">
                     {entry.shortDescription}
                   </p>
                 )}
@@ -315,7 +289,7 @@ export const IndexView: React.FC<IndexViewProps> = ({
                     </span>
                   )}
                   <span className="truncate text-black/50">
-                    {entry.subjects?.slice(0, 3).join(', ')}
+                    {entryTags(entry, tags).slice(0, 3).map(tag => tag.label).join(', ')}
                   </span>
                 </div>
                 <span className="group-hover:text-black shrink-0">Open →</span>
@@ -336,7 +310,7 @@ export const IndexView: React.FC<IndexViewProps> = ({
         <h3 className="font-mono-quiet text-xs uppercase tracking-wider text-black/40 mb-3">
           Index of Practice Tags & Subjects
         </h3>
-        <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1.5 text-xs text-black/70">
+        <div className="flex flex-wrap items-baseline gap-x-5 gap-y-3 text-black/70">
           {availableTags.map((item, idx) => (
             <React.Fragment key={item.id}>
               <button
@@ -347,16 +321,13 @@ export const IndexView: React.FC<IndexViewProps> = ({
                     onFilterBySubject(item.label);
                   }
                 }}
-                className={`hover:text-black font-serif italic text-sm ${
+                className={`inline-flex items-baseline gap-1.5 max-w-full text-left hover:text-black font-serif italic text-base sm:text-lg ${
                   selectedSubject === item.label || selectedSubject === item.id ? 'text-black font-medium underline' : 'text-black/75'
                 }`}
                 title={`Open subject view for ${item.label}`}
               >
-                {item.label} <span className="font-mono-quiet text-[10px] text-black/40 not-italic">({item.count})</span>
+                <span>{item.label}</span><span className="shrink-0 font-mono-quiet text-xs text-black/50 not-italic">({item.count})</span>
               </button>
-              {idx < availableTags.length - 1 && (
-                <span aria-hidden="true" className="text-black/25">·</span>
-              )}
             </React.Fragment>
           ))}
         </div>

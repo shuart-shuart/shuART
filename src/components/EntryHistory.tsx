@@ -40,7 +40,7 @@ export function EntryHistory({ entry, allEntries, onSelectEntry }: {
           const event = record.title.trim() || record.venue.trim();
           const details = [record.title.trim() ? record.venue : '', record.location, record.date].filter(value => value?.trim());
           const hasSentence = event || details.length > 0 || record.curator?.trim() || record.link?.trim();
-          return <li key={record.id} className="space-y-2 text-sm leading-relaxed whitespace-pre-line">
+          return <li key={record.id} className="max-w-[65ch] space-y-2 text-base sm:text-lg leading-[1.65] whitespace-pre-line">
             {hasSentence && <p>
               <span className="font-editorial italic">{formatted(entry.title)}</span>{' was '}{record.action || 'presented'}
               {event && <>{' at '}{linkedText(event, record.link)}</>}

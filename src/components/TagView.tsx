@@ -1,3 +1,4 @@
+import { entryTags } from '../services/canonicalTags';
 import { EntryTitle } from './EntryTitle';
 import { renderFormattedText } from '../services/formatting';
 import React from 'react';
@@ -8,6 +9,7 @@ import { VideoPlayer } from './VideoPlayer';
 
 interface TagViewProps {
   tag: Tag;
+  tags?: Tag[];
   linkedNote: Entry | null;
   associatedEntries: Entry[];
   allEntries: Entry[];
@@ -18,6 +20,7 @@ interface TagViewProps {
 
 export const TagView: React.FC<TagViewProps> = ({
   tag,
+  tags = [],
   linkedNote,
   associatedEntries,
   allEntries,
@@ -88,7 +91,7 @@ export const TagView: React.FC<TagViewProps> = ({
           )}
 
           {linkedNote.fullText && (
-            <div className="text-sm font-sans text-black/80 leading-[1.8] space-y-4 whitespace-pre-line max-w-[65ch]">
+            <div className="text-base sm:text-lg font-sans text-black/80 leading-[1.65] space-y-4 whitespace-pre-line max-w-[65ch]">
               {renderWikiText(linkedNote.fullText)}
             </div>
           )}
@@ -115,7 +118,7 @@ export const TagView: React.FC<TagViewProps> = ({
                   return (
                     <div
                       key={block.id}
-                      className="text-sm font-sans text-black/75 leading-relaxed whitespace-pre-line"
+                      className="max-w-[65ch] text-base sm:text-lg font-sans text-black/75 leading-[1.65] whitespace-pre-line"
                     >
                       {renderWikiText(block.content)}
                     </div>
@@ -165,7 +168,7 @@ export const TagView: React.FC<TagViewProps> = ({
                   </div>
 
                   <h3 className="leading-snug">
-                    <EntryTitle entry={entry} primaryClassName="font-editorial text-xl text-black group-hover:underline" chineseClassName="font-editorial text-xs text-black/50" />
+                    <EntryTitle entry={entry} primaryClassName="font-editorial text-xl text-black group-hover:underline" chineseClassName="font-editorial text-base sm:text-lg text-black/70" />
                   </h3>
 
                   {entry.shortDescription && (
@@ -177,7 +180,7 @@ export const TagView: React.FC<TagViewProps> = ({
 
                 <div className="pt-3 border-t border-black/10 flex justify-between items-baseline text-[11px] font-mono-quiet text-black/45">
                   <span className="truncate max-w-[200px]">
-                    {entry.subjects?.slice(0, 3).join(', ')}
+                    {entryTags(entry, tags).slice(0, 3).map(tag => tag.label).join(', ')}
                   </span>
                   <span className="group-hover:text-black">Open →</span>
                 </div>

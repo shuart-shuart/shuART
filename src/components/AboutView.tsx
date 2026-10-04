@@ -24,16 +24,16 @@ export const AboutView: React.FC<AboutViewProps> = ({ siteSettings, allEntries =
           <p className="font-editorial text-2xl sm:text-3xl text-black/80 font-light leading-snug">{render(content.artistName)}</p>
         </header>
         {content.biography.trim() && (
-          <section className="max-w-[65ch] text-[15px] sm:text-base text-black/85 leading-[1.8] sm:leading-[1.85] space-y-6">
+          <section className="max-w-[65ch] text-base sm:text-lg text-black/85 leading-[1.65] space-y-6">
             {paragraphs(content.biography)}
           </section>
         )}
         {content.sections.map(section => (
           <section key={section.id} className="my-14 pt-10 border-t border-black/10 space-y-6 max-w-4xl">
             {section.title && <h2 className="font-editorial text-2xl text-black font-normal">{render(section.title)}</h2>}
-            {section.text.trim() && <div className="space-y-4 text-[14px] text-black/75 leading-relaxed max-w-[65ch]">{paragraphs(section.text)}</div>}
+            {section.text.trim() && <div className="space-y-4 text-base sm:text-lg text-black/75 leading-[1.65] max-w-[65ch]">{paragraphs(section.text)}</div>}
             {section.items.length > 0 && (
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 text-[14px] leading-relaxed">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 text-base sm:text-lg leading-[1.65]">
                 {section.items.map(item => (
                   <div key={item.id} className="space-y-1.5">
                     <h3 className="font-mono-quiet text-xs uppercase tracking-wider text-black">{render(item.title)}</h3>

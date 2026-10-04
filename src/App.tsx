@@ -121,7 +121,8 @@ export default function App() {
     const matched = tags.find(
       (t) => t.id === norm || t.label.toLowerCase() === norm.toLowerCase() || t.id === 'tag-' + norm
     );
-    const targetId = matched ? matched.id : norm.startsWith('tag-') ? norm : 'tag-' + norm;
+    if (!matched) return;
+    const targetId = matched.id;
 
     setSelectedTagId(targetId);
     setSelectedEntrySlug(null);
@@ -364,11 +365,7 @@ export default function App() {
         t.id.toLowerCase() === ('tag-' + selectedTagId).toLowerCase()
     );
     if (found) return found;
-    // Fallback tag object if not in canonical tags list yet
-    return {
-      id: selectedTagId,
-      label: selectedTagId.replace(/^tag-/, '').replace(/-/g, ' '),
-    };
+    return null;
   }, [tags, selectedTagId]);
 
   // Resolve linked note for the active tag (must be published unless editor)
@@ -385,12 +382,7 @@ export default function App() {
     if (!currentActiveTag) return [];
     return visibleEntries.filter((e) => {
       const hasTagId = e.tagIds?.includes(currentActiveTag.id);
-      const hasSubject = e.subjects?.some(
-        (s) =>
-          s.toLowerCase() === currentActiveTag.label.toLowerCase() ||
-          s.toLowerCase() === currentActiveTag.id.replace(/^tag-/, '').toLowerCase()
-      );
-      return hasTagId || hasSubject;
+      return hasTagId;
     });
   }, [currentActiveTag, visibleEntries]);
 
@@ -441,6 +433,7 @@ export default function App() {
           {currentView === 'tag' && currentActiveTag && (
             <TagView
               tag={currentActiveTag}
+              tags={tags}
               linkedNote={currentLinkedNote}
               associatedEntries={tagAssociatedEntries}
               allEntries={visibleEntries}

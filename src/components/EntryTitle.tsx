@@ -24,7 +24,7 @@ export function EntryTitle({ entry, primaryClassName, chineseClassName }: {
 }) {
   const { chinese, english } = splitEntryTitle(entry);
   return <>
-    {chinese && <span lang="zh-Hans" className={`block ${english ? chineseClassName : primaryClassName}`}>{chinese}</span>}
-    {english && <span className={`block ${primaryClassName}`}>{english}</span>}
+    {chinese && <span lang="zh-Hans" className={`block break-words ${english ? chineseClassName : primaryClassName}`}>{chinese}</span>}
+    {english && <span className={`block break-words ${primaryClassName}`}>{english}</span>}
   </>;
 }
