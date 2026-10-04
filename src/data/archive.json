@@ -3,48 +3,55 @@
   "entries": [
     {
       "id": "script-notes",
-      "slug": "script-notes",
+      "slug": "biji",
       "title": "笔迹 script/notes",
       "titleZh": "笔迹",
-      "type": "note",
-      "status": "published",
-      "date": "c. 2022–present [placeholder]",
-      "datePlaceholder": true,
-      "medium": "Ink and pencil on loose paper, working notebooks [placeholder]",
-      "dimensions": "Variable [placeholder]",
+      "type": "publication",
+      "date": "2021-2022",
+      "datePlaceholder": false,
+      "medium": "Ring bound, Die-cut grey board",
+      "dimensions": "120 x 210mm, 120pp",
       "shortDescription": "Working fragments, notations, and studies on handwriting, stroke gestures, and the physical tempo of writing.",
-      "fullText": "A continuing series of working notes, marginalia, and transcribed fragments examining the hand as a recording device.\n\nLooking at how [[copying]] transforms involuntary motor habit into conscious gesture. Rather than preparing for a singular completed object, these pages register transcription rhythm, line pauses, and the ink's gradual depletion.\n\n*Note for artist review: Dimensions, precise dates, and exhibition history are left open as placeholders until verified.*",
-      "subjects": [
-        "handwriting",
-        "transcription",
-        "paper",
-        "script",
-        "working notes"
-      ],
-      "relatedEntryIds": [
-        "copying",
-        "scores",
-        "parallel-on-paper"
-      ],
-      "collections": [],
+      "credits": [],
+      "presentationHistory": [],
+      "fullText": "[title]笔迹 script/notes[/title] looks at 18 years worth of hand-copied and hand-annotated scores from Shu's collection. Through observing and re-presenting these markings, she considers the way language and customs are developed in social groups and how it borrows and evolves from existing and adjacent communities.\n\nPublished by THEBOOKSHOW\nDesigned by Mingli Seet\nlaunched by THEBOOKSHOW as part of [title]A Different Reading [/title] during the Singapore Art Book Fair 2022, and selected as one of the 5 books from Singapore for the [title]牧书计划 Book Nomad[/title].",
       "images": [],
       "blocks": [
         {
           "id": "block-sn-1",
           "type": "text",
-          "content": "A continuing series of working notes, marginalia, and transcribed fragments examining the hand as a recording device.\n\nLooking at how [[copying]] transforms involuntary motor habit into conscious gesture. Rather than preparing for a singular completed object, these pages register transcription rhythm, line pauses, and the ink's gradual depletion.\n\n*Note for artist review: Dimensions, precise dates, and exhibition history are left open as placeholders until verified.*"
+          "content": "[title]笔迹 script/notes[/title] looks at 18 years worth of hand-copied and hand-annotated scores from Shu's collection. Through observing and re-presenting these markings, she considers the way language and customs are developed in social groups and how it borrows and evolves from existing and adjacent communities."
+        },
+        {
+          "id": "block-muu5t184-kn0h",
+          "type": "text",
+          "content": "Published by THEBOOKSHOW\nDesigned by Mingli Seet\nlaunched by THEBOOKSHOW as part of [title]A Different Reading [/title] during the Singapore Art Book Fair 2022, and selected as one of the 5 books from Singapore for the [title]牧书计划 Book Nomad[/title]."
         }
       ],
-      "isDevelopingWork": true,
-      "createdAt": "2026-01-10T10:00:00Z",
-      "updatedAt": "2026-10-04T18:22:07.519Z",
       "tagIds": [
-        "tag-working-notes",
         "tag-books",
         "tag-libraries",
-        "tag-score"
+        "tag-score",
+        "tag-learning",
+        "tag-archives",
+        "tag-jianpu"
       ],
-      "associatedProjectIds": []
+      "subjects": [
+        "books and bookish things",
+        "libraries",
+        "scores and notation",
+        "learning? pedagogy?",
+        "archives and records",
+        "jianpu"
+      ],
+      "associatedProjectIds": [],
+      "relatedEntryIds": [
+        "scores"
+      ],
+      "status": "published",
+      "isDevelopingWork": false,
+      "createdAt": "2026-01-10T10:00:00Z",
+      "updatedAt": "2026-10-04T18:33:58.548Z"
     },
     {
       "id": "ss-between-books-and-libraries",
@@ -52,47 +59,44 @@
       "title": "述书 / SS: between books & libraries",
       "titleZh": "述书",
       "type": "project",
-      "status": "published",
       "date": "Ongoing project",
       "datePlaceholder": false,
       "medium": "Research, publishing, reading sessions, library interventions",
       "dimensions": "Variable",
       "shortDescription": "A long-term project traversing books, public and independent libraries, reader communities, personal collections, and reading sessions.",
-      "fullText": "“述书 / SS: between books & libraries” is an ongoing framework within Hong Shu-ying's practice. \n\nThe name draws upon *Shu Shu* (述书)—recounting, narrating, or commenting on books—while positioning the work in the interval between books as bound objects and libraries as collective spatial institutions.\n\nIt encompasses:\n- **Books**: Printed matter, artists' publications, annotated volumes, and marginalia.\n- **Libraries**: Independent archives, institutional collections, public reading rooms, and personal shelves.\n- **People & Conversations**: Readers, custodians, transcribers, and librarians.\n- **Programmes**: Reading groups, including the [[part-time-book-club]], translation circles, and collective reading aloud.\n\nRather than remaining an isolated project, SS branches into works, notes on [[copying]], and transcribed [[script-notes]].",
-      "subjects": [
-        "libraries",
-        "publishing",
-        "reading",
-        "archiving",
-        "conversation",
-        "pedagogy"
-      ],
-      "relatedEntryIds": [
-        "part-time-book-club",
-        "copying",
-        "script-notes"
-      ],
-      "collections": [
-        "ss"
-      ],
+      "credits": [],
+      "presentationHistory": [],
+      "fullText": "The name draws upon *Shu Shu* (述书)—recounting, narrating, or commenting on books—while positioning the work in the interval between books as bound objects and libraries as collective spatial institutions.\n\nIt encompasses:\n- **Books**: Printed matter, artists' publications, annotated volumes, and marginalia.\n- **Libraries**: Independent archives, institutional collections, public reading rooms, and personal shelves.\n- **People & Conversations**: Readers, custodians, transcribers, and librarians.\n- **Programmes**: Reading groups, including the [[part-time-book-club]], translation circles, and collective reading aloud.",
       "images": [],
       "blocks": [
         {
           "id": "block-ss-1",
           "type": "text",
-          "content": "“述书 / SS: between books & libraries” is an ongoing framework within Hong Shu-ying's practice. \n\nThe name draws upon *Shu Shu* (述书)—recounting, narrating, or commenting on books—while positioning the work in the interval between books as bound objects and libraries as collective spatial institutions.\n\nIt encompasses:\n- **Books**: Printed matter, artists' publications, annotated volumes, and marginalia.\n- **Libraries**: Independent archives, institutional collections, public reading rooms, and personal shelves.\n- **People & Conversations**: Readers, custodians, transcribers, and librarians.\n- **Programmes**: Reading groups, including the [[part-time-book-club]], translation circles, and collective reading aloud.\n\nRather than remaining an isolated project, SS branches into works, notes on [[copying]], and transcribed [[script-notes]]."
+          "content": "The name draws upon *Shu Shu* (述书)—recounting, narrating, or commenting on books—while positioning the work in the interval between books as bound objects and libraries as collective spatial institutions.\n\nIt encompasses:\n- **Books**: Printed matter, artists' publications, annotated volumes, and marginalia.\n- **Libraries**: Independent archives, institutional collections, public reading rooms, and personal shelves.\n- **People & Conversations**: Readers, custodians, transcribers, and librarians.\n- **Programmes**: Reading groups, including the [[part-time-book-club]], translation circles, and collective reading aloud."
         }
       ],
-      "isDevelopingWork": false,
-      "ssCategory": "overview",
-      "createdAt": "2026-01-01T08:00:00Z",
-      "updatedAt": "2026-10-04T18:23:03.630Z",
       "tagIds": [
         "tag-libraries",
         "tag-books",
-        "tag-archives"
+        "tag-archives",
+        "tag-learning",
+        "tag-working-notes",
+        "tag-spaceswo"
       ],
-      "associatedProjectIds": []
+      "subjects": [
+        "libraries",
+        "books and bookish things",
+        "archives and records",
+        "learning? pedagogy?",
+        "working notes",
+        "spaces without space"
+      ],
+      "associatedProjectIds": [],
+      "relatedEntryIds": [],
+      "status": "published",
+      "isDevelopingWork": true,
+      "createdAt": "2026-01-01T08:00:00Z",
+      "updatedAt": "2026-10-04T18:35:13.486Z"
     },
     {
       "id": "part-time-book-club",
