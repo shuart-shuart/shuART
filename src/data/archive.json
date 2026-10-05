@@ -1468,12 +1468,6 @@
               "text": "It is continually adjusted by the people who need it to remain usable. What interests me are these quiet acts of maintenance, which let shared systems of knowing and working carry on as they pass through different hands, gathering small contradictions, adaptations and new ways of being understood."
             }
           ]
-        },
-        {
-          "id": "colophon",
-          "title": "Structure of the site",
-          "text": "Rather than presenting a closed catalogue of finished monuments, this site functions as an evolving index. Developing ideas, found images, and working notes are catalogued alongside completed works, allowing connections between the various fragments to remain visible and active.",
-          "items": []
         }
       ],
       "contactTitle": "Contact",
@@ -1527,7 +1521,7 @@
         "visible": true
       }
     ],
-    "updatedAt": "2026-10-04T18:29:06.653Z",
+    "updatedAt": "2026-10-05T02:26:21.055Z",
     "updatedBy": "work@anotherunit.xyz"
   }
 }
