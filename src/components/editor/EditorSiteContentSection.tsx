@@ -1,8 +1,10 @@
 import React from 'react';
-import { AboutContent, Entry, FooterContent } from '../../types';
+import { AboutContent, Entry, FooterContent, IndexContent } from '../../types';
 import { FormattedField } from './FormattedField';
 
 interface Props {
+  index: IndexContent;
+  onIndexChange: (index: IndexContent) => void;
   about: AboutContent;
   footer: FooterContent;
   entries: Entry[];
@@ -14,7 +16,7 @@ const newId = () => crypto.randomUUID();
 const inputClass = 'w-full border border-black/20 p-2 text-sm bg-white focus:border-black';
 const buttonClass = 'text-xs underline decoration-dotted underline-offset-4 hover:text-black/60';
 
-export const EditorSiteContentSection: React.FC<Props> = ({ about, footer, entries, onAboutChange, onFooterChange }) => {
+export const EditorSiteContentSection: React.FC<Props> = ({ index, onIndexChange, about, footer, entries, onAboutChange, onFooterChange }) => {
   const field = (label: string, value: string, onChange: (value: string) => void, multiline = false) => (
     <FormattedField label={label} value={value} onChange={onChange} multiline={multiline} rows={multiline ? 5 : undefined} allEntries={entries} />
   );
@@ -23,6 +25,12 @@ export const EditorSiteContentSection: React.FC<Props> = ({ about, footer, entri
   });
   return (
     <>
+      <section className="p-6 border border-black/15 bg-white space-y-6">
+        <h3 className="font-editorial text-xl text-black">Index page</h3>
+        <p className="text-xs text-black/60">Edit the heading and introduction above the entry list. Save using “Save All Settings”, then Publish to GitHub.</p>
+        {field('Index heading', index.title, title => onIndexChange({ ...index, title }))}
+        {field('Index introduction', index.description, description => onIndexChange({ ...index, description }), true)}
+      </section>
       <section className="p-6 border border-black/15 bg-white space-y-6">
         <h3 className="font-editorial text-xl text-black">About page</h3>
         <p className="text-xs text-black/60">Edit the biography, sections and contact information. Separate paragraphs with a blank line. Save using “Save All Settings”.</p>

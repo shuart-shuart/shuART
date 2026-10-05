@@ -1,4 +1,4 @@
-import { DEFAULT_ABOUT, DEFAULT_FOOTER } from '../../data/siteContent';
+import { DEFAULT_ABOUT, DEFAULT_FOOTER, DEFAULT_INDEX } from '../../data/siteContent';
 import { EditorSiteContentSection } from './EditorSiteContentSection';
 import { footerLinkHref } from '../Footer';
 import React, { useState, useEffect } from 'react';
@@ -23,10 +23,12 @@ export const EditorSettingsSection: React.FC<EditorSettingsSectionProps> = ({
     return aboutItem ? aboutItem.visible : true;
   });
 
+  const [index, setIndex] = useState(() => siteSettings.index ?? DEFAULT_INDEX);
   const [about, setAbout] = useState(() => siteSettings.about ?? DEFAULT_ABOUT);
   const [footer, setFooter] = useState(() => siteSettings.footer ?? DEFAULT_FOOTER);
 
   useEffect(() => {
+    setIndex(siteSettings.index ?? DEFAULT_INDEX);
     setAbout(siteSettings.about ?? DEFAULT_ABOUT);
     setFooter(siteSettings.footer ?? DEFAULT_FOOTER);
     setTypography(siteSettings.typography || 'a');
@@ -55,6 +57,7 @@ export const EditorSettingsSection: React.FC<EditorSettingsSectionProps> = ({
 
     const updated: SiteSettings = {
       ...siteSettings,
+      index,
       about,
       footer,
       showWander,
@@ -110,7 +113,7 @@ export const EditorSettingsSection: React.FC<EditorSettingsSectionProps> = ({
       </div>
 
       <p className="text-xs text-black/60">Save these settings to your draft, then use Publish to GitHub in the editor header.</p>
-      <EditorSiteContentSection about={about} footer={footer} entries={entries} onAboutChange={setAbout} onFooterChange={setFooter} />
+      <EditorSiteContentSection index={index} onIndexChange={setIndex} about={about} footer={footer} entries={entries} onAboutChange={setAbout} onFooterChange={setFooter} />
 
       {/* 1. Public Navigation Visibility */}
       <section className="p-6 border border-black/15 bg-white space-y-4">

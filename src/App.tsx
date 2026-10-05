@@ -412,6 +412,7 @@ export default function App() {
         <main>
           {currentView === 'index' && (
             <IndexView
+              indexContent={siteSettings.index}
               entries={visibleEntries}
               tags={tags}
               onSelectEntry={handleSelectEntry}

@@ -1522,6 +1522,10 @@
       }
     ],
     "updatedAt": "2026-10-05T02:26:21.055Z",
-    "updatedBy": "work@anotherunit.xyz"
+    "updatedBy": "work@anotherunit.xyz",
+    "index": {
+      "title": "Index",
+      "description": "Rather than presenting a closed catalogue of finished monuments, this site functions as an evolving index. Developing ideas, found images, and working notes are catalogued alongside completed works, allowing connections between the various fragments to remain visible and active."
+    }
   }
 }

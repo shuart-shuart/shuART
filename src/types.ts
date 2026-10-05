@@ -181,7 +181,13 @@ export interface FooterContent {
   links: { id: string; label: string; url: string }[];
 }
 
+export interface IndexContent {
+  title: string;
+  description: string;
+}
+
 export interface SiteSettings {
+  index?: IndexContent;
   about?: AboutContent;
   footer?: FooterContent;
   showWander: boolean;

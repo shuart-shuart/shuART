@@ -1,10 +1,13 @@
+import { DEFAULT_INDEX } from '../data/siteContent';
+import { renderFormattedText } from '../services/formatting';
 import { entryTags, tagCounts } from '../services/canonicalTags';
 import { EntryTitle } from './EntryTitle';
 import React, { useState, useMemo } from 'react';
-import { Entry, EntryType, Tag } from '../types';
+import { Entry, EntryType, Tag, IndexContent } from '../types';
 
 interface IndexViewProps {
   entries: Entry[];
+  indexContent?: IndexContent;
   tags?: Tag[];
   onSelectEntry: (slugOrId: string) => void;
   selectedSubject?: string | null;
@@ -24,6 +27,7 @@ const TYPE_OPTIONS: { value: 'all' | EntryType; label: string }[] = [
 
 export const IndexView: React.FC<IndexViewProps> = ({
   entries,
+  indexContent = DEFAULT_INDEX,
   tags = [],
   onSelectEntry,
   selectedSubject,
@@ -87,10 +91,10 @@ export const IndexView: React.FC<IndexViewProps> = ({
       {/* Intro Header */}
       <div className="mb-10 space-y-3">
         <h1 className="font-editorial text-3xl sm:text-4xl text-black font-normal tracking-tight">
-          Archive Index
+          {renderFormattedText(indexContent.title, { allEntries: entries, onSelectEntry })}
         </h1>
-        <p className="font-editorial text-base sm:text-lg text-black/70 max-w-3xl leading-relaxed">
-          An evolving index of works, notes, projects, terms, and library connections across Hong Shu-ying 方舒颖’s practice.
+        <p className="font-editorial text-base sm:text-lg text-black/70 max-w-[65ch] leading-[1.65] whitespace-pre-line">
+          {renderFormattedText(indexContent.description, { allEntries: entries, onSelectEntry })}
         </p>
       </div>
 

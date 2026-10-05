@@ -1,4 +1,4 @@
-import { AboutContent, FooterContent } from '../types';
+import { AboutContent, FooterContent, IndexContent } from '../types';
 
 export const DEFAULT_ABOUT: AboutContent = {
   "title": "About",
@@ -68,4 +68,9 @@ export const DEFAULT_FOOTER: FooterContent = {
       "url": "https://hongshuying.art"
     }
   ]
+};
+
+export const DEFAULT_INDEX: IndexContent = {
+  "title": "Index",
+  "description": "Rather than presenting a closed catalogue of finished monuments, this site functions as an evolving index. Developing ideas, found images, and working notes are catalogued alongside completed works, allowing connections between the various fragments to remain visible and active."
 };
