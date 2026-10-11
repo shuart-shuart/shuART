@@ -28,13 +28,13 @@
         }
       ],
       "presentationHistory": [],
-      "fullText": "Drawing from her personal experience of learning and teaching the erhu, 印映 reflections impressions by Hong Shu-ying unfurls through an ensemble of works encompassing video, print and annotations to reflect on imitation and mimicking as a way of learning. At the source of these works lies the famed 1950 erhu audio recording of Mirrored Moon in the Erquan Spring (二泉映月, Erquan Yingyue) by Abing. A seminal figure in the realm of the erhu, Abing is a Chinese folk musician revered for his innovative playing style and legendary—but largely undocumented —contributions to musical compositions for this two-stringed bowed instrument.\n\nDespite its poor audio quality, Abing’s 1950 recording of Mirrored Moon in the Erquan Spring served as the reference for transcribing the erhu classic into cipher notation (or jianpu), evolving into a systematic method for disseminating and learning the composition. Subsequently, performance recordings and user-made videos of the piece have been created, owing to its widespread popularity, considerable significance within cultural contexts, and its role as a valuable resource for learning and instructing the erhu. Intrigued by the proliferation of these recordings, this exhibition sees Hong delving into videos of Mirrored Moon in the Erquan Spring by both professionals and amateurs of erhu on platforms like YouTube and Youku. Through processes of cropping and screenshotting various lunar and hand imagery as well as representations of Abing, Hong extracts the parallels and variations in these materials, observing how they imagine, shapeshift and form diverse timecapsules of expressions. \n\nFinally, undergirding the works is the significance of notations and annotations in learning and playing the erhu. These annotations offer a comprehensive guide, providing technical and interpretational insights essential for learning a piece. For Hong, they also act as a conduit for the transmission and preservation by establishing an informal lineage from erhu teachers and other performers, as well as fostering a continuum of understanding and interpretation.\n\n-\n\nThe entire series is an on-going project with further plans to develop it into a book. The audio component, [title]再现依心曲 ad lib[/title] can be found [here](https://shu0shushu.bandcamp.com/album/ad-lib).\n\nyinying_0",
+      "fullText": "Drawing from her personal experience of learning and teaching the erhu, 印映 reflections impressions by Hong Shu-ying unfurls through an ensemble of works encompassing video, print and annotations to reflect on imitation and mimicking as a way of learning. At the source of these works lies the famed 1950 erhu audio recording of Mirrored Moon in the Erquan Spring (二泉映月, Erquan Yingyue) by Abing. A seminal figure in the realm of the erhu, Abing is a Chinese folk musician revered for his innovative playing style and legendary—but largely undocumented —contributions to musical compositions for this two-stringed bowed instrument.\n\nDespite its poor audio quality, Abing’s 1950 recording of Mirrored Moon in the Erquan Spring served as the reference for transcribing the erhu classic into cipher notation (or jianpu), evolving into a systematic method for disseminating and learning the composition. Subsequently, performance recordings and user-made videos of the piece have been created, owing to its widespread popularity, considerable significance within cultural contexts, and its role as a valuable resource for learning and instructing the erhu. Intrigued by the proliferation of these recordings, this exhibition sees Hong delving into videos of Mirrored Moon in the Erquan Spring by both professionals and amateurs of erhu on platforms like YouTube and Youku. Through processes of cropping and screenshotting various lunar and hand imagery as well as representations of Abing, Hong extracts the parallels and variations in these materials, observing how they imagine, shapeshift and form diverse timecapsules of expressions. \n\nFinally, undergirding the works is the significance of notations and annotations in learning and playing the erhu. These annotations offer a comprehensive guide, providing technical and interpretational insights essential for learning a piece. For Hong, they also act as a conduit for the transmission and preservation by establishing an informal lineage from erhu teachers and other performers, as well as fostering a continuum of understanding and interpretation.\n\n-\n\nThe entire series is an on-going project with further plans to develop it into a book. The audio component, [title]再现依心曲 ad lib[/title] can be found [here](https://shu0shushu.bandcamp.com/album/ad-lib).",
       "images": [
         {
           "id": "b0c4a2c3-a446-4fb9-919b-257786b3f8ae",
           "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/0929886a5e4f0209bf7f323fdf1cf219b0fa29c853dd1bd7c7d4665f76340a5d.gif",
           "caption": "",
-          "alt": "yinying_0",
+          "alt": "",
           "credit": "Esplanade - Theatres on the Bay, AlvieAlive"
         },
         {
@@ -89,11 +89,6 @@
       ],
       "blocks": [
         {
-          "id": "text-1791744983932-1",
-          "type": "text",
-          "content": "Drawing from her personal experience of learning and teaching the erhu, 印映 reflections impressions by Hong Shu-ying unfurls through an ensemble of works encompassing video, print and annotations to reflect on imitation and mimicking as a way of learning. At the source of these works lies the famed 1950 erhu audio recording of Mirrored Moon in the Erquan Spring (二泉映月, Erquan Yingyue) by Abing. A seminal figure in the realm of the erhu, Abing is a Chinese folk musician revered for his innovative playing style and legendary—but largely undocumented —contributions to musical compositions for this two-stringed bowed instrument.\n\nDespite its poor audio quality, Abing’s 1950 recording of Mirrored Moon in the Erquan Spring served as the reference for transcribing the erhu classic into cipher notation (or jianpu), evolving into a systematic method for disseminating and learning the composition. Subsequently, performance recordings and user-made videos of the piece have been created, owing to its widespread popularity, considerable significance within cultural contexts, and its role as a valuable resource for learning and instructing the erhu. Intrigued by the proliferation of these recordings, this exhibition sees Hong delving into videos of Mirrored Moon in the Erquan Spring by both professionals and amateurs of erhu on platforms like YouTube and Youku. Through processes of cropping and screenshotting various lunar and hand imagery as well as representations of Abing, Hong extracts the parallels and variations in these materials, observing how they imagine, shapeshift and form diverse timecapsules of expressions. \n\nFinally, undergirding the works is the significance of notations and annotations in learning and playing the erhu. These annotations offer a comprehensive guide, providing technical and interpretational insights essential for learning a piece. For Hong, they also act as a conduit for the transmission and preservation by establishing an informal lineage from erhu teachers and other performers, as well as fostering a continuum of understanding and interpretation.\n\n-\n\nThe entire series is an on-going project with further plans to develop it into a book. The audio component, [title]再现依心曲 ad lib[/title] can be found [here](https://shu0shushu.bandcamp.com/album/ad-lib)."
-        },
-        {
           "id": "block-mv479xz3-9ua1",
           "type": "image_gallery",
           "title": "",
@@ -102,11 +97,16 @@
               "id": "b0c4a2c3-a446-4fb9-919b-257786b3f8ae",
               "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/0929886a5e4f0209bf7f323fdf1cf219b0fa29c853dd1bd7c7d4665f76340a5d.gif",
               "caption": "",
-              "alt": "yinying_0",
+              "alt": "",
               "credit": "Esplanade - Theatres on the Bay, AlvieAlive"
             }
           ],
           "layout": "stacked"
+        },
+        {
+          "id": "text-1791744983932-1",
+          "type": "text",
+          "content": "Drawing from her personal experience of learning and teaching the erhu, 印映 reflections impressions by Hong Shu-ying unfurls through an ensemble of works encompassing video, print and annotations to reflect on imitation and mimicking as a way of learning. At the source of these works lies the famed 1950 erhu audio recording of Mirrored Moon in the Erquan Spring (二泉映月, Erquan Yingyue) by Abing. A seminal figure in the realm of the erhu, Abing is a Chinese folk musician revered for his innovative playing style and legendary—but largely undocumented —contributions to musical compositions for this two-stringed bowed instrument.\n\nDespite its poor audio quality, Abing’s 1950 recording of Mirrored Moon in the Erquan Spring served as the reference for transcribing the erhu classic into cipher notation (or jianpu), evolving into a systematic method for disseminating and learning the composition. Subsequently, performance recordings and user-made videos of the piece have been created, owing to its widespread popularity, considerable significance within cultural contexts, and its role as a valuable resource for learning and instructing the erhu. Intrigued by the proliferation of these recordings, this exhibition sees Hong delving into videos of Mirrored Moon in the Erquan Spring by both professionals and amateurs of erhu on platforms like YouTube and Youku. Through processes of cropping and screenshotting various lunar and hand imagery as well as representations of Abing, Hong extracts the parallels and variations in these materials, observing how they imagine, shapeshift and form diverse timecapsules of expressions. \n\nFinally, undergirding the works is the significance of notations and annotations in learning and playing the erhu. These annotations offer a comprehensive guide, providing technical and interpretational insights essential for learning a piece. For Hong, they also act as a conduit for the transmission and preservation by establishing an informal lineage from erhu teachers and other performers, as well as fostering a continuum of understanding and interpretation.\n\n-\n\nThe entire series is an on-going project with further plans to develop it into a book. The audio component, [title]再现依心曲 ad lib[/title] can be found [here](https://shu0shushu.bandcamp.com/album/ad-lib)."
         },
         {
           "id": "block-mv46v9vf-k2b8",
@@ -164,7 +164,8 @@
             }
           ],
           "layout": "carousel",
-          "autoPlay": true
+          "autoPlay": true,
+          "intervalSeconds": 3
         }
       ],
       "tagIds": [
@@ -187,7 +188,7 @@
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-11T19:12:20.515Z",
-      "updatedAt": "2026-10-11T19:12:43.769Z"
+      "updatedAt": "2026-10-11T19:31:36.941Z"
     },
     {
       "id": "entry-mv46lx9v-p6zn",
@@ -209,13 +210,13 @@
         }
       ],
       "presentationHistory": [],
-      "fullText": "",
+      "fullText": "[more info to come]",
       "images": [],
       "blocks": [
         {
           "id": "text-1791744827829-1",
           "type": "text",
-          "content": ""
+          "content": "[more info to come]"
         }
       ],
       "tagIds": [
@@ -237,7 +238,7 @@
       "status": "published",
       "isDevelopingWork": true,
       "createdAt": "2026-10-11T18:55:29.276Z",
-      "updatedAt": "2026-10-11T18:55:29.276Z"
+      "updatedAt": "2026-10-11T19:31:50.837Z"
     },
     {
       "id": "entry-mv467b6c-49dn",
@@ -279,7 +280,7 @@
         }
       ],
       "presentationHistory": [],
-      "fullText": "How We Learn(t) brings together two new bodies of work that examine, deconstruct, and re-present existing systems of knowledge.\n\nInformed by her eighteen years as a member of various Chinese orchestras, Hong Shu-ying reflects on the culture of ensembleship in 「 濡 睦 」 resonations. Exploring hand-copied scores, pre-concert tuning, and orchestral seating arrangements, her works illuminate the shared languages and collective experiences that live on the periphery, yet serve as the scaffolding for communal music-making.\n\nIn substance of a minute, recorded by a machine and a few others, Syahrul Anuar takes the tools, techniques, and visual vocabulary of cartography into his own hands, removing them from positions of authority and perceived objectivity. Through four exercises in which mapmaking is unlearned and relearned, he challenges the seemingly immutable frameworks that govern the way we move through urban Singapore.\n\nRecipients of the Kwek Leng Joo Prize of Excellence in Photography 2021, the two artists sidestep conventional photography in this exhibition. In its place are sculptures, moving images, and prints resembling drawings, all of which deliberately skirt the bodies of knowledge at the heart of their subjects.\n\nStill, the ‘documentative’—one of the core functions of photography—remains insistently present in both series. It has been reimagined as gestures that are abstract, speculative, intimate, and reflexive; gestures that dislocate something from its source, in order to transform our understanding.\n\nSee the [catalogue](https://bernytan.com/s/HowWeLearnt_Catalogue_DigitalPreview_Artworks.pdf).",
+      "fullText": "[title]How We Learn(t)[/title] brings together two new bodies of work that examine, deconstruct, and re-present existing systems of knowledge.\n\nInformed by her eighteen years as a member of various Chinese orchestras, Hong Shu-ying reflects on the culture of ensembleship in 「 濡 睦 」 resonations. Exploring hand-copied scores, pre-concert tuning, and orchestral seating arrangements, her works illuminate the shared languages and collective experiences that live on the periphery, yet serve as the scaffolding for communal music-making.\n\nIn substance of a minute, recorded by a machine and a few others, Syahrul Anuar takes the tools, techniques, and visual vocabulary of cartography into his own hands, removing them from positions of authority and perceived objectivity. Through four exercises in which mapmaking is unlearned and relearned, he challenges the seemingly immutable frameworks that govern the way we move through urban Singapore.\n\nRecipients of the Kwek Leng Joo Prize of Excellence in Photography 2021, the two artists sidestep conventional photography in this exhibition. In its place are sculptures, moving images, and prints resembling drawings, all of which deliberately skirt the bodies of knowledge at the heart of their subjects.\n\nStill, the ‘documentative’—one of the core functions of photography—remains insistently present in both series. It has been reimagined as gestures that are abstract, speculative, intimate, and reflexive; gestures that dislocate something from its source, in order to transform our understanding.\n\nSee the [catalogue](https://bernytan.com/s/HowWeLearnt_Catalogue_DigitalPreview_Artworks.pdf).",
       "images": [
         {
           "id": "0bd6de94-573b-4df7-ab70-7aa11727b8b6",
@@ -500,12 +501,13 @@
             }
           ],
           "layout": "carousel",
-          "autoPlay": true
+          "autoPlay": true,
+          "intervalSeconds": 3
         },
         {
           "id": "text-1791744146005-1",
           "type": "text",
-          "content": "How We Learn(t) brings together two new bodies of work that examine, deconstruct, and re-present existing systems of knowledge.\n\nInformed by her eighteen years as a member of various Chinese orchestras, Hong Shu-ying reflects on the culture of ensembleship in 「 濡 睦 」 resonations. Exploring hand-copied scores, pre-concert tuning, and orchestral seating arrangements, her works illuminate the shared languages and collective experiences that live on the periphery, yet serve as the scaffolding for communal music-making.\n\nIn substance of a minute, recorded by a machine and a few others, Syahrul Anuar takes the tools, techniques, and visual vocabulary of cartography into his own hands, removing them from positions of authority and perceived objectivity. Through four exercises in which mapmaking is unlearned and relearned, he challenges the seemingly immutable frameworks that govern the way we move through urban Singapore.\n\nRecipients of the Kwek Leng Joo Prize of Excellence in Photography 2021, the two artists sidestep conventional photography in this exhibition. In its place are sculptures, moving images, and prints resembling drawings, all of which deliberately skirt the bodies of knowledge at the heart of their subjects.\n\nStill, the ‘documentative’—one of the core functions of photography—remains insistently present in both series. It has been reimagined as gestures that are abstract, speculative, intimate, and reflexive; gestures that dislocate something from its source, in order to transform our understanding.\n\nSee the [catalogue](https://bernytan.com/s/HowWeLearnt_Catalogue_DigitalPreview_Artworks.pdf)."
+          "content": "[title]How We Learn(t)[/title] brings together two new bodies of work that examine, deconstruct, and re-present existing systems of knowledge.\n\nInformed by her eighteen years as a member of various Chinese orchestras, Hong Shu-ying reflects on the culture of ensembleship in 「 濡 睦 」 resonations. Exploring hand-copied scores, pre-concert tuning, and orchestral seating arrangements, her works illuminate the shared languages and collective experiences that live on the periphery, yet serve as the scaffolding for communal music-making.\n\nIn substance of a minute, recorded by a machine and a few others, Syahrul Anuar takes the tools, techniques, and visual vocabulary of cartography into his own hands, removing them from positions of authority and perceived objectivity. Through four exercises in which mapmaking is unlearned and relearned, he challenges the seemingly immutable frameworks that govern the way we move through urban Singapore.\n\nRecipients of the Kwek Leng Joo Prize of Excellence in Photography 2021, the two artists sidestep conventional photography in this exhibition. In its place are sculptures, moving images, and prints resembling drawings, all of which deliberately skirt the bodies of knowledge at the heart of their subjects.\n\nStill, the ‘documentative’—one of the core functions of photography—remains insistently present in both series. It has been reimagined as gestures that are abstract, speculative, intimate, and reflexive; gestures that dislocate something from its source, in order to transform our understanding.\n\nSee the [catalogue](https://bernytan.com/s/HowWeLearnt_Catalogue_DigitalPreview_Artworks.pdf)."
         }
       ],
       "tagIds": [
@@ -526,7 +528,7 @@
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-11T18:44:12.571Z",
-      "updatedAt": "2026-10-11T18:49:36.313Z"
+      "updatedAt": "2026-10-11T19:32:25.478Z"
     },
     {
       "id": "entry-mv45pqbm-y9xl",
@@ -742,7 +744,8 @@
             }
           ],
           "layout": "carousel",
-          "autoPlay": true
+          "autoPlay": true,
+          "intervalSeconds": 3
         },
         {
           "id": "block-mv45vxik-5nl9",
@@ -782,7 +785,7 @@
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-11T18:35:13.102Z",
-      "updatedAt": "2026-10-11T18:35:13.102Z"
+      "updatedAt": "2026-10-11T19:32:55.477Z"
     },
     {
       "id": "script-notes",
