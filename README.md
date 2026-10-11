@@ -42,7 +42,9 @@ content. Website uploads are committed to `public/media/` with deduplicated file
 
 Public visitors load the compiled repository archive, never your browser draft.
 Drafts persist locally across refreshes and are available after reconnecting.
-The editor refuses to publish if archive content changed since the draft began.
+When GitHub content has changed, the editor reads the original draft baseline
+and merges independent entry/settings edits. Competing changes to the same
+field stop publication and identify the conflict; your draft remains intact.
 Export a backup, reload repository content, and reapply your changes to resolve
 that conflict. Unrelated code changes are preserved. Ref updates never use force.
 If branch protection prevents direct commits, publishing fails safely and keeps

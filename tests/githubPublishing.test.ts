@@ -15,8 +15,9 @@ let contentSha = 'content-old';
 let rejectRef = false;
 let unauthorized = false;
 let remote = bundle();
+let baseline = bundle();
 function setup() {
-  disconnectGitHub(); calls = []; contentSha = 'content-old'; rejectRef = false; unauthorized = false; remote = bundle();
+  disconnectGitHub(); calls = []; contentSha = 'content-old'; rejectRef = false; unauthorized = false; remote = bundle(); baseline = bundle();
   const memory = new Map<string,string>();
   Object.defineProperty(globalThis, 'localStorage', {configurable:true,value:{getItem:(k:string)=>memory.get(k) ?? null,setItem:(k:string,v:string)=>memory.set(k,v),removeItem:(k:string)=>memory.delete(k)}});
   globalThis.fetch = (async (input: string | URL | Request, init?: RequestInit) => {
@@ -31,6 +32,7 @@ function setup() {
     if (path === `/contents/${CONTENT_PATH}`) return Response.json({sha:contentSha,encoding:'base64',content:Buffer.from(JSON.stringify(remote)).toString('base64')});
     if (path === '/git/ref/heads/main') return Response.json({object:{sha:'head-latest'}});
     if (path === '/git/commits/head-latest') return Response.json({tree:{sha:'tree-original'}});
+    if (path === '/git/blobs/content-old') return Response.json({encoding:'base64',content:Buffer.from(JSON.stringify(baseline)).toString('base64')});
     if (path === '/git/blobs') return Response.json({sha:body.encoding === 'utf-8' ? 'archive-new' : 'media-new'});
     if (path === '/git/trees') return Response.json({sha:'tree-new'});
     if (path === '/git/commits') return Response.json({sha:'commit-new'});
@@ -82,9 +84,11 @@ test('publishes unicode text and deduplicated media atomically on latest code tr
 
 test('changed content stops before any writes; unchanged content creates no commit', async () => {
   setup(); await connect(); contentSha='someone-else-updated'; calls=[];
-  await assert.rejects(publishArchive(bundle(),'content-old'),/archive changed/);
+  remote.entries[0].title='GitHub edit';
+  const conflict=bundle(); conflict.entries[0].title='Browser edit';
+  await assert.rejects(publishArchive(conflict,'content-old'),/both your draft and GitHub changed.*title/);
   assert.equal(calls.some(c=>c.method!=='GET'),false);
-  contentSha='content-old'; calls=[];
+  contentSha='content-old'; remote=bundle(); calls=[];
   const result=await publishArchive(bundle(),'content-old');
   assert.equal(result.changed,false);
   assert.equal(calls.some(c=>c.method!=='GET'),false);
@@ -182,4 +186,23 @@ test('publication excludes drafts, review notes and media that belongs only to d
   assert.equal(result.bundle.entries[1].fullText,'PRIVATE DRAFT');
   const archiveBlob=calls.find(c=>c.path==='/git/blobs'&&c.body.encoding==='utf-8')!;
   assert.doesNotMatch(archiveBlob.body.content,/CONFIDENTIAL REVIEW|PRIVATE DRAFT/);
+});
+
+
+test('stale drafts merge independent GitHub settings and retain local entry edits and private drafts', async () => {
+  setup(); await connect(); contentSha='new-content'; calls=[];
+  remote.settings.index={title:'Index',description:'New published introduction'};
+  remote.entries[1].shortDescription='Remote edit';
+  const draft=bundle(); draft.entries[0].title='Browser edit'; draft.entries[0].notesForArtist='Private note';
+  draft.entries.push({...draft.entries[0],id:'private',slug:'private',status:'draft'});
+  const result=await publishArchive(draft,'content-old');
+  assert.equal(result.bundle.entries[0].title,'Browser edit');
+  assert.equal(result.bundle.entries[1].shortDescription,'Remote edit');
+  assert.equal(result.bundle.settings.index!.title,'Index');
+  assert.equal(result.bundle.entries.find(entry=>entry.id==='private')!.status,'draft');
+  const content=JSON.parse(calls.find(call=>call.path==='/git/blobs' && call.body.encoding==='utf-8')!.body.content);
+  assert.equal(content.entries.length,2);
+  assert.equal(content.entries[0].notesForArtist,undefined);
+  assert.equal(content.settings.index.title,'Index');
+  assert.equal(draft.settings.index,undefined,'caller draft stays intact');
 });

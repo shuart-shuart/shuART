@@ -1,4 +1,5 @@
 import legacyMediaUrls from '../data/legacyMediaUrls.json';
+import { mergeArchive } from './archiveMerge';
 import type { Entry, SiteSettings, Tag } from '../types';
 
 export interface ArchiveBundle { version: number; entries: Entry[]; tags: Tag[]; settings: SiteSettings; }
@@ -117,10 +118,17 @@ export async function publishArchive(bundle: ArchiveBundle, expectedContentSha: 
     const head = await request('/git/ref/heads/main');
     const parentSha = head.object.sha;
     const current = await readRepositoryArchive(parentSha);
-    if (current.sha !== expectedContentSha) throw new Error('The archive changed in GitHub since this draft began. Export your draft, then reload repository content and reapply your changes. Publishing stopped to avoid overwriting newer content.');
-    const prepared = await prepareArchiveMedia(bundle);
+    let draft = bundle;
+    if (current.sha !== expectedContentSha) {
+      const baseline = await request(`/git/blobs/${encodeURIComponent(expectedContentSha)}`);
+      if (baseline.encoding !== 'base64' || !baseline.content) throw new Error('The original draft baseline could not be read. Export your draft backup before reloading repository content.');
+      const base = JSON.parse(decodeUtf8(baseline.content));
+      validateArchive(base);
+      draft = mergeArchive(base, bundle, current.bundle);
+    }
+    const prepared = await prepareArchiveMedia(draft);
     const publishedEntries = new Map(prepared.bundle.entries.map(entry => [entry.id, entry]));
-    const localBundle: ArchiveBundle = { ...bundle, entries: bundle.entries.map(entry => {
+    const localBundle: ArchiveBundle = { ...draft, entries: draft.entries.map(entry => {
       const published = publishedEntries.get(entry.id);
       return published ? { ...published, ...(entry.notesForArtist !== undefined ? { notesForArtist: entry.notesForArtist } : {}) } : entry;
     }) };
