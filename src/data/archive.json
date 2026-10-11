@@ -2959,13 +2959,108 @@
           "id": "credit-on-telling-time-in-the-mall-1",
           "role": "custom",
           "name": "Goh Chun Aik",
-          "customRole": "Text"
+          "customRole": "Curator"
         }
       ],
       "presentationHistory": [],
       "fullText": "Moving between field recordings, found footage and fly-on-the-wall observations, the video looks for time beyond the clock: shutters opening and closing, shops changing hands, repeated routines, ageing interiors and small movements that mark the passing of a day.\nBringing footage from different periods into the same cycle, the work asks how we tell that time has passed in a place where so much seems to repeat itself.",
-      "images": [],
+      "images": [
+        {
+          "id": "9322ef4e-ea2b-4025-bed8-1386adc8a971",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/6ff2673518bfafc309ef6e67aa3f4402816741ffc5d86292aecf0e21e7e9fcd9.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "8f69ac55-ffba-47b0-80ef-cd86fa4ef286",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/a7ec10b5428721f383ddaa33c896f6a3942349fe22bbb8970021e07e97bebfbe.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "9e1d29e4-0fbb-4b74-9968-b55bf0bc640d",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/2f542b558b4f2f281c89d4b152f345db9e3df5574f750e92440df0a2332eb9d1.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "08ca6a7b-68bc-4817-82e0-489a3edb0dd0",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/f531ae483b810409bb1b9e2623bc2c5ab100947e9f16b9f4610b9a20fdeb62ab.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "3de2fc89-7009-4e9a-9bff-7db920d5871f",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/81a5e58efacab36b4ee6e6c09ae0e222b245aedfa9c07ca879f2e0bca3930b7b.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "98e1fadb-4e42-4ef3-99e1-95b7cd2f74fc",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/a5ac4a25fb425f9ce1dcf4e98668fb752ef7df50f5ea7854fa2e0a0934e4717d.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        }
+      ],
       "blocks": [
+        {
+          "id": "block-mv49bnq8-sdhv",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "9322ef4e-ea2b-4025-bed8-1386adc8a971",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/6ff2673518bfafc309ef6e67aa3f4402816741ffc5d86292aecf0e21e7e9fcd9.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "8f69ac55-ffba-47b0-80ef-cd86fa4ef286",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/a7ec10b5428721f383ddaa33c896f6a3942349fe22bbb8970021e07e97bebfbe.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "9e1d29e4-0fbb-4b74-9968-b55bf0bc640d",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/2f542b558b4f2f281c89d4b152f345db9e3df5574f750e92440df0a2332eb9d1.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "08ca6a7b-68bc-4817-82e0-489a3edb0dd0",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/f531ae483b810409bb1b9e2623bc2c5ab100947e9f16b9f4610b9a20fdeb62ab.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "3de2fc89-7009-4e9a-9bff-7db920d5871f",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/81a5e58efacab36b4ee6e6c09ae0e222b245aedfa9c07ca879f2e0bca3930b7b.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "98e1fadb-4e42-4ef3-99e1-95b7cd2f74fc",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/a5ac4a25fb425f9ce1dcf4e98668fb752ef7df50f5ea7854fa2e0a0934e4717d.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            }
+          ],
+          "layout": "carousel",
+          "autoPlay": true,
+          "intervalSeconds": 2
+        },
         {
           "id": "text-on-telling-time-in-the-mall",
           "type": "text",
@@ -2980,12 +3075,14 @@
       ],
       "associatedProjectIds": [],
       "relatedEntryIds": [
-        "entry-what-used-to-be-in-the-mall"
+        "entry-what-used-to-be-in-the-mall",
+        "entry-creak-of-dawn",
+        "entry-in-the-aisle-book"
       ],
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-11T17:50:41.689Z"
+      "updatedAt": "2026-10-11T20:11:19.917Z"
     },
     {
       "id": "entry-linmo-sketches",
