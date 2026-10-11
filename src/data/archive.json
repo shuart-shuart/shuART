@@ -49,12 +49,113 @@
         }
       ],
       "fullText": "[title]笔迹 script/notes[/title] looks at 18 years worth of hand-copied and hand-annotated scores from Shu's collection. Through observing and re-presenting these markings, she considers the way language and customs are developed in social groups and how it borrows and evolves from existing and adjacent communities.",
-      "images": [],
+      "images": [
+        {
+          "id": "26ffc34b-8c6b-48f0-bdc6-a4bac63ba8da",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/f228606c8438f81ab2a928ab14f85a28155ceb42b11102fa38075a30fc8e8aa1.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Marvin Tang"
+        },
+        {
+          "id": "5ec59a8f-3959-46f8-9abd-00ee91b4ea43",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/3f988a58d8d5ef63932c116b56451c0ded6becc8ead36a56324f38610617a7c0.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "1bef9325-8493-43f4-9d5f-10b340f2b578",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/2533d3f36eca0c0a341c20424aa294049f66e3e819f0467722ce773db1c98fdd.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "087babfd-43b3-4314-a11a-5ff9c30f4b6f",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/8b4e3244a5e901c040523a66c41ae9bca96aa60a50b91e7b400746fe17def6d1.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "20943c7a-1845-450e-9958-53f8608bea86",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/7f0ea5b049985e9af5763cad61fa236c605a414cafa96cf6fdabc3029f5c034e.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "b9303aba-d4cf-4c3c-9750-5b9147dac932",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/edf1f1a1a83b3eee31ed6885a2d454b2e241ab72ad9fe970ad64f95b962203fa.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Marvin Tang"
+        }
+      ],
       "blocks": [
+        {
+          "id": "block-mv407naz-g34x",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "26ffc34b-8c6b-48f0-bdc6-a4bac63ba8da",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/f228606c8438f81ab2a928ab14f85a28155ceb42b11102fa38075a30fc8e8aa1.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Marvin Tang"
+            }
+          ],
+          "layout": "stacked"
+        },
         {
           "id": "block-sn-1",
           "type": "text",
           "content": "[title]笔迹 script/notes[/title] looks at 18 years worth of hand-copied and hand-annotated scores from Shu's collection. Through observing and re-presenting these markings, she considers the way language and customs are developed in social groups and how it borrows and evolves from existing and adjacent communities."
+        },
+        {
+          "id": "block-mv40d67u-lx0j",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "5ec59a8f-3959-46f8-9abd-00ee91b4ea43",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/3f988a58d8d5ef63932c116b56451c0ded6becc8ead36a56324f38610617a7c0.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "1bef9325-8493-43f4-9d5f-10b340f2b578",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/2533d3f36eca0c0a341c20424aa294049f66e3e819f0467722ce773db1c98fdd.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "087babfd-43b3-4314-a11a-5ff9c30f4b6f",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/8b4e3244a5e901c040523a66c41ae9bca96aa60a50b91e7b400746fe17def6d1.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "20943c7a-1845-450e-9958-53f8608bea86",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/7f0ea5b049985e9af5763cad61fa236c605a414cafa96cf6fdabc3029f5c034e.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "b9303aba-d4cf-4c3c-9750-5b9147dac932",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/edf1f1a1a83b3eee31ed6885a2d454b2e241ab72ad9fe970ad64f95b962203fa.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Marvin Tang"
+            }
+          ],
+          "layout": "grid"
         }
       ],
       "tagIds": [
@@ -80,142 +181,7 @@
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-01-10T10:00:00Z",
-      "updatedAt": "2026-10-04T18:49:09.570Z"
-    },
-    {
-      "id": "ss-between-books-and-libraries",
-      "slug": "ss-between-books-and-libraries",
-      "title": "述书 / SS: between books & libraries",
-      "titleZh": "述书",
-      "type": "project",
-      "date": "Ongoing project",
-      "datePlaceholder": false,
-      "medium": "Research, publishing, reading sessions, library interventions",
-      "dimensions": "Variable",
-      "shortDescription": "A long-term project traversing books, public and independent libraries, reader communities, personal collections, and reading sessions.",
-      "credits": [],
-      "presentationHistory": [],
-      "fullText": "The name draws upon *Shu Shu* (述书)—recounting, narrating, or commenting on books—while positioning the work in the interval between books as bound objects and libraries as collective spatial institutions.\n\nIt encompasses:\n- **Books**: Printed matter, artists' publications, annotated volumes, and marginalia.\n- **Libraries**: Independent archives, institutional collections, public reading rooms, and personal shelves.\n- **People & Conversations**: Readers, custodians, transcribers, and librarians.\n- **Programmes**: Reading groups, including the [[part-time-book-club]], translation circles, and collective reading aloud.",
-      "images": [],
-      "blocks": [
-        {
-          "id": "block-ss-1",
-          "type": "text",
-          "content": "The name draws upon *Shu Shu* (述书)—recounting, narrating, or commenting on books—while positioning the work in the interval between books as bound objects and libraries as collective spatial institutions.\n\nIt encompasses:\n- **Books**: Printed matter, artists' publications, annotated volumes, and marginalia.\n- **Libraries**: Independent archives, institutional collections, public reading rooms, and personal shelves.\n- **People & Conversations**: Readers, custodians, transcribers, and librarians.\n- **Programmes**: Reading groups, including the [[part-time-book-club]], translation circles, and collective reading aloud."
-        }
-      ],
-      "tagIds": [
-        "tag-libraries",
-        "tag-books",
-        "tag-archives",
-        "tag-learning",
-        "tag-working-notes",
-        "tag-spaceswo"
-      ],
-      "subjects": [
-        "libraries",
-        "books and bookish things",
-        "archives and records",
-        "learning? pedagogy?",
-        "working notes",
-        "spaces without space"
-      ],
-      "associatedProjectIds": [],
-      "relatedEntryIds": [],
-      "status": "published",
-      "isDevelopingWork": true,
-      "createdAt": "2026-01-01T08:00:00Z",
-      "updatedAt": "2026-10-04T18:35:13.486Z"
-    },
-    {
-      "id": "part-time-book-club",
-      "slug": "part-time-book-club",
-      "title": "Part Time Book Club",
-      "titleZh": "业余读书会",
-      "type": "project",
-      "status": "published",
-      "date": "[placeholder date / ongoing]",
-      "datePlaceholder": true,
-      "medium": "Collective reading sessions, shared marginalia, reading lists",
-      "dimensions": "Discursive / variable",
-      "shortDescription": "Informal, periodic gatherings around reading, printed matter, and shared marginalia, developed within 述书 / SS.",
-      "fullText": "An informal reading collective convened on a \"part-time\" basis, resisting the professionalization of reading and creating non-coercive spaces for close study.\n\nParticipants bring books, unread essays, or fragments to read alongside one another. The club explores reading as a physical, shared occupation rather than an isolated intellectual test.\n\nOrganized as part of [[ss-between-books-and-libraries]] and informed by practices of [[scores]] and collective recitation.\n\n*Note for artist review: Dates, frequency, and meeting locations kept open as placeholders.*",
-      "subjects": [
-        "reading",
-        "collective study",
-        "books",
-        "libraries",
-        "conversation"
-      ],
-      "relatedEntryIds": [
-        "ss-between-books-and-libraries",
-        "scores"
-      ],
-      "collections": [
-        "ss"
-      ],
-      "images": [],
-      "blocks": [
-        {
-          "id": "block-ptbc-1",
-          "type": "text",
-          "content": "An informal reading collective convened on a \"part-time\" basis, resisting the professionalization of reading and creating non-coercive spaces for close study.\n\nParticipants bring books, unread essays, or fragments to read alongside one another. The club explores reading as a physical, shared occupation rather than an isolated intellectual test.\n\nOrganized as part of [[ss-between-books-and-libraries]] and informed by practices of [[scores]] and collective recitation.\n\nSee published transcript: [[part-time-book-club-zine]].\n\n*Note for artist review: Dates, frequency, and meeting locations kept open as placeholders.*"
-        }
-      ],
-      "isDevelopingWork": false,
-      "ssCategory": "programme",
-      "createdAt": "2026-01-25T14:00:00Z",
-      "updatedAt": "2026-10-04T18:21:29.966Z",
-      "tagIds": [
-        "tag-books",
-        "tag-libraries",
-        "tag-archives",
-        "tag-spaceswo"
-      ],
-      "associatedProjectIds": [
-        "ss-between-books-and-libraries"
-      ]
-    },
-    {
-      "id": "parallel-on-paper",
-      "slug": "parallel-on-paper",
-      "title": "| | on paper",
-      "type": "project",
-      "date": "[placeholder date for review]",
-      "datePlaceholder": true,
-      "medium": "Graphite, ink, or embossed lines on paper [placeholder]",
-      "dimensions": "[placeholder for artist review]",
-      "shortDescription": "Marks, spacing, and parallel pauses registered across paper sheets.",
-      "credits": [],
-      "presentationHistory": [],
-      "fullText": "A series of paper studies investigating two parallel vertical bars \"| |\"—reading them as architectural columns, caesurae in poetic meter, pause symbols, or parallel coordinates on the plane.\n\nThe work questions the threshold where minimal notation shifts from punctuation into structural space.\n\nDirectly related to [[script-notes]] and the rhythmic notation of [[scores]].\n\n*Placeholder entry: Awaiting review of paper types, dimensions, and photographic documentation.*",
-      "images": [],
-      "blocks": [
-        {
-          "id": "block-pop-1",
-          "type": "text",
-          "content": "A series of paper studies investigating two parallel vertical bars \"| |\"—reading them as architectural columns, caesurae in poetic meter, pause symbols, or parallel coordinates on the plane.\n\nThe work questions the threshold where minimal notation shifts from punctuation into structural space.\n\nDirectly related to [[script-notes]] and the rhythmic notation of [[scores]].\n\n*Placeholder entry: Awaiting review of paper types, dimensions, and photographic documentation.*"
-        }
-      ],
-      "tagIds": [
-        "tag-measurement",
-        "tag-archives"
-      ],
-      "subjects": [
-        "paper",
-        "measurement",
-        "silence",
-        "drawing"
-      ],
-      "associatedProjectIds": [],
-      "relatedEntryIds": [
-        "script-notes",
-        "scores"
-      ],
-      "status": "published",
-      "isDevelopingWork": true,
-      "createdAt": "2026-02-01T16:00:00Z",
-      "updatedAt": "2026-10-04T18:23:51.224Z"
+      "updatedAt": "2026-10-11T16:15:35.482Z"
     },
     {
       "id": "scores",
@@ -264,74 +230,54 @@
     {
       "id": "copying",
       "slug": "copying",
-      "title": "copying",
-      "titleZh": "摹 / 抄",
+      "title": "copying and copies",
+      "titleZh": "抄",
       "type": "note",
-      "status": "published",
       "date": "Method / concept",
       "datePlaceholder": false,
       "medium": "Methodological framework",
-      "dimensions": "",
-      "shortDescription": "Copying as an embodied method of close looking, critical proximity, and cognitive transcription rather than mechanical reproduction.",
-      "fullText": "Copying (临摹 linmo / 抄录 chaolu) is considered here as an active epistemic tool.\n\nBy tracing another's words, strokes, or cadence, the copyist inhabits the original text from the inside. The divergence—the involuntary tremble, the slight misreading, the fatigue of the wrist—reveals the boundary between the original and the self.\n\nConnects deeply to [[mofang-yaoxiang-ruge]], [[script-notes]], and the archival ethos of [[ss-between-books-and-libraries]].",
-      "subjects": [
-        "transcription",
-        "imitation",
-        "transmission",
-        "study",
-        "pedagogy"
-      ],
-      "relatedEntryIds": [
-        "mofang-yaoxiang-ruge",
-        "script-notes",
-        "ss-between-books-and-libraries"
-      ],
-      "collections": [],
+      "shortDescription": "[draft] Copying as an embodied method of close looking, critical proximity, and cognitive transcription rather than mechanical reproduction.",
+      "credits": [],
+      "presentationHistory": [],
+      "fullText": "[draft] Copying (临摹 linmo / 抄录 chaolu) is considered here as an active epistemic tool.\n\nBy tracing another's words, strokes, or cadence, the copyist inhabits the original text from the inside. The divergence—the involuntary tremble, the slight misreading, the fatigue of the wrist—reveals the boundary between the original and the self.\n\nConnects deeply to [[mofang-yaoxiang-ruge]], [[script-notes]], and the archival ethos of [[ss-between-books-and-libraries]].",
       "images": [],
       "blocks": [
         {
           "id": "block-cp-1",
           "type": "text",
-          "content": "Copying (临摹 linmo / 抄录 chaolu) is considered here as an active epistemic tool.\n\nBy tracing another's words, strokes, or cadence, the copyist inhabits the original text from the inside. The divergence—the involuntary tremble, the slight misreading, the fatigue of the wrist—reveals the boundary between the original and the self.\n\nConnects deeply to [[mofang-yaoxiang-ruge]], [[script-notes]], and the archival ethos of [[ss-between-books-and-libraries]]."
+          "content": "[draft] Copying (临摹 linmo / 抄录 chaolu) is considered here as an active epistemic tool.\n\nBy tracing another's words, strokes, or cadence, the copyist inhabits the original text from the inside. The divergence—the involuntary tremble, the slight misreading, the fatigue of the wrist—reveals the boundary between the original and the self.\n\nConnects deeply to [[mofang-yaoxiang-ruge]], [[script-notes]], and the archival ethos of [[ss-between-books-and-libraries]]."
         }
       ],
-      "isDevelopingWork": false,
-      "createdAt": "2026-02-10T12:00:00Z",
-      "updatedAt": "2026-10-04T18:23:42.566Z",
       "tagIds": [
-        "tag-archives"
+        "tag-copy"
       ],
-      "associatedProjectIds": [
-        "ss-between-books-and-libraries"
-      ]
+      "subjects": [
+        "copying and copies"
+      ],
+      "associatedProjectIds": [],
+      "relatedEntryIds": [
+        "mofang-yaoxiang-ruge",
+        "scores",
+        "entry-who-is-abing",
+        "entry-linmo-sketches",
+        "script-notes",
+        "entry-flower-vases-paintings"
+      ],
+      "status": "published",
+      "isDevelopingWork": true,
+      "createdAt": "2026-02-10T12:00:00Z",
+      "updatedAt": "2026-10-05T03:46:50.871Z"
     },
     {
       "id": "entry-in-the-aisle-work",
-      "slug": "in-the-aisle-work",
+      "slug": "asm",
       "title": "in the aisle",
       "type": "work",
       "date": "2019",
       "datePlaceholder": false,
       "medium": "Photo series, Wheat pasting and Zine installation",
+      "dimensions": "variable",
       "shortDescription": "in the aisle gathers photographs, textures and overheard conversations from Chinese supermarkets in Edinburgh.",
-      "fullText": "in the aisle gathers photographs, textures and overheard conversations from Chinese supermarkets in Edinburgh. Made during a two-week programme while living away from Singapore, the work looks at how familiar products, languages, smells and everyday exchanges can make an unfamiliar place briefly feel like home. Bringing these fragments together through photographs, wheat-pasted prints and newsprint, the work considers the supermarket not only as a place to buy things, but as a space where familiarity and community are quietly reproduced.",
-      "images": [],
-      "blocks": [
-        {
-          "id": "text-in-the-aisle-work",
-          "type": "text",
-          "content": "Made during a two-week programme while living away from Singapore, the work looks at how familiar products, languages, smells and everyday exchanges can make an unfamiliar place briefly feel like home. Bringing these fragments together through photographs, wheat-pasted prints and newsprint, the work considers the supermarket not only as a place to buy things, but as a space where familiarity and community are quietly reproduced."
-        }
-      ],
-      "tagIds": [],
-      "subjects": [],
-      "relatedEntryIds": [
-        "entry-in-the-aisle-book"
-      ],
-      "associatedProjectIds": [],
-      "status": "published",
-      "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-04T21:20:44Z",
       "credits": [],
       "presentationHistory": [
         {
@@ -340,7 +286,7 @@
           "venue": "",
           "location": "China",
           "date": "2019",
-          "action": "shown",
+          "action": "presented",
           "curator": "",
           "attribution": "curated",
           "link": "",
@@ -351,14 +297,197 @@
           "title": "Bearings",
           "venue": "ADM Gallery",
           "location": "Singapore",
-          "date": "",
+          "date": "2019",
           "action": "shown",
           "curator": "",
-          "attribution": "curated",
+          "attribution": "programmed",
           "link": "",
           "note": ""
         }
-      ]
+      ],
+      "fullText": "Installation view at [title]Bearings[/title] (2019), ADM Gallery, Singapore.\n\nMade during a two-week programme while living away from Singapore, the work looks at how familiar products, languages, smells and everyday exchanges can make an unfamiliar place briefly feel like home. Bringing these fragments together through photographs, wheat-pasted prints and newsprint, the work considers the supermarket not only as a place to buy things, but as a space where familiarity and community are quietly reproduced.",
+      "images": [
+        {
+          "id": "06e3e106-9e83-489e-850f-29f8f2f60135",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/81fd06c05c9a1cb0c4f34cdbe2593dea877084bad54f169bc1efef6cf2399d96.jpg",
+          "caption": "Installation view at [title]Bearings[/title] (2019), ADM Gallery, Singapore.",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "72decfa0-6c81-4c21-be5d-e98957c05a2c",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/c20b84676e74e39c136cbdb060e0d1104334bd103bee7df8edfebbb2368e7aa1.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "e6d05441-e3a6-4268-ac1c-e2b0a9f98e30",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/c26a3c130d1a748f8981cca531807d5d86075972f134a58d2e70b95d2dcba7f4.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "cb669772-ac64-4286-9a48-c7e1d537ad7a",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/dcca97f34786011b6632933fe3b0ecd62d1c821fd57bfd77ca5a8daf9a9acc38.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "bbc3b032-549c-4bf2-9dce-daef35e22ed6",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/c3f4dc8bbc27e76bd0cf719a7c692f747f8b1e5d64d21d6b0b2bd8ca2723fa04.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "a69fba69-a714-4b30-a2f8-86158fae4615",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/caf1def7d25d2e6b02d2e8b915e7bdd691a8daf13d911c419f5e8d5cc9db47ab.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "ffcacfcf-e9a2-4d47-a79d-22667ddfb1c4",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/23d72dc7c30a54e4ecff6e0080c0a1a7f26d70e007c4882d5a8b578a4bf58b68.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "5698433e-f92e-499a-bdc7-fbeae7bc11d7",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/4487833ae563207686e70b86c0814c3a9d3ea6fca34c6935049a2bcbbccfd650.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "b7f4515e-42ea-4e2f-abef-2c5c11554c87",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/e1527f4cda60b8757a93ee9d65d2d1a9f780fdd748293b7ae57734df31d39a68.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "190faf8f-3c08-4060-b933-d4bba7d0202f",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/a9cb92d836e2eb5ac0a81083add39492317069a2ad368955dd7a54c071491cff.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        }
+      ],
+      "blocks": [
+        {
+          "id": "block-mv410sfl-lgrf",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "06e3e106-9e83-489e-850f-29f8f2f60135",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/81fd06c05c9a1cb0c4f34cdbe2593dea877084bad54f169bc1efef6cf2399d96.jpg",
+              "caption": "Installation view at [title]Bearings[/title] (2019), ADM Gallery, Singapore.",
+              "alt": "",
+              "credit": ""
+            }
+          ],
+          "layout": "stacked"
+        },
+        {
+          "id": "text-in-the-aisle-work",
+          "type": "text",
+          "content": "Made during a two-week programme while living away from Singapore, the work looks at how familiar products, languages, smells and everyday exchanges can make an unfamiliar place briefly feel like home. Bringing these fragments together through photographs, wheat-pasted prints and newsprint, the work considers the supermarket not only as a place to buy things, but as a space where familiarity and community are quietly reproduced."
+        },
+        {
+          "id": "block-mv410uh2-xzmr",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "72decfa0-6c81-4c21-be5d-e98957c05a2c",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/c20b84676e74e39c136cbdb060e0d1104334bd103bee7df8edfebbb2368e7aa1.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "e6d05441-e3a6-4268-ac1c-e2b0a9f98e30",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/c26a3c130d1a748f8981cca531807d5d86075972f134a58d2e70b95d2dcba7f4.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "cb669772-ac64-4286-9a48-c7e1d537ad7a",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/dcca97f34786011b6632933fe3b0ecd62d1c821fd57bfd77ca5a8daf9a9acc38.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "bbc3b032-549c-4bf2-9dce-daef35e22ed6",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/c3f4dc8bbc27e76bd0cf719a7c692f747f8b1e5d64d21d6b0b2bd8ca2723fa04.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "a69fba69-a714-4b30-a2f8-86158fae4615",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/caf1def7d25d2e6b02d2e8b915e7bdd691a8daf13d911c419f5e8d5cc9db47ab.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "ffcacfcf-e9a2-4d47-a79d-22667ddfb1c4",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/23d72dc7c30a54e4ecff6e0080c0a1a7f26d70e007c4882d5a8b578a4bf58b68.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "5698433e-f92e-499a-bdc7-fbeae7bc11d7",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/4487833ae563207686e70b86c0814c3a9d3ea6fca34c6935049a2bcbbccfd650.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "b7f4515e-42ea-4e2f-abef-2c5c11554c87",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/e1527f4cda60b8757a93ee9d65d2d1a9f780fdd748293b7ae57734df31d39a68.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "190faf8f-3c08-4060-b933-d4bba7d0202f",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/a9cb92d836e2eb5ac0a81083add39492317069a2ad368955dd7a54c071491cff.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            }
+          ],
+          "layout": "grid"
+        }
+      ],
+      "tagIds": [
+        "tag-time",
+        "tag-archives"
+      ],
+      "subjects": [
+        "time and the durational",
+        "archives and records"
+      ],
+      "associatedProjectIds": [],
+      "relatedEntryIds": [
+        "entry-in-the-aisle-book",
+        "entry-on-telling-time-in-the-mall"
+      ],
+      "status": "published",
+      "isDevelopingWork": false,
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-11T16:21:21.635Z"
     },
     {
       "id": "entry-things-we-held-and-grazed",
