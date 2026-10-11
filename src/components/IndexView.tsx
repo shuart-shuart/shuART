@@ -222,7 +222,7 @@ export const IndexView: React.FC<IndexViewProps> = ({
                   <td className="py-4 pr-4 align-baseline">
                     <div>
                       <a href={`#entry/${entry.slug}`} onClick={event=>followEntry(event,entry.slug)} className="block leading-[1.2] focus-visible:underline underline-offset-2">
-                        <EntryTitle entry={entry} primaryClassName="font-editorial text-[15px] sm:text-base text-black group-hover:underline" chineseClassName="font-editorial text-[15px] sm:text-base text-black/70 group-hover:underline" />
+                        <EntryTitle inline entry={entry} primaryClassName="font-editorial text-[15px] sm:text-base text-black group-hover:underline" chineseClassName="font-editorial text-[15px] sm:text-base text-black/70 group-hover:underline" />
                       </a>
                       {entry.isDevelopingWork && (
                         <div className="text-[11px] font-mono-quiet text-[#c18f32] italic mt-1">
@@ -292,7 +292,7 @@ export const IndexView: React.FC<IndexViewProps> = ({
 
                 <h3 className="leading-[1.2]">
                   <a href={`#entry/${entry.slug}`} onClick={event=>followEntry(event,entry.slug)} className="block focus-visible:underline underline-offset-2">
-                    <EntryTitle entry={entry} primaryClassName="font-editorial text-[15px] sm:text-base text-black group-hover:underline" chineseClassName="font-editorial text-[15px] sm:text-base text-black/70 group-hover:underline" />
+                    <EntryTitle inline entry={entry} primaryClassName="font-editorial text-[15px] sm:text-base text-black group-hover:underline" chineseClassName="font-editorial text-[15px] sm:text-base text-black/70 group-hover:underline" />
                   </a>
                 </h3>
 

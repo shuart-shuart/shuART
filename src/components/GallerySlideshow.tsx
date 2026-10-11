@@ -29,12 +29,12 @@ export function GallerySlideshow({block, onOpen, isLightboxOpen = false}: {block
       <button type="button" className="block w-full cursor-zoom-in" onClick={()=>onOpen(image)} aria-label={`Enlarge image ${index%count+1} of ${count}`}>
         <img src={image.url} alt={formattedTextToPlainText(image.alt || image.caption) || 'Artwork image'} className="w-full h-[55vh] max-h-[70vh] object-contain" />
       </button>
-      {(image.caption || image.credit) && <figcaption className="text-xs font-mono-quiet text-black/60 space-y-1">
+      {(image.caption || image.credit) && <figcaption className="mx-auto max-w-[65ch] text-center text-xs font-mono-quiet text-black/60 space-y-1">
         {image.caption && <p>{renderFormattedText(image.caption)}</p>}
         {image.credit && <p>Photo: {renderFormattedText(image.credit)}</p>}
       </figcaption>}
     </figure>
-    {count>1 && <div className="flex justify-between items-center gap-4 text-xs font-mono-quiet">
+    {count>1 && <div className="flex flex-wrap justify-center items-center gap-x-5 gap-y-2 text-xs font-mono-quiet">
       <button type="button" onClick={()=>change(-1)}>← Previous</button>
       <span>{index%count+1} / {count}</span>
       {block.autoPlay && <button type="button" disabled={reducedMotion} onClick={()=>setPaused(value=>!value)}>{reducedMotion ? 'Autoplay off' : paused ? 'Play' : 'Pause'}</button>}

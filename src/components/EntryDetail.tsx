@@ -114,7 +114,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
       <header className="space-y-4 mb-10">
         <div className="space-y-1">
           <h1 className="space-y-1">
-            <EntryTitle entry={entry} primaryClassName="font-editorial text-[28px] sm:text-[40px] text-black font-normal tracking-tight leading-tight" chineseClassName="font-editorial text-[26px] sm:text-[36px] text-black/80 font-light leading-tight" />
+            <EntryTitle inline entry={entry} primaryClassName="font-editorial text-[28px] sm:text-[40px] text-black font-normal tracking-tight leading-tight" chineseClassName="font-editorial text-[26px] sm:text-[36px] text-black/80 font-light leading-tight" />
           </h1>
         </div>
 
@@ -242,14 +242,14 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
                         <img
                           src={img.url}
                           alt={formattedTextToPlainText(img.alt || img.caption || entry.title)}
-                          className="w-full h-auto object-cover max-h-[70vh] transition-opacity hover:opacity-95"
+                          className="mx-auto w-auto max-w-full h-auto object-contain max-h-[70vh] transition-opacity hover:opacity-95"
                           loading="lazy"
                         />
                       </div>
                       {(img.caption || img.credit || img.alt) && (
-                        <figcaption className="flex justify-between items-baseline text-xs font-mono-quiet text-black/60 pt-1">
-                          <span>{renderWikiText(img.caption || img.alt || '')}</span>
-                          {img.credit && <span className="text-black/40">Photo: {renderWikiText(img.credit)}</span>}
+                        <figcaption className="mx-auto max-w-[65ch] text-center text-xs font-mono-quiet text-black/60 pt-1 space-y-1">
+                          {(img.caption || img.alt) && <p>{renderWikiText(img.caption || img.alt || '')}</p>}
+                          {img.credit && <p className="text-black/40">Photo: {renderWikiText(img.credit)}</p>}
                         </figcaption>
                       )}
                     </figure>

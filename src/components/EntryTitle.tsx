@@ -17,14 +17,16 @@ export function splitEntryTitle(entry: Pick<Entry, 'title' | 'titleZh'>) {
   return { chinese, english };
 }
 
-export function EntryTitle({ entry, primaryClassName, chineseClassName }: {
+export function EntryTitle({ entry, primaryClassName, chineseClassName, inline = false }: {
   entry: Pick<Entry, 'title' | 'titleZh'>;
   primaryClassName: string;
   chineseClassName: string;
+  inline?: boolean;
 }) {
   const { chinese, english } = splitEntryTitle(entry);
   return <>
-    {chinese && <span lang="zh-Hans" className={`block break-words ${english ? chineseClassName : primaryClassName}`}>{chinese}</span>}
-    {english && <span className={`block break-words ${primaryClassName}`}>{english}</span>}
+    {chinese && <span lang="zh-Hans" className={`${inline ? 'inline' : 'block'} break-words ${english ? chineseClassName : primaryClassName}`}>{chinese}</span>}
+    {inline && chinese && english && ' '}
+    {english && <span className={`${inline ? 'inline' : 'block'} break-words ${primaryClassName}`}>{english}</span>}
   </>;
 }
