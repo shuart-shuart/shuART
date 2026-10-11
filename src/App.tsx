@@ -263,10 +263,8 @@ export default function App() {
     const updated = await saveEntry(savedEntry, entries);
     setEntries(updated);
 
-    // Keep entryBeingEdited synchronized
-    if (entryBeingEdited && entryBeingEdited.id === savedEntry.id) {
-      setEntryBeingEdited(savedEntry);
-    }
+    // The editor owns its active form until it confirms and closes.
+    // Replacing its source entry here resets its fields and save feedback.
 
     // Keep URL and selectedEntrySlug in sync if currently viewing this entry
     if (selectedEntrySlug) {
@@ -519,7 +517,7 @@ export default function App() {
       {/* Entry Editor Modal */}
       {isEntryEditorModalOpen && (
         <EntryEditorModal
-          key={entryBeingEdited ? `edit-${entryBeingEdited.id}-${entryBeingEdited.updatedAt || ''}` : 'new-entry'}
+          key={entryBeingEdited ? `edit-${entryBeingEdited.id}` : 'new-entry'}
           isOpen={isEntryEditorModalOpen}
           entryToEdit={entryBeingEdited}
           allEntries={entries}

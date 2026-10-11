@@ -459,6 +459,18 @@ export const EntryEditorModal: React.FC<EntryEditorModalProps> = ({
     setValidationError('');
     setSaveSuccessMsg(null);
 
+    // Validate here so a blocked submit always produces an editor error.
+    // Native validation alone can silently prevent onSubmit from running.
+    const invalidField = Array.from(e.currentTarget.querySelectorAll<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>('input, textarea, select'))
+      .find(field => !field.validity.valid);
+    if (invalidField) {
+      const label = invalidField.closest('div')?.querySelector('label')?.textContent?.replace(/\s*\*\s*$/, '').trim()
+        || invalidField.getAttribute('placeholder') || 'Required field';
+      setValidationError(`${label}: ${invalidField.validationMessage}`);
+      invalidField.focus();
+      return;
+    }
+
     if (!title.trim()) {
       setValidationError('Title is required.');
       return;
@@ -563,7 +575,7 @@ export const EntryEditorModal: React.FC<EntryEditorModalProps> = ({
         </div>
 
         {/* Modal Scrollable Body */}
-        <form onSubmit={handleFormSubmit} className="flex-1 overflow-y-auto p-5 sm:p-6 space-y-8">
+        <form id="entry-editor-form" noValidate onSubmit={handleFormSubmit} className="flex-1 overflow-y-auto p-5 sm:p-6 space-y-8">
           {validationError && (
             <div className="p-3 bg-red-50 border border-red-200 text-red-900 text-xs font-mono-quiet flex items-start justify-between">
               <div>
@@ -584,9 +596,7 @@ export const EntryEditorModal: React.FC<EntryEditorModalProps> = ({
               <div className="flex items-center gap-2">
                 <span className="inline-block w-2 h-2 rounded-full bg-emerald-600"></span>
                 <span className="font-medium">Saved ✓</span>
-                <span className="text-emerald-800">
-                  Edits successfully written to storage for entry <span className="font-mono font-medium">{targetId}</span>
-                </span>
+                <span className="text-emerald-800">Saved to your browser draft. Publish to GitHub to update the live site.</span>
               </div>
             </div>
           )}
@@ -1138,8 +1148,12 @@ export const EntryEditorModal: React.FC<EntryEditorModalProps> = ({
             </div>
           </div>
 
-          {/* Modal Actions Footer */}
-          <div className="pt-6 border-t border-black/10 flex justify-between items-center">
+        </form>
+          {/* Keep save feedback visible while editing a long post. */}
+          <div className="shrink-0 p-5 sm:p-6 border-t border-black/10 space-y-3">
+            {validationError && <p role="alert" className="text-xs text-red-700">{validationError}</p>}
+            {saveSuccessMsg && <p role="status" className="text-xs text-emerald-700">Saved to your browser draft. Publish to GitHub to update the live site.</p>}
+          <div className="flex justify-between items-center">
             <button
               type="button"
               onClick={onClose}
@@ -1157,6 +1171,7 @@ export const EntryEditorModal: React.FC<EntryEditorModalProps> = ({
               )}
               <button
                 type="submit"
+                form="entry-editor-form"
                 disabled={isSaving || !!saveSuccessMsg}
                 className={`px-6 py-2 text-xs font-mono-quiet font-medium transition-colors ${
                   saveSuccessMsg
@@ -1170,7 +1185,7 @@ export const EntryEditorModal: React.FC<EntryEditorModalProps> = ({
               </button>
             </div>
           </div>
-        </form>
+          </div>
       </div>
     </div>
   );
