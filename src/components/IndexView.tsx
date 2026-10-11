@@ -2,6 +2,7 @@ import { DEFAULT_INDEX } from '../data/siteContent';
 import { renderFormattedText } from '../services/formatting';
 import { entryTags, tagCounts } from '../services/canonicalTags';
 import { EntryTitle } from './EntryTitle';
+import { useStickyHeight } from '../services/useStickyHeight';
 import React, { useState, useMemo } from 'react';
 import { Entry, EntryType, Tag, IndexContent } from '../types';
 
@@ -25,6 +26,13 @@ const TYPE_OPTIONS: { value: 'all' | EntryType; label: string }[] = [
   { value: 'note', label: 'Notes' },
 ];
 
+const TYPE_HOVER: Record<EntryType, string> = {
+  project: 'hover:bg-[#e9edf0] focus-within:bg-[#e9edf0]',
+  work: 'hover:bg-[#ededed] focus-within:bg-[#ededed]',
+  publication: 'hover:bg-[#efede7] focus-within:bg-[#efede7]',
+  note: 'hover:bg-[#eee9ed] focus-within:bg-[#eee9ed]',
+};
+
 export const IndexView: React.FC<IndexViewProps> = ({
   entries,
   indexContent = DEFAULT_INDEX,
@@ -36,6 +44,13 @@ export const IndexView: React.FC<IndexViewProps> = ({
   onSelectTag,
   initialType = 'all',
 }) => {
+  const controlsRef = useStickyHeight<HTMLDivElement>('--index-controls-height');
+  const followEntry = (event: React.MouseEvent<HTMLAnchorElement>, slug: string) => {
+    event.stopPropagation();
+    if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    event.preventDefault();
+    onSelectEntry(slug);
+  };
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedType, setSelectedType] = useState<'all' | EntryType>(initialType);
   const [displayMode, setDisplayMode] = useState<'directory' | 'cards'>('directory');
@@ -99,9 +114,9 @@ export const IndexView: React.FC<IndexViewProps> = ({
       </div>
 
       {/* Controls & Filters Bar */}
-      <div className="border-y border-black/10 py-5 my-6 space-y-4 font-sans text-sm">
+      <div ref={controlsRef} className="sticky z-20 bg-white border-y border-black/10 py-2 sm:py-3 my-6 space-y-2 sm:space-y-3 font-sans text-sm" style={{top:'var(--site-header-height, 80px)'}}>
         {/* Search input & layout mode switcher */}
-        <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4">
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2 sm:gap-4">
           <div className="relative flex-1 max-w-lg">
             <input
               type="text"
@@ -148,7 +163,7 @@ export const IndexView: React.FC<IndexViewProps> = ({
         </div>
 
         {/* Type filters (Clean typographic zero-pill discipline) */}
-        <div className="flex items-center gap-x-5 gap-y-2 flex-wrap text-xs font-mono-quiet pt-2">
+        <div className="flex items-center gap-x-3 sm:gap-x-5 gap-y-2 flex-wrap text-xs font-mono-quiet">
           <span className="text-black/40 uppercase tracking-wider text-[11px]">Type:</span>
           {TYPE_OPTIONS.map((opt) => {
             const isActive = selectedType === opt.value;
@@ -185,15 +200,15 @@ export const IndexView: React.FC<IndexViewProps> = ({
 
       {/* Directory Mode (Table / Clean Line Format) */}
       {displayMode === 'directory' ? (
-        <div className="overflow-x-auto">
-          <table className="w-full text-left text-sm font-sans border-collapse">
+        <div>
+          <table className="w-full table-fixed text-left text-sm font-sans border-collapse index-directory">
             <thead>
               <tr className="border-b border-black/20 text-xs font-mono-quiet text-black/40 uppercase tracking-wider">
-                <th className="py-3 pr-4 font-normal">Title</th>
-                <th className="py-3 px-4 font-normal hidden sm:table-cell">Type</th>
-                <th className="py-3 px-4 font-normal hidden md:table-cell">Date</th>
-                <th className="py-3 px-4 font-normal hidden lg:table-cell">Medium / Scope</th>
-                <th className="py-3 pl-4 font-normal text-right">Reference</th>
+                <th className="py-3 pr-4 font-normal w-[75%] sm:w-[65%] md:w-[50%] lg:w-[38%]">Title</th>
+                <th className="py-3 px-4 font-normal hidden sm:table-cell sm:w-[15%] lg:w-[12%]">Type</th>
+                <th className="py-3 px-4 font-normal hidden md:table-cell md:w-[15%] lg:w-[12%]">Date</th>
+                <th className="py-3 px-4 font-normal hidden lg:table-cell lg:w-[23%]">Medium / Scope</th>
+                <th className="py-3 pl-4 font-normal text-right w-[25%] sm:w-[20%] lg:w-[15%]">Reference</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-black/10">
@@ -201,14 +216,16 @@ export const IndexView: React.FC<IndexViewProps> = ({
                 <tr
                   key={entry.id}
                   onClick={() => onSelectEntry(entry.slug)}
-                  className="group hover:bg-black/[0.015] cursor-pointer transition-colors"
+                  className={`group cursor-pointer transition-colors ${TYPE_HOVER[entry.type]}`}
                 >
                   {/* Title & Chinese */}
                   <td className="py-4 pr-4 align-baseline">
-                    <div className="space-y-0.5">
-                      <EntryTitle entry={entry} primaryClassName="font-editorial text-base sm:text-lg text-black group-hover:underline" chineseClassName="font-editorial text-base sm:text-lg text-black/70" />
+                    <div>
+                      <a href={`#entry/${entry.slug}`} onClick={event=>followEntry(event,entry.slug)} className="block leading-[1.2] focus-visible:underline underline-offset-2">
+                        <EntryTitle entry={entry} primaryClassName="font-editorial text-[15px] sm:text-base text-black group-hover:underline" chineseClassName="font-editorial text-[15px] sm:text-base text-black/70 group-hover:underline" />
+                      </a>
                       {entry.isDevelopingWork && (
-                        <div className="text-[11px] font-mono-quiet text-black/45 italic">
+                        <div className="text-[11px] font-mono-quiet text-[#c18f32] italic mt-1">
                           [study / fragment]
                         </div>
                       )}
@@ -254,7 +271,7 @@ export const IndexView: React.FC<IndexViewProps> = ({
             <article
               key={entry.id}
               onClick={() => onSelectEntry(entry.slug)}
-              className="group cursor-pointer p-6 border border-black/10 hover:border-black transition-all flex flex-col justify-between space-y-4 bg-white"
+              className={`group cursor-pointer p-6 border border-black/10 hover:border-black transition-colors flex flex-col justify-between space-y-4 bg-white ${TYPE_HOVER[entry.type]}`}
             >
               <div className="space-y-2">
                 <div className="flex items-center gap-2 text-[11px] font-mono-quiet text-black/50">
@@ -268,13 +285,15 @@ export const IndexView: React.FC<IndexViewProps> = ({
                   {entry.isDevelopingWork && (
                     <>
                       <span aria-hidden="true">·</span>
-                      <span className="italic">[study]</span>
+                      <span className="italic text-[#c18f32]">[study / fragment]</span>
                     </>
                   )}
                 </div>
 
-                <h3 className="leading-snug">
-                  <EntryTitle entry={entry} primaryClassName="font-editorial text-xl text-black group-hover:underline" chineseClassName="font-editorial text-base sm:text-lg text-black/70" />
+                <h3 className="leading-[1.2]">
+                  <a href={`#entry/${entry.slug}`} onClick={event=>followEntry(event,entry.slug)} className="block focus-visible:underline underline-offset-2">
+                    <EntryTitle entry={entry} primaryClassName="font-editorial text-[15px] sm:text-base text-black group-hover:underline" chineseClassName="font-editorial text-[15px] sm:text-base text-black/70 group-hover:underline" />
+                  </a>
                 </h3>
 
                 {entry.shortDescription && (

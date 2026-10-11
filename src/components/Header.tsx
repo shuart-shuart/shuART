@@ -1,4 +1,5 @@
 import React from 'react';
+import { useStickyHeight } from '../services/useStickyHeight';
 import { ViewMode, NavItemConfig } from '../types';
 
 interface HeaderProps {
@@ -16,6 +17,7 @@ export const Header: React.FC<HeaderProps> = ({
   showWander,
   navOrder,
 }) => {
+  const headerRef = useStickyHeight<HTMLElement>('--site-header-height');
   // If navOrder is supplied, use it; otherwise fallback to streamlined list (Index, About, Wander)
   const items: NavItemConfig[] = navOrder && navOrder.length > 0
     ? navOrder.filter((n) => n.view === 'index' || n.view === 'about' || n.view === 'wander')
@@ -26,7 +28,7 @@ export const Header: React.FC<HeaderProps> = ({
       ];
 
   return (
-    <header className="border-b border-black/10 bg-white sticky top-0 z-30 transition-colors">
+    <header ref={headerRef} className="border-b border-black/10 bg-white sticky top-0 z-30 transition-colors">
       <div className="max-w-7xl mx-auto px-5 sm:px-8 py-4 sm:py-5 flex flex-wrap items-baseline justify-between gap-x-8 gap-y-2.5">
         {/* Left: Artist Name (no subtitle) */}
         <div>
