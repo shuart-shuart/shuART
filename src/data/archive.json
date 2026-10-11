@@ -2,6 +2,789 @@
   "version": 3,
   "entries": [
     {
+      "id": "entry-mv46p9q3-1vsv",
+      "slug": "yinying",
+      "title": "reflections impressions",
+      "titleZh": "印映",
+      "type": "project",
+      "date": "2024",
+      "datePlaceholder": false,
+      "medium": "solo exhibition",
+      "dimensions": "18 Jan – 5 May 2024",
+      "shortDescription": "solo presentation about 二泉映月, Erquan Yingyue and 阿炳 Abing | Esplanade Community Wall, Singapore",
+      "credits": [
+        {
+          "id": "credit-mv46pye7-laek",
+          "role": "custom",
+          "name": "Lynda Tay",
+          "link": "",
+          "customRole": "Curator"
+        },
+        {
+          "id": "credit-mv46q8up-ybez",
+          "role": "commissioner",
+          "name": "Esplanade – Theatres by the Bay",
+          "link": "https://www.esplanade.com/offstage/arts/insights-hong-shu-ying"
+        }
+      ],
+      "presentationHistory": [],
+      "fullText": "Drawing from her personal experience of learning and teaching the erhu, 印映 reflections impressions by Hong Shu-ying unfurls through an ensemble of works encompassing video, print and annotations to reflect on imitation and mimicking as a way of learning. At the source of these works lies the famed 1950 erhu audio recording of Mirrored Moon in the Erquan Spring (二泉映月, Erquan Yingyue) by Abing. A seminal figure in the realm of the erhu, Abing is a Chinese folk musician revered for his innovative playing style and legendary—but largely undocumented —contributions to musical compositions for this two-stringed bowed instrument.\n\nDespite its poor audio quality, Abing’s 1950 recording of Mirrored Moon in the Erquan Spring served as the reference for transcribing the erhu classic into cipher notation (or jianpu), evolving into a systematic method for disseminating and learning the composition. Subsequently, performance recordings and user-made videos of the piece have been created, owing to its widespread popularity, considerable significance within cultural contexts, and its role as a valuable resource for learning and instructing the erhu. Intrigued by the proliferation of these recordings, this exhibition sees Hong delving into videos of Mirrored Moon in the Erquan Spring by both professionals and amateurs of erhu on platforms like YouTube and Youku. Through processes of cropping and screenshotting various lunar and hand imagery as well as representations of Abing, Hong extracts the parallels and variations in these materials, observing how they imagine, shapeshift and form diverse timecapsules of expressions. \n\nFinally, undergirding the works is the significance of notations and annotations in learning and playing the erhu. These annotations offer a comprehensive guide, providing technical and interpretational insights essential for learning a piece. For Hong, they also act as a conduit for the transmission and preservation by establishing an informal lineage from erhu teachers and other performers, as well as fostering a continuum of understanding and interpretation.\n\n-\n\nThe entire series is an on-going project with further plans to develop it into a book. The audio component, [title]再现依心曲 ad lib[/title] can be found [here](https://shu0shushu.bandcamp.com/album/ad-lib).\n\nyinying_0",
+      "images": [
+        {
+          "id": "b0c4a2c3-a446-4fb9-919b-257786b3f8ae",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/0929886a5e4f0209bf7f323fdf1cf219b0fa29c853dd1bd7c7d4665f76340a5d.gif",
+          "caption": "",
+          "alt": "yinying_0",
+          "credit": "Esplanade - Theatres on the Bay, AlvieAlive"
+        },
+        {
+          "id": "846e98a2-ea2f-4994-bb7b-55b46e6b71c2",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/c3427103e27be5c148a2fd7f4be9f49c41bcc199383f497d36d5a91c28b3f65d.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Esplanade - Theatres on the Bay, AlvieAlive"
+        },
+        {
+          "id": "acf1e603-5748-4f25-8a2c-a074c1cdf3d4",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/a04e2c503d75453550388d369a1deb3005c2c320c84f15d0b8ca21874e2d66f4.gif",
+          "caption": "",
+          "alt": "",
+          "credit": "Esplanade - Theatres on the Bay, AlvieAlive"
+        },
+        {
+          "id": "9e09d3dd-e061-45f2-b29a-011948a7ea7c",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/75a0a6e432aca4c48d5f7a31260e55bb33b2df59582a77da3d2bd166137ebbac.gif",
+          "caption": "",
+          "alt": "",
+          "credit": "Esplanade - Theatres on the Bay, AlvieAlive"
+        },
+        {
+          "id": "276dc854-ac47-47fc-9a5f-9ebf82ac8190",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/9a6137d87435e722a265b9433d20b5898ef0515efd6474529ed2ff934139990a.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Esplanade - Theatres on the Bay, AlvieAlive"
+        },
+        {
+          "id": "6b421138-43e2-4650-b31f-ee373c819e08",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/74e7389e853a120d4a1a86be422ad5641d31b4f6bfc448991962ff6156e12420.gif",
+          "caption": "",
+          "alt": "",
+          "credit": "Esplanade - Theatres on the Bay, AlvieAlive"
+        },
+        {
+          "id": "6b7f34df-d723-47de-a02c-17913e57760d",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/3721b50c59cebc6d5653b9df2f29761bc10c29673c6c1b7af76e1109109d22dd.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Esplanade - Theatres on the Bay, AlvieAlive"
+        },
+        {
+          "id": "c7dd3ea2-3f92-47a2-aac5-d3be69182225",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/f672ce53b4dce7c0247f71ac582181e66a4a40ea73f9d6ea262da0a2ed9ccc18.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Esplanade - Theatres on the Bay, AlvieAlive"
+        }
+      ],
+      "blocks": [
+        {
+          "id": "text-1791744983932-1",
+          "type": "text",
+          "content": "Drawing from her personal experience of learning and teaching the erhu, 印映 reflections impressions by Hong Shu-ying unfurls through an ensemble of works encompassing video, print and annotations to reflect on imitation and mimicking as a way of learning. At the source of these works lies the famed 1950 erhu audio recording of Mirrored Moon in the Erquan Spring (二泉映月, Erquan Yingyue) by Abing. A seminal figure in the realm of the erhu, Abing is a Chinese folk musician revered for his innovative playing style and legendary—but largely undocumented —contributions to musical compositions for this two-stringed bowed instrument.\n\nDespite its poor audio quality, Abing’s 1950 recording of Mirrored Moon in the Erquan Spring served as the reference for transcribing the erhu classic into cipher notation (or jianpu), evolving into a systematic method for disseminating and learning the composition. Subsequently, performance recordings and user-made videos of the piece have been created, owing to its widespread popularity, considerable significance within cultural contexts, and its role as a valuable resource for learning and instructing the erhu. Intrigued by the proliferation of these recordings, this exhibition sees Hong delving into videos of Mirrored Moon in the Erquan Spring by both professionals and amateurs of erhu on platforms like YouTube and Youku. Through processes of cropping and screenshotting various lunar and hand imagery as well as representations of Abing, Hong extracts the parallels and variations in these materials, observing how they imagine, shapeshift and form diverse timecapsules of expressions. \n\nFinally, undergirding the works is the significance of notations and annotations in learning and playing the erhu. These annotations offer a comprehensive guide, providing technical and interpretational insights essential for learning a piece. For Hong, they also act as a conduit for the transmission and preservation by establishing an informal lineage from erhu teachers and other performers, as well as fostering a continuum of understanding and interpretation.\n\n-\n\nThe entire series is an on-going project with further plans to develop it into a book. The audio component, [title]再现依心曲 ad lib[/title] can be found [here](https://shu0shushu.bandcamp.com/album/ad-lib)."
+        },
+        {
+          "id": "block-mv479xz3-9ua1",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "b0c4a2c3-a446-4fb9-919b-257786b3f8ae",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/0929886a5e4f0209bf7f323fdf1cf219b0fa29c853dd1bd7c7d4665f76340a5d.gif",
+              "caption": "",
+              "alt": "yinying_0",
+              "credit": "Esplanade - Theatres on the Bay, AlvieAlive"
+            }
+          ],
+          "layout": "stacked"
+        },
+        {
+          "id": "block-mv46v9vf-k2b8",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "846e98a2-ea2f-4994-bb7b-55b46e6b71c2",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/c3427103e27be5c148a2fd7f4be9f49c41bcc199383f497d36d5a91c28b3f65d.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Esplanade - Theatres on the Bay, AlvieAlive"
+            },
+            {
+              "id": "acf1e603-5748-4f25-8a2c-a074c1cdf3d4",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/a04e2c503d75453550388d369a1deb3005c2c320c84f15d0b8ca21874e2d66f4.gif",
+              "caption": "",
+              "alt": "",
+              "credit": "Esplanade - Theatres on the Bay, AlvieAlive"
+            },
+            {
+              "id": "9e09d3dd-e061-45f2-b29a-011948a7ea7c",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/75a0a6e432aca4c48d5f7a31260e55bb33b2df59582a77da3d2bd166137ebbac.gif",
+              "caption": "",
+              "alt": "",
+              "credit": "Esplanade - Theatres on the Bay, AlvieAlive"
+            },
+            {
+              "id": "276dc854-ac47-47fc-9a5f-9ebf82ac8190",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/9a6137d87435e722a265b9433d20b5898ef0515efd6474529ed2ff934139990a.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Esplanade - Theatres on the Bay, AlvieAlive"
+            },
+            {
+              "id": "6b421138-43e2-4650-b31f-ee373c819e08",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/74e7389e853a120d4a1a86be422ad5641d31b4f6bfc448991962ff6156e12420.gif",
+              "caption": "",
+              "alt": "",
+              "credit": "Esplanade - Theatres on the Bay, AlvieAlive"
+            },
+            {
+              "id": "6b7f34df-d723-47de-a02c-17913e57760d",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/3721b50c59cebc6d5653b9df2f29761bc10c29673c6c1b7af76e1109109d22dd.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Esplanade - Theatres on the Bay, AlvieAlive"
+            },
+            {
+              "id": "c7dd3ea2-3f92-47a2-aac5-d3be69182225",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/f672ce53b4dce7c0247f71ac582181e66a4a40ea73f9d6ea262da0a2ed9ccc18.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Esplanade - Theatres on the Bay, AlvieAlive"
+            }
+          ],
+          "layout": "carousel",
+          "autoPlay": true
+        }
+      ],
+      "tagIds": [
+        "tag-score",
+        "tag-archives",
+        "tag-learning",
+        "tag-copy"
+      ],
+      "subjects": [
+        "scores and notation",
+        "archives and records",
+        "learning? pedagogy?",
+        "copying and copies"
+      ],
+      "associatedProjectIds": [],
+      "relatedEntryIds": [
+        "entry-who-is-abing",
+        "entry-phases"
+      ],
+      "status": "published",
+      "isDevelopingWork": false,
+      "createdAt": "2026-10-11T19:12:20.515Z",
+      "updatedAt": "2026-10-11T19:12:43.769Z"
+    },
+    {
+      "id": "entry-mv46lx9v-p6zn",
+      "slug": "dblspce",
+      "title": "dblspce residency: 再阅错别字",
+      "type": "project",
+      "date": "2024",
+      "datePlaceholder": false,
+      "medium": "artist residency",
+      "dimensions": "Nov 2024",
+      "shortDescription": "a residency for some reflections on past works and Chinese scripts | dlbspce, Singapore",
+      "credits": [
+        {
+          "id": "credit-mv46n3kz-zns5",
+          "role": "custom",
+          "name": "Kim and Sab",
+          "link": "",
+          "customRole": "Special Thanks"
+        }
+      ],
+      "presentationHistory": [],
+      "fullText": "",
+      "images": [],
+      "blocks": [
+        {
+          "id": "text-1791744827829-1",
+          "type": "text",
+          "content": ""
+        }
+      ],
+      "tagIds": [
+        "tag-working-notes",
+        "tag-learning",
+        "tag-time",
+        "tag-spaceswo"
+      ],
+      "subjects": [
+        "working notes",
+        "learning? pedagogy?",
+        "time and the durational",
+        "spaces without space"
+      ],
+      "associatedProjectIds": [],
+      "relatedEntryIds": [
+        "script-notes"
+      ],
+      "status": "published",
+      "isDevelopingWork": true,
+      "createdAt": "2026-10-11T18:55:29.276Z",
+      "updatedAt": "2026-10-11T18:55:29.276Z"
+    },
+    {
+      "id": "entry-mv467b6c-49dn",
+      "slug": "klj",
+      "title": "How We Learn(t)",
+      "type": "project",
+      "date": "2022",
+      "datePlaceholder": false,
+      "medium": "duo show",
+      "dimensions": "21 May to 5 June 2022",
+      "shortDescription": "award showcase for Kwek Leng Joo Prize of Excellence in Photography, curated by Berny Tan | Gillman Barracks, Singapore",
+      "credits": [
+        {
+          "id": "credit-mv46897f-ejlh",
+          "role": "custom",
+          "name": "Berny Tan",
+          "link": "https://bernytan.com",
+          "customRole": "Curator"
+        },
+        {
+          "id": "credit-mv4690bk-wfug",
+          "role": "custom",
+          "name": "Kwek Leng Joo Prize of Excellence in Photography",
+          "link": "",
+          "customRole": "Award"
+        },
+        {
+          "id": "credit-mv46av2g-inc6",
+          "role": "designer",
+          "name": "Gideon-Jamie",
+          "link": ""
+        },
+        {
+          "id": "credit-mv46b2en-2y9o",
+          "role": "custom",
+          "name": "NTU ADM, Ang Song Nian, Muhammad Mustajab Bin Mohamad",
+          "link": "",
+          "customRole": "Special Thanks"
+        }
+      ],
+      "presentationHistory": [],
+      "fullText": "How We Learn(t) brings together two new bodies of work that examine, deconstruct, and re-present existing systems of knowledge.\n\nInformed by her eighteen years as a member of various Chinese orchestras, Hong Shu-ying reflects on the culture of ensembleship in 「 濡 睦 」 resonations. Exploring hand-copied scores, pre-concert tuning, and orchestral seating arrangements, her works illuminate the shared languages and collective experiences that live on the periphery, yet serve as the scaffolding for communal music-making.\n\nIn substance of a minute, recorded by a machine and a few others, Syahrul Anuar takes the tools, techniques, and visual vocabulary of cartography into his own hands, removing them from positions of authority and perceived objectivity. Through four exercises in which mapmaking is unlearned and relearned, he challenges the seemingly immutable frameworks that govern the way we move through urban Singapore.\n\nRecipients of the Kwek Leng Joo Prize of Excellence in Photography 2021, the two artists sidestep conventional photography in this exhibition. In its place are sculptures, moving images, and prints resembling drawings, all of which deliberately skirt the bodies of knowledge at the heart of their subjects.\n\nStill, the ‘documentative’—one of the core functions of photography—remains insistently present in both series. It has been reimagined as gestures that are abstract, speculative, intimate, and reflexive; gestures that dislocate something from its source, in order to transform our understanding.\n\nSee the [catalogue](https://bernytan.com/s/HowWeLearnt_Catalogue_DigitalPreview_Artworks.pdf).",
+      "images": [
+        {
+          "id": "0bd6de94-573b-4df7-ab70-7aa11727b8b6",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/74a86d694305d13398969f76ee7314cfaf86916260198ae94c1c97407d4e6b71.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Hong Shu-ying"
+        },
+        {
+          "id": "45362fd6-9ef4-482c-9a1c-2206a5c17936",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/e4be4906b32552d895eff4a6e9854e1862e946e1cee70883bc1703c2b36ad743.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Syahrul Anuar"
+        },
+        {
+          "id": "89e50c69-4ca6-4e0d-8d82-4ea779f5889c",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/bf8a80b8c2f152cd174a4504a2686ef3399ad478b734dd7be92fb01eded1c44d.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Syahrul Anuar"
+        },
+        {
+          "id": "ea202210-bbe4-419e-96ff-85f66b06f33c",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/e8867d4c1b41b883b3d22a6a7d93ca5b19d015dee211c7ac80a93c7c4351cb5d.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Syahrul Anuar"
+        },
+        {
+          "id": "fc9d09d1-1c3b-49d8-913e-e60bde568166",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/afb37c7cc350cbe8599a7ad1ae33ffb38750b3e6137cd35770e2c92be8113ce5.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Hong Shu-ying"
+        },
+        {
+          "id": "3fdc2985-5d3e-46e1-a1bd-dc7068f5610a",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/28097c9f7d19c07b3a639f8984d528dba311c62a0e0299ef07aaa9a8c410fa24.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Hong Shu-ying"
+        },
+        {
+          "id": "c2aaf31d-3ab6-4e38-ae12-a00a3d540963",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/61e668b6d85c0147e4a999be68a6bec6b8afd1b5298c0e3b0afb4ba27b60e23f.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Hong Shu-ying"
+        },
+        {
+          "id": "720085e1-2cb4-4de0-845a-d6da5ffb4c44",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/16fba39360630948a824fc40aa43fbece8b453bd1826884321d90a406f24205b.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Hong Shu-ying"
+        },
+        {
+          "id": "2e372c9b-54dc-48ef-ad2f-f6376d05b6f5",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/daf1033ad706f955173cab75b45828ba31b6bd66af54b444fd3ea2d68e98ddd5.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Syahrul Anuar"
+        },
+        {
+          "id": "0a8eb28a-1888-49f4-8198-fce36fa8bb72",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/dae0474ef9571407d6a2beae52b1bea6e51d37f07750312807bdd2dba3e205ae.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Hong Shu-ying"
+        },
+        {
+          "id": "1727cdca-8a49-4806-a54a-c3fe9c2d91f3",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/7238cddffd531e9b8879dadf2d5dde3f8afa054582da192cdce645ed82e8083e.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Hong Shu-ying"
+        },
+        {
+          "id": "8a1822fd-7f57-4bb0-93a5-fed0ff486a01",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/5c6577c58cc0e7f814669b97fb3bfbb6d43b48897b08f299effebc787eeb6de3.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Syahrul Anuar"
+        },
+        {
+          "id": "e652e5c0-dc55-45c3-8605-89cb8194e88c",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/4213edf63c1371ca3efb9bd27ab4a785f3f847c0717ddcf86a6f0de90c0a563a.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Syahrul Anuar"
+        },
+        {
+          "id": "383157b4-68a8-44f1-b88f-1bc988ccfe70",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/861f5ba6a43391a3f94da6478e6aa6c286d839a2ca69d5463c38b2817bab0780.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Syahrul Anuar"
+        },
+        {
+          "id": "ef8b5302-8aa4-4a56-b09f-2abf5bc6d2c4",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/8e00a5c85071f0e0faa88907c99e933ed0442a76955ec94cfa4ec37b967a45ca.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Syahrul Anuar"
+        }
+      ],
+      "blocks": [
+        {
+          "id": "block-mv46ct9b-d48z",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "0bd6de94-573b-4df7-ab70-7aa11727b8b6",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/74a86d694305d13398969f76ee7314cfaf86916260198ae94c1c97407d4e6b71.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Hong Shu-ying"
+            },
+            {
+              "id": "45362fd6-9ef4-482c-9a1c-2206a5c17936",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/e4be4906b32552d895eff4a6e9854e1862e946e1cee70883bc1703c2b36ad743.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Syahrul Anuar"
+            },
+            {
+              "id": "89e50c69-4ca6-4e0d-8d82-4ea779f5889c",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/bf8a80b8c2f152cd174a4504a2686ef3399ad478b734dd7be92fb01eded1c44d.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Syahrul Anuar"
+            },
+            {
+              "id": "ea202210-bbe4-419e-96ff-85f66b06f33c",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/e8867d4c1b41b883b3d22a6a7d93ca5b19d015dee211c7ac80a93c7c4351cb5d.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Syahrul Anuar"
+            },
+            {
+              "id": "fc9d09d1-1c3b-49d8-913e-e60bde568166",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/afb37c7cc350cbe8599a7ad1ae33ffb38750b3e6137cd35770e2c92be8113ce5.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Hong Shu-ying"
+            },
+            {
+              "id": "3fdc2985-5d3e-46e1-a1bd-dc7068f5610a",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/28097c9f7d19c07b3a639f8984d528dba311c62a0e0299ef07aaa9a8c410fa24.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Hong Shu-ying"
+            },
+            {
+              "id": "c2aaf31d-3ab6-4e38-ae12-a00a3d540963",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/61e668b6d85c0147e4a999be68a6bec6b8afd1b5298c0e3b0afb4ba27b60e23f.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Hong Shu-ying"
+            },
+            {
+              "id": "720085e1-2cb4-4de0-845a-d6da5ffb4c44",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/16fba39360630948a824fc40aa43fbece8b453bd1826884321d90a406f24205b.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Hong Shu-ying"
+            },
+            {
+              "id": "2e372c9b-54dc-48ef-ad2f-f6376d05b6f5",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/daf1033ad706f955173cab75b45828ba31b6bd66af54b444fd3ea2d68e98ddd5.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Syahrul Anuar"
+            },
+            {
+              "id": "0a8eb28a-1888-49f4-8198-fce36fa8bb72",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/dae0474ef9571407d6a2beae52b1bea6e51d37f07750312807bdd2dba3e205ae.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Hong Shu-ying"
+            },
+            {
+              "id": "1727cdca-8a49-4806-a54a-c3fe9c2d91f3",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/7238cddffd531e9b8879dadf2d5dde3f8afa054582da192cdce645ed82e8083e.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Hong Shu-ying"
+            },
+            {
+              "id": "8a1822fd-7f57-4bb0-93a5-fed0ff486a01",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/5c6577c58cc0e7f814669b97fb3bfbb6d43b48897b08f299effebc787eeb6de3.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Syahrul Anuar"
+            },
+            {
+              "id": "e652e5c0-dc55-45c3-8605-89cb8194e88c",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/4213edf63c1371ca3efb9bd27ab4a785f3f847c0717ddcf86a6f0de90c0a563a.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Syahrul Anuar"
+            },
+            {
+              "id": "383157b4-68a8-44f1-b88f-1bc988ccfe70",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/861f5ba6a43391a3f94da6478e6aa6c286d839a2ca69d5463c38b2817bab0780.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Syahrul Anuar"
+            },
+            {
+              "id": "ef8b5302-8aa4-4a56-b09f-2abf5bc6d2c4",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/8e00a5c85071f0e0faa88907c99e933ed0442a76955ec94cfa4ec37b967a45ca.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Syahrul Anuar"
+            }
+          ],
+          "layout": "carousel",
+          "autoPlay": true
+        },
+        {
+          "id": "text-1791744146005-1",
+          "type": "text",
+          "content": "How We Learn(t) brings together two new bodies of work that examine, deconstruct, and re-present existing systems of knowledge.\n\nInformed by her eighteen years as a member of various Chinese orchestras, Hong Shu-ying reflects on the culture of ensembleship in 「 濡 睦 」 resonations. Exploring hand-copied scores, pre-concert tuning, and orchestral seating arrangements, her works illuminate the shared languages and collective experiences that live on the periphery, yet serve as the scaffolding for communal music-making.\n\nIn substance of a minute, recorded by a machine and a few others, Syahrul Anuar takes the tools, techniques, and visual vocabulary of cartography into his own hands, removing them from positions of authority and perceived objectivity. Through four exercises in which mapmaking is unlearned and relearned, he challenges the seemingly immutable frameworks that govern the way we move through urban Singapore.\n\nRecipients of the Kwek Leng Joo Prize of Excellence in Photography 2021, the two artists sidestep conventional photography in this exhibition. In its place are sculptures, moving images, and prints resembling drawings, all of which deliberately skirt the bodies of knowledge at the heart of their subjects.\n\nStill, the ‘documentative’—one of the core functions of photography—remains insistently present in both series. It has been reimagined as gestures that are abstract, speculative, intimate, and reflexive; gestures that dislocate something from its source, in order to transform our understanding.\n\nSee the [catalogue](https://bernytan.com/s/HowWeLearnt_Catalogue_DigitalPreview_Artworks.pdf)."
+        }
+      ],
+      "tagIds": [
+        "tag-archives",
+        "tag-time",
+        "tag-learning"
+      ],
+      "subjects": [
+        "archives and records",
+        "time and the durational",
+        "learning? pedagogy?"
+      ],
+      "associatedProjectIds": [],
+      "relatedEntryIds": [
+        "script-notes",
+        "entry-moqi-sync"
+      ],
+      "status": "published",
+      "isDevelopingWork": false,
+      "createdAt": "2026-10-11T18:44:12.571Z",
+      "updatedAt": "2026-10-11T18:49:36.313Z"
+    },
+    {
+      "id": "entry-mv45pqbm-y9xl",
+      "slug": "bichu",
+      "title": "collecting cipher",
+      "titleZh": "彼觸",
+      "type": "project",
+      "date": "2024",
+      "datePlaceholder": false,
+      "medium": "solo exhibition",
+      "dimensions": "23 Mar – 7 Apr 2024",
+      "shortDescription": "solo presentation about hand-copied and annotated scores exhibiting artist | 窯座 Yao Alternative Art Space, Taichung",
+      "credits": [
+        {
+          "id": "credit-mv45r5cb-cpo9",
+          "role": "custom",
+          "name": "窯座 Yao Alternative Art Space, Taichung",
+          "link": "https://www.instagram.com/mynameis_yao/",
+          "customRole": "Exhibited at"
+        }
+      ],
+      "presentationHistory": [],
+      "fullText": "I started playing the erhu in an orchestra when I was 7 years old. This experience gave me 20 years to observe the customs, gestures, and behaviours of communal music-making from within. The concept of a Chinese orchestra as we know it today is a relatively recent development in the history of Chinese instrumental music, with much of the traditions and customs still being formed.\n\nIn my teenage years, I served as a score librarian for 5 years, which explains my penchant for hand-copied jianpu (cypher notation). The jianpu is accessible and symbolic of the shared languages and collective experiences on the periphery. The various handwriting and symbols created and borrowed are also full of stories and allusions of their own. As a mnemonic device, jianpu is almost like a language system, serving as the scaffolding for communal music-making. These inconspicuous notes are all traces of learning, adaptation, innovation and sharing; embedded in them is the culture of ensembleship with curious quirks, rooted in a desire to carve out a shared language and identity.\n\nThe works presented in [title]彼觸 collecting ciphers[/title] manifests the different stories found within the annotations and handwritten elements of these hand-copied notations and scores.\n\nSee the [show collateral](https://drive.google.com/file/d/1tXCGpEsqlHeI4ACG-BSKVuqzijiF7wvk/view?usp=sharing) or listen to [窑谣 240407_yaoyao](https://shu0shushu.bandcamp.com/album/240407-yaoyao), an alternative documentation.",
+      "images": [
+        {
+          "id": "1362c422-24fe-446a-bbce-3872a123216a",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/aca3d40c2da18f625085ee4877dae5a9730c0f5d228070e065e0726f78644f59.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "dulub studio 嘟嚕"
+        },
+        {
+          "id": "6203a2f9-7908-49b3-8504-e7687d950da8",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/a24f9a72d6035658f07afb72db3083e056f85e166d79ad342dc48a97c52b5895.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "dulub studio 嘟嚕"
+        },
+        {
+          "id": "359a47da-0f40-41d9-a06e-2857cf494992",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/505c160b4cd1483e95c66a600b57558e100ac882206f66bdf695c6fdf0095d19.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "dulub studio 嘟嚕"
+        },
+        {
+          "id": "aa2d5846-0ea8-4579-a427-4724472a13b0",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/3e6788566a21ce335712c81c8553f6afbd3b5ee5babf06a64b8e07010045e9a9.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "dulub studio 嘟嚕"
+        },
+        {
+          "id": "e211b4bf-d9cd-4ce3-be4f-4ed76439cbb5",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/a1437551e1468e0d2de52ad6a6452e39a13532ca2fcc1bd1e2c77f7f30fff1e4.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "dulub studio 嘟嚕"
+        },
+        {
+          "id": "514a64e7-5dbc-403f-b5eb-cd445eb55252",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/7e8908d1a9ee2cfa5f1cefe29f4b7f2147c6dbede034c8a6a1c3056f00ea41cd.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "dulub studio 嘟嚕"
+        },
+        {
+          "id": "a4c7c006-58aa-455b-b854-3fcbcbd566b2",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/8ff1fff34dda88f73685998cbe506a942542dbcb079c679f83c9b14dc2bc56e8.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "dulub studio 嘟嚕"
+        },
+        {
+          "id": "40790cc0-946c-4b69-a038-64cde86f70f3",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/2f49e116c570f3e6601ca3e921ba801cbb7d28872be9f81a91b224aa6dc7c70d.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "dulub studio 嘟嚕"
+        },
+        {
+          "id": "a66bc0fe-c29c-480a-9ea1-bcf6cc6aa20e",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/4f8e2f8a5e86faf1499b8f7786efd40ac5f338f534550ed425ff541b915f9dd5.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "dulub studio 嘟嚕"
+        },
+        {
+          "id": "10c2a3ef-e6aa-4946-822f-1747b760341e",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/101f0f85a7c7b5f02bc32aac3ecd798e2e5240ffb28a4a5e2d4af86dfd548961.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "dulub studio 嘟嚕"
+        },
+        {
+          "id": "fd4b1efb-9763-47b4-bc76-fc8512b4c650",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/0de4e2b4c2bf8134c8675efb5e117c9a531892cd6a2feba1791b62b22f199e50.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "dulub studio 嘟嚕"
+        },
+        {
+          "id": "c3f27aab-4b64-4c0e-b768-412491481bf6",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/1de906ddf29a89350e809983aebf1aa46b03fcf7895e7aff4d9c378e2f1024db.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "dulub studio 嘟嚕"
+        },
+        {
+          "id": "b965a5a7-0060-4edc-aa0b-c005d4a2e552",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/e34a8a9ea7e364c6174f8ef968716f1f6d655885afb599b273d058e0e86f9c61.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "dulub studio 嘟嚕"
+        }
+      ],
+      "blocks": [
+        {
+          "id": "block-mv45trh2-s7xd",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "1362c422-24fe-446a-bbce-3872a123216a",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/aca3d40c2da18f625085ee4877dae5a9730c0f5d228070e065e0726f78644f59.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "dulub studio 嘟嚕"
+            },
+            {
+              "id": "6203a2f9-7908-49b3-8504-e7687d950da8",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/a24f9a72d6035658f07afb72db3083e056f85e166d79ad342dc48a97c52b5895.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "dulub studio 嘟嚕"
+            },
+            {
+              "id": "359a47da-0f40-41d9-a06e-2857cf494992",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/505c160b4cd1483e95c66a600b57558e100ac882206f66bdf695c6fdf0095d19.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "dulub studio 嘟嚕"
+            },
+            {
+              "id": "aa2d5846-0ea8-4579-a427-4724472a13b0",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/3e6788566a21ce335712c81c8553f6afbd3b5ee5babf06a64b8e07010045e9a9.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "dulub studio 嘟嚕"
+            },
+            {
+              "id": "e211b4bf-d9cd-4ce3-be4f-4ed76439cbb5",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/a1437551e1468e0d2de52ad6a6452e39a13532ca2fcc1bd1e2c77f7f30fff1e4.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "dulub studio 嘟嚕"
+            },
+            {
+              "id": "514a64e7-5dbc-403f-b5eb-cd445eb55252",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/7e8908d1a9ee2cfa5f1cefe29f4b7f2147c6dbede034c8a6a1c3056f00ea41cd.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "dulub studio 嘟嚕"
+            },
+            {
+              "id": "a4c7c006-58aa-455b-b854-3fcbcbd566b2",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/8ff1fff34dda88f73685998cbe506a942542dbcb079c679f83c9b14dc2bc56e8.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "dulub studio 嘟嚕"
+            },
+            {
+              "id": "40790cc0-946c-4b69-a038-64cde86f70f3",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/2f49e116c570f3e6601ca3e921ba801cbb7d28872be9f81a91b224aa6dc7c70d.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "dulub studio 嘟嚕"
+            },
+            {
+              "id": "a66bc0fe-c29c-480a-9ea1-bcf6cc6aa20e",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/4f8e2f8a5e86faf1499b8f7786efd40ac5f338f534550ed425ff541b915f9dd5.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "dulub studio 嘟嚕"
+            },
+            {
+              "id": "10c2a3ef-e6aa-4946-822f-1747b760341e",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/101f0f85a7c7b5f02bc32aac3ecd798e2e5240ffb28a4a5e2d4af86dfd548961.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "dulub studio 嘟嚕"
+            },
+            {
+              "id": "fd4b1efb-9763-47b4-bc76-fc8512b4c650",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/0de4e2b4c2bf8134c8675efb5e117c9a531892cd6a2feba1791b62b22f199e50.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "dulub studio 嘟嚕"
+            },
+            {
+              "id": "c3f27aab-4b64-4c0e-b768-412491481bf6",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/1de906ddf29a89350e809983aebf1aa46b03fcf7895e7aff4d9c378e2f1024db.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "dulub studio 嘟嚕"
+            },
+            {
+              "id": "b965a5a7-0060-4edc-aa0b-c005d4a2e552",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/e34a8a9ea7e364c6174f8ef968716f1f6d655885afb599b273d058e0e86f9c61.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "dulub studio 嘟嚕"
+            }
+          ],
+          "layout": "carousel",
+          "autoPlay": true
+        },
+        {
+          "id": "block-mv45vxik-5nl9",
+          "type": "text",
+          "content": "I started playing the erhu in an orchestra when I was 7 years old. This experience gave me 20 years to observe the customs, gestures, and behaviours of communal music-making from within. The concept of a Chinese orchestra as we know it today is a relatively recent development in the history of Chinese instrumental music, with much of the traditions and customs still being formed.\n\nIn my teenage years, I served as a score librarian for 5 years, which explains my penchant for hand-copied jianpu (cypher notation). The jianpu is accessible and symbolic of the shared languages and collective experiences on the periphery. The various handwriting and symbols created and borrowed are also full of stories and allusions of their own. As a mnemonic device, jianpu is almost like a language system, serving as the scaffolding for communal music-making. These inconspicuous notes are all traces of learning, adaptation, innovation and sharing; embedded in them is the culture of ensembleship with curious quirks, rooted in a desire to carve out a shared language and identity.\n\nThe works presented in [title]彼觸 collecting ciphers[/title] manifests the different stories found within the annotations and handwritten elements of these hand-copied notations and scores."
+        },
+        {
+          "id": "text-1791743325827-1",
+          "type": "text",
+          "content": "See the [show collateral](https://drive.google.com/file/d/1tXCGpEsqlHeI4ACG-BSKVuqzijiF7wvk/view?usp=sharing) or listen to [窑谣 240407_yaoyao](https://shu0shushu.bandcamp.com/album/240407-yaoyao), an alternative documentation."
+        }
+      ],
+      "tagIds": [
+        "tag-score",
+        "tag-copy",
+        "tag-libraries",
+        "tag-archives",
+        "tag-jianpu",
+        "tag-time"
+      ],
+      "subjects": [
+        "scores and notation",
+        "copying and copies",
+        "libraries",
+        "archives and records",
+        "jianpu",
+        "time and the durational"
+      ],
+      "associatedProjectIds": [],
+      "relatedEntryIds": [
+        "script-notes",
+        "scores",
+        "entry-sight-reading",
+        "entry-on-notes",
+        "entry-in-two-strokes"
+      ],
+      "status": "published",
+      "isDevelopingWork": false,
+      "createdAt": "2026-10-11T18:35:13.102Z",
+      "updatedAt": "2026-10-11T18:35:13.102Z"
+    },
+    {
       "id": "script-notes",
       "slug": "biji",
       "title": "笔迹 script/notes",
@@ -184,6 +967,1621 @@
       "updatedAt": "2026-10-11T16:15:35.482Z"
     },
     {
+      "id": "part-time-book-club",
+      "slug": "part-time-book-club",
+      "title": "Part Time Book Club",
+      "type": "project",
+      "date": "2024–",
+      "datePlaceholder": false,
+      "medium": "irregular gatherings",
+      "shortDescription": "Two friends’ attempt to discover and share (art)books, realising there’s simply not enough time to uncover them all on our own.",
+      "credits": [
+        {
+          "id": "credit-muupcghr-wlpd",
+          "role": "custom",
+          "name": "@parttimebookclub",
+          "link": "https://www.instagram.com/parttimebookclub/",
+          "customRole": "Instagram"
+        }
+      ],
+      "presentationHistory": [],
+      "fullText": "PTBC villian origin story\n\nPart Time Book Club (PTBC) began in November 2024 as a spontaneous initiative between two friends, Shu and Ming, sparked by a simple truth: there are far too many good art books out there in the world, and not enough time to discover them alone. What began as a shared curiosity has since grown into a community-powered space where art book lovers come together to connect and uncover new titles. PTBC gatherings typically take the form of ad-hoc gatherings focused on the sharing and discovery of (art) books.\n\nPTBC also aims to question inherited ideas of what books are and how they move through the world — exploring alternative modes of production, distribution, and discovery beyond conventional systems like mainstream bookstores and libraries, turning instead to independent publishers, informal networks, and ground-up libraries.\n\nScreenshot 2026-10-12 at 1.43.11 AM",
+      "images": [
+        {
+          "id": "52770d2f-6d2d-4b8b-8c22-346badc0e0ad",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/2ab7be22d42158bd4418d8fec20001d3382f23873c36ce69b807dc9e4055a16b.png",
+          "caption": "",
+          "alt": "PTBC villian origin story",
+          "credit": "shu"
+        },
+        {
+          "id": "78a5b134-21c5-4113-b5bc-a6fff684ff38",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/3b383f39c989434237806ad5eb57e6c7fcb33837720d83167c76fbaddbeb3280.png",
+          "caption": "",
+          "alt": "Screenshot 2026-10-12 at 1.43.11 AM",
+          "credit": ""
+        }
+      ],
+      "blocks": [
+        {
+          "id": "block-mv43z6b2-h78h",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "52770d2f-6d2d-4b8b-8c22-346badc0e0ad",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/2ab7be22d42158bd4418d8fec20001d3382f23873c36ce69b807dc9e4055a16b.png",
+              "caption": "",
+              "alt": "PTBC villian origin story",
+              "credit": "shu"
+            }
+          ],
+          "layout": "stacked"
+        },
+        {
+          "id": "block-ptbc-1",
+          "type": "text",
+          "content": "Part Time Book Club (PTBC) began in November 2024 as a spontaneous initiative between two friends, Shu and Ming, sparked by a simple truth: there are far too many good art books out there in the world, and not enough time to discover them alone. What began as a shared curiosity has since grown into a community-powered space where art book lovers come together to connect and uncover new titles. PTBC gatherings typically take the form of ad-hoc gatherings focused on the sharing and discovery of (art) books.\n\nPTBC also aims to question inherited ideas of what books are and how they move through the world — exploring alternative modes of production, distribution, and discovery beyond conventional systems like mainstream bookstores and libraries, turning instead to independent publishers, informal networks, and ground-up libraries."
+        },
+        {
+          "id": "block-mv442du5-jlc4",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "78a5b134-21c5-4113-b5bc-a6fff684ff38",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/3b383f39c989434237806ad5eb57e6c7fcb33837720d83167c76fbaddbeb3280.png",
+              "caption": "",
+              "alt": "Screenshot 2026-10-12 at 1.43.11 AM",
+              "credit": ""
+            }
+          ],
+          "layout": "stacked"
+        }
+      ],
+      "tagIds": [
+        "tag-books",
+        "tag-libraries",
+        "tag-spaceswo"
+      ],
+      "subjects": [
+        "books and bookish things",
+        "libraries",
+        "spaces without space"
+      ],
+      "associatedProjectIds": [
+        "ss-between-books-and-libraries"
+      ],
+      "relatedEntryIds": [],
+      "status": "published",
+      "isDevelopingWork": false,
+      "createdAt": "2026-01-25T14:00:00Z",
+      "updatedAt": "2026-10-11T17:43:41.126Z"
+    },
+    {
+      "id": "parallel-on-paper",
+      "slug": "onpaper",
+      "title": "|​​      | on paper",
+      "type": "project",
+      "date": "2025–",
+      "datePlaceholder": true,
+      "medium": "residency on paper",
+      "dimensions": "4x A4 sheets",
+      "shortDescription": "Marks, spacing, and parallel pauses registered across paper sheets.",
+      "credits": [
+        {
+          "id": "credit-muupeeh5-qjg8",
+          "role": "custom",
+          "name": "Kirti Upadhyaya",
+          "link": "",
+          "customRole": "Co-initiator"
+        },
+        {
+          "id": "credit-muupfxza-0d6q",
+          "role": "designer",
+          "name": "Gideon-Jamie",
+          "link": ""
+        },
+        {
+          "id": "credit-muupf64z-916u",
+          "role": "custom",
+          "name": "FARM",
+          "link": "",
+          "customRole": "Venue Partner"
+        },
+        {
+          "id": "credit-muupgcxm-4mep",
+          "role": "custom",
+          "name": "Allegro Print | OFFCUT",
+          "link": "",
+          "customRole": "Material Sponsor"
+        }
+      ],
+      "presentationHistory": [
+        {
+          "id": "pres-muupfgd1-wv5c",
+          "action": "commissioned",
+          "attribution": "organised",
+          "title": "Singapore Art Week",
+          "venue": "National Arts Council, Singapore",
+          "location": "",
+          "date": "2025",
+          "curator": "",
+          "link": "",
+          "note": ""
+        }
+      ],
+      "fullText": "[title]|​​      | on paper[/title] is an experimental ‘residency’ that begins with a letter and four sheets of A4 paper. Instead of a studio with four walls, the project provides four sheets of A4 paper as the artists’ material and/or “studio space.” These simple materials serve as the site for artistic exploration and creation—the papers can function both as workspace and medium.\n\nOnce the four sheets of A4 paper have reached the artists, they are free to work with them in any way imaginable. They could draw or paint, poke or fold, sculpt or scan, cut or tear, and make with/on the paper in any way they wish.\n\nThe final showcase will act as a ‘library’ and ‘archive’. Each piece of paper exhibited offers a glimpse into an artist's world and unique point-of-view, and offers some insight into their artistic practice and journey. These works will be accompanied by letters written by the co-initiators and the artists.\n\n[onpaper.online](onpaper.online)",
+      "images": [
+        {
+          "id": "f9ed17d5-3372-4d58-a2a2-0bd6471cdd38",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/3adfe110974a4551743f55766fa0607997805feadddb872dad7b2719203a613c.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "0bd96120-cd17-4d72-b24f-5bd93fcd5675",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/2f08d9e1d101bdda12084ddff05c189671d15bcb4084703dc0b338562bf5d9c8.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "a987f7bf-2618-4658-ace4-0c85870faa3e",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/09164349fcd77b1f136d6b23e86c284e4d9eff9861691e25e59cbc44f9b9c660.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Hong Shu-ying"
+        },
+        {
+          "id": "4852c525-a41a-4953-b827-b044f66bdd01",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/c5432fdaea574e5e3c1fb4365893679e800d8ee927ec799bb6d16979081b2c9e.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Hong Shu-ying"
+        },
+        {
+          "id": "a7b76c3c-2739-4252-bf82-b55903fff780",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/bc2aaf08ebba32b40e82ca44ef8cf622e2df7a768747071d142756bdc9b04458.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Hong Shu-ying"
+        },
+        {
+          "id": "29eae4ff-da82-4de8-a61f-c2c42be536ef",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/9519dcc817c8d39dabcea6b25f783153c85a8749ff9089fe8362b9ac04580dd3.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Hong Shu-ying"
+        },
+        {
+          "id": "c39c9c34-74cb-42ff-871e-a93e45d543e9",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/39efdbfb9a123cbaffbe1ad257f671ff507315c92db202e154bbf20cd7b33906.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Hong Shu-ying"
+        },
+        {
+          "id": "81d0bcc2-b21e-46f3-b874-a082aa25b29b",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/476fb463426aa4fff4c12480aa89e926431f26b908af70628571a45bb8608cd6.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Hong Shu-ying"
+        },
+        {
+          "id": "12796a43-9f22-4915-ab19-4161d4c56266",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/09b1026e6ad3d4f031c63992b998789b3e082bf7b2173b1b106bebc412944d82.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Hong Shu-ying"
+        },
+        {
+          "id": "d7e9fe14-00ea-4f73-a851-8609279d91a3",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/70467644300f07edd1f6d4c5c5d961cf5add0eef255405de5d6911a58e39c448.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Hong Shu-ying"
+        },
+        {
+          "id": "198b8a13-c48b-4137-a7ff-25cfd3f6a344",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/d0183bbea95c9ae88511d006f7ce9b6b25cf7709537b941ca9cbe10f7d0ab438.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Hong Shu-ying"
+        },
+        {
+          "id": "e0c1c7bb-0bfb-4cea-91d9-786b51c47566",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/3ebcd38e60e1a966036311c469f76b9d7c2a23f00d8b2e5c5fbc0cfe46161955.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Hong Shu-ying"
+        },
+        {
+          "id": "28403b5c-b1c0-4724-a814-62a8da29b5ab",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/e6e0eba6694c56215932fc009bbe2611bf906d916d0e2d2273b1ef3b61475eda.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Hong Shu-ying"
+        },
+        {
+          "id": "22f3b249-862a-4758-aa66-0fc4202bd2a1",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/c4cec0c1d9b62b4b292485de5ccd6b8192d5221f0964caa8e0a1c118671fc28a.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Hong Shu-ying"
+        },
+        {
+          "id": "081921b5-dd1d-4a53-ae95-8f7cc013ea23",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/590649f50cdcafe3bf99a800654ccd5d4506bf6f7112cdb42bbfb24f5dfeede5.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Hong Shu-ying"
+        },
+        {
+          "id": "595db4f4-9e04-43f7-88ec-9d4c69b48554",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/a1e0690ca4bc82af69e76afef1ea43048c0f42f7dfa55f22e43bed4ccf01311a.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Hong Shu-ying"
+        },
+        {
+          "id": "2d1875d9-6d8f-4f7b-85ed-64d553a1aa33",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/fb7c5a925383ba464f7e0cd21641ae2403d050c678e576023a29a46d36387487.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Hong Shu-ying"
+        },
+        {
+          "id": "e1464791-c888-4979-bc3e-0b7134d36ff3",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/b68fab11b6f88ba977bc8b16f8e71f1fbdf2d756635bc639a041a0f808837907.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Hong Shu-ying"
+        },
+        {
+          "id": "3bda5bc3-7f9b-45ce-9dc7-4147dc788c02",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/e45f8aabc830398ea9d23b29e4b397378b50632490e8c1482fa94cc7289fa44c.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Hong Shu-ying"
+        },
+        {
+          "id": "bf80fe8e-12fc-41fb-a765-79da4154c0eb",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/7d4c070309b9a25985d24ab6c63cfd4510f841c7dcf81e1295dbcffa3f4856f4.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Hong Shu-ying"
+        },
+        {
+          "id": "34eb044e-8220-41a6-8ed4-0e1bb4627bdb",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/a3863c64ba773f66d524de894069c227bdd8c9eeab1e14b9d0c70d18d261bd7d.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Hong Shu-ying"
+        }
+      ],
+      "blocks": [
+        {
+          "id": "block-mv42010v-1bh3",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "f9ed17d5-3372-4d58-a2a2-0bd6471cdd38",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/3adfe110974a4551743f55766fa0607997805feadddb872dad7b2719203a613c.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "0bd96120-cd17-4d72-b24f-5bd93fcd5675",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/2f08d9e1d101bdda12084ddff05c189671d15bcb4084703dc0b338562bf5d9c8.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            }
+          ],
+          "layout": "stacked"
+        },
+        {
+          "id": "block-pop-1",
+          "type": "text",
+          "content": "[title]|​​      | on paper[/title] is an experimental ‘residency’ that begins with a letter and four sheets of A4 paper. Instead of a studio with four walls, the project provides four sheets of A4 paper as the artists’ material and/or “studio space.” These simple materials serve as the site for artistic exploration and creation—the papers can function both as workspace and medium.\n\nOnce the four sheets of A4 paper have reached the artists, they are free to work with them in any way imaginable. They could draw or paint, poke or fold, sculpt or scan, cut or tear, and make with/on the paper in any way they wish.\n\nThe final showcase will act as a ‘library’ and ‘archive’. Each piece of paper exhibited offers a glimpse into an artist's world and unique point-of-view, and offers some insight into their artistic practice and journey. These works will be accompanied by letters written by the co-initiators and the artists.\n\n[onpaper.online](onpaper.online)"
+        },
+        {
+          "id": "block-mv4268jj-cg9e",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "a987f7bf-2618-4658-ace4-0c85870faa3e",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/09164349fcd77b1f136d6b23e86c284e4d9eff9861691e25e59cbc44f9b9c660.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Hong Shu-ying"
+            },
+            {
+              "id": "4852c525-a41a-4953-b827-b044f66bdd01",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/c5432fdaea574e5e3c1fb4365893679e800d8ee927ec799bb6d16979081b2c9e.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Hong Shu-ying"
+            },
+            {
+              "id": "a7b76c3c-2739-4252-bf82-b55903fff780",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/bc2aaf08ebba32b40e82ca44ef8cf622e2df7a768747071d142756bdc9b04458.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Hong Shu-ying"
+            },
+            {
+              "id": "29eae4ff-da82-4de8-a61f-c2c42be536ef",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/9519dcc817c8d39dabcea6b25f783153c85a8749ff9089fe8362b9ac04580dd3.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Hong Shu-ying"
+            },
+            {
+              "id": "c39c9c34-74cb-42ff-871e-a93e45d543e9",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/39efdbfb9a123cbaffbe1ad257f671ff507315c92db202e154bbf20cd7b33906.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Hong Shu-ying"
+            },
+            {
+              "id": "81d0bcc2-b21e-46f3-b874-a082aa25b29b",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/476fb463426aa4fff4c12480aa89e926431f26b908af70628571a45bb8608cd6.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Hong Shu-ying"
+            },
+            {
+              "id": "12796a43-9f22-4915-ab19-4161d4c56266",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/09b1026e6ad3d4f031c63992b998789b3e082bf7b2173b1b106bebc412944d82.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Hong Shu-ying"
+            },
+            {
+              "id": "d7e9fe14-00ea-4f73-a851-8609279d91a3",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/70467644300f07edd1f6d4c5c5d961cf5add0eef255405de5d6911a58e39c448.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Hong Shu-ying"
+            },
+            {
+              "id": "198b8a13-c48b-4137-a7ff-25cfd3f6a344",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/d0183bbea95c9ae88511d006f7ce9b6b25cf7709537b941ca9cbe10f7d0ab438.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Hong Shu-ying"
+            },
+            {
+              "id": "e0c1c7bb-0bfb-4cea-91d9-786b51c47566",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/3ebcd38e60e1a966036311c469f76b9d7c2a23f00d8b2e5c5fbc0cfe46161955.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Hong Shu-ying"
+            },
+            {
+              "id": "28403b5c-b1c0-4724-a814-62a8da29b5ab",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/e6e0eba6694c56215932fc009bbe2611bf906d916d0e2d2273b1ef3b61475eda.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Hong Shu-ying"
+            },
+            {
+              "id": "22f3b249-862a-4758-aa66-0fc4202bd2a1",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/c4cec0c1d9b62b4b292485de5ccd6b8192d5221f0964caa8e0a1c118671fc28a.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Hong Shu-ying"
+            },
+            {
+              "id": "081921b5-dd1d-4a53-ae95-8f7cc013ea23",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/590649f50cdcafe3bf99a800654ccd5d4506bf6f7112cdb42bbfb24f5dfeede5.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Hong Shu-ying"
+            },
+            {
+              "id": "595db4f4-9e04-43f7-88ec-9d4c69b48554",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/a1e0690ca4bc82af69e76afef1ea43048c0f42f7dfa55f22e43bed4ccf01311a.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Hong Shu-ying"
+            },
+            {
+              "id": "2d1875d9-6d8f-4f7b-85ed-64d553a1aa33",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/fb7c5a925383ba464f7e0cd21641ae2403d050c678e576023a29a46d36387487.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Hong Shu-ying"
+            },
+            {
+              "id": "e1464791-c888-4979-bc3e-0b7134d36ff3",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/b68fab11b6f88ba977bc8b16f8e71f1fbdf2d756635bc639a041a0f808837907.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Hong Shu-ying"
+            },
+            {
+              "id": "3bda5bc3-7f9b-45ce-9dc7-4147dc788c02",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/e45f8aabc830398ea9d23b29e4b397378b50632490e8c1482fa94cc7289fa44c.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Hong Shu-ying"
+            },
+            {
+              "id": "bf80fe8e-12fc-41fb-a765-79da4154c0eb",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/7d4c070309b9a25985d24ab6c63cfd4510f841c7dcf81e1295dbcffa3f4856f4.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Hong Shu-ying"
+            },
+            {
+              "id": "34eb044e-8220-41a6-8ed4-0e1bb4627bdb",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/a3863c64ba773f66d524de894069c227bdd8c9eeab1e14b9d0c70d18d261bd7d.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Hong Shu-ying"
+            }
+          ],
+          "layout": "carousel",
+          "autoPlay": true,
+          "intervalSeconds": 3
+        }
+      ],
+      "tagIds": [
+        "tag-spaceswo",
+        "tag-learning",
+        "tag-working-notes"
+      ],
+      "subjects": [
+        "spaces without space",
+        "learning? pedagogy?",
+        "working notes"
+      ],
+      "associatedProjectIds": [],
+      "relatedEntryIds": [],
+      "status": "published",
+      "isDevelopingWork": false,
+      "createdAt": "2026-02-01T16:00:00Z",
+      "updatedAt": "2026-10-11T17:39:37.931Z"
+    },
+    {
+      "id": "entry-in-the-aisle-work",
+      "slug": "asm",
+      "title": "in the aisle",
+      "type": "work",
+      "date": "2019",
+      "datePlaceholder": false,
+      "medium": "Photo series, Wheat pasting and Zine installation",
+      "dimensions": "variable",
+      "shortDescription": "in the aisle gathers photographs, textures and overheard conversations from Chinese supermarkets in Edinburgh.",
+      "credits": [],
+      "presentationHistory": [
+        {
+          "id": "history-in-the-aisle-work-1",
+          "title": "Pingyao International Photography Festival",
+          "venue": "",
+          "location": "China",
+          "date": "2019",
+          "action": "presented",
+          "curator": "",
+          "attribution": "curated",
+          "link": "",
+          "note": ""
+        },
+        {
+          "id": "history-in-the-aisle-work-2",
+          "title": "Bearings",
+          "venue": "ADM Gallery",
+          "location": "Singapore",
+          "date": "2019",
+          "action": "shown",
+          "curator": "",
+          "attribution": "programmed",
+          "link": "",
+          "note": ""
+        }
+      ],
+      "fullText": "Installation view at [title]Bearings[/title] (2019), ADM Gallery, Singapore.\n\nInstallation view at [title]Bearings[/title] (2019), ADM Gallery, Singapore.\n\nInstallation view at [title]Bearings[/title] (2019), ADM Gallery, Singapore.\n\nMade during a two-week programme while living away from Singapore, the work looks at how familiar products, languages, smells and everyday exchanges can make an unfamiliar place briefly feel like home. Bringing these fragments together through photographs, wheat-pasted prints and newsprint, the work considers the supermarket not only as a place to buy things, but as a space where familiarity and community are quietly reproduced.",
+      "images": [
+        {
+          "id": "06e3e106-9e83-489e-850f-29f8f2f60135",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/81fd06c05c9a1cb0c4f34cdbe2593dea877084bad54f169bc1efef6cf2399d96.jpg",
+          "caption": "Installation view at [title]Bearings[/title] (2019), ADM Gallery, Singapore.",
+          "alt": "",
+          "credit": "Lin Shiau Yu"
+        },
+        {
+          "id": "66ad7cdb-2c46-4655-8b00-118b84da92e6",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/c20b84676e74e39c136cbdb060e0d1104334bd103bee7df8edfebbb2368e7aa1.jpg",
+          "caption": "Installation view at [title]Bearings[/title] (2019), ADM Gallery, Singapore.",
+          "alt": "",
+          "credit": "Lin Shiau Yu"
+        },
+        {
+          "id": "a6b5246a-dbd7-479e-9535-5bc65b19e064",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/c26a3c130d1a748f8981cca531807d5d86075972f134a58d2e70b95d2dcba7f4.jpg",
+          "caption": "Installation view at [title]Bearings[/title] (2019), ADM Gallery, Singapore.",
+          "alt": "",
+          "credit": "Lin Shiau Yu"
+        },
+        {
+          "id": "cb669772-ac64-4286-9a48-c7e1d537ad7a",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/dcca97f34786011b6632933fe3b0ecd62d1c821fd57bfd77ca5a8daf9a9acc38.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "bbc3b032-549c-4bf2-9dce-daef35e22ed6",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/c3f4dc8bbc27e76bd0cf719a7c692f747f8b1e5d64d21d6b0b2bd8ca2723fa04.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "a69fba69-a714-4b30-a2f8-86158fae4615",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/caf1def7d25d2e6b02d2e8b915e7bdd691a8daf13d911c419f5e8d5cc9db47ab.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "ffcacfcf-e9a2-4d47-a79d-22667ddfb1c4",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/23d72dc7c30a54e4ecff6e0080c0a1a7f26d70e007c4882d5a8b578a4bf58b68.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "5698433e-f92e-499a-bdc7-fbeae7bc11d7",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/4487833ae563207686e70b86c0814c3a9d3ea6fca34c6935049a2bcbbccfd650.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "b7f4515e-42ea-4e2f-abef-2c5c11554c87",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/e1527f4cda60b8757a93ee9d65d2d1a9f780fdd748293b7ae57734df31d39a68.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "190faf8f-3c08-4060-b933-d4bba7d0202f",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/a9cb92d836e2eb5ac0a81083add39492317069a2ad368955dd7a54c071491cff.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        }
+      ],
+      "blocks": [
+        {
+          "id": "block-mv410sfl-lgrf",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "06e3e106-9e83-489e-850f-29f8f2f60135",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/81fd06c05c9a1cb0c4f34cdbe2593dea877084bad54f169bc1efef6cf2399d96.jpg",
+              "caption": "Installation view at [title]Bearings[/title] (2019), ADM Gallery, Singapore.",
+              "alt": "",
+              "credit": "Lin Shiau Yu"
+            },
+            {
+              "id": "66ad7cdb-2c46-4655-8b00-118b84da92e6",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/c20b84676e74e39c136cbdb060e0d1104334bd103bee7df8edfebbb2368e7aa1.jpg",
+              "caption": "Installation view at [title]Bearings[/title] (2019), ADM Gallery, Singapore.",
+              "alt": "",
+              "credit": "Lin Shiau Yu"
+            },
+            {
+              "id": "a6b5246a-dbd7-479e-9535-5bc65b19e064",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/c26a3c130d1a748f8981cca531807d5d86075972f134a58d2e70b95d2dcba7f4.jpg",
+              "caption": "Installation view at [title]Bearings[/title] (2019), ADM Gallery, Singapore.",
+              "alt": "",
+              "credit": "Lin Shiau Yu"
+            }
+          ],
+          "layout": "carousel",
+          "autoPlay": true
+        },
+        {
+          "id": "text-in-the-aisle-work",
+          "type": "text",
+          "content": "Made during a two-week programme while living away from Singapore, the work looks at how familiar products, languages, smells and everyday exchanges can make an unfamiliar place briefly feel like home. Bringing these fragments together through photographs, wheat-pasted prints and newsprint, the work considers the supermarket not only as a place to buy things, but as a space where familiarity and community are quietly reproduced."
+        },
+        {
+          "id": "block-mv410uh2-xzmr",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "cb669772-ac64-4286-9a48-c7e1d537ad7a",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/dcca97f34786011b6632933fe3b0ecd62d1c821fd57bfd77ca5a8daf9a9acc38.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "bbc3b032-549c-4bf2-9dce-daef35e22ed6",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/c3f4dc8bbc27e76bd0cf719a7c692f747f8b1e5d64d21d6b0b2bd8ca2723fa04.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "a69fba69-a714-4b30-a2f8-86158fae4615",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/caf1def7d25d2e6b02d2e8b915e7bdd691a8daf13d911c419f5e8d5cc9db47ab.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "ffcacfcf-e9a2-4d47-a79d-22667ddfb1c4",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/23d72dc7c30a54e4ecff6e0080c0a1a7f26d70e007c4882d5a8b578a4bf58b68.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "5698433e-f92e-499a-bdc7-fbeae7bc11d7",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/4487833ae563207686e70b86c0814c3a9d3ea6fca34c6935049a2bcbbccfd650.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "b7f4515e-42ea-4e2f-abef-2c5c11554c87",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/e1527f4cda60b8757a93ee9d65d2d1a9f780fdd748293b7ae57734df31d39a68.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "190faf8f-3c08-4060-b933-d4bba7d0202f",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/a9cb92d836e2eb5ac0a81083add39492317069a2ad368955dd7a54c071491cff.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            }
+          ],
+          "layout": "grid"
+        }
+      ],
+      "tagIds": [
+        "tag-time",
+        "tag-archives"
+      ],
+      "subjects": [
+        "time and the durational",
+        "archives and records"
+      ],
+      "associatedProjectIds": [],
+      "relatedEntryIds": [
+        "entry-in-the-aisle-book",
+        "entry-on-telling-time-in-the-mall"
+      ],
+      "status": "published",
+      "isDevelopingWork": false,
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-11T17:46:44.048Z"
+    },
+    {
+      "id": "entry-things-we-held-and-grazed",
+      "slug": "things-we-held-and-grazed",
+      "title": "things we held and grazed",
+      "type": "work",
+      "date": "2019",
+      "datePlaceholder": false,
+      "medium": "Photo series, Newsprint and Binder clips",
+      "shortDescription": "Over fifteen weeks in Chicago, things we held and grazed follows discarded objects left along the streets.",
+      "credits": [],
+      "presentationHistory": [
+        {
+          "id": "pres-mv449a3p-wbsu",
+          "action": "shown",
+          "attribution": "curated",
+          "title": "Sensitivities",
+          "venue": "",
+          "location": "PRACTICE PRACTICE, Singapore",
+          "date": "2020",
+          "curator": "",
+          "link": "",
+          "note": ""
+        }
+      ],
+      "fullText": "Many are things that once came into intimate contact with the body—things we ate from, drank from, held and touched. Some remained in the same place for weeks, each re-encounter more uncanny and begging to be photographed. The work traces these objects after their usefulness has ended, lingering on the strange distance between something once held close and something subsequently left behind.\n\nThings that accompanied us.\nThings that fed us.\nThings that served us.\n\nThings that we left.\nThings that we used.\nThings that we forgot.",
+      "images": [
+        {
+          "id": "adf9b476-edb9-4b80-97c2-a2c903463373",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/adf5e78241d7903f347c19a21b3cf056cc89b5f16b30b28590f0e7b5f3220467.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "783ddb4e-ac3b-4044-b30e-539e5daa5c02",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/733bb1c0e14ea896df8b30b98999f393e3ad6e68e3cee50ea8a347bb4654d606.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "a7eb0ec1-c700-4d13-808b-274191b238f3",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/3bcaa142ef9ff1529b42a73a4fa33d368831867e4d262b5d26827d9ea67e96af.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "4575d2c2-11d3-488e-84cc-4e5fd33f29e7",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/f66bf4a602d4028ca4aa9e2feec7c16cbe67895743bee8ba295cd1e0f8f47641.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "258da717-fd09-4637-90fb-7463dbfa9c90",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/6525b83e75b3ce6c594de2bd126b801e751b2c1c2d87827a950d0502f030a1cc.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "9b611f9e-6717-424e-a638-ee591d26db6d",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/2ca21b096f5222223bdf3cfb80825e9adae30a366beb8894db6bfbaf7d45fe57.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "4fbd41e1-9f14-4605-8411-7c4fc019622e",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/72d196f4fc470c5ab2c84a71b954bae2886580e62a8d0c61ea8635fc2cc49e95.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        }
+      ],
+      "blocks": [
+        {
+          "id": "text-things-we-held-and-grazed",
+          "type": "text",
+          "content": "Many are things that once came into intimate contact with the body—things we ate from, drank from, held and touched. Some remained in the same place for weeks, each re-encounter more uncanny and begging to be photographed. The work traces these objects after their usefulness has ended, lingering on the strange distance between something once held close and something subsequently left behind.\n\nThings that accompanied us.\nThings that fed us.\nThings that served us.\n\nThings that we left.\nThings that we used.\nThings that we forgot."
+        },
+        {
+          "id": "block-mv447uyv-efb8",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "adf9b476-edb9-4b80-97c2-a2c903463373",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/adf5e78241d7903f347c19a21b3cf056cc89b5f16b30b28590f0e7b5f3220467.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "783ddb4e-ac3b-4044-b30e-539e5daa5c02",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/733bb1c0e14ea896df8b30b98999f393e3ad6e68e3cee50ea8a347bb4654d606.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "a7eb0ec1-c700-4d13-808b-274191b238f3",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/3bcaa142ef9ff1529b42a73a4fa33d368831867e4d262b5d26827d9ea67e96af.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "4575d2c2-11d3-488e-84cc-4e5fd33f29e7",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/f66bf4a602d4028ca4aa9e2feec7c16cbe67895743bee8ba295cd1e0f8f47641.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "258da717-fd09-4637-90fb-7463dbfa9c90",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/6525b83e75b3ce6c594de2bd126b801e751b2c1c2d87827a950d0502f030a1cc.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "9b611f9e-6717-424e-a638-ee591d26db6d",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/2ca21b096f5222223bdf3cfb80825e9adae30a366beb8894db6bfbaf7d45fe57.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "4fbd41e1-9f14-4605-8411-7c4fc019622e",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/72d196f4fc470c5ab2c84a71b954bae2886580e62a8d0c61ea8635fc2cc49e95.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            }
+          ],
+          "layout": "grid"
+        }
+      ],
+      "tagIds": [
+        "tag-time"
+      ],
+      "subjects": [
+        "time and the durational"
+      ],
+      "associatedProjectIds": [],
+      "relatedEntryIds": [],
+      "status": "published",
+      "isDevelopingWork": false,
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-11T17:49:38.756Z"
+    },
+    {
+      "id": "entry-hu-deviations",
+      "slug": "hu",
+      "title": "deviations",
+      "titleZh": "互",
+      "type": "work",
+      "date": "2020",
+      "datePlaceholder": false,
+      "medium": "Moving image with Computer-generated audio\n2'53\"",
+      "shortDescription": "互 deviations is a looping moving image in which fragments of waves converge, overlap and dissolve into new forms.",
+      "credits": [],
+      "presentationHistory": [],
+      "fullText": "hu2\n\nAccompanied by a digitally constructed soundscape of the sea, the work moves between images that feel familiar yet difficult to place: coastline, body, surface, movement. Emerging from experiments made during [title]临摹 Lapping Emulations[/title], it considers how repetition and recombination can produce an image that continually shifts away from its source.",
+      "images": [
+        {
+          "id": "1798e176-49ba-4ac6-85d7-10bd97b3c6ab",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/20e227f8e8f77a0763fd20914d9e40731727007613c3c011efe915e28c3e373a.jpg",
+          "caption": "",
+          "alt": "hu2",
+          "credit": ""
+        }
+      ],
+      "blocks": [
+        {
+          "id": "block-mv44nael-voqh",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "1798e176-49ba-4ac6-85d7-10bd97b3c6ab",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/20e227f8e8f77a0763fd20914d9e40731727007613c3c011efe915e28c3e373a.jpg",
+              "caption": "",
+              "alt": "hu2",
+              "credit": ""
+            }
+          ],
+          "layout": "stacked"
+        },
+        {
+          "id": "text-hu-deviations",
+          "type": "text",
+          "content": "Accompanied by a digitally constructed soundscape of the sea, the work moves between images that feel familiar yet difficult to place: coastline, body, surface, movement. Emerging from experiments made during [title]临摹 Lapping Emulations[/title], it considers how repetition and recombination can produce an image that continually shifts away from its source."
+        },
+        {
+          "id": "block-mv44nmrk-z5zl",
+          "type": "video",
+          "provider": "youtube",
+          "originalUrl": "youtube.com/watch?v=2zyR8CGppoU&time_continue=8&source_ve_path=NzY3NTg&embeds_referring_euri=https%3A%2F%2Fhongshuying.art%2F",
+          "embedUrl": "https://www.youtube-nocookie.com/embed/2zyR8CGppoU?autoplay=0&rel=0&modestbranding=1",
+          "title": ""
+        }
+      ],
+      "tagIds": [
+        "tag-time",
+        "tag-archives"
+      ],
+      "subjects": [
+        "time and the durational",
+        "archives and records"
+      ],
+      "associatedProjectIds": [],
+      "relatedEntryIds": [
+        "entry-linmo-lapping-emulations"
+      ],
+      "status": "published",
+      "isDevelopingWork": false,
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-11T18:04:27.345Z"
+    },
+    {
+      "id": "entry-linmo-lapping-emulations",
+      "slug": "linmo-lapping-emulations",
+      "title": "lapping emulations",
+      "titleZh": "临摹",
+      "type": "project",
+      "date": "2020-2021",
+      "datePlaceholder": false,
+      "medium": "Experimental processes, Prints and Moving images",
+      "shortDescription": "临摹 Lapping Emulations is a process-led body of prints and moving images exploring imitation as a way of making images and understanding identity.",
+      "credits": [],
+      "presentationHistory": [
+        {
+          "id": "history-linmo-lapping-emulations-1",
+          "title": "",
+          "venue": "NTU ADM",
+          "location": "Gilman Barracks",
+          "date": "2021",
+          "action": "shown",
+          "curator": "",
+          "attribution": "organised",
+          "link": "",
+          "note": "Graduation project."
+        },
+        {
+          "id": "history-linmo-lapping-emulations-2",
+          "title": "Inheritance",
+          "venue": "Objectifs–Centre for Photography and Film",
+          "location": "",
+          "date": "2021",
+          "action": "shown",
+          "curator": "Emmeline Yong",
+          "attribution": "curated",
+          "link": "https://www.objectifs.com.sg/women-in-film-photography-2021/",
+          "note": "Selected for the Women in Film and Photography showcase."
+        }
+      ],
+      "fullText": "Installation view at [title]Inheritance[/title] (Women in Film and Photography; 2020), Objectifs, Singapore.\n\nInstallation view at [title]Inheritance[/title] (Women in Film and Photography; 2020), Objectifs, Singapore.\n\nDeveloped through improvised darkroom and editing processes, images of coastlines and personal objects are repeatedly copied, altered and recombined until their sources become unstable.\nMade while thinking through my Henghua and Singaporean Chinese identity, the work approaches culture in a similar way: not as something fixed or inherited intact, but something continually reproduced and reshaped. The sea recurs throughout the work as both image and method—a form without fixed boundaries, continually changed by movement, contact and return.\n\nlapping_1000px_1.2\n\nlapping_1000px_4\n\nlapping_1000px_5\n\nlapping_1000px_6\n\nlapping_1000px_3",
+      "images": [
+        {
+          "id": "e965032d-1589-4dc6-8623-b13fcd404efc",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/bed287e6749e75c3388affd47652bc4752789ac1d5a1c2e5b12ce5ec7d9d5fbc.jpg",
+          "caption": "Installation view at [title]Inheritance[/title] (Women in Film and Photography; 2020), Objectifs, Singapore.",
+          "alt": "",
+          "credit": "Lim Ming Rui"
+        },
+        {
+          "id": "e87316ee-7c74-4060-bd51-c1448b6ec90a",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/135c083668b905559fadfc300fb2c3b7b73692a27ebdcd88c17140883ea91fe3.jpg",
+          "caption": "Installation view at [title]Inheritance[/title] (Women in Film and Photography; 2020), Objectifs, Singapore.",
+          "alt": "",
+          "credit": "Lim Ming Rui"
+        },
+        {
+          "id": "5d32de8a-948c-4619-9a40-af420bb8b13c",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/e8c9dc81846fec31a893c06d87d138801c5916d85d7c33a52478633d03730972.jpg",
+          "caption": "",
+          "alt": "lapping_1000px_1.2",
+          "credit": ""
+        },
+        {
+          "id": "918de404-5b38-499c-a3f9-4b86bf2e0ff0",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/42ca7d2fcd9019292cfd8ed37e4fcc1c4f6214e1a18320d14ecfa4b4d96f394d.jpg",
+          "caption": "",
+          "alt": "lapping_1000px_4",
+          "credit": ""
+        },
+        {
+          "id": "406f7ef7-75e6-470d-8070-fbd9625a2788",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/0540605ba46bf4cb18eee0c667bef59c2a5f65e6287110bd183a10de6fa19c0a.jpg",
+          "caption": "",
+          "alt": "lapping_1000px_5",
+          "credit": ""
+        },
+        {
+          "id": "5fcbdf8b-5b7a-46c2-92ed-df4687aa6682",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/4bea2802a4899220d85a791b09fcbc95ec102f56df024f5f4d9f7a97323130c5.jpg",
+          "caption": "",
+          "alt": "lapping_1000px_6",
+          "credit": ""
+        },
+        {
+          "id": "bc18c7f5-d905-4da0-ba15-de5a4d13e632",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/3b6fcfe150471c152a874a1e62da489354b03f8a2bb8ee57d1d94b0d76688187.jpg",
+          "caption": "",
+          "alt": "lapping_1000px_3",
+          "credit": ""
+        }
+      ],
+      "blocks": [
+        {
+          "id": "block-mv44xp8b-187z",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "e965032d-1589-4dc6-8623-b13fcd404efc",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/bed287e6749e75c3388affd47652bc4752789ac1d5a1c2e5b12ce5ec7d9d5fbc.jpg",
+              "caption": "Installation view at [title]Inheritance[/title] (Women in Film and Photography; 2020), Objectifs, Singapore.",
+              "alt": "",
+              "credit": "Lim Ming Rui"
+            },
+            {
+              "id": "e87316ee-7c74-4060-bd51-c1448b6ec90a",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/135c083668b905559fadfc300fb2c3b7b73692a27ebdcd88c17140883ea91fe3.jpg",
+              "caption": "Installation view at [title]Inheritance[/title] (Women in Film and Photography; 2020), Objectifs, Singapore.",
+              "alt": "",
+              "credit": "Lim Ming Rui"
+            }
+          ],
+          "layout": "stacked"
+        },
+        {
+          "id": "text-linmo-lapping-emulations",
+          "type": "text",
+          "content": "Developed through improvised darkroom and editing processes, images of coastlines and personal objects are repeatedly copied, altered and recombined until their sources become unstable.\nMade while thinking through my Henghua and Singaporean Chinese identity, the work approaches culture in a similar way: not as something fixed or inherited intact, but something continually reproduced and reshaped. The sea recurs throughout the work as both image and method—a form without fixed boundaries, continually changed by movement, contact and return."
+        },
+        {
+          "id": "block-mv44xqq0-ojna",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "5d32de8a-948c-4619-9a40-af420bb8b13c",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/e8c9dc81846fec31a893c06d87d138801c5916d85d7c33a52478633d03730972.jpg",
+              "caption": "",
+              "alt": "lapping_1000px_1.2",
+              "credit": ""
+            },
+            {
+              "id": "918de404-5b38-499c-a3f9-4b86bf2e0ff0",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/42ca7d2fcd9019292cfd8ed37e4fcc1c4f6214e1a18320d14ecfa4b4d96f394d.jpg",
+              "caption": "",
+              "alt": "lapping_1000px_4",
+              "credit": ""
+            },
+            {
+              "id": "406f7ef7-75e6-470d-8070-fbd9625a2788",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/0540605ba46bf4cb18eee0c667bef59c2a5f65e6287110bd183a10de6fa19c0a.jpg",
+              "caption": "",
+              "alt": "lapping_1000px_5",
+              "credit": ""
+            },
+            {
+              "id": "5fcbdf8b-5b7a-46c2-92ed-df4687aa6682",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/4bea2802a4899220d85a791b09fcbc95ec102f56df024f5f4d9f7a97323130c5.jpg",
+              "caption": "",
+              "alt": "lapping_1000px_6",
+              "credit": ""
+            },
+            {
+              "id": "bc18c7f5-d905-4da0-ba15-de5a4d13e632",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/3b6fcfe150471c152a874a1e62da489354b03f8a2bb8ee57d1d94b0d76688187.jpg",
+              "caption": "",
+              "alt": "lapping_1000px_3",
+              "credit": ""
+            }
+          ],
+          "layout": "stacked"
+        }
+      ],
+      "tagIds": [],
+      "subjects": [],
+      "associatedProjectIds": [],
+      "relatedEntryIds": [
+        "entry-linmo-sketches",
+        "entry-hu-deviations"
+      ],
+      "status": "published",
+      "isDevelopingWork": false,
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-11T18:10:50.253Z"
+    },
+    {
+      "id": "entry-national-flower-work",
+      "slug": "national-flower-work",
+      "title": "national flower",
+      "type": "work",
+      "date": "2020-2022",
+      "datePlaceholder": false,
+      "medium": "Photo series",
+      "dimensions": "variable",
+      "shortDescription": "national flower is an affectionate study of the bougainvillea scattered across Singapore's landscape.",
+      "credits": [],
+      "presentationHistory": [
+        {
+          "id": "history-national-flower-work-1",
+          "title": "Persepectives",
+          "venue": "CICA Museum",
+          "location": "Korea",
+          "date": "2022",
+          "action": "shown",
+          "curator": "",
+          "attribution": "curated",
+          "link": "",
+          "note": ""
+        },
+        {
+          "id": "history-national-flower-work-2",
+          "title": "Undescribed #7",
+          "venue": "DECK",
+          "location": "Singapore",
+          "date": "2022",
+          "action": "shown",
+          "curator": "",
+          "attribution": "curated",
+          "link": "",
+          "note": ""
+        }
+      ],
+      "fullText": "Installation view at Undescribed #7 (2022), DECK, Singapore.\n\nInstallation view at Undescribed #7 (2022), DECK, Singapore.\n\nInstallation view at Undescribed #7 (2022), DECK, Singapore.\n\nBegun during the pandemic through walks taken on Google Maps Street View, the work collects the recurring patches of pink, magenta and fuchsia that appear along roads, fences and edges of the city. Ubiquitous but easily overlooked, these flowers form an unofficial image of Singapore, which leads to the playful proposition that perhaps these are our real national flowers.",
+      "images": [
+        {
+          "id": "9c08a0d0-46e4-40d1-bcc9-078b86702524",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/45813d85ae67c378497f26d5b11052f10bd27952a3aa441cf764a08357b67383.png",
+          "caption": "Installation view at Undescribed #7 (2022), DECK, Singapore.",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "1fb02a21-a8c7-43c9-8080-8beb61863e97",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/8ef6462f4c67646920efbb748a13933329b369565cfba14b516bef92703b9563.png",
+          "caption": "Installation view at Undescribed #7 (2022), DECK, Singapore.",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "6ccb2007-2810-436b-9b86-54c9c3d385b9",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/6d682ff767a6d9a958273e832bacc6de6a552b24fa131a8bb4706db4cf3233c2.png",
+          "caption": "Installation view at Undescribed #7 (2022), DECK, Singapore.",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "e3d81beb-4764-46bd-8696-b198934664a8",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/e3ba55832d734169c175499204b118a7ac9f97aa65e2e24da4333d4b92b928a3.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "fdd1da0d-7fb2-42f3-8480-aa6d7c765a99",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/9b8824a33a3d75784d3b34d94951108d03408398f5e72ea4654dc8d223f4483d.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "29d86f83-0d58-46e5-aab2-6514a5c16f57",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/9eb3849fa9d2639cf2156c8b54495ca54178241c90e2fc794de4775ebde43360.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "e501cc55-f3e4-4036-8a8b-ae975f4b394b",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/1b9a0dc50559f74c5c7fe9c77c26639bbce65765921cfc4da4707885f6fed147.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "06107326-3488-403d-9ec7-99b2dc3d6170",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/d94e74b9fec5006682fcf0e867d356eb944a7905c8fa308305c614403fb17500.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "feae2bb4-d89e-4fdc-b15a-39be1c2cf0f0",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/fec973bc716835e2156ae63505399f436ea0cebb53a9bdd6018bea4b19facde2.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "00b2fb54-ac0b-46a0-a8c1-cbbab9cfcb99",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/ec12f2bbd7c33c497d1f906ab0f3462cd834ef55e0ad71b0cd226f9e2446af90.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "1d80676f-78ee-40f4-a5eb-7efea42944b6",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/7bc18eafca601475e21bfe0e59b92f8e1a4d456700c7028a58bde55ff7597356.png",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        }
+      ],
+      "blocks": [
+        {
+          "id": "block-mv457hz8-h6l4",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "9c08a0d0-46e4-40d1-bcc9-078b86702524",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/45813d85ae67c378497f26d5b11052f10bd27952a3aa441cf764a08357b67383.png",
+              "caption": "Installation view at Undescribed #7 (2022), DECK, Singapore.",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "1fb02a21-a8c7-43c9-8080-8beb61863e97",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/8ef6462f4c67646920efbb748a13933329b369565cfba14b516bef92703b9563.png",
+              "caption": "Installation view at Undescribed #7 (2022), DECK, Singapore.",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "6ccb2007-2810-436b-9b86-54c9c3d385b9",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/6d682ff767a6d9a958273e832bacc6de6a552b24fa131a8bb4706db4cf3233c2.png",
+              "caption": "Installation view at Undescribed #7 (2022), DECK, Singapore.",
+              "alt": "",
+              "credit": ""
+            }
+          ],
+          "layout": "stacked"
+        },
+        {
+          "id": "text-national-flower-work",
+          "type": "text",
+          "content": "Begun during the pandemic through walks taken on Google Maps Street View, the work collects the recurring patches of pink, magenta and fuchsia that appear along roads, fences and edges of the city. Ubiquitous but easily overlooked, these flowers form an unofficial image of Singapore, which leads to the playful proposition that perhaps these are our real national flowers."
+        },
+        {
+          "id": "block-mv459t9v-1nsb",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "e3d81beb-4764-46bd-8696-b198934664a8",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/e3ba55832d734169c175499204b118a7ac9f97aa65e2e24da4333d4b92b928a3.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "fdd1da0d-7fb2-42f3-8480-aa6d7c765a99",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/9b8824a33a3d75784d3b34d94951108d03408398f5e72ea4654dc8d223f4483d.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "29d86f83-0d58-46e5-aab2-6514a5c16f57",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/9eb3849fa9d2639cf2156c8b54495ca54178241c90e2fc794de4775ebde43360.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "e501cc55-f3e4-4036-8a8b-ae975f4b394b",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/1b9a0dc50559f74c5c7fe9c77c26639bbce65765921cfc4da4707885f6fed147.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "06107326-3488-403d-9ec7-99b2dc3d6170",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/d94e74b9fec5006682fcf0e867d356eb944a7905c8fa308305c614403fb17500.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "feae2bb4-d89e-4fdc-b15a-39be1c2cf0f0",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/fec973bc716835e2156ae63505399f436ea0cebb53a9bdd6018bea4b19facde2.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "00b2fb54-ac0b-46a0-a8c1-cbbab9cfcb99",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/ec12f2bbd7c33c497d1f906ab0f3462cd834ef55e0ad71b0cd226f9e2446af90.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "1d80676f-78ee-40f4-a5eb-7efea42944b6",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/7bc18eafca601475e21bfe0e59b92f8e1a4d456700c7028a58bde55ff7597356.png",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            }
+          ],
+          "layout": "grid"
+        }
+      ],
+      "tagIds": [
+        "tag-archives",
+        "tag-time"
+      ],
+      "subjects": [
+        "archives and records",
+        "time and the durational"
+      ],
+      "associatedProjectIds": [],
+      "relatedEntryIds": [
+        "entry-national-flower-book"
+      ],
+      "status": "published",
+      "isDevelopingWork": false,
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-11T18:17:02.619Z"
+    },
+    {
+      "id": "entry-moqi-sync",
+      "slug": "moqi",
+      "title": "sync",
+      "titleZh": "默契",
+      "type": "work",
+      "date": "2022",
+      "datePlaceholder": false,
+      "medium": "Projection with 5-channel audio",
+      "dimensions": "looping playlist",
+      "shortDescription": "默契 sync takes the ritual of pre-concert tuning as a way of thinking about synchronisation within an orchestra.",
+      "credits": [
+        {
+          "id": "credit-moqi-sync-1",
+          "role": "custom",
+          "name": "Berny Tan",
+          "customRole": "Text"
+        }
+      ],
+      "presentationHistory": [],
+      "fullText": "Installation view at [title]How We Learn(t)[/title] (2022), Gillman Barracks, Singapore\n\nBefore performing, musicians listen and adjust to one another, producing the impression of a single ensemble coming into tune.\nThe work separates this collective act into individual measurements. Lines extracted from electronic tuner readings of different orchestras overlap on screen, only occasionally meeting at the “correct” pitch. A five-channel soundtrack resembles an orchestra tuning together, but is assembled from musicians individually tuning their instruments to a machine rather than to one another.\n默契  (mò qì, meaning a tacit understanding or rapport) asks how much collective synchronisation is actually shared, and how much is something we perceive or construct.\n-\n[Please write in if you would like a preview link of 默契 sync.](mailto:shuart.shuart@gmail.com)",
+      "images": [
+        {
+          "id": "de0564c2-9795-485b-a6a8-89a0b5cd4cf8",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/27dc6596eb072ede264c135b568003b96e91778862cef45a5075569a5b017285.jpg",
+          "caption": "Installation view at [title]How We Learn(t)[/title] (2022), Gillman Barracks, Singapore",
+          "alt": "",
+          "credit": ""
+        }
+      ],
+      "blocks": [
+        {
+          "id": "block-mv45mf3z-5lgi",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "de0564c2-9795-485b-a6a8-89a0b5cd4cf8",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/27dc6596eb072ede264c135b568003b96e91778862cef45a5075569a5b017285.jpg",
+              "caption": "Installation view at [title]How We Learn(t)[/title] (2022), Gillman Barracks, Singapore",
+              "alt": "",
+              "credit": ""
+            }
+          ],
+          "layout": "stacked"
+        },
+        {
+          "id": "text-moqi-sync",
+          "type": "text",
+          "content": "Before performing, musicians listen and adjust to one another, producing the impression of a single ensemble coming into tune.\nThe work separates this collective act into individual measurements. Lines extracted from electronic tuner readings of different orchestras overlap on screen, only occasionally meeting at the “correct” pitch. A five-channel soundtrack resembles an orchestra tuning together, but is assembled from musicians individually tuning their instruments to a machine rather than to one another.\n默契  (mò qì, meaning a tacit understanding or rapport) asks how much collective synchronisation is actually shared, and how much is something we perceive or construct.\n-\n[Please write in if you would like a preview link of 默契 sync.](mailto:shuart.shuart@gmail.com)"
+        }
+      ],
+      "tagIds": [
+        "tag-learning"
+      ],
+      "subjects": [
+        "learning? pedagogy?"
+      ],
+      "associatedProjectIds": [],
+      "relatedEntryIds": [],
+      "status": "published",
+      "isDevelopingWork": false,
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-11T18:28:24.384Z"
+    },
+    {
+      "id": "entry-who-is-abing",
+      "slug": "who-is-abing",
+      "title": "who is abing?",
+      "titleZh": "再见阿炳",
+      "type": "work",
+      "date": "2023",
+      "datePlaceholder": false,
+      "medium": "Acrylic Print",
+      "dimensions": "5 x 207cm",
+      "shortDescription": "再见阿炳 who is abing?",
+      "credits": [
+        {
+          "id": "credit-who-is-abing-2",
+          "role": "commissioner",
+          "name": "Esplanade - Theatres on the Bay"
+        },
+        {
+          "id": "credit-who-is-abing-3",
+          "role": "custom",
+          "name": "Esplanade - Theatres on the Bay",
+          "customRole": "Installation images courtesy of"
+        }
+      ],
+      "presentationHistory": [
+        {
+          "id": "history-who-is-abing-1",
+          "title": "印映 reflections impressions",
+          "venue": "Esplanade - Theatres on the Bay",
+          "location": "Singapore",
+          "date": "",
+          "action": "shown",
+          "curator": "Lynda Tay",
+          "attribution": "curated",
+          "link": "https://www.esplanade.com/offstage/arts/insights-hong-shu-ying",
+          "note": "A solo presentation commissioned by Esplanade - Theatres on the Bay. The entire series is an on-going project with further plans to develop it into a book."
+        }
+      ],
+      "fullText": "[title]再见阿炳 who is abing?[/title] begins with the only known surviving photograph of Abing, the influential blind folk musician and erhu player. Despite this single visual reference, his likeness has been repeatedly reimagined through illustrations, sculptures, reenactments and user-made videos.\n\nThe work gathers these representations into a continuous strip, tracing how one image has been copied, interpreted and embellished over time. Across them, certain features recur while others drift, contributing to a familiar image of the erhu player that extends beyond Abing himself.\n\nThe work considers how a likeness is constructed when there is almost nothing to copy from.",
+      "images": [
+        {
+          "id": "d9a0d2df-568e-46d7-9811-0e0b0c9af040",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/83deb64378a4b90e05bce1aec023e715ba9d3d5a25edf03b81356fa7792986ce.webp",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "e38bfdec-f6b0-4a37-99d4-d04238abfb25",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/4eae70305bfebec2cfebb9404e44e5fdf1b57e5ec70d7e2c64d5c76b549772f0.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "b8d8b111-6959-47b2-bf02-288f7491ebe2",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/a1400dd2395d052356d4f0978fd406f7eb175aac91f18ae8dd7344e0059c9763.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "036e7eb3-9ccc-4dea-9411-ee275d2e8e4f",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/d0ad0857be91f76bc68a710c6ae24775f8a18ddec738108a45823d6d738c4e22.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "3f7568ab-c679-4a5b-b526-88ac14e11ef4",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/8a541900ca8ecc1ab391deacd99e3f6c4c3e7ffbd19d18f99b887534f68b1262.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        }
+      ],
+      "blocks": [
+        {
+          "id": "text-who-is-abing",
+          "type": "text",
+          "content": "[title]再见阿炳 who is abing?[/title] begins with the only known surviving photograph of Abing, the influential blind folk musician and erhu player. Despite this single visual reference, his likeness has been repeatedly reimagined through illustrations, sculptures, reenactments and user-made videos.\n\nThe work gathers these representations into a continuous strip, tracing how one image has been copied, interpreted and embellished over time. Across them, certain features recur while others drift, contributing to a familiar image of the erhu player that extends beyond Abing himself.\n\nThe work considers how a likeness is constructed when there is almost nothing to copy from."
+        },
+        {
+          "id": "block-mv45dun7-1n9x",
+          "type": "video",
+          "provider": "youtube",
+          "originalUrl": "https://www.youtube.com/watch?v=BQaXe3tUqiY&t=17s",
+          "embedUrl": "https://www.youtube-nocookie.com/embed/BQaXe3tUqiY?autoplay=0&rel=0&modestbranding=1",
+          "title": ""
+        },
+        {
+          "id": "block-mv45gtuq-i9oy",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "d9a0d2df-568e-46d7-9811-0e0b0c9af040",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/83deb64378a4b90e05bce1aec023e715ba9d3d5a25edf03b81356fa7792986ce.webp",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "e38bfdec-f6b0-4a37-99d4-d04238abfb25",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/4eae70305bfebec2cfebb9404e44e5fdf1b57e5ec70d7e2c64d5c76b549772f0.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "b8d8b111-6959-47b2-bf02-288f7491ebe2",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/a1400dd2395d052356d4f0978fd406f7eb175aac91f18ae8dd7344e0059c9763.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "036e7eb3-9ccc-4dea-9411-ee275d2e8e4f",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/d0ad0857be91f76bc68a710c6ae24775f8a18ddec738108a45823d6d738c4e22.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "3f7568ab-c679-4a5b-b526-88ac14e11ef4",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/8a541900ca8ecc1ab391deacd99e3f6c4c3e7ffbd19d18f99b887534f68b1262.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            }
+          ],
+          "layout": "carousel",
+          "autoPlay": true
+        }
+      ],
+      "tagIds": [],
+      "subjects": [],
+      "associatedProjectIds": [],
+      "relatedEntryIds": [],
+      "status": "published",
+      "isDevelopingWork": false,
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-11T18:23:26.589Z"
+    },
+    {
+      "id": "entry-creak-of-dawn",
+      "slug": "creak-of-dawn",
+      "title": "乍鸣 creak of dawn",
+      "titleZh": "乍鸣",
+      "type": "work",
+      "date": "2024",
+      "datePlaceholder": false,
+      "medium": "Montage of self-recorded and found field recordings of birds at sunrise\n30’42”",
+      "shortDescription": "乍鸣 creak of dawn gathers self-recorded and found recordings of birds at sunrise into a 30-minute sound work.",
+      "credits": [],
+      "presentationHistory": [
+        {
+          "id": "history-creak-of-dawn-1",
+          "title": "A Reservoir of Time",
+          "venue": "Objectifs–Centre for Photography and Film",
+          "location": "",
+          "date": "2023",
+          "action": "presented",
+          "curator": "Goh Chun Aik",
+          "attribution": "curated",
+          "link": "",
+          "note": "Part of Objectifs' Curator Open Call 2023."
+        }
+      ],
+      "fullText": "I remember this phrase \"日出而作 日落而息\": to work when the sunrises, rest when the sunsets. Taking from the phrase, this work looks beyond hours and minutes towards environmental ways of marking time. Layered together, the recordings form a cacophonous dawn: a day announced not by a clock, but by birds.\n\n乍鸣 creak of dawn by shu",
+      "images": [
+        {
+          "id": "400e533b-cb71-4e9f-bb83-c2926459ebdc",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/9cda87bc25fffce2c3019cc6f5f19f59ea1fdf1838cdf7f1f2ac2e25eb038743.webp",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        }
+      ],
+      "blocks": [
+        {
+          "id": "block-mv41lhpb-479v",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "400e533b-cb71-4e9f-bb83-c2926459ebdc",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/9cda87bc25fffce2c3019cc6f5f19f59ea1fdf1838cdf7f1f2ac2e25eb038743.webp",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            }
+          ],
+          "layout": "stacked"
+        },
+        {
+          "id": "text-creak-of-dawn",
+          "type": "text",
+          "content": "I remember this phrase \"日出而作 日落而息\": to work when the sunrises, rest when the sunsets. Taking from the phrase, this work looks beyond hours and minutes towards environmental ways of marking time. Layered together, the recordings form a cacophonous dawn: a day announced not by a clock, but by birds."
+        },
+        {
+          "id": "block-mv42ulbq-mznc",
+          "type": "html",
+          "content": "<iframe style=\"border: 0; width: 350px; height: 350px;\" src=\"https://bandcamp.com/EmbeddedPlayer/album=3366118809/size=large/bgcol=ffffff/linkcol=e99708/minimal=true/transparent=true/\" seamless><a href=\"https://shu0shushu.bandcamp.com/album/creak-of-dawn\">乍鸣 creak of dawn by shu</a></iframe>"
+        }
+      ],
+      "tagIds": [],
+      "subjects": [],
+      "associatedProjectIds": [],
+      "relatedEntryIds": [],
+      "status": "published",
+      "isDevelopingWork": false,
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-11T18:11:27.764Z"
+    },
+    {
       "id": "entry-on-notes",
       "slug": "on-notes",
       "title": "简谱简介 on notes",
@@ -291,14 +2689,22 @@
           "layout": "stacked"
         }
       ],
-      "tagIds": [],
-      "subjects": [],
+      "tagIds": [
+        "tag-score",
+        "tag-jianpu",
+        "tag-working-notes"
+      ],
+      "subjects": [
+        "scores and notation",
+        "jianpu",
+        "working notes"
+      ],
       "associatedProjectIds": [],
       "relatedEntryIds": [],
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-11T16:41:04.951Z"
+      "updatedAt": "2026-10-11T17:50:11.556Z"
     },
     {
       "id": "entry-in-two-strokes",
@@ -366,26 +2772,9 @@
       "type": "work",
       "date": "2024-2025",
       "datePlaceholder": false,
-      "medium": "Single-screen video with 5.1 audio\n10'38\"",
+      "medium": "Single-screen video with 5.1 audio",
+      "dimensions": "10'38\" | 1 + AP",
       "shortDescription": "on telling time in the mall observes the different ways time makes itself visible in Queensway Shopping Centre, one of Singapore's oldest surviving malls.",
-      "fullText": "on telling time in the mall observes the different ways time makes itself visible in Queensway Shopping Centre, one of Singapore's oldest surviving malls. Moving between field recordings, found footage and fly-on-the-wall observations, the video looks for time beyond the clock: shutters opening and closing, shops changing hands, repeated routines, ageing interiors and small movements that mark the passing of a day.\nBringing footage from different periods into the same cycle, the work asks how we tell that time has passed in a place where so much seems to repeat itself.",
-      "images": [],
-      "blocks": [
-        {
-          "id": "text-on-telling-time-in-the-mall",
-          "type": "text",
-          "content": "Moving between field recordings, found footage and fly-on-the-wall observations, the video looks for time beyond the clock: shutters opening and closing, shops changing hands, repeated routines, ageing interiors and small movements that mark the passing of a day.\nBringing footage from different periods into the same cycle, the work asks how we tell that time has passed in a place where so much seems to repeat itself."
-        }
-      ],
-      "tagIds": [],
-      "subjects": [],
-      "relatedEntryIds": [
-        "entry-what-used-to-be-in-the-mall"
-      ],
-      "associatedProjectIds": [],
-      "status": "published",
-      "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-04T21:20:44Z",
       "credits": [
         {
           "id": "credit-on-telling-time-in-the-mall-1",
@@ -394,7 +2783,30 @@
           "customRole": "Text"
         }
       ],
-      "presentationHistory": []
+      "presentationHistory": [],
+      "fullText": "Moving between field recordings, found footage and fly-on-the-wall observations, the video looks for time beyond the clock: shutters opening and closing, shops changing hands, repeated routines, ageing interiors and small movements that mark the passing of a day.\nBringing footage from different periods into the same cycle, the work asks how we tell that time has passed in a place where so much seems to repeat itself.",
+      "images": [],
+      "blocks": [
+        {
+          "id": "text-on-telling-time-in-the-mall",
+          "type": "text",
+          "content": "Moving between field recordings, found footage and fly-on-the-wall observations, the video looks for time beyond the clock: shutters opening and closing, shops changing hands, repeated routines, ageing interiors and small movements that mark the passing of a day.\nBringing footage from different periods into the same cycle, the work asks how we tell that time has passed in a place where so much seems to repeat itself."
+        }
+      ],
+      "tagIds": [
+        "tag-time"
+      ],
+      "subjects": [
+        "time and the durational"
+      ],
+      "associatedProjectIds": [],
+      "relatedEntryIds": [
+        "entry-what-used-to-be-in-the-mall"
+      ],
+      "status": "published",
+      "isDevelopingWork": false,
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-11T17:50:41.689Z"
     },
     {
       "id": "entry-in-the-aisle-book",
@@ -455,30 +2867,14 @@
     {
       "id": "entry-linmo-sketches",
       "slug": "linmo-sketches",
-      "title": "临摹 – 序 (linmo – sketches)",
+      "title": "(linmo – sketches)",
+      "titleZh": "临摹 – 序",
       "type": "publication",
       "date": "2020",
       "datePlaceholder": false,
       "medium": "French-fold booklet, printed on Newsprint\nself-published",
+      "dimensions": "24 x 17 x 1cm, 68pp",
       "shortDescription": "临摹 – 序 (linmo – sketches) gathers the experiments, readings and fragments that developed alongside 临摹 Lapping Emulations.",
-      "fullText": "临摹 – 序 (linmo – sketches) gathers the experiments, readings and fragments that developed alongside 临摹 Lapping Emulations. Collaged photographs and texts move between darkroom experiments, family histories, research into the Chinese diaspora in Southeast Asia, and recurring images of the sea.\n\nRather than resolving these materials into a single account of identity, the book retains the uncertainty of the research process. Images are copied, altered and revisited, while the sea becomes a recurring way of thinking about culture as something inherited yet continually shifting.\n\nBorrowing the words of Kuo Pao Kun, linmo – sketches is just the journal of another \"cultural orphan\".",
-      "images": [],
-      "blocks": [
-        {
-          "id": "text-linmo-sketches",
-          "type": "text",
-          "content": "Collaged photographs and texts move between darkroom experiments, family histories, research into the Chinese diaspora in Southeast Asia, and recurring images of the sea.\n\nRather than resolving these materials into a single account of identity, the book retains the uncertainty of the research process. Images are copied, altered and revisited, while the sea becomes a recurring way of thinking about culture as something inherited yet continually shifting.\n\nBorrowing the words of Kuo Pao Kun, linmo – sketches is just the journal of another \"cultural orphan\"."
-        }
-      ],
-      "tagIds": [],
-      "subjects": [],
-      "relatedEntryIds": [
-        "entry-linmo-lapping-emulations"
-      ],
-      "associatedProjectIds": [],
-      "status": "published",
-      "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-04T21:20:44Z",
       "credits": [],
       "presentationHistory": [
         {
@@ -506,8 +2902,71 @@
           "note": ""
         }
       ],
-      "dimensions": "24 x 17 x 1cm, 68pp",
-      "titleZh": "临摹"
+      "fullText": "Collaged photographs and texts move between darkroom experiments, family histories, research into the Chinese diaspora in Southeast Asia, and recurring images of the sea.\n\nRather than resolving these materials into a single account of identity, the book retains the uncertainty of the research process. Images are copied, altered and revisited, while the sea becomes a recurring way of thinking about culture as something inherited yet continually shifting.\n\nBorrowing the words of Kuo Pao Kun, linmo – sketches is just the journal of another \"cultural orphan\".",
+      "images": [
+        {
+          "id": "f4a436d4-7c05-421c-913d-d05be30aa3fb",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/083098f3b5fb4a55ecbf3d78a6aad336a5b5aa96be50b7f285b2c1bff9e1f436.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "41c82a2c-4631-4333-8603-7204ca4fdb7c",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/5f2e4b08c8f7c5817b8215e9d985c7edcee19f50e8024b1eeab51d9e477410e1.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        }
+      ],
+      "blocks": [
+        {
+          "id": "text-linmo-sketches",
+          "type": "text",
+          "content": "Collaged photographs and texts move between darkroom experiments, family histories, research into the Chinese diaspora in Southeast Asia, and recurring images of the sea.\n\nRather than resolving these materials into a single account of identity, the book retains the uncertainty of the research process. Images are copied, altered and revisited, while the sea becomes a recurring way of thinking about culture as something inherited yet continually shifting.\n\nBorrowing the words of Kuo Pao Kun, linmo – sketches is just the journal of another \"cultural orphan\"."
+        },
+        {
+          "id": "block-mv44dvlb-zpd3",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "f4a436d4-7c05-421c-913d-d05be30aa3fb",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/083098f3b5fb4a55ecbf3d78a6aad336a5b5aa96be50b7f285b2c1bff9e1f436.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "41c82a2c-4631-4333-8603-7204ca4fdb7c",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/5f2e4b08c8f7c5817b8215e9d985c7edcee19f50e8024b1eeab51d9e477410e1.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            }
+          ],
+          "layout": "carousel",
+          "autoPlay": true
+        }
+      ],
+      "tagIds": [
+        "tag-books",
+        "tag-working-notes"
+      ],
+      "subjects": [
+        "books and bookish things",
+        "working notes"
+      ],
+      "associatedProjectIds": [],
+      "relatedEntryIds": [
+        "entry-linmo-lapping-emulations",
+        "entry-hu-deviations",
+        "entry-hui-kuala"
+      ],
+      "status": "published",
+      "isDevelopingWork": false,
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-11T17:52:55.384Z"
     },
     {
       "id": "entry-national-flower-book",
