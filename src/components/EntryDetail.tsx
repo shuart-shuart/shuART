@@ -35,8 +35,6 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
   onFilterBySubject,
   onSelectTag,
   onNavigateBack,
-  onRandomWander,
-  showWander,
   isEditorLoggedIn,
   onEditEntry,
   onToggleStatus,
@@ -63,14 +61,18 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
 
   const entryTags = useMemo(() => canonicalEntryTags(entry, tags), [entry.tagIds, tags]);
 
-  const canShowWander = showWander || isEditorLoggedIn;
+  const connectionSections = [
+    { label: 'Project entries', items: associatedProjectEntries },
+    { label: 'Related entries', items: relatedEntries },
+    { label: 'Backlinks', items: backlinks },
+  ].filter(section => section.items.length > 0);
 
   const renderWikiText = (text: string) => renderFormattedText(text, { allEntries, onSelectEntry });
 
   return (
-    <article className="max-w-4xl mx-auto px-5 sm:px-8 py-8 sm:py-14 animate-fadeIn">
+    <article className="max-w-4xl mx-auto px-5 sm:px-8 py-5 sm:py-7 animate-fadeIn">
       {/* Top Back / Action bar */}
-      <div className="flex justify-between items-center pb-6 mb-8 border-b border-black/10 text-xs font-mono-quiet text-black/50">
+      <div className="flex flex-wrap justify-between items-center gap-3 mb-6 text-xs font-mono-quiet text-black/50">
         <button
           onClick={onNavigateBack}
           className="hover:text-black flex items-center gap-1"
@@ -79,17 +81,8 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
         </button>
 
         <div className="flex items-center gap-3">
-          {canShowWander && (
-            <button
-              onClick={onRandomWander}
-              className="hover:text-black"
-              title="Random entry"
-            >
-              Wander
-            </button>
-          )}
           {isEditorLoggedIn && (
-            <div className="flex items-center gap-2 pl-3 border-l border-black/15">
+            <div className="flex items-center gap-2">
               {onToggleStatus && (
                 <button
                   onClick={() => onToggleStatus(entry.id)}
@@ -323,133 +316,40 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
         </section>
       )}
 
-      {/* Project Associations: Automatically show published entries associated with this project */}
-      {entry.type === 'project' && (
-        <section className="pt-10 border-t border-black/15 my-10 space-y-6">
-          <div className="flex items-baseline justify-between border-b border-black/10 pb-3">
-            <div>
-              <span className="text-[11px] font-mono-quiet uppercase tracking-wider text-black/40">
-                Project Associations
-              </span>
-              <h3 className="font-editorial text-2xl text-black">
-                Entries Associated with this Project ({associatedProjectEntries.length})
+      {/* Show only populated connection lists. */}
+      {connectionSections.length > 0 && (
+        <div className={`grid grid-cols-1 ${connectionSections.length > 1 ? 'sm:grid-cols-2' : ''} gap-6 pt-6 border-t border-black/10 mt-8`}>
+          {connectionSections.map(section => (
+            <section key={section.label}>
+              <h3 className="font-mono-quiet uppercase text-xs tracking-wider text-black/40 mb-2">
+                {section.label} ({section.items.length})
               </h3>
-            </div>
-            <span className="text-xs font-mono-quiet text-black/50">
-              Published entries linked to this project
-            </span>
-          </div>
-
-          {associatedProjectEntries.length > 0 ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-              {associatedProjectEntries.map((item) => (
-                <div
-                  key={item.id}
-                  onClick={() => onSelectEntry(item.slug)}
-                  className="p-5 border border-black/10 hover:border-black transition-colors cursor-pointer group bg-white space-y-2"
-                >
-                  <div className="flex items-baseline justify-between gap-2">
-                    <span><EntryTitle entry={item} primaryClassName="font-editorial text-base sm:text-lg text-black group-hover:underline" chineseClassName="text-xs font-editorial text-black/50" /></span>
-                    <span className="text-[11px] font-mono-quiet text-black/50 capitalize shrink-0">
-                      {item.type}
-                    </span>
-                  </div>
-                  {item.shortDescription && (
-                    <p className="text-xs font-sans text-black/70 line-clamp-2 leading-relaxed">
-                      {item.shortDescription}
-                    </p>
-                  )}
-                  <div className="text-[11px] font-mono-quiet text-black/40 pt-1 flex justify-between items-center">
-                    <span>{item.date || '—'}</span>
-                    <span className="group-hover:text-black">Open →</span>
-                  </div>
-                </div>
-              ))}
-            </div>
-          ) : (
-            <p className="text-xs font-mono-quiet text-black/40 italic">
-              No published entries are currently associated with this project.
-            </p>
-          )}
-        </section>
+              <ul>
+                {section.items.map(item => (
+                  <li key={item.id}>
+                    <a
+                      href={`#entry/${item.slug}`}
+                      onClick={event => {
+                        if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+                        event.preventDefault();
+                        onSelectEntry(item.slug);
+                      }}
+                      className="group flex items-baseline justify-between gap-3 px-3 py-2 hover:bg-black/5 focus-visible:bg-black/5 transition-colors"
+                    >
+                      <span className="leading-tight">
+                        <EntryTitle inline entry={item} primaryClassName="font-editorial text-base text-black group-hover:underline" chineseClassName="font-editorial text-base text-black/70 group-hover:underline" />
+                      </span>
+                      <span className="text-[11px] font-mono-quiet text-black/40 capitalize shrink-0">
+                        {item.type}
+                      </span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ))}
+        </div>
       )}
-
-      {/* Explicit Related Entries & Automatic Backlinks */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-8 border-t border-black/10 mt-10">
-        {/* Outbound Related Entries (ID-based) */}
-        <div>
-          <h3 className="font-mono-quiet uppercase text-xs tracking-wider text-black/40 mb-4">
-            Related Entries ({relatedEntries.length})
-          </h3>
-          {relatedEntries.length > 0 ? (
-            <ul className="space-y-3">
-              {relatedEntries.map((rel) => (
-                <li key={rel.id} className="group">
-                  <button
-                    onClick={() => onSelectEntry(rel.slug)}
-                    className="text-left w-full block focus:outline-none"
-                  >
-                    <div className="flex items-baseline justify-between gap-2">
-                      <span className="font-editorial text-base text-black group-hover:underline">
-                        {rel.title}
-                      </span>
-                      <span className="text-[11px] font-mono-quiet text-black/40 capitalize">
-                        {rel.type}
-                      </span>
-                    </div>
-                    {rel.shortDescription && (
-                      <p className="text-xs text-black/60 line-clamp-2 mt-0.5 font-sans">
-                        {rel.shortDescription}
-                      </p>
-                    )}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <p className="text-xs font-mono-quiet text-black/40 italic">
-              No related entries explicitly assigned.
-            </p>
-          )}
-        </div>
-
-        {/* Automatic Backlinks from other entries pointing to this ID */}
-        <div>
-          <h3 className="font-mono-quiet uppercase text-xs tracking-wider text-black/40 mb-4">
-            Backlinks ({backlinks.length})
-          </h3>
-          {backlinks.length > 0 ? (
-            <ul className="space-y-3">
-              {backlinks.map((link) => (
-                <li key={link.id} className="group">
-                  <button
-                    onClick={() => onSelectEntry(link.slug)}
-                    className="text-left w-full block focus:outline-none"
-                  >
-                    <div className="flex items-baseline justify-between gap-2">
-                      <span className="font-editorial text-base text-black group-hover:underline">
-                        {link.title}
-                      </span>
-                      <span className="text-[11px] font-mono-quiet text-black/40 capitalize">
-                        {link.type}
-                      </span>
-                    </div>
-                    {link.contextExcerpt && (
-                      <p className="text-xs text-black/50 line-clamp-2 mt-0.5 font-sans italic">
-                        {link.contextExcerpt}
-                      </p>
-                    )}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <p className="text-xs font-mono-quiet text-black/40 italic">
-              No published entries currently link or refer to this entry.
-            </p>
-          )}
-        </div>
-      </div>
 
       {/* Lightbox Modal */}
       <ImageLightbox
