@@ -790,7 +790,7 @@
     {
       "id": "script-notes",
       "slug": "biji",
-      "title": "笔迹 script/notes",
+      "title": "script/notes",
       "titleZh": "笔迹",
       "type": "publication",
       "date": "2021-2022",
@@ -967,7 +967,7 @@
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-01-10T10:00:00Z",
-      "updatedAt": "2026-10-11T16:15:35.482Z"
+      "updatedAt": "2026-10-11T19:34:39.785Z"
     },
     {
       "id": "part-time-book-club",
@@ -2305,6 +2305,105 @@
       "updatedAt": "2026-10-11T18:17:02.619Z"
     },
     {
+      "id": "entry-hui-kuala",
+      "slug": "kuala",
+      "title": "kuala",
+      "titleZh": "回",
+      "type": "work",
+      "date": "2022-2026",
+      "datePlaceholder": false,
+      "medium": "Experimental print and Moving image",
+      "shortDescription": "回 kuala begins with a childhood memory of a teapot-shaped landmark on the journey to my father's hometown in Brunei.",
+      "credits": [],
+      "presentationHistory": [
+        {
+          "id": "pres-mv4883tv-n4jo",
+          "action": "shown",
+          "attribution": "curated",
+          "title": " CLEANSE: Asia Pacific Now",
+          "venue": "Dr Adrian Tan and Desmond Mah",
+          "location": "Prestige Gallery, Singapore",
+          "date": "2026",
+          "curator": "",
+          "link": "",
+          "note": ""
+        }
+      ],
+      "fullText": "I was too young to photograph it then, and more than two decades later, what remains is a vivid but increasingly uncertain image in my mind.\n\nWorking with 66 photographs of the landmark found online, I repeatedly process and erode other people's images in an attempt to approach my own. Rather than reconstructing the landmark more clearly, the images become increasingly unstable—somewhere between photographic evidence and remembered image.\n\n回 kuala is an experiment in photographing a memory when a photograph was never taken.\n\n印象深刻的茶壶雕塑在我记忆中是朦胧的。它是跟着我爸爸回汶莱的路上一定会经过的地标。\n我记得最后一次看到茶壶应该有二十年前了，听说茶壶的装饰灯已经坏了，时钟也停了。\n\nI remember seeing the teapot over two decades ago, and rumour has it that the lights and clocks on it have already stopped working a few years ago.",
+      "images": [
+        {
+          "id": "e4a969a3-4d74-495d-aefe-fec62129f437",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/25a154648270819a870e83265566c3dd5b4555a6223d344dd4729f84239cfeb8.webp",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "f8797d09-013c-457f-b910-36dd8ab3117c",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/df022a85a6376ce8fcdb6b2d42e1c20f1b74b5e4de631d67636c647f6a45c689.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        }
+      ],
+      "blocks": [
+        {
+          "id": "block-mv4842pa-ximv",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "e4a969a3-4d74-495d-aefe-fec62129f437",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/25a154648270819a870e83265566c3dd5b4555a6223d344dd4729f84239cfeb8.webp",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            }
+          ],
+          "layout": "stacked"
+        },
+        {
+          "id": "text-hui-kuala",
+          "type": "text",
+          "content": "I was too young to photograph it then, and more than two decades later, what remains is a vivid but increasingly uncertain image in my mind.\n\nWorking with 66 photographs of the landmark found online, I repeatedly process and erode other people's images in an attempt to approach my own. Rather than reconstructing the landmark more clearly, the images become increasingly unstable—somewhere between photographic evidence and remembered image.\n\n回 kuala is an experiment in photographing a memory when a photograph was never taken.\n\n印象深刻的茶壶雕塑在我记忆中是朦胧的。它是跟着我爸爸回汶莱的路上一定会经过的地标。\n我记得最后一次看到茶壶应该有二十年前了，听说茶壶的装饰灯已经坏了，时钟也停了。\n\nI remember seeing the teapot over two decades ago, and rumour has it that the lights and clocks on it have already stopped working a few years ago."
+        },
+        {
+          "id": "block-mv485tza-3jsh",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "f8797d09-013c-457f-b910-36dd8ab3117c",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/df022a85a6376ce8fcdb6b2d42e1c20f1b74b5e4de631d67636c647f6a45c689.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            }
+          ],
+          "layout": "stacked"
+        }
+      ],
+      "tagIds": [
+        "tag-time",
+        "tag-copy",
+        "tag-archives"
+      ],
+      "subjects": [
+        "time and the durational",
+        "copying and copies",
+        "archives and records"
+      ],
+      "associatedProjectIds": [],
+      "relatedEntryIds": [
+        "entry-hu-deviations",
+        "entry-national-flower-book"
+      ],
+      "status": "published",
+      "isDevelopingWork": false,
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-11T19:40:01.279Z"
+    },
+    {
       "id": "entry-moqi-sync",
       "slug": "moqi",
       "title": "sync",
@@ -2512,6 +2611,142 @@
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
       "updatedAt": "2026-10-11T18:23:26.589Z"
+    },
+    {
+      "id": "entry-sight-reading",
+      "slug": "sight-reading",
+      "title": "sight reading",
+      "titleZh": "视奏",
+      "type": "work",
+      "date": "2023",
+      "datePlaceholder": false,
+      "medium": "Found notation, Archival inkjet print on Canson Rag, mounted on MDF Board",
+      "dimensions": "25.4 x 20.3cm each",
+      "shortDescription": "视奏 sight reading removes the notes from jianpu (cipher notation) and attends instead to what surrounds them: lines, dots, symbols and annotations that instruct a musician how to play.",
+      "credits": [],
+      "presentationHistory": [],
+      "fullText": "Isolated from their original context, these “non-notes” form an almost-graphical score, suspended between something to be read, seen and performed.\n_\nPlease get in touch if you would like to respond to 视奏 sight reading. I am seeking collaborators~\n\nscores\n\n叙时 visages in time\n\n丝 threaden  \n\n抖 tremble  \n\n烁 flicker\n\n又双叒叕 again and again\n\n气口 breath points\n\n晃 swivel\n\n山>山 peaking peaks\n\n玉落珠盘 frolic\n\n静径 sissississimo\n\n 踩梯 ladders and steps\n\n山+山 mounting mounts\n\n双 duet\n\n起飞 departures",
+      "images": [],
+      "blocks": [
+        {
+          "id": "text-sight-reading",
+          "type": "text",
+          "content": "Isolated from their original context, these “non-notes” form an almost-graphical score, suspended between something to be read, seen and performed.\n_\nPlease get in touch if you would like to respond to 视奏 sight reading. I am seeking collaborators~"
+        },
+        {
+          "id": "block-mv48al3q-pl6b",
+          "type": "document_reader",
+          "title": "scores",
+          "sourceType": "page_images",
+          "pageType": "individual_pages",
+          "pages": [
+            {
+              "id": "ebe44286-399a-46b3-96c2-1e6d2cd95073",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/48185a4fef481c71894c49139d3f6397fbc661bddb7a28df8b277065e2fcb568.webp",
+              "pageNumber": 1,
+              "caption": "叙时 visages in time"
+            },
+            {
+              "id": "f56d722f-6b09-48f3-b25f-fdd06a59f889",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/6cf51e7944aa56c1ccb02d1beca1bdf001533ba760ac1e3d8e56bd409202b6b9.webp",
+              "pageNumber": 2,
+              "caption": "丝 threaden  "
+            },
+            {
+              "id": "0668922e-4d6d-41b9-8c4c-16d572632b59",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/faaea43dbbe029401d212f80fcb3cedf9c9e673b95e1572c914667bbd5476f2a.webp",
+              "pageNumber": 3,
+              "caption": "抖 tremble  "
+            },
+            {
+              "id": "781399ae-ff87-494d-a1a5-81a021cb41f2",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/5161baa1d91819ee822c089dfd6ab39628de9c720512e293832c0526dcc3819f.webp",
+              "pageNumber": 4,
+              "caption": "烁 flicker"
+            },
+            {
+              "id": "b74d472f-b186-4510-b9e2-2b8530bb92bb",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/90a8762a650ddab97c357cebf962223f9c0700e492f9c25ae84fa398877ad17c.webp",
+              "pageNumber": 5,
+              "caption": "又双叒叕 again and again"
+            },
+            {
+              "id": "9d2bb2dd-d5f0-4999-b555-355334595c5d",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/1a16ce2847a0aed7eaade651023744f1f056dbeadee976332616a416dfdf2145.webp",
+              "pageNumber": 6,
+              "caption": "气口 breath points"
+            },
+            {
+              "id": "b0410350-96af-4100-9e65-152b29914b10",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/83d89e02fb3ad0926dd6591534d746a837217006cf6b3cb79a9f1cb96a203c73.webp",
+              "pageNumber": 7,
+              "caption": "晃 swivel"
+            },
+            {
+              "id": "75b4d860-920a-408b-924c-41ce4bbc3c7d",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/2c192271b00ff62f37c7d470bd67dc19302598c020ac63de73f7d1564fccfa80.webp",
+              "pageNumber": 8,
+              "caption": "山>山 peaking peaks"
+            },
+            {
+              "id": "f00858d4-1c2c-43e1-aae0-f3eab1cfccfb",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/a8c475fab345932f29893c842c21d1bba74874c692b0c48704827c7629d418a3.webp",
+              "pageNumber": 9,
+              "caption": "玉落珠盘 frolic"
+            },
+            {
+              "id": "a5214a7e-08f9-459e-9e61-c56fed0e1dea",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/81a5e1781f1fd768a5b31eac25935970faac951f1ff14f23e603f1fc87d6631e.webp",
+              "pageNumber": 10,
+              "caption": "静径 sissississimo"
+            },
+            {
+              "id": "5528f003-d93e-4106-9887-7aef66334283",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/6bc2d1a03eccf112c566075641269428e3dd097d9cdb86e37b36ed631ffe3817.webp",
+              "pageNumber": 11,
+              "caption": " 踩梯 ladders and steps"
+            },
+            {
+              "id": "8554626d-2d61-479e-be36-30f235056ec4",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/5ee2a7f255a154c028956f6f5ba83eb3c9b0ca89fc829e9330a6095170df0468.webp",
+              "pageNumber": 12,
+              "caption": "山+山 mounting mounts"
+            },
+            {
+              "id": "85be626e-a8b2-4c7d-b3eb-7398c8925c7f",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/ce1bf17291768e77b02a41ec2d01f18570f7a04f9bfe9f193f831618321974f6.webp",
+              "pageNumber": 13,
+              "caption": "双 duet"
+            },
+            {
+              "id": "2c896fe5-2acc-43a0-921b-b00628aa8c2a",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/3bc184f2548519a7616faf072ab56ea8fb789f5949793f2e20055b26564d77c8.webp",
+              "pageNumber": 14,
+              "caption": "起飞 departures"
+            }
+          ],
+          "allowDownload": false
+        }
+      ],
+      "tagIds": [
+        "tag-score",
+        "tag-jianpu"
+      ],
+      "subjects": [
+        "scores and notation",
+        "jianpu"
+      ],
+      "associatedProjectIds": [
+        "entry-mv45pqbm-y9xl"
+      ],
+      "relatedEntryIds": [
+        "entry-mv45pqbm-y9xl",
+        "scores"
+      ],
+      "status": "published",
+      "isDevelopingWork": false,
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-11T19:49:29.257Z"
     },
     {
       "id": "entry-creak-of-dawn",
