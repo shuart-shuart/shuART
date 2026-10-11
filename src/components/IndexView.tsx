@@ -1,3 +1,4 @@
+import { sortIndexEntries, type IndexSort, type IndexSortKey } from '../services/indexSorting';
 import { DEFAULT_INDEX } from '../data/siteContent';
 import { formattedTextToPlainText, renderFormattedText } from '../services/formatting';
 import { getEntryBlocks } from '../services/blockUtils';
@@ -57,6 +58,27 @@ export const IndexView: React.FC<IndexViewProps> = ({
   const [selectedType, setSelectedType] = useState<'all' | EntryType>(initialType);
   const [displayMode, setDisplayMode] = useState<'directory' | 'cards'>('directory');
 
+  const [sort, setSort] = useState<IndexSort | null>(null);
+  const toggleSort = (key: IndexSortKey) => setSort(current => ({
+    key,
+    direction: current?.key === key
+      ? (current.direction === 'ascending' ? 'descending' : 'ascending')
+      : key === 'year' ? 'descending' : 'ascending',
+  }));
+  const sortControl = (key: IndexSortKey, label: string) => (
+    <button
+      type="button"
+      onClick={() => toggleSort(key)}
+      className="inline-flex items-center gap-1.5 uppercase hover:text-black focus-visible:text-black transition-colors"
+      aria-label={`Sort by ${label.toLowerCase()}${sort?.key === key ? `, currently ${sort.direction}` : ''}`}
+    >
+      {label}
+      <span aria-hidden="true" className={sort?.key === key ? 'text-black/60' : 'text-black/25'}>
+        {sort?.key === key ? (sort.direction === 'ascending' ? '↑' : '↓') : '↕'}
+      </span>
+    </button>
+  );
+
   // Build project title lookup
   const projectLookup = useMemo(() => {
     const map = new Map<string, string>();
@@ -100,6 +122,8 @@ export const IndexView: React.FC<IndexViewProps> = ({
       return true;
     });
   }, [entries, tags, selectedType, selectedSubject, searchQuery]);
+
+  const sortedEntries = useMemo(() => sortIndexEntries(filteredEntries, sort), [filteredEntries, sort]);
 
   const availableTags = useMemo(() => tagCounts(entries, tags), [entries, tags]);
 
@@ -185,6 +209,15 @@ export const IndexView: React.FC<IndexViewProps> = ({
           })}
         </div>
 
+        {displayMode === 'cards' && (
+          <div className="flex flex-wrap items-center gap-4 text-[11px] font-mono-quiet text-black/40">
+            <span>Sort:</span>
+            {sortControl('title', 'Title')}
+            {sortControl('year', 'Year')}
+            {sortControl('type', 'Type')}
+          </div>
+        )}
+
         {/* Active subject indicator */}
         {selectedSubject && (
           <div className="flex items-center gap-2 pt-1 text-xs font-mono-quiet text-black/80">
@@ -206,15 +239,15 @@ export const IndexView: React.FC<IndexViewProps> = ({
           <table className="w-full table-fixed text-left text-sm font-sans border-collapse index-directory">
             <thead>
               <tr className="border-b border-black/20 text-xs font-mono-quiet text-black/40 uppercase tracking-wider">
-                <th className="py-3 px-4 font-normal w-[75%] sm:w-[65%] md:w-[50%] lg:w-[38%]">Title</th>
-                <th className="py-3 px-4 font-normal hidden sm:table-cell sm:w-[15%] lg:w-[12%]">Type</th>
-                <th className="py-3 px-4 font-normal hidden md:table-cell md:w-[15%] lg:w-[12%]">Date</th>
+                <th aria-sort={sort?.key === 'title' ? sort.direction : 'none'} className="py-3 px-4 font-normal w-[60%] sm:w-[50%] md:w-[50%] lg:w-[38%]">{sortControl('title', 'Title')}</th>
+                <th aria-sort={sort?.key === 'type' ? sort.direction : 'none'} className="py-3 px-1 sm:px-4 font-normal w-[20%] sm:w-[25%] md:w-[15%] lg:w-[12%]">{sortControl('type', 'Type')}</th>
+                <th aria-sort={sort?.key === 'year' ? sort.direction : 'none'} className="py-3 px-1 sm:px-4 font-normal w-[20%] sm:w-[25%] md:w-[15%] lg:w-[12%]">{sortControl('year', 'Year')}</th>
                 <th className="py-3 px-4 font-normal hidden lg:table-cell lg:w-[23%]">Medium / Scope</th>
-                <th className="py-3 px-4 font-normal text-right w-[25%] sm:w-[20%] lg:w-[15%]">Reference</th>
+                <th className="py-3 px-4 font-normal text-right hidden md:table-cell md:w-[20%] lg:w-[15%]">Reference</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-black/10">
-              {filteredEntries.map((entry) => (
+              {sortedEntries.map((entry) => (
                 <tr
                   key={entry.id}
                   onClick={() => onSelectEntry(entry.slug)}
@@ -235,12 +268,12 @@ export const IndexView: React.FC<IndexViewProps> = ({
                   </td>
 
                   {/* Type */}
-                  <td className="py-4 px-4 align-baseline text-xs font-mono-quiet text-black/60 capitalize hidden sm:table-cell">
+                  <td className="py-4 px-1 sm:px-4 align-baseline text-[10px] sm:text-xs font-mono-quiet text-black/60 capitalize break-words">
                     {entry.type}
                   </td>
 
                   {/* Date */}
-                  <td className="py-4 px-4 align-baseline text-xs font-mono-quiet text-black/60 hidden md:table-cell whitespace-nowrap">
+                  <td className="py-4 px-1 sm:px-4 align-baseline text-[10px] sm:text-xs font-mono-quiet text-black/60 break-words">
                     {entry.date || '—'}
                   </td>
 
@@ -250,7 +283,7 @@ export const IndexView: React.FC<IndexViewProps> = ({
                   </td>
 
                   {/* Link */}
-                  <td className="py-4 px-4 align-baseline text-right">
+                  <td className="py-4 px-4 align-baseline text-right hidden md:table-cell">
                     <span className="font-mono-quiet text-xs text-black/40 group-hover:text-black">
                       View →
                     </span>
@@ -269,7 +302,7 @@ export const IndexView: React.FC<IndexViewProps> = ({
       ) : (
         /* Thumbnail Tiles Mode */
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 pt-4">
-          {filteredEntries.map((entry) => {
+          {sortedEntries.map((entry) => {
             const thumbnail = getEntryBlocks(entry)
               .flatMap(block => block.type === 'image_gallery' ? block.images : [])
               .find(image => image.url);
