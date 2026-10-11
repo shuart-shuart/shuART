@@ -1,4 +1,5 @@
 import React from 'react';
+import { Shuffle } from 'lucide-react';
 import { useStickyHeight } from '../services/useStickyHeight';
 import { ViewMode, NavItemConfig } from '../types';
 
@@ -57,9 +58,10 @@ export const Header: React.FC<HeaderProps> = ({
                       ? 'text-black font-medium border-b border-black'
                       : 'text-black/60 hover:text-black'
                   }`}
-                  title="Jump to a random published entry"
+                  title="Wander — jump to a random entry"
+                  aria-label="Wander — jump to a random entry"
                 >
-                  {item.label}
+                  <Shuffle size={18} strokeWidth={1.5} aria-hidden="true" className="inline-block align-middle" />
                 </button>
               );
             }

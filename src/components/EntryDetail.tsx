@@ -61,11 +61,19 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
 
   const entryTags = useMemo(() => canonicalEntryTags(entry, tags), [entry.tagIds, tags]);
 
-  const connectionSections = [
-    { label: 'Project entries', items: associatedProjectEntries },
-    { label: 'Related entries', items: relatedEntries },
-    { label: 'Backlinks', items: backlinks },
-  ].filter(section => section.items.length > 0);
+  // Deduplicate entries while retaining every reason for the connection.
+  const connectionMap = new Map<string, { entry: Entry; relationships: string[] }>();
+  const addConnection = (item: Entry | undefined, relationship: string) => {
+    if (!item || item.id === entry.id) return;
+    const connection = connectionMap.get(item.id) || { entry: item, relationships: [] };
+    if (!connection.relationships.includes(relationship)) connection.relationships.push(relationship);
+    connectionMap.set(item.id, connection);
+  };
+  associatedProjects.forEach(item => addConnection(item, 'Part of'));
+  associatedProjectEntries.forEach(item => addConnection(item, 'In this project'));
+  relatedEntries.forEach(item => addConnection(item, 'Related'));
+  backlinks.forEach(link => addConnection(allEntries.find(item => item.id === link.id), 'Links here'));
+  const connections = [...connectionMap.values()];
 
   const renderWikiText = (text: string) => renderFormattedText(text, { allEntries, onSelectEntry });
 
@@ -144,26 +152,6 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
         {entry.isDevelopingWork && (
           <div className="py-2.5 px-3.5 border-l-2 border-black/30 bg-black/[0.02] text-xs font-mono-quiet text-black/70">
             Developing study / working fragment — not presented as a completed artwork.
-          </div>
-        )}
-
-        {/* Associated Projects badge */}
-        {associatedProjects.length > 0 && (
-          <div className="py-2.5 px-3.5 border-l-2 border-black/30 bg-black/[0.02] text-xs text-black/80 font-sans flex flex-wrap items-center gap-2">
-            <span className="font-mono-quiet text-[11px] text-black/50 uppercase tracking-wider">
-              {associatedProjects.length === 1 ? 'Associated Project:' : 'Associated Projects:'}
-            </span>
-            {associatedProjects.map((proj, idx) => (
-              <React.Fragment key={proj.id}>
-                <button
-                  onClick={() => onSelectEntry(proj.slug)}
-                  className="font-editorial underline hover:text-black font-medium text-sm text-black"
-                >
-                  {proj.title}
-                </button>
-                {idx < associatedProjects.length - 1 && <span className="text-black/30">·</span>}
-              </React.Fragment>
-            ))}
           </div>
         )}
 
@@ -316,39 +304,43 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
         </section>
       )}
 
-      {/* Show only populated connection lists. */}
-      {connectionSections.length > 0 && (
-        <div className={`grid grid-cols-1 ${connectionSections.length > 1 ? 'sm:grid-cols-2' : ''} gap-6 pt-6 border-t border-black/10 mt-8`}>
-          {connectionSections.map(section => (
-            <section key={section.label}>
-              <h3 className="font-mono-quiet uppercase text-xs tracking-wider text-black/40 mb-2">
-                {section.label} ({section.items.length})
-              </h3>
-              <ul>
-                {section.items.map(item => (
-                  <li key={item.id}>
-                    <a
-                      href={`#entry/${item.slug}`}
-                      onClick={event => {
-                        if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-                        event.preventDefault();
-                        onSelectEntry(item.slug);
-                      }}
-                      className="group flex items-baseline justify-between gap-3 px-3 py-2 hover:bg-black/5 focus-visible:bg-black/5 transition-colors"
-                    >
-                      <span className="leading-tight">
-                        <EntryTitle inline entry={item} primaryClassName="font-editorial text-base text-black group-hover:underline" chineseClassName="font-editorial text-base text-black/70 group-hover:underline" />
-                      </span>
-                      <span className="text-[11px] font-mono-quiet text-black/40 capitalize shrink-0">
-                        {item.type}
-                      </span>
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </section>
-          ))}
-        </div>
+      {/* All entry relationships share one deduplicated list. */}
+      {connections.length > 0 && (
+        <section className="pt-6 border-t border-black/10 mt-8">
+          <h3 className="font-mono-quiet uppercase text-xs tracking-wider text-black/40 mb-3">
+            Connections ({connections.length})
+          </h3>
+          <ul className={`grid grid-cols-1 ${connections.length > 1 ? 'sm:grid-cols-2' : ''} gap-x-6 gap-y-2`}>
+            {connections.map(({ entry: item, relationships }) => (
+              <li key={item.id} className="px-3 py-3 hover:bg-black/5 focus-within:bg-black/5 transition-colors space-y-1">
+                <div className="flex items-baseline justify-between gap-3">
+                  <a
+                    href={`#entry/${item.slug}`}
+                    onClick={event => {
+                      if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+                      event.preventDefault();
+                      onSelectEntry(item.slug);
+                    }}
+                    className="group leading-tight focus-visible:underline underline-offset-2"
+                  >
+                    <EntryTitle inline entry={item} primaryClassName="font-editorial text-base text-black group-hover:underline" chineseClassName="font-editorial text-base text-black/70 group-hover:underline" />
+                  </a>
+                  <span className="text-[11px] font-mono-quiet text-black/40 capitalize shrink-0">
+                    {item.type}
+                  </span>
+                </div>
+                <p className="text-[11px] font-mono-quiet text-black/40">
+                  {relationships.join(' · ')}
+                </p>
+                {item.shortDescription && (
+                  <p className="text-xs sm:text-sm text-black/60 font-sans leading-relaxed line-clamp-2">
+                    {renderWikiText(item.shortDescription)}
+                  </p>
+                )}
+              </li>
+            ))}
+          </ul>
+        </section>
       )}
 
       {/* Lightbox Modal */}

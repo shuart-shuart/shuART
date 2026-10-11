@@ -253,7 +253,7 @@ export const EditorSettingsSection: React.FC<EditorSettingsSectionProps> = ({
             3. Wander Exploration Setting
           </h3>
           <p className="text-xs text-black/60 font-mono-quiet">
-            Controls the visibility of the Wander text link and direct access to #wander.
+            Controls the visibility of the Wander shuffle icon and direct access to #wander.
           </p>
         </div>
 
@@ -268,7 +268,7 @@ export const EditorSettingsSection: React.FC<EditorSettingsSectionProps> = ({
           <label htmlFor="toggleWanderMain" className="text-xs font-sans text-black/85 cursor-pointer leading-relaxed">
             <strong>Enable Wander for public visitors</strong>
             <p className="text-black/60 font-mono-quiet text-[11px] pt-1">
-              When checked, the quiet "Wander" link appears in the public header and footer. Clicking it randomly jumps to a published archive entry. When unchecked, the link is completely hidden and direct public access to #wander is blocked.
+              When checked, the Wander shuffle icon appears in the public header. Clicking it randomly jumps to a published archive entry. When unchecked, the link is completely hidden and direct public access to #wander is blocked.
             </p>
           </label>
         </div>
