@@ -1,3 +1,4 @@
+import { HtmlContent } from '../HtmlContent';
 import React, { useState } from 'react';
 import {
   ContentBlock,
@@ -337,6 +338,14 @@ export const BlockEditorItem: React.FC<BlockEditorItemProps> = ({
         />
       )}
 
+      {block.type === 'html' && <div className="space-y-3">
+        <label className="block text-xs font-mono-quiet space-y-2">HTML code
+          <textarea value={block.content} onChange={e => onUpdateBlock({...block, content:e.target.value})} rows={10} spellCheck={false} className="w-full border border-black/25 p-3 text-xs font-mono-quiet" placeholder={'<p>Your content <em>here</em>.</p>'} />
+        </label>
+        <p className="text-xs text-black/60">Supports headings, lists, links, image URLs, tables and simple inline layout styles. Scripts, forms and iframes are removed. Use a Video block for video embeds.</p>
+        <details className="text-sm"><summary className="cursor-pointer">Preview HTML</summary><div className="mt-3 p-3 border border-black/10"><HtmlContent content={block.content} /></div></details>
+      </div>}
+
       {/* ---------------- 2. IMAGE GALLERY BLOCK EDITOR ---------------- */}
       {block.type === 'image_gallery' && (
         <div className="space-y-4">
@@ -363,14 +372,21 @@ export const BlockEditorItem: React.FC<BlockEditorItemProps> = ({
                   onUpdateBlock({
                     ...block,
                     layout: e.target.value as 'stacked' | 'grid' | 'carousel',
+                    autoPlay: e.target.value === 'carousel' ? ((block as ImageGalleryBlock).autoPlay ?? true) : (block as ImageGalleryBlock).autoPlay,
                   } as ImageGalleryBlock)
                 }
                 className="w-full p-2 border border-black/25 text-xs font-mono-quiet bg-white focus:outline-none focus:border-black"
               >
                 <option value="stacked">Stacked (Single-column vertical)</option>
                 <option value="grid">Grid (Two-column layout)</option>
+                <option value="carousel">Slideshow (One image at a time)</option>
               </select>
             </div>
+          {(block as ImageGalleryBlock).layout === 'carousel' && <div className="flex flex-wrap items-center gap-4 text-xs">
+            <label className="flex gap-2 items-center"><input type="checkbox" checked={!!(block as ImageGalleryBlock).autoPlay} onChange={e=>onUpdateBlock({...block,autoPlay:e.target.checked} as ImageGalleryBlock)} />Auto play</label>
+            <label className="flex gap-2 items-center">Seconds per image <input type="number" min={2} max={20} value={(block as ImageGalleryBlock).intervalSeconds || 5} onChange={e=>onUpdateBlock({...block,intervalSeconds:Math.min(20,Math.max(2,Number(e.target.value)||5))} as ImageGalleryBlock)} className="w-16 border border-black/25 p-1" /></label>
+          </div>}
+
           </div>
 
           {/* Upload Button */}

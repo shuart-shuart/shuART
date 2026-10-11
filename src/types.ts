@@ -26,7 +26,13 @@ export interface EntryImage {
 }
 
 // ---------------- Content Block Definitions ----------------
-export type ContentBlockType = 'text' | 'image_gallery' | 'document_reader' | 'video';
+export type ContentBlockType = 'text' | 'html' | 'image_gallery' | 'document_reader' | 'video';
+
+export interface HtmlBlock {
+  id: string;
+  type: 'html';
+  content: string;
+}
 
 export interface TextBlock {
   id: string;
@@ -40,6 +46,8 @@ export interface ImageGalleryBlock {
   title?: string;
   images: EntryImage[];
   layout?: 'stacked' | 'grid' | 'carousel';
+  autoPlay?: boolean;
+  intervalSeconds?: number;
 }
 
 export type DocumentSourceType = 'pdf' | 'page_images';
@@ -88,6 +96,7 @@ export interface VideoBlock {
 }
 
 export type ContentBlock =
+  | HtmlBlock
   | TextBlock
   | ImageGalleryBlock
   | DocumentReaderBlock

@@ -14,7 +14,7 @@ export const ImageLightbox: React.FC<LightboxProps> = ({ image, onClose }) => {
     <div
       role="dialog"
       aria-modal="true"
-      className="fixed inset-0 z-50 bg-white/95 backdrop-blur-sm flex flex-col justify-between p-6 sm:p-10 cursor-zoom-out"
+      className="fixed inset-0 z-50 bg-neutral-500/30 flex flex-col justify-between p-6 sm:p-10 cursor-zoom-out"
       onClick={onClose}
     >
       <div className="flex justify-between items-center text-xs font-mono-quiet text-black/50">
@@ -31,7 +31,7 @@ export const ImageLightbox: React.FC<LightboxProps> = ({ image, onClose }) => {
         <img
           src={image.url}
           alt={formattedTextToPlainText(image.alt || image.caption) || 'Archive document'}
-          className="max-h-[82vh] max-w-full object-contain cursor-default shadow-sm border border-black/5"
+          className="max-h-[82vh] max-w-full object-contain cursor-default"
           onClick={(e) => e.stopPropagation()}
         />
       </div>

@@ -81,3 +81,13 @@ entries, tags and settings. Imported content remains local until Publish.
 
 The token connection avoids a separate server. A future GitHub OAuth login would
 require an authentication service; no OAuth server is deployed by this version.
+
+HTML blocks: use **+ HTML** in an entry's content blocks. Preview renders the
+same sanitized HTML as the public page. Text, images by URL, links, tables and
+simple inline typography/flex/grid styles are supported. Scripts, event handlers,
+forms, iframes and unsafe URLs/styles are stripped. Use Video blocks for embeds.
+
+Gallery slideshows: select **Slideshow** as the gallery layout, enable **Auto play**,
+and choose 2–20 seconds per image (default 5). Autoplay pauses while the gallery
+is hovered, keyboard focus is inside it, or its lightbox is open. Reduced-motion
+preferences disable autoplay. Visitors can pause and navigate manually.

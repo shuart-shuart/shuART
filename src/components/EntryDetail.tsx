@@ -1,3 +1,5 @@
+import { HtmlContent } from './HtmlContent';
+import { GallerySlideshow } from './GallerySlideshow';
 import { entryTags as canonicalEntryTags } from '../services/canonicalTags';
 import { EntryTitle } from './EntryTitle';
 import { renderFormattedText, formattedTextToPlainText } from '../services/formatting';
@@ -217,6 +219,8 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
             );
           }
 
+          if (block.type === 'html') return <section key={block.id}><HtmlContent content={block.content} /></section>;
+
           if (block.type === 'image_gallery') {
             const hasImages = block.images && block.images.length > 0;
             if (!hasImages) return null;
@@ -227,11 +231,12 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
                     {renderWikiText(block.title)}
                   </h4>
                 )}
+                {block.layout === 'carousel' ? <GallerySlideshow block={block} onOpen={setActiveLightboxImage} isLightboxOpen={!!activeLightboxImage} /> : (
                 <div className={block.layout === 'grid' ? 'grid grid-cols-1 sm:grid-cols-2 gap-6' : 'space-y-8'}>
                   {block.images.map((img, idx) => (
                     <figure key={img.id || idx} className="space-y-2">
                       <div
-                        className="overflow-hidden border border-black/10 cursor-zoom-in bg-black/[0.01]"
+                        className="overflow-hidden cursor-zoom-in"
                         onClick={() => setActiveLightboxImage(img)}
                       >
                         <img
@@ -250,6 +255,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
                     </figure>
                   ))}
                 </div>
+                )}
               </section>
             );
           }

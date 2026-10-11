@@ -1,3 +1,4 @@
+import { HtmlContent } from './HtmlContent';
 import { entryTags } from '../services/canonicalTags';
 import { EntryTitle } from './EntryTitle';
 import { renderFormattedText } from '../services/formatting';
@@ -114,6 +115,7 @@ export const TagView: React.FC<TagViewProps> = ({
                     </div>
                   );
                 }
+                if (block.type === 'html') return <section key={block.id}><HtmlContent content={block.content} /></section>;
                 if (block.type === 'text') {
                   return (
                     <div

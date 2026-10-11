@@ -1,3 +1,4 @@
+import { htmlContentToText } from './htmlContent';
 import { Entry, ContentBlock, EntryImage } from '../types';
 
 /**
@@ -45,6 +46,8 @@ export function syncEntryFromBlocks(entry: Entry, blocks: ContentBlock[]): Entry
   blocks.forEach((block) => {
     if (block.type === 'text') {
       if (block.content) textParts.push(block.content);
+    } else if (block.type === 'html') {
+      textParts.push(htmlContentToText(block.content));
     } else if (block.type === 'image_gallery') {
       if (block.title) textParts.push(block.title);
       if (block.images && block.images.length > 0) {

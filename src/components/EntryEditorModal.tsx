@@ -318,6 +318,9 @@ export const EntryEditorModal: React.FC<EntryEditorModalProps> = ({
           content: '',
         };
         break;
+      case 'html':
+        newBlock = { id: newId, type: 'html', content: '' };
+        break;
       case 'image_gallery':
         newBlock = {
           id: newId,
@@ -910,6 +913,7 @@ export const EntryEditorModal: React.FC<EntryEditorModalProps> = ({
 
               {/* Add block toolbar */}
               <div className="flex flex-wrap items-center gap-1.5 font-mono-quiet text-xs shrink-0">
+                <button type="button" onClick={() => handleAddBlock('html')} className="px-2.5 py-1 border border-black/30 text-[11px]">+ HTML</button>
                 <button
                   type="button"
                   onClick={() => handleAddBlock('text')}
