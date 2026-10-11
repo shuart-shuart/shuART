@@ -83,7 +83,6 @@ export async function prepareArchiveMedia(bundle: ArchiveBundle): Promise<{ bund
   validateArchive(bundle);
   const publicBundle: ArchiveBundle = { ...bundle, entries: bundle.entries.filter(entry => entry.status === 'published').map(({ notesForArtist, ...entry }) => entry) };
   const media = new Map<string, {path: string; base64: string}>();
-  let total = 0;
   async function visit(value: any): Promise<any> {
     if (typeof value === 'string' && Object.prototype.hasOwnProperty.call(legacyMediaUrls, value)) return (legacyMediaUrls as Record<string,string>)[value];
     if (typeof value === 'string' && value.startsWith('data:')) {
@@ -95,8 +94,7 @@ export async function prepareArchiveMedia(bundle: ArchiveBundle): Promise<{ bund
       if (bytes.length > MAX_UPLOAD_BYTES) throw new Error('An embedded file exceeds the 2 MB upload limit.');
       const hash = Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', bytes as Uint8Array<ArrayBuffer>))).map(b => b.toString(16).padStart(2, '0')).join('');
       const path = `public/media/${hash}.${MEDIA_TYPES[match[1]]}`;
-      if (!media.has(path)) { total += bytes.length; media.set(path, {path, base64}); }
-      if (total > 20 * 1024 * 1024) throw new Error('Publish fewer than 20 MB of new media at a time.');
+      if (!media.has(path)) media.set(path, {path, base64});
       return `https://raw.githubusercontent.com/${REPOSITORY}/main/${path}`;
     }
     if (Array.isArray(value)) return Promise.all(value.map(visit));
@@ -110,11 +108,12 @@ export async function prepareArchiveMedia(bundle: ArchiveBundle): Promise<{ bund
   return { bundle: await visit(publicBundle), media: [...media.values()] };
 }
 
-export async function publishArchive(bundle: ArchiveBundle, expectedContentSha: string) {
+export async function publishArchive(bundle: ArchiveBundle, expectedContentSha: string, onProgress: (message: string) => void = () => {}) {
   if (publishing) throw new Error('A publish is already running.');
   if (!expectedContentSha) throw new Error('Missing draft baseline. Reload the repository content before publishing.');
   publishing = true;
   try {
+    onProgress('Checking repository content…');
     const head = await request('/git/ref/heads/main');
     const parentSha = head.object.sha;
     const current = await readRepositoryArchive(parentSha);
@@ -126,6 +125,7 @@ export async function publishArchive(bundle: ArchiveBundle, expectedContentSha: 
       validateArchive(base);
       draft = mergeArchive(base, bundle, current.bundle);
     }
+    onProgress('Preparing content and media…');
     const prepared = await prepareArchiveMedia(draft);
     const publishedEntries = new Map(prepared.bundle.entries.map(entry => [entry.id, entry]));
     const localBundle: ArchiveBundle = { ...draft, entries: draft.entries.map(entry => {
@@ -137,10 +137,12 @@ export async function publishArchive(bundle: ArchiveBundle, expectedContentSha: 
     if (!prepared.media.length && JSON.stringify(current.bundle) === JSON.stringify(prepared.bundle)) return { bundle: localBundle, contentSha: current.sha, commitSha: parentSha, changed: false };
     const parent = await request(`/git/commits/${parentSha}`);
     const elements: {path: string; mode: string; type: string; sha: string}[] = [];
-    for (const file of prepared.media) {
+    for (const [index, file] of prepared.media.entries()) {
+      onProgress(`Uploading media ${index + 1} of ${prepared.media.length}… Keep this tab open.`);
       const blob = await request('/git/blobs', 'POST', { content: file.base64, encoding: 'base64' });
       elements.push({path:file.path,mode:'100644',type:'blob',sha:blob.sha});
     }
+    onProgress('Committing archive content to GitHub…');
     const archiveBlob = await request('/git/blobs', 'POST', { content, encoding: 'utf-8' });
     elements.push({path:CONTENT_PATH,mode:'100644',type:'blob',sha:archiveBlob.sha});
     const tree = await request('/git/trees', 'POST', {base_tree:parent.tree.sha,tree:elements});

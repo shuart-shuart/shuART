@@ -11,7 +11,7 @@ export const GitHubPublishPanel: React.FC<Props> = ({entries, tags, settings, on
   async function publish() {
     setBusy(true); setMessage('Publishing content and media…'); setCommit('');
     try {
-      const result = await publishArchive({version:3,entries,tags,settings}, localStorage.getItem(DRAFT_BASE_KEY) || '');
+      const result = await publishArchive({version:3,entries,tags,settings}, localStorage.getItem(DRAFT_BASE_KEY) || '', setMessage);
       setCommit(result.commitSha);
       onPublished(result.bundle);
       try { await replaceGitHubDraft(result.bundle, result.contentSha); }

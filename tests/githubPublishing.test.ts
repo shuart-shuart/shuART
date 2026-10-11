@@ -206,3 +206,23 @@ test('stale drafts merge independent GitHub settings and retain local entry edit
   assert.equal(content.settings.index.title,'Index');
   assert.equal(draft.settings.index,undefined,'caller draft stays intact');
 });
+
+test('publishes more than 20 MB of new media with progress and one final archive commit', async () => {
+  setup(); await connect(); calls=[];
+  const draft=bundle();
+  draft.entries[0].images=Array.from({length:11},(_,index)=>{
+    const bytes=Buffer.alloc(2*1024*1024,index);
+    return {id:`large-${index}`,url:'data:image/jpeg;base64,'+bytes.toString('base64')};
+  });
+  const progress:string[]=[];
+  const result=await publishArchive(draft,'content-old',message=>progress.push(message));
+  const blobs=calls.filter(call=>call.path==='/git/blobs');
+  assert.equal(blobs.filter(call=>call.body.encoding==='base64').length,11);
+  assert.equal(blobs.filter(call=>call.body.encoding==='utf-8').length,1);
+  assert.equal(calls.filter(call=>call.path==='/git/commits' && call.method==='POST').length,1);
+  assert.ok(progress.some(message=>message.includes('Uploading media 11 of 11')));
+  assert.equal(calls.at(-1)!.path,'/git/refs/heads/main');
+  assert.equal(calls.at(-1)!.body.force,false);
+  assert.equal(result.bundle.entries[0].images!.length,11);
+  assert.ok(result.bundle.entries[0].images!.every(image=>!image.url.startsWith('data:')));
+});
