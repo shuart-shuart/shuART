@@ -1,5 +1,7 @@
 import { DEFAULT_INDEX } from '../data/siteContent';
-import { renderFormattedText } from '../services/formatting';
+import { formattedTextToPlainText, renderFormattedText } from '../services/formatting';
+import { getEntryBlocks } from '../services/blockUtils';
+import { publicAssetUrl } from '../services/publicAssetUrl';
 import { entryTags, tagCounts } from '../services/canonicalTags';
 import { EntryTitle } from './EntryTitle';
 import { useStickyHeight } from '../services/useStickyHeight';
@@ -156,7 +158,7 @@ export const IndexView: React.FC<IndexViewProps> = ({
                   displayMode === 'cards' ? 'text-black font-medium underline' : 'text-black/50 hover:text-black'
                 }`}
               >
-                Expanded
+                Tiles
               </button>
             </div>
           </div>
@@ -204,11 +206,11 @@ export const IndexView: React.FC<IndexViewProps> = ({
           <table className="w-full table-fixed text-left text-sm font-sans border-collapse index-directory">
             <thead>
               <tr className="border-b border-black/20 text-xs font-mono-quiet text-black/40 uppercase tracking-wider">
-                <th className="py-3 pr-4 font-normal w-[75%] sm:w-[65%] md:w-[50%] lg:w-[38%]">Title</th>
+                <th className="py-3 px-4 font-normal w-[75%] sm:w-[65%] md:w-[50%] lg:w-[38%]">Title</th>
                 <th className="py-3 px-4 font-normal hidden sm:table-cell sm:w-[15%] lg:w-[12%]">Type</th>
                 <th className="py-3 px-4 font-normal hidden md:table-cell md:w-[15%] lg:w-[12%]">Date</th>
                 <th className="py-3 px-4 font-normal hidden lg:table-cell lg:w-[23%]">Medium / Scope</th>
-                <th className="py-3 pl-4 font-normal text-right w-[25%] sm:w-[20%] lg:w-[15%]">Reference</th>
+                <th className="py-3 px-4 font-normal text-right w-[25%] sm:w-[20%] lg:w-[15%]">Reference</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-black/10">
@@ -219,7 +221,7 @@ export const IndexView: React.FC<IndexViewProps> = ({
                   className={`group cursor-pointer transition-colors ${TYPE_HOVER[entry.type]}`}
                 >
                   {/* Title & Chinese */}
-                  <td className="py-4 pr-4 align-baseline">
+                  <td className="py-4 px-4 align-baseline">
                     <div>
                       <a href={`#entry/${entry.slug}`} onClick={event=>followEntry(event,entry.slug)} className="block leading-[1.2] focus-visible:underline underline-offset-2">
                         <EntryTitle inline entry={entry} primaryClassName="font-editorial text-[15px] sm:text-base text-black group-hover:underline" chineseClassName="font-editorial text-[15px] sm:text-base text-black/70 group-hover:underline" />
@@ -248,7 +250,7 @@ export const IndexView: React.FC<IndexViewProps> = ({
                   </td>
 
                   {/* Link */}
-                  <td className="py-4 pl-4 align-baseline text-right">
+                  <td className="py-4 px-4 align-baseline text-right">
                     <span className="font-mono-quiet text-xs text-black/40 group-hover:text-black">
                       View →
                     </span>
@@ -265,15 +267,29 @@ export const IndexView: React.FC<IndexViewProps> = ({
           )}
         </div>
       ) : (
-        /* Expanded Archival Cards Mode */
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pt-4">
-          {filteredEntries.map((entry) => (
+        /* Thumbnail Tiles Mode */
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 pt-4">
+          {filteredEntries.map((entry) => {
+            const thumbnail = getEntryBlocks(entry)
+              .flatMap(block => block.type === 'image_gallery' ? block.images : [])
+              .find(image => image.url);
+            return (
             <article
               key={entry.id}
               onClick={() => onSelectEntry(entry.slug)}
-              className={`group cursor-pointer p-6 border border-black/10 hover:border-black transition-colors flex flex-col justify-between space-y-4 bg-white ${TYPE_HOVER[entry.type]}`}
+              className={`group cursor-pointer p-4 border border-black/10 hover:border-black transition-colors flex flex-col justify-between space-y-4 bg-white ${TYPE_HOVER[entry.type]}`}
             >
               <div className="space-y-2">
+                {thumbnail && (
+                  <a href={`#entry/${entry.slug}`} onClick={event => followEntry(event, entry.slug)} className="block mb-4" aria-label={`Open ${entry.title}`}>
+                    <img
+                      src={publicAssetUrl(thumbnail.url)}
+                      alt={formattedTextToPlainText(thumbnail.alt || thumbnail.caption || entry.title)}
+                      className="w-full aspect-[4/3] object-contain"
+                      loading="lazy"
+                    />
+                  </a>
+                )}
                 <div className="flex items-center gap-2 text-[11px] font-mono-quiet text-black/50">
                   <span className="capitalize text-black font-medium">{entry.type}</span>
                   {entry.date && (
@@ -296,11 +312,6 @@ export const IndexView: React.FC<IndexViewProps> = ({
                   </a>
                 </h3>
 
-                {entry.shortDescription && (
-                  <p className="text-base sm:text-lg text-black/70 font-sans leading-[1.65] line-clamp-3 pt-1">
-                    {entry.shortDescription}
-                  </p>
-                )}
               </div>
 
               {/* Subjects & Project Badges / Footer */}
@@ -318,7 +329,8 @@ export const IndexView: React.FC<IndexViewProps> = ({
                 <span className="group-hover:text-black shrink-0">Open →</span>
               </div>
             </article>
-          ))}
+            );
+          })}
 
           {filteredEntries.length === 0 && (
             <div className="col-span-full py-16 text-center text-sm font-editorial text-black/50 italic">
