@@ -184,101 +184,16 @@
       "updatedAt": "2026-10-11T16:15:35.482Z"
     },
     {
-      "id": "entry-creak-of-dawn",
-      "slug": "creak-of-dawn",
-      "title": "乍鸣 creak of dawn",
-      "titleZh": "乍鸣",
-      "type": "work",
-      "date": "2024",
-      "datePlaceholder": false,
-      "medium": "Montage of self-recorded and found field recordings of birds at sunrise\n30’42”",
-      "shortDescription": "乍鸣 creak of dawn gathers self-recorded and found recordings of birds at sunrise into a 30-minute sound work.",
-      "credits": [],
-      "presentationHistory": [
-        {
-          "id": "history-creak-of-dawn-1",
-          "title": "A Reservoir of Time",
-          "venue": "Objectifs",
-          "location": "",
-          "date": "2023",
-          "action": "presented",
-          "curator": "Goh Chun Aik",
-          "attribution": "curated",
-          "link": "",
-          "note": "Part of Objectifs' Curator Open Call 2023."
-        }
-      ],
-      "fullText": "I remember this phrase \"日出而作 日落而息\": to work when the sunrises, rest when the sunsets. Taking from the phrase, this work looks beyond hours and minutes towards environmental ways of marking time. Layered together, the recordings form a cacophonous dawn: a day announced not by a clock, but by birds.\n\n<iframe style=\"border: 0; width: 100%; height: 120px;\" src=\"https://bandcamp.com/EmbeddedPlayer/album=3366118809/size=large/bgcol=ffffff/linkcol=e99708/tracklist=false/artwork=small/transparent=true/\" seamless><a href=\"https://shu0shushu.bandcamp.com/album/creak-of-dawn\">乍鸣 creak of dawn by shu</a></iframe>",
-      "images": [
-        {
-          "id": "400e533b-cb71-4e9f-bb83-c2926459ebdc",
-          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/9cda87bc25fffce2c3019cc6f5f19f59ea1fdf1838cdf7f1f2ac2e25eb038743.webp",
-          "caption": "",
-          "alt": "",
-          "credit": ""
-        }
-      ],
-      "blocks": [
-        {
-          "id": "block-mv41lhpb-479v",
-          "type": "image_gallery",
-          "title": "",
-          "images": [
-            {
-              "id": "400e533b-cb71-4e9f-bb83-c2926459ebdc",
-              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/9cda87bc25fffce2c3019cc6f5f19f59ea1fdf1838cdf7f1f2ac2e25eb038743.webp",
-              "caption": "",
-              "alt": "",
-              "credit": ""
-            }
-          ],
-          "layout": "stacked"
-        },
-        {
-          "id": "text-creak-of-dawn",
-          "type": "text",
-          "content": "I remember this phrase \"日出而作 日落而息\": to work when the sunrises, rest when the sunsets. Taking from the phrase, this work looks beyond hours and minutes towards environmental ways of marking time. Layered together, the recordings form a cacophonous dawn: a day announced not by a clock, but by birds."
-        },
-        {
-          "id": "block-mv41liwc-bj02",
-          "type": "text",
-          "content": "<iframe style=\"border: 0; width: 100%; height: 120px;\" src=\"https://bandcamp.com/EmbeddedPlayer/album=3366118809/size=large/bgcol=ffffff/linkcol=e99708/tracklist=false/artwork=small/transparent=true/\" seamless><a href=\"https://shu0shushu.bandcamp.com/album/creak-of-dawn\">乍鸣 creak of dawn by shu</a></iframe>"
-        }
-      ],
-      "tagIds": [],
-      "subjects": [],
-      "associatedProjectIds": [],
-      "relatedEntryIds": [],
-      "status": "published",
-      "isDevelopingWork": false,
-      "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-11T16:36:03.837Z"
-    },
-    {
       "id": "entry-on-notes",
       "slug": "on-notes",
       "title": "简谱简介 on notes",
+      "titleZh": "简谱简介",
       "type": "work",
       "date": "2024",
       "datePlaceholder": false,
-      "medium": "Single-channel video\n4’12”\nAP",
+      "medium": "Single-channel video",
+      "dimensions": "4’08”",
       "shortDescription": "简谱简介 on notes rambles through the incidental stories found within jianpu (cipher notation), attending to its symbols, annotations and the things that accumulate around the notes.",
-      "fullText": "简谱简介 on notes rambles through the incidental stories found within jianpu (cipher notation), attending to its symbols, annotations and the things that accumulate around the notes. Made as an alternative exhibition introduction for 彼觸 collecting cipher, it attempts to explain the notation by remembering how it has been used.",
-      "images": [],
-      "blocks": [
-        {
-          "id": "text-on-notes",
-          "type": "text",
-          "content": "Made as an alternative exhibition introduction for 彼觸 collecting cipher, it attempts to explain the notation by remembering how it has been used."
-        }
-      ],
-      "tagIds": [],
-      "subjects": [],
-      "relatedEntryIds": [],
-      "associatedProjectIds": [],
-      "status": "published",
-      "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-04T21:20:44Z",
       "credits": [],
       "presentationHistory": [
         {
@@ -294,7 +209,96 @@
           "note": "Made as an alternative exhibition introduction for a solo showcase."
         }
       ],
-      "titleZh": "简谱简介"
+      "fullText": "Made as an alternative exhibition introduction for 彼觸 collecting cipher, it attempts to explain the notation by remembering how it has been used.",
+      "images": [
+        {
+          "id": "7a767365-b49f-4c2e-9d44-0a692ab3c1ab",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/1bd475ba761aa26d0073ab7fa0da6f63142dfb68b92dc6d910b3ae6d5262eb18.png",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "7e461c13-e688-44a8-9a39-b0165dc269e2",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/9ae9ee618ad49ba1179265358893f139566af88e354d8c28d2b4a48e6dc4c2e8.png",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "dfb3a489-5c31-413e-befa-a595792b6673",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/03b84bf69a0b60be203419dd99878da2bbc77520b90b9669a1e112509ced1432.png",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "94320d9f-bf77-4685-8c25-db3cd20d60bd",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/e17d230b023388efde368a09f2b4e06b2e2e1fb2b2de29c1344ed1f1c54a7ed5.png",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        }
+      ],
+      "blocks": [
+        {
+          "id": "block-mv41rel2-z3nk",
+          "type": "video",
+          "provider": "youtube",
+          "originalUrl": "https://www.youtube.com/watch?v=2-uWAhdfEsI",
+          "embedUrl": "https://www.youtube-nocookie.com/embed/2-uWAhdfEsI?autoplay=0&rel=0&modestbranding=1",
+          "title": ""
+        },
+        {
+          "id": "text-on-notes",
+          "type": "text",
+          "content": "Made as an alternative exhibition introduction for 彼觸 collecting cipher, it attempts to explain the notation by remembering how it has been used."
+        },
+        {
+          "id": "block-mv41t42z-ob8e",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "7a767365-b49f-4c2e-9d44-0a692ab3c1ab",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/1bd475ba761aa26d0073ab7fa0da6f63142dfb68b92dc6d910b3ae6d5262eb18.png",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "7e461c13-e688-44a8-9a39-b0165dc269e2",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/9ae9ee618ad49ba1179265358893f139566af88e354d8c28d2b4a48e6dc4c2e8.png",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "dfb3a489-5c31-413e-befa-a595792b6673",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/03b84bf69a0b60be203419dd99878da2bbc77520b90b9669a1e112509ced1432.png",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "94320d9f-bf77-4685-8c25-db3cd20d60bd",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/e17d230b023388efde368a09f2b4e06b2e2e1fb2b2de29c1344ed1f1c54a7ed5.png",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            }
+          ],
+          "layout": "stacked"
+        }
+      ],
+      "tagIds": [],
+      "subjects": [],
+      "associatedProjectIds": [],
+      "relatedEntryIds": [],
+      "status": "published",
+      "isDevelopingWork": false,
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-11T16:41:04.951Z"
     },
     {
       "id": "entry-in-two-strokes",
