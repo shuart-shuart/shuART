@@ -57,8 +57,10 @@ does not rewrite that history. Unreferenced media files are retained rather than
 
 Media uploads support JPEG, PNG, WebP, GIF, AVIF and PDF, up to 2 MB per file.
 Videos should use external links. New media is staged as embedded browser draft
-content; browser storage limits can be reached with several uploads. Export a
-backup and reduce media size if a draft save reports storage is full. Media files
+content in IndexedDB, which supports larger drafts than localStorage. Existing
+v3 drafts migrate automatically after a successful database write. If browser
+storage is disabled or exhausted, use **Export backup including unsaved entry**
+in the entry editor. Media files
 are committed only on Publish. Files are served from GitHub raw URLs so editor
 previews can load them immediately after the commit.
 

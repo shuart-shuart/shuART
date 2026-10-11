@@ -227,8 +227,8 @@ export default function App() {
   };
 
   // Auth actions
-  const handleEditorLoginSuccess = (bundle: ArchiveBundle, sha: string) => {
-    const draft = beginGitHubEditorSession(bundle, sha);
+  const handleEditorLoginSuccess = async (bundle: ArchiveBundle, sha: string) => {
+    const draft = await beginGitHubEditorSession(bundle, sha);
     setEntries(draft.entries);
     setTags(draft.tags);
     setSiteSettings(draft.settings);
@@ -332,8 +332,8 @@ export default function App() {
     setSiteSettings(newSettings);
   };
 
-  const handleImportArchive = (bundle: ArchiveBundle) => {
-    saveDraftArchive(bundle);
+  const handleImportArchive = async (bundle: ArchiveBundle) => {
+    await saveDraftArchive(bundle);
     setEntries(bundle.entries); setTags(bundle.tags); setSiteSettings(bundle.settings);
   };
 

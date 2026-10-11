@@ -11,7 +11,7 @@ import {
 } from '../types';
 import { slugify } from '../services/wiki';
 import { getEntryBlocks, syncEntryFromBlocks } from '../services/blockUtils';
-import { getLocalTags, saveTag } from '../services/storage';
+import { getLocalTags, saveTag, exportArchiveAsJSON } from '../services/storage';
 import { BlockEditorItem } from './editor/BlockEditorItem';
 import { FormattedField } from './editor/FormattedField';
 
@@ -453,6 +453,54 @@ export const EntryEditorModal: React.FC<EntryEditorModalProps> = ({
     return canonicalTags.filter((t) => t.label.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
   }, [canonicalTags, tagSearchQuery]);
 
+  const buildCurrentEntry = (finalSlug = slug.trim() || slugify(title)): Entry => {
+    // Derive readable subjects from selectedTagIds
+    const tagLookup = new Map<string, string>();
+    canonicalTags.forEach((t) => tagLookup.set(t.id, t.label));
+    const subjects = selectedTagIds.map((tId) => tagLookup.get(tId) || tId.replace(/^tag-/, '').replace(/-/g, ' '));
+
+    const baseEntry: Entry = {
+      id: targetId,
+      slug: finalSlug,
+      title: title.trim(),
+      titleZh: titleZh.trim() || undefined,
+      type,
+      date: date.trim() || undefined,
+      datePlaceholder,
+      medium: medium.trim() || undefined,
+      dimensions: dimensions.trim() || undefined,
+      shortDescription: shortDescription.trim(),
+      credits: credits.filter((c) => c.name.trim() || c.link?.trim()),
+      presentationHistory: presentationHistory.filter(
+        (p) => [p.title, p.venue, p.location, p.date, p.curator, p.link, p.note].some(value => value?.trim())
+      ),
+      fullText: '',
+      images: [],
+      blocks,
+      tagIds: selectedTagIds,
+      subjects,
+      associatedProjectIds,
+      relatedEntryIds,
+      status,
+      isDevelopingWork,
+      notesForArtist: notesForArtist.trim() || undefined,
+      createdAt: entryToEdit?.createdAt || new Date().toISOString(),
+      updatedAt: new Date().toISOString(),
+    };
+
+    // Synchronize legacy fullText & images from blocks for search consistency
+    return syncEntryFromBlocks(baseEntry, blocks);
+
+  };
+
+  const exportUnsavedEntry = () => {
+    const current = buildCurrentEntry();
+    const entries = allEntries.some(entry => entry.id === current.id)
+      ? allEntries.map(entry => entry.id === current.id ? current : entry)
+      : [current, ...allEntries];
+    exportArchiveAsJSON(entries);
+  };
+
   // Submit Handler
   const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -493,45 +541,10 @@ export const EntryEditorModal: React.FC<EntryEditorModalProps> = ({
       return;
     }
 
-    // Derive readable subjects from selectedTagIds
-    const tagLookup = new Map<string, string>();
-    canonicalTags.forEach((t) => tagLookup.set(t.id, t.label));
-    const subjects = selectedTagIds.map((tId) => tagLookup.get(tId) || tId.replace(/^tag-/, '').replace(/-/g, ' '));
-
     setIsSaving(true);
 
     try {
-      const baseEntry: Entry = {
-        id: targetId,
-        slug: finalSlug,
-        title: title.trim(),
-        titleZh: titleZh.trim() || undefined,
-        type,
-        date: date.trim() || undefined,
-        datePlaceholder,
-        medium: medium.trim() || undefined,
-        dimensions: dimensions.trim() || undefined,
-        shortDescription: shortDescription.trim(),
-        credits: credits.filter((c) => c.name.trim() || c.link?.trim()),
-        presentationHistory: presentationHistory.filter(
-          (p) => [p.title, p.venue, p.location, p.date, p.curator, p.link, p.note].some(value => value?.trim())
-        ),
-        fullText: '',
-        images: [],
-        blocks,
-        tagIds: selectedTagIds,
-        subjects,
-        associatedProjectIds,
-        relatedEntryIds,
-        status,
-        isDevelopingWork,
-        notesForArtist: notesForArtist.trim() || undefined,
-        createdAt: entryToEdit?.createdAt || new Date().toISOString(),
-        updatedAt: new Date().toISOString(),
-      };
-
-      // Synchronize legacy fullText & images from blocks for search consistency
-      const synced = syncEntryFromBlocks(baseEntry, blocks);
+      const synced = buildCurrentEntry(finalSlug);
 
       // Perform write to storage
       await onSave(synced);
@@ -1151,7 +1164,10 @@ export const EntryEditorModal: React.FC<EntryEditorModalProps> = ({
         </form>
           {/* Keep save feedback visible while editing a long post. */}
           <div className="shrink-0 p-5 sm:p-6 border-t border-black/10 space-y-3">
-            {validationError && <p role="alert" className="text-xs text-red-700">{validationError}</p>}
+            {validationError && <div className="space-y-2">
+              <p role="alert" className="text-xs text-red-700">{validationError}</p>
+              <button type="button" onClick={exportUnsavedEntry} className="text-xs underline decoration-dotted">Export backup including unsaved entry</button>
+            </div>}
             {saveSuccessMsg && <p role="status" className="text-xs text-emerald-700">Saved to your browser draft. Publish to GitHub to update the live site.</p>}
           <div className="flex justify-between items-center">
             <button

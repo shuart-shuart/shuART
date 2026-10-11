@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ArchiveBundle, connectGitHub, disconnectGitHub } from '../services/githubPublishing';
 
-interface Props { isOpen: boolean; onClose: () => void; onSuccess: (bundle: ArchiveBundle, sha: string) => void; }
+interface Props { isOpen: boolean; onClose: () => void; onSuccess: (bundle: ArchiveBundle, sha: string) => void | Promise<void>; }
 export const EditorAuthModal: React.FC<Props> = ({ isOpen, onClose, onSuccess }) => {
   const [token, setToken] = useState('');
   const [error, setError] = useState('');
@@ -13,7 +13,7 @@ export const EditorAuthModal: React.FC<Props> = ({ isOpen, onClose, onSuccess })
     const submittedToken = token; setToken('');
     try {
       const snapshot = await connectGitHub(submittedToken);
-      onSuccess(snapshot.bundle, snapshot.sha);
+      await onSuccess(snapshot.bundle, snapshot.sha);
       onClose();
     } catch (e) { disconnectGitHub(); setError(e instanceof Error ? e.message : 'Could not connect to GitHub.'); }
     finally { setBusy(false); }

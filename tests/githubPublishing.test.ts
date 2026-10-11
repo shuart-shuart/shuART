@@ -111,21 +111,21 @@ test('rejects unsupported or oversized media and invalid duplicate entries', asy
 test('public readers ignore local drafts; reconnect retains drafts and their baseline', async () => {
   const memory=setup();
   const draft=bundle(); draft.entries[0].title='LOCAL ONLY'; draft.settings.about!.biography='LOCAL BIO';
-  saveDraftArchive(draft);
+  await saveDraftArchive(draft);
   assert.deepEqual(await fetchEntries(),PUBLISHED_ARCHIVE.entries);
   assert.deepEqual(await fetchSiteSettings(),PUBLISHED_ARCHIVE.settings);
-  await connect(); beginGitHubEditorSession(remote,'content-old');
-  const editing=getDraftArchive(); editing.entries[0].title='KEPT DRAFT'; saveDraftArchive(editing);
+  await connect(); await beginGitHubEditorSession(remote,'content-old');
+  const editing=getDraftArchive(); editing.entries[0].title='KEPT DRAFT'; await saveDraftArchive(editing);
   disconnectGitHub(); await connect();
-  const restored=beginGitHubEditorSession(remote,'new-remote-sha');
+  const restored=await beginGitHubEditorSession(remote,'new-remote-sha');
   assert.equal(restored.entries[0].title,'KEPT DRAFT');
   assert.equal(memory.get('shuart_github_draft_base_v3'),'content-old');
   assert.equal([...memory.values()].some(value=>value.includes('github_pat_')),false);
 });
 
 test('empty entries and tags stay empty; saving after deletion does not resurrect examples', async () => {
-  setup(); await connect(); beginGitHubEditorSession(remote,'content-old');
-  const empty={...bundle(),entries:[],tags:[]}; replaceGitHubDraft(empty,'content-old');
+  setup(); await connect(); await beginGitHubEditorSession(remote,'content-old');
+  const empty={...bundle(),entries:[],tags:[]}; await replaceGitHubDraft(empty,'content-old');
   assert.equal(getDraftArchive().entries.length,0);
   const entry=bundle().entries[0];
   const updated=await saveEntry(entry,[]);

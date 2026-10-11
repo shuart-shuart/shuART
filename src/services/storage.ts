@@ -1,6 +1,7 @@
 import { Entry, SiteSettings, NavItemConfig, Tag } from '../types';
 import { DESIGNATED_EDITOR_EMAIL } from './mediaUploads';
 import archiveData from '../data/archive.json';
+import { createDraftStore } from './draftStore';
 import { ArchiveBundle, DRAFT_BASE_KEY, isGitHubConnected, disconnectGitHub } from './githubPublishing';
 export const PUBLISHED_ARCHIVE = archiveData as unknown as ArchiveBundle;
 
@@ -51,28 +52,27 @@ export const DEFAULT_SITE_SETTINGS: SiteSettings = PUBLISHED_ARCHIVE.settings;
 
 // ---------------- Site Settings ----------------
 const DRAFT_KEY = 'shuart_archive_draft_v3';
-function readDraft(): ArchiveBundle {
-  const raw = localStorage.getItem(DRAFT_KEY);
-  return raw ? JSON.parse(raw) : PUBLISHED_ARCHIVE;
-}
+const draftStore = createDraftStore<ArchiveBundle>(DRAFT_KEY, PUBLISHED_ARCHIVE);
+const readDraft = draftStore.read;
 function writeDraft(patch: Partial<ArchiveBundle>) {
-  try { localStorage.setItem(DRAFT_KEY, JSON.stringify({ ...readDraft(), ...patch, version: 3 })); }
-  catch { throw new Error('Draft storage is full or unavailable. Export a backup and reduce embedded media before saving.'); }
+  return draftStore.update({ ...patch, version: 3 });
 }
 export function getLocalSettings(): SiteSettings { return readDraft().settings; }
-export function saveLocalSettings(settings: SiteSettings): void { writeDraft({ settings }); }
+export function saveLocalSettings(settings: SiteSettings) { return writeDraft({ settings }); }
 
 export async function fetchSiteSettings(): Promise<SiteSettings> {
+  await draftStore.initialize();
   return isGitHubConnected() ? getLocalSettings() : PUBLISHED_ARCHIVE.settings;
 }
 export async function updateSiteSettings(settings: SiteSettings): Promise<void> {
-  saveLocalSettings(settings);
+  await saveLocalSettings(settings);
 }
 
 export function getLocalTags(): Tag[] { return readDraft().tags; }
-export function saveLocalTags(tags: Tag[]): void { writeDraft({ tags }); }
+export function saveLocalTags(tags: Tag[]) { return writeDraft({ tags }); }
 
 export async function fetchTags(): Promise<Tag[]> {
+  await draftStore.initialize();
   return isGitHubConnected() ? getLocalTags() : PUBLISHED_ARCHIVE.tags;
 }
 
@@ -93,7 +93,7 @@ export async function saveTag(tag: Tag, currentTags?: Tag[]): Promise<Tag[]> {
       },
     ];
   }
-  saveLocalTags(updatedList);
+  await saveLocalTags(updatedList);
   return updatedList;
 }
 
@@ -104,7 +104,7 @@ export async function deleteTagById(
 ): Promise<{ tags: Tag[]; entries: Entry[] }> {
   const baseTags = currentTags ?? getLocalTags();
   const updatedTags = baseTags.filter((t) => t.id !== tagId);
-  saveLocalTags(updatedTags);
+  await saveLocalTags(updatedTags);
 
   const baseEntries = currentEntries ?? getLocalEntries();
   const updatedEntries = baseEntries.map((entry) => {
@@ -117,7 +117,7 @@ export async function deleteTagById(
     }
     return entry;
   });
-  saveLocalEntries(updatedEntries);
+  await saveLocalEntries(updatedEntries);
 
   return { tags: updatedTags, entries: updatedEntries };
 }
@@ -137,7 +137,7 @@ export async function mergeTags(
 
   const baseTags = currentTags ?? getLocalTags();
   const updatedTags = baseTags.filter((t) => t.id !== sourceTagId);
-  saveLocalTags(updatedTags);
+  await saveLocalTags(updatedTags);
 
   const baseEntries = currentEntries ?? getLocalEntries();
   const updatedEntries = baseEntries.map((entry) => {
@@ -154,16 +154,17 @@ export async function mergeTags(
     }
     return entry;
   });
-  saveLocalEntries(updatedEntries);
+  await saveLocalEntries(updatedEntries);
 
   return { tags: updatedTags, entries: updatedEntries };
 }
 
 // ---------------- Archive Entries ----------------
 export function getLocalEntries(): Entry[] { return readDraft().entries; }
-export function saveLocalEntries(entries: Entry[]): void { writeDraft({ entries }); }
+export function saveLocalEntries(entries: Entry[]) { return writeDraft({ entries }); }
 
 export async function fetchEntries(): Promise<Entry[]> {
+  await draftStore.initialize();
   return isGitHubConnected() ? getLocalEntries() : PUBLISHED_ARCHIVE.entries;
 }
 
@@ -188,8 +189,8 @@ export async function saveEntry(entry: Entry, currentAll?: Entry[]): Promise<Ent
     updatedList = [entry, ...baseList];
   }
 
-  // Persist and verify in local storage
-  saveLocalEntries(updatedList);
+  // Await the committed draft write before confirming the save
+  await saveLocalEntries(updatedList);
 
   return updatedList;
 }
@@ -265,7 +266,7 @@ export async function deleteEntryById(
       return cleaned;
     });
 
-  saveLocalEntries(updatedList);
+  await saveLocalEntries(updatedList);
 
   // Clean up any canonical tag linked to this note entry
   try {
@@ -279,7 +280,7 @@ export async function deleteEntryById(
       return t;
     });
     if (tagsChanged) {
-      saveLocalTags(cleanedTags);
+      await saveLocalTags(cleanedTags);
     }
   } catch (tagErr) {
     console.warn('Error updating linked note tag references:', tagErr);
@@ -299,17 +300,17 @@ export async function saveEntriesBatch(updatedEntries: Entry[], currentAll?: Ent
     map.set(entry.id, entry);
   }
   const fullList = Array.from(map.values());
-  saveLocalEntries(fullList);
+  await saveLocalEntries(fullList);
   return fullList;
 }
 
-export function resetToInitialSampleEntries(): Entry[] {
+export async function resetToInitialSampleEntries(): Promise<Entry[]> {
   try {
     localStorage.removeItem(DELETED_ENTRIES_KEY);
   } catch (err) {
     console.warn('Error clearing deleted entries key:', err);
   }
-  saveLocalEntries(PUBLISHED_ARCHIVE.entries);
+  await saveLocalEntries(PUBLISHED_ARCHIVE.entries);
   return PUBLISHED_ARCHIVE.entries;
 }
 
@@ -332,16 +333,17 @@ export function getLegacyBrowserArchive(): ArchiveBundle | null {
 export function getDraftArchive(): ArchiveBundle {
   return { version: 3, entries: getLocalEntries(), tags: getLocalTags(), settings: getLocalSettings() };
 }
-export function saveDraftArchive(bundle: ArchiveBundle) { writeDraft(bundle); }
-export function beginGitHubEditorSession(bundle: ArchiveBundle, sha: string): ArchiveBundle {
+export function saveDraftArchive(bundle: ArchiveBundle) { return writeDraft(bundle); }
+export async function beginGitHubEditorSession(bundle: ArchiveBundle, sha: string): Promise<ArchiveBundle> {
+  await draftStore.initialize();
   if (!localStorage.getItem(DRAFT_BASE_KEY)) {
-    saveDraftArchive(bundle);
+    await saveDraftArchive(bundle);
     localStorage.setItem(DRAFT_BASE_KEY, sha);
   }
   return getDraftArchive();
 }
-export function replaceGitHubDraft(bundle: ArchiveBundle, sha: string) {
-  saveDraftArchive(bundle);
+export async function replaceGitHubDraft(bundle: ArchiveBundle, sha: string) {
+  await saveDraftArchive(bundle);
   localStorage.removeItem(DELETED_ENTRIES_KEY);
   localStorage.setItem(DRAFT_BASE_KEY, sha);
 }
@@ -355,11 +357,12 @@ export function exportArchiveAsJSON(entries: Entry[], settings?: SiteSettings): 
     settings: settings || getLocalSettings(),
     entries,
   };
-  const dataStr = 'data:text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(bundle, null, 2));
+  const url = URL.createObjectURL(new Blob([JSON.stringify(bundle, null, 2)], { type: 'application/json' }));
   const downloadAnchor = document.createElement('a');
-  downloadAnchor.setAttribute('href', dataStr);
-  downloadAnchor.setAttribute('download', `hongshuying-archive-${new Date().toISOString().slice(0, 10)}.json`);
+  downloadAnchor.href = url;
+  downloadAnchor.download = `shuart-archive-backup-${new Date().toISOString().slice(0, 10)}.json`;
   document.body.appendChild(downloadAnchor);
   downloadAnchor.click();
   downloadAnchor.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
 }

@@ -17,7 +17,7 @@ interface EditorViewProps {
   onDeleteEntry: (id: string) => Promise<void> | void;
   onToggleStatus: (id: string) => Promise<void> | void;
   onSelectEntry: (slugOrId: string) => void;
-  onImportArchive: (bundle: ArchiveBundle) => void;
+  onImportArchive: (bundle: ArchiveBundle) => void | Promise<void>;
   onSaveEntry?: (entry: Entry) => Promise<void> | void;
   onBatchSaveEntries?: (entries: Entry[]) => Promise<void> | void;
   onSaveTag: (tag: Tag) => Promise<Tag[]> | void;
@@ -99,14 +99,14 @@ export const EditorView: React.FC<EditorViewProps> = ({
     if (!file) return;
 
     const reader = new FileReader();
-    reader.onload = (event) => {
+    reader.onload = async (event) => {
       try {
         const parsed = JSON.parse(event.target?.result as string);
         const entriesArray = Array.isArray(parsed) ? parsed : parsed.entries;
         if (Array.isArray(entriesArray)) {
           const bundle = { version: 3, entries: entriesArray, tags: parsed.tags ?? tags, settings: parsed.settings ?? siteSettings };
           validateArchive(bundle);
-          onImportArchive(bundle);
+          await onImportArchive(bundle);
           alert(`Successfully imported ${entriesArray.length} entries into archive.`);
         } else {
           alert('Invalid archive file format.');
