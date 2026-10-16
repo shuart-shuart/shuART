@@ -3538,6 +3538,227 @@
       "updatedAt": "2026-10-11T20:24:27.407Z"
     },
     {
+      "id": "entry-in-the-aisle-book",
+      "slug": "asm-book",
+      "title": "in the aisle",
+      "type": "publication",
+      "date": "2019",
+      "datePlaceholder": false,
+      "medium": "Newsprint zine\nself-published",
+      "dimensions": "25 x 33 x 0.8cm, 60pp +16pp",
+      "shortDescription": "in the aisle gathers photographs, textures and fragments of overheard conversation collected from Chinese supermarkets in Edinburgh.",
+      "credits": [],
+      "presentationHistory": [
+        {
+          "id": "history-in-the-aisle-book-1",
+          "title": "Pingyao International Photography Festival",
+          "venue": "",
+          "location": "China",
+          "date": "2019",
+          "action": "shown",
+          "curator": "",
+          "attribution": "curated",
+          "link": "",
+          "note": "Selected as part of a student showcase."
+        },
+        {
+          "id": "history-in-the-aisle-book-2",
+          "title": "Bearings",
+          "venue": "ADM Gallery",
+          "location": "",
+          "date": "",
+          "action": "shown",
+          "curator": "",
+          "attribution": "curated",
+          "link": "",
+          "note": ""
+        }
+      ],
+      "fullText": "ITA_book_1\n\nMade while living away from Singapore, the work follows these spaces through the familiar products, languages, smells and everyday exchanges that briefly made somewhere foreign feel like home.\nThe work takes the form of a newsprint publication, drawing from the free newspapers and distribution kiosks commonly found in these supermarkets. By borrowing a format already circulating within the space, the book considers the supermarket not only as a place to buy familiar things, but as a place where information, conversation and a sense of community are exchanged.\n\nITA_book_3\n\nITA_book_2\n\nITA_book_4",
+      "images": [
+        {
+          "id": "d69e5b3c-d81f-4510-b3fe-0870d12e6c21",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/7e48633e162c7cc41bc14623427552f879b1afd726e44aaecd2c18bf19421726.jpg",
+          "caption": "",
+          "alt": "ITA_book_1",
+          "credit": ""
+        },
+        {
+          "id": "a0643132-662a-4109-9a44-84ead9b2fa52",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/c6e9ef74cfcb24d4bc410521830fe7dc344d8c40f4f5fa5ea20f5bb31fc9c47d.jpg",
+          "caption": "",
+          "alt": "ITA_book_3",
+          "credit": ""
+        },
+        {
+          "id": "15d4026f-f62b-4f69-b601-3f7a2abf510c",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/76f20f31854a9f0cd7d3e2e156409828dd2620cf244b928b0b93b90ff1b3fec4.jpg",
+          "caption": "",
+          "alt": "ITA_book_2",
+          "credit": ""
+        },
+        {
+          "id": "cb9f2177-22ad-4a1c-a778-429cd9c89f09",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/75033eecdc228d9d35b5ff67f97e3d1497a8d33dac91e08d9e758908196903c0.jpg",
+          "caption": "",
+          "alt": "ITA_book_4",
+          "credit": ""
+        }
+      ],
+      "blocks": [
+        {
+          "id": "block-mvbdbvng-vrj0",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "d69e5b3c-d81f-4510-b3fe-0870d12e6c21",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/7e48633e162c7cc41bc14623427552f879b1afd726e44aaecd2c18bf19421726.jpg",
+              "caption": "",
+              "alt": "ITA_book_1",
+              "credit": ""
+            }
+          ],
+          "layout": "stacked"
+        },
+        {
+          "id": "text-in-the-aisle-book",
+          "type": "text",
+          "content": "Made while living away from Singapore, the work follows these spaces through the familiar products, languages, smells and everyday exchanges that briefly made somewhere foreign feel like home.\nThe work takes the form of a newsprint publication, drawing from the free newspapers and distribution kiosks commonly found in these supermarkets. By borrowing a format already circulating within the space, the book considers the supermarket not only as a place to buy familiar things, but as a place where information, conversation and a sense of community are exchanged."
+        },
+        {
+          "id": "block-mvbdccpo-lf6p",
+          "type": "image_gallery",
+          "title": "",
+          "images": [],
+          "layout": "stacked"
+        },
+        {
+          "id": "block-mvbda9s7-i65s",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "a0643132-662a-4109-9a44-84ead9b2fa52",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/c6e9ef74cfcb24d4bc410521830fe7dc344d8c40f4f5fa5ea20f5bb31fc9c47d.jpg",
+              "caption": "",
+              "alt": "ITA_book_3",
+              "credit": ""
+            },
+            {
+              "id": "15d4026f-f62b-4f69-b601-3f7a2abf510c",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/76f20f31854a9f0cd7d3e2e156409828dd2620cf244b928b0b93b90ff1b3fec4.jpg",
+              "caption": "",
+              "alt": "ITA_book_2",
+              "credit": ""
+            },
+            {
+              "id": "cb9f2177-22ad-4a1c-a778-429cd9c89f09",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/75033eecdc228d9d35b5ff67f97e3d1497a8d33dac91e08d9e758908196903c0.jpg",
+              "caption": "",
+              "alt": "ITA_book_4",
+              "credit": ""
+            }
+          ],
+          "layout": "stacked",
+          "autoPlay": true
+        }
+      ],
+      "tagIds": [],
+      "subjects": [],
+      "associatedProjectIds": [],
+      "relatedEntryIds": [
+        "entry-in-the-aisle-work"
+      ],
+      "status": "published",
+      "isDevelopingWork": false,
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-16T19:37:10.852Z"
+    },
+    {
+      "id": "entry-chen-dian-after-scans",
+      "slug": "chen-dian-after-scans",
+      "title": "chéndiàn; after scans and lingering dust",
+      "titleZh": "尘惦",
+      "type": "publication",
+      "date": "2023-2024",
+      "datePlaceholder": false,
+      "medium": "Risograph, comb-bound in 3 variations",
+      "dimensions": "210 × 297mm, 44pp",
+      "shortDescription": "尘惦 chéndiàn; after scans and lingering dust begins with hand-copied Chinese music scores repeatedly photocopied for circulation.",
+      "credits": [
+        {
+          "id": "credit-chen-dian-after-scans-1",
+          "role": "publisher",
+          "name": "Temporary Press"
+        },
+        {
+          "id": "credit-chen-dian-after-scans-2",
+          "role": "designer",
+          "name": "gideon-jamie"
+        }
+      ],
+      "presentationHistory": [],
+      "fullText": "With each generation, handwritten marks, dust and printing artefacts are copied alongside the music: some traces intensify while others slowly disappear.\n\nThe scores are scanned, enlarged, inverted and Risograph printed, turning these incidental traces into images in their own right. Each book contains 43 images selected from a larger set of 127 and is bound to stand upright like a calendar, allowing it to be read slowly over time.\n\nThe title plays between 沉淀, to settle or precipitate, and 尘惦, an invented pairing that suggests dust and something that continues to linger in the mind.",
+      "images": [
+        {
+          "id": "c6a18fcb-4d43-4a46-b02b-5ec100c875af",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/74efa6eb12fc7b66551e3d6195453eb9dfd6e138d738337c03519b363791263d.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Studio Lubdub"
+        }
+      ],
+      "blocks": [
+        {
+          "id": "block-mvbdeukl-wczr",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "c6a18fcb-4d43-4a46-b02b-5ec100c875af",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/74efa6eb12fc7b66551e3d6195453eb9dfd6e138d738337c03519b363791263d.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Studio Lubdub"
+            }
+          ],
+          "layout": "stacked"
+        },
+        {
+          "id": "text-chen-dian-after-scans",
+          "type": "text",
+          "content": "With each generation, handwritten marks, dust and printing artefacts are copied alongside the music: some traces intensify while others slowly disappear.\n\nThe scores are scanned, enlarged, inverted and Risograph printed, turning these incidental traces into images in their own right. Each book contains 43 images selected from a larger set of 127 and is bound to stand upright like a calendar, allowing it to be read slowly over time.\n\nThe title plays between 沉淀, to settle or precipitate, and 尘惦, an invented pairing that suggests dust and something that continues to linger in the mind."
+        }
+      ],
+      "tagIds": [
+        "tag-books",
+        "tag-spaceswo",
+        "tag-copy",
+        "tag-score",
+        "tag-time"
+      ],
+      "subjects": [
+        "books and bookish things",
+        "spaces without space",
+        "copying and copies",
+        "scores and notation",
+        "time and the durational"
+      ],
+      "associatedProjectIds": [
+        "entry-mv45pqbm-y9xl"
+      ],
+      "relatedEntryIds": [
+        "entry-mv45pqbm-y9xl",
+        "script-notes",
+        "entry-chen-dian-found-on-paper"
+      ],
+      "status": "published",
+      "isDevelopingWork": false,
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-16T19:40:18.510Z"
+    },
+    {
       "id": "entry-ive-never-met-yoko-ono",
       "slug": "ive-never-met-yoko-ono",
       "title": "i’ve never met yoko ono, nor have i touched the sky",
@@ -3777,6 +3998,181 @@
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
       "updatedAt": "2026-10-16T19:28:13.179Z"
+    },
+    {
+      "id": "entry-flower-vases-paintings",
+      "slug": "flower-vases-paintings",
+      "title": "花·瓶·画 flower, vases, paintings and other observations",
+      "titleZh": "花·瓶·画",
+      "type": "publication",
+      "date": "2025",
+      "datePlaceholder": false,
+      "medium": "accordion book\nself-published",
+      "dimensions": "53 x 92 x 12mm",
+      "shortDescription": "花·瓶·画 flower, vases, paintings and other observations collects recurring details from official and amateur erhu music videos: flower arrangements, porcelain vases, scroll paintings and other objects used to stage the performance.",
+      "credits": [],
+      "presentationHistory": [
+        {
+          "id": "history-flower-vases-paintings-1",
+          "title": "Still Rendering: Projects by the 2024-25 Design Research Fellows",
+          "venue": "Singapore Art Museum, Design Collection",
+          "location": "",
+          "date": "",
+          "action": "presented",
+          "curator": "",
+          "attribution": "curated",
+          "link": "",
+          "note": "Part of Feng Shui in the Expanded Field."
+        }
+      ],
+      "fullText": "Many of the source videos, particularly from the 1980s and 1990s, have been copied and reposted repeatedly. Their colours fade, details blur and compression artefacts accumulate, yet the same visual motifs continue to circulate and be reproduced.\nRearranging these fragments in an accordion book, the work observes how repetition across staging, performance and digital copying has contributed to a familiar visual language for “Chinese music\".",
+      "images": [
+        {
+          "id": "6fa47c5c-afcf-468a-8b8e-d0e0b2142c4d",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/b989fdb3038fddb1d937671c85a2ef50f7aedaf41eaf714a089febf32f1d1458.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "e7cd9feb-e6cd-4eb2-9f3e-2672a5555cbd",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/c9968f31c2cfc271dda79a2e5e3b9c5a0c7ede446a52f6bf5e68b25cf59a94c5.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "20a1c885-26d0-4ff2-a8ec-087962113e0d",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/a72272295c3cd1d4dc1af516b3b42edbb5e953e385d641705c48f490f26aa05b.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "2f5d06b1-1ccc-4d2d-849c-ea57e3a8555f",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/2f848825f43df627f7e05c6c67ebdffcd1fe5fb313af0ff6010519c655b0bd31.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "dfd13e10-b88f-4ed1-800e-e90a1d298fc6",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/4cdf4d3196edbb09ac7d3a760a2a0f7f899040e680f8f9a54ebd26a7630ca477.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "ad0d1edc-6a45-4a12-9016-ae9a719a4c3f",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/c34b222b3cfd9361b59e3796ab3b89cfebecb20661a1f839a236b7b0d062984a.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "85be8986-3998-468c-8ace-0c77a51a2960",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/88d17f3d6281368cf46d4404dd70006d766715202a1b15a5f66306897a2f769e.png",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        }
+      ],
+      "blocks": [
+        {
+          "id": "block-mvbcq0lu-0suu",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "6fa47c5c-afcf-468a-8b8e-d0e0b2142c4d",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/b989fdb3038fddb1d937671c85a2ef50f7aedaf41eaf714a089febf32f1d1458.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            }
+          ],
+          "layout": "stacked"
+        },
+        {
+          "id": "text-flower-vases-paintings",
+          "type": "text",
+          "content": "Many of the source videos, particularly from the 1980s and 1990s, have been copied and reposted repeatedly. Their colours fade, details blur and compression artefacts accumulate, yet the same visual motifs continue to circulate and be reproduced.\nRearranging these fragments in an accordion book, the work observes how repetition across staging, performance and digital copying has contributed to a familiar visual language for “Chinese music\"."
+        },
+        {
+          "id": "block-mvbd3j4h-svv1",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "e7cd9feb-e6cd-4eb2-9f3e-2672a5555cbd",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/c9968f31c2cfc271dda79a2e5e3b9c5a0c7ede446a52f6bf5e68b25cf59a94c5.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "20a1c885-26d0-4ff2-a8ec-087962113e0d",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/a72272295c3cd1d4dc1af516b3b42edbb5e953e385d641705c48f490f26aa05b.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "2f5d06b1-1ccc-4d2d-849c-ea57e3a8555f",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/2f848825f43df627f7e05c6c67ebdffcd1fe5fb313af0ff6010519c655b0bd31.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "dfd13e10-b88f-4ed1-800e-e90a1d298fc6",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/4cdf4d3196edbb09ac7d3a760a2a0f7f899040e680f8f9a54ebd26a7630ca477.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "ad0d1edc-6a45-4a12-9016-ae9a719a4c3f",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/c34b222b3cfd9361b59e3796ab3b89cfebecb20661a1f839a236b7b0d062984a.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "85be8986-3998-468c-8ace-0c77a51a2960",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/88d17f3d6281368cf46d4404dd70006d766715202a1b15a5f66306897a2f769e.png",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            }
+          ],
+          "layout": "stacked"
+        }
+      ],
+      "tagIds": [
+        "tag-books",
+        "tag-learning",
+        "tag-spaceswo",
+        "tag-time",
+        "tag-archives"
+      ],
+      "subjects": [
+        "books and bookish things",
+        "learning? pedagogy?",
+        "spaces without space",
+        "time and the durational",
+        "archives and records"
+      ],
+      "associatedProjectIds": [
+        "entry-mvbat44j-bdau"
+      ],
+      "relatedEntryIds": [
+        "entry-mvbat44j-bdau"
+      ],
+      "status": "published",
+      "isDevelopingWork": false,
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-16T19:33:46.491Z"
     }
   ],
   "tags": [
