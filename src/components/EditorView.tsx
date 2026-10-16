@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
+import { restoreMissingDrafts } from '../services/restoreDrafts';
 import { Entry, EntryType, EntryStatus, SiteSettings, Tag } from '../types';
 import { exportArchiveAsJSON } from '../services/storage';
 import { ArchiveBundle, validateArchive } from '../services/githubPublishing';
@@ -50,6 +51,9 @@ export const EditorView: React.FC<EditorViewProps> = ({
   onReturnToPublic,
 }) => {
   const [activeTab, setActiveTab] = useState<EditorTab>('entries');
+  const importInputRef = useRef<HTMLInputElement>(null);
+  const [importBusy, setImportBusy] = useState(false);
+  const [importMessage, setImportMessage] = useState('');
 
   // Entries tab local states
   const [filterStatus, setFilterStatus] = useState<'all' | EntryStatus>('all');
@@ -96,7 +100,10 @@ export const EditorView: React.FC<EditorViewProps> = ({
 
   const handleFileImport = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
+    e.target.value = '';
     if (!file) return;
+    setImportBusy(true);
+    setImportMessage('Reading backup…');
 
     const reader = new FileReader();
     reader.onload = async (event) => {
@@ -106,15 +113,23 @@ export const EditorView: React.FC<EditorViewProps> = ({
         if (Array.isArray(entriesArray)) {
           const bundle = { version: 3, entries: entriesArray, tags: parsed.tags ?? tags, settings: parsed.settings ?? siteSettings };
           validateArchive(bundle);
-          await onImportArchive(bundle);
-          alert(`Successfully imported ${entriesArray.length} entries into archive.`);
+          const restored = restoreMissingDrafts({ version: 3, entries, tags, settings: siteSettings }, bundle);
+          validateArchive(restored.bundle);
+          if (restored.restoredCount) await onImportArchive(restored.bundle);
+          setActiveTab('entries'); setFilterStatus('draft'); setFilterType('all'); setSearch('');
+          setImportMessage(restored.restoredCount
+            ? `Restored ${restored.restoredCount} drafts. Current entries and settings were kept. Nothing was published.`
+            : 'No missing drafts found in this backup. Current entries were kept.');
         } else {
-          alert('Invalid archive file format.');
+          setImportMessage('Invalid backup: an entries list is required.');
         }
       } catch (err) {
-        alert('Could not parse JSON file: ' + err);
+        setImportMessage('Could not restore backup: ' + (err instanceof Error ? err.message : String(err)));
+      } finally {
+        setImportBusy(false);
       }
     };
+    reader.onerror = () => { setImportBusy(false); setImportMessage('Could not read this backup file. Please select it again.'); };
     reader.readAsText(file);
   };
 
@@ -159,6 +174,16 @@ export const EditorView: React.FC<EditorViewProps> = ({
           >
             Export Backup (JSON)
           </button>
+          <button
+            type="button"
+            disabled={importBusy}
+            onClick={() => importInputRef.current?.click()}
+            className="px-3 py-2 border border-black/30 hover:border-black text-xs font-mono-quiet text-black transition-colors disabled:opacity-50"
+            title="Restore missing drafts while keeping current entries and settings"
+          >
+            {importBusy ? 'Restoring…' : 'Import Backup (JSON)'}
+          </button>
+          <input ref={importInputRef} type="file" accept=".json,application/json" onChange={handleFileImport} className="hidden" aria-label="Restore drafts from JSON backup" disabled={importBusy} />
           {onSignOut && (
             <button
               onClick={onSignOut}
@@ -170,6 +195,8 @@ export const EditorView: React.FC<EditorViewProps> = ({
         </div>
       </div>
 
+      <p className="text-xs text-black/60 mt-3">Import Backup restores missing drafts and keeps your current entries and settings.</p>
+      {importMessage && <p role="status" className="text-sm mt-2">{importMessage}</p>}
       <GitHubPublishPanel entries={entries} tags={tags} settings={siteSettings} onPublished={onArchivePublished} />
 
       {/* Editor Section Navigation Tabs: Entries, Tags, Settings */}
