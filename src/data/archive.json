@@ -2,6 +2,45 @@
   "version": 3,
   "entries": [
     {
+      "id": "entry-mvbat44j-bdau",
+      "slug": "b-side-books",
+      "title": "b-side books",
+      "type": "project",
+      "date": "2024–",
+      "datePlaceholder": false,
+      "medium": "books",
+      "shortDescription": "B-sides is an ongoing series of artist books assembled from collections of found images accumulated over many years.",
+      "credits": [],
+      "presentationHistory": [],
+      "fullText": "B-sides is an ongoing series of small and affordable artist books that I make from the image collections I have accumulated over the years. Working with image sets gathered around shared subjects, the books explore how repeated photographs begin to function as vernacular working documents, revealing the conventions, omissions and contradictions that emerge as images circulate. Through editing, sequencing, cropping and reproduction, each publication becomes both an experiment in the book form and a way of making sense of image archives that continue to grow through use.\n",
+      "images": [],
+      "blocks": [
+        {
+          "id": "text-1792175144998-1",
+          "type": "text",
+          "content": "B-sides is an ongoing series of small and affordable artist books that I make from the image collections I have accumulated over the years. Working with image sets gathered around shared subjects, the books explore how repeated photographs begin to function as vernacular working documents, revealing the conventions, omissions and contradictions that emerge as images circulate. Through editing, sequencing, cropping and reproduction, each publication becomes both an experiment in the book form and a way of making sense of image archives that continue to grow through use.\n"
+        }
+      ],
+      "tagIds": [
+        "tag-spaceswo",
+        "tag-books",
+        "tag-archives"
+      ],
+      "subjects": [
+        "spaces without space",
+        "books and bookish things",
+        "archives and records"
+      ],
+      "associatedProjectIds": [],
+      "relatedEntryIds": [
+        "entry-national-flower-work"
+      ],
+      "status": "published",
+      "isDevelopingWork": false,
+      "createdAt": "2026-10-16T18:28:16.494Z",
+      "updatedAt": "2026-10-16T18:28:16.494Z"
+    },
+    {
       "id": "entry-mv46p9q3-1vsv",
       "slug": "yinying",
       "title": "reflections impressions",
