@@ -3536,6 +3536,247 @@
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
       "updatedAt": "2026-10-11T20:24:27.407Z"
+    },
+    {
+      "id": "entry-ive-never-met-yoko-ono",
+      "slug": "ive-never-met-yoko-ono",
+      "title": "i’ve never met yoko ono, nor have i touched the sky",
+      "titleZh": "天明日月奣",
+      "type": "publication",
+      "date": "2024",
+      "datePlaceholder": false,
+      "medium": "Miniature photocards, transparent folder and oversized book belt",
+      "dimensions": "100 × 72 mm (closed)",
+      "shortDescription": "天明日月奣 / i've never met yoko ono, nor have i touched the sky collects images of the sky from photographic documentation of Yoko Ono's Sky TV (1966–2007) and TV to See the Sky (2021).",
+      "credits": [],
+      "presentationHistory": [],
+      "fullText": "Printed as miniature photocards rather than a fixed sequence, the images can be rearranged, carried, given to a friend or held against the actual sky. The book plays with one of photography's most familiar subjects—the sky that is endlessly photographed.\nIts Chinese title borrows an unattributed wordplay in which the characters for sky, sun and moon are rearranged to form 天明日月奣: clear skies, clear skies.",
+      "images": [],
+      "blocks": [
+        {
+          "id": "text-ive-never-met-yoko-ono",
+          "type": "text",
+          "content": "Printed as miniature photocards rather than a fixed sequence, the images can be rearranged, carried, given to a friend or held against the actual sky. The book plays with one of photography's most familiar subjects—the sky that is endlessly photographed.\nIts Chinese title borrows an unattributed wordplay in which the characters for sky, sun and moon are rearranged to form 天明日月奣: clear skies, clear skies."
+        }
+      ],
+      "tagIds": [
+        "tag-books",
+        "tag-time"
+      ],
+      "subjects": [
+        "books and bookish things",
+        "time and the durational"
+      ],
+      "associatedProjectIds": [
+        "entry-mvbat44j-bdau"
+      ],
+      "relatedEntryIds": [
+        "entry-mvbat44j-bdau"
+      ],
+      "status": "published",
+      "isDevelopingWork": false,
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-16T19:17:05.443Z"
+    },
+    {
+      "id": "entry-what-used-to-be-in-the-mall",
+      "slug": "what-used-to-be-in-the-mall",
+      "title": "what used to be in the mall",
+      "type": "publication",
+      "date": "2025",
+      "datePlaceholder": false,
+      "medium": "Rivet-bound Tracing paper",
+      "dimensions": "58 x 85 x 6mm, 66pp",
+      "shortDescription": "what used to be in the mall gathers newspaper clippings about Queensway Shopping Centre from the 1970s to the 1990s.",
+      "credits": [],
+      "presentationHistory": [],
+      "fullText": "Reports, advertisements and small announcements recall a mall shaped by changing ideas of shopping, nightlife, crime, novelty and entertainment.\nPrinted on tracing paper and rivet-bound into a small volume, fragments from different decades sit over and through one another. Made as a companion to on telling time in the mall, the book approaches the mall's history through the incidental record left behind in newspapers—what happened there, what was sold there, and what once seemed worth reporting.",
+      "images": [
+        {
+          "id": "107b96f7-a59a-4162-a61f-a7922358c972",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/5ccdcba7b079c4ab6beca2e6ace186f754250eb3dcc6b23a45743bb802a3ba4e.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "47a87bcb-8ee9-442e-840a-8c26b090f308",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/ce783444fcf9d9032fac9bb1b81208acf5de91cd3958f81f4fb2f0a5d253d0e0.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "3e405faf-b3ad-44ee-988f-b59c345678b7",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/541fd96b59a04a6f4143ffc52dcd16f04cefeceaa0ab12f8773d4a64b047ba13.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "9fd02214-5c9a-48b8-8ac3-55f0ee168d14",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/348891883324110190e61a3aa83a0682e591b5e816f8c70282c34d1a2e7c2b73.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "b0e90e18-24f2-4400-b86c-a4c515375c06",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/b4c6bce22bf3f37c5dda5dba8951e7ded1d405c6b6ebd6b70d88b1a8693f9cf4.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "f8656378-01fe-4fcd-a471-6a23e4a95583",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/8f47bc430c586138c0a96554b6e30908d69c0216ffef72df420a94a4f45781cb.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "bfc4d017-db1d-492f-a93d-2ee195b1ef31",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/919573aa2d81308726976e0f9ce110f833da3e20f6e5d6041cd81fd85f78e05d.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "34d795d4-975b-4096-8b2f-595ec7d4f224",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/a4f41f1e11bc7e973b7885039d63face74b122b47745d9a3b5d202e330345831.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "3cdd1cdc-327e-4c14-965a-136b63505989",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/b81bc2b64bd10f8e60747277ef1c080c7f704b78eb4cea12baf0edeb41f57c6e.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "8dd4ca2c-0cd8-4bc3-b859-48e98b27acc2",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/7fc9232e9ec779556fe758ad5cdb39d7fbfffe9c07a8ebaba8fbdad71abf5941.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        }
+      ],
+      "blocks": [
+        {
+          "id": "block-mvbcse0f-ufqv",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "107b96f7-a59a-4162-a61f-a7922358c972",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/5ccdcba7b079c4ab6beca2e6ace186f754250eb3dcc6b23a45743bb802a3ba4e.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "47a87bcb-8ee9-442e-840a-8c26b090f308",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/ce783444fcf9d9032fac9bb1b81208acf5de91cd3958f81f4fb2f0a5d253d0e0.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "3e405faf-b3ad-44ee-988f-b59c345678b7",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/541fd96b59a04a6f4143ffc52dcd16f04cefeceaa0ab12f8773d4a64b047ba13.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            }
+          ],
+          "layout": "carousel",
+          "autoPlay": true,
+          "intervalSeconds": 2
+        },
+        {
+          "id": "text-what-used-to-be-in-the-mall",
+          "type": "text",
+          "content": "Reports, advertisements and small announcements recall a mall shaped by changing ideas of shopping, nightlife, crime, novelty and entertainment.\nPrinted on tracing paper and rivet-bound into a small volume, fragments from different decades sit over and through one another. Made as a companion to on telling time in the mall, the book approaches the mall's history through the incidental record left behind in newspapers—what happened there, what was sold there, and what once seemed worth reporting."
+        },
+        {
+          "id": "block-mvbcznsn-03vk",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "9fd02214-5c9a-48b8-8ac3-55f0ee168d14",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/348891883324110190e61a3aa83a0682e591b5e816f8c70282c34d1a2e7c2b73.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "b0e90e18-24f2-4400-b86c-a4c515375c06",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/b4c6bce22bf3f37c5dda5dba8951e7ded1d405c6b6ebd6b70d88b1a8693f9cf4.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "f8656378-01fe-4fcd-a471-6a23e4a95583",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/8f47bc430c586138c0a96554b6e30908d69c0216ffef72df420a94a4f45781cb.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "bfc4d017-db1d-492f-a93d-2ee195b1ef31",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/919573aa2d81308726976e0f9ce110f833da3e20f6e5d6041cd81fd85f78e05d.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "34d795d4-975b-4096-8b2f-595ec7d4f224",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/a4f41f1e11bc7e973b7885039d63face74b122b47745d9a3b5d202e330345831.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "3cdd1cdc-327e-4c14-965a-136b63505989",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/b81bc2b64bd10f8e60747277ef1c080c7f704b78eb4cea12baf0edeb41f57c6e.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "8dd4ca2c-0cd8-4bc3-b859-48e98b27acc2",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/7fc9232e9ec779556fe758ad5cdb39d7fbfffe9c07a8ebaba8fbdad71abf5941.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            }
+          ],
+          "layout": "stacked"
+        }
+      ],
+      "tagIds": [
+        "tag-books",
+        "tag-archives"
+      ],
+      "subjects": [
+        "books and bookish things",
+        "archives and records"
+      ],
+      "associatedProjectIds": [
+        "entry-mvbat44j-bdau"
+      ],
+      "relatedEntryIds": [
+        "entry-on-telling-time-in-the-mall",
+        "entry-mvbat44j-bdau"
+      ],
+      "status": "published",
+      "isDevelopingWork": false,
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-16T19:28:13.179Z"
     }
   ],
   "tags": [
