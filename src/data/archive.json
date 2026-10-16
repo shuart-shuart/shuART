@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": "3.0",
   "entries": [
     {
       "id": "entry-mv46p9q3-1vsv",
@@ -238,7 +238,7 @@
       "status": "published",
       "isDevelopingWork": true,
       "createdAt": "2026-10-11T18:55:29.276Z",
-      "updatedAt": "2026-10-11T19:31:50.837Z"
+      "updatedAt": "2026-10-16T17:39:00.446Z"
     },
     {
       "id": "entry-mv467b6c-49dn",
@@ -960,14 +960,17 @@
         "archives and records",
         "jianpu"
       ],
-      "associatedProjectIds": [],
+      "associatedProjectIds": [
+        "entry-mv467b6c-49dn",
+        "entry-mv45pqbm-y9xl"
+      ],
       "relatedEntryIds": [
         "scores"
       ],
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-01-10T10:00:00Z",
-      "updatedAt": "2026-10-11T19:34:39.785Z"
+      "updatedAt": "2026-10-11T20:23:38.696Z"
     },
     {
       "id": "part-time-book-club",
@@ -1888,14 +1891,16 @@
         "time and the durational",
         "archives and records"
       ],
-      "associatedProjectIds": [],
+      "associatedProjectIds": [
+        "entry-linmo-lapping-emulations"
+      ],
       "relatedEntryIds": [
         "entry-linmo-lapping-emulations"
       ],
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-11T18:04:27.345Z"
+      "updatedAt": "2026-10-11T20:23:53.428Z"
     },
     {
       "id": "entry-linmo-lapping-emulations",
@@ -2603,14 +2608,275 @@
           "autoPlay": true
         }
       ],
-      "tagIds": [],
-      "subjects": [],
-      "associatedProjectIds": [],
+      "tagIds": [
+        "tag-copy"
+      ],
+      "subjects": [
+        "copying and copies"
+      ],
+      "associatedProjectIds": [
+        "entry-mv46p9q3-1vsv"
+      ],
       "relatedEntryIds": [],
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-11T18:23:26.589Z"
+      "updatedAt": "2026-10-16T17:43:10.521Z"
+    },
+    {
+      "id": "entry-phases",
+      "slug": "phases",
+      "title": "phases",
+      "titleZh": "音情圆缺",
+      "type": "work",
+      "date": "2023",
+      "datePlaceholder": false,
+      "medium": "Lightboxes and Moving image",
+      "dimensions": "variable",
+      "shortDescription": "音情圆缺 phases gathers images of the moon found in online videos of Erquan Yingyue (二泉映月, Mirrored Moon in the Erquan Spring).",
+      "credits": [
+        {
+          "id": "credit-phases-1",
+          "role": "custom",
+          "name": "Lynda Tay",
+          "customRole": "Curatorial Text"
+        },
+        {
+          "id": "credit-phases-2",
+          "role": "commissioner",
+          "name": "Esplanade - Theatres on the Bay"
+        },
+        {
+          "id": "credit-phases-3",
+          "role": "custom",
+          "name": "Esplanade - Theatres on the Bay",
+          "customRole": "Installation images courtesy of"
+        }
+      ],
+      "presentationHistory": [
+        {
+          "id": "history-phases-1",
+          "title": "印映 reflections impressions",
+          "venue": "Esplanade - Theatres on the Bay",
+          "location": "",
+          "date": "",
+          "action": "shown",
+          "curator": "Lynda Tay",
+          "attribution": "curated",
+          "link": "",
+          "note": "A solo presentation commissioned by Esplanade - Theatres on the Bay. The entire series is an on-going project with further plans to develop it into a book. The audio component is 再现依心曲 ad lib."
+        }
+      ],
+      "fullText": "Across professional performances, amateur recordings and user-made videos, the moon repeatedly appears as a visual shorthand for the music—photographed, illustrated, animated and composited in different ways.\nExtracted from their original videos and presented on lightboxes, these moons form a collection of how the same image has been imagined again and again. Like the moon, which is visible through reflected sunlight, these digital moons only appear when illuminated: first by the computer screen, and again by the lightbox.",
+      "images": [
+        {
+          "id": "9f41d1a9-3af0-4273-92fd-43731bb1885e",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/ee30c470f379a29c67438d8228124bbff3cad3781c83bd58c9c5213076a6a1c8.webp",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "079ef074-5dbe-4157-b4e8-24eb401456af",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/2b000d0ef879bac332175dbfd537c14402793946bb385220a1467ba3906c20cf.webp",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "110572f7-fa00-45ed-8f3a-ebeb82c4d36e",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/0c868f5445fc331179417d29d54ec2a911c4db986cb6f8577909d5ee88db6a73.webp",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "bee95824-c899-47bb-aaec-8a6bcf645e58",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/3e833805bd823dec5d9ce541e31b0a46b8d53c7466c13082d18741a609191862.webp",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "87b9293c-9a86-44c9-8285-51b0e5df4cce",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/f7c2663b630f4735f05e6bd83f96ca0d260a27ccdccf38c42ab5bdd4b7fff4bf.webp",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "7392de3f-1a98-43cb-8d32-dede14975528",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/a2db007dcdec9a9f38aeb07d9857312d7908bf8ae32c6c582516f17ab8f19944.webp",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "edac64a7-572e-484f-8af3-73eccad8f354",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/aa31aef723fe88f86a1ad24a7816b5c86fb9ef278e3d324a8fb532ac87301263.webp",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "a9f8a674-73b1-427e-8a2c-1e1a6ea81157",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/abba0154719e6ec535124b7cf2dc8839d0b5f6bd8a907344a95515f040a18392.webp",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "92658909-0164-4481-8b8c-5b4b2148d1e2",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/6e1ee52dff6f465cc2910d182298db3802af8fe9f6dd96af5e220d909c44bd00.webp",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "9259ca39-21e8-4594-a4d0-745a28b00c6e",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/708391a10a77c742cdc110e969f0449b071fb4665a4e6d654c8b38cf0daeec84.webp",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "d00e6c4d-1a7b-4e30-b79e-82ff653d0acd",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/7eb80a722e9b66d8a108083bfe1e0d7224d67f168b21dd3b099ba301fef49944.webp",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        }
+      ],
+      "blocks": [
+        {
+          "id": "block-mvb97lvn-wsh3",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "9f41d1a9-3af0-4273-92fd-43731bb1885e",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/ee30c470f379a29c67438d8228124bbff3cad3781c83bd58c9c5213076a6a1c8.webp",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            }
+          ],
+          "layout": "stacked"
+        },
+        {
+          "id": "text-phases",
+          "type": "text",
+          "content": "Across professional performances, amateur recordings and user-made videos, the moon repeatedly appears as a visual shorthand for the music—photographed, illustrated, animated and composited in different ways.\nExtracted from their original videos and presented on lightboxes, these moons form a collection of how the same image has been imagined again and again. Like the moon, which is visible through reflected sunlight, these digital moons only appear when illuminated: first by the computer screen, and again by the lightbox."
+        },
+        {
+          "id": "block-mvb963uk-5rj2",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "079ef074-5dbe-4157-b4e8-24eb401456af",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/2b000d0ef879bac332175dbfd537c14402793946bb385220a1467ba3906c20cf.webp",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "110572f7-fa00-45ed-8f3a-ebeb82c4d36e",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/0c868f5445fc331179417d29d54ec2a911c4db986cb6f8577909d5ee88db6a73.webp",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "bee95824-c899-47bb-aaec-8a6bcf645e58",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/3e833805bd823dec5d9ce541e31b0a46b8d53c7466c13082d18741a609191862.webp",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "87b9293c-9a86-44c9-8285-51b0e5df4cce",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/f7c2663b630f4735f05e6bd83f96ca0d260a27ccdccf38c42ab5bdd4b7fff4bf.webp",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "7392de3f-1a98-43cb-8d32-dede14975528",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/a2db007dcdec9a9f38aeb07d9857312d7908bf8ae32c6c582516f17ab8f19944.webp",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "edac64a7-572e-484f-8af3-73eccad8f354",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/aa31aef723fe88f86a1ad24a7816b5c86fb9ef278e3d324a8fb532ac87301263.webp",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            }
+          ],
+          "layout": "stacked"
+        },
+        {
+          "id": "block-mvb99639-9kxl",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "a9f8a674-73b1-427e-8a2c-1e1a6ea81157",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/abba0154719e6ec535124b7cf2dc8839d0b5f6bd8a907344a95515f040a18392.webp",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "92658909-0164-4481-8b8c-5b4b2148d1e2",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/6e1ee52dff6f465cc2910d182298db3802af8fe9f6dd96af5e220d909c44bd00.webp",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "9259ca39-21e8-4594-a4d0-745a28b00c6e",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/708391a10a77c742cdc110e969f0449b071fb4665a4e6d654c8b38cf0daeec84.webp",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "d00e6c4d-1a7b-4e30-b79e-82ff653d0acd",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/7eb80a722e9b66d8a108083bfe1e0d7224d67f168b21dd3b099ba301fef49944.webp",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            }
+          ],
+          "layout": "carousel",
+          "autoPlay": true,
+          "intervalSeconds": 2
+        }
+      ],
+      "tagIds": [
+        "tag-copy",
+        "tag-time",
+        "tag-archives"
+      ],
+      "subjects": [
+        "copying and copies",
+        "time and the durational",
+        "archives and records"
+      ],
+      "associatedProjectIds": [
+        "entry-mv46p9q3-1vsv"
+      ],
+      "relatedEntryIds": [
+        "entry-linmo-lapping-emulations"
+      ],
+      "status": "published",
+      "isDevelopingWork": false,
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-16T17:42:43.621Z"
     },
     {
       "id": "entry-sight-reading",
@@ -2937,12 +3203,14 @@
         "jianpu",
         "working notes"
       ],
-      "associatedProjectIds": [],
+      "associatedProjectIds": [
+        "entry-mv45pqbm-y9xl"
+      ],
       "relatedEntryIds": [],
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-11T17:50:11.556Z"
+      "updatedAt": "2026-10-11T20:24:14.559Z"
     },
     {
       "id": "entry-on-telling-time-in-the-mall",
@@ -2958,11 +3226,49 @@
         {
           "id": "credit-on-telling-time-in-the-mall-1",
           "role": "custom",
+          "name": "Queensway Television",
+          "customRole": "Premiere"
+        },
+        {
+          "id": "credit-mv49fpxs-4nfm",
+          "role": "custom",
+          "name": "National Arts Council",
+          "link": "",
+          "customRole": "Supported by"
+        },
+        {
+          "id": "credit-on-telling-time-in-the-mall-1-preserved-curator",
+          "role": "custom",
           "name": "Goh Chun Aik",
           "customRole": "Curator"
         }
       ],
-      "presentationHistory": [],
+      "presentationHistory": [
+        {
+          "id": "pres-mv49gfsn-b9nl",
+          "action": "screened",
+          "attribution": "programmed",
+          "title": "(blank) Experimental Film Festival",
+          "venue": "Gabriel Goh",
+          "location": "Singapore",
+          "date": "2026",
+          "curator": "",
+          "link": "",
+          "note": ""
+        },
+        {
+          "id": "pres-mv49ihmw-o96i",
+          "action": "screened",
+          "attribution": "programmed",
+          "title": "SeaShorts Film Festival",
+          "venue": "Phyllis Chan",
+          "location": "Kulua Lumpur, Malaysia",
+          "date": "2026",
+          "curator": "",
+          "link": "",
+          "note": ""
+        }
+      ],
       "fullText": "Moving between field recordings, found footage and fly-on-the-wall observations, the video looks for time beyond the clock: shutters opening and closing, shops changing hands, repeated routines, ageing interiors and small movements that mark the passing of a day.\nBringing footage from different periods into the same cycle, the work asks how we tell that time has passed in a place where so much seems to repeat itself.",
       "images": [
         {
@@ -3082,7 +3388,7 @@
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-11T20:11:19.917Z"
+      "updatedAt": "2026-10-16T17:50:08.620383Z"
     },
     {
       "id": "entry-linmo-sketches",
@@ -3177,7 +3483,9 @@
         "books and bookish things",
         "working notes"
       ],
-      "associatedProjectIds": [],
+      "associatedProjectIds": [
+        "entry-mv46p9q3-1vsv"
+      ],
       "relatedEntryIds": [
         "entry-linmo-lapping-emulations",
         "entry-hu-deviations",
@@ -3186,7 +3494,7 @@
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-11T17:52:55.384Z"
+      "updatedAt": "2026-10-11T20:24:27.407Z"
     }
   ],
   "tags": [
