@@ -3538,6 +3538,283 @@
       "updatedAt": "2026-10-11T20:24:27.407Z"
     },
     {
+      "id": "entry-chen-dian-found-on-paper",
+      "slug": "chen-dian-found-on-paper",
+      "title": "chen dian (found on paper, made in minds)",
+      "titleZh": "尘惦",
+      "type": "work",
+      "date": "2023-2024",
+      "datePlaceholder": false,
+      "medium": "Lightboxes and Improvisations from graphical scores",
+      "dimensions": "Variable",
+      "shortDescription": "尘惦 chen dian (found on paper, made in minds) begins with used Chinese orchestra scores: hand-copied, annotated, repeatedly photocopied and passed between musicians.",
+      "credits": [
+        {
+          "id": "credit-chen-dian-found-on-paper-1",
+          "role": "collaborator",
+          "name": "Ng Wei Xuan (Dizi)"
+        },
+        {
+          "id": "credit-chen-dian-found-on-paper-2",
+          "role": "custom",
+          "name": "Saturn Sound Studio",
+          "customRole": "Mixing and Mastering"
+        },
+        {
+          "id": "credit-chen-dian-found-on-paper-3",
+          "role": "commissioner",
+          "name": "The Substation"
+        }
+      ],
+      "presentationHistory": [
+        {
+          "id": "history-chen-dian-found-on-paper-1",
+          "title": "The Arts Festival: Re-Connect/Centre/Converge",
+          "venue": "",
+          "location": "",
+          "date": "",
+          "action": "commissioned",
+          "curator": "John Tung",
+          "attribution": "curated",
+          "link": "",
+          "note": ""
+        }
+      ],
+      "fullText": "Enlarged and illuminated, their markings and printing artefacts reveal traces accumulated through use and circulation.\nTaking Liu Tianhua's 空山鸟语 (Birdsongs in the Vacant Valley) as a point of departure, these visual traces are also read as graphical scores for new improvisations. Marks that once accompanied the learning and sharing of music are returned to sound, allowing one generation of notation, copying and use to prompt another act of interpretation.\n\nListen [here](https://shu0shushu.bandcamp.com/album/ch-ndi-n-after-scans-and-lingering-dust)\n\nscores",
+      "images": [
+        {
+          "id": "e61d902f-8cc9-4ec1-9483-bea092c96264",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/fdb3cbf9c9f520d66f1ef9a621f0a94d625e1e0b46d51cf1a9c2223115c7b8d2.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Marvin Tang"
+        },
+        {
+          "id": "1dbc4a06-19db-47dd-be4a-43a1968087ce",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/14e6e35b8eef7406e8e141805facd6bf26974e13ed5019268e89cb3c563c47d2.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Marvin Tang"
+        },
+        {
+          "id": "c2d52457-159c-493f-a04a-3110336546cf",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/d191fabae99fb7c274f4ee300c6837a6cddcdc9c989539dc6d5cda46d73100f3.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Marvin Tang"
+        },
+        {
+          "id": "9d4faa23-cc7e-49e5-bb08-9dab0db14114",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/539e740b57b915eeca9485e3e59aa01fd218ccf57d93a4e1e87c1229d797dc62.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Marvin Tang"
+        },
+        {
+          "id": "021c2b04-4459-43e7-8e10-4bf5c7dc8702",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/6c9c6497acfaacb0540f46754f2b11b41a37b94b977b861a2005a8b8bfc07fea.gif",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "73066b1a-d126-400c-bca2-03708accd553",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/e4bf7176945856f1f00b8a723c6c1846fbbc9868d3498284155ca54c87dc39c9.png",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "1626d469-d46f-4dd1-b296-5fd682c18091",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/f194f3d02ebaf5bc4db8041c0e50cf881a79a091914264db7b494a2c23324533.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "b7fe5e05-fe70-440a-9814-3cd33b9b40ee",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/8ae3ef747c955b241c275f888ef5a59c7ef43278a8e029a8f8b2714149151dd3.png",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "e0b525e2-e89d-4af7-915f-dd2b5ce98628",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/1280eaa3303d535979ae7b1f4497ede155e8cc8db469a00a2c3b8e410c563585.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "c30b3a2d-e404-4238-949c-71ae60ad16ce",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/c5e5fc6f674dec968b3a644a60133ae8a8246a085c4c18ef24d4b34dfe3cbf1f.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "7c0e4ae0-1878-44de-a9c9-e114dd6b3c9b",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/7b3a98091093cee8920ee920277ecfe9fcf71e054b53684a5028000555969eaf.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "fb901ad6-9057-4bde-ab52-052e35c71c0f",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/51a85688b21443e279fe55e7a10eaf2d3b5212909e62e22c13dd184ec77fe37e.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        }
+      ],
+      "blocks": [
+        {
+          "id": "block-mvbf75qo-c2vr",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "e61d902f-8cc9-4ec1-9483-bea092c96264",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/fdb3cbf9c9f520d66f1ef9a621f0a94d625e1e0b46d51cf1a9c2223115c7b8d2.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Marvin Tang"
+            },
+            {
+              "id": "1dbc4a06-19db-47dd-be4a-43a1968087ce",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/14e6e35b8eef7406e8e141805facd6bf26974e13ed5019268e89cb3c563c47d2.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Marvin Tang"
+            },
+            {
+              "id": "c2d52457-159c-493f-a04a-3110336546cf",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/d191fabae99fb7c274f4ee300c6837a6cddcdc9c989539dc6d5cda46d73100f3.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Marvin Tang"
+            },
+            {
+              "id": "9d4faa23-cc7e-49e5-bb08-9dab0db14114",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/539e740b57b915eeca9485e3e59aa01fd218ccf57d93a4e1e87c1229d797dc62.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Marvin Tang"
+            }
+          ],
+          "layout": "carousel",
+          "autoPlay": true,
+          "intervalSeconds": 2
+        },
+        {
+          "id": "text-chen-dian-found-on-paper",
+          "type": "text",
+          "content": "Enlarged and illuminated, their markings and printing artefacts reveal traces accumulated through use and circulation.\nTaking Liu Tianhua's 空山鸟语 (Birdsongs in the Vacant Valley) as a point of departure, these visual traces are also read as graphical scores for new improvisations. Marks that once accompanied the learning and sharing of music are returned to sound, allowing one generation of notation, copying and use to prompt another act of interpretation."
+        },
+        {
+          "id": "block-mvbf7667-esti",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "021c2b04-4459-43e7-8e10-4bf5c7dc8702",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/6c9c6497acfaacb0540f46754f2b11b41a37b94b977b861a2005a8b8bfc07fea.gif",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "73066b1a-d126-400c-bca2-03708accd553",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/e4bf7176945856f1f00b8a723c6c1846fbbc9868d3498284155ca54c87dc39c9.png",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "1626d469-d46f-4dd1-b296-5fd682c18091",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/f194f3d02ebaf5bc4db8041c0e50cf881a79a091914264db7b494a2c23324533.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "b7fe5e05-fe70-440a-9814-3cd33b9b40ee",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/8ae3ef747c955b241c275f888ef5a59c7ef43278a8e029a8f8b2714149151dd3.png",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "e0b525e2-e89d-4af7-915f-dd2b5ce98628",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/1280eaa3303d535979ae7b1f4497ede155e8cc8db469a00a2c3b8e410c563585.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            }
+          ],
+          "layout": "stacked"
+        },
+        {
+          "id": "block-mvbfcjiu-acxt",
+          "type": "text",
+          "content": "Listen [here](https://shu0shushu.bandcamp.com/album/ch-ndi-n-after-scans-and-lingering-dust)"
+        },
+        {
+          "id": "block-mvbf9rfe-xqug",
+          "type": "image_gallery",
+          "title": "scores",
+          "images": [
+            {
+              "id": "c30b3a2d-e404-4238-949c-71ae60ad16ce",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/c5e5fc6f674dec968b3a644a60133ae8a8246a085c4c18ef24d4b34dfe3cbf1f.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "7c0e4ae0-1878-44de-a9c9-e114dd6b3c9b",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/7b3a98091093cee8920ee920277ecfe9fcf71e054b53684a5028000555969eaf.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "fb901ad6-9057-4bde-ab52-052e35c71c0f",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/51a85688b21443e279fe55e7a10eaf2d3b5212909e62e22c13dd184ec77fe37e.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            }
+          ],
+          "layout": "carousel",
+          "autoPlay": true
+        }
+      ],
+      "tagIds": [
+        "tag-score",
+        "tag-time",
+        "tag-copy",
+        "tag-archives",
+        "tag-learning"
+      ],
+      "subjects": [
+        "scores and notation",
+        "time and the durational",
+        "copying and copies",
+        "archives and records",
+        "learning? pedagogy?"
+      ],
+      "associatedProjectIds": [],
+      "relatedEntryIds": [
+        "entry-on-notes",
+        "entry-chen-dian-after-scans"
+      ],
+      "status": "published",
+      "isDevelopingWork": false,
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-16T20:33:39.890Z"
+    },
+    {
       "id": "entry-in-two-strokes",
       "slug": "in-two-strokes",
       "title": "一笔一勾 in two strokes",
@@ -3834,6 +4111,122 @@
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
       "updatedAt": "2026-10-16T19:37:10.852Z"
+    },
+    {
+      "id": "entry-national-flower-book",
+      "slug": "national-flower-book",
+      "title": "national flower (edition 1)",
+      "type": "publication",
+      "date": "2021 edition 12024 edition 2",
+      "datePlaceholder": false,
+      "medium": "2021 edition 1\nAccordion book, Awagami paper\n62 x 76 x 10mm, 27pp\n\n2024 edition 2\nAccordion book, Vellum paper\n40 x 45 x 10mm, 38pp\n\nself-published",
+      "shortDescription": "",
+      "credits": [],
+      "presentationHistory": [
+        {
+          "id": "history-national-flower-book-1",
+          "title": "Singapore Art Book Fair",
+          "venue": "",
+          "location": "",
+          "date": "2021",
+          "action": "launched",
+          "curator": "",
+          "attribution": "curated",
+          "link": "",
+          "note": "First launched with THEBOOKSHOW."
+        }
+      ],
+      "fullText": "During the pandemic, I took walks around Singapore using Google Maps Street View.\n\nAgain and again, patches of pink, magenta and fuchsia appeared at the edges of roads and in my imagined peripheral vision.\nCollected into a small accordion book, these images form an affectionate portrait of the bougainvillea scattered throughout Singapore's landscape.\n\nThese are the real national flowers of Singapore.",
+      "images": [
+        {
+          "id": "fe5b966e-7ddf-4b64-98b2-665f945b4f59",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/30fb0a67ea0f3a61dec6aac5db2b0bac71bd00a65273cf752659f7d591f0c3ff.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "b6b782da-19df-4797-b91e-e2a7785bda21",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/8a4d607e2048b5eb8b90110559446a896a2c97f0313847e40ac4d53f4bd14ed7.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "a2e2e2f7-197c-40e3-a294-78a96a095861",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/94af39bf1855eec92f3a641033ea201b32afcdc749a5f8cf3638dffb327573dc.png",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        }
+      ],
+      "blocks": [
+        {
+          "id": "block-mvbff7ml-ytir",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "fe5b966e-7ddf-4b64-98b2-665f945b4f59",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/30fb0a67ea0f3a61dec6aac5db2b0bac71bd00a65273cf752659f7d591f0c3ff.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            }
+          ],
+          "layout": "stacked"
+        },
+        {
+          "id": "text-national-flower-book",
+          "type": "text",
+          "content": "During the pandemic, I took walks around Singapore using Google Maps Street View.\n\nAgain and again, patches of pink, magenta and fuchsia appeared at the edges of roads and in my imagined peripheral vision.\nCollected into a small accordion book, these images form an affectionate portrait of the bougainvillea scattered throughout Singapore's landscape.\n\nThese are the real national flowers of Singapore."
+        },
+        {
+          "id": "block-mvbff7xc-tf97",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "b6b782da-19df-4797-b91e-e2a7785bda21",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/8a4d607e2048b5eb8b90110559446a896a2c97f0313847e40ac4d53f4bd14ed7.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "a2e2e2f7-197c-40e3-a294-78a96a095861",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/94af39bf1855eec92f3a641033ea201b32afcdc749a5f8cf3638dffb327573dc.png",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            }
+          ],
+          "layout": "stacked"
+        }
+      ],
+      "tagIds": [
+        "tag-time",
+        "tag-spaceswo",
+        "tag-books"
+      ],
+      "subjects": [
+        "time and the durational",
+        "spaces without space",
+        "books and bookish things"
+      ],
+      "associatedProjectIds": [
+        "entry-mvbat44j-bdau"
+      ],
+      "relatedEntryIds": [
+        "entry-national-flower-work",
+        "entry-mvbat44j-bdau",
+        "entry-hui-kuala",
+        "entry-shifting-springs"
+      ],
+      "status": "published",
+      "isDevelopingWork": false,
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-16T20:36:09.446Z"
     },
     {
       "id": "entry-chen-dian-after-scans",
