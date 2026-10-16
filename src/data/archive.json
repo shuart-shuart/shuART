@@ -3538,6 +3538,166 @@
       "updatedAt": "2026-10-11T20:24:27.407Z"
     },
     {
+      "id": "entry-in-two-strokes",
+      "slug": "in-two-strokes",
+      "title": "一笔一勾 in two strokes",
+      "titleZh": "一笔一勾",
+      "type": "work",
+      "date": "2023",
+      "datePlaceholder": false,
+      "medium": "Various adaptations",
+      "dimensions": "Variable",
+      "shortDescription": "一笔一勾 in two strokes follows the many uses of a simple arrow found across annotated musical scores.",
+      "credits": [],
+      "presentationHistory": [],
+      "fullText": "A line with a pointed head might indicate phrasing, fingering, rhythm, which note to play, or a change in the order of a passage. Collected across different scores and contexts, the work looks at how an ordinary mark becomes a flexible musical language. I love how something drawn in two strokes can do and mean so much.\n\narrows5",
+      "images": [
+        {
+          "id": "5e51bbfd-e0aa-4352-b4c5-fa3a321683a4",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/2c171e1249a6b945e5ca83e2e66a9b6e6c5318116aba3b68fc866486e6e8ec30.gif",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "66944c38-8a60-4cc8-b79c-e33fe9b0c87e",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/dccb9059c54414fee2f2aa79812b204bf2f6b0cbb893bc5c1a716416e56746b3.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "16dadf7f-e849-4865-ab73-79432563264b",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/560b7d3823c2dabd5125ed0fc6bc4b9a3c409c43b84448b6c6c073c44f4f85df.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "1d6a4c81-f95c-4e3d-adfc-4f51bbba7897",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/e260f45f8f87f45b9faf29f3f8238a50a883fc9553b6128e4beee2b078651ccf.jpg",
+          "caption": "",
+          "alt": "arrows5",
+          "credit": ""
+        },
+        {
+          "id": "a685bd5e-c121-4004-941c-2053675d04a6",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/c90e715e230c9b28a44e5c3b41e905ed1fd0387c1e3a0c602f72b88e1353e7fb.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "063893f7-6fd4-4df0-95c5-2c6226ccac20",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/e743751fa71714a7a390a4eb3016162dc013910638743cffbadfd391c02245d1.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "1e91c351-62f0-4357-b317-e28d1f0349c8",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/d49b3eb377d87ccd10e834ea235cc0bde0b9133ae80d723d9454471e6408cae8.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        }
+      ],
+      "blocks": [
+        {
+          "id": "block-mvbdm2ro-xlkg",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "5e51bbfd-e0aa-4352-b4c5-fa3a321683a4",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/2c171e1249a6b945e5ca83e2e66a9b6e6c5318116aba3b68fc866486e6e8ec30.gif",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            }
+          ],
+          "layout": "stacked"
+        },
+        {
+          "id": "text-in-two-strokes",
+          "type": "text",
+          "content": "A line with a pointed head might indicate phrasing, fingering, rhythm, which note to play, or a change in the order of a passage. Collected across different scores and contexts, the work looks at how an ordinary mark becomes a flexible musical language. I love how something drawn in two strokes can do and mean so much."
+        },
+        {
+          "id": "block-mvbdm33f-bdem",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "66944c38-8a60-4cc8-b79c-e33fe9b0c87e",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/dccb9059c54414fee2f2aa79812b204bf2f6b0cbb893bc5c1a716416e56746b3.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "16dadf7f-e849-4865-ab73-79432563264b",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/560b7d3823c2dabd5125ed0fc6bc4b9a3c409c43b84448b6c6c073c44f4f85df.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "1d6a4c81-f95c-4e3d-adfc-4f51bbba7897",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/e260f45f8f87f45b9faf29f3f8238a50a883fc9553b6128e4beee2b078651ccf.jpg",
+              "caption": "",
+              "alt": "arrows5",
+              "credit": ""
+            },
+            {
+              "id": "a685bd5e-c121-4004-941c-2053675d04a6",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/c90e715e230c9b28a44e5c3b41e905ed1fd0387c1e3a0c602f72b88e1353e7fb.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "063893f7-6fd4-4df0-95c5-2c6226ccac20",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/e743751fa71714a7a390a4eb3016162dc013910638743cffbadfd391c02245d1.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "1e91c351-62f0-4357-b317-e28d1f0349c8",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/d49b3eb377d87ccd10e834ea235cc0bde0b9133ae80d723d9454471e6408cae8.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            }
+          ],
+          "layout": "stacked"
+        }
+      ],
+      "tagIds": [
+        "tag-jianpu",
+        "tag-score"
+      ],
+      "subjects": [
+        "jianpu",
+        "scores and notation"
+      ],
+      "associatedProjectIds": [
+        "entry-mv45pqbm-y9xl"
+      ],
+      "relatedEntryIds": [
+        "entry-mv45pqbm-y9xl",
+        "script-notes",
+        "entry-sight-reading",
+        "entry-chen-dian-after-scans",
+        "entry-what-used-to-be-in-the-mall"
+      ],
+      "status": "published",
+      "isDevelopingWork": false,
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-16T19:47:11.876Z"
+    },
+    {
       "id": "entry-in-the-aisle-book",
       "slug": "asm-book",
       "title": "in the aisle",
@@ -3772,12 +3932,171 @@
       "credits": [],
       "presentationHistory": [],
       "fullText": "Printed as miniature photocards rather than a fixed sequence, the images can be rearranged, carried, given to a friend or held against the actual sky. The book plays with one of photography's most familiar subjects—the sky that is endlessly photographed.\nIts Chinese title borrows an unattributed wordplay in which the characters for sky, sun and moon are rearranged to form 天明日月奣: clear skies, clear skies.",
-      "images": [],
+      "images": [
+        {
+          "id": "4cbd84b5-48c2-4248-9cf0-5885d398dff2",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/d15eac02efabf3a71c78e8ae7fd3cf3f97884e677af39bd2204f91d910f65708.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "c397afaf-31ff-43d8-b529-96d328587cc1",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/af906729a3096697208a5b5a1c468fc95aa877199047e58c81e5cc6c7ac8db5e.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "987ace02-e57d-4080-9da1-aa925ae9862a",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/da969729aac0ae58e07aba82fe6568b637230dd4d5bf456dff3bdda8f9b3ea6c.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "716e700b-b185-435d-a827-e2ab5864f011",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/76c64d0d61126b8bcb3bfbee01136fa052a7cd1c8a973725064b11adff2aa9ec.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "2d16a0b1-8d17-451c-bda2-f32cb7b7640d",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/2f83e5169f106db3f9f7a58fcb330b19cae77a1ddeadbd93866be33cf69357d2.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "16d46738-625d-4c2e-bacc-3a82901e6a7c",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/6da64f1a53a0e5d86e098d599fa3ea95b54746571cc449c078df84b4689599aa.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "d81fb3b9-8335-4e6f-b48d-c966613b3eb8",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/12705c32f9fadc8ac1e8b65903babe3f99e78ab496958e9e94170248f0f26806.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "5cf10b58-8658-4332-9545-194b2733d8b0",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/7746cef38d8d788e97f01c4a5187c32acd519d3601fc76d90bc06a8ba68dffa4.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "e7b5fcbf-4ce0-4589-a81f-480ef397144e",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/910b0bc2dbd3c1afaf6eba9475544d0e485576af9d2ca2c3122e0593bf7a52c6.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "73d6b913-2f57-423a-a3e0-26aca9315c04",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/c33a67347a76d18664a35d87f98275908c5aac9b93f5b041a3d8a9e65972340a.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        }
+      ],
       "blocks": [
+        {
+          "id": "block-mvbdjj3o-34po",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "4cbd84b5-48c2-4248-9cf0-5885d398dff2",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/d15eac02efabf3a71c78e8ae7fd3cf3f97884e677af39bd2204f91d910f65708.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "c397afaf-31ff-43d8-b529-96d328587cc1",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/af906729a3096697208a5b5a1c468fc95aa877199047e58c81e5cc6c7ac8db5e.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            }
+          ],
+          "layout": "carousel",
+          "autoPlay": true,
+          "intervalSeconds": 2
+        },
         {
           "id": "text-ive-never-met-yoko-ono",
           "type": "text",
           "content": "Printed as miniature photocards rather than a fixed sequence, the images can be rearranged, carried, given to a friend or held against the actual sky. The book plays with one of photography's most familiar subjects—the sky that is endlessly photographed.\nIts Chinese title borrows an unattributed wordplay in which the characters for sky, sun and moon are rearranged to form 天明日月奣: clear skies, clear skies."
+        },
+        {
+          "id": "block-mvbdjjkc-gq0b",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "987ace02-e57d-4080-9da1-aa925ae9862a",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/da969729aac0ae58e07aba82fe6568b637230dd4d5bf456dff3bdda8f9b3ea6c.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "716e700b-b185-435d-a827-e2ab5864f011",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/76c64d0d61126b8bcb3bfbee01136fa052a7cd1c8a973725064b11adff2aa9ec.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "2d16a0b1-8d17-451c-bda2-f32cb7b7640d",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/2f83e5169f106db3f9f7a58fcb330b19cae77a1ddeadbd93866be33cf69357d2.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "16d46738-625d-4c2e-bacc-3a82901e6a7c",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/6da64f1a53a0e5d86e098d599fa3ea95b54746571cc449c078df84b4689599aa.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "d81fb3b9-8335-4e6f-b48d-c966613b3eb8",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/12705c32f9fadc8ac1e8b65903babe3f99e78ab496958e9e94170248f0f26806.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "5cf10b58-8658-4332-9545-194b2733d8b0",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/7746cef38d8d788e97f01c4a5187c32acd519d3601fc76d90bc06a8ba68dffa4.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "e7b5fcbf-4ce0-4589-a81f-480ef397144e",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/910b0bc2dbd3c1afaf6eba9475544d0e485576af9d2ca2c3122e0593bf7a52c6.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "73d6b913-2f57-423a-a3e0-26aca9315c04",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/c33a67347a76d18664a35d87f98275908c5aac9b93f5b041a3d8a9e65972340a.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            }
+          ],
+          "layout": "stacked"
         }
       ],
       "tagIds": [
@@ -3797,7 +4116,7 @@
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-16T19:17:05.443Z"
+      "updatedAt": "2026-10-16T19:43:39.036Z"
     },
     {
       "id": "entry-what-used-to-be-in-the-mall",
