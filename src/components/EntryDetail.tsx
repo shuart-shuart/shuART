@@ -62,18 +62,16 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
 
   const entryTags = useMemo(() => canonicalEntryTags(entry, tags), [entry.tagIds, tags]);
 
-  // Deduplicate entries while retaining every reason for the connection.
-  const connectionMap = new Map<string, { entry: Entry; relationships: string[] }>();
-  const addConnection = (item: Entry | undefined, relationship: string) => {
+  // Combine all connection sources without repeating entries.
+  const connectionMap = new Map<string, Entry>();
+  const addConnection = (item: Entry | undefined) => {
     if (!item || item.id === entry.id) return;
-    const connection = connectionMap.get(item.id) || { entry: item, relationships: [] };
-    if (!connection.relationships.includes(relationship)) connection.relationships.push(relationship);
-    connectionMap.set(item.id, connection);
+    connectionMap.set(item.id, item);
   };
-  associatedProjects.forEach(item => addConnection(item, 'Part of'));
-  associatedProjectEntries.forEach(item => addConnection(item, 'In this project'));
-  relatedEntries.forEach(item => addConnection(item, 'Related'));
-  backlinks.forEach(link => addConnection(allEntries.find(item => item.id === link.id), 'Links here'));
+  associatedProjects.forEach(addConnection);
+  associatedProjectEntries.forEach(addConnection);
+  relatedEntries.forEach(addConnection);
+  backlinks.forEach(link => addConnection(allEntries.find(item => item.id === link.id)));
   const connections = [...connectionMap.values()];
 
   const renderWikiText = (text: string) => renderFormattedText(text, { allEntries, onSelectEntry });
@@ -313,7 +311,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
             Connections ({connections.length})
           </h3>
           <ul className={`grid grid-cols-1 ${connections.length > 1 ? 'sm:grid-cols-2' : ''} gap-x-6 gap-y-2`}>
-            {connections.map(({ entry: item, relationships }) => (
+            {connections.map(item => (
               <li key={item.id} className="px-3 py-3 hover:bg-black/5 focus-within:bg-black/5 transition-colors space-y-1">
                 <div className="flex items-baseline justify-between gap-3">
                   <a
@@ -331,9 +329,6 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
                     {item.type}
                   </span>
                 </div>
-                <p className="text-[11px] font-mono-quiet text-black/40">
-                  {relationships.join(' · ')}
-                </p>
                 {item.shortDescription && (
                   <p className="text-xs sm:text-sm text-black/60 font-sans leading-relaxed line-clamp-2">
                     {renderWikiText(item.shortDescription)}

@@ -24,12 +24,13 @@ export const Footer: React.FC<FooterProps> = ({ siteSettings, onNavigateView }) 
   const linkClass = 'hover:text-black underline decoration-dotted underline-offset-4';
   return (
     <footer className="border-t border-black/10 mt-12 py-6 px-5 sm:px-8 text-xs text-black/60 font-sans">
-      <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-baseline gap-3 sm:gap-6">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] items-baseline gap-3 md:gap-6">
         <div className="space-y-1">
           <p className="font-editorial text-sm text-black">{renderFormattedText(content.artistName)}</p>
           {content.description.trim() && <p className="font-serif italic text-xs text-black/50 whitespace-pre-line">{renderFormattedText(content.description)}</p>}
         </div>
-        <div className="flex flex-wrap items-center gap-x-4 sm:gap-x-6 gap-y-2 font-mono-quiet text-xs text-black/70">
+        <p className="text-center text-xs text-black/50">© {new Date().getFullYear()} Hong Shu-ying 方舒颖</p>
+        <div className="flex flex-wrap items-center md:justify-self-end gap-x-4 sm:gap-x-6 gap-y-2 font-mono-quiet text-xs text-black/70">
           {links.map((link, index) => (
             <React.Fragment key={link.id}>
               {index > 0 && <span className="text-black/25" aria-hidden="true">·</span>}
@@ -42,7 +43,6 @@ export const Footer: React.FC<FooterProps> = ({ siteSettings, onNavigateView }) 
           ))}
         </div>
       </div>
-      <p className="mt-6 text-center text-xs text-black/50">© {new Date().getFullYear()} Hong Shu-ying 方舒颖</p>
     </footer>
   );
 };
