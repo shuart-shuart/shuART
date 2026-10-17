@@ -1978,7 +1978,7 @@
           "note": "Selected for the Women in Film and Photography showcase."
         }
       ],
-      "fullText": "Installation view at [title]Inheritance[/title] (Women in Film and Photography; 2020), Objectifs, Singapore.\n\nInstallation view at [title]Inheritance[/title] (Women in Film and Photography; 2020), Objectifs, Singapore.\n\nDeveloped through improvised darkroom and editing processes, images of coastlines and personal objects are repeatedly copied, altered and recombined until their sources become unstable.\nMade while thinking through my Henghua and Singaporean Chinese identity, the work approaches culture in a similar way: not as something fixed or inherited intact, but something continually reproduced and reshaped. The sea recurs throughout the work as both image and method—a form without fixed boundaries, continually changed by movement, contact and return.\n\nlapping_1000px_1.2\n\nlapping_1000px_4\n\nlapping_1000px_5\n\nlapping_1000px_6\n\nlapping_1000px_3",
+      "fullText": "Installation view at [title]Inheritance[/title] (Women in Film and Photography; 2020), Objectifs, Singapore.\n\nInstallation view at [title]Inheritance[/title] (Women in Film and Photography; 2020), Objectifs, Singapore.\n\nDeveloped through improvised darkroom and editing processes, images of coastlines and personal objects are repeatedly copied, altered and recombined until their sources become unstable.\nMade while thinking through my Henghua and Singaporean Chinese identity, the work approaches culture in a similar way: not as something fixed or inherited intact, but something continually reproduced and reshaped. The sea recurs throughout the work as both image and method—a form without fixed boundaries, continually changed by movement, contact and return.",
       "images": [
         {
           "id": "e965032d-1589-4dc6-8623-b13fcd404efc",
@@ -1998,35 +1998,35 @@
           "id": "5d32de8a-948c-4619-9a40-af420bb8b13c",
           "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/e8c9dc81846fec31a893c06d87d138801c5916d85d7c33a52478633d03730972.jpg",
           "caption": "",
-          "alt": "lapping_1000px_1.2",
+          "alt": "",
           "credit": ""
         },
         {
           "id": "918de404-5b38-499c-a3f9-4b86bf2e0ff0",
           "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/42ca7d2fcd9019292cfd8ed37e4fcc1c4f6214e1a18320d14ecfa4b4d96f394d.jpg",
           "caption": "",
-          "alt": "lapping_1000px_4",
+          "alt": "",
           "credit": ""
         },
         {
           "id": "406f7ef7-75e6-470d-8070-fbd9625a2788",
           "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/0540605ba46bf4cb18eee0c667bef59c2a5f65e6287110bd183a10de6fa19c0a.jpg",
           "caption": "",
-          "alt": "lapping_1000px_5",
+          "alt": "",
           "credit": ""
         },
         {
           "id": "5fcbdf8b-5b7a-46c2-92ed-df4687aa6682",
           "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/4bea2802a4899220d85a791b09fcbc95ec102f56df024f5f4d9f7a97323130c5.jpg",
           "caption": "",
-          "alt": "lapping_1000px_6",
+          "alt": "",
           "credit": ""
         },
         {
           "id": "bc18c7f5-d905-4da0-ba15-de5a4d13e632",
           "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/3b6fcfe150471c152a874a1e62da489354b03f8a2bb8ee57d1d94b0d76688187.jpg",
           "caption": "",
-          "alt": "lapping_1000px_3",
+          "alt": "",
           "credit": ""
         }
       ],
@@ -2067,43 +2067,51 @@
               "id": "5d32de8a-948c-4619-9a40-af420bb8b13c",
               "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/e8c9dc81846fec31a893c06d87d138801c5916d85d7c33a52478633d03730972.jpg",
               "caption": "",
-              "alt": "lapping_1000px_1.2",
+              "alt": "",
               "credit": ""
             },
             {
               "id": "918de404-5b38-499c-a3f9-4b86bf2e0ff0",
               "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/42ca7d2fcd9019292cfd8ed37e4fcc1c4f6214e1a18320d14ecfa4b4d96f394d.jpg",
               "caption": "",
-              "alt": "lapping_1000px_4",
+              "alt": "",
               "credit": ""
             },
             {
               "id": "406f7ef7-75e6-470d-8070-fbd9625a2788",
               "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/0540605ba46bf4cb18eee0c667bef59c2a5f65e6287110bd183a10de6fa19c0a.jpg",
               "caption": "",
-              "alt": "lapping_1000px_5",
+              "alt": "",
               "credit": ""
             },
             {
               "id": "5fcbdf8b-5b7a-46c2-92ed-df4687aa6682",
               "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/4bea2802a4899220d85a791b09fcbc95ec102f56df024f5f4d9f7a97323130c5.jpg",
               "caption": "",
-              "alt": "lapping_1000px_6",
+              "alt": "",
               "credit": ""
             },
             {
               "id": "bc18c7f5-d905-4da0-ba15-de5a4d13e632",
               "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/3b6fcfe150471c152a874a1e62da489354b03f8a2bb8ee57d1d94b0d76688187.jpg",
               "caption": "",
-              "alt": "lapping_1000px_3",
+              "alt": "",
               "credit": ""
             }
           ],
           "layout": "stacked"
         }
       ],
-      "tagIds": [],
-      "subjects": [],
+      "tagIds": [
+        "tag-learning",
+        "tag-copy",
+        "tag-time"
+      ],
+      "subjects": [
+        "learning? pedagogy?",
+        "copying and copies",
+        "time and the durational"
+      ],
       "associatedProjectIds": [],
       "relatedEntryIds": [
         "entry-linmo-sketches",
@@ -2112,7 +2120,7 @@
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-11T18:10:50.253Z"
+      "updatedAt": "2026-10-16T20:48:10.461Z"
     },
     {
       "id": "entry-national-flower-work",
@@ -3815,6 +3823,191 @@
       "updatedAt": "2026-10-16T20:33:39.890Z"
     },
     {
+      "id": "entry-shifting-springs",
+      "slug": "shifting-springs",
+      "title": "迁泉 shifting springs",
+      "titleZh": "迁泉",
+      "type": "work",
+      "date": "2023-",
+      "datePlaceholder": false,
+      "medium": "Experimental prints and Video objects",
+      "shortDescription": "迁泉 shifting springs begins with Huishan's Second Spring (天下第二泉), historically celebrated for the quality of its water for tea and later closely associated with Abing, who played 二泉映月 (Mirrored Moon in the Erquan Spring) there.",
+      "credits": [],
+      "presentationHistory": [
+        {
+          "id": "history-shifting-springs-1",
+          "title": "A Reservoir of Time",
+          "venue": "Objectifs–Centre for Photography and Film",
+          "location": "",
+          "date": "2023",
+          "action": "presented",
+          "curator": "Goh Chun Aik",
+          "attribution": "curated",
+          "link": "",
+          "note": "Part of Objectifs' Curator Open Call 2023."
+        }
+      ],
+      "fullText": "Today, the spring has largely dried up, leaving a place whose cultural image persists beyond its water.\nThe work turns to amateur and professional videos found online, where the spring continues to flow, reappear and be reimagined. Through experimental prints and video objects, these images are processed and displaced, tracing how a place can persist through music, memory and circulating images even as its physical form changes.\n\n泉里的水干了以后，留下的是“白”——空白的白。没有了水，泉反而成了一个可以不断被想象、填补的地方。记忆、音乐和流传的影像在这片空白里交叠，让已经消失的水一次次重新流动。\n网上的影像也是如此。不同的人拍摄、上传、转发，又重新想象同一个泉。久而久之，这些影像像一个由大众共同累积的时间囊：泉水或许已经干了，但关于它的想象还在流动。",
+      "images": [
+        {
+          "id": "b9dafe82-0aff-41ee-b115-d33c1236cab9",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/5364b9604e30e4fca0623c8dadd21ac442376912a973598b4dd4387c0574bbcc.gif",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "743f9f4f-fb9e-428e-89de-2aa867320f02",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/983c38d263aef5fec4ad90498c7615cb4e19719b19e6ec2bd3f32e46b5acdb27.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "edb9b375-3545-4ab1-bc69-c34f9c3f9266",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/d98713eddda0bef34b9a8e788fffd845307452cf1fb6a3da631a5014732ffb74.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "b6e8a10b-e408-4799-bdae-b0b69f0d8cc8",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/1b1970f4057c13197a4f410a6eaae696d17a0c6dcd5ac10b4a43d59dfbb817dc.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "94202aa1-1281-4f66-bff7-f8f689e8fc4e",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/b4ec80d6fe1cc798e19c7f55230b68d8b516a3aa28ecc27d91fa67991694802a.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "e5150c1f-df29-4212-912f-08804244297c",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/9feb4d3a67613ffd3cc59255456651d1799527acd6c431017c5dbaad6b140ed3.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "c461fb1f-736a-4106-ac5b-29c49842f440",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/78eb8873d363ef4aa29ec50e003652b36ac0dfe48cc68e771920c391ac9fb9fe.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        }
+      ],
+      "blocks": [
+        {
+          "id": "block-mvbfylsj-7iq3",
+          "type": "video",
+          "provider": "youtube",
+          "originalUrl": "https://youtube.com/shorts/lfX28ldLIBY",
+          "embedUrl": "https://www.youtube-nocookie.com/embed/lfX28ldLIBY?autoplay=0&rel=0&modestbranding=1",
+          "title": ""
+        },
+        {
+          "id": "block-mvbg3byw-9l2o",
+          "type": "video",
+          "provider": "youtube",
+          "originalUrl": "https://youtube.com/shorts/dIdJ_troD68",
+          "embedUrl": "https://www.youtube-nocookie.com/embed/dIdJ_troD68?autoplay=0&rel=0&modestbranding=1",
+          "title": ""
+        },
+        {
+          "id": "text-shifting-springs",
+          "type": "text",
+          "content": "Today, the spring has largely dried up, leaving a place whose cultural image persists beyond its water.\nThe work turns to amateur and professional videos found online, where the spring continues to flow, reappear and be reimagined. Through experimental prints and video objects, these images are processed and displaced, tracing how a place can persist through music, memory and circulating images even as its physical form changes.\n\n泉里的水干了以后，留下的是“白”——空白的白。没有了水，泉反而成了一个可以不断被想象、填补的地方。记忆、音乐和流传的影像在这片空白里交叠，让已经消失的水一次次重新流动。\n网上的影像也是如此。不同的人拍摄、上传、转发，又重新想象同一个泉。久而久之，这些影像像一个由大众共同累积的时间囊：泉水或许已经干了，但关于它的想象还在流动。"
+        },
+        {
+          "id": "block-mvbdw058-nl9g",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "b9dafe82-0aff-41ee-b115-d33c1236cab9",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/5364b9604e30e4fca0623c8dadd21ac442376912a973598b4dd4387c0574bbcc.gif",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            }
+          ],
+          "layout": "stacked"
+        },
+        {
+          "id": "block-mvbdw0zo-lsbb",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "743f9f4f-fb9e-428e-89de-2aa867320f02",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/983c38d263aef5fec4ad90498c7615cb4e19719b19e6ec2bd3f32e46b5acdb27.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "edb9b375-3545-4ab1-bc69-c34f9c3f9266",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/d98713eddda0bef34b9a8e788fffd845307452cf1fb6a3da631a5014732ffb74.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "b6e8a10b-e408-4799-bdae-b0b69f0d8cc8",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/1b1970f4057c13197a4f410a6eaae696d17a0c6dcd5ac10b4a43d59dfbb817dc.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "94202aa1-1281-4f66-bff7-f8f689e8fc4e",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/b4ec80d6fe1cc798e19c7f55230b68d8b516a3aa28ecc27d91fa67991694802a.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "e5150c1f-df29-4212-912f-08804244297c",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/9feb4d3a67613ffd3cc59255456651d1799527acd6c431017c5dbaad6b140ed3.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "c461fb1f-736a-4106-ac5b-29c49842f440",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/78eb8873d363ef4aa29ec50e003652b36ac0dfe48cc68e771920c391ac9fb9fe.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            }
+          ],
+          "layout": "grid"
+        }
+      ],
+      "tagIds": [
+        "tag-time",
+        "tag-copy"
+      ],
+      "subjects": [
+        "time and the durational",
+        "copying and copies"
+      ],
+      "associatedProjectIds": [],
+      "relatedEntryIds": [
+        "entry-mv46p9q3-1vsv",
+        "entry-hui-kuala",
+        "entry-who-is-abing",
+        "entry-phases"
+      ],
+      "status": "published",
+      "isDevelopingWork": false,
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-16T20:54:33.829Z"
+    },
+    {
       "id": "entry-in-two-strokes",
       "slug": "in-two-strokes",
       "title": "一笔一勾 in two strokes",
@@ -3973,6 +4166,69 @@
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
       "updatedAt": "2026-10-16T19:47:11.876Z"
+    },
+    {
+      "id": "entry-keeping-count",
+      "slug": "keeping-count",
+      "title": "keeping count",
+      "titleZh": "横竖横竖横",
+      "type": "work",
+      "date": "2024",
+      "datePlaceholder": false,
+      "shortDescription": "横竖横竖横 keeping count begins with 正, a five-stroke character commonly used as a tally.",
+      "credits": [],
+      "presentationHistory": [],
+      "fullText": "In my music notebooks, each stroke marked an instance of practice, slowly completing the character over time.\nAs a student, I once filled in the tally without having practised. My teacher caught me and remarked that if I continued like this, the only thing I was practising was how to write 正.\n\nThis series of 正 takes this reprimand literally. It is a collection of characters written repeatedly in a single sitting, paced against an increasingly fast metronome: practising the act of keeping count rather than the instrument it was meant to account for.",
+      "images": [
+        {
+          "id": "0460ac92-4f42-414d-be8d-a9eb8422d554",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/de610f9e3ebe5fc72833f2e271e4f71efd635317d4be918b726af8df96a1da79.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        }
+      ],
+      "blocks": [
+        {
+          "id": "block-mvchas55-i4gz",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "0460ac92-4f42-414d-be8d-a9eb8422d554",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/de610f9e3ebe5fc72833f2e271e4f71efd635317d4be918b726af8df96a1da79.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            }
+          ],
+          "layout": "stacked"
+        },
+        {
+          "id": "text-keeping-count",
+          "type": "text",
+          "content": "In my music notebooks, each stroke marked an instance of practice, slowly completing the character over time.\nAs a student, I once filled in the tally without having practised. My teacher caught me and remarked that if I continued like this, the only thing I was practising was how to write 正.\n\nThis series of 正 takes this reprimand literally. It is a collection of characters written repeatedly in a single sitting, paced against an increasingly fast metronome: practising the act of keeping count rather than the instrument it was meant to account for."
+        }
+      ],
+      "tagIds": [
+        "tag-time",
+        "tag-learning",
+        "tag-copy"
+      ],
+      "subjects": [
+        "time and the durational",
+        "learning? pedagogy?",
+        "copying and copies"
+      ],
+      "associatedProjectIds": [],
+      "relatedEntryIds": [
+        "entry-mv46lx9v-p6zn",
+        "entry-in-two-strokes"
+      ],
+      "status": "published",
+      "isDevelopingWork": true,
+      "createdAt": "2026-10-04T21:20:44Z",
+      "updatedAt": "2026-10-17T14:23:11.660Z"
     },
     {
       "id": "entry-in-the-aisle-book",
@@ -4252,14 +4508,84 @@
         }
       ],
       "presentationHistory": [],
-      "fullText": "With each generation, handwritten marks, dust and printing artefacts are copied alongside the music: some traces intensify while others slowly disappear.\n\nThe scores are scanned, enlarged, inverted and Risograph printed, turning these incidental traces into images in their own right. Each book contains 43 images selected from a larger set of 127 and is bound to stand upright like a calendar, allowing it to be read slowly over time.\n\nThe title plays between 沉淀, to settle or precipitate, and 尘惦, an invented pairing that suggests dust and something that continues to linger in the mind.",
+      "fullText": "With each generation, handwritten marks, dust and printing artefacts are copied alongside the music: some traces intensify while others slowly disappear.\n\nThe scores are scanned, enlarged, inverted and Risograph printed, turning these incidental traces into images in their own right. Each book contains 43 images selected from a larger set of 127 and is bound to stand upright like a calendar, allowing it to be read slowly over time.\n\nThe title plays between 沉淀, to settle or precipitate, and 尘惦, an invented pairing that suggests dust and something that continues to linger in the mind.\n\n沉淀是一个让时间把事物滤清的过程；尘惦则是在尘埃落定后，把依旧惦记在心里的感觉说出来。手抄、手印、手手交换的谱子是一种有迹可循的传承，也是一种由时光冲洗之后，留下的缝隙里的创新和续写。音乐、时间和情感皆是没形没色的，却也是有重量、有着千面百孔的。它们是生动的，是有温度和色彩的。\n\n简谱的字里行间藏有多么多的故事，一笔一画、一点一滴都是不同人留下的印迹与回忆。这一丝丝印迹又再被别人阅览、又再刷上一层釉彩，增添一些质感。反反复复的复印和翻阅把之前的印迹慢慢消化，就如时间把物品消磨成看似细微和单一的尘埃。\n\nWatching dust settle is to witness time passing.\n\nThe repeated photocopying of musical scores as a way to share them creates notations of an almost immaterial medium – of dust and artefacts, of music and time. With hand-copied notations, each line and stroke is an imprint and memory left by different people. These traces are read and re-read by others, imbuing a new layer of colour and texture. The repeated acts of copying, reading and sharing slowly erode the previous markings, just like how time wears things down into seemingly minute and homogeneous dust.",
       "images": [
         {
           "id": "c6a18fcb-4d43-4a46-b02b-5ec100c875af",
           "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/74efa6eb12fc7b66551e3d6195453eb9dfd6e138d738337c03519b363791263d.jpg",
           "caption": "",
           "alt": "",
-          "credit": "Studio Lubdub"
+          "credit": "dulub studio 嘟嚕"
+        },
+        {
+          "id": "b358d493-abdc-450f-8936-dd665ef1df83",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/5f73718811551a2010ab4619933abee352832402d493fce396e7caf5c8f3cbc9.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "dulub studio 嘟嚕"
+        },
+        {
+          "id": "ac453643-ad08-45bb-9552-e16d2e1ded22",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/06c28f3514090c6202132ebd13bd226dc7ad6953553a921af28cdeefa57337a0.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "dulub studio 嘟嚕"
+        },
+        {
+          "id": "8552ab7c-15b3-475b-a520-d529b8a147a7",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/2e16b83e59d1d158e5863b11036b97050659c1a99f85b90c17daae9ef03f0ff5.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "gideon-jamie"
+        },
+        {
+          "id": "068a6bdb-4d04-4d84-9ee9-492eb751b292",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/c60ebeade7f4897309e058a35ec0d0d65f6d1b301d3bb6289b653ac601942c56.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "gideon-jamie"
+        },
+        {
+          "id": "57aa546d-f6a4-4a12-a48f-05e7491b1c00",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/3c8d47d46a53fd34b077317e81c5e370d059170743d7fc62a7dcd6c9c68d7d8b.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "gideon-jamie"
+        },
+        {
+          "id": "d9e1324b-6dbf-4dfb-835c-4384ca214409",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/3c3d5079b51f0be6dad69d024ae338b7a6e9d810f70f0ab7501a39ac7f771194.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "gideon-jami"
+        },
+        {
+          "id": "d35901b9-abdd-4ee7-b86f-6016657405d1",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/6147493e7e796d681ed0c06002798d72a46041cd1d73631fd8c16a5c60189eac.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "gideon-jamie"
+        },
+        {
+          "id": "d447c5b3-9775-4998-9d12-3b2a7b063f3e",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/e756ac7bc83567aacf7655742bfb1e9ec45d7117bfdf51739ff2d7886a44efb7.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "4ec692a0-7182-4bb3-aaed-1e3b468e7d3c",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/cc85ba2593575712e2307bd2bf38ff41511474269b7d29335c1f16f269a8e81c.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "c584bc1d-57b1-425e-ab3c-3ceb3abab8f7",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/32ad975e7ca2172d3353f35a23b27820c41ae0b555ba680b79431132c94bea26.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
         }
       ],
       "blocks": [
@@ -4273,7 +4599,38 @@
               "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/74efa6eb12fc7b66551e3d6195453eb9dfd6e138d738337c03519b363791263d.jpg",
               "caption": "",
               "alt": "",
-              "credit": "Studio Lubdub"
+              "credit": "dulub studio 嘟嚕"
+            },
+            {
+              "id": "b358d493-abdc-450f-8936-dd665ef1df83",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/5f73718811551a2010ab4619933abee352832402d493fce396e7caf5c8f3cbc9.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "dulub studio 嘟嚕"
+            },
+            {
+              "id": "ac453643-ad08-45bb-9552-e16d2e1ded22",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/06c28f3514090c6202132ebd13bd226dc7ad6953553a921af28cdeefa57337a0.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "dulub studio 嘟嚕"
+            }
+          ],
+          "layout": "carousel",
+          "autoPlay": true,
+          "intervalSeconds": 2
+        },
+        {
+          "id": "block-mvch5ks6-6zvx",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "8552ab7c-15b3-475b-a520-d529b8a147a7",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/2e16b83e59d1d158e5863b11036b97050659c1a99f85b90c17daae9ef03f0ff5.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "gideon-jamie"
             }
           ],
           "layout": "stacked"
@@ -4282,6 +4639,81 @@
           "id": "text-chen-dian-after-scans",
           "type": "text",
           "content": "With each generation, handwritten marks, dust and printing artefacts are copied alongside the music: some traces intensify while others slowly disappear.\n\nThe scores are scanned, enlarged, inverted and Risograph printed, turning these incidental traces into images in their own right. Each book contains 43 images selected from a larger set of 127 and is bound to stand upright like a calendar, allowing it to be read slowly over time.\n\nThe title plays between 沉淀, to settle or precipitate, and 尘惦, an invented pairing that suggests dust and something that continues to linger in the mind."
+        },
+        {
+          "id": "block-mvcgzy02-wfcg",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "068a6bdb-4d04-4d84-9ee9-492eb751b292",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/c60ebeade7f4897309e058a35ec0d0d65f6d1b301d3bb6289b653ac601942c56.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "gideon-jamie"
+            },
+            {
+              "id": "57aa546d-f6a4-4a12-a48f-05e7491b1c00",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/3c8d47d46a53fd34b077317e81c5e370d059170743d7fc62a7dcd6c9c68d7d8b.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "gideon-jamie"
+            },
+            {
+              "id": "d9e1324b-6dbf-4dfb-835c-4384ca214409",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/3c3d5079b51f0be6dad69d024ae338b7a6e9d810f70f0ab7501a39ac7f771194.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "gideon-jami"
+            },
+            {
+              "id": "d35901b9-abdd-4ee7-b86f-6016657405d1",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/6147493e7e796d681ed0c06002798d72a46041cd1d73631fd8c16a5c60189eac.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "gideon-jamie"
+            }
+          ],
+          "layout": "stacked"
+        },
+        {
+          "id": "block-mvch3ixa-jgsi",
+          "type": "text",
+          "content": "沉淀是一个让时间把事物滤清的过程；尘惦则是在尘埃落定后，把依旧惦记在心里的感觉说出来。手抄、手印、手手交换的谱子是一种有迹可循的传承，也是一种由时光冲洗之后，留下的缝隙里的创新和续写。音乐、时间和情感皆是没形没色的，却也是有重量、有着千面百孔的。它们是生动的，是有温度和色彩的。\n\n简谱的字里行间藏有多么多的故事，一笔一画、一点一滴都是不同人留下的印迹与回忆。这一丝丝印迹又再被别人阅览、又再刷上一层釉彩，增添一些质感。反反复复的复印和翻阅把之前的印迹慢慢消化，就如时间把物品消磨成看似细微和单一的尘埃。"
+        },
+        {
+          "id": "block-mvch3jgb-ca6c",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "d447c5b3-9775-4998-9d12-3b2a7b063f3e",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/e756ac7bc83567aacf7655742bfb1e9ec45d7117bfdf51739ff2d7886a44efb7.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "4ec692a0-7182-4bb3-aaed-1e3b468e7d3c",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/cc85ba2593575712e2307bd2bf38ff41511474269b7d29335c1f16f269a8e81c.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "c584bc1d-57b1-425e-ab3c-3ceb3abab8f7",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/32ad975e7ca2172d3353f35a23b27820c41ae0b555ba680b79431132c94bea26.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            }
+          ],
+          "layout": "stacked"
+        },
+        {
+          "id": "block-mvch59nx-818s",
+          "type": "text",
+          "content": "Watching dust settle is to witness time passing.\n\nThe repeated photocopying of musical scores as a way to share them creates notations of an almost immaterial medium – of dust and artefacts, of music and time. With hand-copied notations, each line and stroke is an imprint and memory left by different people. These traces are read and re-read by others, imbuing a new layer of colour and texture. The repeated acts of copying, reading and sharing slowly erode the previous markings, just like how time wears things down into seemingly minute and homogeneous dust."
         }
       ],
       "tagIds": [
@@ -4309,7 +4741,7 @@
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-16T19:40:18.510Z"
+      "updatedAt": "2026-10-17T14:11:56.617Z"
     },
     {
       "id": "entry-ive-never-met-yoko-ono",
