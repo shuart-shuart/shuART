@@ -1,9 +1,11 @@
 """Refresh the public CV PDF from its Google Doc when deploying the site."""
 import json
+from io import BytesIO
 from pathlib import Path
 import re
 import time
 import urllib.request
+from pypdf import PdfWriter
 
 
 def export_cv():
@@ -27,7 +29,10 @@ def export_cv():
                 if not data.startswith(b'%PDF-') or len(data) > 10 * 1024 * 1024:
                     raise ValueError('CV export was not a valid PDF under 10 MB')
             destination.parent.mkdir(parents=True, exist_ok=True)
-            destination.write_bytes(data)
+            writer = PdfWriter(clone_from=BytesIO(data))
+            writer.add_metadata({'/Title': 'HONG Shu-ying_CV'})
+            with destination.open('wb') as output:
+                writer.write(output)
             print(f'Exported {destination.name} ({len(data)} bytes)')
             return
         except Exception:

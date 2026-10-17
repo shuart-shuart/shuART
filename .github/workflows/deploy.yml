@@ -32,7 +32,9 @@ jobs:
       - name: Build
         run: bun run build
       - name: Export named CV PDF
-        run: python3 scripts/export_cv.py
+        run: |
+          python3 -m pip install pypdf==6.10.0
+          python3 scripts/export_cv.py
       - uses: actions/upload-pages-artifact@v3
         if: github.event_name != 'pull_request'
         with:
