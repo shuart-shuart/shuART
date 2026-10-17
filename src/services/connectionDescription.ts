@@ -1,7 +1,7 @@
 import type { Entry } from '../types';
 import { splitEntryTitle } from '../components/EntryTitle';
 
-const escape = (value: string) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\s+/g, '\\s+');
+const escape = (value: string) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\s+/g, '\\s+').replace(/['‘’ʼ]/g, "['‘’ʼ]").replace(/[\"“”]/g, '[\"“”]');
 
 // This is a display transformation; the saved description is never changed.
 export function connectionDescription(entry: Pick<Entry, 'title' | 'titleZh' | 'shortDescription'>): string {

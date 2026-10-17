@@ -14,3 +14,7 @@ test('connection summaries preserve unrelated openings, word boundaries and link
   assert.equal(connectionDescription({title:'Test',shortDescription:'A different opening.'}),'A different opening.');
   assert.equal(connectionDescription({title:'Test',shortDescription:'Test gathers [notes](https://example.org).'}),'gathers [notes](https://example.org).');
 });
+
+test('curly and straight quotation marks still identify the complete repeated bilingual title', () => {
+  assert.equal(connectionDescription({title:'i’ve never met yoko ono',titleZh:'天明日月奣',shortDescription:"天明日月奣  i've never met yoko ono collects images."}),'collects images.');
+});
