@@ -367,6 +367,9 @@
     },
     {
       "id": "klj",
+      "aliases": [
+        "entry-mv467b6c-49dn"
+      ],
       "slug": "klj",
       "title": "How We Learn(t)",
       "type": "project",
@@ -393,7 +396,7 @@
         {
           "id": "credit-mv46av2g-inc6",
           "role": "designer",
-          "name": "Gideon-Jamie",
+          "name": "gideon-jamie",
           "link": ""
         },
         {
@@ -405,7 +408,7 @@
         }
       ],
       "presentationHistory": [],
-      "fullText": "[title]How We Learn(t)[/title] brings together two new bodies of work that examine, deconstruct, and re-present existing systems of knowledge.\n\nInformed by her eighteen years as a member of various Chinese orchestras, Hong Shu-ying reflects on the culture of ensembleship in 「 濡 睦 」 resonations. Exploring hand-copied scores, pre-concert tuning, and orchestral seating arrangements, her works illuminate the shared languages and collective experiences that live on the periphery, yet serve as the scaffolding for communal music-making.\n\nIn substance of a minute, recorded by a machine and a few others, Syahrul Anuar takes the tools, techniques, and visual vocabulary of cartography into his own hands, removing them from positions of authority and perceived objectivity. Through four exercises in which mapmaking is unlearned and relearned, he challenges the seemingly immutable frameworks that govern the way we move through urban Singapore.\n\nRecipients of the Kwek Leng Joo Prize of Excellence in Photography 2021, the two artists sidestep conventional photography in this exhibition. In its place are sculptures, moving images, and prints resembling drawings, all of which deliberately skirt the bodies of knowledge at the heart of their subjects.\n\nStill, the ‘documentative’—one of the core functions of photography—remains insistently present in both series. It has been reimagined as gestures that are abstract, speculative, intimate, and reflexive; gestures that dislocate something from its source, in order to transform our understanding.\n\nSee the [catalogue](https://bernytan.com/s/HowWeLearnt_Catalogue_DigitalPreview_Artworks.pdf).",
+      "fullText": "[title]How We Learn(t)[/title] brings together two new bodies of work that examine, deconstruct, and re-present existing systems of knowledge.\n\nInformed by her eighteen years as a member of various Chinese orchestras, Hong Shu-ying reflects on the culture of ensembleship in 「 濡 睦 」 resonations. Exploring hand-copied scores, pre-concert tuning, and orchestral seating arrangements, her works illuminate the shared languages and collective experiences that live on the periphery, yet serve as the scaffolding for communal music-making.\n\nIn substance of a minute, recorded by a machine and a few others, Syahrul Anuar takes the tools, techniques, and visual vocabulary of cartography into his own hands, removing them from positions of authority and perceived objectivity. Through four exercises in which mapmaking is unlearned and relearned, he challenges the seemingly immutable frameworks that govern the way we move through urban Singapore.\n\nRecipients of the Kwek Leng Joo Prize of Excellence in Photography 2021, the two artists sidestep conventional photography in this exhibition. In its place are sculptures, moving images, and prints resembling drawings, all of which deliberately skirt the bodies of knowledge at the heart of their subjects.\n\nStill, the ‘documentative’—one of the core functions of photography—remains insistently present in both series. It has been reimagined as gestures that are abstract, speculative, intimate, and reflexive; gestures that dislocate something from its source, in order to transform our understanding.\n\nSee the [catalogue](https://bernytan.com/s/HowWeLearnt_Catalogue_DigitalPreview_Artworks.pdf).\n\nshow catalogue",
       "images": [
         {
           "id": "0bd6de94-573b-4df7-ab70-7aa11727b8b6",
@@ -511,6 +514,13 @@
           "caption": "",
           "alt": "",
           "credit": "Syahrul Anuar"
+        },
+        {
+          "id": "bff6397a-13e0-48bd-af3f-fd64f9392fff",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/80ca5ee1fe875500ff33633133b7efe691d8ec04159d6f6a6fdec8deca5ac07d.jpg",
+          "caption": "show catalogue",
+          "alt": "",
+          "credit": "gideon-jamie"
         }
       ],
       "blocks": [
@@ -633,6 +643,21 @@
           "id": "text-1791744146005-1",
           "type": "text",
           "content": "[title]How We Learn(t)[/title] brings together two new bodies of work that examine, deconstruct, and re-present existing systems of knowledge.\n\nInformed by her eighteen years as a member of various Chinese orchestras, Hong Shu-ying reflects on the culture of ensembleship in 「 濡 睦 」 resonations. Exploring hand-copied scores, pre-concert tuning, and orchestral seating arrangements, her works illuminate the shared languages and collective experiences that live on the periphery, yet serve as the scaffolding for communal music-making.\n\nIn substance of a minute, recorded by a machine and a few others, Syahrul Anuar takes the tools, techniques, and visual vocabulary of cartography into his own hands, removing them from positions of authority and perceived objectivity. Through four exercises in which mapmaking is unlearned and relearned, he challenges the seemingly immutable frameworks that govern the way we move through urban Singapore.\n\nRecipients of the Kwek Leng Joo Prize of Excellence in Photography 2021, the two artists sidestep conventional photography in this exhibition. In its place are sculptures, moving images, and prints resembling drawings, all of which deliberately skirt the bodies of knowledge at the heart of their subjects.\n\nStill, the ‘documentative’—one of the core functions of photography—remains insistently present in both series. It has been reimagined as gestures that are abstract, speculative, intimate, and reflexive; gestures that dislocate something from its source, in order to transform our understanding.\n\nSee the [catalogue](https://bernytan.com/s/HowWeLearnt_Catalogue_DigitalPreview_Artworks.pdf)."
+        },
+        {
+          "id": "block-mvctiibo-jxl2",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "bff6397a-13e0-48bd-af3f-fd64f9392fff",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/80ca5ee1fe875500ff33633133b7efe691d8ec04159d6f6a6fdec8deca5ac07d.jpg",
+              "caption": "show catalogue",
+              "alt": "",
+              "credit": "gideon-jamie"
+            }
+          ],
+          "layout": "stacked"
         }
       ],
       "tagIds": [
@@ -653,10 +678,7 @@
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-11T18:44:12.571Z",
-      "updatedAt": "2026-10-11T19:32:25.478Z",
-      "aliases": [
-        "entry-mv467b6c-49dn"
-      ]
+      "updatedAt": "2026-10-17T20:00:54.277Z"
     },
     {
       "id": "bichu",
@@ -4185,6 +4207,9 @@
     },
     {
       "id": "shifting-springs",
+      "aliases": [
+        "entry-shifting-springs"
+      ],
       "slug": "shifting-springs",
       "title": "迁泉 shifting springs",
       "titleZh": "迁泉",
@@ -4267,7 +4292,8 @@
           "provider": "youtube",
           "originalUrl": "https://youtube.com/shorts/lfX28ldLIBY",
           "embedUrl": "https://www.youtube-nocookie.com/embed/lfX28ldLIBY?autoplay=0&rel=0&modestbranding=1",
-          "title": ""
+          "title": "",
+          "aspectRatio": "1:1"
         },
         {
           "id": "block-mvbg3byw-9l2o",
@@ -4275,7 +4301,8 @@
           "provider": "youtube",
           "originalUrl": "https://youtube.com/shorts/dIdJ_troD68",
           "embedUrl": "https://www.youtube-nocookie.com/embed/dIdJ_troD68?autoplay=0&rel=0&modestbranding=1",
-          "title": ""
+          "title": "",
+          "aspectRatio": "1:1"
         },
         {
           "id": "text-shifting-springs",
@@ -4366,10 +4393,7 @@
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-16T20:54:33.829Z",
-      "aliases": [
-        "entry-shifting-springs"
-      ]
+      "updatedAt": "2026-10-17T18:53:07.933Z"
     },
     {
       "id": "in-two-strokes",
