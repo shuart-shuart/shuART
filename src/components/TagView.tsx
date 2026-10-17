@@ -1,4 +1,5 @@
 import { HtmlContent } from './HtmlContent';
+import { WebsiteEmbed } from './WebsiteEmbed';
 import { entryTags } from '../services/canonicalTags';
 import { EntryTitle } from './EntryTitle';
 import { renderFormattedText } from '../services/formatting';
@@ -116,6 +117,7 @@ export const TagView: React.FC<TagViewProps> = ({
                   );
                 }
                 if (block.type === 'html') return <section key={block.id}><HtmlContent content={block.content} /></section>;
+                if (block.type === 'website') return <section key={block.id}><WebsiteEmbed block={block} /></section>;
                 if (block.type === 'text') {
                   return (
                     <div

@@ -48,6 +48,9 @@ export function syncEntryFromBlocks(entry: Entry, blocks: ContentBlock[]): Entry
       if (block.content) textParts.push(block.content);
     } else if (block.type === 'html') {
       textParts.push(htmlContentToText(block.content));
+    } else if (block.type === 'website') {
+      if (block.title) textParts.push(block.title);
+      if (block.caption) textParts.push(block.caption);
     } else if (block.type === 'image_gallery') {
       if (block.title) textParts.push(block.title);
       if (block.images && block.images.length > 0) {

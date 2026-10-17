@@ -26,7 +26,17 @@ export interface EntryImage {
 }
 
 // ---------------- Content Block Definitions ----------------
-export type ContentBlockType = 'text' | 'html' | 'image_gallery' | 'document_reader' | 'video';
+export type ContentBlockType = 'text' | 'html' | 'website' | 'image_gallery' | 'document_reader' | 'video';
+
+export interface WebsiteBlock {
+  id: string;
+  type: 'website';
+  url: string;
+  title?: string;
+  caption?: string;
+  height?: number;
+  clickToLoad?: boolean;
+}
 
 export interface HtmlBlock {
   id: string;
@@ -96,6 +106,7 @@ export interface VideoBlock {
 }
 
 export type ContentBlock =
+  | WebsiteBlock
   | HtmlBlock
   | TextBlock
   | ImageGalleryBlock

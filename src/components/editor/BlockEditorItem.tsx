@@ -1,4 +1,6 @@
 import { HtmlContent } from '../HtmlContent';
+import { WebsiteEmbed } from '../WebsiteEmbed';
+import { websiteEmbedUrl, websiteEmbedHeight } from '../../services/websiteEmbed';
 import React, { useState } from 'react';
 import {
   ContentBlock,
@@ -342,8 +344,25 @@ export const BlockEditorItem: React.FC<BlockEditorItemProps> = ({
         <label className="block text-xs font-mono-quiet space-y-2">HTML code
           <textarea value={block.content} onChange={e => onUpdateBlock({...block, content:e.target.value})} rows={10} spellCheck={false} className="w-full border border-black/25 p-3 text-xs font-mono-quiet" placeholder={'<p>Your content <em>here</em>.</p>'} />
         </label>
-        <p className="text-xs text-black/60">Supports headings, lists, links, image URLs, tables and simple inline layout styles. Scripts, forms and iframes are removed. Use a Video block for video embeds.</p>
+        <p className="text-xs text-black/60">Supports headings, lists, links, image URLs, tables and simple inline layout styles. Scripts, forms and iframes are removed. Use Website or Video blocks for embeds.</p>
         <details className="text-sm"><summary className="cursor-pointer">Preview HTML</summary><div className="mt-3 p-3 border border-black/10"><HtmlContent content={block.content} /></div></details>
+      </div>}
+
+      {block.type === 'website' && <div className="space-y-4">
+        <FormattedField label="Website title" value={block.title || ''} onChange={title => onUpdateBlock({ ...block, title })} allEntries={allEntries} />
+        <label className="block text-xs space-y-2">Website URL
+          <input type="text" required value={block.url} onChange={event => { const url = event.target.value; event.currentTarget.setCustomValidity(url.trim() && !websiteEmbedUrl(url) ? 'Enter an HTTPS website URL or a path beginning with /.' : ''); onUpdateBlock({ ...block, url }); }} className="w-full border border-black/25 p-2 text-sm" placeholder="https://… or /archives/dingdongbeep/" aria-invalid={!!block.url && !websiteEmbedUrl(block.url)} />
+        </label>
+        {block.url && !websiteEmbedUrl(block.url) && <p role="alert" className="text-xs text-red-700">Use an HTTPS website address or a path beginning with /. Paste the URL, rather than iframe code.</p>}
+        <FormattedField label="Caption / archive date" value={block.caption || ''} onChange={caption => onUpdateBlock({ ...block, caption })} allEntries={allEntries} multiline rows={2} />
+        <div className="flex flex-wrap gap-5 items-center text-xs">
+          <label className="flex items-center gap-2">Height (pixels)
+            <input type="number" min={320} max={1200} step={20} value={websiteEmbedHeight(block.height)} onChange={event => onUpdateBlock({ ...block, height: Number(event.target.value) })} className="w-24 border border-black/25 p-2" />
+          </label>
+          <label className="flex items-center gap-2"><input type="checkbox" checked={block.clickToLoad !== false} onChange={event => onUpdateBlock({ ...block, clickToLoad: event.target.checked })} />Load only when clicked</label>
+        </div>
+        <p className="text-xs text-black/60">Use the published website or Wayback capture URL. Some sites block embedding; an Open website link stays visible. Sound starts after interacting with the embedded page.</p>
+        <details><summary className="cursor-pointer text-xs">Preview website</summary><div className="mt-3"><WebsiteEmbed block={block} /></div></details>
       </div>}
 
       {/* ---------------- 2. IMAGE GALLERY BLOCK EDITOR ---------------- */}

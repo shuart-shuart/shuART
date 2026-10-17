@@ -1,4 +1,5 @@
 import { HtmlContent } from './HtmlContent';
+import { WebsiteEmbed } from './WebsiteEmbed';
 import { GallerySlideshow } from './GallerySlideshow';
 import { entryTags as canonicalEntryTags } from '../services/canonicalTags';
 import { EntryTitle } from './EntryTitle';
@@ -201,6 +202,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
           }
 
           if (block.type === 'html') return <section key={block.id}><HtmlContent content={block.content} /></section>;
+          if (block.type === 'website') return <section key={block.id}><WebsiteEmbed block={block} /></section>;
 
           if (block.type === 'image_gallery') {
             const hasImages = block.images && block.images.length > 0;

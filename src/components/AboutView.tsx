@@ -1,4 +1,5 @@
 import React from 'react';
+import { CvLinks } from './CvLinks';
 import { Entry, SiteSettings, ViewMode } from '../types';
 import { DEFAULT_ABOUT } from '../data/siteContent';
 import { renderFormattedText } from '../services/formatting';
@@ -22,13 +23,14 @@ export const AboutView: React.FC<AboutViewProps> = ({ siteSettings, allEntries =
         <header className="space-y-3 mb-10">
           <h1 className="font-editorial text-3xl sm:text-5xl text-black font-normal tracking-tight">{render(content.title)}</h1>
           <p className="font-editorial text-2xl sm:text-3xl text-black/80 font-light leading-snug">{render(content.artistName)}</p>
+          <CvLinks content={content} />
         </header>
         {content.biography.trim() && (
           <section className="max-w-[65ch] text-base sm:text-lg text-black/85 leading-[1.65] space-y-6">
             {paragraphs(content.biography)}
           </section>
         )}
-        {content.sections.map(section => (
+        {content.sections.filter(section => section.id !== 'cv-links').map(section => (
           <section key={section.id} className="my-14 pt-10 border-t border-black/10 space-y-6 max-w-4xl">
             {section.title && <h2 className="font-editorial text-2xl text-black font-normal">{render(section.title)}</h2>}
             {section.text.trim() && <div className="space-y-4 text-base sm:text-lg text-black/75 leading-[1.65] max-w-[65ch]">{paragraphs(section.text)}</div>}
