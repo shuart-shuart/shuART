@@ -3546,6 +3546,49 @@
       "updatedAt": "2026-10-11T20:24:27.407Z"
     },
     {
+      "id": "ss-between-books-and-libraries",
+      "slug": "ss-between-books-and-libraries",
+      "title": "ss: between books & libraries",
+      "titleZh": "述书",
+      "type": "project",
+      "date": "ongoing",
+      "datePlaceholder": false,
+      "shortDescription": "[draft] A long-term project traversing books, public and independent libraries, reader communities, personal collections, and reading sessions.",
+      "credits": [],
+      "presentationHistory": [],
+      "fullText": "[draft] The name draws upon *Shu Shu* (述书)—recounting, narrating, or commenting on books—while positioning the work in the interval between books as bound objects and libraries as collective spatial institutions.\n\nIt encompasses:\n- **Books**: Printed matter, artists' publications, annotated volumes, and marginalia.\n- **Libraries**: Independent archives, institutional collections, public reading rooms, and personal shelves.\n- **People & Conversations**: Readers, custodians, transcribers, and librarians.\n- **Programmes**: Reading groups, including the [[part-time-book-club]], translation circles, and collective reading aloud.",
+      "images": [],
+      "blocks": [
+        {
+          "id": "block-ss-1",
+          "type": "text",
+          "content": "[draft] The name draws upon *Shu Shu* (述书)—recounting, narrating, or commenting on books—while positioning the work in the interval between books as bound objects and libraries as collective spatial institutions.\n\nIt encompasses:\n- **Books**: Printed matter, artists' publications, annotated volumes, and marginalia.\n- **Libraries**: Independent archives, institutional collections, public reading rooms, and personal shelves.\n- **People & Conversations**: Readers, custodians, transcribers, and librarians.\n- **Programmes**: Reading groups, including the [[part-time-book-club]], translation circles, and collective reading aloud."
+        }
+      ],
+      "tagIds": [
+        "tag-libraries",
+        "tag-books",
+        "tag-archives",
+        "tag-learning",
+        "tag-working-notes",
+        "tag-spaceswo"
+      ],
+      "subjects": [
+        "libraries",
+        "books and bookish things",
+        "archives and records",
+        "learning? pedagogy?",
+        "working notes",
+        "spaces without space"
+      ],
+      "associatedProjectIds": [],
+      "relatedEntryIds": [],
+      "status": "published",
+      "isDevelopingWork": true,
+      "createdAt": "2026-01-01T08:00:00Z",
+      "updatedAt": "2026-10-17T14:42:20.223Z"
+    },
+    {
       "id": "entry-chen-dian-found-on-paper",
       "slug": "chen-dian-found-on-paper",
       "title": "chen dian (found on paper, made in minds)",
