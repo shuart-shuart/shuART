@@ -125,6 +125,9 @@
     },
     {
       "id": "dingdongbeep",
+      "aliases": [
+        "entry-mvcmp76u-qozj"
+      ],
       "slug": "dingdongbeep",
       "title": "dingdongbeep!",
       "type": "project",
@@ -174,12 +177,72 @@
         }
       ],
       "fullText": "[title]dingdongbeep![/title] is a mobile music room with toy instruments and artworks you can look at and play with.\n\n[Instagram](https://www.instagram.com/dingdongbeep_/)",
-      "images": [],
+      "images": [
+        {
+          "id": "ed573e5c-390b-46e2-9a0f-cbf022593c10",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/abf892d04e1f06c16aa706b070a106ceaab1e756d5ebde2e4be870de4d339094.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Marvin Tang"
+        },
+        {
+          "id": "e2b10085-afc2-4f41-82c2-936bf59ec097",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/b990b3da9c9eee5e39dd1b495eb8a64cf001a45aac85ea35826363ae0ceff740.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Marvin Tang"
+        },
+        {
+          "id": "c89e5c68-9c47-4f8c-b2a7-e2d01acd70a6",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/e9fbe8d22d731ed845fcf9308a7e279ec91485a32f434a3276816fc23b5ef842.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "Marvin Tang"
+        }
+      ],
       "blocks": [
+        {
+          "id": "block-mvcvzocv-pktk",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "ed573e5c-390b-46e2-9a0f-cbf022593c10",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/abf892d04e1f06c16aa706b070a106ceaab1e756d5ebde2e4be870de4d339094.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Marvin Tang"
+            },
+            {
+              "id": "e2b10085-afc2-4f41-82c2-936bf59ec097",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/b990b3da9c9eee5e39dd1b495eb8a64cf001a45aac85ea35826363ae0ceff740.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Marvin Tang"
+            },
+            {
+              "id": "c89e5c68-9c47-4f8c-b2a7-e2d01acd70a6",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/e9fbe8d22d731ed845fcf9308a7e279ec91485a32f434a3276816fc23b5ef842.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "Marvin Tang"
+            }
+          ],
+          "layout": "stacked"
+        },
         {
           "id": "text-1792255583914-1",
           "type": "text",
           "content": "[title]dingdongbeep![/title] is a mobile music room with toy instruments and artworks you can look at and play with.\n\n[Instagram](https://www.instagram.com/dingdongbeep_/)"
+        },
+        {
+          "id": "block-mvcvznww-zq7s",
+          "type": "website",
+          "url": "https://shuart-shuart.github.io/dingdongbeep/info/",
+          "title": "",
+          "caption": "",
+          "height": 640,
+          "clickToLoad": true
         }
       ],
       "tagIds": [
@@ -195,10 +258,49 @@
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-17T16:49:00.404Z",
-      "updatedAt": "2026-10-17T16:49:00.404Z",
+      "updatedAt": "2026-10-17T21:07:50.666Z"
+    },
+    {
+      "id": "collected-on-paper",
       "aliases": [
-        "entry-mvcmp76u-qozj"
-      ]
+        "entry-mvciizb1-lyhe"
+      ],
+      "slug": "collected-on-paper",
+      "title": "collected on paper",
+      "type": "project",
+      "datePlaceholder": false,
+      "shortDescription": "",
+      "credits": [],
+      "presentationHistory": [],
+      "fullText": "",
+      "images": [],
+      "blocks": [
+        {
+          "id": "block-mvcw1pfu-lmh7",
+          "type": "website",
+          "url": "https://parttime-book-club.super.site/collected-on-paper",
+          "title": "",
+          "caption": "",
+          "height": 640,
+          "clickToLoad": true
+        }
+      ],
+      "tagIds": [
+        "tag-spaceswo",
+        "tag-books"
+      ],
+      "subjects": [
+        "spaces without space",
+        "books and bookish things"
+      ],
+      "associatedProjectIds": [],
+      "relatedEntryIds": [
+        "ss-between-books-and-libraries"
+      ],
+      "status": "published",
+      "isDevelopingWork": false,
+      "createdAt": "2026-10-17T14:50:20.882Z",
+      "updatedAt": "2026-10-17T21:08:15.736Z"
     },
     {
       "id": "b-side-books",
