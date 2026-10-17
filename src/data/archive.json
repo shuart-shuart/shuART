@@ -1595,6 +1595,9 @@
     },
     {
       "id": "asm",
+      "aliases": [
+        "entry-in-the-aisle-work"
+      ],
       "slug": "asm",
       "title": "in the aisle",
       "type": "work",
@@ -1627,7 +1630,7 @@
           "curator": "",
           "attribution": "programmed",
           "link": "",
-          "note": ""
+          "note": "[title]in the aisle[/title] was made during a 14-day study trip to Edinburgh that was organised by NTU School of Art, Design and Media. "
         }
       ],
       "fullText": "Installation view at [title]Bearings[/title] (2019), ADM Gallery, Singapore.\n\nInstallation view at [title]Bearings[/title] (2019), ADM Gallery, Singapore.\n\nInstallation view at [title]Bearings[/title] (2019), ADM Gallery, Singapore.\n\nMade during a two-week programme while living away from Singapore, the work looks at how familiar products, languages, smells and everyday exchanges can make an unfamiliar place briefly feel like home. Bringing these fragments together through photographs, wheat-pasted prints and newsprint, the work considers the supermarket not only as a place to buy things, but as a space where familiarity and community are quietly reproduced.",
@@ -1813,10 +1816,7 @@
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-11T17:46:44.048Z",
-      "aliases": [
-        "entry-in-the-aisle-work"
-      ]
+      "updatedAt": "2026-10-17T18:45:47.872Z"
     },
     {
       "id": "things-we-held-and-grazed",
@@ -4601,6 +4601,9 @@
     },
     {
       "id": "asm-book",
+      "aliases": [
+        "entry-in-the-aisle-book"
+      ],
       "slug": "asm-book",
       "title": "in the aisle",
       "type": "publication",
@@ -4612,18 +4615,6 @@
       "credits": [],
       "presentationHistory": [
         {
-          "id": "history-in-the-aisle-book-1",
-          "title": "Pingyao International Photography Festival",
-          "venue": "",
-          "location": "China",
-          "date": "2019",
-          "action": "shown",
-          "curator": "",
-          "attribution": "curated",
-          "link": "",
-          "note": "Selected as part of a student showcase."
-        },
-        {
           "id": "history-in-the-aisle-book-2",
           "title": "Bearings",
           "venue": "ADM Gallery",
@@ -4633,10 +4624,10 @@
           "curator": "",
           "attribution": "curated",
           "link": "",
-          "note": ""
+          "note": "[title]in the aisle[/title] was made during a 14-day study trip to Edinburgh that was organised by NTU School of Art, Design and Media. "
         }
       ],
-      "fullText": "Made while living away from Singapore, the work follows these spaces through the familiar products, languages, smells and everyday exchanges that briefly made somewhere foreign feel like home.\nThe work takes the form of a newsprint publication, drawing from the free newspapers and distribution kiosks commonly found in these supermarkets. By borrowing a format already circulating within the space, the book considers the supermarket not only as a place to buy familiar things, but as a place where information, conversation and a sense of community are exchanged.",
+      "fullText": "Made while living away from Singapore, the work follows these spaces through the familiar products, languages, smells and everyday exchanges that briefly made somewhere foreign feel like home.\n\nThe work takes the form of a newsprint publication, drawing from the free newspapers and distribution kiosks commonly found in these supermarkets. By borrowing a format already circulating within the space, the book considers the supermarket not only as a place to buy familiar things, but as a place where information, conversation and a sense of community are exchanged.",
       "images": [
         {
           "id": "d69e5b3c-d81f-4510-b3fe-0870d12e6c21",
@@ -4686,7 +4677,7 @@
         {
           "id": "text-in-the-aisle-book",
           "type": "text",
-          "content": "Made while living away from Singapore, the work follows these spaces through the familiar products, languages, smells and everyday exchanges that briefly made somewhere foreign feel like home.\nThe work takes the form of a newsprint publication, drawing from the free newspapers and distribution kiosks commonly found in these supermarkets. By borrowing a format already circulating within the space, the book considers the supermarket not only as a place to buy familiar things, but as a place where information, conversation and a sense of community are exchanged."
+          "content": "Made while living away from Singapore, the work follows these spaces through the familiar products, languages, smells and everyday exchanges that briefly made somewhere foreign feel like home.\n\nThe work takes the form of a newsprint publication, drawing from the free newspapers and distribution kiosks commonly found in these supermarkets. By borrowing a format already circulating within the space, the book considers the supermarket not only as a place to buy familiar things, but as a place where information, conversation and a sense of community are exchanged."
         },
         {
           "id": "block-mvbdccpo-lf6p",
@@ -4743,10 +4734,7 @@
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-17T18:31:37.152Z",
-      "aliases": [
-        "entry-in-the-aisle-book"
-      ]
+      "updatedAt": "2026-10-17T18:46:09.125Z"
     },
     {
       "id": "national-flower-ed1",
