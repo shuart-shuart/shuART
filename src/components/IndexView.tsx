@@ -7,6 +7,7 @@ import { entryTags, tagCounts } from '../services/canonicalTags';
 import { EntryTitle } from './EntryTitle';
 import { useStickyHeight } from '../services/useStickyHeight';
 import React, { useState, useMemo } from 'react';
+import { List, LayoutGrid } from 'lucide-react';
 import { Entry, EntryType, Tag, IndexContent } from '../types';
 
 interface IndexViewProps {
@@ -56,7 +57,9 @@ export const IndexView: React.FC<IndexViewProps> = ({
   };
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedType, setSelectedType] = useState<'all' | EntryType>(initialType);
-  const [displayMode, setDisplayMode] = useState<'directory' | 'cards'>('directory');
+  const [displayMode, setDisplayMode] = useState<'directory' | 'cards'>(() =>
+    typeof window !== 'undefined' && window.matchMedia('(min-width: 768px)').matches ? 'cards' : 'directory'
+  );
 
   const [sort, setSort] = useState<IndexSort | null>(null);
   const toggleSort = (key: IndexSortKey) => setSort(current => ({
@@ -165,24 +168,28 @@ export const IndexView: React.FC<IndexViewProps> = ({
             <div className="text-black/50">
               {filteredEntries.length} {filteredEntries.length === 1 ? 'entry' : 'entries'}
             </div>
-            <div className="flex items-center gap-2 border-l border-black/15 pl-3">
-              <span className="text-black/40">View:</span>
+            <div role="group" aria-label="Index view" className="flex items-center gap-2 border-l border-black/15 pl-3">
               <button
                 onClick={() => setDisplayMode('directory')}
-                className={`transition-colors ${
-                  displayMode === 'directory' ? 'text-black font-medium underline' : 'text-black/50 hover:text-black'
+                aria-label="Directory view"
+                aria-pressed={displayMode === 'directory'}
+                title="Directory view"
+                className={`p-2 border-b transition-colors focus-visible:outline focus-visible:outline-1 ${
+                  displayMode === 'directory' ? 'text-black border-black' : 'text-black/40 border-transparent hover:text-black'
                 }`}
               >
-                Directory
+                <List size={18} strokeWidth={1.5} aria-hidden="true" />
               </button>
-              <span className="text-black/20">/</span>
               <button
                 onClick={() => setDisplayMode('cards')}
-                className={`transition-colors ${
-                  displayMode === 'cards' ? 'text-black font-medium underline' : 'text-black/50 hover:text-black'
+                aria-label="Tiles view"
+                aria-pressed={displayMode === 'cards'}
+                title="Tiles view"
+                className={`p-2 border-b transition-colors focus-visible:outline focus-visible:outline-1 ${
+                  displayMode === 'cards' ? 'text-black border-black' : 'text-black/40 border-transparent hover:text-black'
                 }`}
               >
-                Tiles
+                <LayoutGrid size={18} strokeWidth={1.5} aria-hidden="true" />
               </button>
             </div>
           </div>
