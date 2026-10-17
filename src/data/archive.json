@@ -2124,7 +2124,7 @@
     },
     {
       "id": "entry-national-flower-work",
-      "slug": "national-flower-work",
+      "slug": "national-flower",
       "title": "national flower",
       "type": "work",
       "date": "2020-2022",
@@ -2347,16 +2347,15 @@
         "archives and records",
         "time and the durational"
       ],
-      "associatedProjectIds": [
-        "entry-mvbat44j-bdau"
-      ],
+      "associatedProjectIds": [],
       "relatedEntryIds": [
-        "entry-national-flower-book"
+        "entry-national-flower-book",
+        "entry-national-flower-copy-9be66c122f"
       ],
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-16T18:29:02.058Z"
+      "updatedAt": "2026-10-17T14:55:43.374Z"
     },
     {
       "id": "entry-hui-kuala",
@@ -4413,12 +4412,13 @@
     },
     {
       "id": "entry-national-flower-book",
-      "slug": "national-flower-book",
+      "slug": "national-flower-ed1",
       "title": "national flower (edition 1)",
       "type": "publication",
-      "date": "2021 edition 12024 edition 2",
+      "date": "2021",
       "datePlaceholder": false,
-      "medium": "2021 edition 1\nAccordion book, Awagami paper\n62 x 76 x 10mm, 27pp\n\n2024 edition 2\nAccordion book, Vellum paper\n40 x 45 x 10mm, 38pp\n\nself-published",
+      "medium": "Accordion book, Awagami paper, self-published",
+      "dimensions": "62 x 76 x 10mm, 27pp",
       "shortDescription": "",
       "credits": [],
       "presentationHistory": [
@@ -4447,6 +4447,20 @@
         {
           "id": "b6b782da-19df-4797-b91e-e2a7785bda21",
           "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/8a4d607e2048b5eb8b90110559446a896a2c97f0313847e40ac4d53f4bd14ed7.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "fd126556-dd44-463e-863e-5458b2ce0c76",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/d3770311cb3adb6a47de8030c82b5bf10098db2d2eca4ac5cf0c65b9acdf7741.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "375ee0e7-69e9-4dff-8bde-65f3484421bc",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/68f731411113d7e5c5ed099ad63e932d4c5956ed480c1d476368127ec939a474.jpg",
           "caption": "",
           "alt": "",
           "credit": ""
@@ -4493,6 +4507,20 @@
               "credit": ""
             },
             {
+              "id": "fd126556-dd44-463e-863e-5458b2ce0c76",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/d3770311cb3adb6a47de8030c82b5bf10098db2d2eca4ac5cf0c65b9acdf7741.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "375ee0e7-69e9-4dff-8bde-65f3484421bc",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/68f731411113d7e5c5ed099ad63e932d4c5956ed480c1d476368127ec939a474.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
               "id": "a2e2e2f7-197c-40e3-a294-78a96a095861",
               "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/94af39bf1855eec92f3a641033ea201b32afcdc749a5f8cf3638dffb327573dc.png",
               "caption": "",
@@ -4520,12 +4548,13 @@
         "entry-national-flower-work",
         "entry-mvbat44j-bdau",
         "entry-hui-kuala",
-        "entry-shifting-springs"
+        "entry-shifting-springs",
+        "entry-national-flower-copy-9be66c122f"
       ],
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-16T20:36:09.446Z"
+      "updatedAt": "2026-10-17T14:57:16.641Z"
     },
     {
       "id": "entry-chen-dian-after-scans",
@@ -4796,7 +4825,7 @@
       "datePlaceholder": false,
       "medium": "Miniature photocards, transparent folder and oversized book belt",
       "dimensions": "100 × 72 mm (closed)",
-      "shortDescription": "天明日月奣 / i've never met yoko ono, nor have i touched the sky collects images of the sky from photographic documentation of Yoko Ono's Sky TV (1966–2007) and TV to See the Sky (2021).",
+      "shortDescription": "天明日月奣  i've never met yoko ono, nor have i touched the sky collects images of the sky from photographic documentation of Yoko Ono's Sky TV (1966–2007) and TV to See the Sky (2021).",
       "credits": [],
       "presentationHistory": [],
       "fullText": "Printed as miniature photocards rather than a fixed sequence, the images can be rearranged, carried, given to a friend or held against the actual sky. The book plays with one of photography's most familiar subjects—the sky that is endlessly photographed.\nIts Chinese title borrows an unattributed wordplay in which the characters for sky, sun and moon are rearranged to form 天明日月奣: clear skies, clear skies.",
@@ -4860,6 +4889,13 @@
         {
           "id": "e7b5fcbf-4ce0-4589-a81f-480ef397144e",
           "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/910b0bc2dbd3c1afaf6eba9475544d0e485576af9d2ca2c3122e0593bf7a52c6.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "6a1367f2-ffc0-4449-9f16-2aca00ebfd81",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/cc686982b84d1bf9552bb5a1015074f975a82464fc1b2b943eeac15061f6540c.jpg",
           "caption": "",
           "alt": "",
           "credit": ""
@@ -4957,6 +4993,13 @@
               "credit": ""
             },
             {
+              "id": "6a1367f2-ffc0-4449-9f16-2aca00ebfd81",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/cc686982b84d1bf9552bb5a1015074f975a82464fc1b2b943eeac15061f6540c.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
               "id": "73d6b913-2f57-423a-a3e0-26aca9315c04",
               "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/c33a67347a76d18664a35d87f98275908c5aac9b93f5b041a3d8a9e65972340a.jpg",
               "caption": "",
@@ -4984,7 +5027,7 @@
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-16T19:43:39.036Z"
+      "updatedAt": "2026-10-17T15:18:05.513Z"
     },
     {
       "id": "entry-what-used-to-be-in-the-mall",
@@ -5215,50 +5258,113 @@
       "fullText": "Many of the source videos, particularly from the 1980s and 1990s, have been copied and reposted repeatedly. Their colours fade, details blur and compression artefacts accumulate, yet the same visual motifs continue to circulate and be reproduced.\nRearranging these fragments in an accordion book, the work observes how repetition across staging, performance and digital copying has contributed to a familiar visual language for “Chinese music\".",
       "images": [
         {
-          "id": "6fa47c5c-afcf-468a-8b8e-d0e0b2142c4d",
-          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/b989fdb3038fddb1d937671c85a2ef50f7aedaf41eaf714a089febf32f1d1458.jpg",
+          "id": "c916e5a7-2e61-4767-b0ef-a79f2ee4029a",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/a4e9bce7105a3ff47fce562c8f1320da2265e694171e01d6467969f0b3597fa5.jpg",
           "caption": "",
           "alt": "",
           "credit": ""
         },
         {
-          "id": "e7cd9feb-e6cd-4eb2-9f3e-2672a5555cbd",
-          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/c9968f31c2cfc271dda79a2e5e3b9c5a0c7ede446a52f6bf5e68b25cf59a94c5.jpg",
+          "id": "c2e6a2f9-b611-4e92-9339-600f897cd36f",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/1bd095d524c0214079bc38097785298a11ca2e03e65133ad02c03aaa2cc35544.jpg",
           "caption": "",
           "alt": "",
           "credit": ""
         },
         {
-          "id": "20a1c885-26d0-4ff2-a8ec-087962113e0d",
-          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/a72272295c3cd1d4dc1af516b3b42edbb5e953e385d641705c48f490f26aa05b.jpg",
+          "id": "a8935266-2a6f-4665-95f5-4d2bdad5075e",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/f9cebc101e086773184a52c020b036a17bf62bead42ba00a74c177361058f17b.jpg",
           "caption": "",
           "alt": "",
           "credit": ""
         },
         {
-          "id": "2f5d06b1-1ccc-4d2d-849c-ea57e3a8555f",
-          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/2f848825f43df627f7e05c6c67ebdffcd1fe5fb313af0ff6010519c655b0bd31.jpg",
+          "id": "d875322b-e0d3-4441-b5b6-78cd1d0942b0",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/9990e39fbad0f510fb39fdbcaa1138541f5814a8770a220839bd2b99281f7d98.jpg",
           "caption": "",
           "alt": "",
           "credit": ""
         },
         {
-          "id": "dfd13e10-b88f-4ed1-800e-e90a1d298fc6",
-          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/4cdf4d3196edbb09ac7d3a760a2a0f7f899040e680f8f9a54ebd26a7630ca477.jpg",
+          "id": "7dd037a1-c612-4662-a5cd-e433949f9a99",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/c18dd94415cfc92ef33900e20f53bb751f166ab72eee3debc9176931e0ec2c86.jpg",
           "caption": "",
           "alt": "",
           "credit": ""
         },
         {
-          "id": "ad0d1edc-6a45-4a12-9016-ae9a719a4c3f",
-          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/c34b222b3cfd9361b59e3796ab3b89cfebecb20661a1f839a236b7b0d062984a.jpg",
+          "id": "7bdc36ac-a195-43ba-8d8e-50018047d3e0",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/94a069435248b39468cccfd5d7cd484fc57567fbc659b150d81c29cc09740414.jpg",
           "caption": "",
           "alt": "",
           "credit": ""
         },
         {
-          "id": "85be8986-3998-468c-8ace-0c77a51a2960",
-          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/88d17f3d6281368cf46d4404dd70006d766715202a1b15a5f66306897a2f769e.png",
+          "id": "3fe3fd3c-0f4e-4bc2-b035-7e2c68a929e2",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/9076a792f084f9a2d93527bb5ab61466ff3739082724b667e3a9b7a1c4566b39.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "73ce3c65-5502-4912-82ca-f765703d392e",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/a475f5d65f16d8f10ba801526ecb7dcf0022f924977485b8cfe9cc91fa5eb182.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "8a1b3cd2-27d3-4dcd-9776-53d0562f08d8",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/af28e7b0497303e3dbfa6f0f3cbec31a098d932273a21f24c6df2e915fce0b9b.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "06da2db7-b937-4dd3-8a72-27187d9ddaa3",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/daaa06b75f9e92e43bab697fa591beef141710a1724f61825d2bfc955c2355d2.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "8f1d836c-4821-446d-a817-8fb5743ad5ff",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/c8a9920dd9983b007b36e07bf57e1fcd90462f98c5279fed6152d56ee4774e80.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "71e89ecb-2434-49e9-8849-84750964beec",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/44373ee3fa7b6e77865358890b4d8607c36f5ad635a6acab2c1e031c26325745.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "b7954c43-5a15-41d8-9175-6a974d4cdc4a",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/0eed9bb7160d49e8e287247f14937422fa9a51f88159d8fdee430e21653d5b1c.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "a09eb532-92ef-4323-95ed-540433cbc562",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/47bc8f0009d4bba0561f7f328aa0538a85e98e8e02943971f28df6ba88797e87.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "1bd96896-53e0-483b-976e-7991ed4157af",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/2b43311115dae73beb7553001e29088f1ef3eafa34184f956d363bab05581dc0.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "e37319dc-e516-437c-ae1e-6ec6d6666046",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/672f7cfc6a3693cab581726ecca6f8d8a1e662fed06ad00ed6a65a59f43b6ded.jpg",
           "caption": "",
           "alt": "",
           "credit": ""
@@ -5271,14 +5377,37 @@
           "title": "",
           "images": [
             {
-              "id": "6fa47c5c-afcf-468a-8b8e-d0e0b2142c4d",
-              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/b989fdb3038fddb1d937671c85a2ef50f7aedaf41eaf714a089febf32f1d1458.jpg",
+              "id": "c916e5a7-2e61-4767-b0ef-a79f2ee4029a",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/a4e9bce7105a3ff47fce562c8f1320da2265e694171e01d6467969f0b3597fa5.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "c2e6a2f9-b611-4e92-9339-600f897cd36f",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/1bd095d524c0214079bc38097785298a11ca2e03e65133ad02c03aaa2cc35544.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "a8935266-2a6f-4665-95f5-4d2bdad5075e",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/f9cebc101e086773184a52c020b036a17bf62bead42ba00a74c177361058f17b.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "d875322b-e0d3-4441-b5b6-78cd1d0942b0",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/9990e39fbad0f510fb39fdbcaa1138541f5814a8770a220839bd2b99281f7d98.jpg",
               "caption": "",
               "alt": "",
               "credit": ""
             }
           ],
-          "layout": "stacked"
+          "layout": "carousel",
+          "autoPlay": true,
+          "intervalSeconds": 2
         },
         {
           "id": "text-flower-vases-paintings",
@@ -5286,48 +5415,90 @@
           "content": "Many of the source videos, particularly from the 1980s and 1990s, have been copied and reposted repeatedly. Their colours fade, details blur and compression artefacts accumulate, yet the same visual motifs continue to circulate and be reproduced.\nRearranging these fragments in an accordion book, the work observes how repetition across staging, performance and digital copying has contributed to a familiar visual language for “Chinese music\"."
         },
         {
-          "id": "block-mvbd3j4h-svv1",
+          "id": "block-mvcitb32-c63w",
           "type": "image_gallery",
           "title": "",
           "images": [
             {
-              "id": "e7cd9feb-e6cd-4eb2-9f3e-2672a5555cbd",
-              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/c9968f31c2cfc271dda79a2e5e3b9c5a0c7ede446a52f6bf5e68b25cf59a94c5.jpg",
+              "id": "7dd037a1-c612-4662-a5cd-e433949f9a99",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/c18dd94415cfc92ef33900e20f53bb751f166ab72eee3debc9176931e0ec2c86.jpg",
               "caption": "",
               "alt": "",
               "credit": ""
             },
             {
-              "id": "20a1c885-26d0-4ff2-a8ec-087962113e0d",
-              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/a72272295c3cd1d4dc1af516b3b42edbb5e953e385d641705c48f490f26aa05b.jpg",
+              "id": "7bdc36ac-a195-43ba-8d8e-50018047d3e0",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/94a069435248b39468cccfd5d7cd484fc57567fbc659b150d81c29cc09740414.jpg",
               "caption": "",
               "alt": "",
               "credit": ""
             },
             {
-              "id": "2f5d06b1-1ccc-4d2d-849c-ea57e3a8555f",
-              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/2f848825f43df627f7e05c6c67ebdffcd1fe5fb313af0ff6010519c655b0bd31.jpg",
+              "id": "3fe3fd3c-0f4e-4bc2-b035-7e2c68a929e2",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/9076a792f084f9a2d93527bb5ab61466ff3739082724b667e3a9b7a1c4566b39.jpg",
               "caption": "",
               "alt": "",
               "credit": ""
             },
             {
-              "id": "dfd13e10-b88f-4ed1-800e-e90a1d298fc6",
-              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/4cdf4d3196edbb09ac7d3a760a2a0f7f899040e680f8f9a54ebd26a7630ca477.jpg",
+              "id": "73ce3c65-5502-4912-82ca-f765703d392e",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/a475f5d65f16d8f10ba801526ecb7dcf0022f924977485b8cfe9cc91fa5eb182.jpg",
               "caption": "",
               "alt": "",
               "credit": ""
             },
             {
-              "id": "ad0d1edc-6a45-4a12-9016-ae9a719a4c3f",
-              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/c34b222b3cfd9361b59e3796ab3b89cfebecb20661a1f839a236b7b0d062984a.jpg",
+              "id": "8a1b3cd2-27d3-4dcd-9776-53d0562f08d8",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/af28e7b0497303e3dbfa6f0f3cbec31a098d932273a21f24c6df2e915fce0b9b.jpg",
               "caption": "",
               "alt": "",
               "credit": ""
             },
             {
-              "id": "85be8986-3998-468c-8ace-0c77a51a2960",
-              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/88d17f3d6281368cf46d4404dd70006d766715202a1b15a5f66306897a2f769e.png",
+              "id": "06da2db7-b937-4dd3-8a72-27187d9ddaa3",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/daaa06b75f9e92e43bab697fa591beef141710a1724f61825d2bfc955c2355d2.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "8f1d836c-4821-446d-a817-8fb5743ad5ff",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/c8a9920dd9983b007b36e07bf57e1fcd90462f98c5279fed6152d56ee4774e80.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "71e89ecb-2434-49e9-8849-84750964beec",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/44373ee3fa7b6e77865358890b4d8607c36f5ad635a6acab2c1e031c26325745.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "b7954c43-5a15-41d8-9175-6a974d4cdc4a",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/0eed9bb7160d49e8e287247f14937422fa9a51f88159d8fdee430e21653d5b1c.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "a09eb532-92ef-4323-95ed-540433cbc562",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/47bc8f0009d4bba0561f7f328aa0538a85e98e8e02943971f28df6ba88797e87.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "1bd96896-53e0-483b-976e-7991ed4157af",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/2b43311115dae73beb7553001e29088f1ef3eafa34184f956d363bab05581dc0.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "e37319dc-e516-437c-ae1e-6ec6d6666046",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/672f7cfc6a3693cab581726ecca6f8d8a1e662fed06ad00ed6a65a59f43b6ded.jpg",
               "caption": "",
               "alt": "",
               "credit": ""
@@ -5359,7 +5530,167 @@
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-16T19:33:46.491Z"
+      "updatedAt": "2026-10-17T15:16:59.664Z"
+    },
+    {
+      "id": "entry-national-flower-copy-9be66c122f",
+      "slug": "national-flower-ed2",
+      "title": "national flower (edition 2)",
+      "type": "publication",
+      "date": "2024",
+      "datePlaceholder": false,
+      "medium": "Accordion book, Vellum paper, self-published",
+      "dimensions": "40 x 45 x 10mm, 38pp",
+      "shortDescription": "",
+      "credits": [],
+      "presentationHistory": [],
+      "fullText": "Following the first edition of [title]national flowers[/title],  I wanted to make a second edition of the book that was more affordable and in the spirit of the pragmatism of our true national flower.\n\n-\n\nDuring the pandemic, I took walks around Singapore using Google Maps Street View.\n\nAgain and again, patches of pink, magenta and fuchsia appeared at the edges of roads and in my imagined peripheral vision.\nCollected into a small accordion book, these images form an affectionate portrait of the bougainvillea scattered throughout Singapore's landscape.\n\nThese are the real national flowers of Singapore.",
+      "images": [
+        {
+          "id": "7b7ec66e-7da7-4c0e-863b-5013d4d6ce07",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/11bf71cce3ef8a595d163aed9d7298f3adccaf7d9ce492f09ccacc31e30f7f30.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "2f0d7629-ac90-4fba-ad1d-c83e83f9dc21",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/7ff822a509b050a9f7e26de4e022cd0ce811a5c44e144936fff1fdeffe4d6882.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "da3e3c4a-4a08-4e72-bafc-8114bd54c218",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/dee0b3681f85f95c7093df8dba43016744c83a86913c25ba65c613f14f7e7f64.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "aaf0aefe-2c07-47b2-abea-6e1bfbe2bb74",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/08c01fbd2a0403cf3cd68d334377d1e1f628a9dbb79a749dc5a83cd0d8c37034.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "82b019ed-0f99-412c-998a-23df0a579511",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/7a47ba8848310d76e3ec30f0b4d5943e7fa3817996090c05d523db2ba51646df.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "30962230-cde0-498c-bd57-2634bfce2d34",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/b4f930ea3e16ce1cc15ba64b0155c73e4571ef7f9d763544c3de23f3d049a9d6.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        },
+        {
+          "id": "73836099-9855-4672-81ef-07e7ba80eca5",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/4534b0092a7a791ca0466bbd3ba3817dae81de9db7b274886ded44555f978882.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        }
+      ],
+      "blocks": [
+        {
+          "id": "block-mvbff7xc-tf97",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "7b7ec66e-7da7-4c0e-863b-5013d4d6ce07",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/11bf71cce3ef8a595d163aed9d7298f3adccaf7d9ce492f09ccacc31e30f7f30.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "2f0d7629-ac90-4fba-ad1d-c83e83f9dc21",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/7ff822a509b050a9f7e26de4e022cd0ce811a5c44e144936fff1fdeffe4d6882.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "da3e3c4a-4a08-4e72-bafc-8114bd54c218",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/dee0b3681f85f95c7093df8dba43016744c83a86913c25ba65c613f14f7e7f64.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            }
+          ],
+          "layout": "stacked"
+        },
+        {
+          "id": "text-national-flower-book",
+          "type": "text",
+          "content": "Following the first edition of [title]national flowers[/title],  I wanted to make a second edition of the book that was more affordable and in the spirit of the pragmatism of our true national flower.\n\n-\n\nDuring the pandemic, I took walks around Singapore using Google Maps Street View.\n\nAgain and again, patches of pink, magenta and fuchsia appeared at the edges of roads and in my imagined peripheral vision.\nCollected into a small accordion book, these images form an affectionate portrait of the bougainvillea scattered throughout Singapore's landscape.\n\nThese are the real national flowers of Singapore."
+        },
+        {
+          "id": "block-mvbff7ml-ytir",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "aaf0aefe-2c07-47b2-abea-6e1bfbe2bb74",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/08c01fbd2a0403cf3cd68d334377d1e1f628a9dbb79a749dc5a83cd0d8c37034.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "82b019ed-0f99-412c-998a-23df0a579511",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/7a47ba8848310d76e3ec30f0b4d5943e7fa3817996090c05d523db2ba51646df.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "30962230-cde0-498c-bd57-2634bfce2d34",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/b4f930ea3e16ce1cc15ba64b0155c73e4571ef7f9d763544c3de23f3d049a9d6.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            },
+            {
+              "id": "73836099-9855-4672-81ef-07e7ba80eca5",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/4534b0092a7a791ca0466bbd3ba3817dae81de9db7b274886ded44555f978882.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            }
+          ],
+          "layout": "stacked"
+        }
+      ],
+      "tagIds": [
+        "tag-time",
+        "tag-spaceswo",
+        "tag-books"
+      ],
+      "subjects": [
+        "time and the durational",
+        "spaces without space",
+        "books and bookish things"
+      ],
+      "associatedProjectIds": [
+        "entry-mvbat44j-bdau"
+      ],
+      "relatedEntryIds": [
+        "entry-national-flower-work",
+        "entry-mvbat44j-bdau",
+        "entry-hui-kuala",
+        "entry-shifting-springs"
+      ],
+      "status": "published",
+      "isDevelopingWork": false,
+      "createdAt": "2026-10-17T14:43:47.685566Z",
+      "updatedAt": "2026-10-17T14:54:49.162Z"
     }
   ],
   "tags": [
