@@ -52,12 +52,60 @@
         }
       ],
       "fullText": "[title]Process: Roving Ideas[/title] is a self-guided experience featuring a series of text-based instructions. Taking place all over Singapore, these site-specific instructions serve as prompts for participants to discover a unique experience envisioned by each contributing artist. In doing so, the project aims to uncover the potential of different locations outside of traditional art spaces.\n\nStemming from a desire to connect more with our environments and to draw out inherent experiences often overlooked in our daily life, the format of the project is inspired by significant art movements such as Fluxus, instructional and conceptual art, environmental art, and relational art. Through its execution, the project also strives to introduce different forms of art appreciation, foster a regular appreciation of arts in our everyday life, and facilitate the creation of shared experiences among the community.\n​\nTitled with words that encapsulate the spirit of this project, [title]Process: Roving Ideas[/title] is also an anagram of SingapoRediscovers. The project encourages the public to “discover Singapore with fresh eyes” and gain better awareness and appreciation of our surroundings through artistic encounters.",
-      "images": [],
+      "images": [
+        {
+          "id": "929e1413-c35b-4df3-b763-29840dd61c64",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/94ad2ef609d627726aaea450d0fb58533124714d1aad84f060ff510c4a717769.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "gideon-jamie"
+        },
+        {
+          "id": "5dcb8d78-bebf-4f37-989b-e73cabfb6eff",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/8f6a88c54ba926596ed807fffbbb1d1ad7fe7ef6ddd5bf2090d60d2f01ececb6.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "gideon-jamie"
+        }
+      ],
       "blocks": [
+        {
+          "id": "block-mvcvydg0-hivs",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "929e1413-c35b-4df3-b763-29840dd61c64",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/94ad2ef609d627726aaea450d0fb58533124714d1aad84f060ff510c4a717769.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "gideon-jamie"
+            },
+            {
+              "id": "5dcb8d78-bebf-4f37-989b-e73cabfb6eff",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/8f6a88c54ba926596ed807fffbbb1d1ad7fe7ef6ddd5bf2090d60d2f01ececb6.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "gideon-jamie"
+            }
+          ],
+          "layout": "carousel",
+          "autoPlay": true,
+          "intervalSeconds": 2
+        },
         {
           "id": "text-1792267700693-1",
           "type": "text",
           "content": "[title]Process: Roving Ideas[/title] is a self-guided experience featuring a series of text-based instructions. Taking place all over Singapore, these site-specific instructions serve as prompts for participants to discover a unique experience envisioned by each contributing artist. In doing so, the project aims to uncover the potential of different locations outside of traditional art spaces.\n\nStemming from a desire to connect more with our environments and to draw out inherent experiences often overlooked in our daily life, the format of the project is inspired by significant art movements such as Fluxus, instructional and conceptual art, environmental art, and relational art. Through its execution, the project also strives to introduce different forms of art appreciation, foster a regular appreciation of arts in our everyday life, and facilitate the creation of shared experiences among the community.\n​\nTitled with words that encapsulate the spirit of this project, [title]Process: Roving Ideas[/title] is also an anagram of SingapoRediscovers. The project encourages the public to “discover Singapore with fresh eyes” and gain better awareness and appreciation of our surroundings through artistic encounters."
+        },
+        {
+          "id": "block-mvcvx74g-6k7s",
+          "type": "website",
+          "url": "https://shuart-shuart.github.io/pri",
+          "title": "",
+          "caption": "",
+          "height": 360,
+          "clickToLoad": false
         }
       ],
       "tagIds": [
@@ -73,7 +121,7 @@
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-17T20:10:37.853Z",
-      "updatedAt": "2026-10-17T20:10:37.853Z"
+      "updatedAt": "2026-10-17T21:05:59.815Z"
     },
     {
       "id": "dingdongbeep",
