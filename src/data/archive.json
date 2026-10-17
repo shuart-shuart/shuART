@@ -3894,7 +3894,7 @@
       ],
       "associatedProjectIds": [],
       "relatedEntryIds": [
-        "entry-mvciizb1-lyhe",
+        "collected-on-paper",
         "b-side-books"
       ],
       "status": "published",
@@ -4636,34 +4636,34 @@
           "note": ""
         }
       ],
-      "fullText": "ITA_book_1\n\nMade while living away from Singapore, the work follows these spaces through the familiar products, languages, smells and everyday exchanges that briefly made somewhere foreign feel like home.\nThe work takes the form of a newsprint publication, drawing from the free newspapers and distribution kiosks commonly found in these supermarkets. By borrowing a format already circulating within the space, the book considers the supermarket not only as a place to buy familiar things, but as a place where information, conversation and a sense of community are exchanged.\n\nITA_book_3\n\nITA_book_2\n\nITA_book_4",
+      "fullText": "Made while living away from Singapore, the work follows these spaces through the familiar products, languages, smells and everyday exchanges that briefly made somewhere foreign feel like home.\nThe work takes the form of a newsprint publication, drawing from the free newspapers and distribution kiosks commonly found in these supermarkets. By borrowing a format already circulating within the space, the book considers the supermarket not only as a place to buy familiar things, but as a place where information, conversation and a sense of community are exchanged.",
       "images": [
         {
           "id": "d69e5b3c-d81f-4510-b3fe-0870d12e6c21",
           "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/7e48633e162c7cc41bc14623427552f879b1afd726e44aaecd2c18bf19421726.jpg",
           "caption": "",
-          "alt": "ITA_book_1",
+          "alt": "",
           "credit": ""
         },
         {
           "id": "a0643132-662a-4109-9a44-84ead9b2fa52",
           "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/c6e9ef74cfcb24d4bc410521830fe7dc344d8c40f4f5fa5ea20f5bb31fc9c47d.jpg",
           "caption": "",
-          "alt": "ITA_book_3",
+          "alt": "",
           "credit": ""
         },
         {
           "id": "15d4026f-f62b-4f69-b601-3f7a2abf510c",
           "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/76f20f31854a9f0cd7d3e2e156409828dd2620cf244b928b0b93b90ff1b3fec4.jpg",
           "caption": "",
-          "alt": "ITA_book_2",
+          "alt": "",
           "credit": ""
         },
         {
           "id": "cb9f2177-22ad-4a1c-a778-429cd9c89f09",
           "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/75033eecdc228d9d35b5ff67f97e3d1497a8d33dac91e08d9e758908196903c0.jpg",
           "caption": "",
-          "alt": "ITA_book_4",
+          "alt": "",
           "credit": ""
         }
       ],
@@ -4677,7 +4677,7 @@
               "id": "d69e5b3c-d81f-4510-b3fe-0870d12e6c21",
               "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/7e48633e162c7cc41bc14623427552f879b1afd726e44aaecd2c18bf19421726.jpg",
               "caption": "",
-              "alt": "ITA_book_1",
+              "alt": "",
               "credit": ""
             }
           ],
@@ -4704,21 +4704,21 @@
               "id": "a0643132-662a-4109-9a44-84ead9b2fa52",
               "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/c6e9ef74cfcb24d4bc410521830fe7dc344d8c40f4f5fa5ea20f5bb31fc9c47d.jpg",
               "caption": "",
-              "alt": "ITA_book_3",
+              "alt": "",
               "credit": ""
             },
             {
               "id": "15d4026f-f62b-4f69-b601-3f7a2abf510c",
               "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/76f20f31854a9f0cd7d3e2e156409828dd2620cf244b928b0b93b90ff1b3fec4.jpg",
               "caption": "",
-              "alt": "ITA_book_2",
+              "alt": "",
               "credit": ""
             },
             {
               "id": "cb9f2177-22ad-4a1c-a778-429cd9c89f09",
               "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/75033eecdc228d9d35b5ff67f97e3d1497a8d33dac91e08d9e758908196903c0.jpg",
               "caption": "",
-              "alt": "ITA_book_4",
+              "alt": "",
               "credit": ""
             }
           ],
@@ -4743,7 +4743,7 @@
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-17T16:52:24.499Z",
+      "updatedAt": "2026-10-17T18:31:37.152Z",
       "aliases": [
         "entry-in-the-aisle-book"
       ]
