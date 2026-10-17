@@ -277,17 +277,19 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
         )}
       </div>
 
+      {(entryTags.length > 0 || connections.length > 0 || entry.credits?.length || entry.presentationHistory?.length) ? <div className="mt-8 border-t border-black/10 pt-6 space-y-6">
       <EntryHistory entry={entry} allEntries={allEntries} onSelectEntry={onSelectEntry} />
 
       {/* Canonical Tags & Subjects */}
       {entryTags.length > 0 && (
-        <section className="pt-8 border-t border-black/10 my-8">
-          <div className="flex flex-wrap items-baseline gap-x-5 gap-y-3 text-black/60">
+        <section aria-label="Tags">
+          <div className="flex flex-wrap items-baseline gap-x-3 gap-y-2 text-black/60">
             <span className="font-mono-quiet text-black/60 uppercase tracking-wider text-xs">
               Tags:
             </span>
             {entryTags.map((tItem, idx) => (
               <React.Fragment key={tItem.id}>
+                {idx > 0 && <span aria-hidden="true" className="text-black/35">·</span>}
                 <button
                   onClick={() => {
                     if (onSelectTag) {
@@ -309,14 +311,17 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
 
       {/* All entry relationships share one deduplicated list. */}
       {connections.length > 0 && (
-        <section className="pt-6 border-t border-black/10 mt-8">
+        <section aria-label="Connections">
           <h3 className="font-mono-quiet uppercase text-xs tracking-wider text-black/60 mb-3">
             Connections ({connections.length})
           </h3>
-          <ul className={`grid grid-cols-1 ${connections.length > 1 ? 'sm:grid-cols-2' : ''} gap-x-6 gap-y-2`}>
+          <ul className={`grid grid-cols-1 ${connections.length > 1 ? 'md:grid-cols-2' : ''} gap-x-8 gap-y-4`}>
             {connections.map(item => (
               <li key={item.id} className="px-3 py-3 hover:bg-black/5 focus-within:bg-black/5 transition-colors space-y-1">
-                <div className="flex items-baseline justify-between gap-3">
+                <span className="block text-[11px] sm:text-xs font-mono-quiet text-black/60 capitalize">
+                  {item.type}
+                </span>
+                <div>
                   <a
                     href={`#entry/${item.slug}`}
                     onClick={event => {
@@ -326,14 +331,11 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
                     }}
                     className="group leading-tight focus-visible:underline underline-offset-2"
                   >
-                    <EntryTitle inline entry={item} primaryClassName="font-editorial text-base text-black group-hover:underline" chineseClassName="font-editorial text-base text-black/70 group-hover:underline" />
+                    <EntryTitle inline entry={item} primaryClassName="font-editorial text-xl text-black group-hover:underline" chineseClassName="font-editorial text-xl text-black/70 group-hover:underline" />
                   </a>
-                  <span className="text-xs font-mono-quiet text-black/60 capitalize shrink-0">
-                    {item.type}
-                  </span>
                 </div>
                 {item.shortDescription && (
-                  <p className="text-xs sm:text-sm text-black/60 font-sans leading-relaxed line-clamp-2">
+                  <p className="text-sm sm:text-[15px] text-black/65 font-sans leading-relaxed line-clamp-3">
                     {renderWikiText(item.shortDescription)}
                   </p>
                 )}
@@ -342,6 +344,8 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
           </ul>
         </section>
       )}
+
+      </div> : null}
 
       {/* Lightbox Modal */}
       <ImageLightbox

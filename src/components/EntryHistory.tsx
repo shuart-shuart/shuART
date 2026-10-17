@@ -26,7 +26,7 @@ export function EntryHistory({ entry, allEntries, onSelectEntry }: {
     [record.title, record.venue, record.location, record.date, record.curator, record.link, record.note].some(value => value?.trim())
   );
   return <>
-    {credits.length > 0 && <section aria-label="Credits" className="pt-8 border-t border-black/10 my-8">
+    {credits.length > 0 && <section aria-label="Credits">
       <dl className="space-y-3 text-sm">
         {credits.map(credit => <div key={credit.id} className="grid sm:grid-cols-[10rem_1fr] gap-1 sm:gap-4">
           <dt className="font-mono-quiet text-xs text-black/65 capitalize">{formatted(credit.role === 'custom' ? credit.customRole || 'Contributor' : credit.role)}</dt>
@@ -34,21 +34,27 @@ export function EntryHistory({ entry, allEntries, onSelectEntry }: {
         </div>)}
       </dl>
     </section>}
-    {records.length > 0 && <section aria-label="Provenance / Presentation History" className="my-8 space-y-4">
-      <ol className="space-y-5">
+    {records.length > 0 && <section aria-label="Provenance / Presentation History" className="max-w-[72ch] text-[13px] sm:text-sm">
+      <ol className="space-y-3">
         {records.map(record => {
           const event = record.title.trim() || record.venue.trim();
-          const details = [record.title.trim() ? record.venue : '', record.location, record.date].filter(value => value?.trim());
+          const venueDetail = record.title.trim() ? record.venue.trim() : '';
+          const details = [venueDetail, record.location, record.date].filter(value => value?.trim());
           const hasSentence = event || details.length > 0 || record.curator?.trim() || record.link?.trim();
-          return <li key={record.id} className="max-w-[65ch] space-y-2 text-xs sm:text-sm leading-[1.65] whitespace-pre-line">
+          return <li key={record.id} className="space-y-2 leading-[1.5] text-black/75">
             {hasSentence && <p>
               <span className="font-editorial italic">{formatted(entry.title)}</span>{' was '}{record.action || 'presented'}
               {event && <>{' at '}{linkedText(event, record.link)}</>}
               {!event && record.link?.trim() && <>{' at '}{linkedText('a presentation', record.link)}</>}
-              {details.length > 0 && <>{' ('}{details.map((text, index) => <React.Fragment key={index}>{index > 0 && ', '}{formatted(text)}</React.Fragment>)}{')'}</>}
+              {details.length > 0 && <>{' ('}
+                {venueDetail && <>{formatted(venueDetail)}{(record.location || record.date) && ', '}</>}
+                {record.location && record.date
+                  ? <span className={record.location.length + record.date.length <= 30 ? 'whitespace-nowrap' : undefined}>{formatted(record.location)}{', '}{formatted(record.date)}</span>
+                  : formatted(record.location || record.date || '')}
+                {')'}</>}
               {record.curator?.trim() && <>{', '}{record.attribution || 'curated'}{' by '}{formatted(record.curator)}</>}{'.'}
             </p>}
-            {record.note && <p>{formatted(record.note)}</p>}
+            {record.note && <p className="whitespace-pre-line">{formatted(record.note)}</p>}
           </li>;
         })}
       </ol>
