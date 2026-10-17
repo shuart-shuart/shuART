@@ -165,7 +165,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
 
       {/* Short Description / Lead paragraph */}
       {entry.shortDescription && (
-        <div className="max-w-[65ch] font-editorial body-copy text-black/80 leading-[1.6] mb-8 border-b border-black/5 pb-8">
+        <div className="entry-reading-column font-editorial body-copy text-black/80 leading-[1.6] mb-8 border-b border-black/5 pb-8">
           {renderWikiText(entry.shortDescription)}
         </div>
       )}
@@ -177,7 +177,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
             return (
               <section
                 key={block.id}
-                className="max-w-[65ch] font-sans body-copy text-black/90 leading-[1.6] space-y-6"
+                className="entry-reading-column font-sans body-copy text-black/90 leading-[1.6] space-y-6"
               >
                 {(block.content || '').split('\n\n').map((paragraph, index) => {
                   if (!paragraph.trim()) return null;
@@ -201,7 +201,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
             );
           }
 
-          if (block.type === 'html') return <section key={block.id}><HtmlContent content={block.content} /></section>;
+          if (block.type === 'html') return <section key={block.id} className="entry-reading-column"><HtmlContent content={block.content} /></section>;
           if (block.type === 'website') return <section key={block.id}><WebsiteEmbed block={block} /></section>;
 
           if (block.type === 'image_gallery') {
@@ -232,9 +232,10 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
                         />
                       </button>
                       {(img.caption || img.credit || img.alt) && (
-                        <figcaption className="mx-auto max-w-[65ch] text-center text-xs font-mono-quiet text-black/60 pt-1 space-y-1">
-                          {(img.caption || img.alt) && <p>{renderWikiText(img.caption || img.alt || '')}</p>}
-                          {img.credit && <p className="text-black/60">Photo: {renderWikiText(img.credit)}</p>}
+                        <figcaption className="gallery-caption mx-auto text-center text-xs font-mono-quiet text-black pt-1">
+                          {(img.caption || img.alt) && <span>{renderWikiText(img.caption || img.alt || '')}</span>}
+                          {(img.caption || img.alt) && img.credit && <span aria-hidden="true"> · </span>}
+                          {img.credit && <span>Photo: {renderWikiText(img.credit)}</span>}
                         </figcaption>
                       )}
                     </figure>
