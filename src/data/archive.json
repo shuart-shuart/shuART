@@ -5411,6 +5411,12 @@
           ]
         },
         {
+          "id": "cv-links",
+          "title": "CV",
+          "text": "[View CV](https://docs.google.com/document/d/1_OY8wvQR3cKLKiYQLEl0nrDDjGw3BIRiRcHcXFH3Q4o/edit?usp=drivesdk) · [Download CV (PDF)](https://docs.google.com/document/d/1_OY8wvQR3cKLKiYQLEl0nrDDjGw3BIRiRcHcXFH3Q4o/export?format=pdf)",
+          "items": []
+        },
+        {
           "id": "structure",
           "title": "STATEMENT",
           "text": "",
@@ -5499,7 +5505,7 @@
         "visible": true
       }
     ],
-    "updatedAt": "2026-10-05T02:26:21.055Z",
+    "updatedAt": "2026-10-17T14:35:43.607Z",
     "updatedBy": "work@anotherunit.xyz",
     "index": {
       "title": "Index",
