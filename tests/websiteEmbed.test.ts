@@ -35,23 +35,26 @@ test('website embeds defer loading and retain a direct link; frames have a title
   assert.equal(renderToStaticMarkup(React.createElement(WebsiteEmbed, { block: { ...block, url: 'javascript:alert(1)' } })), '');
 });
 
-test('CV renders its existing view and PDF URLs as a compact CV link and accessible download icon', () => {
+test('CV text and icon form one PDF link opening in a new tab', () => {
   const content = { ...DEFAULT_ABOUT, sections: [{ id: 'cv-links', title: 'CV', text: '[View CV](https://example.org/cv) · [Download CV (PDF)](https://example.org/cv.pdf)', items: [] }] };
   const html = renderToStaticMarkup(React.createElement(CvLinks, { content }));
-  assert.ok(html.includes('href="https://example.org/cv"'));
-  assert.ok(html.includes('>CV</a>'));
+  assert.ok(!html.includes('href="https://example.org/cv"'));
+  assert.equal((html.match(/<a /g) || []).length, 1);
+  assert.ok(html.includes('target="_blank"'));
   assert.ok(html.includes('href="https://example.org/cv.pdf"'));
   assert.ok(html.includes('aria-label="Download CV as PDF"'));
   assert.ok(!html.includes('>View CV<'));
   assert.equal(renderToStaticMarkup(React.createElement(CvLinks, { content: { ...content, sections: [] } })), '');
+  const legacy = renderToStaticMarkup(React.createElement(CvLinks, { content: { ...content, sections: [{ ...content.sections[0], text: '[View CV](https://docs.google.com/document/d/cv-document-id/edit?usp=sharing)' }] } }));
+  assert.ok(legacy.includes('href="https://docs.google.com/document/d/cv-document-id/export?format=pdf"'));
 });
 
 test('CV sits beside About in navigation; repeated contact is hidden while custom contact text remains', () => {
   const about = { ...DEFAULT_ABOUT, contactTitle: 'Contact', contactText: '[hello@example.org](mailto:hello@example.org)', sections: [{ id: 'cv-links', title: 'CV', text: '[View CV](https://example.org/cv) · [Download CV (PDF)](https://example.org/cv.pdf)', items: [] }] };
   const settings = { about, footer: { artistName: 'Artist', description: '', links: [{ id: 'email', label: 'hello@example.org', url: 'mailto:hello@example.org' }] } } as SiteSettings;
   const header = renderToStaticMarkup(React.createElement(Header, { currentView: 'entry', onNavigateView() {}, onRandomWander() {}, showWander: true, about }));
-  assert.ok(header.indexOf('>About</button>') < header.indexOf('>CV</a>'));
-  assert.ok(header.indexOf('>CV</a>') < header.indexOf('aria-label="Wander'));
+  assert.ok(header.indexOf('>About</button>') < header.indexOf('aria-label="Download CV as PDF"'));
+  assert.ok(header.indexOf('aria-label="Download CV as PDF"') < header.indexOf('aria-label="Wander'));
   assert.ok(header.includes('aria-label="Download CV as PDF"'));
   const page = renderToStaticMarkup(React.createElement(AboutView, { siteSettings: settings, onNavigateView() {} }));
   assert.ok(!page.includes('mailto:hello@example.org'));
