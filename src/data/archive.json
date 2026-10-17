@@ -104,7 +104,7 @@
           "url": "https://shuart-shuart.github.io/pri",
           "title": "",
           "caption": "",
-          "height": 360,
+          "height": 640,
           "clickToLoad": false
         }
       ],
@@ -121,7 +121,7 @@
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-17T20:10:37.853Z",
-      "updatedAt": "2026-10-17T21:05:59.815Z"
+      "updatedAt": "2026-10-17T21:21:20.668Z"
     },
     {
       "id": "dingdongbeep",
@@ -228,7 +228,9 @@
               "credit": "Marvin Tang"
             }
           ],
-          "layout": "stacked"
+          "layout": "carousel",
+          "autoPlay": true,
+          "intervalSeconds": 2
         },
         {
           "id": "text-1792255583914-1",
@@ -238,11 +240,11 @@
         {
           "id": "block-mvcvznww-zq7s",
           "type": "website",
-          "url": "https://shuart-shuart.github.io/dingdongbeep/info/",
+          "url": "https://shuart-shuart.github.io/dingdongbeep",
           "title": "",
           "caption": "",
           "height": 640,
-          "clickToLoad": true
+          "clickToLoad": false
         }
       ],
       "tagIds": [
@@ -258,7 +260,7 @@
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-17T16:49:00.404Z",
-      "updatedAt": "2026-10-17T21:07:50.666Z"
+      "updatedAt": "2026-10-17T21:20:41.050Z"
     },
     {
       "id": "collected-on-paper",
@@ -6462,7 +6464,7 @@
         "visible": true
       }
     ],
-    "updatedAt": "2026-10-17T20:31:00.226Z",
+    "updatedAt": "2026-10-17T21:14:13.108Z",
     "updatedBy": "work@anotherunit.xyz",
     "index": {
       "title": "Index",
