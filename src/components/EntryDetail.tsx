@@ -150,8 +150,8 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
 
         {/* Specific editorial warnings / context */}
         {entry.isDevelopingWork && (
-          <div className="py-2.5 px-3.5 border-l-2 border-black/30 bg-black/[0.02] text-xs font-mono-quiet text-black/70">
-            Developing study / working fragment — not presented as a completed artwork.
+          <div className="py-2.5 px-3.5 border-l-2 border-black/30 bg-black/[0.02] text-xs font-mono-quiet text-[#c18f32]">
+            [developing study / working fragment]
           </div>
         )}
 
