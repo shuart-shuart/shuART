@@ -22,7 +22,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({ block }) => {
       )}
 
       {/* Responsive 16:9 Video Embed Container */}
-      {youtubeId ? <YouTubePlayer key={youtubeId} videoId={youtubeId} title={formattedTextToPlainText(block.title) || 'Video'} /> : <div className="relative w-full aspect-video bg-black/[0.04] border border-black/15 overflow-hidden">
+      {youtubeId ? <YouTubePlayer key={youtubeId} videoId={youtubeId} title={formattedTextToPlainText(block.title) || 'Video'} /> : <div className="relative w-full aspect-video bg-black/[0.04] overflow-hidden">
         <iframe
           src={block.embedUrl}
           title={formattedTextToPlainText(block.title) || 'Video player'}
