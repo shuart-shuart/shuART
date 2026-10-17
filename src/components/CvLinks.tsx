@@ -1,5 +1,5 @@
 import React from 'react';
-import { Download } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 import type { AboutContent } from '../types';
 import { websiteEmbedUrl } from '../services/websiteEmbed';
 
@@ -13,7 +13,9 @@ export function CvLinks({ content }: { content: AboutContent }) {
   // Older settings may contain only the Google Doc's editing/viewing URL.
   const doc = sourceUrl.match(/^https:\/\/docs\.google\.com\/document\/d\/([^/?#]+)(?:[/?#]|$)/);
   const pdfUrl = doc ? `https://docs.google.com/document/d/${doc[1]}/export?format=pdf` : sourceUrl;
-  return <a href={pdfUrl} target="_blank" rel="noopener noreferrer" aria-label="Download CV as PDF" title="CV (PDF, opens in a new tab)" className="inline-flex items-center gap-1 py-0.5 text-sm font-sans text-black/60 hover:text-black focus-visible:underline underline-offset-4">
-    CV <Download size={16} strokeWidth={1.5} aria-hidden="true" />
+  // Google exports force an attachment response; the viewer displays the PDF instead.
+  const viewUrl = doc ? `https://docs.google.com/gview?url=${encodeURIComponent(pdfUrl)}` : pdfUrl;
+  return <a href={viewUrl} target="_blank" rel="noopener noreferrer" aria-label="View CV as PDF" title="View CV (PDF, opens in a new tab)" className="inline-flex items-center gap-1 py-0.5 text-sm font-sans text-black/60 hover:text-black focus-visible:underline underline-offset-4">
+    CV <ArrowUpRight size={16} strokeWidth={1.5} aria-hidden="true" />
   </a>;
 }

@@ -42,20 +42,21 @@ test('CV text and icon form one PDF link opening in a new tab', () => {
   assert.equal((html.match(/<a /g) || []).length, 1);
   assert.ok(html.includes('target="_blank"'));
   assert.ok(html.includes('href="https://example.org/cv.pdf"'));
-  assert.ok(html.includes('aria-label="Download CV as PDF"'));
+  assert.ok(html.includes('aria-label="View CV as PDF"'));
   assert.ok(!html.includes('>View CV<'));
   assert.equal(renderToStaticMarkup(React.createElement(CvLinks, { content: { ...content, sections: [] } })), '');
   const legacy = renderToStaticMarkup(React.createElement(CvLinks, { content: { ...content, sections: [{ ...content.sections[0], text: '[View CV](https://docs.google.com/document/d/cv-document-id/edit?usp=sharing)' }] } }));
-  assert.ok(legacy.includes('href="https://docs.google.com/document/d/cv-document-id/export?format=pdf"'));
+  assert.ok(legacy.includes('href="https://docs.google.com/gview?url=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fd%2Fcv-document-id%2Fexport%3Fformat%3Dpdf"'));
+  assert.ok(!legacy.includes(' download='));
 });
 
 test('CV sits beside About in navigation; repeated contact is hidden while custom contact text remains', () => {
   const about = { ...DEFAULT_ABOUT, contactTitle: 'Contact', contactText: '[hello@example.org](mailto:hello@example.org)', sections: [{ id: 'cv-links', title: 'CV', text: '[View CV](https://example.org/cv) · [Download CV (PDF)](https://example.org/cv.pdf)', items: [] }] };
   const settings = { about, footer: { artistName: 'Artist', description: '', links: [{ id: 'email', label: 'hello@example.org', url: 'mailto:hello@example.org' }] } } as SiteSettings;
   const header = renderToStaticMarkup(React.createElement(Header, { currentView: 'entry', onNavigateView() {}, onRandomWander() {}, showWander: true, about }));
-  assert.ok(header.indexOf('>About</button>') < header.indexOf('aria-label="Download CV as PDF"'));
-  assert.ok(header.indexOf('aria-label="Download CV as PDF"') < header.indexOf('aria-label="Wander'));
-  assert.ok(header.includes('aria-label="Download CV as PDF"'));
+  assert.ok(header.indexOf('>About</button>') < header.indexOf('aria-label="View CV as PDF"'));
+  assert.ok(header.indexOf('aria-label="View CV as PDF"') < header.indexOf('aria-label="Wander'));
+  assert.ok(header.includes('aria-label="View CV as PDF"'));
   const page = renderToStaticMarkup(React.createElement(AboutView, { siteSettings: settings, onNavigateView() {} }));
   assert.ok(!page.includes('mailto:hello@example.org'));
   assert.ok(!page.includes('Download CV'));
