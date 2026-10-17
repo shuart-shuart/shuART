@@ -1,3 +1,4 @@
+import { ArtworkImage } from './ArtworkImage';
 import { sortIndexEntries, type IndexSort, type IndexSortKey } from '../services/indexSorting';
 import { DEFAULT_INDEX } from '../data/siteContent';
 import { formattedTextToPlainText, renderFormattedText } from '../services/formatting';
@@ -6,11 +7,15 @@ import { publicAssetUrl } from '../services/publicAssetUrl';
 import { entryTags, tagCounts } from '../services/canonicalTags';
 import { EntryTitle } from './EntryTitle';
 import { useStickyHeight } from '../services/useStickyHeight';
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { List, LayoutGrid } from 'lucide-react';
 import { Entry, EntryType, Tag, IndexContent } from '../types';
 
+export interface IndexViewState { searchQuery: string; selectedType: 'all' | EntryType; displayMode: 'directory' | 'cards'; sort: IndexSort | null }
+
 interface IndexViewProps {
+  state?: IndexViewState;
+  onStateChange?: (state: IndexViewState) => void;
   entries: Entry[];
   indexContent?: IndexContent;
   tags?: Tag[];
@@ -47,6 +52,7 @@ export const IndexView: React.FC<IndexViewProps> = ({
   onFilterBySubject,
   onSelectTag,
   initialType = 'all',
+  state, onStateChange,
 }) => {
   const controlsRef = useStickyHeight<HTMLDivElement>('--index-controls-height');
   const followEntry = (event: React.MouseEvent<HTMLAnchorElement>, slug: string) => {
@@ -55,13 +61,14 @@ export const IndexView: React.FC<IndexViewProps> = ({
     event.preventDefault();
     onSelectEntry(slug);
   };
-  const [searchQuery, setSearchQuery] = useState('');
-  const [selectedType, setSelectedType] = useState<'all' | EntryType>(initialType);
+  const [searchQuery, setSearchQuery] = useState(state?.searchQuery || '');
+  const [selectedType, setSelectedType] = useState<'all' | EntryType>(state?.selectedType || initialType);
   const [displayMode, setDisplayMode] = useState<'directory' | 'cards'>(() =>
-    typeof window !== 'undefined' && window.matchMedia('(min-width: 768px)').matches ? 'cards' : 'directory'
+    state?.displayMode || (typeof window !== 'undefined' && window.matchMedia('(min-width: 768px)').matches ? 'cards' : 'directory')
   );
 
-  const [sort, setSort] = useState<IndexSort | null>(null);
+  const [sort, setSort] = useState<IndexSort | null>(state?.sort || null);
+  useEffect(() => { onStateChange?.({ searchQuery, selectedType, displayMode, sort }); }, [searchQuery, selectedType, displayMode, sort, onStateChange]);
   const toggleSort = (key: IndexSortKey) => setSort(current => ({
     key,
     direction: current?.key === key
@@ -157,7 +164,7 @@ export const IndexView: React.FC<IndexViewProps> = ({
             {searchQuery && (
               <button
                 onClick={() => setSearchQuery('')}
-                className="absolute right-2.5 top-1/2 -translate-y-1/2 text-xs font-mono-quiet text-black/40 hover:text-black"
+                className="absolute right-2.5 top-1/2 -translate-y-1/2 text-xs font-mono-quiet text-black/60 hover:text-black"
               >
                 Clear
               </button>
@@ -165,7 +172,7 @@ export const IndexView: React.FC<IndexViewProps> = ({
           </div>
 
           <div className="flex items-center gap-4 text-xs font-mono-quiet justify-between sm:justify-end">
-            <div className="text-black/50">
+            <div className="text-black/65">
               {filteredEntries.length} {filteredEntries.length === 1 ? 'entry' : 'entries'}
             </div>
             <div role="group" aria-label="Index view" className="flex items-center gap-2 border-l border-black/15 pl-3">
@@ -175,7 +182,7 @@ export const IndexView: React.FC<IndexViewProps> = ({
                 aria-pressed={displayMode === 'directory'}
                 title="Directory view"
                 className={`p-2 border-b transition-colors focus-visible:outline focus-visible:outline-1 ${
-                  displayMode === 'directory' ? 'text-black border-black' : 'text-black/40 border-transparent hover:text-black'
+                  displayMode === 'directory' ? 'text-black border-black' : 'text-black/60 border-transparent hover:text-black'
                 }`}
               >
                 <List size={18} strokeWidth={1.5} aria-hidden="true" />
@@ -186,7 +193,7 @@ export const IndexView: React.FC<IndexViewProps> = ({
                 aria-pressed={displayMode === 'cards'}
                 title="Tiles view"
                 className={`p-2 border-b transition-colors focus-visible:outline focus-visible:outline-1 ${
-                  displayMode === 'cards' ? 'text-black border-black' : 'text-black/40 border-transparent hover:text-black'
+                  displayMode === 'cards' ? 'text-black border-black' : 'text-black/60 border-transparent hover:text-black'
                 }`}
               >
                 <LayoutGrid size={18} strokeWidth={1.5} aria-hidden="true" />
@@ -197,7 +204,7 @@ export const IndexView: React.FC<IndexViewProps> = ({
 
         {/* Type filters (Clean typographic zero-pill discipline) */}
         <div className="flex items-center gap-x-3 sm:gap-x-5 gap-y-2 flex-wrap text-xs font-mono-quiet">
-          <span className="text-black/40 uppercase tracking-wider text-[11px]">Type:</span>
+          <span className="text-black/60 uppercase tracking-wider text-xs">Type:</span>
           {TYPE_OPTIONS.map((opt) => {
             const isActive = selectedType === opt.value;
             return (
@@ -207,7 +214,7 @@ export const IndexView: React.FC<IndexViewProps> = ({
                 className={`transition-colors ${
                   isActive
                     ? 'text-black font-medium underline underline-offset-4 decoration-black'
-                    : 'text-black/50 hover:text-black'
+                    : 'text-black/65 hover:text-black'
                 }`}
               >
                 {opt.label}
@@ -217,7 +224,7 @@ export const IndexView: React.FC<IndexViewProps> = ({
         </div>
 
         {displayMode === 'cards' && (
-          <div className="flex flex-wrap items-center gap-4 text-[11px] font-mono-quiet text-black/40">
+          <div className="flex flex-wrap items-center gap-4 text-xs font-mono-quiet text-black/60">
             <span>Sort:</span>
             {sortControl('title', 'Title')}
             {sortControl('year', 'Year')}
@@ -232,7 +239,7 @@ export const IndexView: React.FC<IndexViewProps> = ({
             <span className="font-editorial italic text-black font-medium">"{selectedSubject}"</span>
             <button
               onClick={onClearSubjectFilter}
-              className="text-black/50 hover:text-black underline ml-2"
+              className="text-black/65 hover:text-black underline ml-2"
             >
               (show all subjects)
             </button>
@@ -245,7 +252,7 @@ export const IndexView: React.FC<IndexViewProps> = ({
         <div>
           <table className="w-full table-fixed text-left text-sm font-sans border-collapse index-directory">
             <thead>
-              <tr className="border-b border-black/20 text-xs font-mono-quiet text-black/40 uppercase tracking-wider">
+              <tr className="border-b border-black/20 text-xs font-mono-quiet text-black/60 uppercase tracking-wider">
                 <th aria-sort={sort?.key === 'title' ? sort.direction : 'none'} className="py-3 px-4 font-normal w-[60%] sm:w-[50%] md:w-[50%] lg:w-[38%]">{sortControl('title', 'Title')}</th>
                 <th aria-sort={sort?.key === 'type' ? sort.direction : 'none'} className="py-3 px-1 sm:px-4 font-normal w-[20%] sm:w-[25%] md:w-[15%] lg:w-[12%]">{sortControl('type', 'Type')}</th>
                 <th aria-sort={sort?.key === 'year' ? sort.direction : 'none'} className="py-3 px-1 sm:px-4 font-normal w-[20%] sm:w-[25%] md:w-[15%] lg:w-[12%]">{sortControl('year', 'Year')}</th>
@@ -267,7 +274,7 @@ export const IndexView: React.FC<IndexViewProps> = ({
                         <EntryTitle inline entry={entry} primaryClassName="font-editorial text-[15px] sm:text-base text-black group-hover:underline" chineseClassName="font-editorial text-[15px] sm:text-base text-black/70 group-hover:underline" />
                       </a>
                       {entry.isDevelopingWork && (
-                        <div className="text-[11px] font-mono-quiet text-[#c18f32] italic mt-1">
+                        <div className="text-xs font-mono-quiet text-[#c18f32] italic mt-1">
                           [study / fragment]
                         </div>
                       )}
@@ -275,12 +282,12 @@ export const IndexView: React.FC<IndexViewProps> = ({
                   </td>
 
                   {/* Type */}
-                  <td className="py-4 px-1 sm:px-4 align-baseline text-[10px] sm:text-xs font-mono-quiet text-black/60 capitalize break-words">
+                  <td className="py-4 px-1 sm:px-4 align-baseline text-xs sm:text-xs font-mono-quiet text-black/60 capitalize break-words">
                     {entry.type}
                   </td>
 
                   {/* Date */}
-                  <td className="py-4 px-1 sm:px-4 align-baseline text-[10px] sm:text-xs font-mono-quiet text-black/60 break-words">
+                  <td className="py-4 px-1 sm:px-4 align-baseline text-xs sm:text-xs font-mono-quiet text-black/60 break-words">
                     {entry.date || '—'}
                   </td>
 
@@ -291,7 +298,7 @@ export const IndexView: React.FC<IndexViewProps> = ({
 
                   {/* Link */}
                   <td className="py-4 px-4 align-baseline text-right hidden md:table-cell">
-                    <span className="font-mono-quiet text-xs text-black/40 group-hover:text-black">
+                    <span className="font-mono-quiet text-xs text-black/60 group-hover:text-black">
                       View →
                     </span>
                   </td>
@@ -301,7 +308,7 @@ export const IndexView: React.FC<IndexViewProps> = ({
           </table>
 
           {filteredEntries.length === 0 && (
-            <div className="py-16 text-center text-sm font-editorial text-black/50 italic">
+            <div className="py-16 text-center text-sm font-editorial text-black/65 italic">
               No entries found matching current filter or search criteria.
             </div>
           )}
@@ -309,7 +316,7 @@ export const IndexView: React.FC<IndexViewProps> = ({
       ) : (
         /* Thumbnail Tiles Mode */
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 pt-4">
-          {sortedEntries.map((entry) => {
+          {sortedEntries.map((entry, index) => {
             const thumbnail = getEntryBlocks(entry)
               .flatMap(block => block.type === 'image_gallery' ? block.images : [])
               .find(image => image.url);
@@ -322,15 +329,16 @@ export const IndexView: React.FC<IndexViewProps> = ({
               <div className="space-y-2">
                 {thumbnail && (
                   <a href={`#entry/${entry.slug}`} onClick={event => followEntry(event, entry.slug)} className="block mb-4" aria-label={`Open ${entry.title}`}>
-                    <img
-                      src={publicAssetUrl(thumbnail.url)}
+                    <ArtworkImage
+                      thumbnail
+                      src={thumbnail.url}
                       alt={formattedTextToPlainText(thumbnail.alt || thumbnail.caption || entry.title)}
                       className="w-full aspect-[4/3] object-contain"
-                      loading="lazy"
+                      loading={index < 3 ? 'eager' : 'lazy'}
                     />
                   </a>
                 )}
-                <div className="flex items-center gap-2 text-[11px] font-mono-quiet text-black/50">
+                <div className="flex items-center gap-2 text-xs font-mono-quiet text-black/65">
                   <span className="capitalize text-black font-medium">{entry.type}</span>
                   {entry.date && (
                     <>
@@ -355,14 +363,14 @@ export const IndexView: React.FC<IndexViewProps> = ({
               </div>
 
               {/* Subjects & Project Badges / Footer */}
-              <div className="pt-3 border-t border-black/10 flex flex-wrap justify-between items-baseline gap-2 text-[11px] font-mono-quiet text-black/55">
+              <div className="pt-3 border-t border-black/10 flex flex-wrap justify-between items-baseline gap-2 text-xs font-mono-quiet text-black/55">
                 <div className="flex flex-wrap items-center gap-1.5 truncate max-w-[240px]">
                   {entry.associatedProjectIds && entry.associatedProjectIds.length > 0 && (
-                    <span className="text-[10px] uppercase tracking-wider text-black font-medium border border-black/25 px-1 py-0.2">
+                    <span className="text-xs uppercase tracking-wider text-black font-medium border border-black/25 px-1 py-0.2">
                       {projectLookup.get(entry.associatedProjectIds[0]) || 'Project'}
                     </span>
                   )}
-                  <span className="truncate text-black/50">
+                  <span className="truncate text-black/65">
                     {entryTags(entry, tags).slice(0, 3).map(tag => tag.label).join(', ')}
                   </span>
                 </div>
@@ -373,7 +381,7 @@ export const IndexView: React.FC<IndexViewProps> = ({
           })}
 
           {filteredEntries.length === 0 && (
-            <div className="col-span-full py-16 text-center text-sm font-editorial text-black/50 italic">
+            <div className="col-span-full py-16 text-center text-sm font-editorial text-black/65 italic">
               No entries found matching current filter or search criteria.
             </div>
           )}
@@ -382,7 +390,7 @@ export const IndexView: React.FC<IndexViewProps> = ({
 
       {/* Index Tags / Subjects cloud at bottom */}
       <div className="mt-20 pt-8 border-t border-black/10">
-        <h3 className="font-mono-quiet text-xs uppercase tracking-wider text-black/40 mb-3">
+        <h3 className="font-mono-quiet text-xs uppercase tracking-wider text-black/60 mb-3">
           Index of Practice Tags & Subjects
         </h3>
         <div className="flex flex-wrap items-baseline gap-x-5 gap-y-3 text-black/70">
@@ -401,7 +409,7 @@ export const IndexView: React.FC<IndexViewProps> = ({
                 }`}
                 title={`Open subject view for ${item.label}`}
               >
-                <span>{item.label}</span><span className="shrink-0 font-mono-quiet text-xs text-black/50 not-italic">({item.count})</span>
+                <span>{item.label}</span><span className="shrink-0 font-mono-quiet text-xs text-black/65 not-italic">({item.count})</span>
               </button>
             </React.Fragment>
           ))}

@@ -466,7 +466,8 @@ export const EntryEditorModal: React.FC<EntryEditorModalProps> = ({
     const subjects = selectedTagIds.map((tId) => tagLookup.get(tId) || tId.replace(/^tag-/, '').replace(/-/g, ' '));
 
     const baseEntry: Entry = {
-      id: targetId,
+      id: finalSlug,
+      aliases: entryToEdit?.aliases,
       slug: finalSlug,
       title: title.trim(),
       titleZh: titleZh.trim() || undefined,
@@ -578,7 +579,7 @@ export const EntryEditorModal: React.FC<EntryEditorModalProps> = ({
         <div className="p-5 sm:p-6 border-b border-black/10 flex justify-between items-baseline shrink-0">
           <div>
             <div className="text-[11px] font-mono-quiet uppercase tracking-wider text-black/40">
-              {isNew ? `Create New Archive Entry · ID: ${targetId}` : `Editing Archive Entry · Stable ID: ${targetId}`}
+              {isNew ? `Create New Archive Entry · ID: ${slug || "set a slug below"}` : `Editing Archive Entry · ID: ${slug}`}
             </div>
             <h2 className="font-editorial text-2xl sm:text-3xl text-black">
               {title || 'Untitled Entry'}

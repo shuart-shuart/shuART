@@ -27,6 +27,9 @@ jobs:
           bun-version: '1.4.2'
       - name: Install locked dependencies
         run: bun install --frozen-lockfile
+      - name: Install image processing support
+        run: |
+          python3 -m pip install Pillow==12.3.0
       - name: Verify publishing behavior
         run: bun run test
       - name: Build

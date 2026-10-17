@@ -148,7 +148,8 @@ export interface PresentationRecord {
 
 // ---------------- Entry Model ----------------
 export interface Entry {
-  id: string; // Stable immutable unique ID
+  id: string; // Same as slug; older identifiers remain available as aliases
+  aliases?: string[];
   slug: string; // URL slug, stable across title edits
   title: string;
   titleZh?: string;

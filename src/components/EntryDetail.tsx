@@ -1,3 +1,4 @@
+import { ArtworkImage } from './ArtworkImage';
 import { HtmlContent } from './HtmlContent';
 import { WebsiteEmbed } from './WebsiteEmbed';
 import { GallerySlideshow } from './GallerySlideshow';
@@ -9,7 +10,7 @@ import { Entry, BacklinkInfo, EntryImage, Tag } from '../types';
 import { findBacklinks } from '../services/wiki';
 import { getEntryBlocks } from '../services/blockUtils';
 import { ImageLightbox } from './ImageLightbox';
-import { DocumentReader } from './DocumentReader';
+import { DocumentReader } from './LazyDocumentReader';
 import { VideoPlayer } from './VideoPlayer';
 import { EntryHistory } from './EntryHistory';
 
@@ -79,7 +80,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
   return (
     <article className="max-w-4xl mx-auto px-5 sm:px-8 py-5 sm:py-7 animate-fadeIn">
       {/* Top Back / Action bar */}
-      <div className="flex flex-wrap justify-between items-center gap-3 mb-6 text-xs font-mono-quiet text-black/50">
+      <div className="flex flex-wrap justify-between items-center gap-3 mb-6 text-xs font-mono-quiet text-black/65">
         <button
           onClick={onNavigateBack}
           className="hover:text-black flex items-center gap-1"
@@ -216,21 +217,23 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
                 <div className={block.layout === 'grid' ? 'grid grid-cols-1 sm:grid-cols-2 gap-6' : 'space-y-8'}>
                   {block.images.map((img, idx) => (
                     <figure key={img.id || idx} className="space-y-2">
-                      <div
-                        className="overflow-hidden cursor-zoom-in"
+                      <button
+                        type="button"
+                        aria-label={`Enlarge image ${idx + 1}`}
+                        className="block w-full overflow-hidden cursor-zoom-in"
                         onClick={() => setActiveLightboxImage(img)}
                       >
-                        <img
+                        <ArtworkImage
                           src={img.url}
                           alt={formattedTextToPlainText(img.alt || img.caption || entry.title)}
                           className={`mx-auto w-auto max-w-full h-auto object-contain max-h-[70vh] transition-opacity hover:opacity-95${block.showOutline ? ' border border-black/20' : ''}`}
                           loading="lazy"
                         />
-                      </div>
+                      </button>
                       {(img.caption || img.credit || img.alt) && (
                         <figcaption className="mx-auto max-w-[65ch] text-center text-xs font-mono-quiet text-black/60 pt-1 space-y-1">
                           {(img.caption || img.alt) && <p>{renderWikiText(img.caption || img.alt || '')}</p>}
-                          {img.credit && <p className="text-black/40">Photo: {renderWikiText(img.credit)}</p>}
+                          {img.credit && <p className="text-black/60">Photo: {renderWikiText(img.credit)}</p>}
                         </figcaption>
                       )}
                     </figure>
@@ -267,7 +270,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
             <p className="font-editorial text-sm text-black/60 italic">
               Visual documentation and text pending review by artist.
             </p>
-            <p className="text-[11px] font-mono-quiet text-black/40">
+            <p className="text-xs font-mono-quiet text-black/60">
               No placeholder images fabricated. Documentation, texts, documents, and videos can be uploaded directly in the GitHub editor.
             </p>
           </div>
@@ -280,7 +283,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
       {entryTags.length > 0 && (
         <section className="pt-8 border-t border-black/10 my-8">
           <div className="flex flex-wrap items-baseline gap-x-5 gap-y-3 text-black/60">
-            <span className="font-mono-quiet text-black/40 uppercase tracking-wider text-[11px]">
+            <span className="font-mono-quiet text-black/60 uppercase tracking-wider text-xs">
               Tags:
             </span>
             {entryTags.map((tItem, idx) => (
@@ -307,7 +310,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
       {/* All entry relationships share one deduplicated list. */}
       {connections.length > 0 && (
         <section className="pt-6 border-t border-black/10 mt-8">
-          <h3 className="font-mono-quiet uppercase text-xs tracking-wider text-black/40 mb-3">
+          <h3 className="font-mono-quiet uppercase text-xs tracking-wider text-black/60 mb-3">
             Connections ({connections.length})
           </h3>
           <ul className={`grid grid-cols-1 ${connections.length > 1 ? 'sm:grid-cols-2' : ''} gap-x-6 gap-y-2`}>
@@ -325,7 +328,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
                   >
                     <EntryTitle inline entry={item} primaryClassName="font-editorial text-base text-black group-hover:underline" chineseClassName="font-editorial text-base text-black/70 group-hover:underline" />
                   </a>
-                  <span className="text-[11px] font-mono-quiet text-black/40 capitalize shrink-0">
+                  <span className="text-xs font-mono-quiet text-black/60 capitalize shrink-0">
                     {item.type}
                   </span>
                 </div>

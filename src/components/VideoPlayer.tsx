@@ -40,7 +40,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({ block }) => {
             <p className="text-black/80">{renderFormattedText(block.caption)}</p>
           )}
           {block.credit && (
-            <p className="text-[11px] text-black/50">Credit: {renderFormattedText(block.credit)}</p>
+            <p className="text-xs text-black/65">Credit: {renderFormattedText(block.credit)}</p>
           )}
         </div>
 
@@ -59,7 +59,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({ block }) => {
 
       {/* Google Drive Sharing Permission Guidance */}
       {isDrive && (
-        <div className="p-2.5 bg-black/[0.02] border border-black/10 text-[11px] font-mono-quiet text-black/60 space-y-0.5">
+        <div className="p-2.5 bg-black/[0.02] border border-black/10 text-xs font-mono-quiet text-black/60 space-y-0.5">
           <span className="text-black font-medium">Google Drive playback notice:</span>{' '}
           If playback does not start or reports an authorization restriction, ensure the file's sharing setting in Google Drive is configured to <em>"Anyone with the link can view"</em>.
         </div>

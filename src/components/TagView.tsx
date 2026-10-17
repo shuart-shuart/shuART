@@ -6,7 +6,7 @@ import { renderFormattedText } from '../services/formatting';
 import React from 'react';
 import { Entry, Tag } from '../types';
 import { getEntryBlocks } from '../services/blockUtils';
-import { DocumentReader } from './DocumentReader';
+import { DocumentReader } from './LazyDocumentReader';
 import { VideoPlayer } from './VideoPlayer';
 
 interface TagViewProps {
@@ -40,18 +40,16 @@ export const TagView: React.FC<TagViewProps> = ({
           onClick={onNavigateBack}
           className="hover:text-black hover:underline"
         >
-          ← Return to Archive Index
+          ← Back to Index
         </button>
-        <span className="uppercase tracking-wider text-black/40">
-          Canonical Subject View · Tag ID: {tag.id}
-        </span>
+
       </div>
 
       {/* Main Tag Header */}
       <header className="space-y-4 mb-10">
         <div className="space-y-1">
-          <div className="text-xs font-mono-quiet uppercase tracking-wider text-black/40">
-            Subject / Thematic Tag
+          <div className="text-xs font-mono-quiet uppercase tracking-wider text-black/60">
+            Subject
           </div>
           <h1 className="font-editorial text-3xl sm:text-5xl text-black font-normal tracking-tight capitalize">
             {tag.label}
@@ -70,8 +68,8 @@ export const TagView: React.FC<TagViewProps> = ({
         <section className="mb-16 p-6 sm:p-8 border border-black/15 bg-black/[0.015] space-y-6">
           <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 pb-3 border-b border-black/10">
             <div className="space-y-0.5">
-              <span className="text-[11px] font-mono-quiet uppercase tracking-wider text-black/40">
-                Linked Note / Concept Definition
+              <span className="text-xs font-mono-quiet uppercase tracking-wider text-black/60">
+                Notes
               </span>
               <h2>
                 <EntryTitle entry={linkedNote} primaryClassName="font-editorial text-2xl sm:text-3xl text-black" chineseClassName="font-editorial text-black/60 font-light text-xl" />
@@ -135,13 +133,13 @@ export const TagView: React.FC<TagViewProps> = ({
         </section>
       )}
 
-      {/* Associated Published Entries */}
+      {/* Entries */}
       <section className="space-y-6">
         <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 pb-3 border-b border-black/15">
           <h2 className="font-editorial text-2xl text-black">
-            Associated Published Entries
+            Entries
           </h2>
-          <span className="font-mono-quiet text-xs text-black/50">
+          <span className="font-mono-quiet text-xs text-black/65">
             {associatedEntries.length} {associatedEntries.length === 1 ? 'entry' : 'entries'} indexed under “{tag.label}”
           </span>
         </div>
@@ -149,13 +147,14 @@ export const TagView: React.FC<TagViewProps> = ({
         {associatedEntries.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {associatedEntries.map((entry) => (
-              <article
+              <a
                 key={entry.id}
-                onClick={() => onSelectEntry(entry.slug)}
+                href={`#entry/${entry.slug}`}
+                onClick={event => { if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return; event.preventDefault(); onSelectEntry(entry.slug); }}
                 className="group cursor-pointer p-6 border border-black/10 hover:border-black transition-all bg-white flex flex-col justify-between space-y-3"
               >
                 <div className="space-y-2">
-                  <div className="flex items-center gap-2 text-[11px] font-mono-quiet text-black/50">
+                  <div className="flex items-center gap-2 text-xs font-mono-quiet text-black/65">
                     <span className="capitalize text-black font-medium">{entry.type}</span>
                     {entry.date && (
                       <>
@@ -166,13 +165,13 @@ export const TagView: React.FC<TagViewProps> = ({
                     {entry.isDevelopingWork && (
                       <>
                         <span aria-hidden="true">·</span>
-                        <span className="italic">[study]</span>
+                        <span className="italic text-[#c18f32]">[study / fragment]</span>
                       </>
                     )}
                   </div>
 
                   <h3 className="leading-snug">
-                    <EntryTitle entry={entry} primaryClassName="font-editorial text-xl text-black group-hover:underline" chineseClassName="font-editorial text-base sm:text-lg text-black/70" />
+                    <EntryTitle inline entry={entry} primaryClassName="font-editorial text-base text-black group-hover:underline" chineseClassName="font-editorial text-base text-black/70 group-hover:underline" />
                   </h3>
 
                   {entry.shortDescription && (
@@ -182,17 +181,17 @@ export const TagView: React.FC<TagViewProps> = ({
                   )}
                 </div>
 
-                <div className="pt-3 border-t border-black/10 flex justify-between items-baseline text-[11px] font-mono-quiet text-black/45">
+                <div className="pt-3 border-t border-black/10 flex justify-between items-baseline text-xs font-mono-quiet text-black/45">
                   <span className="truncate max-w-[200px]">
                     {entryTags(entry, tags).slice(0, 3).map(tag => tag.label).join(', ')}
                   </span>
                   <span className="group-hover:text-black">Open →</span>
                 </div>
-              </article>
+              </a>
             ))}
           </div>
         ) : (
-          <div className="py-12 text-center text-sm font-editorial text-black/50 italic border border-dashed border-black/15">
+          <div className="py-12 text-center text-sm font-editorial text-black/65 italic border border-dashed border-black/15">
             No published entries currently associated with this tag.
           </div>
         )}

@@ -1,8 +1,18 @@
-import React, { useEffect, useState } from 'react';
+import { ArtworkImage } from './ArtworkImage';
+import React, { useEffect, useState, useRef } from 'react';
 import type { EntryImage, ImageGalleryBlock } from '../types';
 import { formattedTextToPlainText, renderFormattedText } from '../services/formatting';
 
 export function GallerySlideshow({block, onOpen, isLightboxOpen = false}: {block:ImageGalleryBlock;onOpen:(image:EntryImage)=>void;isLightboxOpen?:boolean}) {
+  const root = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = useState(false);
+  useEffect(() => {
+    if (!root.current) return;
+    if (typeof IntersectionObserver === "undefined") { setVisible(true); return; }
+    const observer = new IntersectionObserver(entries => setVisible(entries.some(entry => entry.isIntersecting)));
+    observer.observe(root.current);
+    return () => observer.disconnect();
+  }, []);
   const [index,setIndex] = useState(0);
   const [paused,setPaused] = useState(false);
   const [hovered,setHovered] = useState(false);
@@ -15,7 +25,7 @@ export function GallerySlideshow({block, onOpen, isLightboxOpen = false}: {block
     return ()=>query.removeEventListener('change',update);
   },[]);
   const count=block.images.length;
-  const automatic=!!block.autoPlay && !paused && !hovered && !focused && !reducedMotion && !isLightboxOpen && count>1;
+  const automatic=visible && !!block.autoPlay && !paused && !hovered && !focused && !reducedMotion && !isLightboxOpen && count>1;
   useEffect(()=>{
     if (!automatic) return;
     const interval=window.setInterval(()=>setIndex(current=>(current+1)%count),Math.min(20,Math.max(2,block.intervalSeconds || 5))*1000);
@@ -24,10 +34,10 @@ export function GallerySlideshow({block, onOpen, isLightboxOpen = false}: {block
   if (!count) return null;
   const image=block.images[index%count];
   const change=(direction:number)=>setIndex(current=>(current+direction+count)%count);
-  return <div className="space-y-3" aria-label="Image slideshow" onMouseEnter={()=>setHovered(true)} onMouseLeave={()=>setHovered(false)} onFocusCapture={()=>setFocused(true)} onBlurCapture={event=>{if(!event.currentTarget.contains(event.relatedTarget as Node))setFocused(false);}}>
+  return <div ref={root} className="space-y-3" aria-label="Image slideshow" onMouseEnter={()=>setHovered(true)} onMouseLeave={()=>setHovered(false)} onFocusCapture={()=>setFocused(true)} onBlurCapture={event=>{if(!event.currentTarget.contains(event.relatedTarget as Node))setFocused(false);}}>
     <figure className="space-y-2">
       <button type="button" className={block.showOutline ? 'flex items-center justify-center w-full h-[55vh] max-h-[70vh] cursor-zoom-in' : 'block w-full cursor-zoom-in'} onClick={()=>onOpen(image)} aria-label={`Enlarge image ${index%count+1} of ${count}`}>
-        <img src={image.url} alt={formattedTextToPlainText(image.alt || image.caption) || 'Artwork image'} className={block.showOutline ? 'w-auto h-auto max-w-full max-h-full object-contain border border-black/20' : 'w-full h-[55vh] max-h-[70vh] object-contain'} />
+        <ArtworkImage loading="lazy" src={image.url} alt={formattedTextToPlainText(image.alt || image.caption) || 'Artwork image'} className={block.showOutline ? 'w-auto h-auto max-w-full max-h-full object-contain border border-black/20' : 'w-full h-[55vh] max-h-[70vh] object-contain'} />
       </button>
       {(image.caption || image.credit) && <figcaption className="mx-auto max-w-[65ch] text-center text-xs font-mono-quiet text-black/60 space-y-1">
         {image.caption && <p>{renderFormattedText(image.caption)}</p>}

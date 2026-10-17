@@ -38,7 +38,7 @@ export const AboutView: React.FC<AboutViewProps> = ({ siteSettings, allEntries =
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 text-base sm:text-lg leading-[1.65]">
                 {section.items.map(item => (
                   <div key={item.id} className="space-y-1.5">
-                    <h3 className="font-mono-quiet text-xs uppercase tracking-wider text-black">{render(item.title)}</h3>
+                    {item.title.trim() && <h3 className="font-mono-quiet text-xs uppercase tracking-wider text-black">{render(item.title)}</h3>}
                     <div className="text-black/70 space-y-3">{paragraphs(item.text)}</div>
                   </div>
                 ))}
@@ -48,7 +48,7 @@ export const AboutView: React.FC<AboutViewProps> = ({ siteSettings, allEntries =
         ))}
         {content.contactText.trim() && !contactInFooter && (
           <section className="pt-8 border-t border-black/10 text-sm space-y-1">
-            <h2 className="font-mono-quiet text-xs uppercase tracking-wider text-black/40">{render(content.contactTitle)}</h2>
+            <h2 className="font-mono-quiet text-xs uppercase tracking-wider text-black/60">{render(content.contactTitle)}</h2>
             <div className="font-editorial text-lg text-black space-y-3">{paragraphs(content.contactText)}</div>
           </section>
         )}

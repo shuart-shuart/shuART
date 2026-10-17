@@ -1,3 +1,4 @@
+import { entryMatches } from './entryIdentity';
 import React, { useState } from 'react';
 import { Entry } from '../types';
 
@@ -57,7 +58,7 @@ export function parseFormattedText(text: string, allEntries?: Entry[]): Formatte
       const foundEntry = allEntries?.find(
         (e) =>
           e.slug.toLowerCase() === rawUrl.toLowerCase() ||
-          e.id.toLowerCase() === rawUrl.toLowerCase() ||
+          entryMatches(e, rawUrl) ||
           e.title.toLowerCase() === rawUrl.toLowerCase() ||
           rawUrl === `#entry/${e.slug}` ||
           rawUrl === `#entry/${e.id}`
@@ -77,7 +78,7 @@ export function parseFormattedText(text: string, allEntries?: Entry[]): Formatte
 
       const foundEntry = allEntries?.find(
         (e) =>
-          e.id.toLowerCase() === targetIdentifier.toLowerCase() ||
+          entryMatches(e, targetIdentifier) ||
           e.slug.toLowerCase() === targetIdentifier.toLowerCase() ||
           e.title.toLowerCase() === targetIdentifier.toLowerCase() ||
           (e.titleZh && e.titleZh.toLowerCase() === targetIdentifier.toLowerCase())

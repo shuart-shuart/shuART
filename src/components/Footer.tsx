@@ -27,9 +27,9 @@ export const Footer: React.FC<FooterProps> = ({ siteSettings, onNavigateView }) 
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] items-baseline gap-3 md:gap-6">
         <div className="space-y-1">
           <p className="font-editorial text-sm text-black">{renderFormattedText(content.artistName)}</p>
-          {content.description.trim() && <p className="font-serif italic text-xs text-black/50 whitespace-pre-line">{renderFormattedText(content.description)}</p>}
+          {content.description.trim() && <p className="font-serif italic text-xs text-black/65 whitespace-pre-line">{renderFormattedText(content.description)}</p>}
         </div>
-        <p className="text-center text-xs text-black/50">© {new Date().getFullYear()} Hong Shu-ying 方舒颖</p>
+        <p className="text-center text-xs text-black/65">© {new Date().getFullYear()} Hong Shu-ying 方舒颖</p>
         <div className="flex flex-wrap items-center md:justify-self-end gap-x-4 sm:gap-x-6 gap-y-2 font-mono-quiet text-xs text-black/70">
           {links.map((link, index) => (
             <React.Fragment key={link.id}>

@@ -1,3 +1,4 @@
+import { canonicalizeEntryIds } from './entryIdentity';
 import type { ArchiveBundle } from './githubPublishing';
 
 function equal(a: any, b: any): boolean {
@@ -14,6 +15,9 @@ const object = (value: any) => value && typeof value === 'object' && !Array.isAr
 // Only reconcile independent edits. Arrays inside an entry remain atomic so
 // competing gallery/text edits or reorderings cannot silently replace each other.
 export function mergeArchive(base: ArchiveBundle, local: ArchiveBundle, remote: ArchiveBundle): ArchiveBundle {
+  base = canonicalizeEntryIds(base);
+  local = canonicalizeEntryIds(local);
+  remote = canonicalizeEntryIds(remote);
   const conflicts: string[] = [];
   function merge(old: any, draft: any, latest: any, path: string): any {
     if (equal(draft, latest)) return draft;

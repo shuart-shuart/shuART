@@ -29,7 +29,7 @@ export function EntryHistory({ entry, allEntries, onSelectEntry }: {
     {credits.length > 0 && <section aria-label="Credits" className="pt-8 border-t border-black/10 my-8">
       <dl className="space-y-3 text-sm">
         {credits.map(credit => <div key={credit.id} className="grid sm:grid-cols-[10rem_1fr] gap-1 sm:gap-4">
-          <dt className="font-mono-quiet text-xs text-black/50 capitalize">{formatted(credit.role === 'custom' ? credit.customRole || 'Contributor' : credit.role)}</dt>
+          <dt className="font-mono-quiet text-xs text-black/65 capitalize">{formatted(credit.role === 'custom' ? credit.customRole || 'Contributor' : credit.role)}</dt>
           <dd className="whitespace-pre-line">{linkedText(credit.name, credit.link)}</dd>
         </div>)}
       </dl>

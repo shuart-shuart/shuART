@@ -1,3 +1,4 @@
+import { canonicalizeEntryIds } from './entryIdentity';
 import legacyMediaUrls from '../data/legacyMediaUrls.json';
 import { mergeArchive } from './archiveMerge';
 import type { Entry, SiteSettings, Tag } from '../types';
@@ -52,7 +53,7 @@ export async function readRepositoryArchive(ref = 'main'): Promise<{ bundle: Arc
   if (!file.content || file.encoding !== 'base64') throw new Error('The archive file could not be read.');
   const bundle = JSON.parse(decodeUtf8(file.content));
   validateArchive(bundle);
-  return { bundle, sha: file.sha };
+  return { bundle: canonicalizeEntryIds(bundle), sha: file.sha };
 }
 export async function connectGitHub(token: string) {
   disconnectGitHub();
@@ -81,6 +82,7 @@ export async function stageMediaFile(file: File): Promise<string> {
 
 export async function prepareArchiveMedia(bundle: ArchiveBundle): Promise<{ bundle: ArchiveBundle; media: {path: string; base64: string}[] }> {
   validateArchive(bundle);
+  bundle = canonicalizeEntryIds(bundle);
   const publicBundle: ArchiveBundle = { ...bundle, entries: bundle.entries.filter(entry => entry.status === 'published').map(({ notesForArtist, ...entry }) => entry) };
   const media = new Map<string, {path: string; base64: string}>();
   async function visit(value: any): Promise<any> {
@@ -117,7 +119,7 @@ export async function publishArchive(bundle: ArchiveBundle, expectedContentSha: 
     const head = await request('/git/ref/heads/main');
     const parentSha = head.object.sha;
     const current = await readRepositoryArchive(parentSha);
-    let draft = bundle;
+    let draft = canonicalizeEntryIds(bundle);
     if (current.sha !== expectedContentSha) {
       const baseline = await request(`/git/blobs/${encodeURIComponent(expectedContentSha)}`);
       if (baseline.encoding !== 'base64' || !baseline.content) throw new Error('The original draft baseline could not be read. Export your draft backup before reloading repository content.');

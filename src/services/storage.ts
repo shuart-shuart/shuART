@@ -1,9 +1,10 @@
+import { canonicalizeEntryIds, upsertSlugEntry } from './entryIdentity';
 import { Entry, SiteSettings, NavItemConfig, Tag } from '../types';
 import { DESIGNATED_EDITOR_EMAIL } from './mediaUploads';
 import archiveData from '../data/archive.json';
 import { createDraftStore } from './draftStore';
 import { ArchiveBundle, DRAFT_BASE_KEY, isGitHubConnected, disconnectGitHub } from './githubPublishing';
-export const PUBLISHED_ARCHIVE = archiveData as unknown as ArchiveBundle;
+export const PUBLISHED_ARCHIVE = canonicalizeEntryIds(archiveData as unknown as ArchiveBundle);
 
 export { DESIGNATED_EDITOR_EMAIL };
 
@@ -53,14 +54,21 @@ export const DEFAULT_SITE_SETTINGS: SiteSettings = PUBLISHED_ARCHIVE.settings;
 // ---------------- Site Settings ----------------
 const DRAFT_KEY = 'shuart_archive_draft_v3';
 const draftStore = createDraftStore<ArchiveBundle>(DRAFT_KEY, PUBLISHED_ARCHIVE);
-const readDraft = draftStore.read;
+let rawDraft: ArchiveBundle | undefined;
+let normalizedDraft: ArchiveBundle | undefined;
+const readDraft = () => {
+  const raw = draftStore.read();
+  if (raw !== rawDraft) { rawDraft = raw; normalizedDraft = canonicalizeEntryIds(raw); }
+  return normalizedDraft!;
+};
 function writeDraft(patch: Partial<ArchiveBundle>) {
-  return draftStore.update({ ...patch, version: 3 });
+  return draftStore.update(canonicalizeEntryIds({ ...readDraft(), ...patch, version: 3 }));
 }
 export function getLocalSettings(): SiteSettings { return readDraft().settings; }
 export function saveLocalSettings(settings: SiteSettings) { return writeDraft({ settings }); }
 
 export async function fetchSiteSettings(): Promise<SiteSettings> {
+  if (!isGitHubConnected()) return PUBLISHED_ARCHIVE.settings;
   await draftStore.initialize();
   return isGitHubConnected() ? getLocalSettings() : PUBLISHED_ARCHIVE.settings;
 }
@@ -72,6 +80,7 @@ export function getLocalTags(): Tag[] { return readDraft().tags; }
 export function saveLocalTags(tags: Tag[]) { return writeDraft({ tags }); }
 
 export async function fetchTags(): Promise<Tag[]> {
+  if (!isGitHubConnected()) return PUBLISHED_ARCHIVE.tags;
   await draftStore.initialize();
   return isGitHubConnected() ? getLocalTags() : PUBLISHED_ARCHIVE.tags;
 }
@@ -164,11 +173,12 @@ export function getLocalEntries(): Entry[] { return readDraft().entries; }
 export function saveLocalEntries(entries: Entry[]) { return writeDraft({ entries }); }
 
 export async function fetchEntries(): Promise<Entry[]> {
+  if (!isGitHubConnected()) return PUBLISHED_ARCHIVE.entries;
   await draftStore.initialize();
   return isGitHubConnected() ? getLocalEntries() : PUBLISHED_ARCHIVE.entries;
 }
 
-export async function saveEntry(entry: Entry, currentAll?: Entry[]): Promise<Entry[]> {
+export async function saveEntry(entry: Entry, currentAll?: Entry[], previousId = entry.id): Promise<Entry[]> {
   // Always query authoritative storage baseline
   const stored = getLocalEntries();
   const baseList = currentAll ?? stored;
@@ -179,18 +189,10 @@ export async function saveEntry(entry: Entry, currentAll?: Entry[]): Promise<Ent
     unmarkEntryAsDeleted(entry.slug);
   }
 
-  // Target strictly by stable original entry ID
-  const existingIdx = baseList.findIndex((e) => e.id === entry.id);
-  let updatedList: Entry[];
-  if (existingIdx >= 0) {
-    updatedList = [...baseList];
-    updatedList[existingIdx] = entry;
-  } else {
-    updatedList = [entry, ...baseList];
-  }
-
-  // Await the committed draft write before confirming the save
-  await saveLocalEntries(updatedList);
+  const updated = canonicalizeEntryIds({ ...readDraft(), entries: upsertSlugEntry(entry, baseList, previousId) });
+  const updatedList = updated.entries;
+  // Relationships, subject notes and inline links commit with the identity change.
+  await writeDraft(updated);
 
   return updatedList;
 }
@@ -294,14 +296,13 @@ export async function saveEntriesBatch(updatedEntries: Entry[], currentAll?: Ent
   const stored = getLocalEntries();
   const baseList = currentAll ?? stored;
 
-  const map = new Map<string, Entry>(baseList.map((e) => [e.id, e]));
+  let fullList = baseList;
   for (const entry of updatedEntries) {
     unmarkEntryAsDeleted(entry.id);
-    map.set(entry.id, entry);
+    fullList = upsertSlugEntry(entry, fullList);
   }
-  const fullList = Array.from(map.values());
   await saveLocalEntries(fullList);
-  return fullList;
+  return getLocalEntries();
 }
 
 export async function resetToInitialSampleEntries(): Promise<Entry[]> {

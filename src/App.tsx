@@ -1,5 +1,6 @@
+import { entryMatches, canonicalizeEntryIds } from './services/entryIdentity';
 import { ArchiveBundle } from './services/githubPublishing';
-import { useState, useEffect, useMemo, useCallback } from 'react';
+import { lazy, Suspense, useState, useEffect, useLayoutEffect, useMemo, useCallback, useRef } from 'react';
 import { Entry, ViewMode, SiteSettings, Tag } from './types';
 import {
   fetchEntries,
@@ -19,26 +20,45 @@ import {
   beginGitHubEditorSession,
   saveDraftArchive,
   getLocalTags,
+  getLocalSettings,
 } from './services/storage';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
-import { IndexView } from './components/IndexView';
+import { IndexView, type IndexViewState } from './components/IndexView';
 import { TagView } from './components/TagView';
 import { AboutView } from './components/AboutView';
 import { EntryDetail } from './components/EntryDetail';
-import { EditorView } from './components/EditorView';
-import { EditorAuthModal } from './components/EditorAuthModal';
-import { EntryEditorModal } from './components/EntryEditorModal';
+const EditorView = lazy(() => import('./components/EditorView').then(module => ({ default: module.EditorView })));
+const EditorAuthModal = lazy(() => import('./components/EditorAuthModal').then(module => ({ default: module.EditorAuthModal })));
+const EntryEditorModal = lazy(() => import('./components/EntryEditorModal').then(module => ({ default: module.EntryEditorModal })));
 
 export default function App() {
   const [entries, setEntries] = useState<Entry[]>([]);
   const [tags, setTags] = useState<Tag[]>([]);
   const [siteSettings, setSiteSettings] = useState<SiteSettings>(DEFAULT_SITE_SETTINGS);
+  const [isLoading, setIsLoading] = useState(true);
   const [currentView, setCurrentView] = useState<ViewMode>('index');
+  const [indexState, setIndexState] = useState<IndexViewState>();
+  const indexScroll = useRef(0);
+  const indexScrollPaused = useRef(false);
+  const currentViewRef = useRef(currentView);
+  currentViewRef.current = currentView;
+  const rememberIndex = useCallback(() => { if (currentViewRef.current === 'index' && !indexScrollPaused.current) { indexScroll.current = window.scrollY; indexScrollPaused.current = true; } }, []);
+  useEffect(() => {
+    if (currentView !== 'index') return;
+    const remember = () => { if (!indexScrollPaused.current) indexScroll.current = window.scrollY; };
+    window.addEventListener('scroll', remember, { passive: true });
+    return () => window.removeEventListener('scroll', remember);
+  }, [currentView]);
+  useLayoutEffect(() => {
+    if (currentView !== 'index' || isLoading) return;
+    const frame = requestAnimationFrame(() => { window.scrollTo({ top: indexScroll.current, behavior: 'instant' }); indexScrollPaused.current = false; });
+    return () => cancelAnimationFrame(frame);
+  }, [currentView, isLoading]);
   const [selectedEntrySlug, setSelectedEntrySlug] = useState<string | null>(null);
   const [selectedTagId, setSelectedTagId] = useState<string | null>(null);
   const [selectedSubject, setSelectedSubject] = useState<string | null>(null);
-  const [isLoading, setIsLoading] = useState(true);
+
 
   // Authentication state
   const [isEditorLoggedIn, setIsEditorLoggedIn] = useState<boolean>(() => {
@@ -86,10 +106,10 @@ export default function App() {
   }, [entries]);
 
   const handleSelectEntry = useCallback((slugOrId: string) => {
+    rememberIndex();
     const target = entries.find(
       (e) =>
-        e.slug.toLowerCase() === slugOrId.toLowerCase() ||
-        e.id.toLowerCase() === slugOrId.toLowerCase() ||
+        entryMatches(e, slugOrId) ||
         e.title.toLowerCase() === slugOrId.toLowerCase()
     );
 
@@ -117,6 +137,7 @@ export default function App() {
   }, [entries, isEditorLoggedIn]);
 
   const handleSelectTag = useCallback((tagIdOrLabel: string) => {
+    rememberIndex();
     const norm = tagIdOrLabel.trim();
     const matched = tags.find(
       (t) => t.id === norm || t.label.toLowerCase() === norm.toLowerCase() || t.id === 'tag-' + norm
@@ -214,11 +235,13 @@ export default function App() {
   }, [isEditorLoggedIn, siteSettings.showWander, handleRandomWander, handleSelectEntry]);
 
   const navigateToView = (view: ViewMode) => {
+    rememberIndex();
+    if (view === 'index' && currentViewRef.current === 'index') indexScrollPaused.current = false;
     setCurrentView(view);
     setSelectedEntrySlug(null);
     setSelectedTagId(null);
     window.location.hash = view === 'index' ? '' : `#${view}`;
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (view !== 'index') window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleFilterBySubject = (subject: string) => {
@@ -260,8 +283,10 @@ export default function App() {
   };
 
   const handleSaveEntry = async (savedEntry: Entry) => {
-    const updated = await saveEntry(savedEntry, entries);
+    const updated = await saveEntry(savedEntry, entries, entryBeingEdited?.id);
     setEntries(updated);
+    setTags(getLocalTags());
+    setSiteSettings(getLocalSettings());
 
     // The editor owns its active form until it confirms and closes.
     // Replacing its source entry here resets its fields and save feedback.
@@ -333,6 +358,7 @@ export default function App() {
   };
 
   const handleImportArchive = async (bundle: ArchiveBundle) => {
+    bundle = canonicalizeEntryIds(bundle);
     await saveDraftArchive(bundle);
     setEntries(bundle.entries); setTags(bundle.tags); setSiteSettings(bundle.settings);
   };
@@ -342,7 +368,7 @@ export default function App() {
     if (!selectedEntrySlug) return null;
     const target = entries.find(
       (e) =>
-        e.slug.toLowerCase() === selectedEntrySlug.toLowerCase() ||
+        entryMatches(e, selectedEntrySlug) ||
         e.id.toLowerCase() === selectedEntrySlug.toLowerCase()
     );
 
@@ -409,8 +435,11 @@ export default function App() {
 
         {/* Primary Page Views */}
         <main>
+          <Suspense fallback={<p role="status" className="p-8 text-sm text-black/65">Loading…</p>}>
           {currentView === 'index' && (
             <IndexView
+              state={indexState}
+              onStateChange={setIndexState}
               indexContent={siteSettings.index}
               entries={visibleEntries}
               tags={tags}
@@ -499,6 +528,7 @@ export default function App() {
               onReturnToPublic={() => navigateToView('index')}
             />
           )}
+          </Suspense>
         </main>
       </div>
 
@@ -508,12 +538,14 @@ export default function App() {
         onNavigateView={navigateToView}
       />
 
+      <Suspense fallback={<p role="status" className="fixed bottom-4 right-4 bg-white p-4">Loading editor…</p>}>
       {/* Editor Sign In Modal */}
+      {isAuthModalOpen && (
       <EditorAuthModal
         isOpen={isAuthModalOpen}
         onClose={() => setIsAuthModalOpen(false)}
         onSuccess={handleEditorLoginSuccess}
-      />
+      />)}
 
       {/* Entry Editor Modal */}
       {isEntryEditorModalOpen && (
@@ -530,6 +562,7 @@ export default function App() {
           onSave={handleSaveEntry}
         />
       )}
+      </Suspense>
     </div>
   );
 }

@@ -1,3 +1,4 @@
+import { entryMatches } from './entryIdentity';
 import React from 'react';
 import { Entry } from '../types';
 
@@ -157,7 +158,7 @@ export function renderFormattedText(
 
       const found = allEntries.find(
         (e) =>
-          e.id.toLowerCase() === targetIdentifier.toLowerCase() ||
+          entryMatches(e, targetIdentifier) ||
           e.slug.toLowerCase() === targetIdentifier.toLowerCase() ||
           e.title.toLowerCase() === targetIdentifier.toLowerCase() ||
           (e.titleZh && e.titleZh.toLowerCase() === targetIdentifier.toLowerCase())

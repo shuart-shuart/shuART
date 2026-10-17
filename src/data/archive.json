@@ -2,7 +2,7 @@
   "version": 3,
   "entries": [
     {
-      "id": "entry-mvcmp76u-qozj",
+      "id": "dingdongbeep",
       "slug": "dingdongbeep",
       "title": "dingdongbeep!",
       "type": "project",
@@ -73,10 +73,13 @@
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-17T16:49:00.404Z",
-      "updatedAt": "2026-10-17T16:49:00.404Z"
+      "updatedAt": "2026-10-17T16:49:00.404Z",
+      "aliases": [
+        "entry-mvcmp76u-qozj"
+      ]
     },
     {
-      "id": "entry-mvbat44j-bdau",
+      "id": "b-side-books",
       "slug": "b-side-books",
       "title": "b-side books",
       "type": "project",
@@ -107,15 +110,18 @@
       ],
       "associatedProjectIds": [],
       "relatedEntryIds": [
-        "entry-national-flower-work"
+        "national-flower"
       ],
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-16T18:28:16.494Z",
-      "updatedAt": "2026-10-16T18:28:16.494Z"
+      "updatedAt": "2026-10-16T18:28:16.494Z",
+      "aliases": [
+        "entry-mvbat44j-bdau"
+      ]
     },
     {
-      "id": "entry-mv46p9q3-1vsv",
+      "id": "yinying",
       "slug": "yinying",
       "title": "reflections impressions",
       "titleZh": "印映",
@@ -295,16 +301,19 @@
       ],
       "associatedProjectIds": [],
       "relatedEntryIds": [
-        "entry-who-is-abing",
-        "entry-phases"
+        "who-is-abing",
+        "phases"
       ],
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-11T19:12:20.515Z",
-      "updatedAt": "2026-10-11T19:31:36.941Z"
+      "updatedAt": "2026-10-11T19:31:36.941Z",
+      "aliases": [
+        "entry-mv46p9q3-1vsv"
+      ]
     },
     {
-      "id": "entry-mv46lx9v-p6zn",
+      "id": "dblspce",
       "slug": "dblspce",
       "title": "dblspce residency: 再阅错别字",
       "type": "project",
@@ -346,15 +355,18 @@
       ],
       "associatedProjectIds": [],
       "relatedEntryIds": [
-        "script-notes"
+        "biji"
       ],
       "status": "published",
       "isDevelopingWork": true,
       "createdAt": "2026-10-11T18:55:29.276Z",
-      "updatedAt": "2026-10-16T17:39:00.446Z"
+      "updatedAt": "2026-10-16T17:39:00.446Z",
+      "aliases": [
+        "entry-mv46lx9v-p6zn"
+      ]
     },
     {
-      "id": "entry-mv467b6c-49dn",
+      "id": "klj",
       "slug": "klj",
       "title": "How We Learn(t)",
       "type": "project",
@@ -635,16 +647,19 @@
       ],
       "associatedProjectIds": [],
       "relatedEntryIds": [
-        "script-notes",
-        "entry-moqi-sync"
+        "biji",
+        "moqi"
       ],
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-11T18:44:12.571Z",
-      "updatedAt": "2026-10-11T19:32:25.478Z"
+      "updatedAt": "2026-10-11T19:32:25.478Z",
+      "aliases": [
+        "entry-mv467b6c-49dn"
+      ]
     },
     {
-      "id": "entry-mv45pqbm-y9xl",
+      "id": "bichu",
       "slug": "bichu",
       "title": "collecting cipher",
       "titleZh": "彼觸",
@@ -889,19 +904,22 @@
       ],
       "associatedProjectIds": [],
       "relatedEntryIds": [
-        "script-notes",
+        "biji",
         "scores",
-        "entry-sight-reading",
-        "entry-on-notes",
-        "entry-in-two-strokes"
+        "sight-reading",
+        "on-notes",
+        "in-two-strokes"
       ],
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-11T18:35:13.102Z",
-      "updatedAt": "2026-10-11T19:32:55.477Z"
+      "updatedAt": "2026-10-11T19:32:55.477Z",
+      "aliases": [
+        "entry-mv45pqbm-y9xl"
+      ]
     },
     {
-      "id": "script-notes",
+      "id": "biji",
       "slug": "biji",
       "title": "script/notes",
       "titleZh": "笔迹",
@@ -1074,8 +1092,8 @@
         "jianpu"
       ],
       "associatedProjectIds": [
-        "entry-mv467b6c-49dn",
-        "entry-mv45pqbm-y9xl"
+        "klj",
+        "bichu"
       ],
       "relatedEntryIds": [
         "scores"
@@ -1083,7 +1101,10 @@
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-01-10T10:00:00Z",
-      "updatedAt": "2026-10-11T20:23:38.696Z"
+      "updatedAt": "2026-10-11T20:23:38.696Z",
+      "aliases": [
+        "script-notes"
+      ]
     },
     {
       "id": "part-time-book-club",
@@ -1178,7 +1199,7 @@
       "updatedAt": "2026-10-11T17:43:41.126Z"
     },
     {
-      "id": "parallel-on-paper",
+      "id": "onpaper",
       "slug": "onpaper",
       "title": "|​​      | on paper",
       "type": "project",
@@ -1567,10 +1588,13 @@
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-02-01T16:00:00Z",
-      "updatedAt": "2026-10-11T17:39:37.931Z"
+      "updatedAt": "2026-10-11T17:39:37.931Z",
+      "aliases": [
+        "parallel-on-paper"
+      ]
     },
     {
-      "id": "entry-in-the-aisle-work",
+      "id": "asm",
       "slug": "asm",
       "title": "in the aisle",
       "type": "work",
@@ -1783,16 +1807,19 @@
       ],
       "associatedProjectIds": [],
       "relatedEntryIds": [
-        "entry-in-the-aisle-book",
-        "entry-on-telling-time-in-the-mall"
+        "asm-book",
+        "on-telling-time-in-the-mall"
       ],
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-11T17:46:44.048Z"
+      "updatedAt": "2026-10-11T17:46:44.048Z",
+      "aliases": [
+        "entry-in-the-aisle-work"
+      ]
     },
     {
-      "id": "entry-things-we-held-and-grazed",
+      "id": "things-we-held-and-grazed",
       "slug": "things-we-held-and-grazed",
       "title": "things we held and grazed",
       "type": "work",
@@ -1942,10 +1969,13 @@
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-11T17:49:38.756Z"
+      "updatedAt": "2026-10-11T17:49:38.756Z",
+      "aliases": [
+        "entry-things-we-held-and-grazed"
+      ]
     },
     {
-      "id": "entry-hu-deviations",
+      "id": "hu",
       "slug": "hu",
       "title": "deviations",
       "titleZh": "互",
@@ -2005,18 +2035,21 @@
         "archives and records"
       ],
       "associatedProjectIds": [
-        "entry-linmo-lapping-emulations"
+        "linmo-lapping-emulations"
       ],
       "relatedEntryIds": [
-        "entry-linmo-lapping-emulations"
+        "linmo-lapping-emulations"
       ],
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-11T20:23:53.428Z"
+      "updatedAt": "2026-10-11T20:23:53.428Z",
+      "aliases": [
+        "entry-hu-deviations"
+      ]
     },
     {
-      "id": "entry-linmo-lapping-emulations",
+      "id": "linmo-lapping-emulations",
       "slug": "linmo-lapping-emulations",
       "title": "lapping emulations",
       "titleZh": "临摹",
@@ -2188,16 +2221,19 @@
       ],
       "associatedProjectIds": [],
       "relatedEntryIds": [
-        "entry-linmo-sketches",
-        "entry-hu-deviations"
+        "linmo-sketches",
+        "hu"
       ],
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-16T20:48:10.461Z"
+      "updatedAt": "2026-10-16T20:48:10.461Z",
+      "aliases": [
+        "entry-linmo-lapping-emulations"
+      ]
     },
     {
-      "id": "entry-national-flower-work",
+      "id": "national-flower",
       "slug": "national-flower",
       "title": "national flower",
       "type": "work",
@@ -2423,16 +2459,19 @@
       ],
       "associatedProjectIds": [],
       "relatedEntryIds": [
-        "entry-national-flower-book",
-        "entry-national-flower-copy-9be66c122f"
+        "national-flower-ed1",
+        "national-flower-ed2"
       ],
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-17T14:55:43.374Z"
+      "updatedAt": "2026-10-17T14:55:43.374Z",
+      "aliases": [
+        "entry-national-flower-work"
+      ]
     },
     {
-      "id": "entry-hui-kuala",
+      "id": "kuala",
       "slug": "kuala",
       "title": "kuala",
       "titleZh": "回",
@@ -2522,16 +2561,19 @@
       ],
       "associatedProjectIds": [],
       "relatedEntryIds": [
-        "entry-hu-deviations",
-        "entry-national-flower-book"
+        "hu",
+        "national-flower-ed1"
       ],
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-11T19:40:01.279Z"
+      "updatedAt": "2026-10-11T19:40:01.279Z",
+      "aliases": [
+        "entry-hui-kuala"
+      ]
     },
     {
-      "id": "entry-moqi-sync",
+      "id": "moqi",
       "slug": "moqi",
       "title": "sync",
       "titleZh": "默契",
@@ -2593,10 +2635,13 @@
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-11T18:28:24.384Z"
+      "updatedAt": "2026-10-11T18:28:24.384Z",
+      "aliases": [
+        "entry-moqi-sync"
+      ]
     },
     {
-      "id": "entry-who-is-abing",
+      "id": "who-is-abing",
       "slug": "who-is-abing",
       "title": "who is abing?",
       "titleZh": "再见阿炳",
@@ -2737,16 +2782,19 @@
         "copying and copies"
       ],
       "associatedProjectIds": [
-        "entry-mv46p9q3-1vsv"
+        "yinying"
       ],
       "relatedEntryIds": [],
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-16T17:43:10.521Z"
+      "updatedAt": "2026-10-16T17:43:10.521Z",
+      "aliases": [
+        "entry-who-is-abing"
+      ]
     },
     {
-      "id": "entry-phases",
+      "id": "phases",
       "slug": "phases",
       "title": "phases",
       "titleZh": "音情圆缺",
@@ -2990,18 +3038,21 @@
         "archives and records"
       ],
       "associatedProjectIds": [
-        "entry-mv46p9q3-1vsv"
+        "yinying"
       ],
       "relatedEntryIds": [
-        "entry-linmo-lapping-emulations"
+        "linmo-lapping-emulations"
       ],
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-16T17:42:43.621Z"
+      "updatedAt": "2026-10-16T17:42:43.621Z",
+      "aliases": [
+        "entry-phases"
+      ]
     },
     {
-      "id": "entry-sight-reading",
+      "id": "sight-reading",
       "slug": "sight-reading",
       "title": "sight reading",
       "titleZh": "视奏",
@@ -3274,19 +3325,22 @@
         "jianpu"
       ],
       "associatedProjectIds": [
-        "entry-mv45pqbm-y9xl"
+        "bichu"
       ],
       "relatedEntryIds": [
-        "entry-mv45pqbm-y9xl",
+        "bichu",
         "scores"
       ],
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-17T16:11:28.873Z"
+      "updatedAt": "2026-10-17T16:11:28.873Z",
+      "aliases": [
+        "entry-sight-reading"
+      ]
     },
     {
-      "id": "entry-creak-of-dawn",
+      "id": "creak-of-dawn",
       "slug": "creak-of-dawn",
       "title": "乍鸣 creak of dawn",
       "titleZh": "乍鸣",
@@ -3354,10 +3408,13 @@
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-11T18:11:27.764Z"
+      "updatedAt": "2026-10-11T18:11:27.764Z",
+      "aliases": [
+        "entry-creak-of-dawn"
+      ]
     },
     {
-      "id": "entry-on-notes",
+      "id": "on-notes",
       "slug": "on-notes",
       "title": "简谱简介 on notes",
       "titleZh": "简谱简介",
@@ -3475,16 +3532,19 @@
         "working notes"
       ],
       "associatedProjectIds": [
-        "entry-mv45pqbm-y9xl"
+        "bichu"
       ],
       "relatedEntryIds": [],
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-11T20:24:14.559Z"
+      "updatedAt": "2026-10-11T20:24:14.559Z",
+      "aliases": [
+        "entry-on-notes"
+      ]
     },
     {
-      "id": "entry-on-telling-time-in-the-mall",
+      "id": "on-telling-time-in-the-mall",
       "slug": "on-telling-time-in-the-mall",
       "title": "on telling time in the mall",
       "type": "work",
@@ -3652,17 +3712,20 @@
       ],
       "associatedProjectIds": [],
       "relatedEntryIds": [
-        "entry-what-used-to-be-in-the-mall",
-        "entry-creak-of-dawn",
-        "entry-in-the-aisle-book"
+        "what-used-to-be-in-the-mall",
+        "creak-of-dawn",
+        "asm-book"
       ],
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-16T17:50:08.620383Z"
+      "updatedAt": "2026-10-16T17:50:08.620383Z",
+      "aliases": [
+        "entry-on-telling-time-in-the-mall"
+      ]
     },
     {
-      "id": "entry-linmo-sketches",
+      "id": "linmo-sketches",
       "slug": "linmo-sketches",
       "title": "(linmo – sketches)",
       "titleZh": "临摹 – 序",
@@ -3755,17 +3818,20 @@
         "working notes"
       ],
       "associatedProjectIds": [
-        "entry-mv46p9q3-1vsv"
+        "yinying"
       ],
       "relatedEntryIds": [
-        "entry-linmo-lapping-emulations",
-        "entry-hu-deviations",
-        "entry-hui-kuala"
+        "linmo-lapping-emulations",
+        "hu",
+        "kuala"
       ],
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-11T20:24:27.407Z"
+      "updatedAt": "2026-10-11T20:24:27.407Z",
+      "aliases": [
+        "entry-linmo-sketches"
+      ]
     },
     {
       "id": "ss-between-books-and-libraries",
@@ -3829,7 +3895,7 @@
       "associatedProjectIds": [],
       "relatedEntryIds": [
         "entry-mvciizb1-lyhe",
-        "entry-mvbat44j-bdau"
+        "b-side-books"
       ],
       "status": "published",
       "isDevelopingWork": true,
@@ -3837,7 +3903,7 @@
       "updatedAt": "2026-10-17T16:21:28.505Z"
     },
     {
-      "id": "entry-chen-dian-found-on-paper",
+      "id": "chen-dian-found-on-paper",
       "slug": "chen-dian-found-on-paper",
       "title": "chen dian (found on paper, made in minds)",
       "titleZh": "尘惦",
@@ -4105,16 +4171,19 @@
       ],
       "associatedProjectIds": [],
       "relatedEntryIds": [
-        "entry-on-notes",
-        "entry-chen-dian-after-scans"
+        "on-notes",
+        "chen-dian-after-scans"
       ],
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-16T20:33:39.890Z"
+      "updatedAt": "2026-10-16T20:33:39.890Z",
+      "aliases": [
+        "entry-chen-dian-found-on-paper"
+      ]
     },
     {
-      "id": "entry-shifting-springs",
+      "id": "shifting-springs",
       "slug": "shifting-springs",
       "title": "迁泉 shifting springs",
       "titleZh": "迁泉",
@@ -4288,18 +4357,21 @@
       ],
       "associatedProjectIds": [],
       "relatedEntryIds": [
-        "entry-mv46p9q3-1vsv",
-        "entry-hui-kuala",
-        "entry-who-is-abing",
-        "entry-phases"
+        "yinying",
+        "kuala",
+        "who-is-abing",
+        "phases"
       ],
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-16T20:54:33.829Z"
+      "updatedAt": "2026-10-16T20:54:33.829Z",
+      "aliases": [
+        "entry-shifting-springs"
+      ]
     },
     {
-      "id": "entry-in-two-strokes",
+      "id": "in-two-strokes",
       "slug": "in-two-strokes",
       "title": "一笔一勾 in two strokes",
       "titleZh": "一笔一勾",
@@ -4444,22 +4516,25 @@
         "scores and notation"
       ],
       "associatedProjectIds": [
-        "entry-mv45pqbm-y9xl"
+        "bichu"
       ],
       "relatedEntryIds": [
-        "entry-mv45pqbm-y9xl",
-        "script-notes",
-        "entry-sight-reading",
-        "entry-chen-dian-after-scans",
-        "entry-what-used-to-be-in-the-mall"
+        "bichu",
+        "biji",
+        "sight-reading",
+        "chen-dian-after-scans",
+        "what-used-to-be-in-the-mall"
       ],
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-16T19:47:11.876Z"
+      "updatedAt": "2026-10-16T19:47:11.876Z",
+      "aliases": [
+        "entry-in-two-strokes"
+      ]
     },
     {
-      "id": "entry-keeping-count",
+      "id": "keeping-count",
       "slug": "keeping-count",
       "title": "keeping count",
       "titleZh": "横竖横竖横",
@@ -4513,16 +4588,19 @@
       ],
       "associatedProjectIds": [],
       "relatedEntryIds": [
-        "entry-mv46lx9v-p6zn",
-        "entry-in-two-strokes"
+        "dblspce",
+        "in-two-strokes"
       ],
       "status": "published",
       "isDevelopingWork": true,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-17T14:23:11.660Z"
+      "updatedAt": "2026-10-17T14:23:11.660Z",
+      "aliases": [
+        "entry-keeping-count"
+      ]
     },
     {
-      "id": "entry-in-the-aisle-book",
+      "id": "asm-book",
       "slug": "asm-book",
       "title": "in the aisle",
       "type": "publication",
@@ -4660,15 +4738,18 @@
       "subjects": [],
       "associatedProjectIds": [],
       "relatedEntryIds": [
-        "entry-in-the-aisle-work"
+        "asm"
       ],
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-17T16:52:24.499Z"
+      "updatedAt": "2026-10-17T16:52:24.499Z",
+      "aliases": [
+        "entry-in-the-aisle-book"
+      ]
     },
     {
-      "id": "entry-national-flower-book",
+      "id": "national-flower-ed1",
       "slug": "national-flower-ed1",
       "title": "national flower (edition 1)",
       "type": "publication",
@@ -4799,22 +4880,25 @@
         "books and bookish things"
       ],
       "associatedProjectIds": [
-        "entry-mvbat44j-bdau"
+        "b-side-books"
       ],
       "relatedEntryIds": [
-        "entry-national-flower-work",
-        "entry-mvbat44j-bdau",
-        "entry-hui-kuala",
-        "entry-shifting-springs",
-        "entry-national-flower-copy-9be66c122f"
+        "national-flower",
+        "b-side-books",
+        "kuala",
+        "shifting-springs",
+        "national-flower-ed2"
       ],
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-17T14:57:16.641Z"
+      "updatedAt": "2026-10-17T14:57:16.641Z",
+      "aliases": [
+        "entry-national-flower-book"
+      ]
     },
     {
-      "id": "entry-chen-dian-after-scans",
+      "id": "chen-dian-after-scans",
       "slug": "chen-dian-after-scans",
       "title": "chéndiàn; after scans and lingering dust",
       "titleZh": "尘惦",
@@ -5060,20 +5144,23 @@
         "time and the durational"
       ],
       "associatedProjectIds": [
-        "entry-mv45pqbm-y9xl"
+        "bichu"
       ],
       "relatedEntryIds": [
-        "entry-mv45pqbm-y9xl",
-        "script-notes",
-        "entry-chen-dian-found-on-paper"
+        "bichu",
+        "biji",
+        "chen-dian-found-on-paper"
       ],
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-17T14:11:56.617Z"
+      "updatedAt": "2026-10-17T14:11:56.617Z",
+      "aliases": [
+        "entry-chen-dian-after-scans"
+      ]
     },
     {
-      "id": "entry-ive-never-met-yoko-ono",
+      "id": "ive-never-met-yoko-ono",
       "slug": "ive-never-met-yoko-ono",
       "title": "i’ve never met yoko ono, nor have i touched the sky",
       "titleZh": "天明日月奣",
@@ -5276,18 +5363,21 @@
         "time and the durational"
       ],
       "associatedProjectIds": [
-        "entry-mvbat44j-bdau"
+        "b-side-books"
       ],
       "relatedEntryIds": [
-        "entry-mvbat44j-bdau"
+        "b-side-books"
       ],
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-17T15:18:05.513Z"
+      "updatedAt": "2026-10-17T15:18:05.513Z",
+      "aliases": [
+        "entry-ive-never-met-yoko-ono"
+      ]
     },
     {
-      "id": "entry-what-used-to-be-in-the-mall",
+      "id": "what-used-to-be-in-the-mall",
       "slug": "what-used-to-be-in-the-mall",
       "title": "what used to be in the mall",
       "type": "publication",
@@ -5475,19 +5565,22 @@
         "archives and records"
       ],
       "associatedProjectIds": [
-        "entry-mvbat44j-bdau"
+        "b-side-books"
       ],
       "relatedEntryIds": [
-        "entry-on-telling-time-in-the-mall",
-        "entry-mvbat44j-bdau"
+        "on-telling-time-in-the-mall",
+        "b-side-books"
       ],
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-16T19:28:13.179Z"
+      "updatedAt": "2026-10-16T19:28:13.179Z",
+      "aliases": [
+        "entry-what-used-to-be-in-the-mall"
+      ]
     },
     {
-      "id": "entry-flower-vases-paintings",
+      "id": "flower-vases-paintings",
       "slug": "flower-vases-paintings",
       "title": "花·瓶·画 flower, vases, paintings and other observations",
       "titleZh": "花·瓶·画",
@@ -5779,18 +5872,21 @@
         "archives and records"
       ],
       "associatedProjectIds": [
-        "entry-mvbat44j-bdau"
+        "b-side-books"
       ],
       "relatedEntryIds": [
-        "entry-mvbat44j-bdau"
+        "b-side-books"
       ],
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-17T15:16:59.664Z"
+      "updatedAt": "2026-10-17T15:16:59.664Z",
+      "aliases": [
+        "entry-flower-vases-paintings"
+      ]
     },
     {
-      "id": "entry-national-flower-copy-9be66c122f",
+      "id": "national-flower-ed2",
       "slug": "national-flower-ed2",
       "title": "national flower (edition 2)",
       "type": "publication",
@@ -5936,18 +6032,21 @@
         "books and bookish things"
       ],
       "associatedProjectIds": [
-        "entry-mvbat44j-bdau"
+        "b-side-books"
       ],
       "relatedEntryIds": [
-        "entry-national-flower-work",
-        "entry-mvbat44j-bdau",
-        "entry-hui-kuala",
-        "entry-shifting-springs"
+        "national-flower",
+        "b-side-books",
+        "kuala",
+        "shifting-springs"
       ],
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-17T14:43:47.685566Z",
-      "updatedAt": "2026-10-17T14:54:49.162Z"
+      "updatedAt": "2026-10-17T14:54:49.162Z",
+      "aliases": [
+        "entry-national-flower-copy-9be66c122f"
+      ]
     }
   ],
   "tags": [

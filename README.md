@@ -91,3 +91,6 @@ Gallery slideshows: select **Slideshow** as the gallery layout, enable **Auto pl
 and choose 2–20 seconds per image (default 5). Autoplay pauses while the gallery
 is hovered, keyboard focus is inside it, or its lightbox is open. Reduced-motion
 preferences disable autoplay. Visitors can pause and navigate manually.
+
+
+Image previews are generated during the build. For local builds, install Python 3 and `python3 -m pip install Pillow==12.3.0`. Original media files are retained; generated previews live in `public/derived-media/`. GitHub Pages installs this dependency automatically.

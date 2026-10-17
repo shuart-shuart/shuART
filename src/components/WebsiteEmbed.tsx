@@ -29,7 +29,7 @@ export function WebsiteEmbed({ block }: { block: WebsiteBlock }) {
       <a href={url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 underline decoration-dotted underline-offset-4 hover:text-black">
         Open website <ExternalLink size={12} aria-hidden="true" />
       </a>
-      <p className="text-[11px] text-black/40">If the embedded page doesn’t load, open it using the link above.</p>
+      <p className="text-xs text-black/60">If the embedded page doesn’t load, open it using the link above.</p>
     </figcaption>
   </figure>;
 }
