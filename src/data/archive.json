@@ -5833,7 +5833,7 @@
     },
     "footer": {
       "artistName": "Hong Shu-ying 方舒颖",
-      "description": "Archive, instructional scores, transcription, and library inquiries.",
+      "description": "",
       "links": [
         {
           "id": "email",
@@ -5844,16 +5844,6 @@
           "id": "instagram",
           "label": "@shu0shushu",
           "url": "https://www.instagram.com/shu0shushu"
-        },
-        {
-          "id": "bio",
-          "label": "CV & Bio",
-          "url": "https://docs.google.com/document/d/e/2PACX-1vTc5Z3NnJ3ukfRLspfswpeYPcYek4Xa-6CMePB3Chl__eQft5pN-qyhOFg6BbHJ4TUq5WiUj28M9jG5/pub"
-        },
-        {
-          "id": "website",
-          "label": "hongshuying.art",
-          "url": "https://hongshuying.art"
         }
       ]
     },
@@ -5879,7 +5869,7 @@
         "visible": true
       }
     ],
-    "updatedAt": "2026-10-17T14:35:43.607Z",
+    "updatedAt": "2026-10-17T15:44:55.871Z",
     "updatedBy": "work@anotherunit.xyz",
     "index": {
       "title": "Index",

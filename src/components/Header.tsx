@@ -1,7 +1,8 @@
 import React from 'react';
 import { Shuffle } from 'lucide-react';
+import { CvLinks } from './CvLinks';
 import { useStickyHeight } from '../services/useStickyHeight';
-import { ViewMode, NavItemConfig } from '../types';
+import { ViewMode, NavItemConfig, AboutContent } from '../types';
 
 interface HeaderProps {
   currentView: ViewMode;
@@ -9,6 +10,7 @@ interface HeaderProps {
   onRandomWander: () => void;
   showWander: boolean;
   navOrder?: NavItemConfig[];
+  about?: AboutContent;
 }
 
 export const Header: React.FC<HeaderProps> = ({
@@ -17,6 +19,7 @@ export const Header: React.FC<HeaderProps> = ({
   onRandomWander,
   showWander,
   navOrder,
+  about,
 }) => {
   const headerRef = useStickyHeight<HTMLElement>('--site-header-height');
   // If navOrder is supplied, use it; otherwise fallback to streamlined list (Index, About, Wander)
@@ -73,8 +76,8 @@ export const Header: React.FC<HeaderProps> = ({
             const isNoWrap = item.label.includes('/') || item.id === 'ss';
 
             return (
+              <React.Fragment key={item.id}>
               <button
-                key={item.id}
                 onClick={() => onNavigateView(item.view)}
                 className={`transition-colors py-0.5 relative focus:outline-none ${
                   isNoWrap ? 'whitespace-nowrap' : ''
@@ -86,6 +89,8 @@ export const Header: React.FC<HeaderProps> = ({
               >
                 {item.label}
               </button>
+              {item.view === 'about' && about && <CvLinks content={about} />}
+              </React.Fragment>
             );
           })}
         </nav>

@@ -4,6 +4,10 @@ import React from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { WebsiteEmbed } from '../src/components/WebsiteEmbed';
 import { CvLinks } from '../src/components/CvLinks';
+import { Header } from '../src/components/Header';
+import { AboutView } from '../src/components/AboutView';
+import { Footer } from '../src/components/Footer';
+import type { SiteSettings } from '../src/types';
 import { websiteEmbedUrl, websiteEmbedHeight } from '../src/services/websiteEmbed';
 import { DEFAULT_ABOUT } from '../src/data/siteContent';
 
@@ -40,4 +44,20 @@ test('CV renders its existing view and PDF URLs as a compact CV link and accessi
   assert.ok(html.includes('aria-label="Download CV as PDF"'));
   assert.ok(!html.includes('>View CV<'));
   assert.equal(renderToStaticMarkup(React.createElement(CvLinks, { content: { ...content, sections: [] } })), '');
+});
+
+test('CV sits beside About in navigation; repeated contact is hidden while custom contact text remains', () => {
+  const about = { ...DEFAULT_ABOUT, contactTitle: 'Contact', contactText: '[hello@example.org](mailto:hello@example.org)', sections: [{ id: 'cv-links', title: 'CV', text: '[View CV](https://example.org/cv) · [Download CV (PDF)](https://example.org/cv.pdf)', items: [] }] };
+  const settings = { about, footer: { artistName: 'Artist', description: '', links: [{ id: 'email', label: 'hello@example.org', url: 'mailto:hello@example.org' }] } } as SiteSettings;
+  const header = renderToStaticMarkup(React.createElement(Header, { currentView: 'entry', onNavigateView() {}, onRandomWander() {}, showWander: true, about }));
+  assert.ok(header.indexOf('>About</button>') < header.indexOf('>CV</a>'));
+  assert.ok(header.indexOf('>CV</a>') < header.indexOf('aria-label="Wander'));
+  assert.ok(header.includes('aria-label="Download CV as PDF"'));
+  const page = renderToStaticMarkup(React.createElement(AboutView, { siteSettings: settings, onNavigateView() {} }));
+  assert.ok(!page.includes('mailto:hello@example.org'));
+  assert.ok(!page.includes('Download CV'));
+  const footer = renderToStaticMarkup(React.createElement(Footer, { siteSettings: settings, onNavigateView() {} }));
+  assert.ok(footer.includes('mailto:hello@example.org'));
+  const custom = renderToStaticMarkup(React.createElement(AboutView, { siteSettings: { ...settings, about: { ...about, contactText: 'For studio visits, please email hello@example.org.' } }, onNavigateView() {} }));
+  assert.ok(custom.includes('For studio visits'));
 });

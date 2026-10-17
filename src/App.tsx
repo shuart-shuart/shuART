@@ -404,6 +404,7 @@ export default function App() {
           onRandomWander={handleRandomWander}
           showWander={siteSettings.showWander}
           navOrder={siteSettings.navOrder}
+          about={siteSettings.about}
         />
 
         {/* Primary Page Views */}

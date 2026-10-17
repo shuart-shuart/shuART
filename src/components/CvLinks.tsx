@@ -11,9 +11,9 @@ export function CvLinks({ content }: { content: AboutContent }) {
   const viewUrl = view && websiteEmbedUrl(view[2]);
   const downloadUrl = download && websiteEmbedUrl(download[2]);
   if (!viewUrl && !downloadUrl) return null;
-  return <div className="flex items-center gap-2 pt-2 text-sm font-mono-quiet">
-    {viewUrl ? <a href={viewUrl} target="_blank" rel="noopener noreferrer" className="underline decoration-dotted underline-offset-4 hover:text-black/60" title="View CV">CV</a> : <span>CV</span>}
-    {downloadUrl && <a href={downloadUrl} target="_blank" rel="noopener noreferrer" aria-label="Download CV as PDF" title="Download CV (PDF)" className="inline-flex p-1 hover:text-black/60 focus-visible:outline focus-visible:outline-1">
+  return <div className="inline-flex items-center gap-1 py-0.5 text-sm font-sans text-black/60">
+    {viewUrl ? <a href={viewUrl} target="_blank" rel="noopener noreferrer" className="hover:text-black focus-visible:underline underline-offset-4" title="View CV">CV</a> : <span>CV</span>}
+    {downloadUrl && <a href={downloadUrl} target="_blank" rel="noopener noreferrer" aria-label="Download CV as PDF" title="Download CV (PDF)" className="inline-flex p-1 hover:text-black focus-visible:outline focus-visible:outline-1">
       <Download size={16} strokeWidth={1.5} aria-hidden="true" />
     </a>}
   </div>;
