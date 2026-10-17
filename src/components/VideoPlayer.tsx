@@ -1,6 +1,8 @@
 import { renderFormattedText, formattedTextToPlainText } from '../services/formatting';
 import React from 'react';
 import { VideoBlock } from '../types';
+import { YouTubePlayer } from './YouTubePlayer';
+import { youtubeVideoId } from '../services/youtubePlayer';
 
 interface VideoPlayerProps {
   block: VideoBlock;
@@ -8,6 +10,7 @@ interface VideoPlayerProps {
 
 export const VideoPlayer: React.FC<VideoPlayerProps> = ({ block }) => {
   const isDrive = block.provider === 'google_drive';
+  const youtubeId = block.provider === 'youtube' ? youtubeVideoId(block.originalUrl) || youtubeVideoId(block.embedUrl) : null;
 
   return (
     <figure className="my-8 space-y-3 font-sans">
@@ -19,7 +22,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({ block }) => {
       )}
 
       {/* Responsive 16:9 Video Embed Container */}
-      <div className="relative w-full aspect-video bg-black/[0.04] border border-black/15 overflow-hidden">
+      {youtubeId ? <YouTubePlayer key={youtubeId} videoId={youtubeId} title={formattedTextToPlainText(block.title) || 'Video'} /> : <div className="relative w-full aspect-video bg-black/[0.04] border border-black/15 overflow-hidden">
         <iframe
           src={block.embedUrl}
           title={formattedTextToPlainText(block.title) || 'Video player'}
@@ -28,7 +31,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({ block }) => {
           allowFullScreen
           loading="lazy"
         />
-      </div>
+      </div>}
 
       {/* Caption, Credits & Fallback Link */}
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-baseline gap-2 text-xs font-mono-quiet text-black/60 pt-1">
