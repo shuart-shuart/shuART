@@ -1976,6 +1976,9 @@
     },
     {
       "id": "hu",
+      "aliases": [
+        "entry-hu-deviations"
+      ],
       "slug": "hu",
       "title": "deviations",
       "titleZh": "互",
@@ -2023,7 +2026,8 @@
           "provider": "youtube",
           "originalUrl": "youtube.com/watch?v=2zyR8CGppoU&time_continue=8&source_ve_path=NzY3NTg&embeds_referring_euri=https%3A%2F%2Fhongshuying.art%2F",
           "embedUrl": "https://www.youtube-nocookie.com/embed/2zyR8CGppoU?autoplay=0&rel=0&modestbranding=1",
-          "title": ""
+          "title": "",
+          "aspectRatio": "9:16"
         }
       ],
       "tagIds": [
@@ -2043,10 +2047,7 @@
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-11T20:23:53.428Z",
-      "aliases": [
-        "entry-hu-deviations"
-      ]
+      "updatedAt": "2026-10-17T18:52:20.017Z"
     },
     {
       "id": "linmo-lapping-emulations",
