@@ -1,7 +1,7 @@
 import { videoAspectRatio, videoFrameStyle } from '../../services/videoAspectRatio';
 import { HtmlContent } from '../HtmlContent';
 import { WebsiteEmbed } from '../WebsiteEmbed';
-import { websiteEmbedUrl, websiteEmbedHeight } from '../../services/websiteEmbed';
+import { websiteEmbedUrl } from '../../services/websiteEmbed';
 import React, { useState } from 'react';
 import {
   ContentBlock,
@@ -357,12 +357,10 @@ export const BlockEditorItem: React.FC<BlockEditorItemProps> = ({
         {block.url && !websiteEmbedUrl(block.url) && <p role="alert" className="text-xs text-red-700">Use an HTTPS website address or a path beginning with /. Paste the URL, rather than iframe code.</p>}
         <FormattedField label="Caption / archive date" value={block.caption || ''} onChange={caption => onUpdateBlock({ ...block, caption })} allEntries={allEntries} multiline rows={2} />
         <div className="flex flex-wrap gap-5 items-center text-xs">
-          <label className="flex items-center gap-2">Height (pixels)
-            <input type="number" min={320} max={1200} step={20} value={websiteEmbedHeight(block.height)} onChange={event => onUpdateBlock({ ...block, height: Number(event.target.value) })} className="w-24 border border-black/25 p-2" />
-          </label>
+          <span>Preview proportions: 16:9</span>
           <label className="flex items-center gap-2"><input type="checkbox" checked={block.clickToLoad !== false} onChange={event => onUpdateBlock({ ...block, clickToLoad: event.target.checked })} />Load only when clicked</label>
         </div>
-        <p className="text-xs text-black/60">Use the published website or Wayback capture URL. Some sites block embedding; an Open website link stays visible. Sound starts after interacting with the embedded page.</p>
+        <p className="text-xs text-black/60">Use the published website or Wayback capture URL. Some sites block embedding; an “open here” link stays visible. Sound starts after interacting with the embedded page.</p>
         <details><summary className="cursor-pointer text-xs">Preview website</summary><div className="mt-3"><WebsiteEmbed block={block} /></div></details>
       </div>}
 

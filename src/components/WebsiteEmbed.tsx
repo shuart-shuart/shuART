@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ArrowUpRight } from 'lucide-react';
 import type { WebsiteBlock } from '../types';
 import { renderFormattedText, formattedTextToPlainText } from '../services/formatting';
-import { websiteEmbedUrl, websiteEmbedHeight } from '../services/websiteEmbed';
+import { websiteEmbedUrl } from '../services/websiteEmbed';
 
 export function WebsiteEmbed({ block }: { block: WebsiteBlock }) {
   const [loadedUrl, setLoadedUrl] = useState('');
@@ -19,9 +19,8 @@ export function WebsiteEmbed({ block }: { block: WebsiteBlock }) {
       allow="autoplay; fullscreen"
       sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox"
       referrerPolicy="no-referrer"
-      className="block w-full border border-black/20 bg-white"
-      style={{ height: websiteEmbedHeight(block.height) }}
-    /> : <button type="button" onClick={() => setLoadedUrl(url)} className="w-full min-h-40 border border-black/20 py-12 px-5 bg-black/[0.025] text-sm font-mono-quiet hover:bg-black/5 focus-visible:outline focus-visible:outline-1">
+      className="block w-full aspect-video border border-black/20 bg-white"
+    /> : <button type="button" onClick={() => setLoadedUrl(url)} className="w-full aspect-video border border-black/20 p-5 bg-black/[0.025] text-sm font-mono-quiet hover:bg-black/5 focus-visible:outline focus-visible:outline-1">
       Load website
     </button>}
     <figcaption className="space-y-2 text-center text-xs font-mono-quiet text-black/60">
