@@ -2,6 +2,80 @@
   "version": 3,
   "entries": [
     {
+      "id": "entry-mvcmp76u-qozj",
+      "slug": "dingdongbeep",
+      "title": "dingdongbeep!",
+      "type": "project",
+      "date": "2023",
+      "datePlaceholder": false,
+      "medium": "a roving music truck",
+      "shortDescription": "",
+      "credits": [
+        {
+          "id": "credit-mvcmpp9v-d2ok",
+          "role": "collaborator",
+          "name": "Pixie Tan",
+          "link": ""
+        },
+        {
+          "id": "credit-mvcmpu36-pvhn",
+          "role": "collaborator",
+          "name": "Ng Fongyee",
+          "link": ""
+        },
+        {
+          "id": "credit-mvcmq07j-z2ye",
+          "role": "designer",
+          "name": "gideon-jamie",
+          "link": ""
+        },
+        {
+          "id": "credit-mvcmq0ji-0feq",
+          "role": "custom",
+          "name": "Made Agency (Mark Lim)",
+          "link": "",
+          "customRole": "Build"
+        }
+      ],
+      "presentationHistory": [
+        {
+          "id": "pres-mvcmr934-xhsh",
+          "action": "commissioned",
+          "attribution": "organised",
+          "title": "Singapore Art Week 2023",
+          "venue": "National Arts Council, Singapore",
+          "location": "",
+          "date": "2023",
+          "curator": "",
+          "link": "",
+          "note": ""
+        }
+      ],
+      "fullText": "[title]dingdongbeep![/title] is a mobile music room with toy instruments and artworks you can look at and play with.\n\n[Instagram](https://www.instagram.com/dingdongbeep_/)",
+      "images": [],
+      "blocks": [
+        {
+          "id": "text-1792255583914-1",
+          "type": "text",
+          "content": "[title]dingdongbeep![/title] is a mobile music room with toy instruments and artworks you can look at and play with.\n\n[Instagram](https://www.instagram.com/dingdongbeep_/)"
+        }
+      ],
+      "tagIds": [
+        "tag-learning",
+        "tag-spaceswo"
+      ],
+      "subjects": [
+        "learning? pedagogy?",
+        "spaces without space"
+      ],
+      "associatedProjectIds": [],
+      "relatedEntryIds": [],
+      "status": "published",
+      "isDevelopingWork": false,
+      "createdAt": "2026-10-17T16:49:00.404Z",
+      "updatedAt": "2026-10-17T16:49:00.404Z"
+    },
+    {
       "id": "entry-mvbat44j-bdau",
       "slug": "b-side-books",
       "title": "b-side books",
@@ -4572,6 +4646,14 @@
           ],
           "layout": "stacked",
           "autoPlay": true
+        },
+        {
+          "id": "block-mvcmwonf-f95k",
+          "type": "video",
+          "provider": "youtube",
+          "originalUrl": "https://youtu.be/yDkotOZjD0M?si=ZTxOqxUJe3qm6Bju",
+          "embedUrl": "https://www.youtube-nocookie.com/embed/yDkotOZjD0M?autoplay=0&rel=0&modestbranding=1",
+          "title": ""
         }
       ],
       "tagIds": [],
@@ -4583,7 +4665,7 @@
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-16T19:37:10.852Z"
+      "updatedAt": "2026-10-17T16:52:24.499Z"
     },
     {
       "id": "entry-national-flower-book",
