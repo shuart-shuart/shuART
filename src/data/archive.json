@@ -3701,16 +3701,39 @@
       "type": "project",
       "date": "ongoing",
       "datePlaceholder": false,
-      "shortDescription": "[draft] A long-term project traversing books, public and independent libraries, reader communities, personal collections, and reading sessions.",
+      "shortDescription": "Thinking and doing books and bookish things.",
       "credits": [],
       "presentationHistory": [],
-      "fullText": "[draft] The name draws upon *Shu Shu* (述书)—recounting, narrating, or commenting on books—while positioning the work in the interval between books as bound objects and libraries as collective spatial institutions.\n\nIt encompasses:\n- **Books**: Printed matter, artists' publications, annotated volumes, and marginalia.\n- **Libraries**: Independent archives, institutional collections, public reading rooms, and personal shelves.\n- **People & Conversations**: Readers, custodians, transcribers, and librarians.\n- **Programmes**: Reading groups, including the [[part-time-book-club]], translation circles, and collective reading aloud.",
-      "images": [],
+      "fullText": "述书 is to talk about books, recount books, narrate books, comment on books. What sits in the interval between books as bound objects and libraries as collective spaces for learning and imagination?\n\n[more thoughts to come]",
+      "images": [
+        {
+          "id": "016d0430-c56f-4df1-91b0-8edf05894dfa",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/df5ec98946a805f00f2574908cea1173c28a2d6ff1ab0f890eafeca4eddbb3ae.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": ""
+        }
+      ],
       "blocks": [
         {
           "id": "block-ss-1",
           "type": "text",
-          "content": "[draft] The name draws upon *Shu Shu* (述书)—recounting, narrating, or commenting on books—while positioning the work in the interval between books as bound objects and libraries as collective spatial institutions.\n\nIt encompasses:\n- **Books**: Printed matter, artists' publications, annotated volumes, and marginalia.\n- **Libraries**: Independent archives, institutional collections, public reading rooms, and personal shelves.\n- **People & Conversations**: Readers, custodians, transcribers, and librarians.\n- **Programmes**: Reading groups, including the [[part-time-book-club]], translation circles, and collective reading aloud."
+          "content": "述书 is to talk about books, recount books, narrate books, comment on books. What sits in the interval between books as bound objects and libraries as collective spaces for learning and imagination?\n\n[more thoughts to come]"
+        },
+        {
+          "id": "block-mvclo9cz-o1r6",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "016d0430-c56f-4df1-91b0-8edf05894dfa",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/df5ec98946a805f00f2574908cea1173c28a2d6ff1ab0f890eafeca4eddbb3ae.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": ""
+            }
+          ],
+          "layout": "stacked"
         }
       ],
       "tagIds": [
@@ -3730,11 +3753,14 @@
         "spaces without space"
       ],
       "associatedProjectIds": [],
-      "relatedEntryIds": [],
+      "relatedEntryIds": [
+        "entry-mvciizb1-lyhe",
+        "entry-mvbat44j-bdau"
+      ],
       "status": "published",
       "isDevelopingWork": true,
       "createdAt": "2026-01-01T08:00:00Z",
-      "updatedAt": "2026-10-17T14:42:20.223Z"
+      "updatedAt": "2026-10-17T16:19:36.229Z"
     },
     {
       "id": "entry-chen-dian-found-on-paper",
