@@ -104,3 +104,29 @@
 
 /* About has a slightly larger reading scale than individual entries. */
 .about-page .about-prose { font-size: 20px; line-height: 1.6; }
+
+/* Keep mobile directory titles readable and metadata intact. */
+@media (max-width: 767px) {
+  .index-directory thead th:first-child { width: 52%; }
+  .index-directory thead th:nth-child(2) { width: 25%; }
+  .index-directory thead th:nth-child(3) { width: 23%; }
+  .index-directory :is(th, td):first-child { padding-inline: 8px; }
+  .index-directory :is(th, td):nth-child(2),
+  .index-directory :is(th, td):nth-child(3) { padding-inline: 4px; }
+  .index-directory thead th { font-size: 10px; letter-spacing: .03em; }
+  .index-directory td:first-child a { line-height: 1.3; text-wrap: balance; }
+  .index-directory td:first-child a span {
+    font-size: 14px;
+    overflow-wrap: normal;
+    word-break: normal;
+    hyphens: none;
+  }
+  .index-directory :is(.index-entry-type, .index-entry-year) {
+    font-family: var(--font-sans);
+    font-size: clamp(10px, 2.8vw, 11px);
+    line-height: 1.5;
+    white-space: nowrap;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+}

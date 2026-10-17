@@ -282,12 +282,12 @@ export const IndexView: React.FC<IndexViewProps> = ({
                   </td>
 
                   {/* Type */}
-                  <td className="py-4 px-1 sm:px-4 align-baseline text-xs sm:text-xs font-mono-quiet text-black/60 capitalize break-words">
+                  <td className="py-4 px-1 sm:px-4 align-baseline text-xs sm:text-xs font-mono-quiet text-black/60 capitalize index-entry-type">
                     {entry.type}
                   </td>
 
                   {/* Date */}
-                  <td className="py-4 px-1 sm:px-4 align-baseline text-xs sm:text-xs font-mono-quiet text-black/60 break-words">
+                  <td className="py-4 px-1 sm:px-4 align-baseline text-xs sm:text-xs font-mono-quiet text-black/60 index-entry-year">
                     {entry.date || '—'}
                   </td>
 
