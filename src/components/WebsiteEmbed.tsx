@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ExternalLink } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 import type { WebsiteBlock } from '../types';
 import { renderFormattedText, formattedTextToPlainText } from '../services/formatting';
 import { websiteEmbedUrl, websiteEmbedHeight } from '../services/websiteEmbed';
@@ -26,10 +26,9 @@ export function WebsiteEmbed({ block }: { block: WebsiteBlock }) {
     </button>}
     <figcaption className="space-y-2 text-center text-xs font-mono-quiet text-black/60">
       {block.caption && <p>{renderFormattedText(block.caption)}</p>}
-      <a href={url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 underline decoration-dotted underline-offset-4 hover:text-black">
-        Open website <ExternalLink size={12} aria-hidden="true" />
-      </a>
-      <p className="text-xs text-black/60">If the embedded page doesn’t load, open it using the link above.</p>
+      <p>If the embedded page doesn’t load, <a href={url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 underline decoration-dotted underline-offset-4 hover:text-black">
+        open here. <ArrowUpRight size={12} aria-hidden="true" />
+      </a></p>
     </figcaption>
   </figure>;
 }
