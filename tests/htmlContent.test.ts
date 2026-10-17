@@ -28,4 +28,6 @@ test('slideshow exposes navigation, pause and image enlargement for multiple ima
   const html=renderToStaticMarkup(React.createElement(GallerySlideshow,{block:{id:'gallery',type:'image_gallery',layout:'carousel',autoPlay:true,images:[{id:'a',url:'a.jpg'},{id:'b',url:'b.jpg'}]},onOpen:()=>{}}));
   for(const expected of ['Previous','Next','Pause','Enlarge image 1 of 2','object-contain']) assert.ok(html.includes(expected));
   assert.ok(!html.includes('border-black'));
+  const outlined=renderToStaticMarkup(React.createElement(GallerySlideshow,{block:{id:'outlined',type:'image_gallery',showOutline:true,images:[{id:'a',url:'a.jpg'}]},onOpen:()=>{}}));
+  assert.match(outlined, /<img[^>]+class="[^"]*border border-black\/20/);
 });

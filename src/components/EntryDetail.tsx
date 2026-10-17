@@ -223,7 +223,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
                         <img
                           src={img.url}
                           alt={formattedTextToPlainText(img.alt || img.caption || entry.title)}
-                          className="mx-auto w-auto max-w-full h-auto object-contain max-h-[70vh] transition-opacity hover:opacity-95"
+                          className={`mx-auto w-auto max-w-full h-auto object-contain max-h-[70vh] transition-opacity hover:opacity-95${block.showOutline ? ' border border-black/20' : ''}`}
                           loading="lazy"
                         />
                       </div>

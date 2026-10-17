@@ -26,8 +26,8 @@ export function GallerySlideshow({block, onOpen, isLightboxOpen = false}: {block
   const change=(direction:number)=>setIndex(current=>(current+direction+count)%count);
   return <div className="space-y-3" aria-label="Image slideshow" onMouseEnter={()=>setHovered(true)} onMouseLeave={()=>setHovered(false)} onFocusCapture={()=>setFocused(true)} onBlurCapture={event=>{if(!event.currentTarget.contains(event.relatedTarget as Node))setFocused(false);}}>
     <figure className="space-y-2">
-      <button type="button" className="block w-full cursor-zoom-in" onClick={()=>onOpen(image)} aria-label={`Enlarge image ${index%count+1} of ${count}`}>
-        <img src={image.url} alt={formattedTextToPlainText(image.alt || image.caption) || 'Artwork image'} className="w-full h-[55vh] max-h-[70vh] object-contain" />
+      <button type="button" className={block.showOutline ? 'flex items-center justify-center w-full h-[55vh] max-h-[70vh] cursor-zoom-in' : 'block w-full cursor-zoom-in'} onClick={()=>onOpen(image)} aria-label={`Enlarge image ${index%count+1} of ${count}`}>
+        <img src={image.url} alt={formattedTextToPlainText(image.alt || image.caption) || 'Artwork image'} className={block.showOutline ? 'w-auto h-auto max-w-full max-h-full object-contain border border-black/20' : 'w-full h-[55vh] max-h-[70vh] object-contain'} />
       </button>
       {(image.caption || image.credit) && <figcaption className="mx-auto max-w-[65ch] text-center text-xs font-mono-quiet text-black/60 space-y-1">
         {image.caption && <p>{renderFormattedText(image.caption)}</p>}

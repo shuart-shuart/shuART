@@ -58,6 +58,7 @@ export interface ImageGalleryBlock {
   layout?: 'stacked' | 'grid' | 'carousel';
   autoPlay?: boolean;
   intervalSeconds?: number;
+  showOutline?: boolean;
 }
 
 export type DocumentSourceType = 'pdf' | 'page_images';

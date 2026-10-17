@@ -408,6 +408,11 @@ export const BlockEditorItem: React.FC<BlockEditorItemProps> = ({
 
           </div>
 
+          <label className="flex items-center gap-2 text-xs">
+            <input type="checkbox" checked={!!(block as ImageGalleryBlock).showOutline} onChange={event => onUpdateBlock({ ...block, showOutline: event.target.checked } as ImageGalleryBlock)} />
+            Grey outlines around images
+          </label>
+
           {/* Upload Button */}
           <div>
             <label className="inline-flex items-center px-4 py-2 border border-black text-xs font-mono-quiet cursor-pointer hover:bg-black hover:text-white transition-colors">
