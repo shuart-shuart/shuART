@@ -67,7 +67,7 @@ export const IndexView: React.FC<IndexViewProps> = ({
     state?.displayMode || (typeof window !== 'undefined' && window.matchMedia('(min-width: 768px)').matches ? 'cards' : 'directory')
   );
 
-  const [sort, setSort] = useState<IndexSort | null>(state?.sort || null);
+  const [sort, setSort] = useState<IndexSort | null>(state?.sort ?? { key: 'year', direction: 'descending' });
   useEffect(() => { onStateChange?.({ searchQuery, selectedType, displayMode, sort }); }, [searchQuery, selectedType, displayMode, sort, onStateChange]);
   const toggleSort = (key: IndexSortKey) => setSort(current => ({
     key,
