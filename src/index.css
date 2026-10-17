@@ -101,3 +101,6 @@
 
 [data-custom-fonts="true"] header nav { font-family: var(--font-mono); }
 [data-custom-fonts="true"] header nav a { font-family: inherit; }
+
+/* About has a slightly larger reading scale than individual entries. */
+.about-page .about-prose { font-size: 18px; line-height: 1.6; }
