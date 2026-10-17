@@ -116,7 +116,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
       <header className="space-y-4 mb-10">
         <div className="space-y-1">
           <h1 className="space-y-1">
-            <EntryTitle inline entry={entry} primaryClassName="font-editorial text-[28px] sm:text-[40px] text-black font-normal tracking-tight leading-tight" chineseClassName="font-editorial text-[26px] sm:text-[36px] text-black/80 font-light leading-tight" />
+            <EntryTitle inline entry={entry} primaryClassName="font-editorial text-[26px] md:text-[30px] text-black font-normal tracking-tight leading-tight" chineseClassName="font-editorial text-[24px] md:text-[28px] text-black/80 font-light leading-tight" />
           </h1>
         </div>
 
@@ -165,7 +165,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
 
       {/* Short Description / Lead paragraph */}
       {entry.shortDescription && (
-        <div className="max-w-[65ch] font-editorial text-base sm:text-lg text-black/80 leading-[1.65] mb-8 border-b border-black/5 pb-8">
+        <div className="max-w-[65ch] font-editorial body-copy text-black/80 leading-[1.6] mb-8 border-b border-black/5 pb-8">
           {renderWikiText(entry.shortDescription)}
         </div>
       )}
@@ -177,7 +177,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
             return (
               <section
                 key={block.id}
-                className="max-w-[65ch] font-sans text-base sm:text-lg text-black/90 leading-[1.65] space-y-6"
+                className="max-w-[65ch] font-sans body-copy text-black/90 leading-[1.6] space-y-6"
               >
                 {(block.content || '').split('\n\n').map((paragraph, index) => {
                   if (!paragraph.trim()) return null;
@@ -284,7 +284,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
       {/* Canonical Tags & Subjects */}
       {entryTags.length > 0 && (
         <section aria-label="Tags">
-          <h3 className="font-mono-quiet uppercase text-xs tracking-wider text-black/60 mb-3">Tags</h3>
+          <h3 className="reference-label font-mono-quiet uppercase tracking-wider text-black/60 mb-3">Tags</h3>
           <div className="flex flex-wrap items-baseline gap-x-3 gap-y-2 text-black/60">
             {entryTags.map((tItem, idx) => (
               <React.Fragment key={tItem.id}>
@@ -297,7 +297,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
                       onFilterBySubject(tItem.label);
                     }
                   }}
-                  className="hover:text-black hover:underline cursor-pointer font-serif italic text-[13px] sm:text-sm text-black/80"
+                  className="hover:text-black hover:underline cursor-pointer entry-tag font-serif italic text-black/80"
                   title={`View subject view for ${tItem.label}`}
                 >
                   {tItem.label}
@@ -311,14 +311,14 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
       {/* All entry relationships share one deduplicated list. */}
       {connections.length > 0 && (
         <section aria-label="Connections">
-          <h3 className="font-mono-quiet uppercase text-xs tracking-wider text-black/60 mb-3">
+          <h3 className="reference-label font-mono-quiet uppercase tracking-wider text-black/60 mb-3">
             Connections ({connections.length})
           </h3>
           <ul className={`grid grid-cols-1 ${connections.length > 1 ? 'md:grid-cols-2' : ''} gap-x-8 gap-y-4`}>
             {connections.map(item => {
               const description = connectionDescription(item);
               return <li key={item.id} className="px-3 py-3 hover:bg-black/5 focus-within:bg-black/5 transition-colors space-y-1">
-                <span className="block text-[13px] sm:text-sm font-mono-quiet text-black/60 capitalize">
+                <span className="block reference-label font-mono-quiet text-black/60 capitalize">
                   {item.type}
                 </span>
                 <div>
@@ -331,11 +331,11 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
                     }}
                     className="group leading-tight focus-visible:underline underline-offset-2"
                   >
-                    <EntryTitle inline entry={item} primaryClassName="font-editorial text-xl text-black group-hover:underline" chineseClassName="font-editorial text-xl text-black/70 group-hover:underline" />
+                    <EntryTitle inline entry={item} primaryClassName="connection-title font-editorial text-black group-hover:underline" chineseClassName="connection-title font-editorial text-black/70 group-hover:underline" />
                   </a>
                 </div>
                 {description && (
-                  <p className="text-sm sm:text-[15px] text-black/65 font-sans leading-relaxed line-clamp-3">
+                  <p className="reference-copy text-black/65 font-sans leading-relaxed">
                     {renderWikiText(description)}
                   </p>
                 )}

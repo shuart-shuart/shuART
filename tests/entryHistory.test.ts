@@ -27,7 +27,10 @@ test('credits and provenance render formatted content, links, and author order',
   assert.ok(html.includes('href="https://example.com"'));
   assert.ok(!html.includes('View link'));
   assert.ok(!html.includes('Additional Credits'));
-  assert.ok(html.includes('was presented at Show A'));
+  assert.ok(html.includes(' was:'));
+  assert.ok(html.includes('presented at '));
+  assert.ok(html.includes('<em class="font-editorial italic">Show A</em>'));
+  assert.equal((html.match(/Test work/g) || []).length, 1);
   assert.ok(html.includes('curated by Curator'));
 });
 
@@ -39,7 +42,8 @@ test('unsafe record links are not rendered as clickable links', () => {
 
 test('provenance uses selected action, links the event, and formats a programmer name', () => {
   const html = render({ presentationHistory: [{ id: 'launch', action: 'launched', attribution: 'programmed', title: '[title]Book Fair[/title]', venue: 'Gallery', location: '', date: '2022', curator: '[Person](https://example.org/person)', link: 'https://example.org/event' }] });
-  assert.ok(html.includes('was launched at'));
+  assert.ok(html.includes(' was:'));
+  assert.ok(html.includes('launched at'));
   assert.ok(html.includes('(Gallery, 2022)'));
   assert.ok(html.includes('programmed by'));
   assert.ok(html.includes('href="https://example.org/event"'));
@@ -52,4 +56,13 @@ test('linked credits keep title styling without nesting links', () => {
   assert.equal((html.match(/<a /g) || []).length, 1);
   assert.ok(html.includes('href="https://new.example"'));
   assert.ok(html.includes('font-editorial'));
+});
+
+test('provenance extracts a repeated-title development note into its own arrow without changing saved text', () => {
+  const note='[title]Test work[/title] was made during a study trip.';
+  const html=render({presentationHistory:[{id:'one',title:'Bearings',venue:'Gallery',location:'Singapore',date:'2019',note}]});
+  assert.equal((html.match(/Test work/g)||[]).length,1);
+  assert.equal((html.match(/<li /g)||[]).length,2);
+  assert.ok(html.includes('made during a study trip.'));
+  assert.ok(html.includes('lucide-arrow-right'));
 });

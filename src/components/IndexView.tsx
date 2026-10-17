@@ -144,7 +144,7 @@ export const IndexView: React.FC<IndexViewProps> = ({
         <h1 className="font-editorial text-3xl sm:text-4xl text-black font-normal tracking-tight">
           {renderFormattedText(indexContent.title, { allEntries: entries, onSelectEntry })}
         </h1>
-        <p className="font-editorial text-base sm:text-lg text-black/70 max-w-[65ch] leading-[1.65] whitespace-pre-line">
+        <p className="font-editorial body-copy text-black/70 max-w-[65ch] whitespace-pre-line">
           {renderFormattedText(indexContent.description, { allEntries: entries, onSelectEntry })}
         </p>
       </div>

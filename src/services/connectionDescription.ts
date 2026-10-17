@@ -15,7 +15,6 @@ export function connectionDescription(entry: Pick<Entry, 'title' | 'titleZh' | '
     if (!match) continue;
     return description.trimStart().slice(match[0].length)
       .replace(/^[\s:：,，—–-]+/, '')
-      .replace(/^(?:is|are|was|were)\s+/i, '')
       .replace(/^([*_]*)(\p{Lu})/u, (_, formatting: string, letter: string) => formatting + letter.toLowerCase());
   }
   return description;

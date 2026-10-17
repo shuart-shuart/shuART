@@ -85,13 +85,13 @@ export const TagView: React.FC<TagViewProps> = ({
 
           {/* Short definition & full text */}
           {linkedNote.shortDescription && (
-            <p className="font-editorial text-base sm:text-lg text-black/85 leading-relaxed italic">
+            <p className="font-editorial body-copy text-black/85 leading-relaxed italic">
               {linkedNote.shortDescription}
             </p>
           )}
 
           {linkedNote.fullText && (
-            <div className="text-base sm:text-lg font-sans text-black/80 leading-[1.65] space-y-4 whitespace-pre-line max-w-[65ch]">
+            <div className="body-copy font-sans text-black/80 leading-[1.6] space-y-4 whitespace-pre-line max-w-[65ch]">
               {renderWikiText(linkedNote.fullText)}
             </div>
           )}
@@ -120,7 +120,7 @@ export const TagView: React.FC<TagViewProps> = ({
                   return (
                     <div
                       key={block.id}
-                      className="max-w-[65ch] text-base sm:text-lg font-sans text-black/75 leading-[1.65] whitespace-pre-line"
+                      className="max-w-[65ch] body-copy font-sans text-black/75 leading-[1.6] whitespace-pre-line"
                     >
                       {renderWikiText(block.content)}
                     </div>

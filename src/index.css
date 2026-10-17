@@ -68,3 +68,26 @@
   background: white;
   box-shadow: inset 0 -1px rgb(0 0 0 / 15%);
 }
+
+/* Shared public reading scale: generous mobile text, quieter desktop text. */
+.body-copy { font-size: 17px; line-height: 1.6; }
+.reference-copy { font-size: 14px; line-height: 1.55; }
+.reference-label { font-size: 12px; line-height: 1.5; }
+.entry-tag { font-size: 14px; line-height: 1.5; }
+.connection-title { font-size: 18px; line-height: 1.25; }
+@media (min-width: 768px) {
+  .body-copy { font-size: 16px; }
+  .reference-label { font-size: 11px; }
+  .entry-tag { font-size: 13px; }
+}
+
+/* Improve last-line wrapping without inserting hard spaces into saved text. */
+.public-content { text-wrap: pretty; }
+.public-content :where(p, li, dd, figcaption, blockquote) {
+  text-wrap: pretty;
+  overflow-wrap: break-word;
+}
+.public-content :where(h1, h2, h3, h4, .connection-title) {
+  text-wrap: balance;
+  overflow-wrap: break-word;
+}

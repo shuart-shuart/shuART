@@ -434,7 +434,7 @@ export default function App() {
         />
 
         {/* Primary Page Views */}
-        <main>
+        <main className={currentView === 'editor' ? undefined : 'public-content'}>
           <Suspense fallback={<p role="status" className="p-8 text-sm text-black/65">Loading…</p>}>
           {currentView === 'index' && (
             <IndexView
