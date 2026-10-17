@@ -357,7 +357,7 @@ export const BlockEditorItem: React.FC<BlockEditorItemProps> = ({
         {block.url && !websiteEmbedUrl(block.url) && <p role="alert" className="text-xs text-red-700">Use an HTTPS website address or a path beginning with /. Paste the URL, rather than iframe code.</p>}
         <FormattedField label="Caption / archive date" value={block.caption || ''} onChange={caption => onUpdateBlock({ ...block, caption })} allEntries={allEntries} multiline rows={2} />
         <div className="flex flex-wrap gap-5 items-center text-xs">
-          <span>Preview proportions: 4:3</span>
+          <span>Preview proportions: 3:2</span>
           <label className="flex items-center gap-2"><input type="checkbox" checked={block.clickToLoad !== false} onChange={event => onUpdateBlock({ ...block, clickToLoad: event.target.checked })} />Load only when clicked</label>
         </div>
         <p className="text-xs text-black/60">Use the published website or Wayback capture URL. Some sites block embedding; an “open here” link stays visible. Sound starts after interacting with the embedded page.</p>
