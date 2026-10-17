@@ -1,3 +1,4 @@
+import { connectionDescription } from '../services/connectionDescription';
 import { ArtworkImage } from './ArtworkImage';
 import { HtmlContent } from './HtmlContent';
 import { WebsiteEmbed } from './WebsiteEmbed';
@@ -283,10 +284,8 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
       {/* Canonical Tags & Subjects */}
       {entryTags.length > 0 && (
         <section aria-label="Tags">
+          <h3 className="font-mono-quiet uppercase text-xs tracking-wider text-black/60 mb-3">Tags</h3>
           <div className="flex flex-wrap items-baseline gap-x-3 gap-y-2 text-black/60">
-            <span className="font-mono-quiet text-black/60 uppercase tracking-wider text-xs">
-              Tags:
-            </span>
             {entryTags.map((tItem, idx) => (
               <React.Fragment key={tItem.id}>
                 {idx > 0 && <span aria-hidden="true" className="text-black/35">·</span>}
@@ -298,7 +297,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
                       onFilterBySubject(tItem.label);
                     }
                   }}
-                  className="hover:text-black hover:underline cursor-pointer font-serif italic text-base sm:text-lg text-black/80"
+                  className="hover:text-black hover:underline cursor-pointer font-serif italic text-[13px] sm:text-sm text-black/80"
                   title={`View subject view for ${tItem.label}`}
                 >
                   {tItem.label}
@@ -316,9 +315,10 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
             Connections ({connections.length})
           </h3>
           <ul className={`grid grid-cols-1 ${connections.length > 1 ? 'md:grid-cols-2' : ''} gap-x-8 gap-y-4`}>
-            {connections.map(item => (
-              <li key={item.id} className="px-3 py-3 hover:bg-black/5 focus-within:bg-black/5 transition-colors space-y-1">
-                <span className="block text-[11px] sm:text-xs font-mono-quiet text-black/60 capitalize">
+            {connections.map(item => {
+              const description = connectionDescription(item);
+              return <li key={item.id} className="px-3 py-3 hover:bg-black/5 focus-within:bg-black/5 transition-colors space-y-1">
+                <span className="block text-[13px] sm:text-sm font-mono-quiet text-black/60 capitalize">
                   {item.type}
                 </span>
                 <div>
@@ -334,13 +334,13 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({
                     <EntryTitle inline entry={item} primaryClassName="font-editorial text-xl text-black group-hover:underline" chineseClassName="font-editorial text-xl text-black/70 group-hover:underline" />
                   </a>
                 </div>
-                {item.shortDescription && (
+                {description && (
                   <p className="text-sm sm:text-[15px] text-black/65 font-sans leading-relaxed line-clamp-3">
-                    {renderWikiText(item.shortDescription)}
+                    {renderWikiText(description)}
                   </p>
                 )}
-              </li>
-            ))}
+              </li>;
+            })}
           </ul>
         </section>
       )}

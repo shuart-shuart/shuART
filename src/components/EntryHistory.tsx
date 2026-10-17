@@ -34,7 +34,7 @@ export function EntryHistory({ entry, allEntries, onSelectEntry }: {
         </div>)}
       </dl>
     </section>}
-    {records.length > 0 && <section aria-label="Provenance / Presentation History" className="max-w-[72ch] text-[13px] sm:text-sm">
+    {records.length > 0 && <section aria-label="Provenance / Presentation History" className="text-[13px] sm:text-sm">
       <ol className="space-y-3">
         {records.map(record => {
           const event = record.title.trim() || record.venue.trim();
