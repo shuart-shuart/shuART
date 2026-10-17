@@ -92,9 +92,6 @@
   overflow-wrap: break-word;
 }
 
-/* Text columns follow the entry rather than font-dependent character widths. */
+/* Reading text uses the full entry width on every screen. */
 .entry-reading-column { width: 100%; max-width: none; }
-@media (min-width: 768px) {
-  .entry-reading-column { width: 75%; }
-}
 .gallery-caption { text-wrap: pretty; overflow-wrap: break-word; }
