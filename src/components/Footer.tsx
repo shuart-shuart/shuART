@@ -42,6 +42,7 @@ export const Footer: React.FC<FooterProps> = ({ siteSettings, onNavigateView }) 
           ))}
         </div>
       </div>
+      <p className="mt-6 text-center text-xs text-black/50">© {new Date().getFullYear()} Hong Shu-ying 方舒颖</p>
     </footer>
   );
 };
