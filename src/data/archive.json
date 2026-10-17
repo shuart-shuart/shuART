@@ -2,6 +2,80 @@
   "version": 3,
   "entries": [
     {
+      "id": "process-roving-ideas",
+      "slug": "process-roving-ideas",
+      "title": "Process: Roving Ideas",
+      "type": "project",
+      "date": "2023",
+      "datePlaceholder": false,
+      "shortDescription": "",
+      "credits": [
+        {
+          "id": "credit-mvctycb0-1o0m",
+          "role": "custom",
+          "name": "Goh Chun Aik",
+          "link": "",
+          "customRole": "Curator"
+        },
+        {
+          "id": "credit-mvcty1se-lven",
+          "role": "editor",
+          "name": "Berny Tan",
+          "link": ""
+        },
+        {
+          "id": "credit-mvctyvsb-5dhk",
+          "role": "designer",
+          "name": "gideon-jamie",
+          "link": ""
+        },
+        {
+          "id": "credit-mvctyw3v-a49y",
+          "role": "custom",
+          "name": "Png Wen Xi",
+          "link": "",
+          "customRole": "Marketing"
+        }
+      ],
+      "presentationHistory": [
+        {
+          "id": "pres-mvctzdzh-8zcv",
+          "action": "commissioned",
+          "attribution": "organised",
+          "title": "Singapore Art Week",
+          "venue": "National Arts Council, Singapore",
+          "location": "",
+          "date": "2023",
+          "curator": "",
+          "link": "",
+          "note": ""
+        }
+      ],
+      "fullText": "[title]Process: Roving Ideas[/title] is a self-guided experience featuring a series of text-based instructions. Taking place all over Singapore, these site-specific instructions serve as prompts for participants to discover a unique experience envisioned by each contributing artist. In doing so, the project aims to uncover the potential of different locations outside of traditional art spaces.\n\nStemming from a desire to connect more with our environments and to draw out inherent experiences often overlooked in our daily life, the format of the project is inspired by significant art movements such as Fluxus, instructional and conceptual art, environmental art, and relational art. Through its execution, the project also strives to introduce different forms of art appreciation, foster a regular appreciation of arts in our everyday life, and facilitate the creation of shared experiences among the community.\n​\nTitled with words that encapsulate the spirit of this project, [title]Process: Roving Ideas[/title] is also an anagram of SingapoRediscovers. The project encourages the public to “discover Singapore with fresh eyes” and gain better awareness and appreciation of our surroundings through artistic encounters.",
+      "images": [],
+      "blocks": [
+        {
+          "id": "text-1792267700693-1",
+          "type": "text",
+          "content": "[title]Process: Roving Ideas[/title] is a self-guided experience featuring a series of text-based instructions. Taking place all over Singapore, these site-specific instructions serve as prompts for participants to discover a unique experience envisioned by each contributing artist. In doing so, the project aims to uncover the potential of different locations outside of traditional art spaces.\n\nStemming from a desire to connect more with our environments and to draw out inherent experiences often overlooked in our daily life, the format of the project is inspired by significant art movements such as Fluxus, instructional and conceptual art, environmental art, and relational art. Through its execution, the project also strives to introduce different forms of art appreciation, foster a regular appreciation of arts in our everyday life, and facilitate the creation of shared experiences among the community.\n​\nTitled with words that encapsulate the spirit of this project, [title]Process: Roving Ideas[/title] is also an anagram of SingapoRediscovers. The project encourages the public to “discover Singapore with fresh eyes” and gain better awareness and appreciation of our surroundings through artistic encounters."
+        }
+      ],
+      "tagIds": [
+        "tag-spaceswo",
+        "tag-time"
+      ],
+      "subjects": [
+        "spaces without space",
+        "time and the durational"
+      ],
+      "associatedProjectIds": [],
+      "relatedEntryIds": [],
+      "status": "published",
+      "isDevelopingWork": false,
+      "createdAt": "2026-10-17T20:10:37.853Z",
+      "updatedAt": "2026-10-17T20:10:37.853Z"
+    },
+    {
       "id": "dingdongbeep",
       "slug": "dingdongbeep",
       "title": "dingdongbeep!",
