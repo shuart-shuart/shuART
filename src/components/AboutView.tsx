@@ -11,6 +11,7 @@ interface AboutViewProps {
 
 export const AboutView: React.FC<AboutViewProps> = ({ siteSettings, allEntries = [] }) => {
   const content = siteSettings.about ?? DEFAULT_ABOUT;
+  const proseClassName = 'max-w-[65ch] body-copy text-black/85 leading-[1.6]';
   const contactEmail = content.contactText.trim().match(/^\[[^\]]+\]\((mailto:[^)]+)\)$/i)?.[1];
   const contactInFooter = contactEmail && siteSettings.footer?.links.some(link => link.label.trim() && link.url.trim().toLowerCase() === contactEmail.toLowerCase());
   const render = (text: string) => renderFormattedText(text, { allEntries });
@@ -26,20 +27,20 @@ export const AboutView: React.FC<AboutViewProps> = ({ siteSettings, allEntries =
           <p className="font-editorial text-2xl sm:text-3xl text-black/80 font-light leading-snug">{render(content.artistName)}</p>
         </header>
         {content.biography.trim() && (
-          <section className="max-w-[65ch] body-copy text-black/85 leading-[1.6] space-y-6">
+          <section className={`${proseClassName} space-y-6`}>
             {paragraphs(content.biography)}
           </section>
         )}
         {content.sections.filter(section => section.id !== 'cv-links').map(section => (
-          <section key={section.id} className="pt-8 border-t border-black/10 space-y-6 max-w-4xl">
+          <section key={section.id} className={`${proseClassName} pt-8 border-t border-black/10 space-y-6`}>
             {section.title && <h2 className="font-editorial text-2xl text-black font-normal">{render(section.title)}</h2>}
-            {section.text.trim() && <div className="space-y-4 body-copy text-black/75 leading-[1.6] max-w-[65ch]">{paragraphs(section.text)}</div>}
+            {section.text.trim() && <div className="space-y-6">{paragraphs(section.text)}</div>}
             {section.items.length > 0 && (
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 body-copy leading-[1.6]">
+              <div className="space-y-8">
                 {section.items.map(item => (
                   <div key={item.id} className="space-y-1.5">
                     {item.title.trim() && <h3 className="font-mono-quiet text-xs uppercase tracking-wider text-black">{render(item.title)}</h3>}
-                    <div className="text-black/70 space-y-3">{paragraphs(item.text)}</div>
+                    <div className="space-y-6">{paragraphs(item.text)}</div>
                   </div>
                 ))}
               </div>
@@ -47,9 +48,9 @@ export const AboutView: React.FC<AboutViewProps> = ({ siteSettings, allEntries =
           </section>
         ))}
         {content.contactText.trim() && !contactInFooter && (
-          <section className="pt-8 border-t border-black/10 text-sm space-y-1">
+          <section className={`${proseClassName} pt-8 border-t border-black/10 space-y-3`}>
             <h2 className="font-mono-quiet text-xs uppercase tracking-wider text-black/60">{render(content.contactTitle)}</h2>
-            <div className="font-editorial text-lg text-black space-y-3">{paragraphs(content.contactText)}</div>
+            <div className="space-y-6">{paragraphs(content.contactText)}</div>
           </section>
         )}
       </article>
