@@ -2085,13 +2085,13 @@
       "shortDescription": "互 deviations is a looping moving image in which fragments of waves converge, overlap and dissolve into new forms.",
       "credits": [],
       "presentationHistory": [],
-      "fullText": "hu2\n\nAccompanied by a digitally constructed soundscape of the sea, the work moves between images that feel familiar yet difficult to place: coastline, body, surface, movement. Emerging from experiments made during [title]临摹 Lapping Emulations[/title], it considers how repetition and recombination can produce an image that continually shifts away from its source.",
+      "fullText": "Accompanied by a digitally constructed soundscape of the sea, the work moves between images that feel familiar yet difficult to place: coastline, body, surface, movement. Emerging from experiments made during [title]临摹 Lapping Emulations[/title], it considers how repetition and recombination can produce an image that continually shifts away from its source.",
       "images": [
         {
           "id": "1798e176-49ba-4ac6-85d7-10bd97b3c6ab",
           "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/20e227f8e8f77a0763fd20914d9e40731727007613c3c011efe915e28c3e373a.jpg",
           "caption": "",
-          "alt": "hu2",
+          "alt": "",
           "credit": ""
         }
       ],
@@ -2105,7 +2105,7 @@
               "id": "1798e176-49ba-4ac6-85d7-10bd97b3c6ab",
               "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/20e227f8e8f77a0763fd20914d9e40731727007613c3c011efe915e28c3e373a.jpg",
               "caption": "",
-              "alt": "hu2",
+              "alt": "",
               "credit": ""
             }
           ],
@@ -2143,7 +2143,7 @@
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-17T18:52:20.017Z"
+      "updatedAt": "2026-10-17T20:38:01.795Z"
     },
     {
       "id": "linmo-lapping-emulations",
