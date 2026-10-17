@@ -46,7 +46,7 @@ test('CV text and icon form one PDF link opening in a new tab', () => {
   assert.ok(!html.includes('>View CV<'));
   assert.equal(renderToStaticMarkup(React.createElement(CvLinks, { content: { ...content, sections: [] } })), '');
   const legacy = renderToStaticMarkup(React.createElement(CvLinks, { content: { ...content, sections: [{ ...content.sections[0], text: '[View CV](https://docs.google.com/document/d/cv-document-id/edit?usp=sharing)' }] } }));
-  assert.ok(legacy.includes('href="https://docs.google.com/gview?url=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fd%2Fcv-document-id%2Fexport%3Fformat%3Dpdf"'));
+  assert.ok(legacy.includes('/cv/HONG%20Shu-ying_CV.pdf"'));
   assert.ok(!legacy.includes(' download='));
 });
 

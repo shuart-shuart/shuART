@@ -31,6 +31,8 @@ jobs:
         run: bun run test
       - name: Build
         run: bun run build
+      - name: Export named CV PDF
+        run: python3 scripts/export_cv.py
       - uses: actions/upload-pages-artifact@v3
         if: github.event_name != 'pull_request'
         with:
