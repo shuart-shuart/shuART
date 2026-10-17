@@ -45,7 +45,7 @@
 }
 
 .font-chinese-noto {
-  font-family: "Noto Sans SC", sans-serif;
+  font-family: var(--font-chinese, "Noto Sans SC"), sans-serif;
 }
 
 .html-content p, .html-content ul, .html-content ol, .html-content blockquote, .html-content figure, .html-content pre, .html-content table { margin-block: 1em; }
@@ -95,3 +95,9 @@
 /* Reading text uses the full entry width on every screen. */
 .entry-reading-column { width: 100%; max-width: none; }
 .gallery-caption { text-wrap: pretty; overflow-wrap: break-word; }
+
+/* Explicit Chinese title runs follow the independently selected CJK family. */
+[lang^="zh"] { font-family: var(--font-chinese, "Noto Sans SC"), sans-serif; }
+
+[data-custom-fonts="true"] header nav { font-family: var(--font-mono); }
+[data-custom-fonts="true"] header nav a { font-family: inherit; }

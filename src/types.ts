@@ -209,7 +209,11 @@ export interface IndexContent {
   description: string;
 }
 
+export type FontRole = 'body' | 'title' | 'label' | 'chinese';
+export type FontSettings = Record<FontRole, string>;
+
 export interface SiteSettings {
+  fonts?: FontSettings;
   index?: IndexContent;
   about?: AboutContent;
   footer?: FooterContent;

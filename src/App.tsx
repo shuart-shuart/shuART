@@ -1,3 +1,4 @@
+import { fontVariables, loadGoogleFont, resolveFonts } from './services/siteFonts';
 import { entryMatches, canonicalizeEntryIds } from './services/entryIdentity';
 import { ArchiveBundle } from './services/githubPublishing';
 import { lazy, Suspense, useState, useEffect, useLayoutEffect, useMemo, useCallback, useRef } from 'react';
@@ -36,6 +37,9 @@ export default function App() {
   const [entries, setEntries] = useState<Entry[]>([]);
   const [tags, setTags] = useState<Tag[]>([]);
   const [siteSettings, setSiteSettings] = useState<SiteSettings>(DEFAULT_SITE_SETTINGS);
+  useEffect(() => {
+    for (const family of new Set(Object.values(resolveFonts(siteSettings.fonts)))) loadGoogleFont(family).catch(() => {});
+  }, [siteSettings.fonts]);
   const [isLoading, setIsLoading] = useState(true);
   const [currentView, setCurrentView] = useState<ViewMode>('index');
   const [indexState, setIndexState] = useState<IndexViewState>();
@@ -418,10 +422,10 @@ export default function App() {
     );
   }
 
-  const typographyClass = siteSettings.typography === 'c' ? 'font-combo-c' : 'font-combo-a';
+  const typographyClass = siteSettings.fonts || siteSettings.typography === 'c' ? 'font-combo-c' : 'font-combo-a';
 
   return (
-    <div className={`min-h-screen bg-white text-[#111111] flex flex-col justify-between selection:bg-black selection:text-white ${typographyClass}`}>
+    <div data-custom-fonts={siteSettings.fonts ? 'true' : undefined} style={fontVariables(siteSettings.fonts)} className={`min-h-screen bg-white text-[#111111] flex flex-col justify-between selection:bg-black selection:text-white ${typographyClass}`}>
       <div>
         {/* Main Site Header */}
         <Header

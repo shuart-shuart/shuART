@@ -1,8 +1,10 @@
+import { EditorTypographySection } from './EditorTypographySection';
+import { cleanFontFamily, resolveFonts } from '../../services/siteFonts';
 import { DEFAULT_ABOUT, DEFAULT_FOOTER, DEFAULT_INDEX } from '../../data/siteContent';
 import { EditorSiteContentSection } from './EditorSiteContentSection';
 import { footerLinkHref } from '../Footer';
 import React, { useState, useEffect } from 'react';
-import { SiteSettings, TypographyCombo, NavItemConfig, Entry } from '../../types';
+import { SiteSettings, NavItemConfig, Entry } from '../../types';
 import { DESIGNATED_EDITOR_EMAIL } from '../../services/mediaUploads';
 
 interface EditorSettingsSectionProps {
@@ -16,7 +18,7 @@ export const EditorSettingsSection: React.FC<EditorSettingsSectionProps> = ({
   entries,
   onUpdateSiteSettings,
 }) => {
-  const [typography, setTypography] = useState<TypographyCombo>(siteSettings.typography || 'a');
+  const [fonts, setFonts] = useState(() => resolveFonts(siteSettings.fonts));
   const [showWander, setShowWander] = useState<boolean>(siteSettings.showWander ?? true);
   const [showAbout, setShowAbout] = useState<boolean>(() => {
     const aboutItem = siteSettings.navOrder?.find((n) => n.id === 'about');
@@ -31,7 +33,7 @@ export const EditorSettingsSection: React.FC<EditorSettingsSectionProps> = ({
     setIndex(siteSettings.index ?? DEFAULT_INDEX);
     setAbout(siteSettings.about ?? DEFAULT_ABOUT);
     setFooter(siteSettings.footer ?? DEFAULT_FOOTER);
-    setTypography(siteSettings.typography || 'a');
+    setFonts(resolveFonts(siteSettings.fonts));
     setShowWander(siteSettings.showWander ?? true);
     setShowAbout(siteSettings.navOrder?.find(item => item.id === 'about')?.visible ?? true);
   }, [siteSettings]);
@@ -39,12 +41,14 @@ export const EditorSettingsSection: React.FC<EditorSettingsSectionProps> = ({
   const [isSaving, setIsSaving] = useState(false);
   const [saveMessage, setSaveMessage] = useState<string | null>(null);
 
-  const sampleEntry = entries.find((e) => e.status === 'published') || entries[0];
-
   const handleSaveAllSettings = async () => {
     const invalidLink = footer.links.find(link => link.url.trim() && !footerLinkHref(link.url));
     if (invalidLink) {
       setSaveMessage(`Please enter a valid destination for footer link “${invalidLink.label || 'Untitled'}”.`);
+      return;
+    }
+    if (Object.values(fonts).some(value => !cleanFontFamily(value))) {
+      setSaveMessage('Please enter a valid Google Fonts family name for each font.');
       return;
     }
     setIsSaving(true);
@@ -61,7 +65,8 @@ export const EditorSettingsSection: React.FC<EditorSettingsSectionProps> = ({
       about,
       footer,
       showWander,
-      typography,
+      typography: 'c',
+      fonts: resolveFonts(fonts),
       navOrder: updatedNavOrder,
       updatedAt: new Date().toISOString(),
       updatedBy: DESIGNATED_EDITOR_EMAIL,
@@ -174,77 +179,7 @@ export const EditorSettingsSection: React.FC<EditorSettingsSectionProps> = ({
         </div>
       </section>
 
-      {/* 2. Typography Selection */}
-      <section className="p-6 border border-black/15 bg-white space-y-6">
-        <div>
-          <h3 className="font-editorial text-lg text-black font-medium">
-            2. Typography System (A / C)
-          </h3>
-          <p className="text-xs text-black/60 font-mono-quiet">
-            Select the global typographic voice for titles, lead text, and reading rhythms across the site.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {/* Combo A */}
-          <div
-            onClick={() => setTypography('a')}
-            className={`p-5 border cursor-pointer transition-all ${
-              typography === 'a'
-                ? 'border-black bg-black/[0.02] ring-1 ring-black'
-                : 'border-black/20 hover:border-black/60'
-            }`}
-          >
-            <div className="flex justify-between items-baseline mb-3">
-              <span className="font-editorial text-lg text-black font-medium">
-                Combination A (Serif Archive)
-              </span>
-              {typography === 'a' && (
-                <span className="text-xs font-mono-quiet text-black font-semibold">Active ✓</span>
-              )}
-            </div>
-            <p className="text-xs text-black/60 font-sans leading-relaxed mb-4">
-              Editorial serif headings paired with clean, quiet sans body and subdued mono metadata. Emphasizes bookish contemplation, transcription, and library stillness.
-            </p>
-            <div className="p-3 bg-white border border-black/10 font-combo-a space-y-1 text-left">
-              <div className="font-editorial text-lg text-black">Instructional Scores</div>
-              <div className="text-xs text-black/70 font-sans">
-                Silent reading protocols enacted across public libraries.
-              </div>
-              <div className="text-[10px] font-mono-quiet text-black/40">2023 · PUBLICATION · REF 04</div>
-            </div>
-          </div>
-
-          {/* Combo C */}
-          <div
-            onClick={() => setTypography('c')}
-            className={`p-5 border cursor-pointer transition-all ${
-              typography === 'c'
-                ? 'border-black bg-black/[0.02] ring-1 ring-black'
-                : 'border-black/20 hover:border-black/60'
-            }`}
-          >
-            <div className="flex justify-between items-baseline mb-3">
-              <span className="font-editorial text-lg text-black font-medium">
-                Combination C (Structural Modern)
-              </span>
-              {typography === 'c' && (
-                <span className="text-xs font-mono-quiet text-black font-semibold">Active ✓</span>
-              )}
-            </div>
-            <p className="text-xs text-black/60 font-sans leading-relaxed mb-4">
-              Refined editorial serif titles with heightened typographic contrast and geometric mono rhythms. Suitable for architectural scores and line notations.
-            </p>
-            <div className="p-3 bg-white border border-black/10 font-combo-c space-y-1 text-left">
-              <div className="font-editorial text-lg text-black">Instructional Scores</div>
-              <div className="text-xs text-black/70 font-sans">
-                Silent reading protocols enacted across public libraries.
-              </div>
-              <div className="text-[10px] font-mono-quiet text-black/40">2023 · PUBLICATION · REF 04</div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <EditorTypographySection fonts={fonts} onChange={setFonts} />
 
       {/* 3. Wander Visibility & Route Protection */}
       <section className="p-6 border border-black/15 bg-white space-y-4">

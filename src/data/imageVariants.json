@@ -1142,6 +1142,15 @@
     "display": "/derived-media/v1-7ff822a509b050a9f7e26de4e022cd0ce811a5c44e144936fff1fdeffe4d6882-display.webp",
     "displayWidth": 1920
   },
+  "80ca5ee1fe875500ff33633133b7efe691d8ec04159d6f6a6fdec8deca5ac07d.jpg": {
+    "width": 3917,
+    "height": 2611,
+    "animated": false,
+    "thumbnail": "/derived-media/v1-80ca5ee1fe875500ff33633133b7efe691d8ec04159d6f6a6fdec8deca5ac07d-thumbnail.webp",
+    "thumbnailWidth": 800,
+    "display": "/derived-media/v1-80ca5ee1fe875500ff33633133b7efe691d8ec04159d6f6a6fdec8deca5ac07d-display.webp",
+    "displayWidth": 2000
+  },
   "8137fbf514deccc62746627072905d9f2fb0fc5513a3ff6c9ed50b6b70346d6f.jpg": {
     "width": 1280,
     "height": 853,

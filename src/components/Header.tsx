@@ -41,7 +41,7 @@ export const Header: React.FC<HeaderProps> = ({
             className="text-left focus:outline-none"
           >
             <span className="font-editorial text-2xl text-black tracking-tight">
-              Hong Shu-ying <span className="font-normal text-black/80 whitespace-nowrap">方舒颖</span>
+              Hong Shu-ying <span lang="zh-Hans" className="font-normal text-black/80 whitespace-nowrap">方舒颖</span>
             </span>
           </button>
         </div>
