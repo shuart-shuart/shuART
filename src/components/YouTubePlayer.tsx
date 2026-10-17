@@ -1,3 +1,4 @@
+import { videoFrameStyle } from '../services/videoAspectRatio';
 import React, { useEffect, useRef, useState } from 'react';
 import { Play } from 'lucide-react';
 import { loadYoutubeApi, type YoutubePlayerHandle } from '../services/youtubePlayer';
@@ -5,7 +6,7 @@ import { observeVideoDwell } from '../services/videoDwell';
 
 let activePlayer: YoutubePlayerHandle | null = null;
 
-export function YouTubePlayer({ videoId, title }: { videoId: string; title: string }) {
+export function YouTubePlayer({ videoId, title, aspectRatio = 16 / 9 }: { videoId: string; title: string; aspectRatio?: number }) {
   const [activated, setActivated] = useState(false);
   const [error, setError] = useState(false);
   const player = useRef<YoutubePlayerHandle | null>(null);
@@ -97,11 +98,11 @@ export function YouTubePlayer({ videoId, title }: { videoId: string; title: stri
     };
   }, [activated, videoId, title]);
 
-  return <div ref={frame} className="relative w-full aspect-video min-h-[200px] bg-black text-white/80">
-    {!activated ? <button type="button" onClick={() => { shouldPlay.current = true; setActivated(true); }} aria-label={`Play ${title}`} className="group absolute inset-0 w-full h-full bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
-      <img src={`https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`} alt="" loading="lazy" className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity" />
-      <span className="absolute inset-0 flex items-center justify-center"><span className="rounded-full bg-black/65 p-4"><Play size={26} strokeWidth={1.5} aria-hidden="true" /></span></span>
+  return <div ref={frame} style={videoFrameStyle(aspectRatio)} className="relative mx-auto bg-white text-black/65">
+    {!activated ? <button type="button" onClick={() => { shouldPlay.current = true; setActivated(true); }} aria-label={`Play ${title}`} className="group absolute inset-0 w-full h-full bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
+      <img src={`https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`} alt="" loading="lazy" className="w-full h-full object-cover" />
+      <span className="absolute inset-0 flex items-center justify-center"><span className="rounded-full bg-white/90 text-black/65 p-3 group-hover:bg-white transition-colors"><Play size={26} strokeWidth={1.5} aria-hidden="true" /></span></span>
     </button> : <div ref={mount} className="absolute inset-0 [&>iframe]:w-full [&>iframe]:h-full [&>iframe]:border-0" />}
-    {error && <p role="status" className="absolute inset-x-0 bottom-0 bg-black p-3 text-center text-xs">Video unavailable. Use Open video below.</p>}
+    {error && <p role="status" className="absolute inset-x-0 bottom-0 bg-white p-3 text-center text-xs">Video unavailable. Please try again later.</p>}
   </div>;
 }

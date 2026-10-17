@@ -1,3 +1,4 @@
+import { videoAspectRatio, videoFrameStyle } from '../../services/videoAspectRatio';
 import { HtmlContent } from '../HtmlContent';
 import { WebsiteEmbed } from '../WebsiteEmbed';
 import { websiteEmbedUrl, websiteEmbedHeight } from '../../services/websiteEmbed';
@@ -873,6 +874,16 @@ export const BlockEditorItem: React.FC<BlockEditorItemProps> = ({
             </p>
           </div>
 
+          <label className="block text-xs font-mono-quiet text-black/65">
+            Video proportions (width:height)
+            <input type="text" value={(block as VideoBlock).aspectRatio || ''}
+              onChange={event => onUpdateBlock({ ...block, aspectRatio: event.target.value } as VideoBlock)}
+              placeholder="Auto · e.g. 1920:1080, 4:3, 9:16"
+              pattern="[0-9]+([.][0-9]+)? *[:/] *[0-9]+([.][0-9]+)?"
+              className="mt-1 w-full p-2 border border-black/25 text-xs bg-white" />
+            <span className="block pt-1">Leave empty for 16:9, or 9:16 for YouTube Shorts. Enter the original video dimensions for an exact fit.</span>
+          </label>
+
           <div className="space-y-3">
             <FormattedField
               label="Video Title (Optional)"
@@ -906,7 +917,7 @@ export const BlockEditorItem: React.FC<BlockEditorItemProps> = ({
                 <span>Embed Preview ({(block as VideoBlock).provider})</span>
                 <span className="text-emerald-700">Valid URL</span>
               </div>
-              <div className="relative aspect-video max-w-md bg-black/5 border border-black/10 overflow-hidden">
+              <div style={videoFrameStyle(videoAspectRatio(block as VideoBlock))} className="relative max-w-md bg-white overflow-hidden">
                 <iframe
                   src={(block as VideoBlock).embedUrl}
                   title="Editor preview"

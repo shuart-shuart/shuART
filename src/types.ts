@@ -96,6 +96,7 @@ export interface DocumentReaderBlock {
 export type VideoProvider = 'youtube' | 'vimeo' | 'google_drive';
 
 export interface VideoBlock {
+  aspectRatio?: string; // Source width:height, e.g. 1920:1080 or 4:3.
   id: string;
   type: 'video';
   provider: VideoProvider;

@@ -17,7 +17,9 @@ test('YouTube starts as a click-to-play poster without an iframe; other provider
   const html = renderToStaticMarkup(React.createElement(VideoPlayer, { block }));
   assert.ok(html.includes('aria-label="Play Artwork film"'));
   assert.ok(!html.includes('<iframe'));
-  assert.ok(html.includes('href="https://youtu.be/dQw4w9WgXcQ"'));
+  assert.ok(!html.includes('Open video'));
+  assert.ok(!html.includes('min-h-[200px]'));
+  assert.ok(html.includes('bg-white'));
   const vimeo = renderToStaticMarkup(React.createElement(VideoPlayer, { block: { ...block, provider: 'vimeo', embedUrl: 'https://player.vimeo.com/video/123' } }));
   assert.ok(vimeo.includes('<iframe'));
 });
