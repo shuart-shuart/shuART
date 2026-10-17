@@ -2939,107 +2939,256 @@
       "shortDescription": "视奏 sight reading removes the notes from jianpu (cipher notation) and attends instead to what surrounds them: lines, dots, symbols and annotations that instruct a musician how to play.",
       "credits": [],
       "presentationHistory": [],
-      "fullText": "Isolated from their original context, these “non-notes” form an almost-graphical score, suspended between something to be read, seen and performed.\n_\nPlease get in touch if you would like to respond to 视奏 sight reading. I am seeking collaborators~\n\nscores\n\n叙时 visages in time\n\n丝 threaden  \n\n抖 tremble  \n\n烁 flicker\n\n又双叒叕 again and again\n\n气口 breath points\n\n晃 swivel\n\n山>山 peaking peaks\n\n玉落珠盘 frolic\n\n静径 sissississimo\n\n 踩梯 ladders and steps\n\n山+山 mounting mounts\n\n双 duet\n\n起飞 departures",
-      "images": [],
+      "fullText": "Isolated from their original context, these “non-notes” form an almost-graphical score, suspended between something to be read, seen and performed.\n_\nPlease get in touch if you would like to respond to 视奏 sight reading. I am seeking collaborators~\n\n叙时 visages in time\n\n双 duet\n\n起飞 departures\n\n山+山 mounting mounts\n\n山>山 peaking peaks\n\n踩梯 ladders and steps\n\n静径 sissississimo\n\n玉落珠盘 frolic\n\n晃 swivel\n\n气口 breath points\n\n又双叒叕 again and again\n\n烁 flicker\n\n抖 tremble  \n\n丝 threaden  ",
+      "images": [
+        {
+          "id": "7a402526-c315-42a2-ae20-8309d3a7171e",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/878b024b3a9fb21be231a4bbbf6fc9ff46cd48c30f286bf320c96bb800f40962.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "dulub studio 嘟嚕"
+        },
+        {
+          "id": "ba358b26-9b87-45e7-99a1-71de2455eb28",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/8137fbf514deccc62746627072905d9f2fb0fc5513a3ff6c9ed50b6b70346d6f.jpg",
+          "caption": "",
+          "alt": "",
+          "credit": "dulub studio 嘟嚕"
+        },
+        {
+          "id": "d3563ad7-6d87-4709-a222-6264b81d3baa",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/23d9862921286868062ff9482105236fd76ef56b0cd865ba5d1ca65612194da4.jpg",
+          "caption": "",
+          "alt": "叙时 visages in time",
+          "credit": ""
+        },
+        {
+          "id": "81267a32-08c2-4a0c-ae0e-dff1f4be28e3",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/cc29ae98da368d931f47eae6b65239a4651148300d8eb6fc45646f9321951c8e.jpg",
+          "caption": "",
+          "alt": "双 duet",
+          "credit": ""
+        },
+        {
+          "id": "3a6f4da0-8c3b-41e2-8cf3-346f1fb0d030",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/7ed0ae2d85705a0fcfd856652a748a84075687d97cce68f147ea95a9959d5635.jpg",
+          "caption": "",
+          "alt": "起飞 departures",
+          "credit": ""
+        },
+        {
+          "id": "b24dbabe-3913-4924-82b4-fbaf48b40ae3",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/4258aceb7fbf7b513334e661b058c6268947a05058a5e9679d2eea3714406567.jpg",
+          "caption": "",
+          "alt": "山+山 mounting mounts",
+          "credit": ""
+        },
+        {
+          "id": "113ae62a-5283-4616-a317-7f30b9509e42",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/5215ea213b20c78b0dca6d10ada13f705fd1e8aab3823114a2313b74b9ec78af.jpg",
+          "caption": "",
+          "alt": "山>山 peaking peaks",
+          "credit": ""
+        },
+        {
+          "id": "2a447f32-807b-43da-9d68-5575303b5e21",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/2e84faec6daa5aa8db13d69fb08002101dc7e18902314d19396c89a237e1dd99.jpg",
+          "caption": "",
+          "alt": "踩梯 ladders and steps",
+          "credit": ""
+        },
+        {
+          "id": "77faa8fc-f850-40f6-8a7d-66e96d25994d",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/1b902c0682d409769968935e84b781692c9bc9fff8f8165696bc2aadcbaa201f.jpg",
+          "caption": "",
+          "alt": "静径 sissississimo",
+          "credit": ""
+        },
+        {
+          "id": "89144c8b-951e-4af1-bc26-956225ce3d01",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/cad4c4515745827eb6958242e20909049311a453bf2a32d768e40302c39264a4.jpg",
+          "caption": "",
+          "alt": "玉落珠盘 frolic",
+          "credit": ""
+        },
+        {
+          "id": "0758baa7-71e8-4804-89d4-0d870127cfbe",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/a74e9edf1b5fd1caf0de131f0475435c01f0838b1de61248b0d6ee915a7b317e.jpg",
+          "caption": "",
+          "alt": "晃 swivel",
+          "credit": ""
+        },
+        {
+          "id": "33439e2a-f519-4292-8fd3-ceb98ba80f66",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/3e8d33f015cecf730c74ea2fcbbf75279d51b334a0920dd607078618446730b1.jpg",
+          "caption": "",
+          "alt": "气口 breath points",
+          "credit": ""
+        },
+        {
+          "id": "f542b768-b129-44b0-93e7-e3115ed3524f",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/f62005a8616643014016995f5147ef8446baf8029787ba30d304f30e16926eaa.jpg",
+          "caption": "",
+          "alt": "又双叒叕 again and again",
+          "credit": ""
+        },
+        {
+          "id": "8a356a00-b5b5-42a0-8ebb-a7148b3eec95",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/b149e98d12b979d959edfa147a9d81f80c2ab47bdb4380ac4acd94492f0b5d25.jpg",
+          "caption": "",
+          "alt": "烁 flicker",
+          "credit": ""
+        },
+        {
+          "id": "7e33c2aa-06e6-4932-8e00-dbf172d0a146",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/82c0dd1ee76b30c750efe2a95838c3dacb1eabc5ff084c6944f0429a26b68a17.jpg",
+          "caption": "",
+          "alt": "抖 tremble  ",
+          "credit": ""
+        },
+        {
+          "id": "974b992e-3f56-466b-8688-aa596ca244dd",
+          "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/b59db41b80de9d6e9b99047454395d8403fd2011560a797ced94c3f8c1183f93.jpg",
+          "caption": "",
+          "alt": "丝 threaden  ",
+          "credit": ""
+        }
+      ],
       "blocks": [
+        {
+          "id": "block-mvckrk8m-ca0r",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
+            {
+              "id": "7a402526-c315-42a2-ae20-8309d3a7171e",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/878b024b3a9fb21be231a4bbbf6fc9ff46cd48c30f286bf320c96bb800f40962.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "dulub studio 嘟嚕"
+            },
+            {
+              "id": "ba358b26-9b87-45e7-99a1-71de2455eb28",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/8137fbf514deccc62746627072905d9f2fb0fc5513a3ff6c9ed50b6b70346d6f.jpg",
+              "caption": "",
+              "alt": "",
+              "credit": "dulub studio 嘟嚕"
+            }
+          ],
+          "layout": "carousel",
+          "autoPlay": true,
+          "intervalSeconds": 2
+        },
         {
           "id": "text-sight-reading",
           "type": "text",
           "content": "Isolated from their original context, these “non-notes” form an almost-graphical score, suspended between something to be read, seen and performed.\n_\nPlease get in touch if you would like to respond to 视奏 sight reading. I am seeking collaborators~"
         },
         {
-          "id": "block-mv48al3q-pl6b",
-          "type": "document_reader",
-          "title": "scores",
-          "sourceType": "page_images",
-          "pageType": "individual_pages",
-          "pages": [
+          "id": "block-mvckmcto-ll8m",
+          "type": "image_gallery",
+          "title": "",
+          "images": [
             {
-              "id": "ebe44286-399a-46b3-96c2-1e6d2cd95073",
-              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/48185a4fef481c71894c49139d3f6397fbc661bddb7a28df8b277065e2fcb568.webp",
-              "pageNumber": 1,
-              "caption": "叙时 visages in time"
+              "id": "d3563ad7-6d87-4709-a222-6264b81d3baa",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/23d9862921286868062ff9482105236fd76ef56b0cd865ba5d1ca65612194da4.jpg",
+              "caption": "",
+              "alt": "叙时 visages in time",
+              "credit": ""
             },
             {
-              "id": "f56d722f-6b09-48f3-b25f-fdd06a59f889",
-              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/6cf51e7944aa56c1ccb02d1beca1bdf001533ba760ac1e3d8e56bd409202b6b9.webp",
-              "pageNumber": 2,
-              "caption": "丝 threaden  "
+              "id": "81267a32-08c2-4a0c-ae0e-dff1f4be28e3",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/cc29ae98da368d931f47eae6b65239a4651148300d8eb6fc45646f9321951c8e.jpg",
+              "caption": "",
+              "alt": "双 duet",
+              "credit": ""
             },
             {
-              "id": "0668922e-4d6d-41b9-8c4c-16d572632b59",
-              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/faaea43dbbe029401d212f80fcb3cedf9c9e673b95e1572c914667bbd5476f2a.webp",
-              "pageNumber": 3,
-              "caption": "抖 tremble  "
+              "id": "3a6f4da0-8c3b-41e2-8cf3-346f1fb0d030",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/7ed0ae2d85705a0fcfd856652a748a84075687d97cce68f147ea95a9959d5635.jpg",
+              "caption": "",
+              "alt": "起飞 departures",
+              "credit": ""
             },
             {
-              "id": "781399ae-ff87-494d-a1a5-81a021cb41f2",
-              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/5161baa1d91819ee822c089dfd6ab39628de9c720512e293832c0526dcc3819f.webp",
-              "pageNumber": 4,
-              "caption": "烁 flicker"
+              "id": "b24dbabe-3913-4924-82b4-fbaf48b40ae3",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/4258aceb7fbf7b513334e661b058c6268947a05058a5e9679d2eea3714406567.jpg",
+              "caption": "",
+              "alt": "山+山 mounting mounts",
+              "credit": ""
             },
             {
-              "id": "b74d472f-b186-4510-b9e2-2b8530bb92bb",
-              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/90a8762a650ddab97c357cebf962223f9c0700e492f9c25ae84fa398877ad17c.webp",
-              "pageNumber": 5,
-              "caption": "又双叒叕 again and again"
+              "id": "113ae62a-5283-4616-a317-7f30b9509e42",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/5215ea213b20c78b0dca6d10ada13f705fd1e8aab3823114a2313b74b9ec78af.jpg",
+              "caption": "",
+              "alt": "山>山 peaking peaks",
+              "credit": ""
             },
             {
-              "id": "9d2bb2dd-d5f0-4999-b555-355334595c5d",
-              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/1a16ce2847a0aed7eaade651023744f1f056dbeadee976332616a416dfdf2145.webp",
-              "pageNumber": 6,
-              "caption": "气口 breath points"
+              "id": "2a447f32-807b-43da-9d68-5575303b5e21",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/2e84faec6daa5aa8db13d69fb08002101dc7e18902314d19396c89a237e1dd99.jpg",
+              "caption": "",
+              "alt": "踩梯 ladders and steps",
+              "credit": ""
             },
             {
-              "id": "b0410350-96af-4100-9e65-152b29914b10",
-              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/83d89e02fb3ad0926dd6591534d746a837217006cf6b3cb79a9f1cb96a203c73.webp",
-              "pageNumber": 7,
-              "caption": "晃 swivel"
+              "id": "77faa8fc-f850-40f6-8a7d-66e96d25994d",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/1b902c0682d409769968935e84b781692c9bc9fff8f8165696bc2aadcbaa201f.jpg",
+              "caption": "",
+              "alt": "静径 sissississimo",
+              "credit": ""
             },
             {
-              "id": "75b4d860-920a-408b-924c-41ce4bbc3c7d",
-              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/2c192271b00ff62f37c7d470bd67dc19302598c020ac63de73f7d1564fccfa80.webp",
-              "pageNumber": 8,
-              "caption": "山>山 peaking peaks"
+              "id": "89144c8b-951e-4af1-bc26-956225ce3d01",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/cad4c4515745827eb6958242e20909049311a453bf2a32d768e40302c39264a4.jpg",
+              "caption": "",
+              "alt": "玉落珠盘 frolic",
+              "credit": ""
             },
             {
-              "id": "f00858d4-1c2c-43e1-aae0-f3eab1cfccfb",
-              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/a8c475fab345932f29893c842c21d1bba74874c692b0c48704827c7629d418a3.webp",
-              "pageNumber": 9,
-              "caption": "玉落珠盘 frolic"
+              "id": "0758baa7-71e8-4804-89d4-0d870127cfbe",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/a74e9edf1b5fd1caf0de131f0475435c01f0838b1de61248b0d6ee915a7b317e.jpg",
+              "caption": "",
+              "alt": "晃 swivel",
+              "credit": ""
             },
             {
-              "id": "a5214a7e-08f9-459e-9e61-c56fed0e1dea",
-              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/81a5e1781f1fd768a5b31eac25935970faac951f1ff14f23e603f1fc87d6631e.webp",
-              "pageNumber": 10,
-              "caption": "静径 sissississimo"
+              "id": "33439e2a-f519-4292-8fd3-ceb98ba80f66",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/3e8d33f015cecf730c74ea2fcbbf75279d51b334a0920dd607078618446730b1.jpg",
+              "caption": "",
+              "alt": "气口 breath points",
+              "credit": ""
             },
             {
-              "id": "5528f003-d93e-4106-9887-7aef66334283",
-              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/6bc2d1a03eccf112c566075641269428e3dd097d9cdb86e37b36ed631ffe3817.webp",
-              "pageNumber": 11,
-              "caption": " 踩梯 ladders and steps"
+              "id": "f542b768-b129-44b0-93e7-e3115ed3524f",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/f62005a8616643014016995f5147ef8446baf8029787ba30d304f30e16926eaa.jpg",
+              "caption": "",
+              "alt": "又双叒叕 again and again",
+              "credit": ""
             },
             {
-              "id": "8554626d-2d61-479e-be36-30f235056ec4",
-              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/5ee2a7f255a154c028956f6f5ba83eb3c9b0ca89fc829e9330a6095170df0468.webp",
-              "pageNumber": 12,
-              "caption": "山+山 mounting mounts"
+              "id": "8a356a00-b5b5-42a0-8ebb-a7148b3eec95",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/b149e98d12b979d959edfa147a9d81f80c2ab47bdb4380ac4acd94492f0b5d25.jpg",
+              "caption": "",
+              "alt": "烁 flicker",
+              "credit": ""
             },
             {
-              "id": "85be626e-a8b2-4c7d-b3eb-7398c8925c7f",
-              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/ce1bf17291768e77b02a41ec2d01f18570f7a04f9bfe9f193f831618321974f6.webp",
-              "pageNumber": 13,
-              "caption": "双 duet"
+              "id": "7e33c2aa-06e6-4932-8e00-dbf172d0a146",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/82c0dd1ee76b30c750efe2a95838c3dacb1eabc5ff084c6944f0429a26b68a17.jpg",
+              "caption": "",
+              "alt": "抖 tremble  ",
+              "credit": ""
             },
             {
-              "id": "2c896fe5-2acc-43a0-921b-b00628aa8c2a",
-              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/3bc184f2548519a7616faf072ab56ea8fb789f5949793f2e20055b26564d77c8.webp",
-              "pageNumber": 14,
-              "caption": "起飞 departures"
+              "id": "974b992e-3f56-466b-8688-aa596ca244dd",
+              "url": "https://raw.githubusercontent.com/shuart-shuart/shuART/main/public/media/b59db41b80de9d6e9b99047454395d8403fd2011560a797ced94c3f8c1183f93.jpg",
+              "caption": "",
+              "alt": "丝 threaden  ",
+              "credit": ""
             }
           ],
-          "allowDownload": false
+          "layout": "grid"
         }
       ],
       "tagIds": [
@@ -3060,7 +3209,7 @@
       "status": "published",
       "isDevelopingWork": false,
       "createdAt": "2026-10-04T21:20:44Z",
-      "updatedAt": "2026-10-11T19:49:29.257Z"
+      "updatedAt": "2026-10-17T16:11:28.873Z"
     },
     {
       "id": "entry-creak-of-dawn",
