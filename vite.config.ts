@@ -5,7 +5,8 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: '/shuART/',
+    // Hash routes allow relative assets on both a custom domain and /shuART/.
+    base: './',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
